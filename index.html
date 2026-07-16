@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EggerMath — Play 1400+ Free Browser Games Instantly</title>
+  <meta name="description" content="Play 1400+ free unblocked browser games instantly — Puzzle, Action, Racing, Shooting, Strategy and more on EggerMath. No downloads, no sign-up required!">
+  <meta name="keywords" content="free browser games, unblocked games, online games, play games online, free games, browser games, no download games, HTML5 games, racing games, puzzle games, action games">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="EggerMath">
+  <link rel="canonical" href="https://eggermath.com/">
+
+  <!-- Open Graph (Facebook / Discord / WhatsApp previews) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EggerMath">
+  <meta property="og:title" content="EggerMath — Play 1400+ Free Browser Games Instantly">
+  <meta property="og:description" content="Play 1400+ free unblocked browser games instantly. Puzzle, Action, Racing, Shooting and more. No downloads, no sign-up!">
+  <meta property="og:url" content="https://eggermath.com/">
+  <meta property="og:image" content="https://eggermath.com/images/eggermath-logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="EggerMath — Play 1400+ Free Browser Games Instantly">
+  <meta name="twitter:description" content="Play 1400+ free unblocked browser games instantly. No downloads, no sign-up!">
+  <meta name="twitter:image" content="https://eggermath.com/images/eggermath-logo.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "EggerMath",
+    "url": "https://eggermath.com",
+    "description": "Play 1400+ free unblocked browser games instantly. No downloads or sign-up required.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://eggermath.com/?q={search_term_string}"
+      },
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="./home.css?v=11">
+  <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
+</head>
+<body>
+
+  <!-- ============================================================
+       MOBILE HEADER (hidden on desktop)
+  ============================================================ -->
+  <header class="mobile-header">
+    <a href="index.html" class="mobile-logo">
+      <img src="images/eggermath-logo.png" alt="Logo" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
+      <span class="mobile-logo-name">EGGERMATH</span>
+    </a>
+    <div class="mobile-actions">
+      <button class="mobile-btn" id="mobile-search-btn" title="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       LEFT SIDEBAR (desktop only)
+  ============================================================ -->
+  <aside class="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <img src="images/eggermath-logo.png" alt="Logo" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
+      <span class="sidebar-logo-name">EGGERMATH</span>
+    </a>
+    
+    <div class="sidebar-actions">
+      <button class="sidebar-action-btn" id="sidebar-search-btn" title="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+    </div>
+
+    <div class="sidebar-promo">
+      <div class="arrows">
+        <span>▼</span><span>▼</span><span>▼</span>
+      </div>
+      <a href="#games" class="sidebar-play-btn">PLAY NOW 🎮</a>
+    </div>
+
+    <div class="sidebar-minis" id="sidebar-minis">
+      <!-- Injected via JS -->
+    </div>
+    <div class="sidebar-links" style="margin-top:auto; padding:12px 0; border-top:1px solid rgba(255,255,255,0.08);">
+      <a href="onboarding.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Getting Started</a>
+      <a href="blog.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Blog</a>
+      <a href="advertise.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Advertise</a>
+      <a href="takedown.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">DMCA</a>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       DRAWER OVERLAY & SEARCH DRAWER
+  ============================================================ -->
+  <div class="drawer-overlay" id="drawer-overlay"></div>
+
+  <div class="search-drawer" id="search-drawer">
+    <div class="drawer-header">
+      <span class="drawer-title">Search Games</span>
+      <button class="drawer-close" id="search-close">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+    </div>
+    
+    <div class="search-wrap">
+      <div class="search-input-wrap">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" class="search-input" id="search-input" placeholder="What are you playing today?" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    
+    <div class="search-cats" id="search-cats">
+      <!-- Injected via JS -->
+    </div>
+    
+    <div class="search-count-label" id="search-count-label">All Games</div>
+    
+    <div class="search-results" id="search-results">
+      <!-- Injected via JS -->
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main class="main-content">
+    
+    <!-- CATEGORY BAR -->
+    <div class="cat-bar" id="cat-bar">
+      <!-- Injected via JS -->
+    </div>
+
+    <!-- Hidden SEO h1 - visually represented by the sidebar logo and section title -->
+    <h1 class="sr-only">EggerMath — Free Browser Games</h1>
+
+    <div class="section-title" id="grid-title"><span>🎮</span> ALL GAMES</div>
+    
+    <!-- GAME GRID -->
+    <div class="game-grid" id="game-grid">
+      <!-- Injected via JS -->
+    </div>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <span class="footer-brand">© 2026 EggerMath</span>
+    <div class="footer-links">
+      <a href="onboarding.html">Getting Started</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="advertise.html">Advertise</a>
+      <a href="takedown.html">DMCA</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       COOKIE CONSENT BANNER (GDPR / AdSense required)
+  ============================================================ -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
+    <div class="cookie-content">
+      <span class="cookie-icon">🍪</span>
+      <p>We use cookies to remember your favorites and show relevant ads. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-decline" id="cookie-decline">Decline</button>
+        <button class="cookie-btn cookie-accept" id="cookie-accept">Accept All</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="./games.js?v=13"></script>
+  <script>
+    // ═══════════════════════════════════════════════════════════════
+    //  DOM ELEMENTS
+    // ═══════════════════════════════════════════════════════════════
+    const grid = document.getElementById('game-grid');
+    const catBar = document.getElementById('cat-bar');
+    const sidebarMinis = document.getElementById('sidebar-minis');
+    
+    const searchDrawer = document.getElementById('search-drawer');
+    const drawerOverlay = document.getElementById('drawer-overlay');
+    const searchInput = document.getElementById('search-input');
+    const searchCats = document.getElementById('search-cats');
+    const searchResults = document.getElementById('search-results');
+    const searchCountLabel = document.getElementById('search-count-label');
+    const gridTitle = document.getElementById('grid-title');
+
+    let activeCategory = 'all'; // 'all', 'favorites', or category name
+
+    // ═══════════════════════════════════════════════════════════════
+    //  CATEGORIES EXTRACT
+    // ═══════════════════════════════════════════════════════════════
+    const categories = ['all', 'trending', 'favorites', ...new Set(GAMES.map(g => g.category))];
+
+    // ═══════════════════════════════════════════════════════════════
+    //  FINGERPRINT (anonymous user ID — stored in cookie)
+    // ═══════════════════════════════════════════════════════════════
+    function getFingerprint() {
+      const match = document.cookie.match(/eggermath_fp=([^;]+)/);
+      if (match) return match[1];
+      const fp = 'fp_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+      document.cookie = 'eggermath_fp=' + fp + ';path=/;max-age=31536000';
+      return fp;
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    //  FAVORITES (Supabase API — pre-loaded at startup)
+    // ═══════════════════════════════════════════════════════════════
+    let _favsCache = [];
+
+    async function loadFavorites() {
+      try {
+        const res = await fetch('/api/favorites/' + encodeURIComponent(getFingerprint()));
+        _favsCache = await res.json();
+      } catch(e) { _favsCache = []; }
+    }
+
+    function isFavorite(id) {
+      return _favsCache.includes(id);
+    }
+
+    function toggleFavorite(id) {
+      const idx = _favsCache.indexOf(id);
+      const isAdd = idx === -1;
+      if (isAdd) _favsCache.push(id); else _favsCache.splice(idx, 1);
+      fetch('/api/favorites/' + (isAdd ? 'add' : 'remove'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ gameId: id, fingerprint: getFingerprint() })
+      });
+      return isAdd;
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    //  RENDER FUNCTIONS
+    // ═══════════════════════════════════════════════════════════════
+    function getGameImg(game) {
+      return game.thumb || game.thumbnail || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+    }
+    function createGameCard(game, heroClass = '', isDrawer = false) {
+      const a = document.createElement('a');
+      a.href = `game.html?id=${game.id}`;
+      a.className = isDrawer ? 'search-item' : 'game-card';
+      if (heroClass && !isDrawer) a.classList.add(heroClass);
+      a.title = game.title;
+
+      // Image with placeholder and error fallback
+      const imgSrc = getGameImg(game);
+      const placeholderSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+      const imgHtml = `<img src="${placeholderSvg}" data-src="${imgSrc}" alt="${game.title}" loading="lazy" class="game-thumb" style="opacity:0.6">`;
+
+      // Label + developer credit
+      const labelClass = isDrawer ? 'search-item-label' : 'game-card-label';
+      const devCredit = (game.developer && !isDrawer) ? `<div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">by ${game.developer}</div>` : '';
+      const labelHtml = `<div class="${labelClass}">${game.title}</div>${devCredit}`;
+
+      // Fav btn (only on main grid, not drawer)
+      let favHtml = '';
+      if (!isDrawer) {
+        const isFav = isFavorite(game.id);
+        favHtml = `<button class="fav-btn ${isFav ? 'active' : ''}" data-id="${game.id}" title="Favorite">⭐</button>`;
+      }
+
+      a.innerHTML = imgHtml + labelHtml + favHtml;
+
+      // Lazy load the real image
+      const img = a.querySelector('img');
+      const realSrc = img.dataset.src;
+      if (realSrc) {
+        const preload = new Image();
+        preload.onload = function() {
+          img.src = realSrc;
+          img.style.opacity = '1';
+        };
+        preload.onerror = function() {
+          img.style.opacity = '0.4';
+        };
+        preload.src = realSrc;
+      }
+
+      if (!isDrawer) {
+        // Stop click from navigating when clicking fav button
+        const btn = a.querySelector('.fav-btn');
+        if (btn) {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            const nowFav = toggleFavorite(game.id);
+            btn.classList.toggle('active', nowFav);
+            // If we are currently viewing favorites, remove the card if unfavorited
+            if (activeCategory === 'favorites' && !nowFav) {
+              renderMainGrid(); 
+            }
+          });
+        }
+      }
+
+      return a;
+    }
+
+    function renderMainGrid() {
+      grid.innerHTML = '';
+      
+      if (activeCategory === 'favorites') {
+        const favs = getFavorites();
+        const filtered = GAMES.filter(g => favs.includes(g.id));
+        gridTitle.innerHTML = `<span>⭐</span> FAVORITES (${filtered.length})`;
+        if (filtered.length === 0) {
+          grid.innerHTML = `<div class="empty-state" style="grid-column: 1/-1; padding: 60px; text-align: center; color: rgba(255,255,255,0.5);">No favorites yet. Click ⭐ on any game to save it!</div>`;
+          return;
+        }
+        filtered.forEach((game, index) => {
+          let heroClass = '';
+          if (index === 0) heroClass = 'hero';
+          else if (index === 7) heroClass = 'featured-tall';
+          else if (index === 14) heroClass = 'featured-wide';
+          else if (index === 22) heroClass = 'featured-tall';
+          else if (index === 30) heroClass = 'featured-wide';
+          grid.appendChild(createGameCard(game, heroClass, false));
+        });
+      } else if (activeCategory === 'trending') {
+        gridTitle.innerHTML = `<span>🔥</span> TRENDING`;
+        grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:rgba(255,255,255,0.5);">Loading trending games...</div>`;
+        fetch('/api/trending?limit=30')
+          .then(r => r.json())
+          .then(trendingIds => {
+            grid.innerHTML = '';
+            if (!trendingIds.length) {
+              grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:rgba(255,255,255,0.5);">No votes yet. Be the first to like a game!</div>`;
+              return;
+            }
+            gridTitle.innerHTML = `<span>🔥</span> TRENDING (${trendingIds.length})`;
+            trendingIds.forEach((t, i) => {
+              const game = GAMES.find(g => g.id === t.id);
+              if (!game) return;
+              let heroClass = '';
+              if (i === 0) heroClass = 'hero';
+              else if (i === 7) heroClass = 'featured-tall';
+              else if (i === 14) heroClass = 'featured-wide';
+              else if (i === 22) heroClass = 'featured-tall';
+              else if (i === 30) heroClass = 'featured-wide';
+              grid.appendChild(createGameCard(game, heroClass, false));
+            });
+          })
+          .catch(() => {
+            grid.innerHTML = `<div style="grid-column:1/-1;text-align:center;padding:40px;color:rgba(255,255,255,0.5);">Could not load trending. Try again later.</div>`;
+          });
+      } else if (activeCategory !== 'all') {
+        const filtered = GAMES.filter(g => g.category === activeCategory);
+        gridTitle.innerHTML = `<span>🎮</span> ${activeCategory.toUpperCase()} GAMES (${filtered.length})`;
+        if (filtered.length === 0) {
+          grid.innerHTML = `<div class="empty-state" style="grid-column: 1/-1; padding: 60px; text-align: center; color: rgba(255,255,255,0.5);">No games found in this category.</div>`;
+          return;
+        }
+
+        fetch('/api/trending?limit=200')
+          .then(r => r.json())
+          .then(trendingIds => {
+            grid.innerHTML = '';
+            const catIds = new Set(filtered.map(g => g.id));
+            const catTrending = trendingIds.filter(t => catIds.has(t.id)).slice(0, 6);
+
+            if (catTrending.length > 0) {
+              const trendingSection = document.createElement('div');
+              trendingSection.style.cssText = 'grid-column:1/-1;margin-bottom:8px;';
+              trendingSection.innerHTML = '<div style="font-size:14px;font-weight:700;color:rgba(255,255,255,0.6);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;">🔥 TRENDING IN ' + activeCategory.toUpperCase() + '</div>';
+              const trendingRow = document.createElement('div');
+              trendingRow.style.cssText = 'display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:24px;';
+              catTrending.forEach((t, i) => {
+                const game = GAMES.find(g => g.id === t.id);
+                if (!game) return;
+                trendingRow.appendChild(createGameCard(game, i === 0 ? 'hero' : '', false));
+              });
+              trendingSection.appendChild(trendingRow);
+              grid.appendChild(trendingSection);
+
+              const allTitle = document.createElement('div');
+              allTitle.style.cssText = 'grid-column:1/-1;font-size:14px;font-weight:700;color:rgba(255,255,255,0.6);margin-bottom:12px;text-transform:uppercase;letter-spacing:1px;';
+              allTitle.textContent = 'ALL ' + activeCategory.toUpperCase() + ' GAMES';
+              grid.appendChild(allTitle);
+            }
+
+            filtered.forEach((game, index) => {
+              let heroClass = '';
+              if (index === 0) heroClass = 'hero';
+              else if (index === 7) heroClass = 'featured-tall';
+              else if (index === 14) heroClass = 'featured-wide';
+              grid.appendChild(createGameCard(game, heroClass, false));
+            });
+          })
+          .catch(() => {
+            grid.innerHTML = '';
+            filtered.forEach((game, index) => {
+              let heroClass = '';
+              if (index === 0) heroClass = 'hero';
+              else if (index === 7) heroClass = 'featured-tall';
+              else if (index === 14) heroClass = 'featured-wide';
+              grid.appendChild(createGameCard(game, heroClass, false));
+            });
+          });
+      } else {
+        const filtered = [...GAMES].sort((a, b) => (b.trending ? 1 : 0) - (a.trending ? 1 : 0));
+        gridTitle.innerHTML = `<span>🎮</span> ALL GAMES (${filtered.length})`;
+        filtered.forEach((game, index) => {
+          let heroClass = '';
+          if (index === 0) heroClass = 'hero';
+          else if (index === 7) heroClass = 'featured-tall';
+          else if (index === 14) heroClass = 'featured-wide';
+          else if (index === 22) heroClass = 'featured-tall';
+          else if (index === 30) heroClass = 'featured-wide';
+          grid.appendChild(createGameCard(game, heroClass, false));
+        });
+      }
+    }
+
+    function renderCatBar() {
+      catBar.innerHTML = '';
+      categories.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = `cat-btn ${cat === activeCategory ? 'active' : ''}`;
+        btn.textContent = cat === 'favorites' ? '⭐ Favorites' : cat === 'trending' ? '🔥 Trending' : cat;
+        btn.addEventListener('click', () => {
+          activeCategory = cat;
+          renderCatBar();
+          renderMainGrid();
+        });
+        catBar.appendChild(btn);
+      });
+    }
+
+    function renderSidebarMinis() {
+      sidebarMinis.innerHTML = '';
+      // Show 8 random games in sidebar
+      const shuffled = [...GAMES].sort(() => Math.random() - 0.5).slice(0, 8);
+      shuffled.forEach(game => {
+        const a = document.createElement('a');
+        a.href = `game.html?id=${game.id}`;
+        a.className = 'sidebar-mini';
+        a.title = game.title;
+        a.innerHTML = `<img src="${getGameImg(game)}" alt="${game.title}" loading="lazy">`;
+        sidebarMinis.appendChild(a);
+      });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    //  SEARCH LOGIC
+    // ═══════════════════════════════════════════════════════════════
+    let drawerActiveCat = 'all';
+
+    function openSearch() {
+      searchDrawer.classList.add('open');
+      drawerOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => searchInput.focus(), 300);
+      renderSearchDrawer();
+    }
+
+    function closeSearch() {
+      searchDrawer.classList.remove('open');
+      drawerOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+      searchInput.value = '';
+    }
+
+    function renderSearchDrawer() {
+      const q = searchInput.value.toLowerCase();
+      let filtered = GAMES;
+      
+      if (drawerActiveCat !== 'all') {
+        filtered = filtered.filter(g => g.category === drawerActiveCat);
+      }
+      if (q) {
+        filtered = filtered.filter(g => g.title.toLowerCase().includes(q) || g.category.toLowerCase().includes(q) || g.tags.some(t => t.toLowerCase().includes(q)));
+      }
+
+      searchCountLabel.textContent = q 
+        ? `${filtered.length} RESULTS FOR "${q}"`
+        : (drawerActiveCat === 'all' ? `ALL GAMES (${filtered.length})` : `${drawerActiveCat} (${filtered.length})`);
+
+      searchResults.innerHTML = '';
+      if (filtered.length === 0) {
+        searchResults.innerHTML = `
+          <div class="empty-state">
+            <div class="empty-state-icon">🦆</div>
+            <p>No games found</p>
+          </div>
+        `;
+        return;
+      }
+      filtered.forEach(game => {
+        searchResults.appendChild(createGameCard(game, false, true));
+      });
+    }
+
+    function renderSearchCats() {
+      searchCats.innerHTML = '';
+      const drawerCats = ['all', ...new Set(GAMES.map(g => g.category))];
+      drawerCats.forEach(cat => {
+        const btn = document.createElement('button');
+        btn.className = `cat-chip ${cat === drawerActiveCat ? 'active' : ''}`;
+        btn.textContent = cat;
+        btn.addEventListener('click', () => {
+          drawerActiveCat = cat;
+          renderSearchCats();
+          renderSearchDrawer();
+        });
+        searchCats.appendChild(btn);
+      });
+    }
+
+    // Events
+    document.getElementById('sidebar-search-btn').addEventListener('click', openSearch);
+    const mobileSearchBtn = document.getElementById('mobile-search-btn');
+    if (mobileSearchBtn) mobileSearchBtn.addEventListener('click', openSearch);
+    document.getElementById('search-close').addEventListener('click', closeSearch);
+    drawerOverlay.addEventListener('click', closeSearch);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
+    searchInput.addEventListener('input', renderSearchDrawer);
+
+    // ═══════════════════════════════════════════════════════════════
+    //  INIT
+    // ═══════════════════════════════════════════════════════════════
+    (async function init() {
+      await loadFavorites();
+      renderCatBar();
+      renderMainGrid();
+      renderSidebarMinis();
+      renderSearchCats();
+    })();
+
+    // ═══════════════════════════════════════════════════════════════
+    //  COOKIE CONSENT
+    // ═══════════════════════════════════════════════════════════════
+    (function cookieConsent() {
+      const banner = document.getElementById('cookie-banner');
+      if (!banner) return;
+      const consent = localStorage.getItem('eggermath_cookie_consent');
+      if (!consent) {
+        setTimeout(() => banner.classList.add('visible'), 1200);
+      }
+      document.getElementById('cookie-accept').addEventListener('click', () => {
+        localStorage.setItem('eggermath_cookie_consent', 'accepted');
+        banner.classList.remove('visible');
+        setTimeout(() => banner.style.display = 'none', 400);
+      });
+      document.getElementById('cookie-decline').addEventListener('click', () => {
+        localStorage.setItem('eggermath_cookie_consent', 'declined');
+        banner.classList.remove('visible');
+        setTimeout(() => banner.style.display = 'none', 400);
+      });
+    })();
+
+  </script>
+</body>
+</html>

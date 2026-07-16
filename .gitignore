@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build caches
+.cache/
+.parcel-cache/
+.yarn/
+
+# Source maps
+*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Test artifacts
+.playwright-mcp/
+
+# Dev configs (in game subfolders)
+games/**/tsconfig.json
+games/**/vite.config.ts
+games/**/webpack.config.js
+games/**/webpack.prod.config.js
+games/**/.babelrc
+games/**/.editorconfig
+games/**/.eslintrc.json
+games/**/eslint.config.mjs
+games/**/.stylelintrc.json
+games/**/.parcelrc
+games/**/.tool-versions
+games/**/package.json
+games/**/package-lock.json
+games/**/yarn.lock
+games/**/.gitignore
+games/**/.gitattributes
+
+# Firebase configs
+.firebase/
+.firebaserc
+firebase.json

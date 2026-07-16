@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Free Games — EggerMath</title>
+  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up required. 1400+ HTML5 games available.">
+  <meta name="keywords" content="play free games online, browser games, free HTML5 games, no download games">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="EggerMath">
+  <link rel="canonical" href="https://eggermath.com/game.html" id="canonical-tag">
+
+  <!-- Open Graph (updated dynamically by JS) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EggerMath">
+  <meta property="og:title" content="Play Free Games — EggerMath" id="og-title">
+  <meta property="og:description" content="Play free browser games instantly on EggerMath. No downloads needed." id="og-desc">
+  <meta property="og:url" content="https://eggermath.com/game.html" id="og-url">
+  <meta property="og:image" content="https://eggermath.com/images/eggermath-logo.png" id="og-image">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Play Free Games — EggerMath" id="tw-title">
+  <meta name="twitter:description" content="Free browser games on EggerMath. No downloads!" id="tw-desc">
+  <meta name="twitter:image" content="https://eggermath.com/images/eggermath-logo.png" id="tw-image">
+
+  <link rel="stylesheet" href="./game-page.css">
+  <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="game-header">
+    <a href="index.html" class="back-btn">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Games
+    </a>
+
+    <a href="index.html" class="header-logo">
+      <img src="images/eggermath-logo.png" alt="EggerMath" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
+      EGGERMATH
+    </a>
+  </header>
+
+  <!-- ============================================================
+       THEATER
+  ============================================================ -->
+  <div class="theater-wrap">
+
+    <!-- IFRAME BOX -->
+    <div class="iframe-container" id="iframe-container">
+      <iframe
+        id="game-iframe"
+        allow="fullscreen; autoplay; pointer-lock; clipboard-write; keyboard"
+        allowfullscreen
+        title="Game"
+      ></iframe>
+    </div>
+
+    <!-- CONTROLS BAR -->
+    <div style="display:flex; gap:8px; align-items:center; justify-content: flex-end;">
+      <button class="action-btn" id="fullscreen-btn" title="Fullscreen">
+        <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        Fullscreen
+      </button>
+    </div>
+
+    <!-- GAME INFO BAR -->
+    <div class="game-info-bar">
+      <div class="game-details">
+        <img class="game-icon" id="game-icon" src="" alt="Game Icon">
+        <div class="game-text">
+          <h1 class="game-title" id="game-title">Loading…</h1>
+          <div class="game-dev" id="game-category">EggerMath</div>
+          <div class="game-credit" id="game-credit" style="display:none; color: rgba(255,255,255,0.45); font-size: 11px; margin-top: 2px;"></div>
+          <p class="game-desc" id="game-desc"></p>
+        </div>
+      </div>
+
+      <div class="game-actions">
+        <button class="action-btn" id="like-btn">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14z"/><path d="M7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+          <span id="like-count">0</span>
+        </button>
+
+        <button class="action-btn" id="dislike-btn">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg>
+          <span id="dislike-count">0</span>
+        </button>
+
+        <button class="action-btn" id="fav-btn">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Favorite
+        </button>
+
+        <button class="action-btn" id="video-btn" style="display:none;">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          How to Play
+        </button>
+      </div>
+    </div>
+
+    <!-- TAGS -->
+    <div id="game-tags" style="display:flex; gap:6px; flex-wrap:wrap; padding: 0 0 8px;"></div>
+
+    <!-- RELATED GAMES -->
+    <div class="related-section">
+      <div class="related-title">More Games</div>
+      <div class="related-grid" id="related-grid">
+        <!-- Injected by JS -->
+      </div>
+    </div>
+
+  </div><!-- /theater-wrap -->
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="video-modal">
+    <div class="video-modal-content">
+      <button class="video-modal-close" id="video-modal-close">&times;</button>
+      <div class="video-modal-header">How to Play</div>
+      <div class="video-modal-body">
+        <iframe
+          id="video-iframe"
+          width="100%"
+          height="100%"
+          src=""
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script src="./games.js?v=13"></script>
+  <script>
+    // ─── API BASE ───────────────────────────────────────────────
+    const API = '';
+
+    // ─── FINGERPRINT (anonymous user ID — stored in cookie) ─────
+    function getFingerprint() {
+      const match = document.cookie.match(/eggermath_fp=([^;]+)/);
+      if (match) return match[1];
+      const fp = 'fp_' + Math.random().toString(36).slice(2) + Date.now().toString(36);
+      document.cookie = 'eggermath_fp=' + fp + ';path=/;max-age=31536000';
+      return fp;
+    }
+
+    // ─── HELPER FUNCTIONS ───────────────────────────────────────
+    function getGameById(id) {
+      return GAMES.find(g => g.id === id);
+    }
+
+    function getGameImg(game) {
+      return game.thumb || game.thumbnail || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+    }
+
+    function proxyUrl(url) {
+      return '/proxy?url=' + encodeURIComponent(url);
+    }
+
+    function formatCount(n) {
+      if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+      if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+      return String(n);
+    }
+
+    function getRelated(game) {
+      return GAMES
+        .filter(g => g.id !== game.id)
+        .sort(() => Math.random() - 0.5);
+    }
+
+    // ─── FAVORITES (Supabase API — pre-loaded) ──────────────────
+    let _favsCache = [];
+
+    async function loadFavorites() {
+      try {
+        const res = await fetch('/api/favorites/' + encodeURIComponent(getFingerprint()));
+        _favsCache = await res.json();
+      } catch(e) { _favsCache = []; }
+    }
+
+    function isFavorite(id) {
+      return _favsCache.includes(id);
+    }
+
+    function toggleFavorite(id) {
+      const idx = _favsCache.indexOf(id);
+      const isAdd = idx === -1;
+      if (isAdd) _favsCache.push(id); else _favsCache.splice(idx, 1);
+      fetch('/api/favorites/' + (isAdd ? 'add' : 'remove'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ gameId: id, fingerprint: getFingerprint() })
+      });
+      return isAdd;
+    }
+
+    // ─── VOTE API ───────────────────────────────────────────────
+    async function fetchVotes(gameId) {
+      try {
+        const fp = getFingerprint();
+        const res = await fetch(API + '/api/votes/' + encodeURIComponent(gameId) + '?fingerprint=' + encodeURIComponent(fp));
+        return await res.json();
+      } catch(e) {
+        return { likes: 0, dislikes: 0, userVote: null };
+      }
+    }
+
+    async function castVote(gameId, vote) {
+      try {
+        const res = await fetch(API + '/api/vote', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ gameId, vote, fingerprint: getFingerprint() })
+        });
+        return await res.json();
+      } catch(e) {
+        return { error: e.message };
+      }
+    }
+
+    // ─── READ ID FROM URL ───────────────────────────────────────
+    const params = new URLSearchParams(location.search);
+    const gameId = params.get('id');
+
+    function startGamePage(game) {
+      if (!game) { location.href = 'index.html'; return; }
+
+      document.title = game.title + ' — EggerMath';
+      document.querySelector('meta[name="description"]').content =
+        'Play ' + game.title + ' free on EggerMath. ' + game.description;
+
+      const gameIcon       = document.getElementById('game-icon');
+      const gameTitle      = document.getElementById('game-title');
+      const gameCat        = document.getElementById('game-category');
+      const gameDesc       = document.getElementById('game-desc');
+      const gameTags       = document.getElementById('game-tags');
+      const gameIframe     = document.getElementById('game-iframe');
+      const iframeContainer= document.getElementById('iframe-container');
+      const likeBtn        = document.getElementById('like-btn');
+      const dislikeBtn     = document.getElementById('dislike-btn');
+      const favBtn         = document.getElementById('fav-btn');
+      const likeCount      = document.getElementById('like-count');
+      const dislikeCount   = document.getElementById('dislike-count');
+      const relatedGrid    = document.getElementById('related-grid');
+      const fullscreenBtn  = document.getElementById('fullscreen-btn');
+
+      const placeholderSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='80' height='80' fill='%23c62828' rx='12'/%3E%3Ctext x='40' y='45' font-family='system-ui' font-size='28' text-anchor='middle' fill='rgba(255,255,255,0.4)'%3E🎮%3C/text%3E%3C/svg%3E";
+      gameIcon.src   = placeholderSvg;
+      const realImg = new Image();
+      realImg.onload = function() { gameIcon.src = getGameImg(game); };
+      realImg.src = getGameImg(game);
+      gameIcon.alt   = game.title;
+      gameTitle.textContent = game.title;
+      gameCat.textContent   = game.category;
+      gameDesc.textContent  = game.description;
+
+      const gameCredit = document.getElementById('game-credit');
+      if (game.developer) {
+        const creditLink = game.credit || '#';
+        gameCredit.innerHTML = 'Game by <a href="' + creditLink + '" target="_blank" rel="noopener" style="color:rgba(255,255,255,0.7);text-decoration:underline;">' + game.developer + '</a>';
+        gameCredit.style.display = 'block';
+      }
+
+      // ─── TAGS ──────────────────────────────────────────────────
+      (game.tags || []).forEach(function(tag) {
+        const span = document.createElement('span');
+        span.style.cssText = 'padding:4px 12px;border-radius:99px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.6);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;';
+        span.textContent = tag;
+        gameTags.appendChild(span);
+      });
+
+      // ─── LOAD IFRAME ────────────────────────────────────────────
+      let embedUrl;
+      if (game.source === 'itch.io' || game.source === 'github' || game.source === 'gameflare' || game.source === 'gamemonetize') {
+        embedUrl = game.embedUrl;
+      } else {
+        embedUrl = proxyUrl(game.embedUrl);
+      }
+      gameIframe.src = embedUrl;
+
+      // ─── LIKE / DISLIKE ────────────────────────────────────────
+      let localLikes = 0;
+      let localDislikes = 0;
+
+      async function initVotes() {
+        const data = await fetchVotes(game.id);
+        localLikes = data.likes;
+        localDislikes = data.dislikes;
+        refreshVoteUI(data.userVote);
+      }
+
+      function refreshVoteUI(currentVote) {
+        likeBtn.className    = 'action-btn like ' + (currentVote === 'like' ? 'active' : '');
+        dislikeBtn.className = 'action-btn dislike ' + (currentVote === 'dislike' ? 'active' : '');
+        likeCount.textContent    = formatCount(localLikes);
+        dislikeCount.textContent = formatCount(localDislikes);
+      }
+
+      likeBtn.addEventListener('click', async function() {
+        likeBtn.disabled = true;
+        const result = await castVote(game.id, 'like');
+        if (!result.error) {
+          localLikes = result.likes;
+          localDislikes = result.dislikes;
+          refreshVoteUI(result.userVote);
+        }
+        likeBtn.disabled = false;
+      });
+
+      dislikeBtn.addEventListener('click', async function() {
+        dislikeBtn.disabled = true;
+        const result = await castVote(game.id, 'dislike');
+        if (!result.error) {
+          localLikes = result.likes;
+          localDislikes = result.dislikes;
+          refreshVoteUI(result.userVote);
+        }
+        dislikeBtn.disabled = false;
+      });
+
+      // ─── FAVORITES ─────────────────────────────────────────────
+      function refreshFavUI() {
+        const fav = isFavorite(game.id);
+        favBtn.className = 'action-btn fav ' + (fav ? 'active' : '');
+        favBtn.querySelector('svg').style.fill = fav ? '#ffc107' : 'none';
+        favBtn.title = fav ? 'Remove from Favorites' : 'Add to Favorites';
+      }
+
+      favBtn.addEventListener('click', function() {
+        toggleFavorite(game.id);
+        refreshFavUI();
+      });
+
+      // ─── FULLSCREEN ────────────────────────────────────────────
+      fullscreenBtn.addEventListener('click', function() {
+        if (iframeContainer.classList.contains('fullscreen')) {
+          exitFull();
+        } else {
+          if (iframeContainer.requestFullscreen) {
+            iframeContainer.requestFullscreen();
+          } else {
+            iframeContainer.classList.add('fullscreen');
+          }
+        }
+      });
+
+      document.addEventListener('fullscreenchange', function() {
+        if (!document.fullscreenElement) {
+          iframeContainer.classList.remove('fullscreen');
+        } else {
+          iframeContainer.classList.add('fullscreen');
+        }
+      });
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') iframeContainer.classList.remove('fullscreen');
+      });
+
+      function exitFull() {
+        if (document.fullscreenElement) document.exitFullscreen();
+        iframeContainer.classList.remove('fullscreen');
+      }
+
+      // ─── RELATED GAMES ─────────────────────────────────────────
+      function renderRelated() {
+        const related = getRelated(game);
+        relatedGrid.innerHTML = '';
+        const phSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100' height='100' fill='%23c62828' rx='8'/%3E%3Ctext x='50' y='55' font-family='system-ui' font-size='28' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+        related.forEach(function(g) {
+          const a = document.createElement('a');
+          a.href = 'game.html?id=' + g.id;
+          a.className = 'related-card';
+          a.title = g.title;
+          const imgSrc = getGameImg(g);
+          a.innerHTML = '<img src="' + phSvg + '" data-src="' + imgSrc + '" alt="' + g.title + '" loading="lazy" style="opacity:0.6"><div class="related-label">' + g.title + '</div>';
+          const img = a.querySelector('img');
+          const preload = new Image();
+          preload.onload = function() { img.src = imgSrc; img.style.opacity = '1'; };
+          preload.onerror = function() { img.style.opacity = '0.4'; };
+          preload.src = imgSrc;
+          relatedGrid.appendChild(a);
+        });
+      }
+
+      // ─── VIDEO MODAL ──────────────────────────────────────────────
+      var videoBtn = document.getElementById('video-btn');
+      var videoModal = document.getElementById('video-modal');
+      var videoModalClose = document.getElementById('video-modal-close');
+      var videoIframe = document.getElementById('video-iframe');
+
+      if (game.videoUrl && game.videoUrl !== 'https://www.youtube.com/embed/dQw4w9WgXcQ') {
+        videoBtn.style.display = 'flex';
+      }
+
+      videoBtn.addEventListener('click', function() {
+        if (game.videoUrl) {
+          videoIframe.src = game.videoUrl + '?autoplay=1';
+          videoModal.classList.add('active');
+        }
+      });
+
+      videoModalClose.addEventListener('click', function() {
+        videoModal.classList.remove('active');
+        videoIframe.src = '';
+      });
+
+      videoModal.addEventListener('click', function(e) {
+        if (e.target === videoModal) {
+          videoModal.classList.remove('active');
+          videoIframe.src = '';
+        }
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && videoModal.classList.contains('active')) {
+          videoModal.classList.remove('active');
+          videoIframe.src = '';
+        }
+      });
+
+      initVotes();
+      refreshFavUI();
+      renderRelated();
+    }
+
+    // ─── FIND GAME ────────────────────────────────────────────
+    (async function() {
+      var game = getGameById(gameId);
+      if (game) {
+        await loadFavorites();
+
+        // ── Dynamic SEO meta tag updates ──────────────────────
+        var gameTitle  = game.title || 'Free Browser Game';
+        var gameDesc   = (game.description || 'Play ' + gameTitle + ' for free on EggerMath. No downloads, no sign-up required!').slice(0, 160);
+        var gameThumb  = game.thumb || game.thumbnail || 'https://eggermath.com/images/eggermath-logo.png';
+        var gameUrl    = 'https://eggermath.com/game.html?id=' + encodeURIComponent(gameId);
+
+        document.title = gameTitle + ' \u2014 Play Free on EggerMath';
+        document.querySelector('meta[name="description"]').setAttribute('content', gameDesc);
+
+        var canonical = document.getElementById('canonical-tag');
+        if (canonical) canonical.setAttribute('href', gameUrl);
+
+        var ogTitle = document.getElementById('og-title');
+        var ogDesc  = document.getElementById('og-desc');
+        var ogUrl   = document.getElementById('og-url');
+        var ogImg   = document.getElementById('og-image');
+        var twTitle = document.getElementById('tw-title');
+        var twDesc  = document.getElementById('tw-desc');
+        var twImg   = document.getElementById('tw-image');
+
+        if (ogTitle) ogTitle.setAttribute('content', gameTitle + ' \u2014 Play Free on EggerMath');
+        if (ogDesc)  ogDesc.setAttribute('content', gameDesc);
+        if (ogUrl)   ogUrl.setAttribute('content', gameUrl);
+        if (ogImg)   ogImg.setAttribute('content', gameThumb);
+        if (twTitle) twTitle.setAttribute('content', gameTitle + ' \u2014 Free on EggerMath');
+        if (twDesc)  twDesc.setAttribute('content', gameDesc);
+        if (twImg)   twImg.setAttribute('content', gameThumb);
+        // ──────────────────────────────────────────────────────
+
+        startGamePage(game);
+      } else {
+        location.href = 'index.html';
+      }
+    })();
+  </script>
+</body>
+</html>
+

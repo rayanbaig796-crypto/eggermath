@@ -1,0 +1,13 @@
+{
+  "name": "eggermath",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "migrate": "node migrate-games.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "pg": "^8.22.0"
+  }
+}
