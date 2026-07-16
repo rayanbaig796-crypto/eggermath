@@ -624,10 +624,15 @@ const server = http.createServer(async (req, res) => {
   let mime = MIME[ext] || 'application/octet-stream';
   if (!ext && filePath.endsWith('config')) mime = 'application/javascript';
 
+  let cacheControl = 'public, max-age=300';
+  if (ext === '.html' || ext === '.htm') cacheControl = 'no-cache';
+  else if (ext === '.js' || ext === '.css') cacheControl = 'public, max-age=86400, immutable';
+  else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
+
   res.writeHead(200, {
     'Content-Type': mime,
     'Access-Control-Allow-Origin': '*',
-    'Cache-Control': 'public, max-age=300',
+    'Cache-Control': cacheControl,
   });
   fs.createReadStream(filePath).pipe(res);
 });

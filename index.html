@@ -43,7 +43,10 @@
   }
   </script>
 
-  <link rel="stylesheet" href="./home.css?v=11">
+  <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
+  <link rel="preconnect" href="https://html5.gamemonetize.co" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="stylesheet" href="./home.css?v=14">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
 </head>
 <body>
@@ -146,6 +149,7 @@
     <div class="game-grid" id="game-grid">
       <!-- Injected via JS -->
     </div>
+    <div id="scroll-sentinel" style="height:1px;"></div>
 
   </main>
 
@@ -183,7 +187,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=13"></script>
+  <script src="./games.js?v=14" defer></script>
   <script>
     // ═══════════════════════════════════════════════════════════════
     //  DOM ELEMENTS
@@ -313,9 +317,44 @@
       return a;
     }
 
+    const BATCH_SIZE = 120;
+    let _renderedCount = 0;
+    let _renderedList = [];
+
+    function _renderBatch(end) {
+      const slice = _renderedList.slice(_renderedCount, end);
+      slice.forEach((game, i) => {
+        const idx = _renderedCount + i;
+        let heroClass = '';
+        if (idx === 0) heroClass = 'hero';
+        else if (idx === 7) heroClass = 'featured-tall';
+        else if (idx === 14) heroClass = 'featured-wide';
+        else if (idx === 22) heroClass = 'featured-tall';
+        else if (idx === 30) heroClass = 'featured-wide';
+        grid.appendChild(createGameCard(game, heroClass, false));
+      });
+      _renderedCount = end;
+    }
+
+    let _scrollObserver = null;
+    function _setupInfiniteScroll() {
+      if (_scrollObserver) _scrollObserver.disconnect();
+      const sentinel = document.getElementById('scroll-sentinel');
+      if (!sentinel) return;
+      _scrollObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && _renderedCount < _renderedList.length) {
+          const next = Math.min(_renderedCount + BATCH_SIZE, _renderedList.length);
+          _renderBatch(next);
+        }
+      }, { rootMargin: '600px' });
+      _scrollObserver.observe(sentinel);
+    }
+
     function renderMainGrid() {
       grid.innerHTML = '';
-      
+      _renderedCount = 0;
+      _renderedList = [];
+
       if (activeCategory === 'favorites') {
         const favs = getFavorites();
         const filtered = GAMES.filter(g => favs.includes(g.id));
@@ -395,36 +434,22 @@
               grid.appendChild(allTitle);
             }
 
-            filtered.forEach((game, index) => {
-              let heroClass = '';
-              if (index === 0) heroClass = 'hero';
-              else if (index === 7) heroClass = 'featured-tall';
-              else if (index === 14) heroClass = 'featured-wide';
-              grid.appendChild(createGameCard(game, heroClass, false));
-            });
+            _renderedList = filtered;
+            _renderBatch(Math.min(BATCH_SIZE, filtered.length));
+            _setupInfiniteScroll();
           })
           .catch(() => {
             grid.innerHTML = '';
-            filtered.forEach((game, index) => {
-              let heroClass = '';
-              if (index === 0) heroClass = 'hero';
-              else if (index === 7) heroClass = 'featured-tall';
-              else if (index === 14) heroClass = 'featured-wide';
-              grid.appendChild(createGameCard(game, heroClass, false));
-            });
+            _renderedList = filtered;
+            _renderBatch(Math.min(BATCH_SIZE, filtered.length));
+            _setupInfiniteScroll();
           });
       } else {
         const filtered = [...GAMES].sort((a, b) => (b.trending ? 1 : 0) - (a.trending ? 1 : 0));
         gridTitle.innerHTML = `<span>🎮</span> ALL GAMES (${filtered.length})`;
-        filtered.forEach((game, index) => {
-          let heroClass = '';
-          if (index === 0) heroClass = 'hero';
-          else if (index === 7) heroClass = 'featured-tall';
-          else if (index === 14) heroClass = 'featured-wide';
-          else if (index === 22) heroClass = 'featured-tall';
-          else if (index === 30) heroClass = 'featured-wide';
-          grid.appendChild(createGameCard(game, heroClass, false));
-        });
+        _renderedList = filtered;
+        _renderBatch(Math.min(BATCH_SIZE, filtered.length));
+        _setupInfiniteScroll();
       }
     }
 
