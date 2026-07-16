@@ -207,6 +207,28 @@
     let activeCategory = 'all'; // 'all', 'favorites', or category name
 
     // ═══════════════════════════════════════════════════════════════
+    //  LAZY IMAGE OBSERVER — loads thumbnails only near viewport
+    // ═══════════════════════════════════════════════════════════════
+    const _imgObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const img = entry.target;
+        const src = img.dataset.realSrc;
+        if (!src) return;
+        const loader = new Image();
+        loader.onload = function() {
+          img.src = src;
+          img.style.opacity = '1';
+        };
+        loader.onerror = function() {
+          img.style.opacity = '0.4';
+        };
+        loader.src = src;
+        _imgObserver.unobserve(img);
+      });
+    }, { rootMargin: '400px' });
+
+    // ═══════════════════════════════════════════════════════════════
     //  CATEGORIES EXTRACT
     // ═══════════════════════════════════════════════════════════════
     const categories = ['all', 'trending', 'favorites', ...new Set(GAMES.map(g => g.category))];
@@ -282,19 +304,12 @@
 
       a.innerHTML = imgHtml + labelHtml + favHtml;
 
-      // Lazy load the real image
+      // Real lazy loading — IntersectionObserver only loads when near viewport
       const img = a.querySelector('img');
-      const realSrc = img.dataset.src;
-      if (realSrc) {
-        const preload = new Image();
-        preload.onload = function() {
-          img.src = realSrc;
-          img.style.opacity = '1';
-        };
-        preload.onerror = function() {
-          img.style.opacity = '0.4';
-        };
-        preload.src = realSrc;
+      if (img && img.dataset.src) {
+        img.dataset.realSrc = img.dataset.src;
+        img.removeAttribute('data-src');
+        if (_imgObserver) _imgObserver.observe(img);
       }
 
       if (!isDrawer) {
