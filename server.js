@@ -41,8 +41,8 @@ const MIME = {
 //  SIMPLE LRU CACHE — speeds up repeated proxy requests
 // ═══════════════════════════════════════════════════════════════
 const proxyCache = new Map();
-const CACHE_MAX = 200;
-const CACHE_TTL = 60 * 1000; // 60 seconds
+const CACHE_MAX = 5000;
+const CACHE_TTL = 60 * 1000; // 60 seconds for proxy, /thumb uses 3 days
 
 function cacheGet(key) {
   const entry = proxyCache.get(key);
@@ -325,6 +325,49 @@ function stripFrameBlocking(headers) {
 // ═══════════════════════════════════════════════════════════════
 const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
+
+  // ── /thumb?url=<url> — Thumbnail proxy with long cache ──────
+  if (parsedUrl.pathname === '/thumb') {
+    const targetUrl = parsedUrl.query.url;
+    if (!targetUrl) {
+      res.writeHead(400, { 'Content-Type': 'text/plain' });
+      res.end('Missing url parameter');
+      return;
+    }
+
+    const cacheKey = 'thumb:' + targetUrl;
+    const cached = proxyCache.get(cacheKey);
+    if (cached && (Date.now() - cached.ts < 259200000)) {
+      res.writeHead(200, {
+        'Content-Type': cached.headers['content-type'] || 'image/jpeg',
+        'Cache-Control': 'public, max-age=259200, immutable',
+        'Access-Control-Allow-Origin': '*',
+        'X-Cache': 'HIT',
+      });
+      res.end(cached.body);
+      return;
+    }
+
+    try {
+      const result = await fetchUrl(targetUrl);
+      proxyCache.set(cacheKey, { statusCode: result.statusCode, headers: result.headers, body: result.body, ts: Date.now() });
+      if (proxyCache.size > 5000) {
+        const oldest = proxyCache.keys().next().value;
+        proxyCache.delete(oldest);
+      }
+      res.writeHead(200, {
+        'Content-Type': result.headers['content-type'] || 'image/jpeg',
+        'Cache-Control': 'public, max-age=259200, immutable',
+        'Access-Control-Allow-Origin': '*',
+        'X-Cache': 'MISS',
+      });
+      res.end(result.body);
+    } catch (err) {
+      res.writeHead(502, { 'Content-Type': 'text/plain' });
+      res.end('Thumb error');
+    }
+    return;
+  }
 
   // ── /proxy?url=<url> — Simple proxy (cached) ────────────────
   if (parsedUrl.pathname === '/proxy') {
