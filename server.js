@@ -172,14 +172,14 @@ function rewriteHtml(html, baseUrl) {
 
   // 1) CSP meta tag — restrict what the game iframe can load
   const cspMeta = '<meta http-equiv="Content-Security-Policy" '
-    + 'content="default-src \'self\' https: data: blob: \'unsafe-inline\' \'unsafe-eval\' '
-    + 'connect-src \'self\' https: data: blob: '
-    + 'frame-src https: data: blob: '
-    + 'img-src \'self\' https: data: blob: '
-    + 'style-src \'self\' https: data: \'unsafe-inline\' '
-    + 'font-src \'self\' https: data: '
-    + 'media-src \'self\' https: data: blob: '
-    + 'worker-src \'self\' https: data: blob: '
+    + 'content="default-src \'self\' https: data: blob: \'unsafe-inline\' \'unsafe-eval\'; '
+    + 'connect-src \'self\' https: data: blob:; '
+    + 'frame-src https: data: blob:; '
+    + 'img-src \'self\' https: data: blob:; '
+    + 'style-src \'self\' https: data: \'unsafe-inline\'; '
+    + 'font-src \'self\' https: data:; '
+    + 'media-src \'self\' https: data: blob:; '
+    + 'worker-src \'self\' https: data: blob:; '
     + 'script-src \'self\' https: data: blob: \'unsafe-inline\' \'unsafe-eval\';">';
 
   // 2) SDK STUB — pre-inject fake globals BEFORE any script loads
@@ -220,7 +220,7 @@ function rewriteHtml(html, baseUrl) {
     + 'window.adsbygoogle=window.adsbygoogle||[];'
     + '})()</script>';
 
-  // 3) COMPREHENSIVE AD DOMAIN BLOCKLIST
+  // 3) COMPREHENSIVE AD DOMAIN BLOCKLIST — only blocks SDK/ad initialization, NOT proxied resources
   const adDomainBlocker = '<script>'
     + '(function(){'
     + 'var AD=new RegExp('
@@ -229,87 +229,34 @@ function rewriteHtml(html, baseUrl) {
     + '"api\\\\.gamemonetize\\\\.com",'
     + '"gamemonetize\\\\.com/sdk",'
     + '"cdn\\\\.gamemonetize\\\\.com.*sdk",'
-    // Google IMA SDK (video ads)
-    + '"imasdk\\\\.googleapis\\\\.com",'
-    + '"pubads\\\\.g\\\\.doubleclick\\\\.net/gampad",'
-    + '"googleads\\\\.g\\\\.doubleclick\\\\.net",'
-    // Google ad networks
-    + '"pagead2\\\\.googlesyndication\\\\.com",'
-    + '"adservice\\\\.google\\\\.com",'
-    + '"googlesyndication\\\\.com",'
-    + '"googleadservices\\\\.com",'
-    + '"doubleclick\\\\.net",'
+    // Ad networks (only SDK init scripts, not proxied resources)
+    + '"pagead2\\\\.googlesyndication\\\\.com/pagead",'
+    + '"adservice\\\\.google\\\\.com/ads",'
     + '"google\\\\.com/pagead",'
     + '"google\\\\.com/js/gcm",'
-    // Programmatic ad exchanges
-    + '"adnxs\\\\.com",'
-    + '"casalemedia\\\\.com",'
-    + '"pubmatic\\\\.com",'
-    + '"rubiconproject\\\\.com",'
-    + '"openx\\\\.net",'
-    + '"spotx\\\\.tv",'
-    + '"criteo\\\\.com",'
-    + '"criteo\\\\.net",'
-    // Video ad platforms
-    + '"taboola\\\\.com",'
-    + '"outbrain\\\\.com",'
-    + '"revcontent\\\\.com",'
-    + '"playwire\\\\.com",'
-    + '"videojj\\\\.com",'
-    + '"vindicosuite\\\\.com",'
-    // Pop/redirect ad networks
-    + '"adskeeper\\\\.com",'
-    + '"propellerads\\\\.com",'
-    + '"monetag\\\\.com",'
-    + '"adsterra\\\\.com",'
-    + '"adfox\\\\.ru",'
-    + '"exoclick\\\\.com",'
-    + '"clickadu\\\\.com",'
-    + '"popcash\\\\.net",'
-    + '"popads\\\\.net",'
-    + '"hilltopads\\\\.com",'
-    + '"los coquine\\\\.com",'
-    + '"juicyads\\\\.com",'
-    // Crypto miners / resource abuse
-    + '"coinhive\\\\.com",'
-    + '"coin-hive\\\\.com",'
-    + '"cryptoloot\\\\.pro",'
-    + '"crypto-loot\\\\.com",'
-    + '"jsecoin\\\\.com",'
-    + '"authedmine\\\\.com",'
-    // Analytics (privacy)
-    + '"google-analytics\\\\.com",'
-    + '"googletagmanager\\\\.com",'
-    + '"facebook\\\\.net.*fbevents",'
-    + '"hotjar\\\\.com",'
-    + '"mouseflow\\\\.com",'
-    + '"crazyegg\\\\.com",'
-    + '"heap\\\\.io",'
     // Anti-adblock / detection
     + '"fuckadblock",'
     + '"blockadblock",'
     + '"adsafeprotected\\\\.com",'
-    + '"adalyzer\\\\.com",'
     + '"prebid\\\\.org",'
-    + '"prebid.*\\\\.js",'
     + '"gtag",'
     + '"ga\\\\.js",'
     + '"analytics\\\\.js"'
     + '].join("|")+)'
     + ';'
-    // Intercept fetch
+    // Intercept fetch — skip proxied URLs and iframes
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r&&r.url?""):'
     + '  (r instanceof Request?r.url:"");'
-    + '  if(u&&AD.test(u)){return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));}'
+    + '  if(u&&u.indexOf("/proxy?url=")===-1&&u.indexOf("/play?url=")===-1&&AD.test(u)){return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));}'
     + '  return OF.apply(this,arguments);'
     + '};'
-    // Intercept XHR
+    // Intercept XHR — skip proxied URLs
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OS=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
-    + '  this._blocked=!!(u&&AD.test(u));'
+    + '  this._blocked=!!(u&&u.indexOf("/proxy?url=")===-1&&u.indexOf("/play?url=")===-1&&AD.test(u));'
     + '  if(this._blocked)return OO.call(this,m,"about:blank");'
     + '  return OO.apply(this,arguments);'
     + '};'
@@ -317,7 +264,7 @@ function rewriteHtml(html, baseUrl) {
     + '  if(this._blocked)return;'
     + '  return OS.apply(this,arguments);'
     + '};'
-    // Intercept createElement for scripts
+    // Intercept createElement for scripts — block SDK scripts only
     + 'var OC=Document.prototype.createElement;'
     + 'Document.prototype.createElement=function(t){'
     + '  var el=OC.call(this,t);'
@@ -336,14 +283,12 @@ function rewriteHtml(html, baseUrl) {
     + '  }'
     + '  return el;'
     + '};'
-    // Intercept appendChild for script elements
+    // Intercept appendChild for blocked script elements
     + 'var OA=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
     + '  if(n&&n.tagName==="SCRIPT"&&n._adBlocked)return n;'
     + '  return OA.apply(this,arguments);'
     + '};'
-    // Stub ad-related globals that might be checked
-    + 'Object.defineProperty(window,"__defined",{get:function(){return false;}});'
     + '})()</script>';
 
   // 4) CSS AD HIDERS — comprehensive selectors from EasyList + GameMonetize-specific
