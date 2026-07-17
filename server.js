@@ -452,7 +452,7 @@ const server = http.createServer(async (req, res) => {
         const { supabase } = require('./supabase-config');
 
         // Read existing vote
-        const { data: existingRows, error: readErr } = await supabase.from('votes')
+        const { data: existingRows } = await supabase.from('votes')
           .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = null;
@@ -461,7 +461,6 @@ const server = http.createServer(async (req, res) => {
         }
 
         let finalVote = null;
-        let debug = { oldVote, rowCount: existingRows ? existingRows.length : 0, readErr: readErr ? readErr.message : null };
 
         if (vote === oldVote) {
           // Toggle off — delete the vote row
@@ -503,7 +502,7 @@ const server = http.createServer(async (req, res) => {
         await supabase.from('games').update({ likes, dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote, debug }));
+        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
