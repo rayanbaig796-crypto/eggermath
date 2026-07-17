@@ -455,18 +455,7 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabaseAdmin } = require('./supabase-config');
 
-        // Step 1: Delete any existing vote for this user+game
-        await supabaseAdmin.from('votes').delete()
-          .eq('game_id', gameId).eq('fingerprint', fingerprint);
-
-        // Step 2: Check if we toggled off (same vote) or switched/new
-        // Re-read to check what was there before delete — but since we just deleted,
-        // we need to track whether there WAS a vote. Use a simpler approach:
-        // If the vote we're casting existed before → it was a toggle-off (don't re-insert)
-        // Problem: we already deleted. So instead, let's use a different approach.
-        // Track old vote BEFORE deleting.
-
-        // Actually, let's redo: read first, then act
+        // Step 1: Read existing vote first
         const { data: existingRows, error: selErr } = await supabaseAdmin.from('votes')
           .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
