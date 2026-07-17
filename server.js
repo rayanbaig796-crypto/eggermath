@@ -164,23 +164,6 @@ function rewriteHtml(html, baseUrl) {
     + '  }'
     + '  return el;'
     + '};'
-    // Image constructor interceptor — rewrite image src through proxy
-    + 'var OrigImage=window.Image;'
-    + 'window.Image=function(){'
-    + '  var img=new OrigImage.apply(this,arguments);'
-    + '  try{'
-    + '    var origSrc=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
-    + '    if(origSrc&&origSrc.set){'
-    + '      Object.defineProperty(img,"src",{'
-    + '        get:function(){return origSrc.get.call(this);},'
-    + '        set:function(v){origSrc.set.call(this,toProxy(v));},'
-    + '        configurable:true'
-    + '      });'
-    + '    }'
-    + '  }catch(e){}'
-    + '  return img;'
-    + '};'
-    + 'window.Image.prototype=OrigImage.prototype;'
     + '})()</script>';
 
   // ═══════════════════════════════════════════════════════════
@@ -426,7 +409,7 @@ function rewriteHtml(html, baseUrl) {
     + '})()</script>';
 
   const baseTag = '<base href="' + baseUrl + '">';
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
 
   // Strip GameMonetize SDK script tags from source HTML
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
@@ -468,6 +451,9 @@ function rewriteHtml(html, baseUrl) {
   for (let i = 0; i < protectedScripts.length; i++) {
     html = html.replace('\x00SCRIPT_' + i + '\x00', protectedScripts[i]);
   }
+
+  // Insert <base> tag AFTER URL rewriting so it doesn't get rewritten itself
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag);
 
   return html;
 }
