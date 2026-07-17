@@ -242,7 +242,7 @@ function rewriteHtml(html, baseUrl) {
     + '"gtag",'
     + '"ga\\\\.js",'
     + '"analytics\\\\.js"'
-    + '].join("|")+)'
+    + '].join("|"))'
     + ';'
     // Intercept fetch — skip proxied URLs and iframes
     + 'var OF=window.fetch;'
