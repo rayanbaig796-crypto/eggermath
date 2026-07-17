@@ -449,49 +449,38 @@ const server = http.createServer(async (req, res) => {
           res.end(JSON.stringify({ error: 'Missing gameId, fingerprint, or invalid vote' }));
           return;
         }
-        const { supabaseAdmin } = require('./supabase-config');
+        const { supabase } = require('./supabase-config');
 
         // Read existing vote
-        const { data: existingRows } = await supabaseAdmin.from('votes')
+        const { data: existingRows } = await supabase.from('votes')
           .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = null;
         if (existingRows && existingRows.length > 0) {
           oldVote = existingRows[0].vote;
-          await supabaseAdmin.from('votes').delete()
+          await supabase.from('votes').delete()
             .eq('game_id', gameId).eq('fingerprint', fingerprint);
         }
 
         let finalVote = null;
-        let debug = {};
 
         if (vote === oldVote) {
+          // Toggle off — already deleted above
           finalVote = null;
-          debug.action = 'toggle_off';
         } else {
-          debug.action = 'insert_vote';
-          // Try insert
-          const insResult = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-          debug.insertError = insResult.error ? insResult.error.message : null;
-          debug.insertCode = insResult.error ? insResult.error.code : null;
-          
-          if (insResult.error && insResult.error.code === '23503') {
-            // FK violation — ensure game exists
-            debug.action = 'create_game_then_insert';
-            const gameIns = await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
-            debug.gameInsertError = gameIns.error ? gameIns.error.message : null;
-            
-            const retry = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-            debug.retryError = retry.error ? retry.error.message : null;
+          // Insert new vote
+          const { error: insErr } = await supabase.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          if (insErr) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: insErr.message, code: insErr.code }));
+            return;
           }
           finalVote = vote;
         }
 
-        // Recount
-        const { data: allVotes, error: countErr } = await supabaseAdmin.from('votes')
+        // Recount from votes table
+        const { data: allVotes } = await supabase.from('votes')
           .select('vote').eq('game_id', gameId);
-        debug.countError = countErr ? countErr.message : null;
-        debug.voteCount = allVotes ? allVotes.length : 0;
 
         let likes = 0, dislikes = 0;
         if (allVotes) {
@@ -501,10 +490,11 @@ const server = http.createServer(async (req, res) => {
           }
         }
 
-        await supabaseAdmin.from('games').update({ likes, dislikes }).eq('id', gameId).then(() => {}).catch(e => { debug.updateErr = e.message; });
+        // Update game counts
+        await supabase.from('games').update({ likes, dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote, debug }));
+        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
@@ -577,8 +567,8 @@ const server = http.createServer(async (req, res) => {
           res.end(JSON.stringify({ error: 'Missing gameId or fingerprint' }));
           return;
         }
-        const { supabaseAdmin } = require('./supabase-config');
-        await supabaseAdmin.from('favorites').upsert({ game_id: gameId, fingerprint }, { onConflict: 'game_id,fingerprint' });
+        const { supabase } = require('./supabase-config');
+        await supabase.from('favorites').upsert({ game_id: gameId, fingerprint }, { onConflict: 'game_id,fingerprint' });
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
         res.end(JSON.stringify({ ok: true }));
       } catch (err) {
@@ -600,8 +590,8 @@ const server = http.createServer(async (req, res) => {
           res.end(JSON.stringify({ error: 'Missing gameId or fingerprint' }));
           return;
         }
-        const { supabaseAdmin } = require('./supabase-config');
-        await supabaseAdmin.from('favorites').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
+        const { supabase } = require('./supabase-config');
+        await supabase.from('favorites').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
         res.end(JSON.stringify({ ok: true }));
       } catch (err) {
