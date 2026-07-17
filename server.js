@@ -164,6 +164,15 @@ function rewriteHtml(html, baseUrl) {
     + '  }'
     + '  return el;'
     + '};'
+    // Image src interceptor — rewrite image URLs through proxy
+    + 'var origImgSrc=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
+    + 'if(origImgSrc&&origImgSrc.set){'
+    + '  Object.defineProperty(HTMLImageElement.prototype,"src",{'
+    + '    get:function(){return origImgSrc.get.call(this);},'
+    + '    set:function(v){origImgSrc.set.call(this,toProxy(v));},'
+    + '    configurable:true'
+    + '  });'
+    + '}'
     + '})()</script>';
 
   // ═══════════════════════════════════════════════════════════
