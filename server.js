@@ -119,11 +119,12 @@ function rewriteHtml(html, baseUrl) {
   const origin = parsed.origin;
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
 
+  var ABS = 'https://' + parsed.host;
   function resolveUrl(href) {
     if (!href || href.startsWith('data:') || href.startsWith('blob:') || href.startsWith('javascript:')) return href;
     if (href.startsWith('/proxy?url=')) return href;
-    if (href.startsWith('http://') || href.startsWith('https://')) return '/proxy?url=' + encodeURIComponent(href);
-    try { return '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
+    if (href.startsWith('http://') || href.startsWith('https://')) return ABS + '/proxy?url=' + encodeURIComponent(href);
+    try { return ABS + '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
     catch(e) { return href; }
   }
 
@@ -135,6 +136,9 @@ function rewriteHtml(html, baseUrl) {
   html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+
+  // ── Strip all inline SDK-init scripts that call gamemonetize SDK ──
+  html = html.replace(/<script[^>]*>[^<]*(?:gamemonetize-sdk|parentNode\.insertBefore)[^<]*<\/script>/gi, '');
 
   // ── Strip fuckAdBlock detection scripts — NOT crossing script boundaries ──
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*fuckAdBlock(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
@@ -158,7 +162,7 @@ function rewriteHtml(html, baseUrl) {
     return match;
   });
 
-  // ── Rewrite resource URLs in HTML tags ──
+  // ── Rewrite resource URLs in HTML tags (ABSOLUTE proxy URLs) ──
   html = html.replace(/((?:src|href|poster|data-src|data-background|background))=(["'])([^"']*?)\2/gi, function(match, attr, q, val) {
     if (val.startsWith('__SCRIPT_') || val.startsWith('data:') || val.startsWith('blob:') || val.startsWith('javascript:')) return match;
     if (val.startsWith('/proxy?url=')) return match;
@@ -170,18 +174,38 @@ function rewriteHtml(html, baseUrl) {
     return scriptBodies[parseInt(idx)] || '';
   });
 
+  // ── Inject <base> tag for dynamic scripts (document.write, createElement) ──
+  var baseTag = '<base href="' + baseDir + '">';
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag);
+
   // ── AD BLOCKER — single unified script ──
-  const adBlockerScript = '<script>window.__GAME_BASE__="' + baseDir + '";</script><script>'
+  var adBlockerScript = '<script>'
     + '(function(){'
-    + 'var BASE=window.__GAME_BASE__||"";'
-    + 'function proxy(u){'
-    + '  if(!u||typeof u!=="string")return u;'
-    + '  if(u.indexOf("data:")==0||u.indexOf("blob:")==0||u.indexOf("javascript:")==0||u.indexOf("about:")==0)return u;'
-    + '  if(u.indexOf("/proxy?url=")==0||u.indexOf("/play?url=")==0)return u;'
-    + '  if(u.indexOf("http://")==0||u.indexOf("https://")==0)return "/proxy?url="+encodeURIComponent(u);'
-    + '  if(BASE&&u.indexOf("/")!==0)return "/proxy?url="+encodeURIComponent(BASE+u);'
-    + '  return u;'
-    + '}'
+
+    // SDK stubs — must come first before any game code runs
+    + 'window.sdk={showBanner:function(){},'
+    + 'showInterstitial:function(){},'
+    + 'showRewardedVideo:function(cb){if(cb)cb(false);},'
+    + 'addEventListener:function(){},removeEventListener:function(){},'
+    + 'gameData:{},isReady:false};'
+    + 'window.SDK_OPTIONS={gameId:"stub",onEvent:function(){}};'
+    + 'window.idhbgd=window.sdk;window.gdsdk=window.sdk;'
+    + 'window.google={ima:{AdsRequest:function(){},'
+    + 'AdsManager:function(){this.init=function(){};this.start=function(){};'
+    + 'this.stop=function(){};this.destroy=function(){};'
+    + 'this.addEventListener=function(){};this.resize=function(){};'
+    + 'this.getAdProgressInfo=function(){return{duration:0,currentTime:0};}},'
+    + 'AdsManagerLoadedEvent:function(){},'
+    + 'AdDisplayContainer:function(){this.initialize=function(){};},'
+    + 'ImaSdkSettings:function(){this.setVpaidMode=function(){};'
+    + 'this.setPlayerType=function(){};this.setPlayerVersion=function(){};},'
+    + 'SdkAdTechErrorEvent:function(){},AdEvent:function(){},AdErrorEvent:function(){}};'
+    + 'window.pbjs=window.pbjs||{que:[],cmd:[],push:function(f){f();}};'
+    + 'window.adsbygoogle=[];window.__gads=undefined;window.google_ads=[];'
+    + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
+    + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
+
+    // Ad domain regex
     + 'var AD=new RegExp(['
     + '"api\\.gamemonetize\\.com",'
     + '"gamemonetize\\.com/sdk",'
@@ -224,46 +248,19 @@ function rewriteHtml(html, baseUrl) {
     + '"analytics\\.js"'
     + '].join("|"));'
 
-    // SDK stubs
-    + 'window.sdk={showBanner:function(){},'
-    + 'showInterstitial:function(){},'
-    + 'showRewardedVideo:function(cb){if(cb)cb(false);},'
-    + 'addEventListener:function(){},removeEventListener:function(){},'
-    + 'gameData:{},isReady:false};'
-    + 'window.SDK_OPTIONS={gameId:"stub",onEvent:function(){}};'
-    + 'window.idhbgd=window.sdk;window.gdsdk=window.sdk;'
-    + 'window.google={ima:{AdsRequest:function(){},'
-    + 'AdsManager:function(){this.init=function(){};this.start=function(){};'
-    + 'this.stop=function(){};this.destroy=function(){};'
-    + 'this.addEventListener=function(){};this.resize=function(){};'
-    + 'this.getAdProgressInfo=function(){return{duration:0,currentTime:0};}},'
-    + 'AdsManagerLoadedEvent:function(){},'
-    + 'AdDisplayContainer:function(){this.initialize=function(){};},'
-    + 'ImaSdkSettings:function(){this.setVpaidMode=function(){};'
-    + 'this.setPlayerType=function(){};this.setPlayerVersion=function(){};},'
-    + 'SdkAdTechErrorEvent:function(){},AdEvent:function(){},AdErrorEvent:function(){}};'
-    + 'window.pbjs=window.pbjs||{que:[],cmd:[],push:function(f){f();}};'
-    + 'window.adsbygoogle=[];window.__gads=undefined;window.google_ads=[];'
-    + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
-    + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
-
-    // Script src interception — block ad domains AND proxy relative URLs
+    // Script src interception — block ad domains only
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
-    + 'set:function(v){if(v&&AD.test(String(v)))return;v=proxy(v);return OSD.set.call(this,v);},'
+    + 'set:function(v){if(v&&AD.test(String(v)))return;return OSD.set.call(this,v);},'
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute interception — proxy relative URLs + block ads
+    // setAttribute interception — block ad script src only
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
-    + '  if(n==="src"&&typeof v==="string"){'
-    + '    var t=this.tagName;'
-    + '    if(t==="SCRIPT"){'
-    + '      if(AD.test(v))return;'
-    + '      v=proxy(v);'
-    + '    }'
+    + '  if(n==="src"&&typeof v==="string"&&this.tagName==="SCRIPT"){'
+    + '    if(AD.test(v))return;'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
@@ -288,7 +285,7 @@ function rewriteHtml(html, baseUrl) {
     + '  return OIB.apply(this,arguments);'
     + '};'
 
-    // Fetch interception — block ad domains + proxy game resources
+    // Fetch interception — block ad domains only
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r&&r.url?""):'
@@ -296,19 +293,15 @@ function rewriteHtml(html, baseUrl) {
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
-    + '  if(typeof r==="string"&&r.indexOf("/proxy?url=")===-1&&r.indexOf("http")!==0){'
-    + '    r=proxy(r);'
-    + '  }'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR interception — block ad domains + proxy game resources
+    // XHR interception — block ad domains only
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OS=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
     + '  this._ab=!!(u&&AD.test(u));'
     + '  if(this._ab)return OO.call(this,m,"about:blank");'
-    + '  if(u&&typeof u==="string")u=proxy(u);'
     + '  return OO.apply(this,arguments);'
     + '};'
     + 'XMLHttpRequest.prototype.send=function(d){'
@@ -321,6 +314,18 @@ function rewriteHtml(html, baseUrl) {
     + 'window.open=function(u,n,f){'
     + '  if(u&&AD.test(String(u)))return null;'
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
+    + '};'
+
+    // document.write interception — strip ad-related written content
+    + 'var ODW=document.write;'
+    + 'document.write=function(h){'
+    + '  if(typeof h==="string"&&AD.test(h))return;'
+    + '  return ODW.call(this,h);'
+    + '};'
+    + 'var ODWI=document.writeln;'
+    + 'document.writeln=function(h){'
+    + '  if(typeof h==="string"&&AD.test(h))return;'
+    + '  return ODWI.call(this,h);'
     + '};'
 
     // CSS ad hiders
@@ -348,7 +353,7 @@ function rewriteHtml(html, baseUrl) {
     + 'iframe[src*=\\"adskeeper\\"],iframe[src*=\\"propellerads\\"],'
     + 'iframe[src*=\\"monetag\\"],iframe[src*=\\"adsterra\\"],'
     + 'iframe[src*=\\"adfox\\"],iframe[src*=\\"imasdk\\"],'
-    + 'script[src*=\\"gamemonetize\\"],script[src*=\\"imasdk\\"],'
+    + 'script[src*=\\"imasdk\\"],'
     + 'script[src*=\\"showBanner\\"],script[src*=\\"pubads.g.doubleclick\\"],'
     + 'script[src*=\\"pagead2.googlesyndication\\"],'
     + 'div[style*\\"z-index: 9999\\"],div[style*\\"z-index:9999\\"],'
@@ -361,14 +366,14 @@ function rewriteHtml(html, baseUrl) {
     + 'overflow:hidden!important;margin:0!important;padding:0!important;}"'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
-    // MutationObserver
+    // MutationObserver — remove ad elements as they appear
     + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
     + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|'
     + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
     + 'rewarded[-_]?ad|sponsor|promo[-_]?banner|adfox|adskeeper|propellerads|'
     + 'monetag|adsterra|ad[-_]?banner|ad[-_]?slot|ad[-_]?unit|ad[-_]?modal|'
-    + 'gmasdk|gamemonetize[-_]?sdk|midroll|pre[-_]?roll|poki[-_]?ad/i;'
-    + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|gamemonetize.*sdk|'
+    + 'gmasdk|midroll|pre[-_]?roll|poki[-_]?ad/i;'
+    + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|'
     + 'adskeeper|propellerads|monetag|adsterra|adfox|exoclick|prebid|'
     + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp/i;'
     + 'function bad(el){'
@@ -414,38 +419,10 @@ function rewriteHtml(html, baseUrl) {
     + 'setInterval(sweep,1000);'
     + 'window.addEventListener("load",sweep);'
 
-    // MutationObserver for dynamically created scripts — proxy their src
-    + 'var scriptObs=new MutationObserver(function(muts){'
-    + '  for(var i=0;i<muts.length;i++){'
-    + '    var added=muts[i].addedNodes;'
-    + '    for(var j=0;j<added.length;j++){'
-    + '      var el=added[j];'
-    + '      if(!el||el.nodeType!==1)continue;'
-    + '      if(el.tagName==="SCRIPT"){'
-    + '        var s=el.src||el.getAttribute("src")||"";'
-    + '        if(AD.test(s)){el.remove();continue;}'
-    + '        if(s&&s.indexOf("/proxy?url=")===-1&&s.indexOf("http")!==0&&s.indexOf("data:")!==0){'
-    + '          el.src=proxy(s);'
-    + '        }'
-    + '      }'
-    + '      var subs=el.querySelectorAll?el.querySelectorAll("script"):[];'
-    + '      for(var k=0;k<subs.length;k++){'
-    + '        var ss=subs[k].src||subs[k].getAttribute("src")||"";'
-    + '        if(AD.test(ss)){subs[k].remove();continue;}'
-    + '        if(ss&&ss.indexOf("/proxy?url=")===-1&&ss.indexOf("http")!==0&&ss.indexOf("data:")!==0){'
-    + '          subs[k].src=proxy(ss);'
-    + '        }'
-    + '      }'
-    + '    }'
-    + '  }'
-    + '});'
-    + 'if(document.body)scriptObs.observe(document.body,{childList:true,subtree:true});'
-    + 'else document.addEventListener("DOMContentLoaded",function(){scriptObs.observe(document.body,{childList:true,subtree:true});});'
-
     + '})()</script>';
 
-  // Inject ad blocker at start of <head> — NO <base> tag since we proxy all URLs
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + adBlockerScript);
+  // Inject ad blocker after <base> tag in <head>
+  html = html.replace(/<\/head>/i, adBlockerScript + '</head>');
 
   return html;
 }
@@ -453,12 +430,13 @@ function rewriteHtml(html, baseUrl) {
 function rewriteCss(css, baseUrl) {
   const parsed = new URL(baseUrl);
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
+  const ABS = 'https://' + parsed.host;
 
   function resolveUrl(href) {
     if (!href || href.startsWith('data:') || href.startsWith('blob:')) return href;
     if (href.startsWith('/proxy?url=')) return href;
-    if (href.startsWith('http://') || href.startsWith('https://')) return '/proxy?url=' + encodeURIComponent(href);
-    try { return '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
+    if (href.startsWith('http://') || href.startsWith('https://')) return ABS + '/proxy?url=' + encodeURIComponent(href);
+    try { return ABS + '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
     catch(e) { return href; }
   }
 
@@ -536,7 +514,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v2:' + targetUrl;
+    const cacheKey = 'play:v3:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
