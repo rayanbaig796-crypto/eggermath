@@ -326,49 +326,6 @@ function stripFrameBlocking(headers) {
 const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
 
-  // ── /thumb?url=<url> — Thumbnail proxy with long cache ──────
-  if (parsedUrl.pathname === '/thumb') {
-    const targetUrl = parsedUrl.query.url;
-    if (!targetUrl) {
-      res.writeHead(400, { 'Content-Type': 'text/plain' });
-      res.end('Missing url parameter');
-      return;
-    }
-
-    const cacheKey = 'thumb:' + targetUrl;
-    const cached = proxyCache.get(cacheKey);
-    if (cached && (Date.now() - cached.ts < 259200000)) {
-      res.writeHead(200, {
-        'Content-Type': cached.headers['content-type'] || 'image/jpeg',
-        'Cache-Control': 'public, max-age=259200, immutable',
-        'Access-Control-Allow-Origin': '*',
-        'X-Cache': 'HIT',
-      });
-      res.end(cached.body);
-      return;
-    }
-
-    try {
-      const result = await fetchUrl(targetUrl);
-      proxyCache.set(cacheKey, { statusCode: result.statusCode, headers: result.headers, body: result.body, ts: Date.now() });
-      if (proxyCache.size > 5000) {
-        const oldest = proxyCache.keys().next().value;
-        proxyCache.delete(oldest);
-      }
-      res.writeHead(200, {
-        'Content-Type': result.headers['content-type'] || 'image/jpeg',
-        'Cache-Control': 'public, max-age=259200, immutable',
-        'Access-Control-Allow-Origin': '*',
-        'X-Cache': 'MISS',
-      });
-      res.end(result.body);
-    } catch (err) {
-      res.writeHead(502, { 'Content-Type': 'text/plain' });
-      res.end('Thumb error');
-    }
-    return;
-  }
-
   // ── /proxy?url=<url> — Simple proxy (cached) ────────────────
   if (parsedUrl.pathname === '/proxy') {
     const targetUrl = parsedUrl.query.url;
@@ -464,8 +421,12 @@ const server = http.createServer(async (req, res) => {
     const gameId = votesMatch[1];
     const fingerprint = parsedUrl.query.fingerprint || '';
     try {
-      const { supabase } = require('./supabase-config');
-      const { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
+      const { supabase, supabaseAdmin } = require('./supabase-config');
+      let { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
+      if (!game) {
+        await supabaseAdmin.from('games').upsert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 }, { onConflict: 'id' });
+        game = { likes: 0, dislikes: 0 };
+      }
       let userVote = null;
       if (fingerprint) {
         const { data: vote } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint).single();
@@ -515,18 +476,17 @@ const server = http.createServer(async (req, res) => {
           else if (vote === 'dislike') dislikesDelta += 1;
         }
 
-        // Update game counts
-        const { data: game } = await supabaseAdmin.from('games').select('likes, dislikes').eq('id', gameId).single();
-        if (game) {
-          const newLikes = Math.max(0, (game.likes || 0) + likesDelta);
-          const newDislikes = Math.max(0, (game.dislikes || 0) + dislikesDelta);
-          await supabaseAdmin.from('games').update({ likes: newLikes, dislikes: newDislikes }).eq('id', gameId);
-          res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-          res.end(JSON.stringify({ likes: newLikes, dislikes: newDislikes, userVote: vote === oldVote ? null : vote }));
-        } else {
-          res.writeHead(404, { 'Content-Type': 'application/json' });
-          res.end(JSON.stringify({ error: 'Game not found' }));
+        // Auto-insert game if not in table
+        let { data: game } = await supabaseAdmin.from('games').select('likes, dislikes').eq('id', gameId).single();
+        if (!game) {
+          await supabaseAdmin.from('games').upsert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 }, { onConflict: 'id' });
+          game = { likes: 0, dislikes: 0 };
         }
+        const newLikes = Math.max(0, (game.likes || 0) + likesDelta);
+        const newDislikes = Math.max(0, (game.dislikes || 0) + dislikesDelta);
+        await supabaseAdmin.from('games').update({ likes: newLikes, dislikes: newDislikes }).eq('id', gameId);
+        res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+        res.end(JSON.stringify({ likes: newLikes, dislikes: newDislikes, userVote: vote === oldVote ? null : vote }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
