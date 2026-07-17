@@ -448,47 +448,66 @@ const server = http.createServer(async (req, res) => {
     req.on('end', async () => {
       try {
         const { gameId, vote, fingerprint } = JSON.parse(body);
-        if (!gameId || !fingerprint) {
+        if (!gameId || !fingerprint || !['like','dislike'].includes(vote)) {
           res.writeHead(400, { 'Content-Type': 'application/json' });
-          res.end(JSON.stringify({ error: 'Missing gameId or fingerprint' }));
+          res.end(JSON.stringify({ error: 'Missing gameId, fingerprint, or invalid vote' }));
           return;
         }
         const { supabaseAdmin } = require('./supabase-config');
 
-        // Get current vote — use .select() without .single() to avoid errors on 0 or multiple rows
-        const { data: existingRows } = await supabaseAdmin.from('votes')
-          .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
-        const existing = (existingRows && existingRows.length > 0) ? existingRows[0] : null;
+        // Step 1: Delete any existing vote for this user+game
+        await supabaseAdmin.from('votes').delete()
+          .eq('game_id', gameId).eq('fingerprint', fingerprint);
 
-        const oldVote = existing?.vote || null;
-        let likesDelta = 0, dislikesDelta = 0;
+        // Step 2: Check if we toggled off (same vote) or switched/new
+        // Re-read to check what was there before delete — but since we just deleted,
+        // we need to track whether there WAS a vote. Use a simpler approach:
+        // If the vote we're casting existed before → it was a toggle-off (don't re-insert)
+        // Problem: we already deleted. So instead, let's use a different approach.
+        // Track old vote BEFORE deleting.
+
+        // Actually, let's redo: read first, then act
+        const { data: existingRows, error: selErr } = await supabaseAdmin.from('votes')
+          .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
+
+        let oldVote = null;
+        if (!selErr && existingRows && existingRows.length > 0) {
+          oldVote = existingRows[0].vote;
+          // Delete all existing votes for this user+game
+          await supabaseAdmin.from('votes').delete()
+            .eq('game_id', gameId).eq('fingerprint', fingerprint);
+        }
+
+        let finalVote = null;
 
         if (vote === oldVote) {
-          // Same vote = remove it (toggle off)
-          await supabaseAdmin.from('votes').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
-          if (vote === 'like') likesDelta = -1;
-          if (vote === 'dislike') dislikesDelta = -1;
+          // Toggle off — don't insert anything
+          finalVote = null;
         } else {
-          // Delete any existing vote first, then insert fresh (avoids upsert constraint issues)
-          await supabaseAdmin.from('votes').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
+          // New vote or switch — insert
           await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-          if (oldVote === 'like') likesDelta -= 1;
-          else if (oldVote === 'dislike') dislikesDelta -= 1;
-          if (vote === 'like') likesDelta += 1;
-          else if (vote === 'dislike') dislikesDelta += 1;
+          finalVote = vote;
         }
 
-        // Auto-insert game if not in table
-        let { data: game } = await supabaseAdmin.from('games').select('likes, dislikes').eq('id', gameId).single();
-        if (!game) {
-          await supabaseAdmin.from('games').upsert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 }, { onConflict: 'id' });
-          game = { likes: 0, dislikes: 0 };
+        // Recount all votes from the votes table (always accurate)
+        const { data: allVotes } = await supabaseAdmin.from('votes')
+          .select('vote').eq('game_id', gameId);
+
+        let likes = 0, dislikes = 0;
+        if (allVotes) {
+          for (const v of allVotes) {
+            if (v.vote === 'like') likes++;
+            else if (v.vote === 'dislike') dislikes++;
+          }
         }
-        const newLikes = Math.max(0, (game.likes || 0) + likesDelta);
-        const newDislikes = Math.max(0, (game.dislikes || 0) + dislikesDelta);
-        await supabaseAdmin.from('games').update({ likes: newLikes, dislikes: newDislikes }).eq('id', gameId);
+
+        // Upsert game row with accurate counts
+        await supabaseAdmin.from('games').upsert({
+          id: gameId, title: gameId, category: 'Unknown', likes, dislikes
+        }, { onConflict: 'id' });
+
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-        res.end(JSON.stringify({ likes: newLikes, dislikes: newDislikes, userVote: vote === oldVote ? null : vote }));
+        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
