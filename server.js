@@ -463,35 +463,35 @@ const server = http.createServer(async (req, res) => {
         }
 
         let finalVote = null;
+        let debug = {};
 
         if (vote === oldVote) {
-          // Toggle off
           finalVote = null;
+          debug.action = 'toggle_off';
         } else {
-          // Insert new vote
-          let { error: insErr } = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-          if (insErr) {
-            if (insErr.code === '23503') {
-              // FK constraint — game doesn't exist yet, create it
-              await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
-              const retry = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-              if (retry.error) {
-                res.writeHead(500, {'Content-Type':'application/json'});
-                res.end(JSON.stringify({error: 'Vote insert failed: ' + retry.error.message}));
-                return;
-              }
-            } else {
-              res.writeHead(500, {'Content-Type':'application/json'});
-              res.end(JSON.stringify({error: 'Vote insert failed: ' + insErr.message, code: insErr.code}));
-              return;
-            }
+          debug.action = 'insert_vote';
+          // Try insert
+          const insResult = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          debug.insertError = insResult.error ? insResult.error.message : null;
+          debug.insertCode = insResult.error ? insResult.error.code : null;
+          
+          if (insResult.error && insResult.error.code === '23503') {
+            // FK violation — ensure game exists
+            debug.action = 'create_game_then_insert';
+            const gameIns = await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
+            debug.gameInsertError = gameIns.error ? gameIns.error.message : null;
+            
+            const retry = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+            debug.retryError = retry.error ? retry.error.message : null;
           }
           finalVote = vote;
         }
 
         // Recount
-        const { data: allVotes } = await supabaseAdmin.from('votes')
+        const { data: allVotes, error: countErr } = await supabaseAdmin.from('votes')
           .select('vote').eq('game_id', gameId);
+        debug.countError = countErr ? countErr.message : null;
+        debug.voteCount = allVotes ? allVotes.length : 0;
 
         let likes = 0, dislikes = 0;
         if (allVotes) {
@@ -501,11 +501,10 @@ const server = http.createServer(async (req, res) => {
           }
         }
 
-        // Update game counts (ignore errors if game doesn't exist)
-        await supabaseAdmin.from('games').update({ likes, dislikes }).eq('id', gameId);
+        await supabaseAdmin.from('games').update({ likes, dislikes }).eq('id', gameId).then(() => {}).catch(e => { debug.updateErr = e.message; });
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
+        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote, debug }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
