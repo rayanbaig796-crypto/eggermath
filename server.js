@@ -164,32 +164,30 @@ function rewriteHtml(html, baseUrl) {
     + '  }'
     + '  return el;'
     + '};'
-    // Image src interceptor — rewrite image URLs through proxy
-    + 'var origImgSrc=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
-    + 'if(origImgSrc&&origImgSrc.set){'
-    + '  Object.defineProperty(HTMLImageElement.prototype,"src",{'
-    + '    get:function(){return origImgSrc.get.call(this);},'
-    + '    set:function(v){origImgSrc.set.call(this,toProxy(v));},'
-    + '    configurable:true'
-    + '  });'
-    + '}'
+    // Image constructor interceptor — rewrite image src through proxy
+    + 'var OrigImage=window.Image;'
+    + 'window.Image=function(){'
+    + '  var img=new OrigImage.apply(this,arguments);'
+    + '  try{'
+    + '    var origSrc=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
+    + '    if(origSrc&&origSrc.set){'
+    + '      Object.defineProperty(img,"src",{'
+    + '        get:function(){return origSrc.get.call(this);},'
+    + '        set:function(v){origSrc.set.call(this,toProxy(v));},'
+    + '        configurable:true'
+    + '      });'
+    + '    }'
+    + '  }catch(e){}'
+    + '  return img;'
+    + '};'
+    + 'window.Image.prototype=OrigImage.prototype;'
     + '})()</script>';
 
   // ═══════════════════════════════════════════════════════════
   //  ADVANCED AD BLOCKER — based on uBlock Origin / AdGuard patterns
   // ═══════════════════════════════════════════════════════════
 
-  // 1) CSP meta tag — restrict what the game iframe can load
-  const cspMeta = '<meta http-equiv="Content-Security-Policy" '
-    + 'content="default-src \'self\' https: data: blob: \'unsafe-inline\' \'unsafe-eval\'; '
-    + 'connect-src \'self\' https: data: blob:; '
-    + 'frame-src https: data: blob:; '
-    + 'img-src \'self\' https: data: blob:; '
-    + 'style-src \'self\' https: data: \'unsafe-inline\'; '
-    + 'font-src \'self\' https: data:; '
-    + 'media-src \'self\' https: data: blob:; '
-    + 'worker-src \'self\' https: data: blob:; '
-    + 'script-src \'self\' https: data: blob: \'unsafe-inline\' \'unsafe-eval\';">';
+  // 1) CSP meta tag — deliberately omitted to avoid breaking game scripts
 
   // 2) SDK STUB — pre-inject fake globals BEFORE any script loads
   //    This prevents the GameMonetize SDK from initializing
@@ -428,7 +426,7 @@ function rewriteHtml(html, baseUrl) {
     + '})()</script>';
 
   const baseTag = '<base href="' + baseUrl + '">';
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + cspMeta + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
 
   // Strip GameMonetize SDK script tags from source HTML
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
