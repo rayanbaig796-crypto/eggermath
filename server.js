@@ -458,18 +458,28 @@ const server = http.createServer(async (req, res) => {
         let oldVote = null;
         if (existingRows && existingRows.length > 0) {
           oldVote = existingRows[0].vote;
-          await supabase.from('votes').delete()
-            .eq('game_id', gameId).eq('fingerprint', fingerprint);
         }
 
         let finalVote = null;
 
         if (vote === oldVote) {
-          // Toggle off — already deleted above
+          // Toggle off — set vote to null via upsert
+          const { error: insErr } = await supabase.from('votes').upsert(
+            { game_id: gameId, fingerprint, vote: null },
+            { onConflict: 'game_id,fingerprint' }
+          );
+          if (insErr) {
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: insErr.message, code: insErr.code }));
+            return;
+          }
           finalVote = null;
         } else {
-          // Insert new vote
-          const { error: insErr } = await supabase.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          // Upsert new/changed vote
+          const { error: insErr } = await supabase.from('votes').upsert(
+            { game_id: gameId, fingerprint, vote },
+            { onConflict: 'game_id,fingerprint' }
+          );
           if (insErr) {
             res.writeHead(500, { 'Content-Type': 'application/json' });
             res.end(JSON.stringify({ error: insErr.message, code: insErr.code }));
