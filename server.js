@@ -422,11 +422,13 @@ const server = http.createServer(async (req, res) => {
     const fingerprint = parsedUrl.query.fingerprint || '';
     try {
       const { supabase, supabaseAdmin } = require('./supabase-config');
-      let { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
-      if (!game) {
-        await supabaseAdmin.from('games').upsert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 }, { onConflict: 'id' });
-        game = { likes: 0, dislikes: 0 };
-      }
+
+      // Ensure game exists (FK constraint)
+      await supabaseAdmin.from('games').upsert({
+        id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0
+      }, { onConflict: 'id' });
+
+      const { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
       let userVote = null;
       if (fingerprint) {
         const { data: voteRows } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
@@ -455,14 +457,18 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabaseAdmin } = require('./supabase-config');
 
-        // Step 1: Read existing vote first
-        const { data: existingRows, error: selErr } = await supabaseAdmin.from('votes')
+        // Step 0: Ensure game exists in games table (FK constraint requires it)
+        await supabaseAdmin.from('games').upsert({
+          id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0
+        }, { onConflict: 'id' });
+
+        // Step 1: Read existing vote
+        const { data: existingRows } = await supabaseAdmin.from('votes')
           .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = null;
-        if (!selErr && existingRows && existingRows.length > 0) {
+        if (existingRows && existingRows.length > 0) {
           oldVote = existingRows[0].vote;
-          // Delete all existing votes for this user+game
           await supabaseAdmin.from('votes').delete()
             .eq('game_id', gameId).eq('fingerprint', fingerprint);
         }
@@ -470,11 +476,10 @@ const server = http.createServer(async (req, res) => {
         let finalVote = null;
 
         if (vote === oldVote) {
-          // Toggle off — don't insert anything
           finalVote = null;
         } else {
-          // New vote or switch — insert
-          await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          const { error: insErr } = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          if (insErr) { res.writeHead(500, {'Content-Type':'application/json'}); res.end(JSON.stringify({error: insErr.message})); return; }
           finalVote = vote;
         }
 
@@ -490,10 +495,7 @@ const server = http.createServer(async (req, res) => {
           }
         }
 
-        // Upsert game row with accurate counts
-        await supabaseAdmin.from('games').upsert({
-          id: gameId, title: gameId, category: 'Unknown', likes, dislikes
-        }, { onConflict: 'id' });
+        await supabaseAdmin.from('games').update({ likes, dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
         res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
