@@ -422,12 +422,6 @@ const server = http.createServer(async (req, res) => {
     const fingerprint = parsedUrl.query.fingerprint || '';
     try {
       const { supabase, supabaseAdmin } = require('./supabase-config');
-
-      // Ensure game exists (FK constraint)
-      await supabaseAdmin.from('games').upsert({
-        id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0
-      }, { onConflict: 'id' });
-
       const { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
       let userVote = null;
       if (fingerprint) {
@@ -457,12 +451,7 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabaseAdmin } = require('./supabase-config');
 
-        // Step 0: Ensure game exists in games table (FK constraint requires it)
-        await supabaseAdmin.from('games').upsert({
-          id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0
-        }, { onConflict: 'id' });
-
-        // Step 1: Read existing vote
+        // Read existing vote
         const { data: existingRows } = await supabaseAdmin.from('votes')
           .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
@@ -476,14 +465,20 @@ const server = http.createServer(async (req, res) => {
         let finalVote = null;
 
         if (vote === oldVote) {
+          // Toggle off
           finalVote = null;
         } else {
+          // Insert new vote — if FK fails, create game first
           const { error: insErr } = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-          if (insErr) { res.writeHead(500, {'Content-Type':'application/json'}); res.end(JSON.stringify({error: insErr.message})); return; }
+          if (insErr && insErr.code === '23503') {
+            // FK constraint — game doesn't exist yet, create it
+            await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
+            await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          }
           finalVote = vote;
         }
 
-        // Recount all votes from the votes table (always accurate)
+        // Recount
         const { data: allVotes } = await supabaseAdmin.from('votes')
           .select('vote').eq('game_id', gameId);
 
@@ -495,6 +490,7 @@ const server = http.createServer(async (req, res) => {
           }
         }
 
+        // Update game counts (ignore errors if game doesn't exist)
         await supabaseAdmin.from('games').update({ likes, dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
