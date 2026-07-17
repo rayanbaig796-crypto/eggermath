@@ -418,7 +418,8 @@ function rewriteHtml(html, baseUrl) {
     + 'window.addEventListener("load",sweep);'
     + '})()</script>';
 
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + cspMeta + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
+  const baseTag = '<base href="' + baseUrl + '">';
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + cspMeta + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
 
   // Strip GameMonetize SDK script tags from source HTML
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
