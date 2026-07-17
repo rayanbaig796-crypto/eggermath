@@ -89,12 +89,28 @@
 
     <!-- IFRAME BOX -->
     <div class="iframe-container" id="iframe-container">
+      <div id="play-overlay" style="position:absolute;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);cursor:pointer;border-radius:12px;">
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;margin:0 auto 16px;background:rgba(255,255,255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(8px);border:2px solid rgba(255,255,255,0.2);">
+            <svg viewBox="0 0 24 24" style="width:40px;height:40px;fill:white;margin-left:4px;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <div style="color:white;font-size:18px;font-weight:700;margin-bottom:6px;">Click to Play</div>
+          <div style="color:rgba(255,255,255,0.5);font-size:12px;">Game loads in a safe sandbox</div>
+        </div>
+      </div>
       <iframe
         id="game-iframe"
+        sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock allow-forms allow-presentation"
         allow="fullscreen; autoplay; pointer-lock; clipboard-write; keyboard"
         allowfullscreen
         title="Game"
+        style="pointer-events:none;"
       ></iframe>
+    </div>
+
+    <!-- AD NOTICE -->
+    <div style="text-align:center;padding:6px 0;font-size:11px;color:rgba(255,255,255,0.35);letter-spacing:0.02em;">
+      Ads shown by game provider — use an ad blocker for a cleaner experience
     </div>
 
     <!-- CONTROLS BAR -->
@@ -317,12 +333,19 @@
 
       // ─── LOAD IFRAME ────────────────────────────────────────────
       let embedUrl;
-      if (game.source === 'itch.io' || game.source === 'github' || game.source === 'gameflare' || game.source === 'gamemonetize') {
+      if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
       } else {
-        embedUrl = proxyUrl(game.embedUrl);
+        embedUrl = '/play?url=' + encodeURIComponent(game.embedUrl);
       }
       gameIframe.src = embedUrl;
+
+      // ─── PLAY OVERLAY — blocks accidental ad clicks ─────────────
+      var playOverlay = document.getElementById('play-overlay');
+      playOverlay.addEventListener('click', function() {
+        playOverlay.style.display = 'none';
+        gameIframe.style.pointerEvents = 'auto';
+      });
 
       // ─── LIKE / DISLIKE ────────────────────────────────────────
       let localLikes = 0;
