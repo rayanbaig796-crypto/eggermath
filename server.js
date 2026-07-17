@@ -133,15 +133,15 @@ function rewriteHtml(html, baseUrl) {
     // ── Ad + tracker + miner domain regex ──
     + 'var AD=new RegExp('
     + '['
-    + '"api\\\\.gamemonetize\\\\.com",'
-    + '"gamemonetize\\\\.com/sdk",'
-    + '"cdn\\\\.gamemonetize\\\\.com.*sdk",'
-    + '"pagead2\\\\.googlesyndication\\\\.com",'
-    + '"adservice\\\\.google\\\\.com",'
-    + '"google\\\\.com/pagead",'
-    + '"google\\\\.com/js/gcm",'
-    + '"doubleclick\\\\.net",'
-    + '"imasdk\\\\.googleapis\\\\.com",'
+    + '"api\\.gamemonetize\\.com",'
+    + '"gamemonetize\\.com/sdk",'
+    + '"cdn\\.gamemonetize\\.com.*sdk",'
+    + '"pagead2\\.googlesyndication\\.com",'
+    + '"adservice\\.google\\.com",'
+    + '"google\\.com/pagead",'
+    + '"google\\.com/js/gcm",'
+    + '"doubleclick\\.net",'
+    + '"imasdk\\.googleapis\\.com",'
     + '"adskeeper",'
     + '"propellerads",'
     + '"monetag",'
@@ -157,23 +157,22 @@ function rewriteHtml(html, baseUrl) {
     + '"popcash",'
     + '"popads",'
     + '"vitalityads",'
-    + '"adstığımız",'
     + '"fuckadblock",'
     + '"blockadblock",'
-    + '"adsafeprotected\\\\.com",'
-    + '"prebid\\\\.org",'
-    + '"coinhive\\\\.com",'
-    + '"coinhive\\\\.net",'
-    + '"cryptoloot\\\\.com",'
-    + '"cryptonoter\\\\.com",'
+    + '"adsafeprotected\\.com",'
+    + '"prebid\\.org",'
+    + '"coinhive\\.com",'
+    + '"coinhive\\.net",'
+    + '"cryptoloot\\.com",'
+    + '"cryptonoter\\.com",'
     + '"crypto-loot",'
-    + '"miner\\\\.start",'
-    + '"coinimp\\\\.com",'
-    + '"authedmine\\\\.com",'
+    + '"miner\\.start",'
+    + '"coinimp\\.com",'
+    + '"authedmine\\.com",'
     + '"webminepool",'
-    + '"gtag\\\\.js",'
-    + '"ga\\\\.js",'
-    + '"analytics\\\\.js"'
+    + '"gtag\\.js",'
+    + '"ga\\.js",'
+    + '"analytics\\.js"'
     + '].join("|"))'
     + ';'
 
@@ -213,23 +212,50 @@ function rewriteHtml(html, baseUrl) {
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
     // ── PROTOTYPE-LEVEL SRC PATCHING ──
-    // Intercepts ALL img/audio/script elements regardless of creation method
-    // (new Image(), createElement("img"), innerHTML, etc.)
+    // Intercepts img/audio/script src property AND setAttribute("src",...)
+    // Covers: new Image(), createElement("img"), innerHTML, setAttribute, etc.
     + 'function patchSrc(proto,rewriter,blockAd){'
     + '  var d=Object.getOwnPropertyDescriptor(proto,"src");'
     + '  if(!d||!d.set)return;'
-    + '  Object.defineProperty(proto,"src",{'
+    + '  try{Object.defineProperty(proto,"src",{'
     + '    get:function(){return d.get.call(this);},'
     + '    set:function(v){'
     + '      if(blockAd&&v&&AD.test(String(v)))return;'
     + '      d.set.call(this,rewriter(v));'
     + '    },'
     + '    configurable:true,enumerable:true'
-    + '  });'
+    + '  });}catch(e){}'
     + '}'
     + 'patchSrc(HTMLImageElement.prototype,R,false);'
     + 'patchSrc(HTMLAudioElement.prototype,R,false);'
     + 'patchSrc(HTMLScriptElement.prototype,R,true);'
+
+    // ── SETATTRIBUTE INTERCEPTION ──
+    // Catches setAttribute("src",...) which bypasses property setter
+    + 'var OSA=Element.prototype.setAttribute;'
+    + 'Element.prototype.setAttribute=function(n,v){'
+    + '  if(n==="src"&&typeof v==="string"){'
+    + '    var t=this.tagName;'
+    + '    if(t==="SCRIPT"){'
+    + '      if(AD.test(v))return;'
+    + '      v=R(v);'
+    + '    }else if(t==="IMG"||t==="AUDIO"){'
+    + '      v=R(v);'
+    + '    }'
+    + '  }'
+    + '  return OSA.call(this,n,v);'
+    + '};'
+
+    // ── APPENDCHILD INTERCEPTION ──
+    // Catches dynamically inserted ad scripts/iframes
+    + 'var OAC=Element.prototype.appendChild;'
+    + 'Element.prototype.appendChild=function(n){'
+    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '    var s=n.src||n.getAttribute("src")||"";'
+    + '    if(AD.test(s))return n;'
+    + '  }'
+    + '  return OAC.apply(this,arguments);'
+    + '};'
 
     // ── AUDIO CONSTRUCTOR — intercept new Audio("file.mp3") ──
     + 'var OrigAudio=window.Audio;'
@@ -776,7 +802,7 @@ const server = http.createServer(async (req, res) => {
     'Content-Type': mime,
     'Access-Control-Allow-Origin': '*',
     'Cache-Control': cacheControl,
-    ...(isHtml ? { 'Content-Security-Policy': "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; frame-src *; connect-src 'self' https:;", 'X-Frame-Options': 'SAMEORIGIN' } : {}),
+    ...(isHtml ? { 'X-Frame-Options': 'SAMEORIGIN' } : {}),
   }));
   fs.createReadStream(filePath).pipe(res);
 });
