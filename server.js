@@ -130,11 +130,11 @@ function rewriteHtml(html, baseUrl) {
   // ── Strip ALL CSP meta tags ──
   html = html.replace(/<meta[^>]*http-equiv=["']Content-Security-Policy["'][^>]*\/?>/gi, '');
 
-  // ── Strip SDK script tags ──
+  // ── Strip SDK script tags — ONLY ad SDK, NOT game scripts from html5.gamemonetize.co ──
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
   // ── Strip fuckAdBlock detection scripts ──
   html = html.replace(/<script[^>]*>[\s\S]*?fuckAdBlock[\s\S]*?<\/script>/gi, '');
