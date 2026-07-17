@@ -463,14 +463,12 @@ const server = http.createServer(async (req, res) => {
         let finalVote = null;
 
         if (vote === oldVote) {
-          // Toggle off — upsert with 'none' sentinel
-          const { error: insErr } = await supabase.from('votes').upsert(
-            { game_id: gameId, fingerprint, vote: 'none' },
-            { onConflict: 'game_id,fingerprint' }
-          );
-          if (insErr) {
+          // Toggle off — delete the vote row
+          const { error: delErr } = await supabase.from('votes').delete()
+            .eq('game_id', gameId).eq('fingerprint', fingerprint);
+          if (delErr) {
             res.writeHead(500, { 'Content-Type': 'application/json' });
-            res.end(JSON.stringify({ error: insErr.message, code: insErr.code }));
+            res.end(JSON.stringify({ error: delErr.message, code: delErr.code }));
             return;
           }
           finalVote = null;
