@@ -171,8 +171,17 @@ function rewriteHtml(html, baseUrl) {
   });
 
   // ── AD BLOCKER — single unified script ──
-  const adBlockerScript = '<script>'
+  const adBlockerScript = '<script>window.__GAME_BASE__="' + baseDir + '";</script><script>'
     + '(function(){'
+    + 'var BASE=window.__GAME_BASE__||"";'
+    + 'function proxy(u){'
+    + '  if(!u||typeof u!=="string")return u;'
+    + '  if(u.indexOf("data:")==0||u.indexOf("blob:")==0||u.indexOf("javascript:")==0||u.indexOf("about:")==0)return u;'
+    + '  if(u.indexOf("/proxy?url=")==0||u.indexOf("/play?url=")==0)return u;'
+    + '  if(u.indexOf("http://")==0||u.indexOf("https://")==0)return "/proxy?url="+encodeURIComponent(u);'
+    + '  if(BASE&&u.indexOf("/")!==0)return "/proxy?url="+encodeURIComponent(BASE+u);'
+    + '  return u;'
+    + '}'
     + 'var AD=new RegExp(['
     + '"api\\.gamemonetize\\.com",'
     + '"gamemonetize\\.com/sdk",'
@@ -238,25 +247,28 @@ function rewriteHtml(html, baseUrl) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // Script src interception
+    // Script src interception — block ad domains AND proxy relative URLs
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
-    + 'set:function(v){if(v&&AD.test(String(v)))return;return OSD.set.call(this,v);},'
+    + 'set:function(v){if(v&&AD.test(String(v)))return;v=proxy(v);return OSD.set.call(this,v);},'
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute interception
+    // setAttribute interception — proxy relative URLs + block ads
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"){'
     + '    var t=this.tagName;'
-    + '    if(t==="SCRIPT"&&AD.test(v))return;'
+    + '    if(t==="SCRIPT"){'
+    + '      if(AD.test(v))return;'
+    + '      v=proxy(v);'
+    + '    }'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
 
-    // appendChild interception
+    // appendChild interception — block ad scripts/iframes
     + 'var OAC=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
@@ -266,7 +278,17 @@ function rewriteHtml(html, baseUrl) {
     + '  return OAC.apply(this,arguments);'
     + '};'
 
-    // Fetch interception
+    // insertBefore interception — block SDK insertion via insertBefore
+    + 'var OIB=Node.prototype.insertBefore;'
+    + 'Node.prototype.insertBefore=function(n,r){'
+    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '    var s=n.src||n.getAttribute("src")||"";'
+    + '    if(AD.test(s))return n;'
+    + '  }'
+    + '  return OIB.apply(this,arguments);'
+    + '};'
+
+    // Fetch interception — block ad domains + proxy game resources
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r&&r.url?""):'
@@ -274,15 +296,19 @@ function rewriteHtml(html, baseUrl) {
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
+    + '  if(typeof r==="string"&&r.indexOf("/proxy?url=")===-1&&r.indexOf("http")!==0){'
+    + '    r=proxy(r);'
+    + '  }'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR interception
+    // XHR interception — block ad domains + proxy game resources
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OS=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
     + '  this._ab=!!(u&&AD.test(u));'
     + '  if(this._ab)return OO.call(this,m,"about:blank");'
+    + '  if(u&&typeof u==="string")u=proxy(u);'
     + '  return OO.apply(this,arguments);'
     + '};'
     + 'XMLHttpRequest.prototype.send=function(d){'
@@ -387,6 +413,35 @@ function rewriteHtml(html, baseUrl) {
     + 'else start();'
     + 'setInterval(sweep,1000);'
     + 'window.addEventListener("load",sweep);'
+
+    // MutationObserver for dynamically created scripts — proxy their src
+    + 'var scriptObs=new MutationObserver(function(muts){'
+    + '  for(var i=0;i<muts.length;i++){'
+    + '    var added=muts[i].addedNodes;'
+    + '    for(var j=0;j<added.length;j++){'
+    + '      var el=added[j];'
+    + '      if(!el||el.nodeType!==1)continue;'
+    + '      if(el.tagName==="SCRIPT"){'
+    + '        var s=el.src||el.getAttribute("src")||"";'
+    + '        if(AD.test(s)){el.remove();continue;}'
+    + '        if(s&&s.indexOf("/proxy?url=")===-1&&s.indexOf("http")!==0&&s.indexOf("data:")!==0){'
+    + '          el.src=proxy(s);'
+    + '        }'
+    + '      }'
+    + '      var subs=el.querySelectorAll?el.querySelectorAll("script"):[];'
+    + '      for(var k=0;k<subs.length;k++){'
+    + '        var ss=subs[k].src||subs[k].getAttribute("src")||"";'
+    + '        if(AD.test(ss)){subs[k].remove();continue;}'
+    + '        if(ss&&ss.indexOf("/proxy?url=")===-1&&ss.indexOf("http")!==0&&ss.indexOf("data:")!==0){'
+    + '          subs[k].src=proxy(ss);'
+    + '        }'
+    + '      }'
+    + '    }'
+    + '  }'
+    + '});'
+    + 'if(document.body)scriptObs.observe(document.body,{childList:true,subtree:true});'
+    + 'else document.addEventListener("DOMContentLoaded",function(){scriptObs.observe(document.body,{childList:true,subtree:true});});'
+
     + '})()</script>';
 
   // Inject ad blocker at start of <head> — NO <base> tag since we proxy all URLs
