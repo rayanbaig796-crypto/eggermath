@@ -409,7 +409,8 @@ function rewriteHtml(html, baseUrl) {
     + '})()</script>';
 
   const baseTag = '<base href="' + baseUrl + '">';
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
+  const basePlaceholder = '\x00BASE_TAG\x00';
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + basePlaceholder + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
 
   // Strip GameMonetize SDK script tags from source HTML
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
@@ -452,8 +453,8 @@ function rewriteHtml(html, baseUrl) {
     html = html.replace('\x00SCRIPT_' + i + '\x00', protectedScripts[i]);
   }
 
-  // Insert <base> tag AFTER URL rewriting so it doesn't get rewritten itself
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag);
+  // Replace base tag placeholder (survived URL rewriting unscathed)
+  html = html.replace(basePlaceholder, baseTag);
 
   return html;
 }
