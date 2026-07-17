@@ -257,6 +257,26 @@ function rewriteHtml(html, baseUrl) {
     + '  return OAC.apply(this,arguments);'
     + '};'
 
+    // ── DOCUMENT.WRITE INTERCEPTION ──
+    // Catches document.write('<script src="data.js">') used by Construct 2
+    + 'var OD=document.write;'
+    + 'document.write=function(h){'
+    + '  if(typeof h==="string"){'
+    + '    h=h.replace(/(<script\\b[^>]*?\\bsrc\\s*=\\s*["\'])([^"\']*?)(["\'])/gi,'
+    + '      function(m,p,u,q){'
+    + '        if(/^(data|javascript|blob|about):/.test(u))return m;'
+    + '        if(AD.test(u))return "";'
+    + '        return p+R(u)+q;'
+    + '      });'
+    + '    h=h.replace(/(<img\\b[^>]*?\\bsrc\\s*=\\s*["\'])([^"\']*?)(["\'])/gi,'
+    + '      function(m,p,u,q){'
+    + '        if(/^(data|javascript|blob|about):/.test(u))return m;'
+    + '        return p+R(u)+q;'
+    + '      });'
+    + '  }'
+    + '  return OD.call(this,h);'
+    + '};'
+
     // ── AUDIO CONSTRUCTOR — intercept new Audio("file.mp3") ──
     + 'var OrigAudio=window.Audio;'
     + 'window.Audio=function(u){'
