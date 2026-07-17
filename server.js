@@ -429,8 +429,8 @@ const server = http.createServer(async (req, res) => {
       }
       let userVote = null;
       if (fingerprint) {
-        const { data: vote } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint).single();
-        if (vote) userVote = vote.vote;
+        const { data: voteRows } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
+        if (voteRows && voteRows.length > 0) userVote = voteRows[0].vote;
       }
       res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
       res.end(JSON.stringify({ likes: game?.likes || 0, dislikes: game?.dislikes || 0, userVote }));
@@ -455,21 +455,23 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabaseAdmin } = require('./supabase-config');
 
-        // Get current vote
-        const { data: existing } = await supabaseAdmin.from('votes')
-          .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint).single();
+        // Get current vote — use .select() without .single() to avoid errors on 0 or multiple rows
+        const { data: existingRows } = await supabaseAdmin.from('votes')
+          .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
+        const existing = (existingRows && existingRows.length > 0) ? existingRows[0] : null;
 
         const oldVote = existing?.vote || null;
         let likesDelta = 0, dislikesDelta = 0;
 
         if (vote === oldVote) {
-          // Same vote = remove it
+          // Same vote = remove it (toggle off)
           await supabaseAdmin.from('votes').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
           if (vote === 'like') likesDelta = -1;
           if (vote === 'dislike') dislikesDelta = -1;
         } else {
-          // Upsert new vote
-          await supabaseAdmin.from('votes').upsert({ game_id: gameId, fingerprint, vote }, { onConflict: 'game_id,fingerprint' });
+          // Delete any existing vote first, then insert fresh (avoids upsert constraint issues)
+          await supabaseAdmin.from('votes').delete().eq('game_id', gameId).eq('fingerprint', fingerprint);
+          await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
           if (oldVote === 'like') likesDelta -= 1;
           else if (oldVote === 'dislike') dislikesDelta -= 1;
           if (vote === 'like') likesDelta += 1;
@@ -602,6 +604,13 @@ const server = http.createServer(async (req, res) => {
       'Access-Control-Allow-Headers': 'Content-Type',
       'Content-Type': 'application/json',
     });
+    res.end();
+    return;
+  }
+
+  // ── Redirect /index.html to / ──────────────────────────────────
+  if (parsedUrl.pathname === '/index.html') {
+    res.writeHead(301, { 'Location': '/' });
     res.end();
     return;
   }
