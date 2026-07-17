@@ -463,9 +463,9 @@ const server = http.createServer(async (req, res) => {
         let finalVote = null;
 
         if (vote === oldVote) {
-          // Toggle off — set vote to null via upsert
+          // Toggle off — upsert with 'none' sentinel
           const { error: insErr } = await supabase.from('votes').upsert(
-            { game_id: gameId, fingerprint, vote: null },
+            { game_id: gameId, fingerprint, vote: 'none' },
             { onConflict: 'game_id,fingerprint' }
           );
           if (insErr) {
