@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EggerMath — Play 1400+ Free Browser Games Instantly</title>
-  <meta name="description" content="Play 1400+ free unblocked browser games instantly — Puzzle, Action, Racing, Shooting, Strategy and more on EggerMath. No downloads, no sign-up required!">
-  <meta name="keywords" content="free browser games, unblocked games, online games, play games online, free games, browser games, no download games, HTML5 games, racing games, puzzle games, action games">
+  <title>EggerMath — Play 1400+ Free Browser Games Online | No Download Required</title>
+  <meta name="description" content="Play 1400+ free online browser games instantly. Arcade, racing, puzzle, action games — no download, no install. Play now on EggerMath!">
+  <meta name="keywords" content="free online games, browser games, play games online, no download games, arcade games, racing games, puzzle games">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
-  <link rel="canonical" href="https://eggermath.com/">
+  <link rel="canonical" href="https://www.eggermath.com">
 
   <!-- Open Graph (Facebook / Discord / WhatsApp previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EggerMath">
-  <meta property="og:title" content="EggerMath — Play 1400+ Free Browser Games Instantly">
-  <meta property="og:description" content="Play 1400+ free unblocked browser games instantly. Puzzle, Action, Racing, Shooting and more. No downloads, no sign-up!">
-  <meta property="og:url" content="https://eggermath.com/">
+  <meta property="og:title" content="EggerMath — Play 1400+ Free Browser Games">
+  <meta property="og:description" content="Play 1400+ free online browser games instantly. No download required.">
+  <meta property="og:url" content="https://www.eggermath.com">
   <meta property="og:image" content="https://eggermath.com/images/eggermath-logo.png">
 
   <!-- Twitter Card -->
@@ -577,6 +577,7 @@
     // ═══════════════════════════════════════════════════════════════
     (async function init() {
       await loadFavorites();
+      GAMES.sort((a, b) => (b.plays || 0) - (a.plays || 0));
       renderCatBar();
       renderMainGrid();
       renderSidebarMinis();

@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
-Disallow: /api/
 Disallow: /proxy
+Disallow: /play
+Disallow: /api/
 
-Sitemap: https://eggermath.com/sitemap.xml
+Sitemap: https://www.eggermath.com/sitemap.xml

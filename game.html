@@ -26,6 +26,44 @@
 
   <link rel="stylesheet" href="./game-page.css">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
+  <style>
+    .game-ad-banner, .ad-container, .ad-wrapper, .ad-slot, .ad-banner,
+    [id*="ad-"], [class*="ad-banner"], [class*="ad-slot"], [class*="ad-wrapper"],
+    iframe[src*="doubleclick"], iframe[src*="googlesyndication"],
+    iframe[src*="adskeeper"], iframe[src*="propellerads"], iframe[src*="monetag"],
+    iframe[src*="adsterra"], iframe[src*="adfox"] {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      width: 0 !important;
+      overflow: hidden !important;
+    }
+  </style>
+  <script>
+    (function(){
+      var obs = new MutationObserver(function(muts){
+        muts.forEach(function(m){
+          m.addedNodes.forEach(function(n){
+            if(n.nodeType !== 1) return;
+            var t = (n.className || '') + ' ' + (n.id || '') + ' ' + (n.tagName || '');
+            if(/ad[-_]?(banner|container|wrapper|slot|overlay|popup|modal)/i.test(t)) {
+              n.remove(); return;
+            }
+            if(n.tagName === 'IFRAME' || n.tagName === 'SCRIPT') {
+              var s = n.src || '';
+              if(/doubleclick|googlesyndication|adskeeper|propellerads|monetag|adsterra|adfox/i.test(s)) {
+                n.remove();
+              }
+            }
+          });
+        });
+      });
+      if(document.body) obs.observe(document.body, {childList:true, subtree:true});
+      document.addEventListener('DOMContentLoaded', function(){
+        if(document.body) obs.observe(document.body, {childList:true, subtree:true});
+      });
+    })();
+  </script>
 </head>
 <body>
 

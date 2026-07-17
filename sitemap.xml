@@ -1,297 +1,356 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://eggermath.com/</loc>
+    <loc>https://www.eggermath.com/</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/about.html</loc>
+    <loc>https://www.eggermath.com/about.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/blog.html</loc>
+    <loc>https://www.eggermath.com/blog.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/advertise.html</loc>
+    <loc>https://www.eggermath.com/advertise.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/contact.html</loc>
+    <loc>https://www.eggermath.com/contact.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/privacy.html</loc>
+    <loc>https://www.eggermath.com/privacy.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/terms.html</loc>
+    <loc>https://www.eggermath.com/terms.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/takedown.html</loc>
+    <loc>https://www.eggermath.com/takedown.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/onboarding.html</loc>
+    <loc>https://www.eggermath.com/onboarding.html</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-evolution-pro-math-gates</loc>
+    <loc>https://www.eggermath.com/game/gm-car-evolution-pro-math-gates</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-city-ride</loc>
+    <loc>https://www.eggermath.com/game/gm-city-ride</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-nitro-rally-time-attack-2</loc>
+    <loc>https://www.eggermath.com/game/gm-nitro-rally-time-attack-2</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-nitro-rally</loc>
+    <loc>https://www.eggermath.com/game/gm-nitro-rally</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-motocross-22</loc>
+    <loc>https://www.eggermath.com/game/gm-motocross-22</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-superbike-hero</loc>
+    <loc>https://www.eggermath.com/game/gm-superbike-hero</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-highway-racers</loc>
+    <loc>https://www.eggermath.com/game/gm-highway-racers</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-drift-car-driving</loc>
+    <loc>https://www.eggermath.com/game/gm-drift-car-driving</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-stunt</loc>
+    <loc>https://www.eggermath.com/game/gm-car-stunt</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-racing-horizon</loc>
+    <loc>https://www.eggermath.com/game/gm-racing-horizon</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-grand-extreme-racing</loc>
+    <loc>https://www.eggermath.com/game/gm-grand-extreme-racing</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-night-racing</loc>
+    <loc>https://www.eggermath.com/game/gm-night-racing</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-nitro-car-racing-game</loc>
+    <loc>https://www.eggermath.com/game/gm-nitro-car-racing-game</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-apex-racer</loc>
+    <loc>https://www.eggermath.com/game/gm-apex-racer</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-nitro-speed-car-racing</loc>
+    <loc>https://www.eggermath.com/game/gm-nitro-speed-car-racing</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-extreme-car-driving-simulator</loc>
+    <loc>https://www.eggermath.com/game/gm-extreme-car-driving-simulator</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-park-simulator</loc>
+    <loc>https://www.eggermath.com/game/gm-car-park-simulator</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-chasing</loc>
+    <loc>https://www.eggermath.com/game/gm-car-chasing</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-carrush</loc>
+    <loc>https://www.eggermath.com/game/gm-carrush</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-city-car-drive</loc>
+    <loc>https://www.eggermath.com/game/gm-city-car-drive</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-on-the-road</loc>
+    <loc>https://www.eggermath.com/game/gm-car-on-the-road</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-street-mayhem-driver</loc>
+    <loc>https://www.eggermath.com/game/gm-street-mayhem-driver</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-city-driving-3d</loc>
+    <loc>https://www.eggermath.com/game/gm-city-driving-3d</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-car-driving-in-big-city</loc>
+    <loc>https://www.eggermath.com/game/gm-car-driving-in-big-city</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-drifting-mania</loc>
+    <loc>https://www.eggermath.com/game/gm-drifting-mania</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-free-city-drive</loc>
+    <loc>https://www.eggermath.com/game/gm-free-city-drive</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-crazy-driving</loc>
+    <loc>https://www.eggermath.com/game/gm-crazy-driving</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-driver-highway</loc>
+    <loc>https://www.eggermath.com/game/gm-driver-highway</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-ultimate-speed-driving</loc>
+    <loc>https://www.eggermath.com/game/gm-ultimate-speed-driving</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-city-car-driving-simulator</loc>
+    <loc>https://www.eggermath.com/game/gm-city-car-driving-simulator</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-formula-1-race</loc>
+    <loc>https://www.eggermath.com/game/gm-formula-1-race</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-tps-shooting-zombie-apocalypse</loc>
+    <loc>https://www.eggermath.com/game/gm-tps-shooting-zombie-apocalypse</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-noob-vs-zombie</loc>
+    <loc>https://www.eggermath.com/game/gm-noob-vs-zombie</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-crossy-zombie-game</loc>
+    <loc>https://www.eggermath.com/game/gm-crossy-zombie-game</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-deadly-zombie-virus</loc>
+    <loc>https://www.eggermath.com/game/gm-deadly-zombie-virus</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-gun-shooting-game</loc>
+    <loc>https://www.eggermath.com/game/gm-gun-shooting-game</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-mineblock-zombie-survival</loc>
+    <loc>https://www.eggermath.com/game/gm-mineblock-zombie-survival</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-noob-vs-zombie-2</loc>
+    <loc>https://www.eggermath.com/game/gm-noob-vs-zombie-2</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-minecraft-pixel-gun-shooter</loc>
+    <loc>https://www.eggermath.com/game/gm-minecraft-pixel-gun-shooter</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-shadowgun-war-game</loc>
+    <loc>https://www.eggermath.com/game/gm-shadowgun-war-game</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-last-z-survival-shooter</loc>
+    <loc>https://www.eggermath.com/game/gm-last-z-survival-shooter</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-magic-action-gun-game</loc>
+    <loc>https://www.eggermath.com/game/gm-magic-action-gun-game</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-good-guys-amp-bad-boys-zombie-survival-gui</loc>
+    <loc>https://www.eggermath.com/game/gm-good-guys-amp-bad-boys-zombie-survival-gui</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-sausage-man-shooting-adventure</loc>
+    <loc>https://www.eggermath.com/game/gm-sausage-man-shooting-adventure</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-mafia-sniper-crime-shooting</loc>
+    <loc>https://www.eggermath.com/game/gm-mafia-sniper-crime-shooting</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-gun-shooting-games-sniper-3d</loc>
+    <loc>https://www.eggermath.com/game/gm-gun-shooting-games-sniper-3d</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-zombies-4-weapon-merge</loc>
+    <loc>https://www.eggermath.com/game/gm-zombies-4-weapon-merge</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-pixel-gun-apocalypse-6-remastered</loc>
+    <loc>https://www.eggermath.com/game/gm-pixel-gun-apocalypse-6-remastered</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-combat-pixel-zombie-survival</loc>
+    <loc>https://www.eggermath.com/game/gm-combat-pixel-zombie-survival</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://eggermath.com/game/gm-bubble-shooter-legend-2</loc>
+    <loc>https://www.eggermath.com/game/gm-bubble-shooter-legend-2</loc>
+    <lastmod>2026-07-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>

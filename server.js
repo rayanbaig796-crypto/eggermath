@@ -37,6 +37,16 @@ const MIME = {
   '.bin': 'application/octet-stream',
 };
 
+function securityHeaders() {
+  return {
+    'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+    'X-Content-Type-Options': 'nosniff',
+    'X-XSS-Protection': '1; mode=block',
+    'Referrer-Policy': 'strict-origin-when-cross-origin',
+    'Permissions-Policy': 'camera=(), microphone=(), geolocation=()',
+  };
+}
+
 // ═══════════════════════════════════════════════════════════════
 //  SIMPLE LRU CACHE — speeds up repeated proxy requests
 // ═══════════════════════════════════════════════════════════════
@@ -451,19 +461,15 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabase } = require('./supabase-config');
 
-        // Read existing vote
-        const { data: existingRows } = await supabase.from('votes')
-          .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
+        const [{ data: existingRows }, { data: game }] = await Promise.all([
+          supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint),
+          supabase.from('games').select('likes,dislikes').eq('id', gameId).single()
+        ]);
 
-        let oldVote = null;
-        if (existingRows && existingRows.length > 0) {
-          oldVote = existingRows[0].vote;
-        }
-
+        let oldVote = existingRows && existingRows.length > 0 ? existingRows[0].vote : null;
         let finalVote = null;
 
         if (vote === oldVote) {
-          // Toggle off — delete the vote row
           const { error: delErr } = await supabase.from('votes').delete()
             .eq('game_id', gameId).eq('fingerprint', fingerprint);
           if (delErr) {
@@ -473,7 +479,6 @@ const server = http.createServer(async (req, res) => {
           }
           finalVote = null;
         } else {
-          // Upsert new/changed vote
           const { error: insErr } = await supabase.from('votes').upsert(
             { game_id: gameId, fingerprint, vote },
             { onConflict: 'game_id,fingerprint' }
@@ -486,19 +491,20 @@ const server = http.createServer(async (req, res) => {
           finalVote = vote;
         }
 
-        // Recount from votes table
-        const { data: allVotes } = await supabase.from('votes')
-          .select('vote').eq('game_id', gameId);
+        let likes = game?.likes || 0;
+        let dislikes = game?.dislikes || 0;
 
-        let likes = 0, dislikes = 0;
-        if (allVotes) {
-          for (const v of allVotes) {
-            if (v.vote === 'like') likes++;
-            else if (v.vote === 'dislike') dislikes++;
-          }
+        if (oldVote === 'like') likes--;
+        else if (oldVote === 'dislike') dislikes--;
+
+        if (vote !== oldVote) {
+          if (vote === 'like') likes++;
+          else if (vote === 'dislike') dislikes++;
         }
 
-        // Update game counts
+        if (likes < 0) likes = 0;
+        if (dislikes < 0) dislikes = 0;
+
         await supabase.from('games').update({ likes, dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
@@ -655,11 +661,13 @@ const server = http.createServer(async (req, res) => {
   else if (ext === '.js' || ext === '.css') cacheControl = 'public, max-age=86400, immutable';
   else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
 
-  res.writeHead(200, {
+  const isHtml = ext === '.html' || ext === '.htm';
+  res.writeHead(200, Object.assign(securityHeaders(), {
     'Content-Type': mime,
     'Access-Control-Allow-Origin': '*',
     'Cache-Control': cacheControl,
-  });
+    ...(isHtml ? { 'Content-Security-Policy': "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; frame-src *; connect-src 'self' https:;", 'X-Frame-Options': 'SAMEORIGIN' } : {}),
+  }));
   fs.createReadStream(filePath).pipe(res);
 });
 
