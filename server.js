@@ -146,12 +146,13 @@ function rewriteHtml(html, baseUrl) {
     + 'XMLHttpRequest.prototype.open=function(m,u,a,w,p){'
     + '  return origOpen.call(this,m,toProxy(u),a,w,p);'
     + '};'
-    // createElement interceptor — only patch script src, wrapped in try/catch
+    // createElement interceptor — patch script AND img src, wrapped in try/catch
     + 'var origCreate=Document.prototype.createElement;'
     + 'Document.prototype.createElement=function(tag){'
     + '  var el=origCreate.call(this,tag);'
-    + '  if(tag&&tag.toLowerCase&&tag.toLowerCase()==="script"){'
-    + '    try{'
+    + '  try{'
+    + '    var tl=tag&&tag.toLowerCase?tag.toLowerCase():tag;'
+    + '    if(tl==="script"){'
     + '      var origSrc=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + '      if(origSrc&&origSrc.set){'
     + '        Object.defineProperty(el,"src",{'
@@ -160,10 +161,37 @@ function rewriteHtml(html, baseUrl) {
     + '          configurable:true'
     + '        });'
     + '      }'
-    + '    }catch(e){}'
-    + '  }'
+    + '    }else if(tl==="img"){'
+    + '      var origImgSrc=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
+    + '      if(origImgSrc&&origImgSrc.set){'
+    + '        Object.defineProperty(el,"src",{'
+    + '          get:function(){return origImgSrc.get.call(this);},'
+    + '          set:function(v){origImgSrc.set.call(this,toProxy(v));},'
+    + '          configurable:true'
+    + '        });'
+    + '      }'
+    + '    }'
+    + '  }catch(e){}'
     + '  return el;'
     + '};'
+    // Image constructor interceptor — C2 uses "new Image" not createElement
+    + 'var OrigImage=window.Image;'
+    + 'function PatchedImage(){'
+    + '  var img=Reflect.construct(OrigImage,arguments,PatchedImage);'
+    + '  try{'
+    + '    var ois=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
+    + '    if(ois&&ois.set){'
+    + '      Object.defineProperty(img,"src",{'
+    + '        get:function(){return ois.get.call(this);},'
+    + '        set:function(v){ois.set.call(this,toProxy(v));},'
+    + '        configurable:true'
+    + '      });'
+    + '    }'
+    + '  }catch(e){}'
+    + '  return img;'
+    + '}'
+    + 'PatchedImage.prototype=OrigImage.prototype;'
+    + 'window.Image=PatchedImage;'
     + '})()</script>';
 
   // ═══════════════════════════════════════════════════════════
@@ -408,9 +436,8 @@ function rewriteHtml(html, baseUrl) {
     + 'window.addEventListener("load",sweep);'
     + '})()</script>';
 
-  const baseTag = '<base href="' + baseUrl + '">';
-  const basePlaceholder = '\x00BASE_TAG\x00';
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + basePlaceholder + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
+  // No base tag — it conflicts with /proxy URLs
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + sdkStub + adDomainBlocker + interceptor + adBlockCss + adBlockJs);
 
   // Strip GameMonetize SDK script tags from source HTML
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
@@ -452,9 +479,6 @@ function rewriteHtml(html, baseUrl) {
   for (let i = 0; i < protectedScripts.length; i++) {
     html = html.replace('\x00SCRIPT_' + i + '\x00', protectedScripts[i]);
   }
-
-  // Replace base tag placeholder (survived URL rewriting unscathed)
-  html = html.replace(basePlaceholder, baseTag);
 
   return html;
 }
