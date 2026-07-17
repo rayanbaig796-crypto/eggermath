@@ -453,7 +453,7 @@ const server = http.createServer(async (req, res) => {
 
         // Read existing vote
         const { data: existingRows, error: readErr } = await supabase.from('votes')
-          .select('id, vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
+          .select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = null;
         if (existingRows && existingRows.length > 0) {
