@@ -343,25 +343,51 @@
       }
 
       likeBtn.addEventListener('click', async function() {
-        likeBtn.disabled = true;
+        const prevVote = likeBtn.classList.contains('active') ? 'like' : dislikeBtn.classList.contains('active') ? 'dislike' : null;
+        let optimisticVote, optimisticLikes = localLikes, optimisticDislikes = localDislikes;
+        if (prevVote === 'like') {
+          optimisticVote = null;
+          optimisticLikes--;
+        } else {
+          if (prevVote === 'dislike') optimisticDislikes--;
+          optimisticVote = 'like';
+          optimisticLikes++;
+        }
+        if (optimisticLikes < 0) optimisticLikes = 0;
+        if (optimisticDislikes < 0) optimisticDislikes = 0;
+        localLikes = optimisticLikes;
+        localDislikes = optimisticDislikes;
+        refreshVoteUI(optimisticVote);
         const result = await castVote(game.id, 'like');
         if (!result.error) {
           localLikes = result.likes;
           localDislikes = result.dislikes;
           refreshVoteUI(result.userVote);
         }
-        likeBtn.disabled = false;
       });
 
       dislikeBtn.addEventListener('click', async function() {
-        dislikeBtn.disabled = true;
+        const prevVote = dislikeBtn.classList.contains('active') ? 'dislike' : likeBtn.classList.contains('active') ? 'like' : null;
+        let optimisticVote, optimisticLikes = localLikes, optimisticDislikes = localDislikes;
+        if (prevVote === 'dislike') {
+          optimisticVote = null;
+          optimisticDislikes--;
+        } else {
+          if (prevVote === 'like') optimisticLikes--;
+          optimisticVote = 'dislike';
+          optimisticDislikes++;
+        }
+        if (optimisticLikes < 0) optimisticLikes = 0;
+        if (optimisticDislikes < 0) optimisticDislikes = 0;
+        localLikes = optimisticLikes;
+        localDislikes = optimisticDislikes;
+        refreshVoteUI(optimisticVote);
         const result = await castVote(game.id, 'dislike');
         if (!result.error) {
           localLikes = result.likes;
           localDislikes = result.dislikes;
           refreshVoteUI(result.userVote);
         }
-        dislikeBtn.disabled = false;
       });
 
       // ─── FAVORITES ─────────────────────────────────────────────
