@@ -389,8 +389,8 @@ function rewriteHtml(html, baseUrl) {
     + 'window.addEventListener("load",sweep);'
     + '})()</script>';
 
-  // Inject <base> tag + ad blocker at start of <head>
-  html = html.replace(/<head([^>]*)>/i, '<head$1><base href="' + baseDir + '">' + adBlockerScript);
+  // Inject ad blocker at start of <head> — NO <base> tag since we proxy all URLs
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + adBlockerScript);
 
   return html;
 }
