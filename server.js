@@ -112,23 +112,68 @@ function fetchUrl(targetUrl, maxRedirects = 8) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  HTML REWRITING — inject <base> tag + ad blocker, strip SDK
-//  NO resource URL rewriting — <base> tag handles relative URLs
+//  HTML REWRITING — proxy all resources + ad blocker
 // ═══════════════════════════════════════════════════════════════
 function rewriteHtml(html, baseUrl) {
   const parsed = new URL(baseUrl);
   const origin = parsed.origin;
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
 
-  // ── <base> tag — fixes ALL relative URL resolution ──
-  const baseTag = '<base href="' + baseDir + '">';
+  function resolveUrl(href) {
+    if (!href || href.startsWith('data:') || href.startsWith('blob:') || href.startsWith('javascript:')) return href;
+    if (href.startsWith('/proxy?url=')) return href;
+    if (href.startsWith('http://') || href.startsWith('https://')) return '/proxy?url=' + encodeURIComponent(href);
+    try { return '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
+    catch(e) { return href; }
+  }
+
+  // ── Strip ALL CSP meta tags ──
+  html = html.replace(/<meta[^>]*http-equiv=["']Content-Security-Policy["'][^>]*\/?>/gi, '');
+
+  // ── Strip SDK script tags ──
+  html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+
+  // ── Strip fuckAdBlock detection scripts ──
+  html = html.replace(/<script[^>]*>[\s\S]*?fuckAdBlock[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>[\s\S]*?blockAdBlock[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>[\s\S]*?adBlockDetect[\s\S]*?<\/script>/gi, '');
+
+  // ── Strip inline ad-related scripts ──
+  html = html.replace(/<script[^>]*>[\s\S]*?showBanner\s*\(\s*\)[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>[\s\S]*?sdk\.showBanner[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>[\s\S]*?showInterstitial[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>[\s\S]*?showRewardedVideo[\s\S]*?<\/script>/gi, '');
+
+  // ── Protect inline script bodies from URL rewriting ──
+  var scriptBodies = [];
+  html = html.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, function(match, attrs, body) {
+    if (body.trim()) {
+      var idx = scriptBodies.length;
+      scriptBodies.push(body);
+      return '<script' + attrs + '>__SCRIPT_' + idx + '__</script>';
+    }
+    return match;
+  });
+
+  // ── Rewrite resource URLs in HTML tags ──
+  html = html.replace(/((?:src|href|poster|data-src|data-background|background))=(["'])([^"']*?)\2/gi, function(match, attr, q, val) {
+    if (val.startsWith('__SCRIPT_') || val.startsWith('data:') || val.startsWith('blob:') || val.startsWith('javascript:')) return match;
+    if (val.startsWith('/proxy?url=')) return match;
+    return attr + '=' + q + resolveUrl(val) + q;
+  });
+
+  // ── Restore inline script bodies (untouched) ──
+  html = html.replace(/__SCRIPT_(\d+)__/g, function(m, idx) {
+    return scriptBodies[parseInt(idx)] || '';
+  });
 
   // ── AD BLOCKER — single unified script ──
   const adBlockerScript = '<script>'
     + '(function(){'
-    // Ad domain regex
-    + 'var AD=new RegExp('
-    + '['
+    + 'var AD=new RegExp(['
     + '"api\\.gamemonetize\\.com",'
     + '"gamemonetize\\.com/sdk",'
     + '"cdn\\.gamemonetize\\.com.*sdk",'
@@ -168,10 +213,9 @@ function rewriteHtml(html, baseUrl) {
     + '"gtag\\.js",'
     + '"ga\\.js",'
     + '"analytics\\.js"'
-    + '].join("|"))'
-    + ';'
+    + '].join("|"));'
 
-    // SDK stubs — prevent ALL ad initialization
+    // SDK stubs
     + 'window.sdk={showBanner:function(){},'
     + 'showInterstitial:function(){},'
     + 'showRewardedVideo:function(cb){if(cb)cb(false);},'
@@ -194,7 +238,7 @@ function rewriteHtml(html, baseUrl) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // Script src interception — block ad SDK scripts
+    // Script src interception
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
@@ -202,7 +246,7 @@ function rewriteHtml(html, baseUrl) {
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute interception — catch setAttribute("src",...) for scripts
+    // setAttribute interception
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"){'
@@ -212,7 +256,7 @@ function rewriteHtml(html, baseUrl) {
     + '  return OSA.call(this,n,v);'
     + '};'
 
-    // appendChild interception — block ad scripts/iframes
+    // appendChild interception
     + 'var OAC=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
@@ -222,7 +266,7 @@ function rewriteHtml(html, baseUrl) {
     + '  return OAC.apply(this,arguments);'
     + '};'
 
-    // Fetch interception — block ad domains
+    // Fetch interception
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r&&r.url?""):'
@@ -233,7 +277,7 @@ function rewriteHtml(html, baseUrl) {
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR interception — block ad domains
+    // XHR interception
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OS=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
@@ -253,7 +297,7 @@ function rewriteHtml(html, baseUrl) {
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
     + '};'
 
-    // CSS ad hiders — injected via JS to avoid CSP issues
+    // CSS ad hiders
     + 'var cs=document.createElement("style");'
     + 'cs.textContent='
     + '"#sdk__implementation,#imaContainer,#ima-video-container,'
@@ -291,7 +335,7 @@ function rewriteHtml(html, baseUrl) {
     + 'overflow:hidden!important;margin:0!important;padding:0!important;}"'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
-    // MutationObserver — removes ad elements dynamically
+    // MutationObserver
     + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
     + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|'
     + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
@@ -343,23 +387,30 @@ function rewriteHtml(html, baseUrl) {
     + 'else start();'
     + 'setInterval(sweep,1000);'
     + 'window.addEventListener("load",sweep);'
-
     + '})()</script>';
 
   // Inject <base> tag + ad blocker at start of <head>
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + adBlockerScript);
-
-  // Strip GameMonetize SDK script tags
-  html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*gamemonetize[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<head([^>]*)>/i, '<head$1><base href="' + baseDir + '">' + adBlockerScript);
 
   return html;
 }
 
 function rewriteCss(css, baseUrl) {
-  // No longer needed — <base> tag handles relative URL resolution
+  const parsed = new URL(baseUrl);
+  const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
+
+  function resolveUrl(href) {
+    if (!href || href.startsWith('data:') || href.startsWith('blob:')) return href;
+    if (href.startsWith('/proxy?url=')) return href;
+    if (href.startsWith('http://') || href.startsWith('https://')) return '/proxy?url=' + encodeURIComponent(href);
+    try { return '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
+    catch(e) { return href; }
+  }
+
+  css = css.replace(/url\(\s*["']?([^"')]+?)["']?\s*\)/gi, function(match, url) {
+    return 'url("' + resolveUrl(url) + '")';
+  });
+
   return css;
 }
 
@@ -380,6 +431,14 @@ function stripFrameBlocking(headers) {
 // ═══════════════════════════════════════════════════════════════
 const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
+
+  // ── /clear-cache — Clear proxy cache (internal) ──────────────
+  if (parsedUrl.pathname === '/clear-cache') {
+    proxyCache.clear();
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Cache cleared. Size: ' + proxyCache.size);
+    return;
+  }
 
   // ── /proxy?url=<url> — Simple proxy (cached) ────────────────
   if (parsedUrl.pathname === '/proxy') {
@@ -422,7 +481,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:' + targetUrl;
+    const cacheKey = 'play:v2:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
