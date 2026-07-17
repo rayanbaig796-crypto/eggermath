@@ -112,25 +112,21 @@ function fetchUrl(targetUrl, maxRedirects = 8) {
 }
 
 // ═══════════════════════════════════════════════════════════════
-//  HTML / CSS REWRITING — routes sub-resources through /proxy
+//  HTML REWRITING — inject <base> tag + ad blocker, strip SDK
+//  NO resource URL rewriting — <base> tag handles relative URLs
 // ═══════════════════════════════════════════════════════════════
 function rewriteHtml(html, baseUrl) {
   const parsed = new URL(baseUrl);
   const origin = parsed.origin;
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
 
-  // ═══════════════════════════════════════════════════════════════
-  //  COMPREHENSIVE AD BLOCKER — single unified script
-  //  Layers: SDK stubs → URL resolution → Prototype-level src patching
-  //          → Network interception → Popup blocking → Crypto miner blocking
-  //          → CSS hiders → MutationObserver → Auto-close overlays
-  // ═══════════════════════════════════════════════════════════════
+  // ── <base> tag — fixes ALL relative URL resolution ──
+  const baseTag = '<base href="' + baseDir + '">';
+
+  // ── AD BLOCKER — single unified script ──
   const adBlockerScript = '<script>'
     + '(function(){'
-    // ── Config ──
-    + 'var BASE="' + baseDir + '";'
-    + 'var ORIGIN="' + origin + '";'
-    // ── Ad + tracker + miner domain regex ──
+    // Ad domain regex
     + 'var AD=new RegExp('
     + '['
     + '"api\\.gamemonetize\\.com",'
@@ -156,7 +152,6 @@ function rewriteHtml(html, baseUrl) {
     + '"hilltopads",'
     + '"popcash",'
     + '"popads",'
-    + '"vitalityads",'
     + '"fuckadblock",'
     + '"blockadblock",'
     + '"adsafeprotected\\.com",'
@@ -176,19 +171,7 @@ function rewriteHtml(html, baseUrl) {
     + '].join("|"))'
     + ';'
 
-    // ── URL resolver — converts relative → absolute → /proxy ──
-    + 'function R(u){'
-    + '  if(!u||typeof u!=="string")return u;'
-    + '  if(/^(data|javascript|blob|about):/.test(u))return u;'
-    + '  if(u.indexOf("/proxy?url=")===0||u.indexOf("/play?url=")===0)return u;'
-    + '  if(u.indexOf("//")===0)u="https:"+u;'
-    + '  else if(u.indexOf("http")!==0)u=BASE+u;'
-    + '  var L=location.origin;'
-    + '  if(u.indexOf(L)===0)u=BASE+u.substring(L.length+1);'
-    + '  return "/proxy?url="+encodeURIComponent(u);'
-    + '}'
-
-    // ── SDK STUBS — prevent ALL ad initialization ──
+    // SDK stubs — prevent ALL ad initialization
     + 'window.sdk={showBanner:function(){},'
     + 'showInterstitial:function(){},'
     + 'showRewardedVideo:function(cb){if(cb)cb(false);},'
@@ -211,43 +194,25 @@ function rewriteHtml(html, baseUrl) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // ── PROTOTYPE-LEVEL SRC PATCHING ──
-    // Intercepts img/audio/script src property AND setAttribute("src",...)
-    // Covers: new Image(), createElement("img"), innerHTML, setAttribute, etc.
-    + 'function patchSrc(proto,rewriter,blockAd){'
-    + '  var d=Object.getOwnPropertyDescriptor(proto,"src");'
-    + '  if(!d||!d.set)return;'
-    + '  try{Object.defineProperty(proto,"src",{'
-    + '    get:function(){return d.get.call(this);},'
-    + '    set:function(v){'
-    + '      if(blockAd&&v&&AD.test(String(v)))return;'
-    + '      d.set.call(this,rewriter(v));'
-    + '    },'
-    + '    configurable:true,enumerable:true'
-    + '  });}catch(e){}'
-    + '}'
-    + 'patchSrc(HTMLImageElement.prototype,R,false);'
-    + 'patchSrc(HTMLAudioElement.prototype,R,false);'
-    + 'patchSrc(HTMLScriptElement.prototype,R,true);'
+    // Script src interception — block ad SDK scripts
+    + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
+    + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
+    + 'get:function(){return OSD.get.call(this);},'
+    + 'set:function(v){if(v&&AD.test(String(v)))return;return OSD.set.call(this,v);},'
+    + 'configurable:true,enumerable:true'
+    + '});}catch(e){}}'
 
-    // ── SETATTRIBUTE INTERCEPTION ──
-    // Catches setAttribute("src",...) which bypasses property setter
+    // setAttribute interception — catch setAttribute("src",...) for scripts
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"){'
     + '    var t=this.tagName;'
-    + '    if(t==="SCRIPT"){'
-    + '      if(AD.test(v))return;'
-    + '      v=R(v);'
-    + '    }else if(t==="IMG"||t==="AUDIO"){'
-    + '      v=R(v);'
-    + '    }'
+    + '    if(t==="SCRIPT"&&AD.test(v))return;'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
 
-    // ── APPENDCHILD INTERCEPTION ──
-    // Catches dynamically inserted ad scripts/iframes
+    // appendChild interception — block ad scripts/iframes
     + 'var OAC=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
@@ -257,68 +222,38 @@ function rewriteHtml(html, baseUrl) {
     + '  return OAC.apply(this,arguments);'
     + '};'
 
-    // ── DOCUMENT.WRITE INTERCEPTION ──
-    // Catches document.write('<script src="data.js">') used by Construct 2
-    + 'var OD=document.write;'
-    + 'document.write=function(h){'
-    + '  if(typeof h==="string"){'
-    + '    h=h.replace(/(<script\\b[^>]*?\\bsrc\\s*=\\s*["\'])([^"\']*?)(["\'])/gi,'
-    + '      function(m,p,u,q){'
-    + '        if(/^(data|javascript|blob|about):/.test(u))return m;'
-    + '        if(AD.test(u))return "";'
-    + '        return p+R(u)+q;'
-    + '      });'
-    + '    h=h.replace(/(<img\\b[^>]*?\\bsrc\\s*=\\s*["\'])([^"\']*?)(["\'])/gi,'
-    + '      function(m,p,u,q){'
-    + '        if(/^(data|javascript|blob|about):/.test(u))return m;'
-    + '        return p+R(u)+q;'
-    + '      });'
-    + '  }'
-    + '  return OD.call(this,h);'
-    + '};'
-
-    // ── AUDIO CONSTRUCTOR — intercept new Audio("file.mp3") ──
-    + 'var OrigAudio=window.Audio;'
-    + 'window.Audio=function(u){'
-    + '  var a=new OrigAudio();'
-    + '  if(u)a.src=R(u);'
-    + '  return a;'
-    + '};'
-    + 'window.Audio.prototype=OrigAudio.prototype;'
-
-    // ── FETCH INTERCEPTION ──
+    // Fetch interception — block ad domains
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r&&r.url?""):'
     + '  (r instanceof Request?r.url:"");'
-    + '  if(u&&u.indexOf("/proxy?url=")===-1&&u.indexOf("/play?url=")===-1&&AD.test(u)){'
+    + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
-    + '  if(typeof r==="string")return OF.call(this,R(r),o);'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // ── XHR INTERCEPTION ──
+    // XHR interception — block ad domains
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OS=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
-    + '  this._ab=!!(u&&u.indexOf("/proxy?url=")===-1&&u.indexOf("/play?url=")===-1&&AD.test(u));'
+    + '  this._ab=!!(u&&AD.test(u));'
     + '  if(this._ab)return OO.call(this,m,"about:blank");'
-    + '  return OO.call(this,m,R(u),arguments[2],arguments[3],arguments[4]);'
+    + '  return OO.apply(this,arguments);'
     + '};'
     + 'XMLHttpRequest.prototype.send=function(d){'
     + '  if(this._ab)return;'
     + '  return OS.apply(this,arguments);'
     + '};'
 
-    // ── POPUP / POPUNDER BLOCKER ──
+    // Popup/popunder blocker
     + 'var OFn=window.open;'
     + 'window.open=function(u,n,f){'
     + '  if(u&&AD.test(String(u)))return null;'
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
     + '};'
 
-    // ── CSS STYLE INJECTION — hide ad elements ──
+    // CSS ad hiders — injected via JS to avoid CSP issues
     + 'var cs=document.createElement("style");'
     + 'cs.textContent='
     + '"#sdk__implementation,#imaContainer,#ima-video-container,'
@@ -356,7 +291,7 @@ function rewriteHtml(html, baseUrl) {
     + 'overflow:hidden!important;margin:0!important;padding:0!important;}"'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
-    // ── MUTATION OBSERVER — removes ad elements + auto-close overlays ──
+    // MutationObserver — removes ad elements dynamically
     + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
     + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|'
     + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
@@ -381,9 +316,6 @@ function rewriteHtml(html, baseUrl) {
     + '    var txt=s.textContent||"";'
     + '    if(/showBanner|showInterstitial|showRewarded|sdk\\.showBanner|'
     + 'ima\\.AdsRequest|\\.start\\(\\)|preroll|interstitial/.test(txt))s.remove();'
-    + '  });'
-    + '  document.querySelectorAll("iframe").forEach(function(f){'
-    + '    var s=f.src||"";if(D.test(s))f.remove();'
     + '  });'
     + '  document.querySelectorAll("[style]").forEach(function(el){'
     + '    var s=el.style.cssText||"";'
@@ -414,63 +346,20 @@ function rewriteHtml(html, baseUrl) {
 
     + '})()</script>';
 
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + adBlockerScript);
+  // Inject <base> tag + ad blocker at start of <head>
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag + adBlockerScript);
 
-  // Strip GameMonetize SDK script tags from source HTML
+  // Strip GameMonetize SDK script tags
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*gamemonetize[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
-  // Protect <script> tag bodies from regex rewriting — the inline JS must not be touched
-  const protectedScripts = [];
-  html = html.replace(
-    /(<script\b[^>]*>)([\s\S]*?)(<\/script>)/gi,
-    (match, openTag, body, closeTag) => {
-      protectedScripts.push(body);
-      return openTag + '\x00SCRIPT_' + (protectedScripts.length - 1) + '\x00' + closeTag;
-    }
-  );
-
-  html = html.replace(/((?:src|href|poster|action|data-src|data-url|srcset)\s*=\s*["'])(?!(?:data:|javascript:|#|blob:))([^"']+)(["'])/gi, (match, prefix, value, suffix) => {
-    if (value.startsWith('http://') || value.startsWith('https://'))
-      return prefix + '/proxy?url=' + encodeURIComponent(value) + suffix;
-    if (value.startsWith('//'))
-      return prefix + '/proxy?url=' + encodeURIComponent('https:' + value) + suffix;
-    if (value.startsWith('/'))
-      return prefix + '/proxy?url=' + encodeURIComponent(origin + value) + suffix;
-    return prefix + '/proxy?url=' + encodeURIComponent(new URL(value, baseUrl).href) + suffix;
-  });
-
-  html = html.replace(/(url\s*\(\s*["']?)(?!(?:data:|javascript:|#|blob:))([^"')]+)(["']?\s*\))/gi, (match, prefix, value, suffix) => {
-    if (value.startsWith('http://') || value.startsWith('https://'))
-      return prefix + '/proxy?url=' + encodeURIComponent(value) + suffix;
-    if (value.startsWith('//'))
-      return prefix + '/proxy?url=' + encodeURIComponent('https:' + value) + suffix;
-    if (value.startsWith('/'))
-      return prefix + '/proxy?url=' + encodeURIComponent(origin + value) + suffix;
-    return prefix + '/proxy?url=' + encodeURIComponent(new URL(value, baseUrl).href) + suffix;
-  });
-
-  // Restore protected <script> bodies
-  for (let i = 0; i < protectedScripts.length; i++) {
-    html = html.replace('\x00SCRIPT_' + i + '\x00', protectedScripts[i]);
-  }
-
   return html;
 }
 
 function rewriteCss(css, baseUrl) {
-  const origin = new URL(baseUrl).origin;
-  css = css.replace(/(url\s*\(\s*["']?)(?!(?:data:|javascript:|#|blob:))([^"')]+)(["']?\s*\))/gi, (match, prefix, value, suffix) => {
-    if (value.startsWith('http://') || value.startsWith('https://'))
-      return prefix + '/proxy?url=' + encodeURIComponent(value) + suffix;
-    if (value.startsWith('//'))
-      return prefix + '/proxy?url=' + encodeURIComponent('https:' + value) + suffix;
-    if (value.startsWith('/'))
-      return prefix + '/proxy?url=' + encodeURIComponent(origin + value) + suffix;
-    return prefix + '/proxy?url=' + encodeURIComponent(new URL(value, baseUrl).href) + suffix;
-  });
+  // No longer needed — <base> tag handles relative URL resolution
   return css;
 }
 
