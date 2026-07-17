@@ -136,16 +136,16 @@ function rewriteHtml(html, baseUrl) {
   html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
-  // ── Strip fuckAdBlock detection scripts ──
-  html = html.replace(/<script[^>]*>[\s\S]*?fuckAdBlock[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>[\s\S]*?blockAdBlock[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>[\s\S]*?adBlockDetect[\s\S]*?<\/script>/gi, '');
+  // ── Strip fuckAdBlock detection scripts — NOT crossing script boundaries ──
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*fuckAdBlock(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*blockAdBlock(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*adBlockDetect(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
   // ── Strip inline ad-related scripts ──
-  html = html.replace(/<script[^>]*>[\s\S]*?showBanner\s*\(\s*\)[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>[\s\S]*?sdk\.showBanner[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>[\s\S]*?showInterstitial[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>[\s\S]*?showRewardedVideo[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showBanner\s*\(\s*\)(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*sdk\.showBanner(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showInterstitial(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showRewardedVideo(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
   // ── Protect inline script bodies from URL rewriting ──
   var scriptBodies = [];
