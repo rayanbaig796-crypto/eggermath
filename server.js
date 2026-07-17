@@ -468,12 +468,23 @@ const server = http.createServer(async (req, res) => {
           // Toggle off
           finalVote = null;
         } else {
-          // Insert new vote — if FK fails, create game first
-          const { error: insErr } = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
-          if (insErr && insErr.code === '23503') {
-            // FK constraint — game doesn't exist yet, create it
-            await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
-            await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          // Insert new vote
+          let { error: insErr } = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+          if (insErr) {
+            if (insErr.code === '23503') {
+              // FK constraint — game doesn't exist yet, create it
+              await supabaseAdmin.from('games').insert({ id: gameId, title: gameId, category: 'Unknown', likes: 0, dislikes: 0 });
+              const retry = await supabaseAdmin.from('votes').insert({ game_id: gameId, fingerprint, vote });
+              if (retry.error) {
+                res.writeHead(500, {'Content-Type':'application/json'});
+                res.end(JSON.stringify({error: 'Vote insert failed: ' + retry.error.message}));
+                return;
+              }
+            } else {
+              res.writeHead(500, {'Content-Type':'application/json'});
+              res.end(JSON.stringify({error: 'Vote insert failed: ' + insErr.message, code: insErr.code}));
+              return;
+            }
           }
           finalVote = vote;
         }
