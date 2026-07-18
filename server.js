@@ -281,7 +281,7 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
-    + '  if(typeof r==="string")r=px(r);'
+    + '  if(typeof r==="string")return OF.call(window,px(r),o);'
     + '  return OF.apply(this,arguments);'
     + '};'
 
@@ -292,6 +292,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  if(typeof u==="string"){'
     + '    if(AD.test(u)){this._ab=true;return OO.call(this,m,"about:blank");}'
     + '    u=px(u);'
+    + '    this._ab=false;'
+    + '    return OO.call(this,m,u);'
     + '  }'
     + '  this._ab=false;'
     + '  return OO.apply(this,arguments);'
@@ -526,7 +528,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v9:' + targetUrl;
+    const cacheKey = 'play:v10:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
