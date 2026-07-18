@@ -180,9 +180,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     return scriptBodies[parseInt(idx)] || '';
   });
 
-  // ── Inject <base> tag pointing to our proxy + ad blocker at start of <head> ──
-  var baseHref = ABS + '/proxy?url=' + encodeURIComponent(baseUrl);
-  var gameBaseTag = '<base href="' + baseHref + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
+  // ── Inject <base> tag pointing to original CDN + ad blocker at start of <head> ──
+  var gameBaseTag = '<base href="' + origin + '/"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
   var adBlockerScript = '<script>'
     + '(function(){'
@@ -547,7 +546,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v5:' + targetUrl;
+    const cacheKey = 'play:v6:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
