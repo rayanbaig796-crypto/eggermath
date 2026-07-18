@@ -191,7 +191,11 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  if(!u||typeof u!=="string")return u;'
     + '  if(/^(data:|blob:|javascript:|about:)/.test(u))return u;'
     + '  if(/^\\/proxy/.test(u))return u;'
-    + '  if(/https?:\\/\\/[^/]*eggermath\\.com/.test(u))return u;'
+    + '  if(/https?:\\/\\/[^/]*eggermath\\.com/.test(u)){'
+    + '    if(GB&&/\\/proxy/.test(u))return u;'
+    + '    if(GB){try{var p=new URL(u).pathname;return ABS+"/proxy?url="+encodeURIComponent(GB+p);}catch(e){}}'
+    + '    return u;'
+    + '  }'
     + '  try{u=new URL(u,document.baseURI).href;}catch(e){}'
     + '  return ABS+"/proxy?url="+encodeURIComponent(u);'
     + '}'
@@ -274,6 +278,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '    try{var u=new URL(v,document.baseURI);'
     + '    if(u.origin!==location.origin){'
     + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '    }else if(GB&&u.pathname&&u.origin===location.origin&&!/^\\/proxy/.test(u.pathname)){'
+    + '      v=ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||""));'
     + '    }}catch(e){}'
     + '  }'
     + '  return OSD.set.call(this,v);'
@@ -329,6 +335,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){'
     + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
+    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)){'
+    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||"")));'
     + '      }}catch(e){}'
     + '    }'
     + '  }'
@@ -349,6 +357,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){'
     + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
+    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)){'
+    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||"")));'
     + '      }}catch(e){}'
     + '    }'
     + '  }'
@@ -627,7 +637,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v13:' + targetUrl;
+    const cacheKey = 'play:v14:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
