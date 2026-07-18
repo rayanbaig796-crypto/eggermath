@@ -52,7 +52,7 @@ function securityHeaders() {
 // ═══════════════════════════════════════════════════════════════
 const proxyCache = new Map();
 const CACHE_MAX = 5000;
-const CACHE_TTL = 60 * 1000; // 60 seconds for proxy, /thumb uses 3 days
+const CACHE_TTL = 3600 * 1000; // 1 hour — game resources rarely change
 
 function cacheGet(key) {
   const entry = proxyCache.get(key);
@@ -441,43 +441,31 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  return ODWI.call(document,h);'
     + '};'
 
-    // CSS ad hiders — use double-quoted string with proper escaping
+    // CSS ad hiders — compact set of the most effective selectors
     + 'var cs=document.createElement("style");'
     + 'cs.textContent='
-    + '"#sdk__implementation,#imaContainer,#ima-video-container,'
-    + '#google_ads_frame,#adContainer,#ad-wrapper,'
-    + '#preroll-overlay,#preroll-ad,#midroll-overlay,#midroll-ad,'
-    + '#interstitial-overlay,#interstitial-ad,#rewarded-overlay,#rewarded-ad,'
-    + '[id*=\\"ad-container\\"],[class*=\\"ad-container\\"],'
-    + '[class*=\\"ad-wrapper\\"],[class*=\\"ad-overlay\\"],'
-    + '[class*=\\"ad-popup\\"],[class*=\\"ad-modal\\"],'
-    + '[class*=\\"adsbygoogle\\"],[class*=\\"google-ad\\"],'
-    + '[id*=\\"google_ads\\"],[id*=\\"adfox\\"],[class*=\\"adfox\\"],'
-    + '[id*=\\"adbreak\\"],[class*=\\"adbreak\\"],'
-    + '[id*=\\"preroll\\"],[class*=\\"preroll\\"],'
-    + '[id*=\\"interstitial\\"],[class*=\\"interstitial\\"],'
-    + '[id*=\\"rewarded\\"],[class*=\\"rewarded\\"],'
-    + '[id*=\\"sponsor\\"],[class*=\\"sponsor\\"],'
-    + '[id*=\\"gmasdk\\"],[class*=\\"gmasdk\\"],'
-    + '[id*=\\"midroll\\"],[class*=\\"midroll\\"],'
-    + '[data-ad],[data-ads],[data-ad-unit],[data-ad-slot],'
+    + '"[id*=\\"sdk__implementation\\"],[id*=\\"imaContainer\\"],'
+    + '[id*=\\"google_ads\\"],[id*=\\"ad-container\\"],'
+    + '[id*=\\"ad-wrapper\\"],[id*=\\"ad-overlay\\"],'
+    + '[id*=\\"ad-popup\\"],[id*=\\"ad-modal\\"],'
+    + '[id*=\\"preroll\\"],[id*=\\"interstitial\\"],'
+    + '[id*=\\"rewarded\\"],[id*=\\"midroll\\"],'
+    + '[id*=\\"adbreak\\"],[id*=\\"adfox\\"],'
+    + '[id*=\\"gmasdk\\"],'
+    + '[class*=\\"ad-container\\"],[class*=\\"ad-wrapper\\"],'
+    + '[class*=\\"ad-overlay\\"],[class*=\\"ad-popup\\"],'
+    + '[class*=\\"ad-modal\\"],[class*=\\"adsbygoogle\\"],'
+    + '[class*=\\"google-ad\\"],[class*=\\"adfox\\"],'
+    + '[class*=\\"simmer\\"],[class*=\\"loko\\"],'
     + '.ad,.ads,.adv,.adv-container,#ad,#ads,#adv,'
-    + '.simmer,.loko,'
     + 'iframe[src*=\\"doubleclick\\"],iframe[src*=\\"googlesyndication\\"],'
     + 'iframe[src*=\\"adskeeper\\"],iframe[src*=\\"propellerads\\"],'
     + 'iframe[src*=\\"monetag\\"],iframe[src*=\\"adsterra\\"],'
     + 'iframe[src*=\\"adfox\\"],iframe[src*=\\"imasdk\\"],'
     + 'script[src*=\\"imasdk\\"],'
-    + 'script[src*=\\"showBanner\\"],script[src*=\\"pubads.g.doubleclick\\"],'
-    + 'script[src*=\\"pagead2.googlesyndication\\"],'
     + 'div[style*\\"z-index: 9999\\"],div[style*\\"z-index:9999\\"],'
-    + 'div[style*\\"z-index: 667\\"],div[style*\\"z-index:667\\"],'
-    + 'div[style*\\"z-index: 668\\"],div[style*\\"z-index:668\\"],'
     + 'div[style*\\"z-index: 2147483647\\"]'
-    + '{display:none!important;visibility:hidden!important;'
-    + 'width:0!important;height:0!important;'
-    + 'max-width:0!important;max-height:0!important;'
-    + 'overflow:hidden!important;margin:0!important;padding:0!important;}"'
+    + '{display:none!important;visibility:hidden!important;}'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
     // MutationObserver — remove ad elements
@@ -499,38 +487,18 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  var c=(el.className||"")+" "+(el.id||"");return P.test(c);'
     + '}'
     + 'function sweep(){'
-    + '  var a=document.querySelectorAll("script,iframe,div[id],div[class],span[id],span[class]");'
+    + '  var a=document.querySelectorAll("script,iframe,div[id],div[class]");'
     + '  for(var i=0;i<a.length;i++){if(bad(a[i]))a[i].remove();}'
-    + '  document.querySelectorAll("script").forEach(function(s){'
-    + '    var txt=s.textContent||"";'
-    + '    if(/showBanner|showInterstitial|showRewarded|sdk\\.showBanner|'
-    + 'ima\\.AdsRequest|\\.start\\(\\)|preroll|interstitial/.test(txt))s.remove();'
-    + '  });'
-    + '  document.querySelectorAll("[style]").forEach(function(el){'
-    + '    var s=el.style.cssText||"";'
-    + '    if(/z-index\\s*:\\s*(9999|667|668|2147483647)/.test(s)){'
-    + '      var r=el.getBoundingClientRect();'
-    + '      if(r.width>window.innerWidth*0.7&&r.height>window.innerHeight*0.7)'
-    + '        el.remove();'
-    + '    }'
-    + '  });'
     + '}'
     + 'var obs=new MutationObserver(function(m){'
     + '  for(var i=0;i<m.length;i++){'
     + '    var n=m[i].addedNodes;'
-    + '    for(var j=0;j<n.length;j++){if(bad(n[j]))n[j].remove();}'
+    + '    for(var j=0;j<n.length;j++){if(n[j].nodeType===1&&bad(n[j]))n[j].remove();}'
     + '  }'
     + '});'
-    + 'function start(){'
-    + '  if(!document.body)return;'
-    + '  obs.observe(document.body,{childList:true,subtree:true,'
-    + '    attributes:true,attributeFilter:["class","id","style"]});'
-    + '  sweep();'
-    + '}'
     + 'if(document.readyState==="loading")'
-    + '  document.addEventListener("DOMContentLoaded",start);'
-    + 'else start();'
-    + 'setInterval(sweep,1000);'
+    + '  document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body,{childList:true,subtree:true});sweep();});'
+    + 'else{obs.observe(document.body,{childList:true,subtree:true});sweep();}'
     + 'window.addEventListener("load",sweep);'
 
     + '})()</script>';
@@ -608,6 +576,7 @@ const server = http.createServer(async (req, res) => {
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'public, max-age=3600';
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -618,6 +587,7 @@ const server = http.createServer(async (req, res) => {
       cacheSet(targetUrl, result.statusCode, result.headers, result.body);
       const headers = stripFrameBlocking(result.headers);
       headers['X-Cache'] = 'MISS';
+      headers['Cache-Control'] = 'public, max-age=3600';
       res.writeHead(result.statusCode, headers);
       res.end(result.body);
     } catch (err) {
@@ -636,12 +606,11 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v15:' + targetUrl;
+    const cacheKey = 'play:v16:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -658,7 +627,7 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/html; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+        headers['Cache-Control'] = 'public, max-age=3600';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(html);
@@ -669,14 +638,14 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/css; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+        headers['Cache-Control'] = 'public, max-age=3600';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(css);
       } else {
         const headers = stripFrameBlocking(result.headers);
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
+        headers['Cache-Control'] = 'public, max-age=3600';
         cacheSet(cacheKey, result.statusCode, result.headers, result.body);
         res.writeHead(result.statusCode, headers);
         res.end(result.body);
