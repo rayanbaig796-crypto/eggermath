@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.0",
+    "acorn": "^8.17.0",
     "pg": "^8.22.0"
   }
 }

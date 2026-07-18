@@ -114,15 +114,38 @@ function fetchUrl(targetUrl, maxRedirects = 8) {
 // ═══════════════════════════════════════════════════════════════
 //  HTML REWRITING — proxy all resources + ad blocker
 // ═══════════════════════════════════════════════════════════════
-function rewriteHtml(html, baseUrl, serverHost) {
+function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
   const parsed = new URL(baseUrl);
   const origin = parsed.origin;
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
   const ABS = 'https://' + serverHost;
+  // proxyBase = 'https://eggermath.com/play/{hash}/' for path-based mode
+  // proxyBase = undefined for query-param mode
 
   function resolveUrl(href) {
     if (!href || href.startsWith('data:') || href.startsWith('blob:') || href.startsWith('javascript:')) return href;
     if (href.startsWith('/proxy?url=')) return href;
+    if (href.startsWith('/play/')) return href;
+    if (proxyBase) {
+      // Path-based mode: rewrite absolute CDN URLs to proxyBase-relative, leave relative URLs for <base>
+      if (href.startsWith('http://') || href.startsWith('https://')) {
+        try {
+          var u = new URL(href);
+          if (u.origin === origin) {
+            // CDN URL — strip the CDN path and prepend proxyBase
+            var cdnPath = u.pathname;
+            var hashDir = '/' + baseDir.replace(origin + '/', '').replace(/\/$/, '');
+            if (cdnPath.startsWith(hashDir + '/') || cdnPath === hashDir) {
+              return proxyBase + cdnPath.substring(hashDir.length + 1) + u.search;
+            }
+          }
+        } catch(e) {}
+        return ABS + '/proxy?url=' + encodeURIComponent(href);
+      }
+      // Relative URLs: let <base> tag handle them
+      return href;
+    }
+    // Query-param mode
     if (href.startsWith('http://') || href.startsWith('https://')) return ABS + '/proxy?url=' + encodeURIComponent(href);
     try { return ABS + '/proxy?url=' + encodeURIComponent(new URL(href, baseDir).href); }
     catch(e) { return href; }
@@ -179,24 +202,31 @@ function rewriteHtml(html, baseUrl, serverHost) {
     return scriptBodies[parseInt(idx)] || '';
   });
 
-  // ── Inject <base> tag pointing to original CDN + ad blocker at start of <head> ──
-  var gameBaseTag = '<base href="' + baseDir + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
+  // ── Inject <base> tag + ad blocker at start of <head> ──
+  var effectiveBase = proxyBase || baseDir;
+  var gameBaseTag = '<base href="' + effectiveBase + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";window.__PATH_BASE__="' + (proxyBase || '') + '";</script>';
 
   var adBlockerScript = '<script>'
     + '(function(){'
     + 'var GB=window.__GAME_BASE__||"";'
     + 'var ABS=window.__ABS_PROXY__||"";'
+    + 'var PB=window.__PATH_BASE__||"";'
     + 'function px(u){'
     + '  if(!u||typeof u!=="string")return u;'
     + '  if(/^(data:|blob:|javascript:|about:)/.test(u))return u;'
-    + '  if(/^\\/proxy/.test(u))return u;'
-    + '  if(/https?:\\/\\/[^/]*eggermath\\.com/.test(u)){'
-    + '    if(GB&&/\\/proxy/.test(u))return u;'
-    + '    if(GB){try{var p=new URL(u).pathname;return ABS+"/proxy?url="+encodeURIComponent(GB+p);}catch(e){}}'
-    + '    return u;'
+    + '  if(/^\\/proxy/.test(u)||/^\\/play\\//.test(u))return u;'
+    + '  if(/^https?:\\/\\//.test(u)){'
+    + '    try{var p2=new URL(u);'
+    + '    if(/gamemonetize/.test(p2.hostname)){var h=p2.pathname.split("/")[1];if(h){return ABS+"/play/"+h+p2.pathname.replace("/"+h,"")+p2.search;}}'
+    + '    }catch(e2){}'
+    + '    if(/https?:\\/\\/[^/]*eggermath\\.com/.test(u)){'
+    + '      if(GB){try{var p=new URL(u).pathname;return ABS+"/proxy?url="+encodeURIComponent(GB+p);}catch(e){}}'
+    + '      return u;'
+    + '    }'
+    + '    return ABS+"/proxy?url="+encodeURIComponent(u);'
     + '  }'
     + '  try{u=new URL(u,document.baseURI).href;}catch(e){}'
-    + '  return ABS+"/proxy?url="+encodeURIComponent(u);'
+    + '  return u;'
     + '}'
 
     // Ad domain regex
@@ -276,9 +306,11 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  if(v&&typeof v==="string"&&!/^(data:|blob:|javascript:)/.test(v)){'
     + '    try{var u=new URL(v,document.baseURI);'
     + '    if(u.origin!==location.origin){'
-    + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
-    + '    }else if(GB&&u.pathname&&u.origin===location.origin&&!/^\\/proxy/.test(u.pathname)){'
-    + '      v=ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||""));'
+    + '      if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)v=ABS+"/play/"+h+u.pathname.replace("/"+h,"")+u.search;}'
+    + '      else{v=ABS+"/proxy?url="+encodeURIComponent(u.href);}'
+    + '    }else if(!/^\\/play\\//.test(u.pathname)&&u.pathname!=="/"){'
+    + '      if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)){'
+    + '        v=ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||""));}'
     + '    }}catch(e){}'
     + '  }'
     + '  return OSD.set.call(this,v);'
@@ -294,7 +326,8 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  if(v&&typeof v==="string"&&!/^(data:|blob:|javascript:|about:)/.test(v)){'
     + '    try{var u=new URL(v,document.baseURI);'
     + '    if(u.origin!==location.origin){'
-    + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '      if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)v=ABS+"/play/"+h+u.pathname.replace("/"+h,"")+u.search;}'
+    + '      else{v=ABS+"/proxy?url="+encodeURIComponent(u.href);}'
     + '    }}catch(e){}'
     + '  }'
     + '  return OI.set.call(this,v);'
@@ -310,13 +343,15 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '      if(AD.test(v))return;'
     + '      try{var u=new URL(v,document.baseURI);'
     + '      if(u.origin!==location.origin){'
-    + '        v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '        if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)v=ABS+"/play/"+h+u.pathname.replace("/"+h,"")+u.search;}'
+    + '        else{v=ABS+"/proxy?url="+encodeURIComponent(u.href);}'
     + '      }}catch(e){}'
     + '    }else if(this.tagName==="IMG"){'
     + '      if(!/^(data:|blob:|javascript:|about:)/.test(v)){'
     + '        try{var u2=new URL(v,document.baseURI);'
     + '        if(u2.origin!==location.origin){'
-    + '          v=ABS+"/proxy?url="+encodeURIComponent(u2.href);'
+    + '          if(/gamemonetize/.test(u2.hostname)){var h2=u2.pathname.split("/")[1];if(h2)v=ABS+"/play/"+h2+u2.pathname.replace("/"+h2,"")+u2.search;}'
+    + '          else{v=ABS+"/proxy?url="+encodeURIComponent(u2.href);}'
     + '        }}catch(e){}'
     + '      }'
     + '    }'
@@ -333,8 +368,9 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){'
-    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
-    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)){'
+    + '        if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)n.setAttribute("src",ABS+"/play/"+h+u.pathname.replace("/"+h,"")+u.search);}'
+    + '        else{n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));}'
+    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)&&!/^\\/play\\//.test(u.pathname)){'
     + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||"")));'
     + '      }}catch(e){}'
     + '    }'
@@ -355,8 +391,9 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){'
-    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
-    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)){'
+    + '        if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)n.setAttribute("src",ABS+"/play/"+h+u.pathname.replace("/"+h,"")+u.search);}'
+    + '        else{n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));}'
+    + '      }else if(GB&&u.pathname&&!/^\\/proxy/.test(u.pathname)&&!/^\\/play\\//.test(u.pathname)){'
     + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(GB+u.pathname+(u.search||"")));'
     + '      }}catch(e){}'
     + '    }'
@@ -597,6 +634,67 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /play/<hash>/<path> — Path-based proxy (same-origin for ES modules) ─
+  const playPathMatch = parsedUrl.pathname.match(/^\/play\/([a-zA-Z0-9_-]+)(\/.*)?$/);
+  if (playPathMatch) {
+    const hash = playPathMatch[1];
+    const subPath = playPathMatch[2] || '/';
+    const cdnBase = 'https://html5.gamemonetize.co/' + hash + '/';
+    const targetUrl = cdnBase + (subPath === '/' ? '' : subPath.substring(1));
+
+    const cacheKey = 'playpath:v17:' + targetUrl;
+    const cached = cacheGet(cacheKey);
+    if (cached) {
+      const headers = stripFrameBlocking(cached.headers);
+      headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'public, max-age=3600';
+      res.writeHead(cached.statusCode, headers);
+      res.end(cached.body);
+      return;
+    }
+
+    try {
+      const result = await fetchUrl(targetUrl);
+      const contentType = (result.headers['content-type'] || '').toLowerCase();
+      const proxyBase = 'https://' + req.headers.host + '/play/' + hash + '/';
+
+      if (contentType.includes('text/html')) {
+        let html = result.body.toString('utf-8');
+        html = rewriteHtml(html, targetUrl, req.headers.host, proxyBase);
+        const headers = stripFrameBlocking(result.headers);
+        headers['content-type'] = 'text/html; charset=utf-8';
+        delete headers['content-length'];
+        headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'public, max-age=3600';
+        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
+        res.writeHead(result.statusCode, headers);
+        res.end(html);
+      } else if (contentType.includes('text/css')) {
+        let css = result.body.toString('utf-8');
+        css = rewriteCss(css, targetUrl, req.headers.host);
+        const headers = stripFrameBlocking(result.headers);
+        headers['content-type'] = 'text/css; charset=utf-8';
+        delete headers['content-length'];
+        headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'public, max-age=3600';
+        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
+        res.writeHead(result.statusCode, headers);
+        res.end(css);
+      } else {
+        const headers = stripFrameBlocking(result.headers);
+        headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'public, max-age=3600';
+        cacheSet(cacheKey, result.statusCode, result.headers, result.body);
+        res.writeHead(result.statusCode, headers);
+        res.end(result.body);
+      }
+    } catch (err) {
+      res.writeHead(502, { 'Content-Type': 'text/plain' });
+      res.end('Proxy error: ' + err.message);
+    }
+    return;
+  }
+
   // ── /play?url=<url> — Smart proxy with URL rewriting (cached) ─
   if (parsedUrl.pathname === '/play') {
     const targetUrl = parsedUrl.query.url;
@@ -606,7 +704,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v16:' + targetUrl;
+    const cacheKey = 'play:v17:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);

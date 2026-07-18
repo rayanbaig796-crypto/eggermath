@@ -24,7 +24,7 @@
   <meta name="twitter:description" content="Free browser games on EggerMath. No downloads!" id="tw-desc">
   <meta name="twitter:image" content="https://eggermath.com/images/eggermath-logo.png" id="tw-image">
 
-  <link rel="stylesheet" href="./game-page.css?v=16">
+  <link rel="stylesheet" href="./game-page.css?v=17">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
   <style>
     .game-ad-banner, .ad-container, .ad-wrapper, .ad-slot, .ad-banner,
@@ -202,7 +202,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=16"></script>
+  <script src="./games.js?v=17"></script>
   <script>
     // ─── API BASE ───────────────────────────────────────────────
     const API = '';
@@ -351,7 +351,12 @@
       if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
       } else {
-        embedUrl = '/play?v=16&url=' + encodeURIComponent(game.embedUrl);
+        var hashMatch = game.embedUrl.match(/gamemonetize\.co\/([a-zA-Z0-9_-]+)/);
+        if (hashMatch) {
+          embedUrl = '/play/' + hashMatch[1] + '/';
+        } else {
+          embedUrl = '/play?v=17&url=' + encodeURIComponent(game.embedUrl);
+        }
       }
       gameIframe.src = embedUrl;
 
