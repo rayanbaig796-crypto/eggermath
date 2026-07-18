@@ -164,6 +164,7 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '(function(){'
     + 'var GB=window.__GAME_BASE__||"";'
     + 'var ABS=window.__ABS_PROXY__||"";'
+    + 'function px(u){if(!u||typeof u!=="string")return u;if(/^(data:|blob:|javascript:|about:)/.test(u))return u;if(/^\\/proxy/.test(u))return u;return ABS+"/proxy?url="+encodeURIComponent(u);}'
 
     // Ad domain regex
     + 'var AD=new RegExp(['
@@ -273,22 +274,24 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  return OIB.apply(this,arguments);'
     + '};'
 
-    // Fetch — block ads only
+    // Fetch — block ads + proxy all URLs for CORS
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r instanceof Request?r.url:"");'
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
+    + '  if(typeof r==="string")r=px(r);'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR — block ads only
+    // XHR — block ads + proxy all URLs for CORS
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OSend=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
     + '  if(typeof u==="string"){'
     + '    if(AD.test(u)){this._ab=true;return OO.call(this,m,"about:blank");}'
+    + '    u=px(u);'
     + '  }'
     + '  this._ab=false;'
     + '  return OO.apply(this,arguments);'
@@ -523,7 +526,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v8:' + targetUrl;
+    const cacheKey = 'play:v9:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
