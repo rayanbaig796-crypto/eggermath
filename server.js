@@ -632,6 +632,7 @@ const server = http.createServer(async (req, res) => {
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -648,6 +649,7 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/html; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(html);
@@ -658,12 +660,14 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/css; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(css);
       } else {
         const headers = stripFrameBlocking(result.headers);
         headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'no-cache, no-store, must-revalidate';
         cacheSet(cacheKey, result.statusCode, result.headers, result.body);
         res.writeHead(result.statusCode, headers);
         res.end(result.body);
