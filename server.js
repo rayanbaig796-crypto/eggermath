@@ -157,29 +157,6 @@ function rewriteHtml(html, baseUrl, serverHost) {
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showInterstitial(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showRewardedVideo(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
-  // ── Protect inline script bodies from URL rewriting ──
-  var scriptBodies = [];
-  html = html.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, function(match, attrs, body) {
-    if (body.trim()) {
-      var idx = scriptBodies.length;
-      scriptBodies.push(body);
-      return '<script' + attrs + '>__SCRIPT_' + idx + '__</script>';
-    }
-    return match;
-  });
-
-  // ── Rewrite resource URLs in HTML tags (ABSOLUTE proxy URLs) ──
-  html = html.replace(/((?:src|href|poster|data-src|data-background|background))=(["'])([^"']*?)\2/gi, function(match, attr, q, val) {
-    if (val.startsWith('__SCRIPT_') || val.startsWith('data:') || val.startsWith('blob:') || val.startsWith('javascript:')) return match;
-    if (val.startsWith('/proxy?url=')) return match;
-    return attr + '=' + q + resolveUrl(val) + q;
-  });
-
-  // ── Restore inline script bodies (untouched) ──
-  html = html.replace(/__SCRIPT_(\d+)__/g, function(m, idx) {
-    return scriptBodies[parseInt(idx)] || '';
-  });
-
   // ── Inject <base> tag pointing to original CDN + ad blocker at start of <head> ──
   var gameBaseTag = '<base href="' + baseDir + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
@@ -546,7 +523,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v7:' + targetUrl;
+    const cacheKey = 'play:v8:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
