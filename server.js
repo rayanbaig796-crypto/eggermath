@@ -181,7 +181,7 @@ function rewriteHtml(html, baseUrl, serverHost) {
   });
 
   // ── Inject <base> tag pointing to original CDN + ad blocker at start of <head> ──
-  var gameBaseTag = '<base href="' + origin + '/"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
+  var gameBaseTag = '<base href="' + baseDir + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
   var adBlockerScript = '<script>'
     + '(function(){'
@@ -546,7 +546,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v6:' + targetUrl;
+    const cacheKey = 'play:v7:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
