@@ -225,7 +225,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'doubleclick\\\\.net|googletagmanager\\\\.com|googletagservices\\\\.com|googleadservices\\\\.com|'
     + 'imasdk\\\\.googleapis\\\\.com|supportxmr\\\\.com|coinhive\\\\.(com|net)|coin-hive\\\\.com|'
     + 'cryptoloot\\\\.com|cryptonoter\\\\.com|crypto-loot\\\\.com|coinimp\\\\.com|authedmine\\\\.com|'
-    + 'webminepool\\\\.com|miner||minero\\\\.cc|mining\\\\.pool|minero\\\\.px|'
+    + 'webminepool\\\\.com|miner|minero\\\\.cc|mining\\\\.pool|minero\\\\.px|'
     + 'adskeeper|propellerads|monetag|adsterra|exoclick|juicyads|trafficjunky|revcontent|taboola|outbrain|'
     + 'clickadu|hilltopads|popcash|popads|adsafeprotected\\\\.com|prebid\\\\.org|'
     + 'gtag\\\\.js|ga\\\\.js|analytics\\\\.js|gtm\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google|'
