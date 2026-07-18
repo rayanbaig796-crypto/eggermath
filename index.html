@@ -49,7 +49,11 @@
   <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
   <link rel="preconnect" href="https://html5.gamemonetize.co" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="stylesheet" href="./home.css?v=14">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
+  <link rel="stylesheet" href="./home.css?v=18">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
 </head>
 <body>
@@ -150,7 +154,13 @@
     
     <!-- GAME GRID -->
     <div class="game-grid" id="game-grid">
-      <!-- Injected via JS -->
+      <!-- Skeleton placeholders rendered immediately -->
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
+      <div class="game-card skeleton-card"><div class="skeleton" style="aspect-ratio:1/1;width:100%;"></div><div class="skeleton" style="height:14px;width:80%;margin:8px auto 0;"></div></div>
     </div>
     <div id="scroll-sentinel" style="height:1px;"></div>
 
@@ -190,7 +200,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=17"></script>
+  <script src="./games.js?v=18"></script>
   <script>
     // ═══════════════════════════════════════════════════════════════
     //  DOM ELEMENTS
@@ -317,6 +327,20 @@
         img.dataset.realSrc = img.dataset.src;
         img.removeAttribute('data-src');
         if (_imgObserver) _imgObserver.observe(img);
+      }
+
+      // Prefetch game page on hover for instant navigation
+      if (!isDrawer) {
+        let _prefetched = false;
+        a.addEventListener('mouseenter', function() {
+          if (_prefetched) return;
+          _prefetched = true;
+          const link = document.createElement('link');
+          link.rel = 'prefetch';
+          link.href = a.href;
+          link.as = 'document';
+          document.head.appendChild(link);
+        }, { once: true });
       }
 
       if (!isDrawer) {
@@ -612,6 +636,13 @@
         setTimeout(() => banner.style.display = 'none', 400);
       });
     })();
+
+    // ═══════════════════════════════════════════════════════════════
+    //  SERVICE WORKER — Cache static assets for instant repeat visits
+    // ═══════════════════════════════════════════════════════════════
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(function(){});
+    }
 
   </script>
 </body>

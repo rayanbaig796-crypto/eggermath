@@ -52,7 +52,11 @@ function securityHeaders() {
 // ═══════════════════════════════════════════════════════════════
 const proxyCache = new Map();
 const CACHE_MAX = 5000;
-const CACHE_TTL = 3600 * 1000; // 1 hour — game resources rarely change
+const CACHE_TTL = 86400 * 1000; // 24 hours — game resources rarely change
+
+function genETag(body) {
+  return '"' + crypto.createHash('md5').update(body).digest('hex') + '"';
+}
 
 function cacheGet(key) {
   const entry = proxyCache.get(key);
@@ -69,7 +73,7 @@ function cacheSet(key, statusCode, headers, body) {
     const oldest = proxyCache.keys().next().value;
     proxyCache.delete(oldest);
   }
-  proxyCache.set(key, { statusCode, headers, body, ts: Date.now() });
+  proxyCache.set(key, { statusCode, headers, body, ts: Date.now(), etag: genETag(body) });
 }
 
 // ═══════════════════════════════════════════════════════════════
@@ -509,9 +513,17 @@ const server = http.createServer(async (req, res) => {
 
     const cached = cacheGet(targetUrl);
     if (cached) {
+      // Check If-None-Match for 304 responses
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
+        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
+        res.end();
+        return;
+      }
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=3600';
+      headers['Cache-Control'] = 'public, max-age=86400';
+      headers['ETag'] = cached.etag;
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -522,7 +534,7 @@ const server = http.createServer(async (req, res) => {
       cacheSet(targetUrl, result.statusCode, result.headers, result.body);
       const headers = stripFrameBlocking(result.headers);
       headers['X-Cache'] = 'MISS';
-      headers['Cache-Control'] = 'public, max-age=3600';
+      headers['Cache-Control'] = 'public, max-age=86400';
       res.writeHead(result.statusCode, headers);
       res.end(result.body);
     } catch (err) {
@@ -540,12 +552,19 @@ const server = http.createServer(async (req, res) => {
     const cdnBase = 'https://html5.gamemonetize.co/' + hash + '/';
     const targetUrl = cdnBase + (subPath === '/' ? '' : subPath.substring(1));
 
-    const cacheKey = 'playpath:v17:' + targetUrl;
+    const cacheKey = 'playpath:v18:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
+        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
+        res.end();
+        return;
+      }
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=3600';
+      headers['Cache-Control'] = 'public, max-age=86400';
+      headers['ETag'] = cached.etag;
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -563,7 +582,7 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/html; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(html);
@@ -574,14 +593,14 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/css; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(css);
       } else {
         const headers = stripFrameBlocking(result.headers);
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, result.body);
         res.writeHead(result.statusCode, headers);
         res.end(result.body);
@@ -602,11 +621,19 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v17:' + targetUrl;
+    const cacheKey = 'play:v18:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
+        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
+        res.end();
+        return;
+      }
       const headers = stripFrameBlocking(cached.headers);
       headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'public, max-age=86400';
+      headers['ETag'] = cached.etag;
       res.writeHead(cached.statusCode, headers);
       res.end(cached.body);
       return;
@@ -623,7 +650,7 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/html; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(html);
@@ -634,14 +661,14 @@ const server = http.createServer(async (req, res) => {
         headers['content-type'] = 'text/css; charset=utf-8';
         delete headers['content-length'];
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
         res.writeHead(result.statusCode, headers);
         res.end(css);
       } else {
         const headers = stripFrameBlocking(result.headers);
         headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=3600';
+        headers['Cache-Control'] = 'public, max-age=86400';
         cacheSet(cacheKey, result.statusCode, result.headers, result.body);
         res.writeHead(result.statusCode, headers);
         res.end(result.body);

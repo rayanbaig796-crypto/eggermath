@@ -3,7 +3,7 @@
    Responsive: Phone + Tablet + Desktop
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap');
+/* Google Fonts loaded via <link> preload in index.html for faster render */
 
 /* Visually hidden but accessible to screen-readers & search engines */
 .sr-only {
@@ -824,4 +824,50 @@ footer {
     flex: 1;
     text-align: center;
   }
+}
+
+/* ================================================================
+   SKELETON LOADING + SMOOTH TRANSITIONS
+   ================================================================ */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.skeleton {
+  background: linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: var(--card-radius);
+}
+.skeleton-card {
+  pointer-events: none;
+  animation: fadeInUp 0.3s ease both;
+}
+.skeleton-card:nth-child(2) { animation-delay: 0.05s; }
+.skeleton-card:nth-child(3) { animation-delay: 0.1s; }
+.skeleton-card:nth-child(4) { animation-delay: 0.15s; }
+.skeleton-card:nth-child(5) { animation-delay: 0.2s; }
+.skeleton-card:nth-child(6) { animation-delay: 0.25s; }
+.game-card {
+  animation: fadeInUp 0.25s ease both;
+}
+.game-grid .game-card:nth-child(1) { animation-delay: 0s; }
+.game-grid .game-card:nth-child(2) { animation-delay: 0.02s; }
+.game-grid .game-card:nth-child(3) { animation-delay: 0.04s; }
+.game-grid .game-card:nth-child(4) { animation-delay: 0.06s; }
+.game-grid .game-card:nth-child(5) { animation-delay: 0.08s; }
+.game-grid .game-card:nth-child(6) { animation-delay: 0.1s; }
+.game-thumb {
+  transition: transform 0.2s ease, opacity 0.3s ease;
+}
+.game-card:hover .game-thumb {
+  transform: scale(1.05);
+}
+.game-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
 }
