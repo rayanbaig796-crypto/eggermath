@@ -114,12 +114,12 @@ function fetchUrl(targetUrl, maxRedirects = 8) {
 // ═══════════════════════════════════════════════════════════════
 //  HTML REWRITING — proxy all resources + ad blocker
 // ═══════════════════════════════════════════════════════════════
-function rewriteHtml(html, baseUrl) {
+function rewriteHtml(html, baseUrl, serverHost) {
   const parsed = new URL(baseUrl);
   const origin = parsed.origin;
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
+  const ABS = 'https://' + serverHost;
 
-  var ABS = 'https://' + parsed.host;
   function resolveUrl(href) {
     if (!href || href.startsWith('data:') || href.startsWith('blob:') || href.startsWith('javascript:')) return href;
     if (href.startsWith('/proxy?url=')) return href;
@@ -131,14 +131,20 @@ function rewriteHtml(html, baseUrl) {
   // ── Strip ALL CSP meta tags ──
   html = html.replace(/<meta[^>]*http-equiv=["']Content-Security-Policy["'][^>]*\/?>/gi, '');
 
+  // ── Strip title if it contains ad domain names ──
+  html = html.replace(/<title>[^<]*(?:loko8|gamemonetize\.com\/?|ad[a-z]*\.com)[^<]*<\/title>/gi, '<title>Game — EggerMath</title>');
+
+  // ── Strip ad branding divs ──
+  html = html.replace(/<div[^>]*class=["'][^"']*simmer[^"']*["'][^>]*>[\s\S]*?<\/div>/gi, '');
+
   // ── Strip SDK script tags — ONLY ad SDK, NOT game scripts from html5.gamemonetize.co ──
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
-  // ── Strip all inline SDK-init scripts that call gamemonetize SDK ──
-  html = html.replace(/<script[^>]*>[^<]*(?:gamemonetize-sdk|parentNode\.insertBefore)[^<]*<\/script>/gi, '');
+  // ── Strip ALL inline scripts referencing SDK init patterns ──
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*(?:gamemonetize-sdk|parentNode\.insertBefore|api\.gamemonetize\.com)(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
   // ── Strip fuckAdBlock detection scripts — NOT crossing script boundaries ──
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*fuckAdBlock(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
@@ -174,15 +180,69 @@ function rewriteHtml(html, baseUrl) {
     return scriptBodies[parseInt(idx)] || '';
   });
 
-  // ── Inject <base> tag for dynamic scripts (document.write, createElement) ──
-  var baseTag = '<base href="' + baseDir + '">';
-  html = html.replace(/<head([^>]*)>/i, '<head$1>' + baseTag);
+  // ── Inject game base URL + ad blocker at start of <head> — NO <base> tag ──
+  var gameBaseTag = '<script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
-  // ── AD BLOCKER — single unified script ──
   var adBlockerScript = '<script>'
     + '(function(){'
+    + 'var GB=window.__GAME_BASE__||"";'
+    + 'var ABS=window.__ABS_PROXY__||"";'
 
-    // SDK stubs — must come first before any game code runs
+    // Helper: resolve relative URL → absolute proxy URL
+    + 'function px(u){'
+    + '  if(!u||typeof u!=="string")return u;'
+    + '  if(/^(data:|blob:|javascript:|about:)/.test(u))return u;'
+    + '  if(/^(https?:|\\/proxy)/.test(u))return u;'
+    + '  if(GB)return ABS+"/proxy?url="+encodeURIComponent(GB+u);'
+    + '  return u;'
+    + '}'
+
+    // Ad domain regex
+    + 'var AD=new RegExp(['
+    + '"api\\\\.gamemonetize\\\\.com",'
+    + '"gamemonetize\\\\.com/sdk",'
+    + '"cdn\\\\.gamemonetize\\\\.com.*sdk",'
+    + '"pagead2\\\\.googlesyndication\\\\.com",'
+    + '"adservice\\\\.google\\\\.com",'
+    + '"google\\\\.com/pagead",'
+    + '"google\\\\.com/js/gcm",'
+    + '"doubleclick\\\\.net",'
+    + '"imasdk\\\\.googleapis\\\\.com",'
+    + '"adskeeper",'
+    + '"propellerads",'
+    + '"monetag",'
+    + '"adsterra",'
+    + '"exoclick",'
+    + '"juicyads",'
+    + '"trafficjunky",'
+    + '"revcontent",'
+    + '"taboola",'
+    + '"outbrain",'
+    + '"clickadu",'
+    + '"hilltopads",'
+    + '"popcash",'
+    + '"popads",'
+    + '"fuckadblock",'
+    + '"blockadblock",'
+    + '"adsafeprotected\\\\.com",'
+    + '"prebid\\\\.org",'
+    + '"coinhive\\\\.com",'
+    + '"coinhive\\\\.net",'
+    + '"cryptoloot\\\\.com",'
+    + '"cryptonoter\\\\.com",'
+    + '"crypto-loot",'
+    + '"miner\\\\.start",'
+    + '"coinimp\\\\.com",'
+    + '"authedmine\\\\.com",'
+    + '"webminepool",'
+    + '"gtag\\\\.js",'
+    + '"ga\\\\.js",'
+    + '"analytics\\\\.js",'
+    + '"loko8\\\\.com",'
+    + '"adtrafficquality\\\\.google"'
+    + '].join("|"));'
+
+    // SDK stubs
     + 'window.sdk={showBanner:function(){},'
     + 'showInterstitial:function(){},'
     + 'showRewardedVideo:function(cb){if(cb)cb(false);},'
@@ -205,67 +265,29 @@ function rewriteHtml(html, baseUrl) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // Ad domain regex
-    + 'var AD=new RegExp(['
-    + '"api\\.gamemonetize\\.com",'
-    + '"gamemonetize\\.com/sdk",'
-    + '"cdn\\.gamemonetize\\.com.*sdk",'
-    + '"pagead2\\.googlesyndication\\.com",'
-    + '"adservice\\.google\\.com",'
-    + '"google\\.com/pagead",'
-    + '"google\\.com/js/gcm",'
-    + '"doubleclick\\.net",'
-    + '"imasdk\\.googleapis\\.com",'
-    + '"adskeeper",'
-    + '"propellerads",'
-    + '"monetag",'
-    + '"adsterra",'
-    + '"exoclick",'
-    + '"juicyads",'
-    + '"trafficjunky",'
-    + '"revcontent",'
-    + '"taboola",'
-    + '"outbrain",'
-    + '"clickadu",'
-    + '"hilltopads",'
-    + '"popcash",'
-    + '"popads",'
-    + '"fuckadblock",'
-    + '"blockadblock",'
-    + '"adsafeprotected\\.com",'
-    + '"prebid\\.org",'
-    + '"coinhive\\.com",'
-    + '"coinhive\\.net",'
-    + '"cryptoloot\\.com",'
-    + '"cryptonoter\\.com",'
-    + '"crypto-loot",'
-    + '"miner\\.start",'
-    + '"coinimp\\.com",'
-    + '"authedmine\\.com",'
-    + '"webminepool",'
-    + '"gtag\\.js",'
-    + '"ga\\.js",'
-    + '"analytics\\.js"'
-    + '].join("|"));'
-
-    // Script src interception — block ad domains only
+    // Script src setter — block ads + proxy relative URLs
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
-    + 'set:function(v){if(v&&AD.test(String(v)))return;return OSD.set.call(this,v);},'
+    + 'set:function(v){'
+    + '  if(v&&AD.test(String(v)))return;'
+    + '  v=px(v);'
+    + '  return OSD.set.call(this,v);'
+    + '},'
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute interception — block ad script src only
+    // setAttribute — block ads + proxy relative URLs
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"&&this.tagName==="SCRIPT"){'
     + '    if(AD.test(v))return;'
+    + '    v=px(v);'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
 
-    // appendChild interception — block ad scripts/iframes
+    // appendChild — block ad scripts/iframes
     + 'var OAC=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
@@ -275,7 +297,7 @@ function rewriteHtml(html, baseUrl) {
     + '  return OAC.apply(this,arguments);'
     + '};'
 
-    // insertBefore interception — block SDK insertion via insertBefore
+    // insertBefore — block SDK insertion
     + 'var OIB=Node.prototype.insertBefore;'
     + 'Node.prototype.insertBefore=function(n,r){'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
@@ -285,29 +307,39 @@ function rewriteHtml(html, baseUrl) {
     + '  return OIB.apply(this,arguments);'
     + '};'
 
-    // Fetch interception — block ad domains only
+    // Fetch — block ads + proxy relative URLs
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
-    + '  var u=typeof r==="string"?r:(r&&r.url?""):'
-    + '  (r instanceof Request?r.url:"");'
+    + '  var u=typeof r==="string"?r:(r instanceof Request?r.url:"");'
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
+    + '  if(typeof r==="string")r=px(r);'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR interception — block ad domains only
+    // XHR — block ads + proxy relative URLs
     + 'var OO=XMLHttpRequest.prototype.open;'
-    + 'var OS=XMLHttpRequest.prototype.send;'
+    + 'var OSend=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
-    + '  this._ab=!!(u&&AD.test(u));'
-    + '  if(this._ab)return OO.call(this,m,"about:blank");'
+    + '  if(typeof u==="string"){'
+    + '    if(AD.test(u)){this._ab=true;return OO.call(this,m,"about:blank");}'
+    + '    u=px(u);'
+    + '  }'
+    + '  this._ab=false;'
     + '  return OO.apply(this,arguments);'
     + '};'
     + 'XMLHttpRequest.prototype.send=function(d){'
     + '  if(this._ab)return;'
-    + '  return OS.apply(this,arguments);'
+    + '  return OSend.apply(this,arguments);'
     + '};'
+
+    // sendBeacon — block ads
+    + 'var OSB=navigator.sendBeacon;'
+    + 'if(OSB){navigator.sendBeacon=function(u,d){'
+    + '  if(u&&AD.test(String(u)))return false;'
+    + '  return OSB.apply(this,arguments);'
+    + '};}'
 
     // Popup/popunder blocker
     + 'var OFn=window.open;'
@@ -316,19 +348,33 @@ function rewriteHtml(html, baseUrl) {
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
     + '};'
 
-    // document.write interception — strip ad-related written content
+    // document.write interception — rewrite relative URLs in written HTML
     + 'var ODW=document.write;'
     + 'document.write=function(h){'
-    + '  if(typeof h==="string"&&AD.test(h))return;'
-    + '  return ODW.call(this,h);'
+    + '  if(typeof h==="string"){'
+    + '    if(AD.test(h))return;'
+    + '    h=h.replace(/((?:src|href|poster))=(["\x27])([^"\x27]*?)\\2/gi,function(m,a,q,v){'
+    + '      if(/^(data:|blob:|javascript:|https?:|\\/proxy)/.test(v))return m;'
+    + '      if(GB)return a+"="+q+ABS+"/proxy?url="+encodeURIComponent(GB+v)+q;'
+    + '      return m;'
+    + '    });'
+    + '  }'
+    + '  return ODW.call(document,h);'
     + '};'
     + 'var ODWI=document.writeln;'
     + 'document.writeln=function(h){'
-    + '  if(typeof h==="string"&&AD.test(h))return;'
-    + '  return ODWI.call(this,h);'
+    + '  if(typeof h==="string"){'
+    + '    if(AD.test(h))return;'
+    + '    h=h.replace(/((?:src|href|poster))=(["\x27])([^"\x27]*?)\\2/gi,function(m,a,q,v){'
+    + '      if(/^(data:|blob:|javascript:|https?:|\\/proxy)/.test(v))return m;'
+    + '      if(GB)return a+"="+q+ABS+"/proxy?url="+encodeURIComponent(GB+v)+q;'
+    + '      return m;'
+    + '    });'
+    + '  }'
+    + '  return ODWI.call(document,h);'
     + '};'
 
-    // CSS ad hiders
+    // CSS ad hiders — use double-quoted string with proper escaping
     + 'var cs=document.createElement("style");'
     + 'cs.textContent='
     + '"#sdk__implementation,#imaContainer,#ima-video-container,'
@@ -349,6 +395,7 @@ function rewriteHtml(html, baseUrl) {
     + '[id*=\\"midroll\\"],[class*=\\"midroll\\"],'
     + '[data-ad],[data-ads],[data-ad-unit],[data-ad-slot],'
     + '.ad,.ads,.adv,.adv-container,#ad,#ads,#adv,'
+    + '.simmer,.loko,'
     + 'iframe[src*=\\"doubleclick\\"],iframe[src*=\\"googlesyndication\\"],'
     + 'iframe[src*=\\"adskeeper\\"],iframe[src*=\\"propellerads\\"],'
     + 'iframe[src*=\\"monetag\\"],iframe[src*=\\"adsterra\\"],'
@@ -366,16 +413,16 @@ function rewriteHtml(html, baseUrl) {
     + 'overflow:hidden!important;margin:0!important;padding:0!important;}"'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
-    // MutationObserver — remove ad elements as they appear
+    // MutationObserver — remove ad elements
     + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
     + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|'
     + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
     + 'rewarded[-_]?ad|sponsor|promo[-_]?banner|adfox|adskeeper|propellerads|'
     + 'monetag|adsterra|ad[-_]?banner|ad[-_]?slot|ad[-_]?unit|ad[-_]?modal|'
-    + 'gmasdk|midroll|pre[-_]?roll|poki[-_]?ad/i;'
+    + 'gmasdk|midroll|pre[-_]?roll|poki[-_]?ad|loko/i;'
     + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|'
     + 'adskeeper|propellerads|monetag|adsterra|adfox|exoclick|prebid|'
-    + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp/i;'
+    + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8/i;'
     + 'function bad(el){'
     + '  if(!el||el.nodeType!==1)return false;'
     + '  var t=el.tagName;'
@@ -421,16 +468,16 @@ function rewriteHtml(html, baseUrl) {
 
     + '})()</script>';
 
-  // Inject ad blocker after <base> tag in <head>
-  html = html.replace(/<\/head>/i, adBlockerScript + '</head>');
+  // Inject game base + ad blocker at start of <head> — NO <base> tag
+  html = html.replace(/<head([^>]*)>/i, '<head$1>' + gameBaseTag + adBlockerScript);
 
   return html;
 }
 
-function rewriteCss(css, baseUrl) {
+function rewriteCss(css, baseUrl, serverHost) {
   const parsed = new URL(baseUrl);
   const baseDir = baseUrl.substring(0, baseUrl.lastIndexOf('/') + 1);
-  const ABS = 'https://' + parsed.host;
+  const ABS = 'https://' + serverHost;
 
   function resolveUrl(href) {
     if (!href || href.startsWith('data:') || href.startsWith('blob:')) return href;
@@ -482,6 +529,14 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    // ── Block ad domains at server level ──
+    const AD_DOMAINS = /api\.gamemonetize\.com|pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com/i;
+    if (AD_DOMAINS.test(targetUrl)) {
+      res.writeHead(200, { 'Content-Type': 'text/plain', 'X-Blocked': 'ad-domain' });
+      res.end('');
+      return;
+    }
+
     const cached = cacheGet(targetUrl);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
@@ -514,7 +569,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v3:' + targetUrl;
+    const cacheKey = 'play:v4:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
@@ -530,7 +585,7 @@ const server = http.createServer(async (req, res) => {
 
       if (contentType.includes('text/html')) {
         let html = result.body.toString('utf-8');
-        html = rewriteHtml(html, targetUrl);
+        html = rewriteHtml(html, targetUrl, req.headers.host);
         const headers = stripFrameBlocking(result.headers);
         headers['content-type'] = 'text/html; charset=utf-8';
         delete headers['content-length'];
@@ -540,7 +595,7 @@ const server = http.createServer(async (req, res) => {
         res.end(html);
       } else if (contentType.includes('text/css')) {
         let css = result.body.toString('utf-8');
-        css = rewriteCss(css, targetUrl);
+        css = rewriteCss(css, targetUrl, req.headers.host);
         const headers = stripFrameBlocking(result.headers);
         headers['content-type'] = 'text/css; charset=utf-8';
         delete headers['content-length'];
