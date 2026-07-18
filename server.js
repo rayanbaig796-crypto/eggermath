@@ -180,22 +180,14 @@ function rewriteHtml(html, baseUrl, serverHost) {
     return scriptBodies[parseInt(idx)] || '';
   });
 
-  // ── Inject game base URL + ad blocker at start of <head> — NO <base> tag ──
-  var gameBaseTag = '<script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
+  // ── Inject <base> tag pointing to our proxy + ad blocker at start of <head> ──
+  var baseHref = ABS + '/proxy?url=' + encodeURIComponent(baseUrl);
+  var gameBaseTag = '<base href="' + baseHref + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
   var adBlockerScript = '<script>'
     + '(function(){'
     + 'var GB=window.__GAME_BASE__||"";'
     + 'var ABS=window.__ABS_PROXY__||"";'
-
-    // Helper: resolve relative URL → absolute proxy URL
-    + 'function px(u){'
-    + '  if(!u||typeof u!=="string")return u;'
-    + '  if(/^(data:|blob:|javascript:|about:)/.test(u))return u;'
-    + '  if(/^(https?:|\\/proxy)/.test(u))return u;'
-    + '  if(GB)return ABS+"/proxy?url="+encodeURIComponent(GB+u);'
-    + '  return u;'
-    + '}'
 
     // Ad domain regex
     + 'var AD=new RegExp(['
@@ -265,24 +257,22 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // Script src setter — block ads + proxy relative URLs
+    // Script src setter — block ads only (<base> handles URL resolution)
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
     + 'set:function(v){'
     + '  if(v&&AD.test(String(v)))return;'
-    + '  v=px(v);'
     + '  return OSD.set.call(this,v);'
     + '},'
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute — block ads + proxy relative URLs
+    // setAttribute — block ad scripts only
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"&&this.tagName==="SCRIPT"){'
     + '    if(AD.test(v))return;'
-    + '    v=px(v);'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
@@ -307,24 +297,22 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  return OIB.apply(this,arguments);'
     + '};'
 
-    // Fetch — block ads + proxy relative URLs
+    // Fetch — block ads only
     + 'var OF=window.fetch;'
     + 'window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r instanceof Request?r.url:"");'
     + '  if(u&&AD.test(u)){'
     + '    return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
     + '  }'
-    + '  if(typeof r==="string")r=px(r);'
     + '  return OF.apply(this,arguments);'
     + '};'
 
-    // XHR — block ads + proxy relative URLs
+    // XHR — block ads only
     + 'var OO=XMLHttpRequest.prototype.open;'
     + 'var OSend=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){'
     + '  if(typeof u==="string"){'
     + '    if(AD.test(u)){this._ab=true;return OO.call(this,m,"about:blank");}'
-    + '    u=px(u);'
     + '  }'
     + '  this._ab=false;'
     + '  return OO.apply(this,arguments);'
@@ -348,16 +336,11 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
     + '};'
 
-    // document.write interception — rewrite relative URLs in written HTML
+    // document.write interception — block ads only (<base> handles URL resolution)
     + 'var ODW=document.write;'
     + 'document.write=function(h){'
     + '  if(typeof h==="string"){'
     + '    if(AD.test(h))return;'
-    + '    h=h.replace(/((?:src|href|poster))=(["\x27])([^"\x27]*?)\\2/gi,function(m,a,q,v){'
-    + '      if(/^(data:|blob:|javascript:|https?:|\\/proxy)/.test(v))return m;'
-    + '      if(GB)return a+"="+q+ABS+"/proxy?url="+encodeURIComponent(GB+v)+q;'
-    + '      return m;'
-    + '    });'
     + '  }'
     + '  return ODW.call(document,h);'
     + '};'
@@ -365,11 +348,6 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'document.writeln=function(h){'
     + '  if(typeof h==="string"){'
     + '    if(AD.test(h))return;'
-    + '    h=h.replace(/((?:src|href|poster))=(["\x27])([^"\x27]*?)\\2/gi,function(m,a,q,v){'
-    + '      if(/^(data:|blob:|javascript:|https?:|\\/proxy)/.test(v))return m;'
-    + '      if(GB)return a+"="+q+ABS+"/proxy?url="+encodeURIComponent(GB+v)+q;'
-    + '      return m;'
-    + '    });'
     + '  }'
     + '  return ODWI.call(document,h);'
     + '};'
@@ -468,7 +446,7 @@ function rewriteHtml(html, baseUrl, serverHost) {
 
     + '})()</script>';
 
-  // Inject game base + ad blocker at start of <head> — NO <base> tag
+  // Inject <base> tag + ad blocker at start of <head>
   html = html.replace(/<head([^>]*)>/i, '<head$1>' + gameBaseTag + adBlockerScript);
 
   return html;
@@ -569,7 +547,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v4:' + targetUrl;
+    const cacheKey = 'play:v5:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
