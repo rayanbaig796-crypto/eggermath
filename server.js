@@ -152,10 +152,9 @@ function rewriteHtml(html, baseUrl, serverHost) {
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*adBlockDetect(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
   // ── Strip inline ad-related scripts ──
-  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showBanner\s*\(\s*\)(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*sdk\.showBanner(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showInterstitial(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
-  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showRewardedVideo(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  // NOTE: Do NOT strip scripts containing showBanner/sdk.showBanner/etc
+  // because legitimate game code (delegates, callbacks) also uses these.
+  // Our SDK stubs already make these calls no-ops.
 
   // ── Protect inline script bodies from URL rewriting ──
   var scriptBodies = [];
