@@ -889,7 +889,7 @@ const server = http.createServer(async (req, res) => {
   if (!ext && filePath.endsWith('config')) mime = 'application/javascript';
 
   let cacheControl = 'public, max-age=300';
-  if (ext === '.html' || ext === '.htm') cacheControl = 'no-cache';
+  if (ext === '.html' || ext === '.htm') cacheControl = 'no-store, must-revalidate';
   else if (ext === '.js' || ext === '.css') cacheControl = 'public, max-age=86400, immutable';
   else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
 
