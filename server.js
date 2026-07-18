@@ -208,6 +208,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
 
   var adBlockerScript = '<script>'
     + '(function(){'
+    // ── L0: Core vars + URL rewriter ──
     + 'var G=window.__GAME_BASE__||"",A=window.__ABS_PROXY__||"";'
     + 'function px(u){'
     + '  if(!u||typeof u!=="string")return u;'
@@ -217,7 +218,82 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '    if(/eggermath\\.com/.test(u)){if(G){try{return A+"/proxy?url="+encodeURIComponent(new URL(u).pathname);}catch(e){}}return u;}'
     + '    return A+"/proxy?url="+encodeURIComponent(u);}'
     + '  try{u=new URL(u,document.baseURI).href;}catch(e){}return u;}'
-    + 'var AD=new RegExp("api\\\\.gamemonetize\\\\.com|gamemonetize\\\\.com/sdk|cdn\\\\.gamemonetize\\\\.com.*sdk|pagead2\\\\.googlesyndication\\\\.com|adservice\\\\.google\\\\.com|google\\\\.com/pagead|doubleclick\\\\.net|imasdk\\\\.googleapis\\\\.com|adskeeper|propellerads|monetag|adsterra|exoclick|juicyads|trafficjunky|revcontent|taboola|outbrain|clickadu|hilltopads|popcash|popads|fuckadblock|blockadblock|adsafeprotected\\\\.com|prebid\\\\.org|coinhive|cryptoloot|cryptonoter|crypto-loot|miner\\\\.start|coinimp|authedmine|webminepool|gtag\\\\.js|ga\\\\.js|analytics\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google");'
+
+    // ── L1: Expanded domain blocklist ──
+    + 'var AD=new RegExp("api\\\\.gamemonetize\\\\.com|gamemonetize\\\\.com/sdk|cdn\\\\.gamemonetize\\\\.com.*sdk|'
+    + 'pagead2\\\\.googlesyndication\\\\.com|adservice\\\\.google\\\\.com|google\\\\.com/pagead|google\\\\.com/js/gcm|'
+    + 'doubleclick\\\\.net|googletagmanager\\\\.com|googletagservices\\\\.com|googleadservices\\\\.com|'
+    + 'imasdk\\\\.googleapis\\\\.com|supportxmr\\\\.com|coinhive\\\\.(com|net)|coin-hive\\\\.com|'
+    + 'cryptoloot\\\\.com|cryptonoter\\\\.com|crypto-loot\\\\.com|coinimp\\\\.com|authedmine\\\\.com|'
+    + 'webminepool\\\\.com|miner||minero\\\\.cc|mining\\\\.pool|minero\\\\.px|'
+    + 'adskeeper|propellerads|monetag|adsterra|exoclick|juicyads|trafficjunky|revcontent|taboola|outbrain|'
+    + 'clickadu|hilltopads|popcash|popads|adsafeprotected\\\\.com|prebid\\\\.org|'
+    + 'gtag\\\\.js|ga\\\\.js|analytics\\\\.js|gtm\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google|'
+    + 'pubads|adnxs\\\\.com|adsrvr\\\\.org|adform\\\\.net|rubiconproject\\\\.com|'
+    + 'spotxchange\\\\.com|spotx\\\\.tv|casalemedia\\\\.com|indexexchange\\\\.com|'
+    + 'openx\\\\.net|criteo\\\\.com|criteo\\\\.net|yieldmo\\\\.com|sharethrough\\\\.com|'
+    + 'connatix\\\\.com|medianet\\\\.com|teads\\\\.com|outbrain\\\\.com|'
+    + 'amazon-adsystem\\\\.com|aps\\\\.amazon\\\\.com|aps-sell\\\\.amazon\\\\.com", "i");'
+
+    // ── L2: Expanded element/class ad pattern regex ──
+    + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
+    + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|ad[-_]?modal|'
+    + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
+    + 'rewarded[-_]?ad|sponsor|promo[-_]?banner|adfox|adskeeper|propellerads|'
+    + 'monetag|adsterra|ad[-_]?banner|ad[-_]?slot|ad[-_]?unit|ad[-_]?floor|'
+    + 'gmasdk|midroll|pre[-_]?roll|poki[-_]?ad|loko|__gads|google_ads|'
+    + 'adstitial|adhesion|adbann|advert|adzone|adspace|adserver|adclick|'
+    + 'sponsored|promotion|marketing|tracking|analytics|beacon|pixel|'
+    + 'ninja|adblock|blockad|anti[-_]?ad|detect[-_]?ad|pubads|dfp|'
+    + 'video[-_]?ad|audio[-_]?ad|native[-_]?ad|banner[-_]?ad|sticky[-_]?ad|'
+    + 'gamemonetize-sdk|loko8/i;'
+    + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|'
+    + 'adskeeper|propellerads|monetag|adsterra|adfox|exoclick|prebid|'
+    + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8|'
+    + 'supportxmr|coin-hive|minero|webminepool|authedmine|'
+    + 'adnxs|adsrvr|adform|rubiconproject|openx|criteo|casalemedia|'
+    + 'amazon-adsystem|aps\\\\.amazon|connatix|medianet|teads/i;'
+
+    // ── L3: SDK stubs (expanded) ──
+    + 'var _noop=function(){};'
+    + 'window.sdk={showBanner:_noop,showInterstitial:_noop,'
+    + 'showRewardedVideo:function(c){if(c)c(false);},'
+    + 'addEventListener:_noop,removeEventListener:_noop,gameData:{},isReady:true};'
+    + 'window.SDK_OPTIONS={gameId:"stub",onEvent:_noop};'
+    + 'window.idhbgd=window.sdk;window.gdsdk=window.sdk;window.mraid=window.sdk;'
+    + 'var _m={init:_noop,start:_noop,stop:_noop,destroy:_noop,addEventListener:_noop,removeEventListener:_noop,resize:_noop,getAdProgressInfo:function(){return{duration:0,currentTime:0};}};'
+    + 'window.google={ima:{AdsRequest:_noop,AdsManager:function(){this.init=_m.init;this.start=_m.start;this.stop=_m.stop;this.destroy=_m.destroy;this.addEventListener=_m.addEventListener;this.removeEventListener=_m.removeEventListener;this.resize=_m.resize;this.getAdProgressInfo=_m.getAdProgressInfo;},AdsManagerLoadedEvent:_noop,AdDisplayContainer:function(){this.initialize=_noop;},ImaSdkSettings:function(){this.setVpaidMode=_noop;this.setPlayerType=_noop;this.setPlayerVersion=_noop;this.setAutoPlayAdBreaks=_noop;this.setDisableCustomPlaybackForIOS10Plus=_noop;},SdkAdTechErrorEvent:_noop,AdEvent:_noop,AdErrorEvent:_noop}};'
+    + 'window.pbjs=window.pbjs||{que:[],cmd:[],push:function(f){f();},onEvent:_noop,addAdUnits:_noop,removeAdUnit:_noop,refreshAll:null,requestBids:function(c){if(c&&c.bidsBackHandler)c.bidsBackHandler([]);},enableSendAllBids:_noop,setConfig:_noop,getConfig:function(){return{};},que:{push:function(f){f();}}};'
+    + 'window.__gads=undefined;window.google_ads=[];window.__google_ads_client=null;'
+    + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
+    + 'window.canRunAds=true;window.adBlockDetected=false;window.isAdBlockActive=false;'
+
+    // ── L4: Anti-anti-adblock bypass ──
+    // Override detection globals that games check
+    + 'var _da=["adBlockDetected","isAdBlockActive","adblock","adBlocker","adblocker","adblock_detected","adBlockEnabled","ad_blocker"];'
+    + '_da.forEach(function(k){try{Object.defineProperty(window,k,{get:function(){return false;},set:function(){},configurable:true});}catch(e){}});'
+
+    // Fake ad element presence so detection thinks ads loaded
+    + 'function fakeAd(){var d=document.createElement("div");d.id="google_ads_frame";d.style.cssText="width:1px;height:1px;position:absolute;left:-9999px;top:-9999px;opacity:0;pointer-events:none;";d.setAttribute("data-ad-status","filled");document.body.appendChild(d);return d;}'
+    + 'var _fakeAdInterval=setInterval(function(){if(document.body&&!document.getElementById("google_ads_frame")){fakeAd();}},500);'
+
+    // Override MutationObserver to also detect when detection scripts check for ads
+    + 'var _realMO=MutationObserver;window.MutationObserver=function(cb){'
+    + '  return new _realMO(function(records,obs){'
+    + '    cb(records,obs);'
+    + '    for(var i=0;i<records.length;i++){'
+    + '      var nodes=records[i].addedNodes;'
+    + '      for(var j=0;j<nodes.length;j++){'
+    + '        var n=nodes[j];if(n.nodeType!==1)continue;'
+    + '        var id=(n.id||"")+" "+(n.className||"");'
+    + '        if(/fuckAdBlock|blockAdBlock|adblock-detect|adb-detect|detectAdBlock/i.test(id)){n.remove();}'
+    + '      }'
+    + '    }'
+    + '  });'
+    + '};'
+    + 'window.MutationObserver.prototype=_realMO.prototype;window.MutationObserver.prototype.constructor=window.MutationObserver;'
+
+    // ── L5: URL rewriter (shared) ──
     + 'function rw(v){'
     + '  if(!v||typeof v!=="string"||/^(data:|blob:|javascript:|about:)/.test(v))return v;'
     + '  try{var u=new URL(v,document.baseURI);'
@@ -226,38 +302,40 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '    return A+"/proxy?url="+encodeURIComponent(u.href);}'
     + '  if(G&&!/^\\/proxy|^\\/play\\//.test(u.pathname)&&u.pathname!=="/")'
     + '    return A+"/proxy?url="+encodeURIComponent(G+u.pathname+(u.search||""));}catch(e){}return v;}'
-    + 'window.sdk={showBanner:function(){},showInterstitial:function(){},showRewardedVideo:function(c){if(c)c(false);},addEventListener:function(){},removeEventListener:function(){},gameData:{},isReady:false};'
-    + 'window.SDK_OPTIONS={gameId:"s",onEvent:function(){}};'
-    + 'window.idhbgd=window.sdk;window.gdsdk=window.sdk;'
-    + 'var _m={init:function(){},start:function(){},stop:function(){},destroy:function(){},addEventListener:function(){},resize:function(){},getAdProgressInfo:function(){return{duration:0,currentTime:0};}};'
-    + 'window.google={ima:{AdsRequest:function(){},AdsManager:function(){this.init=_m.init;this.start=_m.start;this.stop=_m.stop;this.destroy=_m.destroy;this.addEventListener=_m.addEventListener;this.resize=_m.resize;this.getAdProgressInfo=_m.getAdProgressInfo;},AdsManagerLoadedEvent:function(){},AdDisplayContainer:function(){this.initialize=function(){};},ImaSdkSettings:function(){this.setVpaidMode=function(){};this.setPlayerType=function(){};this.setPlayerVersion=function(){};},SdkAdTechErrorEvent:function(){},AdEvent:function(){},AdErrorEvent:function(){}}};'
-    + 'window.pbjs=window.pbjs||{que:[],cmd:[],push:function(f){f();}};'
-    + 'window.adsbygoogle=[];window.__gads=undefined;'
-    + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
+
+    // ── L6: Script + Image src setter patching ──
     + 'var O={script:HTMLScriptElement.prototype,img:HTMLImageElement.prototype};'
     + '["script","img"].forEach(function(t){'
     + '  var d=Object.getOwnPropertyDescriptor(O[t].__proto__||Object.getPrototypeOf(O[t]),"src");'
     + '  if(d&&d.set)try{Object.defineProperty(O[t],"src",{get:function(){return d.get.call(this);},'
     + '  set:function(v){if(AD.test(String(v)))return;return d.set.call(this,rw(v));},configurable:true,enumerable:true});}catch(e){}'
     + '});'
+
+    // ── L7: setAttribute patch ──
     + 'var _sa=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"){'
     + '    var t=this.tagName;if(t==="SCRIPT"&&AD.test(v))return;'
     + '    if(t==="SCRIPT"||t==="IMG")v=rw(v);}'
+    + '  if(n==="href"&&typeof v==="string"&&this.tagName==="LINK"&&AD.test(v))return;'
     + '  return _sa.call(this,n,v);};'
+
+    // ── L8: appendChild + insertBefore ──
     + 'function _fixEl(n){'
     + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
-    + '    if(AD.test(s))return n;'
+    + '    if(AD.test(s)||AD.test(n.textContent||""))return n;'
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){n.setAttribute("src",rw(s));}'
     + '      else if(G&&!/^\\/proxy|^\\/play\\//.test(u.pathname))n.setAttribute("src",rw(s));}catch(e){}}}'
     + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")&&AD.test(n.src||n.getAttribute("src")||""))return n;'
+    + '  if(n&&n.tagName==="LINK"&&AD.test(n.getAttribute("href")||""))return n;'
     + '  return n;}'
     + 'var _ac=Element.prototype.appendChild;Element.prototype.appendChild=function(n){var r=_fixEl(n);return r!==n?r:_ac.apply(this,arguments);};'
     + 'var _ib=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,r){var f=_fixEl(n);return f!==n?f:_ib.apply(this,arguments);};'
+
+    // ── L9: fetch + XHR interception ──
     + 'var _f=window.fetch;window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r instanceof Request?r.url:"");'
     + '  if(u&&AD.test(u))return Promise.resolve(new Response("",{status:200,headers:{"Content-Type":"text/plain"}}));'
@@ -265,24 +343,99 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'var _xo=XMLHttpRequest.prototype.open;var _xs=XMLHttpRequest.prototype.send;'
     + 'XMLHttpRequest.prototype.open=function(m,u){if(typeof u==="string"){if(AD.test(u)){this._ab=true;return _xo.call(this,m,"about:blank");}u=px(u);this._ab=false;return _xo.call(this,m,u);}this._ab=false;return _xo.apply(this,arguments);};'
     + 'XMLHttpRequest.prototype.send=function(d){if(this._ab)return;return _xs.apply(this,arguments);};'
+
+    // ── L10: sendBeacon + window.open + performance ──
     + 'var _sb=navigator.sendBeacon;if(_sb)navigator.sendBeacon=function(u,d){return AD.test(String(u))?false:_sb.apply(this,arguments);};'
     + 'var _wo=window.open;window.open=function(u,n,f){if(u&&AD.test(String(u)))return null;try{return _wo.call(this,u,n,f);}catch(e){return null;}};'
+
+    // ── L11: WebSocket blocking (ad tracking + crypto mining) ──
+    + 'var _WS=window.WebSocket;if(_WS){var _WSProto=_WS.prototype;'
+    + 'window.WebSocket=function(u,pr){'
+    + '  if(u&&AD.test(u)){console.log("[AdBlocker] Blocked WebSocket: "+u);return new _WS("about:blank");}'
+    + '  if(/wss?:\\/\\/.test(u)&&/(ads|tracking|beacon|pixel|analytics|miner|coinhive|cryptoloot|coinimp)/.test(u)){'
+    + '    console.log("[AdBlocker] Blocked tracking WS: "+u);return new _WS("about:blank");}'
+    + '  return pr?new _WS(u,pr):new _WS(u);};'
+    + 'window.WebSocket.prototype=_WSProto;window.WebSocket.prototype.constructor=window.WebSocket;'
+    + 'window.WebSocket.CONNECTING=_WS.CONNECTING;window.WebSocket.OPEN=_WS.OPEN;'
+    + 'window.WebSocket.CLOSING=_WS.CLOSING;window.WebSocket.CLOSED=_WS.CLOSED;}'
+
+    // ── L12: Web Worker blocking (ad + mining workers) ──
+    + 'var _Worker=window.Worker;if(_Worker){window.Worker=function(u,opts){'
+    + '  if(u&&(AD.test(String(u))||/(miner|coinhive|cryptoloot|coinimp|wasm|crypto)/.test(String(u)))){'
+    + '    console.log("[AdBlocker] Blocked Worker: "+u);return {terminate:function(){},onmessage:null,onerror:null};}'
+    + '  return new _Worker(u,opts);};}'
+
+    // ── L13: document.write/writeln interception ──
     + 'var _dw=document.write;document.write=function(h){if(typeof h==="string"&&!AD.test(h))h=h.replace(/(<script\\b[^>]*\\bsrc=["\'])([^"\']*?)(["\'][^>]*>)/gi,function(m,p,u,q){if(!u||/^(data:|blob:|javascript:)/.test(u)||/^\\/proxy/.test(u))return m;try{var r=new URL(u,document.baseURI);if(r.origin!==location.origin){return p+A+"/proxy?url="+encodeURIComponent(r.href)+q;}}catch(e){}return m;});return _dw.call(document,h);};'
-    + 'var _dw=document.writeln;document.writeln=function(h){if(typeof h==="string"&&!AD.test(h))h=h.replace(/(<script\\b[^>]*\\bsrc=["\'])([^"\']*?)(["\'][^>]*>)/gi,function(m,p,u,q){if(!u||/^(data:|blob:|javascript:)/.test(u)||/^\\/proxy/.test(u))return m;try{var r=new URL(u,document.baseURI);if(r.origin!==location.origin){return p+A+"/proxy?url="+encodeURIComponent(r.href)+q;}}catch(e){}return m;});return _dw.call(document,h);};'
+    + 'var _dwl=document.writeln;document.writeln=function(h){if(typeof h==="string"&&!AD.test(h))h=h.replace(/(<script\\b[^>]*\\bsrc=["\'])([^"\']*?)(["\'][^>]*>)/gi,function(m,p,u,q){if(!u||/^(data:|blob:|javascript:)/.test(u)||/^\\/proxy/.test(u))return m;try{var r=new URL(u,document.baseURI);if(r.origin!==location.origin){return p+A+"/proxy?url="+encodeURIComponent(r.href)+q;}}catch(e){}return m;});return _dwl.call(document,h);};'
+
+    // ── L14: CSS ad hiders (expanded) ──
     + 'var cs=document.createElement("style");cs.textContent='
-    + '"[id*=\\"sdk__implementation\\"],[id*=\\"imaContainer\\"],[id*=\\"google_ads\\"],[id*=\\"ad-container\\"],[id*=\\"ad-wrapper\\"],[id*=\\"ad-overlay\\"],[id*=\\"ad-popup\\"],[id*=\\"ad-modal\\"],[id*=\\"preroll\\"],[id*=\\"interstitial\\"],[id*=\\"rewarded\\"],[id*=\\"midroll\\"],[id*=\\"adbreak\\"],[id*=\\"adfox\\"],[id*=\\"gmasdk\\"],'
-    + '[class*=\\"ad-container\\"],[class*=\\"ad-wrapper\\"],[class*=\\"ad-overlay\\"],[class*=\\"ad-popup\\"],[class*=\\"ad-modal\\"],[class*=\\"adsbygoogle\\"],[class*=\\"google-ad\\"],[class*=\\"adfox\\"],[class*=\\"simmer\\"],[class*=\\"loko\\"],'
+    + '"[id*=\\"sdk__implementation\\"],[id*=\\"imaContainer\\"],[id*=\\"google_ads\\"],'
+    + '[id*=\\"ad-container\\"],[id*=\\"ad-wrapper\\"],[id*=\\"ad-overlay\\"],'
+    + '[id*=\\"ad-popup\\"],[id*=\\"ad-modal\\"],[id*=\\"preroll\\"],'
+    + '[id*=\\"interstitial\\"],[id*=\\"rewarded\\"],[id*=\\"midroll\\"],'
+    + '[id*=\\"adbreak\\"],[id*=\\"adfox\\"],[id*=\\"gmasdk\\"],'
+    + '[id*=\\"adblock\\"],[id*=\\"__gads\\"],[id*=\\"google_ads\\"],'
+    + '[class*=\\"ad-container\\"],[class*=\\"ad-wrapper\\"],'
+    + '[class*=\\"ad-overlay\\"],[class*=\\"ad-popup\\"],'
+    + '[class*=\\"ad-modal\\"],[class*=\\"adsbygoogle\\"],'
+    + '[class*=\\"google-ad\\"],[class*=\\"adfox\\"],'
+    + '[class*=\\"simmer\\"],[class*=\\"loko\\"],'
+    + '[class*=\\"ad-sticky\\"],[class*=\\"sponsored\\"],'
     + '.ad,.ads,.adv,.adv-container,#ad,#ads,#adv,'
-    + 'iframe[src*=\\"doubleclick\\"],iframe[src*=\\"googlesyndication\\"],iframe[src*=\\"adskeeper\\"],iframe[src*=\\"propellerads\\"],iframe[src*=\\"monetag\\"],iframe[src*=\\"adsterra\\"],iframe[src*=\\"adfox\\"],iframe[src*=\\"imasdk\\"],'
-    + 'div[style*\\"z-index: 9999\\"],div[style*\\"z-index:9999\\"],div[style*\\"z-index: 2147483647\\"]'
-    + '{display:none!important;visibility:hidden!important;};(document.head||document.documentElement).appendChild(cs);'
-    + 'var P=/sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|rewarded[-_]?ad|sponsor|promo[-_]?banner|adfox|adskeeper|propellerads|monetag|adsterra|ad[-_]?banner|ad[-_]?slot|ad[-_]?unit|ad[-_]?modal|gmasdk|midroll|pre[-_]?roll|poki[-_]?ad|loko/i;'
-    + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|adskeeper|propellerads|monetag|adsterra|adfox|exoclick|prebid|pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8/i;'
-    + 'function bad(el){if(!el||el.nodeType!==1)return false;var t=el.tagName;if(t==="SCRIPT"||t==="IFRAME"||t==="LINK"){if(D.test(el.src||el.getAttribute("href")||""))return true;}return P.test((el.className||"")+" "+(el.id||""));}'
-    + 'function sweep(){var a=document.querySelectorAll("script,iframe,div[id],div[class]");for(var i=0;i<a.length;i++){if(bad(a[i]))a[i].remove();}}'
-    + 'var obs=new MutationObserver(function(m){for(var i=0;i<m.length;i++){var n=m[i].addedNodes;for(var j=0;j<n.length;j++){if(n[j].nodeType===1&&bad(n[j]))n[j].remove();}}});'
-    + 'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body,{childList:true,subtree:true});sweep();});'
-    + 'else{obs.observe(document.body,{childList:true,subtree:true});sweep();}window.addEventListener("load",sweep);'
+    + 'iframe[src*=\\"doubleclick\\"],iframe[src*=\\"googlesyndication\\"],'
+    + 'iframe[src*=\\"adskeeper\\"],iframe[src*=\\"propellerads\\"],'
+    + 'iframe[src*=\\"monetag\\"],iframe[src*=\\"adsterra\\"],'
+    + 'iframe[src*=\\"adfox\\"],iframe[src*=\\"imasdk\\"],'
+    + 'iframe[id*=\\"google_ads\\"],iframe[name*=\\"google_ads\\"],'
+    + 'div[style*\\"z-index: 9999\\"],div[style*\\"z-index:9999\\"],'
+    + 'div[style*\\"z-index: 2147483647\\"],'
+    + 'div[data-ad-status],div[data-slot],div[data-google-container-id],'
+    + 'amp-ad,amp-embed,ins.adsbygoogle'
+    + '{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;}'
+    + ';(document.head||document.documentElement).appendChild(cs);'
+
+    // ── L15: DOM sweep + MutationObserver ──
+    + 'function bad(el){if(!el||el.nodeType!==1)return false;var t=el.tagName;'
+    + '  if(t==="SCRIPT"||t==="IFRAME"||t==="LINK"){if(D.test(el.src||el.getAttribute("href")||""))return true;}'
+    + '  if(t==="INS"&&el.classList.contains("adsbygoogle"))return true;'
+    + '  var c=(el.className||"")+" "+(el.id||"");return P.test(c);}'
+    + 'function sweep(){'
+    + '  var a=document.querySelectorAll("script,iframe,div[id],div[class],ins,amp-ad,link[rel=\\"stylesheet\\"]");'
+    + '  for(var i=0;i<a.length;i++){if(bad(a[i]))a[i].remove();}'
+    + '  var iframes=document.querySelectorAll("iframe");'
+    + '  for(var i=0;i<iframes.length;i++){var f=iframes[i];'
+    + '    try{var fc=f.contentDocument;if(fc&&fc.body){var fs=fc.querySelectorAll("script,iframe");'
+    + '    for(var j=0;j<fs.length;j++){if(bad(fs[j]))fs[j].remove();}}}catch(e){}}'
+    + '}'
+    + 'var obs=new MutationObserver(function(m){for(var i=0;i<m.length;i++){var nd=m[i].addedNodes;for(var j=0;j<nd.length;j++){var n=nd[j];if(n.nodeType===1&&bad(n))n.remove();}}});'
+    + 'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body||document.documentElement,{childList:true,subtree:true});sweep();});'
+    + 'else{obs.observe(document.body||document.documentElement,{childList:true,subtree:true});sweep();}'
+    + 'window.addEventListener("load",sweep);'
+    + 'setInterval(sweep,3000);'
+
+    // ── L16: PerformanceObserver — hide ad resource timing entries ──
+    + 'try{var _PO=window.PerformanceObserver;if(_PO){var _poObs=new _PO(function(list){'
+    + '  list.getEntries().forEach(function(e){'
+    + '    if(e.name&&AD.test(e.name)){try{e.name="about:blank";}catch(ex){}}});});'
+    + '_poObs.observe({type:"resource",buffered:false});}}catch(e){}'
+
+    // ── L17: Anti-fingerprinting (navigator overrides) ──
+    + 'try{Object.defineProperty(navigator,"languages",{get:function(){return["en-US","en"];}});'
+    + 'Object.defineProperty(navigator,"plugins",{get:function(){return[1,2,3,4,5];}});'
+    + 'Object.defineProperty(navigator,"doNotTrack",{get:function(){return"1";}});'
+    + 'if(window.chrome===undefined)window.chrome={runtime:{},loadTimes:function(){},csi:function(){}};}catch(e){}'
+
+    // ── L18: Override addEventListener to catch ad detection event listeners ──
+    + 'var _ael=EventTarget.prototype.addEventListener;'
+    + 'EventTarget.prototype.addEventListener=function(t,fn,opts){'
+    + '  if(typeof fn==="function"){'
+    + '    var fs=fn.toString();'
+    + '    if(/fuckAdBlock|blockAdBlock|adblock.detect|adBlocker|adsBlocked/i.test(fs))return;'
+    + '  }'
+    + '  return _ael.call(this,t,fn,opts);};'
+
     + '})()</script>';
 
   // Inject <base> tag + ad blocker at start of <head>
@@ -347,7 +500,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     // ── Block ad domains at server level ──
-    const AD_DOMAINS = /api\.gamemonetize\.com|pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com/i;
+    const AD_DOMAINS = /api\.gamemonetize\.com|pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
     if (AD_DOMAINS.test(targetUrl)) {
       res.writeHead(200, { 'Content-Type': 'text/plain', 'X-Blocked': 'ad-domain' });
       res.end('');
