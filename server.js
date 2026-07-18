@@ -281,15 +281,40 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute — block ads + proxy cross-origin script src
-    + 'var OSA=Element.prototype.setAttribute;'
-    + 'Element.prototype.setAttribute=function(n,v){'
-    + '  if(n==="src"&&typeof v==="string"&&this.tagName==="SCRIPT"){'
-    + '    if(AD.test(v))return;'
+    // Image src setter — proxy cross-origin images for CORS
+    + 'var OI=Object.getOwnPropertyDescriptor(HTMLImageElement.prototype,"src");'
+    + 'if(OI&&OI.set){try{Object.defineProperty(HTMLImageElement.prototype,"src",{'
+    + 'get:function(){return OI.get.call(this);},'
+    + 'set:function(v){'
+    + '  if(v&&typeof v==="string"&&!/^(data:|blob:|javascript:|about:)/.test(v)){'
     + '    try{var u=new URL(v,document.baseURI);'
     + '    if(u.origin!==location.origin){'
     + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
     + '    }}catch(e){}'
+    + '  }'
+    + '  return OI.set.call(this,v);'
+    + '},'
+    + 'configurable:true,enumerable:true'
+    + '});}catch(e){}}'
+
+    // setAttribute — block ads + proxy cross-origin script AND image src
+    + 'var OSA=Element.prototype.setAttribute;'
+    + 'Element.prototype.setAttribute=function(n,v){'
+    + '  if(n==="src"&&typeof v==="string"){'
+    + '    if(this.tagName==="SCRIPT"){'
+    + '      if(AD.test(v))return;'
+    + '      try{var u=new URL(v,document.baseURI);'
+    + '      if(u.origin!==location.origin){'
+    + '        v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '      }}catch(e){}'
+    + '    }else if(this.tagName==="IMG"){'
+    + '      if(!/^(data:|blob:|javascript:|about:)/.test(v)){'
+    + '        try{var u2=new URL(v,document.baseURI);'
+    + '        if(u2.origin!==location.origin){'
+    + '          v=ABS+"/proxy?url="+encodeURIComponent(u2.href);'
+    + '        }}catch(e){}'
+    + '      }'
+    + '    }'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
@@ -602,7 +627,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v12:' + targetUrl;
+    const cacheKey = 'play:v13:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
