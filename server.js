@@ -258,7 +258,7 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'AdDisplayContainer:function(){this.initialize=function(){};},'
     + 'ImaSdkSettings:function(){this.setVpaidMode=function(){};'
     + 'this.setPlayerType=function(){};this.setPlayerVersion=function(){};},'
-    + 'SdkAdTechErrorEvent:function(){},AdEvent:function(){},AdErrorEvent:function(){}};'
+    + 'SdkAdTechErrorEvent:function(){},AdEvent:function(){},AdErrorEvent:function(){}}};'
     + 'window.pbjs=window.pbjs||{que:[],cmd:[],push:function(f){f();}};'
     + 'window.adsbygoogle=[];window.__gads=undefined;window.google_ads=[];'
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
@@ -602,7 +602,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v11:' + targetUrl;
+    const cacheKey = 'play:v12:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
