@@ -157,6 +157,29 @@ function rewriteHtml(html, baseUrl, serverHost) {
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showInterstitial(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*showRewardedVideo(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
+  // ── Protect inline script bodies from URL rewriting ──
+  var scriptBodies = [];
+  html = html.replace(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi, function(match, attrs, body) {
+    if (body.trim()) {
+      var idx = scriptBodies.length;
+      scriptBodies.push(body);
+      return '<script' + attrs + '>__SCRIPT_' + idx + '__</script>';
+    }
+    return match;
+  });
+
+  // ── Rewrite resource URLs in HTML tags (ABSOLUTE proxy URLs) ──
+  html = html.replace(/((?:src|href|poster|data-src|data-background|background))=(["'])([^"']*?)\2/gi, function(match, attr, q, val) {
+    if (val.startsWith('__SCRIPT_') || val.startsWith('data:') || val.startsWith('blob:') || val.startsWith('javascript:')) return match;
+    if (val.startsWith('/proxy?url=')) return match;
+    return attr + '=' + q + resolveUrl(val) + q;
+  });
+
+  // ── Restore inline script bodies (untouched) ──
+  html = html.replace(/__SCRIPT_(\d+)__/g, function(m, idx) {
+    return scriptBodies[parseInt(idx)] || '';
+  });
+
   // ── Inject <base> tag pointing to original CDN + ad blocker at start of <head> ──
   var gameBaseTag = '<base href="' + baseDir + '"><script>window.__GAME_BASE__="' + baseDir + '";window.__ABS_PROXY__="' + ABS + '";</script>';
 
@@ -164,7 +187,14 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '(function(){'
     + 'var GB=window.__GAME_BASE__||"";'
     + 'var ABS=window.__ABS_PROXY__||"";'
-    + 'function px(u){if(!u||typeof u!=="string")return u;if(/^(data:|blob:|javascript:|about:)/.test(u))return u;if(/^\\/proxy/.test(u))return u;return ABS+"/proxy?url="+encodeURIComponent(u);}'
+    + 'function px(u){'
+    + '  if(!u||typeof u!=="string")return u;'
+    + '  if(/^(data:|blob:|javascript:|about:)/.test(u))return u;'
+    + '  if(/^\\/proxy/.test(u))return u;'
+    + '  if(/https?:\\/\\/[^/]*eggermath\\.com/.test(u))return u;'
+    + '  try{u=new URL(u,document.baseURI).href;}catch(e){}'
+    + '  return ABS+"/proxy?url="+encodeURIComponent(u);'
+    + '}'
 
     // Ad domain regex
     + 'var AD=new RegExp(['
@@ -234,42 +264,72 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'window.fuckAdBlock=false;window.blockAdBlock=false;window.canRunAds=true;'
     + 'window.AdBlockDetect=false;window.adBlockEnabled=false;'
 
-    // Script src setter — block ads only (<base> handles URL resolution)
+    // Script src setter — block ads + proxy cross-origin scripts
     + 'var OSD=Object.getOwnPropertyDescriptor(HTMLScriptElement.prototype,"src");'
     + 'if(OSD&&OSD.set){try{Object.defineProperty(HTMLScriptElement.prototype,"src",{'
     + 'get:function(){return OSD.get.call(this);},'
     + 'set:function(v){'
     + '  if(v&&AD.test(String(v)))return;'
+    + '  if(v&&typeof v==="string"&&!/^(data:|blob:|javascript:)/.test(v)){'
+    + '    try{var u=new URL(v,document.baseURI);'
+    + '    if(u.origin!==location.origin){'
+    + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '    }}catch(e){}'
+    + '  }'
     + '  return OSD.set.call(this,v);'
     + '},'
     + 'configurable:true,enumerable:true'
     + '});}catch(e){}}'
 
-    // setAttribute — block ad scripts only
+    // setAttribute — block ads + proxy cross-origin script src
     + 'var OSA=Element.prototype.setAttribute;'
     + 'Element.prototype.setAttribute=function(n,v){'
     + '  if(n==="src"&&typeof v==="string"&&this.tagName==="SCRIPT"){'
     + '    if(AD.test(v))return;'
+    + '    try{var u=new URL(v,document.baseURI);'
+    + '    if(u.origin!==location.origin){'
+    + '      v=ABS+"/proxy?url="+encodeURIComponent(u.href);'
+    + '    }}catch(e){}'
     + '  }'
     + '  return OSA.call(this,n,v);'
     + '};'
 
-    // appendChild — block ad scripts/iframes
+    // appendChild — block ad scripts/iframes + proxy cross-origin scripts
     + 'var OAC=Element.prototype.appendChild;'
     + 'Element.prototype.appendChild=function(n){'
-    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
     + '    if(AD.test(s))return n;'
+    + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
+    + '      try{var u=new URL(s,document.baseURI);'
+    + '      if(u.origin!==location.origin){'
+    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
+    + '      }}catch(e){}'
+    + '    }'
+    + '  }'
+    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '    var s2=n.src||n.getAttribute("src")||"";'
+    + '    if(AD.test(s2))return n;'
     + '  }'
     + '  return OAC.apply(this,arguments);'
     + '};'
 
-    // insertBefore — block SDK insertion
+    // insertBefore — block SDK insertion + proxy cross-origin scripts
     + 'var OIB=Node.prototype.insertBefore;'
     + 'Node.prototype.insertBefore=function(n,r){'
-    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
     + '    if(AD.test(s))return n;'
+    + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
+    + '      try{var u=new URL(s,document.baseURI);'
+    + '      if(u.origin!==location.origin){'
+    + '        n.setAttribute("src",ABS+"/proxy?url="+encodeURIComponent(u.href));'
+    + '      }}catch(e){}'
+    + '    }'
+    + '  }'
+    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")){'
+    + '    var s2=n.src||n.getAttribute("src")||"";'
+    + '    if(AD.test(s2))return n;'
     + '  }'
     + '  return OIB.apply(this,arguments);'
     + '};'
@@ -317,11 +377,18 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + '  try{return OFn.call(this,u,n,f);}catch(e){return null;}'
     + '};'
 
-    // document.write interception — block ads only (<base> handles URL resolution)
+    // document.write interception — block ads + rewrite script src to proxy
     + 'var ODW=document.write;'
     + 'document.write=function(h){'
     + '  if(typeof h==="string"){'
     + '    if(AD.test(h))return;'
+    + '    h=h.replace(/(<script\\b[^>]*\\bsrc=["\'])([^"\']*?)(["\'][^>]*>)/gi,function(m,p,u,q){'
+    + '      if(!u||/^(data:|blob:|javascript:)/.test(u)||/^\\/proxy/.test(u))return m;'
+    + '      try{var r=new URL(u,document.baseURI);'
+    + '      if(r.origin!==location.origin){return p+ABS+"/proxy?url="+encodeURIComponent(r.href)+q;'
+    + '      }}catch(e){}'
+    + '      return m;'
+    + '    });'
     + '  }'
     + '  return ODW.call(document,h);'
     + '};'
@@ -329,6 +396,13 @@ function rewriteHtml(html, baseUrl, serverHost) {
     + 'document.writeln=function(h){'
     + '  if(typeof h==="string"){'
     + '    if(AD.test(h))return;'
+    + '    h=h.replace(/(<script\\b[^>]*\\bsrc=["\'])([^"\']*?)(["\'][^>]*>)/gi,function(m,p,u,q){'
+    + '      if(!u||/^(data:|blob:|javascript:)/.test(u)||/^\\/proxy/.test(u))return m;'
+    + '      try{var r=new URL(u,document.baseURI);'
+    + '      if(r.origin!==location.origin){return p+ABS+"/proxy?url="+encodeURIComponent(r.href)+q;'
+    + '      }}catch(e){}'
+    + '      return m;'
+    + '    });'
     + '  }'
     + '  return ODWI.call(document,h);'
     + '};'
@@ -528,7 +602,7 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
-    const cacheKey = 'play:v10:' + targetUrl;
+    const cacheKey = 'play:v11:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
       const headers = stripFrameBlocking(cached.headers);
