@@ -206,7 +206,11 @@
     }
 
     function getGameImg(game) {
-      return game.thumb || game.thumbnail || "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+      var raw = game.thumb || game.thumbnail || '';
+      if (raw && (raw.startsWith('http://') || raw.startsWith('https://'))) {
+        return '/proxy?url=' + encodeURIComponent(raw);
+      }
+      return "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
     }
 
     function proxyUrl(url) {
@@ -331,7 +335,7 @@
       if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
       } else {
-        embedUrl = '/play?v=14&url=' + encodeURIComponent(game.embedUrl);
+        embedUrl = '/play?v=15&url=' + encodeURIComponent(game.embedUrl);
       }
       gameIframe.src = embedUrl;
 
