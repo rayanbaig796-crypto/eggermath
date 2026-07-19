@@ -1,8 +1,5 @@
-const CACHE_NAME = 'eggermath-v1';
+const CACHE_NAME = 'eggermath-v2';
 const STATIC_ASSETS = [
-  '/',
-  '/index.html',
-  '/game.html',
   '/home.css',
   '/game-page.css',
   '/games.js',
@@ -29,7 +26,7 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Don't cache API calls, proxy, or play routes
+  // Never touch API, proxy, or play routes
   if (url.pathname.startsWith('/api/') ||
       url.pathname === '/proxy' ||
       url.pathname.startsWith('/play/') ||
@@ -37,18 +34,35 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Don't cache cross-origin (CDN thumbnails, Google Fonts)
+  // Don't touch cross-origin
   if (url.origin !== self.location.origin) return;
 
+  // HTML: network-first (never serve stale pages)
+  if (request.headers.get('accept') && request.headers.get('accept').includes('text/html')) {
+    event.respondWith(
+      fetch(request).then(response => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        }
+        return response;
+      }).catch(() => caches.match(request))
+    );
+    return;
+  }
+
+  // Static assets: stale-while-revalidate (fast + fresh)
   event.respondWith(
     caches.match(request).then(cached => {
-      if (cached) return cached;
-      return fetch(request).then(response => {
-        if (!response || response.status !== 200) return response;
-        const clone = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+      const fetchPromise = fetch(request).then(response => {
+        if (response && response.status === 200) {
+          const clone = response.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+        }
         return response;
       }).catch(() => cached);
+
+      return cached || fetchPromise;
     })
   );
 });
