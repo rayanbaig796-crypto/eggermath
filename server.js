@@ -243,12 +243,11 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'var P=/sdk__implementation|sdk__advertisement|sdk__ad[-_]|sdk__implementation|imaContainer|ima[-_]video|google[-_]ads|'
     + 'ad[-_]?container|ad[-_]?wrapper|ad[-_]?overlay|ad[-_]?popup|ad[-_]?modal|'
     + 'adsbygoogle|google[-_]?ad|yandex[-_]?ad|adbreak|preroll|interstitial|'
-    + 'rewarded[-_]?ad|sponsor|promo[-_]?banner|adfox|adskeeper|propellerads|'
+    + 'rewarded[-_]?ad|adfox|adskeeper|propellerads|'
     + 'monetag|adsterra|ad[-_]?banner|ad[-_]?slot|ad[-_]?unit|ad[-_]?floor|'
     + 'gmasdk|midroll|pre[-_]?roll|poki[-_]?ad|loko|__gads|google_ads|'
     + 'adstitial|adhesion|adbann|advert|adzone|adspace|adserver|adclick|'
-    + 'sponsored|promotion|marketing|tracking|analytics|beacon|pixel|'
-    + 'ninja|adblock|blockad|anti[-_]?ad|detect[-_]?ad|pubads|dfp|'
+    + 'adblock|blockad|anti[-_]?ad|detect[-_]?ad|pubads|dfp|'
     + 'video[-_]?ad|audio[-_]?ad|native[-_]?ad|banner[-_]?ad|sticky[-_]?ad|'
     + 'gamemonetize-sdk|loko8/i;'
     + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|'
@@ -336,7 +335,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'function _fixEl(n){'
     + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
-    + '    if(AD.test(s)||AD.test(n.textContent||"")){try{n.remove();}catch(e){}return _dummy;}'
+    + '    if(AD.test(s)){try{n.remove();}catch(e){}return _dummy;}'
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){n.setAttribute("src",rw(s));}'
@@ -349,7 +348,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
 
     // ── L8b: insertAdjacentHTML interception ──
     + 'var _iah=Element.prototype.insertAdjacentHTML;Element.prototype.insertAdjacentHTML=function(pos,h){'
-    + '  if(typeof h==="string"&&AD.test(h))return;'
+    + '  if(typeof h==="string"&&/<script/i.test(h)&&AD.test(h))return;'
     + '  return _iah.call(this,pos,h);};'
 
     // ── L9: fetch + XHR interception ──
@@ -408,7 +407,6 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'iframe[src*=\\"adfox\\"],iframe[src*=\\"imasdk\\"],'
     + 'iframe[src*=\\"googleads\\"],iframe[src*=\\"pagead\\"],'
     + 'iframe[id*=\\"google_ads\\"],iframe[name*=\\"google_ads\\"],'
-    + 'div[style*\\"z-index: 9999\\"],div[style*\\"z-index:9999\\"],'
     + 'div[style*\\"z-index: 2147483647\\"],'
     + 'div[data-ad-status],div[data-slot],div[data-google-container-id],'
     + 'amp-ad,amp-embed,ins.adsbygoogle'
@@ -424,10 +422,6 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'function sweep(){'
     + '  var a=document.querySelectorAll("script,iframe,div[id],div[class],ins,amp-ad,link[rel=\\"stylesheet\\"]");'
     + '  for(var i=0;i<a.length;i++){if(bad(a[i]))a[i].remove();}'
-    + '  var iframes=document.querySelectorAll("iframe");'
-    + '  for(var i=0;i<iframes.length;i++){var f=iframes[i];'
-    + '    try{var fc=f.contentDocument;if(fc&&fc.body){var fs=fc.querySelectorAll("script,iframe,video,div[id],div[class]");'
-    + '    for(var j=0;j<fs.length;j++){if(bad(fs[j]))fs[j].remove();}}}catch(e){}}'
     + '  var vids=document.querySelectorAll("video[title]");'
     + '  for(var i=0;i<vids.length;i++){if(/advertis/i.test(vids[i].title))vids[i].remove();}'
     + '  if(!document.querySelector("style[data-adblock]")){try{var _cs=document.createElement("style");_cs.setAttribute("data-adblock","1");_cs.textContent=cs.textContent;(document.head||document.documentElement).appendChild(_cs);}catch(e){}}'
@@ -542,21 +536,7 @@ setInterval(() => {
 // ═══════════════════════════════════════════════════════════════
 //  SSRF PROTECTION — block internal/private IPs and dangerous schemes
 // ═══════════════════════════════════════════════════════════════
-const PRIVATE_IP_REGEX = /^(
-  127\.\d{1,3}\.\d{1,3}\.\d{1,3}|
-  10\.\d{1,3}\.\d{1,3}\.\d{1,3}|
-  172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}|
-  192\.168\.\d{1,3}\.\d{1,3}|
-  169\.254\.\d{1,3}\.\d{1,3}|
-  0\.0\.0\.0|
-  localhost|
-  \[::1\]|
-  \[::ffff:127|
-  \[::ffff:10\.|
-  \[::ffff:172\.|
-  \[::ffff:192\.168|
-  \[0:0:0:0:0:0:0:1\]
-)$/i;
+const PRIVATE_IP_REGEX = /^(127\.\d{1,3}\.\d{1,3}\.\d{1,3}|10\.\d{1,3}\.\d{1,3}\.\d{1,3}|172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}|192\.168\.\d{1,3}\.\d{1,3}|169\.254\.\d{1,3}\.\d{1,3}|0\.0\.0\.0|localhost|\[::1\]|\[::ffff:127|\[::ffff:10\.|\[::ffff:172\.|\[::ffff:192\.168|\[0:0:0:0:0:0:0:1\])$/i;
 
 function isSSRFBlocked(targetUrl) {
   try {
