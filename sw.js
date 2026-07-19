@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eggermath-v2';
+const CACHE_NAME = 'eggermath-v3';
 const STATIC_ASSETS = [
   '/home.css',
   '/game-page.css',
@@ -37,16 +37,19 @@ self.addEventListener('fetch', event => {
   // Don't touch cross-origin
   if (url.origin !== self.location.origin) return;
 
-  // HTML: network-first (never serve stale pages)
+  // HTML navigation: network-first with fast timeout + cache fallback
   if (request.headers.get('accept') && request.headers.get('accept').includes('text/html')) {
     event.respondWith(
-      fetch(request).then(response => {
-        if (response && response.status === 200) {
-          const clone = response.clone();
-          caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
-        }
-        return response;
-      }).catch(() => caches.match(request))
+      Promise.race([
+        fetch(request).then(response => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then(cache => cache.put(request, clone));
+          }
+          return response;
+        }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 3000))
+      ]).catch(() => caches.match(request))
     );
     return;
   }
