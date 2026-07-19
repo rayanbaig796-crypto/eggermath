@@ -226,13 +226,13 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     // ── L1: Expanded domain blocklist ──
     + 'var AD=new RegExp("api\\\\.gamemonetize\\\\.com/(sdk|ga|gamemonetize-sdk)|gamemonetize\\\\.com/sdk|cdn\\\\.gamemonetize\\\\.com.*sdk|'
     + 'pagead2\\\\.googlesyndication\\\\.com|adservice\\\\.google\\\\.com|google\\\\.com/pagead|google\\\\.com/js/gcm|'
-    + 'doubleclick\\\\.net|googletagmanager\\\\.com|googletagservices\\\\.com|googleadservices\\\\.com|'
+    + 'doubleclick\\\\.net|googletagmanager\\\\.com/gtm|googletagservices\\\\.com|googleadservices\\\\.com|'
     + 'imasdk\\\\.googleapis\\\\.com|supportxmr\\\\.com|coinhive\\\\.(com|net)|coin-hive\\\\.com|'
     + 'cryptoloot\\\\.com|cryptonoter\\\\.com|crypto-loot\\\\.com|coinimp\\\\.com|authedmine\\\\.com|'
     + 'webminepool\\\\.com|miner|minero\\\\.cc|mining\\\\.pool|minero\\\\.px|'
     + 'adskeeper|propellerads|monetag|adsterra|exoclick|juicyads|trafficjunky|revcontent|taboola|outbrain|'
     + 'clickadu|hilltopads|popcash|popads|adsafeprotected\\\\.com|prebid\\\\.org|'
-    + 'gtag\\\\.js|ga\\\\.js|analytics\\\\.js|gtm\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google|'
+    + 'ga\\\\.js|analytics\\\\.js|gtm\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google|'
     + 'pubads|adnxs\\\\.com|adsrvr\\\\.org|adform\\\\.net|rubiconproject\\\\.com|'
     + 'spotxchange\\\\.com|spotx\\\\.tv|casalemedia\\\\.com|indexexchange\\\\.com|'
     + 'openx\\\\.net|criteo\\\\.com|criteo\\\\.net|yieldmo\\\\.com|sharethrough\\\\.com|'
@@ -257,7 +257,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'adnxs|adsrvr|adform|rubiconproject|openx|criteo|casalemedia|'
     + 'amazon-adsystem|aps\\.amazon|connatix|medianet|teads|'
     + 'api\\.gamemonetize\\.com/(sdk|ga)|cdn\\.gamemonetize\\.com.*sdk|'
-    + 's0\\.2mdn\\.net|googletagmanager|2mdn\\.net/i;'
+    + 's0\\.2mdn\\.net|googletagmanager.*gtm|2mdn\\.net/i;'
 
     // ── L3: SDK stubs (expanded) ──
     + 'var _noop=function(){};'
@@ -621,7 +621,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     // ── Block ad domains at server level ──
-    const AD_DOMAINS = /pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
+    const AD_DOMAINS = /pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com\/gtm|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
     if (AD_DOMAINS.test(targetUrl)) {
       res.writeHead(200, { 'Content-Type': 'text/plain', 'X-Blocked': 'ad-domain' });
       res.end('');
