@@ -166,7 +166,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
 
   // ── Strip SDK script tags — ONLY ad SDK, NOT game scripts from html5.gamemonetize.co ──
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com(?!\/YYGGames)[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
