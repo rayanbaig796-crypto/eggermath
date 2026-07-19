@@ -621,7 +621,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     // ── Block ad domains at server level ──
-    const AD_DOMAINS = /api\.gamemonetize\.com|pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
+    const AD_DOMAINS = /pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|analytics\.google\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
     if (AD_DOMAINS.test(targetUrl)) {
       res.writeHead(200, { 'Content-Type': 'text/plain', 'X-Blocked': 'ad-domain' });
       res.end('');
