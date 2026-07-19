@@ -256,9 +256,9 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8|'
     + 'supportxmr|coin-hive|minero|webminepool|authedmine|'
     + 'adnxs|adsrvr|adform|rubiconproject|openx|criteo|casalemedia|'
-    + 'amazon-adsystem|aps\\\\.amazon|connatix|medianet|teads|'
-    + 'api\\\\.gamemonetize\\\\.com|cdn\\\\.gamemonetize\\\\.com.*sdk|'
-    + 's0\\\\.2mdn\\\\.net|googletagmanager|2mdn\\\\.net/i;'
+    + 'amazon-adsystem|aps\\.amazon|connatix|medianet|teads|'
+    + 'api\\.gamemonetize\\.com|cdn\\.gamemonetize\\.com.*sdk|'
+    + 's0\\.2mdn\\.net|googletagmanager|2mdn\\.net/i;'
 
     // ── L3: SDK stubs (expanded) ──
     + 'var _noop=function(){};'
@@ -425,6 +425,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '    for(var j=0;j<fs.length;j++){if(bad(fs[j]))fs[j].remove();}}}catch(e){}}'
     + '  var vids=document.querySelectorAll("video[title]");'
     + '  for(var i=0;i<vids.length;i++){if(/advertis/i.test(vids[i].title))vids[i].remove();}'
+    + '  if(!document.querySelector("style[data-adblock]")){try{var _cs=document.createElement("style");_cs.setAttribute("data-adblock","1");_cs.textContent=cs.textContent;(document.head||document.documentElement).appendChild(_cs);}catch(e){}}'
     + '}'
     + 'var obs=new MutationObserver(function(m){for(var i=0;i<m.length;i++){var nd=m[i].addedNodes;for(var j=0;j<nd.length;j++){var n=nd[j];if(n.nodeType===1&&bad(n))n.remove();}}});'
     + 'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body||document.documentElement,{childList:true,subtree:true});sweep();});'
