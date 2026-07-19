@@ -256,7 +256,9 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8|'
     + 'supportxmr|coin-hive|minero|webminepool|authedmine|'
     + 'adnxs|adsrvr|adform|rubiconproject|openx|criteo|casalemedia|'
-    + 'amazon-adsystem|aps\\\\.amazon|connatix|medianet|teads/i;'
+    + 'amazon-adsystem|aps\\\\.amazon|connatix|medianet|teads|'
+    + 'api\\\\.gamemonetize\\\\.com|cdn\\\\.gamemonetize\\\\.com.*sdk|'
+    + 's0\\\\.2mdn\\\\.net|googletagmanager|2mdn\\\\.net/i;'
 
     // ── L3: SDK stubs (expanded) ──
     + 'var _noop=function(){};'
@@ -330,16 +332,17 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '  return _sa.call(this,n,v);};'
 
     // ── L8: appendChild + insertBefore ──
+    + 'var _dummy=document.createTextNode("");'
     + 'function _fixEl(n){'
     + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
-    + '    if(AD.test(s)||AD.test(n.textContent||""))return n;'
+    + '    if(AD.test(s)||AD.test(n.textContent||"")){try{n.remove();}catch(e){}return _dummy;}'
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){n.setAttribute("src",rw(s));}'
     + '      else if(G&&!/^\\/proxy|^\\/play\\//.test(u.pathname))n.setAttribute("src",rw(s));}catch(e){}}}'
-    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")&&AD.test(n.src||n.getAttribute("src")||""))return n;'
-    + '  if(n&&n.tagName==="LINK"&&AD.test(n.getAttribute("href")||""))return n;'
+    + '  if(n&&(n.tagName==="SCRIPT"||n.tagName==="IFRAME")&&AD.test(n.src||n.getAttribute("src")||"")){try{n.remove();}catch(e){}return _dummy;}'
+    + '  if(n&&n.tagName==="LINK"&&AD.test(n.getAttribute("href")||"")){try{n.remove();}catch(e){}return _dummy;}'
     + '  return n;}'
     + 'var _ac=Element.prototype.appendChild;Element.prototype.appendChild=function(n){var r=_fixEl(n);return r!==n?r:_ac.apply(this,arguments);};'
     + 'var _ib=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,r){var f=_fixEl(n);return f!==n?f:_ib.apply(this,arguments);};'
