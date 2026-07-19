@@ -164,14 +164,14 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
   // ── Strip ad branding divs ──
   html = html.replace(/<div[^>]*class=["'][^"']*simmer[^"']*["'][^>]*>[\s\S]*?<\/div>/gi, '');
 
-  // ── Strip SDK script tags — ONLY ad SDK, NOT game scripts from html5.gamemonetize.co ──
+  // ── Strip SDK script tags — ONLY ad SDK, NOT game scripts ──
   html = html.replace(/<script[^>]*id=["']gamemonetize-sdk["'][^>]*>[\s\S]*?<\/script>/gi, '');
-  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com(?!\/YYGGames)[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
+  html = html.replace(/<script[^>]*src=["'][^"']*api\.gamemonetize\.com\/(sdk|ga|gamemonetize-sdk)[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*cdn\.gamemonetize\.com[^"']*sdk[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
   html = html.replace(/<script[^>]*src=["'][^"']*imasdk\.googleapis\.com[^"']*["'][^>]*>[\s\S]*?<\/script>/gi, '');
 
-  // ── Strip ALL inline scripts referencing SDK init patterns ──
-  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*(?:gamemonetize-sdk|parentNode\.insertBefore|api\.gamemonetize\.com)(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
+  // ── Strip inline scripts referencing SDK init patterns ──
+  html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*(?:gamemonetize-sdk|parentNode\.insertBefore)(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
 
   // ── Strip fuckAdBlock detection scripts — NOT crossing script boundaries ──
   html = html.replace(/<script[^>]*>(?:(?!<\/script>)[\s\S])*fuckAdBlock(?:(?!<\/script>)[\s\S])*<\/script>/gi, '');
@@ -218,13 +218,13 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '  if(!u||typeof u!=="string")return u;'
     + '  if(/^(data:|blob:|javascript:|about:)/.test(u)||/^\\/proxy|^\\/play\\//.test(u))return u;'
     + '  if(/^https?:\\/\\//.test(u)){'
-    + '    try{var p=new URL(u);if(/gamemonetize/.test(p.hostname)){var h=p.pathname.split("/")[1];if(h)return A+"/play/"+h+p.pathname.replace("/"+h,"")+p.search;}}catch(e){}'
+    + '    try{var p=new URL(u);if(/html5\\.gamemonetize\\.co/.test(p.hostname)){var h=p.pathname.split("/")[1];if(h)return A+"/play/"+h+p.pathname.replace("/"+h,"")+p.search;}}catch(e){}'
     + '    if(/eggermath\\.com/.test(u)){if(G){try{return A+"/proxy?url="+encodeURIComponent(new URL(u).pathname);}catch(e){}}return u;}'
     + '    return A+"/proxy?url="+encodeURIComponent(u);}'
     + '  try{u=new URL(u,document.baseURI).href;}catch(e){}return u;}'
 
     // ── L1: Expanded domain blocklist ──
-    + 'var AD=new RegExp("api\\\\.gamemonetize\\\\.com|gamemonetize\\\\.com/sdk|cdn\\\\.gamemonetize\\\\.com.*sdk|'
+    + 'var AD=new RegExp("api\\\\.gamemonetize\\\\.com/(sdk|ga|gamemonetize-sdk)|gamemonetize\\\\.com/sdk|cdn\\\\.gamemonetize\\\\.com.*sdk|'
     + 'pagead2\\\\.googlesyndication\\\\.com|adservice\\\\.google\\\\.com|google\\\\.com/pagead|google\\\\.com/js/gcm|'
     + 'doubleclick\\\\.net|googletagmanager\\\\.com|googletagservices\\\\.com|googleadservices\\\\.com|'
     + 'imasdk\\\\.googleapis\\\\.com|supportxmr\\\\.com|coinhive\\\\.(com|net)|coin-hive\\\\.com|'
@@ -256,7 +256,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'supportxmr|coin-hive|minero|webminepool|authedmine|'
     + 'adnxs|adsrvr|adform|rubiconproject|openx|criteo|casalemedia|'
     + 'amazon-adsystem|aps\\.amazon|connatix|medianet|teads|'
-    + 'api\\.gamemonetize\\.com|cdn\\.gamemonetize\\.com.*sdk|'
+    + 'api\\.gamemonetize\\.com/(sdk|ga)|cdn\\.gamemonetize\\.com.*sdk|'
     + 's0\\.2mdn\\.net|googletagmanager|2mdn\\.net/i;'
 
     // ── L3: SDK stubs (expanded) ──
@@ -308,7 +308,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '  if(!v||typeof v!=="string"||/^(data:|blob:|javascript:|about:)/.test(v))return v;'
     + '  try{var u=new URL(v,document.baseURI);'
     + '  if(u.origin!==location.origin){'
-    + '    if(/gamemonetize/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)return A+"/play/"+h+u.pathname.replace("/"+h,"")+u.search;}'
+    + '    if(/html5\\.gamemonetize\\.co/.test(u.hostname)){var h=u.pathname.split("/")[1];if(h)return A+"/play/"+h+u.pathname.replace("/"+h,"")+u.search;}'
     + '    return A+"/proxy?url="+encodeURIComponent(u.href);}'
     + '  if(G&&!/^\\/proxy|^\\/play\\//.test(u.pathname)&&u.pathname!=="/")'
     + '    return A+"/proxy?url="+encodeURIComponent(G+u.pathname+(u.search||""));}catch(e){}return v;}'
