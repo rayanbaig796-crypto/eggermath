@@ -254,9 +254,11 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 768px) {
   .game-info-bar { flex-direction: column; }
-  .game-actions { width: 100%; justify-content: space-between; }
+  .game-actions { width: 100%; justify-content: flex-start; flex-wrap: wrap; gap: 8px; }
+  .action-btn { padding: 8px 12px; font-size: 12px; flex-shrink: 0; }
+  .action-btn svg { width: 16px; height: 16px; }
   .game-icon { width: 60px; height: 60px; }
   .game-title { font-size: 20px; }
-  .theater-wrap { padding: 0 10px; }
+  .theater-wrap { padding: 0 10px; margin-top: 10px; }
   .video-modal-content { width: 95%; }
 }

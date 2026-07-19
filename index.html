@@ -99,11 +99,38 @@
       <span class="mobile-logo-name">EGGERMATH</span>
     </a>
     <div class="mobile-actions">
+      <button class="mobile-btn" id="mobile-menu-btn" title="Menu">
+        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
       <button class="mobile-btn" id="mobile-search-btn" title="Search">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
     </div>
   </header>
+
+  <!-- ============================================================
+       MOBILE MENU DRAWER (hidden on desktop)
+  ============================================================ -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <span class="mobile-menu-title">Menu</span>
+      <button class="mobile-menu-close" id="mobile-menu-close">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="mobile-menu-links">
+      <a href="/" class="mobile-menu-link">Home</a>
+      <a href="onboarding.html" class="mobile-menu-link">Getting Started</a>
+      <a href="blog.html" class="mobile-menu-link">Blog</a>
+      <a href="advertise.html" class="mobile-menu-link">Advertise</a>
+      <a href="takedown.html" class="mobile-menu-link">DMCA</a>
+      <a href="about.html" class="mobile-menu-link">About</a>
+      <a href="privacy.html" class="mobile-menu-link">Privacy</a>
+      <a href="terms.html" class="mobile-menu-link">Terms</a>
+      <a href="contact.html" class="mobile-menu-link">Contact</a>
+    </div>
+  </nav>
 
   <!-- ============================================================
        LEFT SIDEBAR (desktop only)
@@ -636,8 +663,28 @@
     if (mobileSearchBtn) mobileSearchBtn.addEventListener('click', openSearch);
     document.getElementById('search-close').addEventListener('click', closeSearch);
     drawerOverlay.addEventListener('click', closeSearch);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeSearch(); closeMobileMenu(); } });
     searchInput.addEventListener('input', renderSearchDrawer);
+
+    // Mobile menu toggle
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+
+    function openMobileMenu() {
+      mobileMenuOverlay.classList.add('active');
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      mobileMenuOverlay.classList.remove('active');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
+    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
     // ═══════════════════════════════════════════════════════════════
     //  INIT
