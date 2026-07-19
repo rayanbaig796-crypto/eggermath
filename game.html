@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44ZYW1XML3"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-44ZYW1XML3');</script>
   <link rel="preconnect" href="https://html5.gamemonetize.co" crossorigin>
   <link rel="dns-prefetch" href="https://html5.gamemonetize.co">
   <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
@@ -11,26 +13,26 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
-  <title>Play Free Games — EggerMath</title>
-  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up required. 1400+ HTML5 games available.">
+  <title>Play Free Games Online — EggerMath</title>
+  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up. 1400+ HTML5 games available.">
   <meta name="keywords" content="play free games online, browser games, free HTML5 games, no download games">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
-  <link rel="canonical" href="https://eggermath.com/game.html" id="canonical-tag">
+  <link rel="canonical" href="https://www.eggermath.com/game.html" id="canonical-tag">
 
   <!-- Open Graph (updated dynamically by JS) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EggerMath">
   <meta property="og:title" content="Play Free Games — EggerMath" id="og-title">
   <meta property="og:description" content="Play free browser games instantly on EggerMath. No downloads needed." id="og-desc">
-  <meta property="og:url" content="https://eggermath.com/game.html" id="og-url">
-  <meta property="og:image" content="https://eggermath.com/images/eggermath-logo.png" id="og-image">
+  <meta property="og:url" content="https://www.eggermath.com/game.html" id="og-url">
+  <meta property="og:image" content="https://www.eggermath.com/images/eggermath-logo.png" id="og-image">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Play Free Games — EggerMath" id="tw-title">
   <meta name="twitter:description" content="Free browser games on EggerMath. No downloads!" id="tw-desc">
-  <meta name="twitter:image" content="https://eggermath.com/images/eggermath-logo.png" id="tw-image">
+  <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png" id="tw-image">
 
   <link rel="stylesheet" href="./game-page.css?v=18">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
@@ -89,12 +91,12 @@
        HEADER
   ============================================================ -->
   <header class="game-header">
-    <a href="index.html" class="back-btn">
+    <a href="/" class="back-btn">
       <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
       Back to Games
     </a>
 
-    <a href="index.html" class="header-logo">
+    <a href="/" class="header-logo">
       <img src="images/eggermath-logo.png" alt="EggerMath" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
       EGGERMATH
     </a>
@@ -320,7 +322,7 @@
     const gameId = params.get('id');
 
     function startGamePage(game) {
-      if (!game) { location.href = 'index.html'; return; }
+      if (!game) { location.href = '/'; return; }
 
       document.title = game.title + ' — EggerMath';
       document.querySelector('meta[name="description"]').content =
@@ -368,15 +370,11 @@
 
       // ─── LOAD IFRAME ────────────────────────────────────────────
       let embedUrl;
-      if (game.source === 'itch.io' || game.source === 'github') {
-        embedUrl = game.embedUrl;
+      var hashMatch = game.embedUrl.match(/gamemonetize\.co\/([a-zA-Z0-9_-]+)/);
+      if (hashMatch) {
+        embedUrl = '/play/' + hashMatch[1] + '/';
       } else {
-        var hashMatch = game.embedUrl.match(/gamemonetize\.co\/([a-zA-Z0-9_-]+)/);
-        if (hashMatch) {
-          embedUrl = '/play/' + hashMatch[1] + '/';
-        } else {
-          embedUrl = '/play?v=18&url=' + encodeURIComponent(game.embedUrl);
-        }
+        embedUrl = game.embedUrl;
       }
       gameIframe.src = embedUrl;
 
@@ -623,7 +621,7 @@
         var gameTitle  = game.title || 'Free Browser Game';
         var gameDesc   = (game.description || 'Play ' + gameTitle + ' for free on EggerMath. No downloads, no sign-up required!').slice(0, 160);
         var gameThumb  = game.thumb || game.thumbnail || 'https://eggermath.com/images/eggermath-logo.png';
-        var gameUrl    = 'https://eggermath.com/game.html?id=' + encodeURIComponent(gameId);
+        var gameUrl    = 'https://www.eggermath.com/game.html?id=' + encodeURIComponent(gameId);
 
         document.title = gameTitle + ' \u2014 Play Free on EggerMath';
         document.querySelector('meta[name="description"]').setAttribute('content', gameDesc);
@@ -650,7 +648,7 @@
 
         startGamePage(game);
       } else {
-        location.href = 'index.html';
+        location.href = '/';
       }
     })();
   </script>
