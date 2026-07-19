@@ -347,6 +347,11 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'var _ac=Element.prototype.appendChild;Element.prototype.appendChild=function(n){var r=_fixEl(n);return r!==n?r:_ac.apply(this,arguments);};'
     + 'var _ib=Node.prototype.insertBefore;Node.prototype.insertBefore=function(n,r){var f=_fixEl(n);return f!==n?f:_ib.apply(this,arguments);};'
 
+    // ── L8b: insertAdjacentHTML interception ──
+    + 'var _iah=Element.prototype.insertAdjacentHTML;Element.prototype.insertAdjacentHTML=function(pos,h){'
+    + '  if(typeof h==="string"&&AD.test(h))return;'
+    + '  return _iah.call(this,pos,h);};'
+
     // ── L9: fetch + XHR interception ──
     + 'var _f=window.fetch;window.fetch=function(r,o){'
     + '  var u=typeof r==="string"?r:(r instanceof Request?r.url:"");'
@@ -412,7 +417,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
 
     // ── L15: DOM sweep + MutationObserver ──
     + 'function bad(el){if(!el||el.nodeType!==1)return false;var t=el.tagName;'
-    + '  if(t==="SCRIPT"||t==="IFRAME"||t==="LINK"){if(D.test(el.src||el.getAttribute("href")||""))return true;}'
+    + '  if(t==="SCRIPT"||t==="IFRAME"||t==="LINK"){var _u=el.src||el.getAttribute("href")||"";if(D.test(_u)||AD.test(_u))return true;}'
     + '  if(t==="INS"&&el.classList.contains("adsbygoogle"))return true;'
     + '  if(t==="VIDEO"&&(el.title||"").toLowerCase().indexOf("advertis")>=0)return true;'
     + '  var c=(el.className||"")+" "+(el.id||"");return P.test(c);}'
@@ -496,13 +501,123 @@ function stripFrameBlocking(headers) {
 }
 
 // ═══════════════════════════════════════════════════════════════
+//  RATE LIMITER — per-IP, sliding window
+// ═══════════════════════════════════════════════════════════════
+const rateLimitMap = new Map();
+const RATE_LIMIT_WINDOW = 60 * 1000; // 1 minute
+const RATE_LIMIT_MAX = 60; // max requests per window per IP
+const RATE_LIMIT_CLEANUP = 5 * 60 * 1000;
+
+function getClientIp(req) {
+  return req.headers['x-forwarded-for']?.split(',')[0]?.trim()
+    || req.headers['x-real-ip']
+    || req.socket.remoteAddress
+    || '';
+}
+
+function isRateLimited(ip) {
+  const now = Date.now();
+  let entry = rateLimitMap.get(ip);
+  if (!entry) {
+    entry = { count: 1, start: now };
+    rateLimitMap.set(ip, entry);
+    return false;
+  }
+  if (now - entry.start > RATE_LIMIT_WINDOW) {
+    entry.count = 1;
+    entry.start = now;
+    return false;
+  }
+  entry.count++;
+  return entry.count > RATE_LIMIT_MAX;
+}
+
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, entry] of rateLimitMap) {
+    if (now - entry.start > RATE_LIMIT_WINDOW) rateLimitMap.delete(ip);
+  }
+}, RATE_LIMIT_CLEANUP);
+
+// ═══════════════════════════════════════════════════════════════
+//  SSRF PROTECTION — block internal/private IPs and dangerous schemes
+// ═══════════════════════════════════════════════════════════════
+const PRIVATE_IP_REGEX = /^(
+  127\.\d{1,3}\.\d{1,3}\.\d{1,3}|
+  10\.\d{1,3}\.\d{1,3}\.\d{1,3}|
+  172\.(1[6-9]|2\d|3[01])\.\d{1,3}\.\d{1,3}|
+  192\.168\.\d{1,3}\.\d{1,3}|
+  169\.254\.\d{1,3}\.\d{1,3}|
+  0\.0\.0\.0|
+  localhost|
+  \[::1\]|
+  \[::ffff:127|
+  \[::ffff:10\.|
+  \[::ffff:172\.|
+  \[::ffff:192\.168|
+  \[0:0:0:0:0:0:0:1\]
+)$/i;
+
+function isSSRFBlocked(targetUrl) {
+  try {
+    const u = new URL(targetUrl);
+    if (u.protocol !== 'http:' && u.protocol !== 'https:') return true;
+    const hostname = u.hostname.toLowerCase();
+    if (PRIVATE_IP_REGEX.test(hostname)) return true;
+    // Block common internal hostnames
+    if (/^(localhost|internal|private|local|corp|intranet|dev|staging)\b/i.test(hostname)) return true;
+    // Block non-standard ports that could probe internal services
+    if (u.port && !['80', '443', '8080', '8443'].includes(u.port)) return true;
+    return false;
+  } catch {
+    return true; // invalid URL = block
+  }
+}
+
+// ═══════════════════════════════════════════════════════════════
+//  REQUEST BODY SIZE LIMITER
+// ═══════════════════════════════════════════════════════════════
+const MAX_BODY_SIZE = 1024 * 100; // 100 KB
+
+function readBodyLimited(req) {
+  return new Promise((resolve, reject) => {
+    let body = '';
+    let size = 0;
+    req.on('data', chunk => {
+      size += chunk.length;
+      if (size > MAX_BODY_SIZE) {
+        req.destroy();
+        return reject(new Error('Body too large'));
+      }
+      body += chunk;
+    });
+    req.on('end', () => resolve(body));
+    req.on('error', reject);
+  });
+}
+
+// ═══════════════════════════════════════════════════════════════
 //  SERVER
 // ═══════════════════════════════════════════════════════════════
 const server = http.createServer(async (req, res) => {
   const parsedUrl = url.parse(req.url, true);
+  const clientIp = getClientIp(req);
 
-  // ── /clear-cache — Clear proxy cache (internal) ──────────────
+  // ── Global rate limit ──
+  if (isRateLimited(clientIp)) {
+    res.writeHead(429, { 'Content-Type': 'application/json', 'Retry-After': '60' });
+    res.end(JSON.stringify({ error: 'Too many requests. Try again in a minute.' }));
+    return;
+  }
+
+  // ── /clear-cache — Clear proxy cache (internal, localhost only) ──
   if (parsedUrl.pathname === '/clear-cache') {
+    const ip = getClientIp(req);
+    if (ip !== '127.0.0.1' && ip !== '::1' && ip !== '::ffff:127.0.0.1') {
+      res.writeHead(403, { 'Content-Type': 'text/plain' });
+      res.end('Forbidden');
+      return;
+    }
     proxyCache.clear();
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     res.end('Cache cleared. Size: ' + proxyCache.size);
@@ -515,6 +630,13 @@ const server = http.createServer(async (req, res) => {
     if (!targetUrl) {
       res.writeHead(400, { 'Content-Type': 'text/plain' });
       res.end('Missing url parameter');
+      return;
+    }
+
+    // ── SSRF protection — block internal/private IPs ──
+    if (isSSRFBlocked(targetUrl)) {
+      res.writeHead(403, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Blocked: internal/private URL not allowed' }));
       return;
     }
 
@@ -636,6 +758,13 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    // ── SSRF protection — block internal/private IPs ──
+    if (isSSRFBlocked(targetUrl)) {
+      res.writeHead(403, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Blocked: internal/private URL not allowed' }));
+      return;
+    }
+
     const cacheKey = 'play:v18:' + targetUrl;
     const cached = cacheGet(cacheKey);
     if (cached) {
@@ -719,11 +848,14 @@ const server = http.createServer(async (req, res) => {
 
   // ── /api/vote — Cast or change a vote ────────────────────────
   if (parsedUrl.pathname === '/api/vote' && req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => body += chunk);
-    req.on('end', async () => {
-      try {
-        const { gameId, vote, fingerprint } = JSON.parse(body);
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, vote, fingerprint } = JSON.parse(body);
         if (!gameId || !fingerprint || !['like','dislike'].includes(vote)) {
           res.writeHead(400, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ error: 'Missing gameId, fingerprint, or invalid vote' }));
@@ -783,7 +915,6 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
-    });
     return;
   }
 
@@ -841,11 +972,14 @@ const server = http.createServer(async (req, res) => {
   }
 
   if (parsedUrl.pathname === '/api/favorites/add' && req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => body += chunk);
-    req.on('end', async () => {
-      try {
-        const { gameId, fingerprint } = JSON.parse(body);
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, fingerprint } = JSON.parse(body);
         if (!gameId || !fingerprint) {
           res.writeHead(400, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ error: 'Missing gameId or fingerprint' }));
@@ -859,16 +993,18 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
-    });
     return;
   }
 
   if (parsedUrl.pathname === '/api/favorites/remove' && req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => body += chunk);
-    req.on('end', async () => {
-      try {
-        const { gameId, fingerprint } = JSON.parse(body);
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, fingerprint } = JSON.parse(body);
         if (!gameId || !fingerprint) {
           res.writeHead(400, { 'Content-Type': 'application/json' });
           res.end(JSON.stringify({ error: 'Missing gameId or fingerprint' }));
@@ -882,7 +1018,6 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
-    });
     return;
   }
 
@@ -907,6 +1042,14 @@ const server = http.createServer(async (req, res) => {
 
   // ── Static file serving ─────────────────────────────────────
   let filePath = path.join(ROOT, decodeURIComponent(req.url.split('?')[0]));
+
+  // ── Path traversal protection — resolve and verify path is within ROOT ──
+  filePath = path.resolve(filePath);
+  if (!filePath.startsWith(ROOT)) {
+    res.writeHead(403, { 'Content-Type': 'text/plain' });
+    res.end('Forbidden');
+    return;
+  }
   if (filePath === ROOT || (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory())) {
     const defaultFile = path.join(filePath, 'index.html');
     if (fs.existsSync(defaultFile)) {
