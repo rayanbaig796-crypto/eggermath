@@ -525,6 +525,10 @@
       _renderedCount = 0;
       _renderedList = [];
 
+      // Show platform sections only on "all" category
+      const platformSections = document.querySelectorAll('.platform-section');
+      platformSections.forEach(s => s.style.display = activeCategory === 'all' ? '' : 'none');
+
       if (activeCategory === 'favorites') {
         const favs = getFavorites();
         const filtered = GAMES.filter(g => favs.includes(g.id));
