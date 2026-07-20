@@ -917,8 +917,8 @@ footer {
    ================================================================ */
 @media (max-width: 1024px) {
   :root { --sidebar-w: 0px; }
-  .sidebar { display: none; }
-  .mobile-header { display: flex; }
+  .sidebar { display: none !important; }
+  .mobile-header { display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 150; }
   .main-content { margin-left: 0; margin-top: var(--mobile-header-h); }
   footer { margin-left: 0; }
   .cat-bar {
@@ -953,8 +953,8 @@ footer {
     --sidebar-w: 0px;
     --mobile-header-h: 48px;
   }
-  .sidebar { display: none; }
-  .mobile-header { display: flex; }
+  .sidebar { display: none !important; }
+  .mobile-header { display: flex; position: fixed; top: 0; left: 0; right: 0; z-index: 150; }
   .main-content {
     margin-left: 0;
     margin-top: var(--mobile-header-h);
