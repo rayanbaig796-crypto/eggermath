@@ -433,7 +433,8 @@
       // Label + developer credit
       const labelClass = isDrawer ? 'search-item-label' : 'game-card-label';
       const devCredit = (game.developer && !isDrawer) ? `<div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">by ${game.developer}</div>` : '';
-      const labelHtml = `<div class="${labelClass}">${game.title}</div>${devCredit}`;
+      const catBadge = (!isDrawer) ? `<div class="game-card-badge">${game.category}</div>` : '';
+      const labelHtml = `${catBadge}<div class="${labelClass}">${game.title}</div>${devCredit}`;
 
       // Fav btn (only on main grid, not drawer)
       let favHtml = '';
