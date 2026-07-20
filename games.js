@@ -1,29 +1,5 @@
 var GAMES = [
   {
-    "id": "gm-2v2-io",
-    "title": "2v2.io",
-    "category": ".IO",
-    "description": "2v2.io - fast-paced 2v2 battle royale with building",
-    "tags": [
-      "io",
-      "io-games",
-      "battle-royale",
-      "shooter",
-      "building",
-      "multiplayer",
-      "fps",
-      "action"
-    ],
-    "thumb": "https://2v2-io.com/2v2-io-logo.webp",
-    "embedUrl": "https://games.crazygames.com/en_US/2v2-io/index.html",
-    "source": "crazygames",
-    "videoUrl": "",
-    "developer": "LEGION GAMES",
-    "credit": "https://2v2-io.com",
-    "plays": 1800,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-tanked-io",
     "title": "Tanked.io",
     "category": ".IO",

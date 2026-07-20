@@ -370,8 +370,6 @@
       let embedUrl;
       if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
-      } else if (game.source === 'crazygames' || game.source === 'poki') {
-        embedUrl = '/proxy?url=' + encodeURIComponent(game.embedUrl);
       } else {
         var hashMatch = game.embedUrl.match(/gamemonetize\.co\/([a-zA-Z0-9_-]+)/);
         if (hashMatch) {
