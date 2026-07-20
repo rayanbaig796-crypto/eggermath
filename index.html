@@ -211,32 +211,62 @@
 
     <!-- MOBILE GAMES SECTION -->
     <section class="platform-section" id="mobile-section">
-      <div class="section-title"><span>📱</span> MOBILE GAMES</div>
-      <p class="section-desc">Touch-friendly games you can play on your phone</p>
-      <div class="game-grid game-grid--horizontal" id="mobile-grid">
-        <!-- Filled by JS -->
+      <div class="platform-header">
+        <div class="platform-header-left">
+          <div class="platform-icon">📱</div>
+          <div>
+            <div class="platform-title">Mobile Games</div>
+            <div class="platform-count" id="mobile-count"></div>
+          </div>
+        </div>
       </div>
-      <a href="#" class="see-all-btn" onclick="showPlatform('mobile'); return false;">See All Mobile Games →</a>
+      <div class="platform-desc">Touch-friendly games optimized for your phone</div>
+      <div class="platform-scroll-wrapper">
+        <div class="platform-scroll" id="mobile-grid"></div>
+        <button class="platform-arrow left" onclick="scrollPlatform('mobile-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="platform-arrow right" onclick="scrollPlatform('mobile-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <a class="see-all-link" onclick="showPlatform('mobile'); return false;">See All Mobile Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </section>
 
     <!-- PC GAMES SECTION -->
     <section class="platform-section" id="pc-section">
-      <div class="section-title"><span>🖥️</span> PC GAMES</div>
-      <p class="section-desc">Best played with keyboard and mouse</p>
-      <div class="game-grid game-grid--horizontal" id="pc-grid">
-        <!-- Filled by JS -->
+      <div class="platform-header">
+        <div class="platform-header-left">
+          <div class="platform-icon">🖥️</div>
+          <div>
+            <div class="platform-title">PC Games</div>
+            <div class="platform-count" id="pc-count"></div>
+          </div>
+        </div>
       </div>
-      <a href="#" class="see-all-btn" onclick="showPlatform('pc'); return false;">See All PC Games →</a>
+      <div class="platform-desc">Best played with keyboard and mouse</div>
+      <div class="platform-scroll-wrapper">
+        <div class="platform-scroll" id="pc-grid"></div>
+        <button class="platform-arrow left" onclick="scrollPlatform('pc-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="platform-arrow right" onclick="scrollPlatform('pc-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <a class="see-all-link" onclick="showPlatform('pc'); return false;">See All PC Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </section>
 
     <!-- RESPONSIVE GAMES SECTION -->
     <section class="platform-section" id="responsive-section">
-      <div class="section-title"><span>🔄</span> PLAY ANYWHERE</div>
-      <p class="section-desc">Works on mobile, tablet, and desktop</p>
-      <div class="game-grid game-grid--horizontal" id="responsive-grid">
-        <!-- Filled by JS -->
+      <div class="platform-header">
+        <div class="platform-header-left">
+          <div class="platform-icon">🔄</div>
+          <div>
+            <div class="platform-title">Play Anywhere</div>
+            <div class="platform-count" id="responsive-count"></div>
+          </div>
+        </div>
       </div>
-      <a href="#" class="see-all-btn" onclick="showPlatform('responsive'); return false;">See All Responsive Games →</a>
+      <div class="platform-desc">Works on mobile, tablet, and desktop</div>
+      <div class="platform-scroll-wrapper">
+        <div class="platform-scroll" id="responsive-grid"></div>
+        <button class="platform-arrow left" onclick="scrollPlatform('responsive-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="platform-arrow right" onclick="scrollPlatform('responsive-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+      </div>
+      <a class="see-all-link" onclick="showPlatform('responsive'); return false;">See All Responsive Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
     </section>
 
     <div class="section-title" id="grid-title"><span>🎮</span> ALL GAMES</div>
@@ -624,30 +654,57 @@
     // ═══════════════════════════════════════════════════════════════
     //  PLATFORM SECTIONS
     // ═══════════════════════════════════════════════════════════════
+    function createPlatformCard(g) {
+      const a = document.createElement('a');
+      a.href = 'game.html?id=' + g.id;
+      a.className = 'platform-card';
+      a.title = g.title;
+      a.innerHTML =
+        '<img src="' + (g.thumb || '') + '" alt="' + (g.title || '') + '" loading="lazy">' +
+        '<div class="platform-card-badge">' + (g.category || '') + '</div>' +
+        '<div class="platform-card-content">' +
+          '<div class="platform-card-title">' + (g.title || '') + '</div>' +
+          '<div class="platform-card-meta"><span>' + (g.plays || 0).toLocaleString() + ' plays</span></div>' +
+        '</div>';
+      return a;
+    }
+
     function renderPlatformGrid(gridId, games) {
       const grid = document.getElementById(gridId);
       if (!grid) return;
       grid.innerHTML = '';
-      games.forEach(g => {
-        const card = createGameCard(g);
-        grid.appendChild(card);
-      });
+      games.forEach(g => grid.appendChild(createPlatformCard(g)));
+    }
+
+    function scrollPlatform(gridId, dir) {
+      const grid = document.getElementById(gridId);
+      if (!grid) return;
+      grid.scrollBy({ left: dir * 220, behavior: 'smooth' });
     }
 
     function renderPlatformSections() {
-      const mobileGames = GAMES.filter(g => g.platform === 'mobile').slice(0, 6);
-      const pcGames = GAMES.filter(g => g.platform === 'pc').slice(0, 6);
-      const responsiveGames = GAMES.filter(g => g.platform === 'responsive').slice(0, 6);
+      const mobileGames = GAMES.filter(g => g.platform === 'mobile').slice(0, 10);
+      const pcGames = GAMES.filter(g => g.platform === 'pc').slice(0, 10);
+      const responsiveGames = GAMES.filter(g => g.platform === 'responsive').slice(0, 10);
       renderPlatformGrid('mobile-grid', mobileGames);
       renderPlatformGrid('pc-grid', pcGames);
       renderPlatformGrid('responsive-grid', responsiveGames);
+      // Update counts
+      const mc = GAMES.filter(g => g.platform === 'mobile').length;
+      const pc = GAMES.filter(g => g.platform === 'pc').length;
+      const rc = GAMES.filter(g => g.platform === 'responsive').length;
+      var el;
+      el = document.getElementById('mobile-count'); if (el) el.textContent = mc + ' games';
+      el = document.getElementById('pc-count'); if (el) el.textContent = pc + ' games';
+      el = document.getElementById('responsive-count'); if (el) el.textContent = rc + ' games';
     }
 
     function showPlatform(platform) {
       activeCategory = 'all';
       renderCatBar();
       const filtered = GAMES.filter(g => g.platform === platform);
-      gridTitle.innerHTML = '<span>' + (platform === 'mobile' ? '📱' : platform === 'pc' ? '🖥️' : '🔄') + '</span> ' + platform.toUpperCase() + ' GAMES (' + filtered.length + ')';
+      const icon = platform === 'mobile' ? '📱' : platform === 'pc' ? '🖥️' : '🔄';
+      gridTitle.innerHTML = '<span>' + icon + '</span> ' + platform.toUpperCase() + ' GAMES (' + filtered.length + ')';
       grid.innerHTML = '';
       _renderedList = filtered;
       _renderedCount = 0;

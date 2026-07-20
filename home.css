@@ -700,47 +700,217 @@ footer {
    PLATFORM SECTIONS (Mobile / PC / Responsive horizontal rows)
    ================================================================ */
 .platform-section {
-  padding: 16px 8px 8px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  position: relative;
+  padding: 20px 16px 16px;
+  margin: 8px 0;
+  border-radius: 16px;
+  overflow: hidden;
 }
-.platform-section .section-title {
-  color: rgba(255,255,255,0.9);
+/* Gradient backgrounds per section */
+#mobile-section {
+  background: linear-gradient(135deg, rgba(99,102,241,0.15) 0%, rgba(168,85,247,0.08) 100%);
+  border: 1px solid rgba(99,102,241,0.2);
 }
-.platform-section .section-desc {
-  font-size: 12px;
-  color: rgba(255,255,255,0.4);
-  padding: 0 8px 8px;
+#pc-section {
+  background: linear-gradient(135deg, rgba(16,185,129,0.15) 0%, rgba(6,182,212,0.08) 100%);
+  border: 1px solid rgba(16,185,129,0.2);
 }
-.game-grid--horizontal {
+#responsive-section {
+  background: linear-gradient(135deg, rgba(245,158,11,0.15) 0%, rgba(239,68,68,0.08) 100%);
+  border: 1px solid rgba(245,158,11,0.2);
+}
+/* Decorative glow */
+.platform-section::before {
+  content: '';
+  position: absolute;
+  top: -60px; right: -60px;
+  width: 180px; height: 180px;
+  border-radius: 50%;
+  opacity: 0.12;
+  pointer-events: none;
+}
+#mobile-section::before { background: radial-gradient(circle, #6366f1, transparent 70%); }
+#pc-section::before { background: radial-gradient(circle, #10b981, transparent 70%); }
+#responsive-section::before { background: radial-gradient(circle, #f59e0b, transparent 70%); }
+
+.platform-header {
   display: flex;
-  overflow-x: auto;
-  gap: 12px;
-  padding: 0 8px 12px;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
 }
-.game-grid--horizontal .game-card {
-  min-width: 160px;
-  max-width: 160px;
-  scroll-snap-align: start;
+.platform-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.platform-icon {
+  width: 44px; height: 44px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
   flex-shrink: 0;
 }
-.see-all-btn {
-  display: inline-block;
-  margin: 8px 8px 0;
+#mobile-section .platform-icon { background: rgba(99,102,241,0.25); }
+#pc-section .platform-icon { background: rgba(16,185,129,0.25); }
+#responsive-section .platform-icon { background: rgba(245,158,11,0.25); }
+
+.platform-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+.platform-count {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+.platform-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 14px;
+}
+.platform-scroll-wrapper {
+  position: relative;
+}
+.platform-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 14px;
+  padding: 4px 2px 16px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.platform-scroll::-webkit-scrollbar { display: none; }
+
+/* Scroll arrows */
+.platform-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  pointer-events: none;
+}
+.platform-scroll-wrapper:hover .platform-arrow { opacity: 1; pointer-events: all; }
+.platform-arrow:hover { background: rgba(0,0,0,0.9); transform: translateY(-50%) scale(1.1); }
+.platform-arrow svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.platform-arrow.left { left: -6px; }
+.platform-arrow.right { right: -6px; }
+
+/* Platform game cards */
+.platform-card {
+  position: relative;
+  min-width: 180px; max-width: 180px;
+  aspect-ratio: 3/4;
+  border-radius: 14px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
+  text-decoration: none;
+  display: block;
+}
+.platform-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.5);
+}
+.platform-card img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.platform-card:hover img { transform: scale(1.08); }
+
+/* Card gradient overlay */
+.platform-card::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.75) 100%);
+  pointer-events: none;
+}
+.platform-card-content {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 12px;
+  z-index: 2;
+}
+.platform-card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+.platform-card-meta {
+  font-size: 10px;
+  color: rgba(255,255,255,0.6);
+  margin-top: 3px;
+  display: flex; align-items: center; gap: 6px;
+}
+.platform-card-badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 9px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  z-index: 3;
+  backdrop-filter: blur(6px);
+}
+#mobile-section .platform-card-badge { background: rgba(99,102,241,0.8); }
+#pc-section .platform-card-badge { background: rgba(16,185,129,0.8); }
+#responsive-section .platform-card-badge { background: rgba(245,158,11,0.8); }
+
+/* See all button */
+.see-all-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
   padding: 8px 16px;
-  background: rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.7);
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 12px;
   font-weight: 700;
   text-decoration: none;
-  transition: background 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
 }
-.see-all-btn:hover {
-  background: rgba(255,255,255,0.2);
-  color: #fff;
+#mobile-section .see-all-link {
+  background: rgba(99,102,241,0.2);
+  color: #818cf8;
 }
+#mobile-section .see-all-link:hover { background: rgba(99,102,241,0.35); color: #a5b4fc; }
+#pc-section .see-all-link {
+  background: rgba(16,185,129,0.2);
+  color: #34d399;
+}
+#pc-section .see-all-link:hover { background: rgba(16,185,129,0.35); color: #6ee7b7; }
+#responsive-section .see-all-link {
+  background: rgba(245,158,11,0.2);
+  color: #fbbf24;
+}
+#responsive-section .see-all-link:hover { background: rgba(245,158,11,0.35); color: #fcd34d; }
+.see-all-link svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
 /* ================================================================
    RESPONSIVE — TABLET (≤1024px)
@@ -834,6 +1004,23 @@ footer {
     min-width: 140px;
     max-width: 140px;
   }
+
+  /* Platform sections mobile */
+  .platform-section {
+    padding: 16px 12px 12px;
+    margin: 6px 0;
+    border-radius: 12px;
+  }
+  .platform-icon { width: 36px; height: 36px; font-size: 18px; border-radius: 10px; }
+  .platform-title { font-size: 14px; }
+  .platform-desc { font-size: 12px; margin-bottom: 10px; }
+  .platform-scroll { gap: 10px; padding: 4px 0 12px; }
+  .platform-card { min-width: 140px; max-width: 140px; border-radius: 12px; }
+  .platform-card-title { font-size: 11px; }
+  .platform-card-content { padding: 8px; }
+  .platform-card-badge { padding: 2px 6px; font-size: 8px; top: 6px; left: 6px; }
+  .platform-arrow { display: none !important; }
+  .see-all-link { padding: 6px 12px; font-size: 11px; }
 
   .search-drawer {
     width: 100%;
