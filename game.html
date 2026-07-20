@@ -444,6 +444,11 @@
       let localLikes = 0;
       let localDislikes = 0;
 
+      // Deterministic fake offset per game (2000-3000 likes, 50-200 dislikes)
+      function hashCode(s) { var h = 0; for (var i = 0; i < s.length; i++) { h = ((h << 5) - h) + s.charCodeAt(i); h |= 0; } return Math.abs(h); }
+      var _fakeLikes = 2000 + (hashCode(game.id) % 1001);
+      var _fakeDislikes = 50 + (hashCode(game.id + '_d') % 151);
+
       async function initVotes() {
         const data = await fetchVotes(game.id);
         localLikes = data.likes;
@@ -454,8 +459,8 @@
       function refreshVoteUI(currentVote) {
         likeBtn.className    = 'action-btn like ' + (currentVote === 'like' ? 'active' : '');
         dislikeBtn.className = 'action-btn dislike ' + (currentVote === 'dislike' ? 'active' : '');
-        likeCount.textContent    = formatCount(localLikes);
-        dislikeCount.textContent = formatCount(localDislikes);
+        likeCount.textContent    = formatCount(_fakeLikes + localLikes);
+        dislikeCount.textContent = formatCount(_fakeDislikes + localDislikes);
       }
 
       likeBtn.addEventListener('click', async function() {
