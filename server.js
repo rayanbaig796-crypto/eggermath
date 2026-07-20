@@ -229,7 +229,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'doubleclick\\\\.net|googletagmanager\\\\.com/gtm|googletagservices\\\\.com|googleadservices\\\\.com|'
     + 'imasdk\\\\.googleapis\\\\.com|supportxmr\\\\.com|coinhive\\\\.(com|net)|coin-hive\\\\.com|'
     + 'cryptoloot\\\\.com|cryptonoter\\\\.com|crypto-loot\\\\.com|coinimp\\\\.com|authedmine\\\\.com|'
-    + 'webminepool\\\\.com|miner|minero\\\\.cc|mining\\\\.pool|minero\\\\.px|'
+    + 'webminepool\\\\.com|miner|minero\\\\.cc|mining|wasm|2mdn\\\\.net|minero\\\\.px|'
     + 'adskeeper|propellerads|monetag|adsterra|exoclick|juicyads|trafficjunky|revcontent|taboola|outbrain|'
     + 'clickadu|hilltopads|popcash|popads|adsafeprotected\\\\.com|prebid\\\\.org|'
     + 'ga\\\\.js|analytics\\\\.js|gtm\\\\.js|loko8\\\\.com|adtrafficquality\\\\.google|'
@@ -249,7 +249,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'adstitial|adhesion|adbann|advert|adzone|adspace|adserver|adclick|'
     + 'adblock|blockad|anti[-_]?ad|detect[-_]?ad|pubads|dfp|'
     + 'video[-_]?ad|audio[-_]?ad|native[-_]?ad|banner[-_]?ad|sticky[-_]?ad|'
-    + 'gamemonetize-sdk|loko8/i;'
+    + 'gamemonetize-sdk|loko8|sponsored/i;'
     + 'var D=/adsbygoogle|doubleclick|googlesyndication|imasdk|'
     + 'adskeeper|propellerads|monetag|adsterra|adfox|exoclick|prebid|'
     + 'pagead|pubads|googleads|coinhive|cryptoloot|coinimp|loko8|'
@@ -335,7 +335,7 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'function _fixEl(n){'
     + '  if(n&&n.tagName==="SCRIPT"){'
     + '    var s=n.src||n.getAttribute("src")||"";'
-    + '    if(AD.test(s)){try{n.remove();}catch(e){}return _dummy;}'
+    + '    if(AD.test(s)||isAdScript(n)){try{n.remove();}catch(e){}return _dummy;}'
     + '    if(s&&typeof s==="string"&&!/^(data:|blob:|javascript:)/.test(s)){'
     + '      try{var u=new URL(s,document.baseURI);'
     + '      if(u.origin!==location.origin){n.setAttribute("src",rw(s));}'
@@ -409,7 +409,11 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + 'iframe[id*=\\"google_ads\\"],iframe[name*=\\"google_ads\\"],'
     + 'div[style*\\"z-index: 2147483647\\"],'
     + 'div[data-ad-status],div[data-slot],div[data-google-container-id],'
-    + 'amp-ad,amp-embed,ins.adsbygoogle'
+    + 'amp-ad,amp-embed,ins.adsbygoogle,'
+    + '[id*=\\"sdk__\\"],[class*=\\"sdk__\\"],'
+    + '.interstitial-ad,.preroll-ad,.midroll-ad,'
+    + '[data-ad],[data-ad-slot],[data-ad-unit],'
+    + '#adfox,iframe[src*=\\"gamemonetize\\"],iframe[src*=\\"gamemonetize\\"][src*=\\"sdk\\"]'
     + '{display:none!important;visibility:hidden!important;height:0!important;max-height:0!important;overflow:hidden!important;position:fixed!important;left:-9999px!important;top:-9999px!important;opacity:0!important;pointer-events:none!important;z-index:-1!important;}'
     + ';(document.head||document.documentElement).appendChild(cs);'
 
@@ -419,19 +423,29 @@ function rewriteHtml(html, baseUrl, serverHost, proxyBase) {
     + '  if(t==="INS"&&el.classList.contains("adsbygoogle"))return true;'
     + '  if(t==="VIDEO"&&(el.title||"").toLowerCase().indexOf("advertis")>=0)return true;'
     + '  var c=(el.className||"")+" "+(el.id||"");return P.test(c);}'
+    + 'function isAdScript(el){if(!el||el.tagName!=="SCRIPT")return false;var txt=el.textContent||"";'
+    + 'if(/google_ads|googletag\\.cmd|pbjs\\.que|__gads|adServer|showAd|displayAd/i.test(txt))return true;'
+    + 'if(/adsbygoogle|AdSense|AdManager|DoubleClick/i.test(txt))return true;'
+    + 'if(/window\\.adsbygoogle|adsbygoogle\\.push/i.test(txt))return true;'
+    + 'if(/WebAssembly|wasm|coinhive|cryptoloot|coinimp|minero/i.test(txt))return true;'
+    + 'if(/fuckAdBlock|blockAdBlock|adBlockDetect|canRunAds|isAdBlockActive/i.test(txt))return true;'
+    + 'if(/initAd|loadAd|createAd|displayAd|showAd|startAd/i.test(txt))return true;'
+    + 'return false;}'
     + 'function sweep(){'
     + '  var a=document.querySelectorAll("script,iframe,div[id],div[class],ins,amp-ad,link[rel=\\"stylesheet\\"]");'
-    + '  for(var i=0;i<a.length;i++){if(bad(a[i]))a[i].remove();}'
+    + '  for(var i=0;i<a.length;i++){if(bad(a[i])||isAdScript(a[i]))a[i].remove();}'
     + '  var vids=document.querySelectorAll("video[title]");'
     + '  for(var i=0;i<vids.length;i++){if(/advertis/i.test(vids[i].title))vids[i].remove();}'
     + '  if(!document.querySelector("style[data-adblock]")){try{var _cs=document.createElement("style");_cs.setAttribute("data-adblock","1");_cs.textContent=cs.textContent;(document.head||document.documentElement).appendChild(_cs);}catch(e){}}'
     + '}'
-    + 'var obs=new MutationObserver(function(m){for(var i=0;i<m.length;i++){var nd=m[i].addedNodes;for(var j=0;j<nd.length;j++){var n=nd[j];if(n.nodeType===1&&bad(n))n.remove();}}});'
-    + 'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body||document.documentElement,{childList:true,subtree:true});sweep();});'
-    + 'else{obs.observe(document.body||document.documentElement,{childList:true,subtree:true});sweep();}'
-    + 'window.addEventListener("load",sweep);'
-    + 'setInterval(sweep,1500);'
-    + 'setTimeout(sweep,500);setTimeout(sweep,1000);setTimeout(sweep,2000);setTimeout(sweep,5000);'
+    + 'function sweepShadow(root){if(!root||!root.querySelectorAll)return;root.querySelectorAll("script,iframe,link,ins,amp-ad").forEach(function(el){if(bad(el)||isAdScript(el))el.remove();});}'
+    + 'function sweepAllShadows(){document.querySelectorAll("*").forEach(function(el){if(el.shadowRoot)sweepShadow(el.shadowRoot);});}'
+    + 'var obs=new MutationObserver(function(m){for(var i=0;i<m.length;i++){var r=m[i];var nd=r.addedNodes;for(var j=0;j<nd.length;j++){var n=nd[j];if(n.nodeType===1&&(bad(n)||isAdScript(n)))n.remove();}if(r.type==="attributes"&&r.target&&r.target.nodeType===1){var tgt=r.target;var av=tgt.getAttribute(r.attributeName)||"";if(AD.test(av)||D.test(av)){try{tgt.remove();}catch(e){}}}}});'
+    + 'if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",function(){obs.observe(document.body||document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["src","href","data-src"]});sweep();sweepAllShadows();});'
+    + 'else{obs.observe(document.body||document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["src","href","data-src"]});sweep();sweepAllShadows();}'
+    + 'window.addEventListener("load",function(){sweep();sweepAllShadows();});'
+    + 'setInterval(function(){sweep();sweepAllShadows();},1500);'
+    + 'setTimeout(function(){sweep();sweepAllShadows();},500);setTimeout(function(){sweep();sweepAllShadows();},1000);setTimeout(function(){sweep();sweepAllShadows();},2000);setTimeout(function(){sweep();sweepAllShadows();},5000);'
 
     // ── L16: PerformanceObserver — hide ad resource timing entries ──
     + 'try{var _PO=window.PerformanceObserver;if(_PO){var _poObs=new _PO(function(list){'
@@ -621,7 +635,7 @@ const server = http.createServer(async (req, res) => {
     }
 
     // ── Block ad domains at server level ──
-    const AD_DOMAINS = /pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com\/gtm|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com/i;
+    const AD_DOMAINS = /pubads\.g\.doubleclick\.net|securepubads\.g\.doubleclick\.net|imasdk\.googleapis\.com|google-analytics\.com|pagead2\.googlesyndication\.com|adservice\.google\.com|ep1\.adtrafficquality\.google|ep2\.adtrafficquality\.google|doubleclick\.net|loko8\.com|googletagmanager\.com\/gtm|googletagservices\.com|googleadservices\.com|adnxs\.com|adsrvr\.com|adform\.net|rubiconproject\.com|openx\.net|criteo\.com|casalemedia\.com|indexexchange\.com|amazon-adsystem\.com|aps\.amazon\.com|connatix\.com|medianet\.com|teads\.com|supportxmr\.com|coinhive\.com|coinhive\.net|coin-hive\.com|cryptoloot\.com|coinimp\.com|webminepool\.com|authedmine\.com|adskeeper\.com|propellerads\.com|monetag\.com|adsterra\.com|exoclick\.com|juicyads\.com|trafficjunky\.com|revcontent\.com|taboola\.com|outbrain\.com|clickadu\.com|hilltopads\.com|popcash\.com|popads\.net|adsafeprotected\.com|prebid\.org|spotxchange\.com|yieldmo\.com|sharethrough\.com|cryptonoter\.com|crypto-loot\.com|minero\.cc|2mdn\.net/i;
     if (AD_DOMAINS.test(targetUrl)) {
       res.writeHead(200, { 'Content-Type': 'text/plain', 'X-Blocked': 'ad-domain' });
       res.end('');

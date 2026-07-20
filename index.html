@@ -209,6 +209,36 @@
     <!-- Hidden SEO h1 - visually represented by the sidebar logo and section title -->
     <h1>EggerMath — Free Browser Games</h1>
 
+    <!-- MOBILE GAMES SECTION -->
+    <section class="platform-section" id="mobile-section">
+      <div class="section-title"><span>📱</span> MOBILE GAMES</div>
+      <p class="section-desc">Touch-friendly games you can play on your phone</p>
+      <div class="game-grid game-grid--horizontal" id="mobile-grid">
+        <!-- Filled by JS -->
+      </div>
+      <a href="#" class="see-all-btn" onclick="showPlatform('mobile'); return false;">See All Mobile Games →</a>
+    </section>
+
+    <!-- PC GAMES SECTION -->
+    <section class="platform-section" id="pc-section">
+      <div class="section-title"><span>🖥️</span> PC GAMES</div>
+      <p class="section-desc">Best played with keyboard and mouse</p>
+      <div class="game-grid game-grid--horizontal" id="pc-grid">
+        <!-- Filled by JS -->
+      </div>
+      <a href="#" class="see-all-btn" onclick="showPlatform('pc'); return false;">See All PC Games →</a>
+    </section>
+
+    <!-- RESPONSIVE GAMES SECTION -->
+    <section class="platform-section" id="responsive-section">
+      <div class="section-title"><span>🔄</span> PLAY ANYWHERE</div>
+      <p class="section-desc">Works on mobile, tablet, and desktop</p>
+      <div class="game-grid game-grid--horizontal" id="responsive-grid">
+        <!-- Filled by JS -->
+      </div>
+      <a href="#" class="see-all-btn" onclick="showPlatform('responsive'); return false;">See All Responsive Games →</a>
+    </section>
+
     <div class="section-title" id="grid-title"><span>🎮</span> ALL GAMES</div>
     
     <!-- GAME GRID -->
@@ -592,6 +622,41 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
+    //  PLATFORM SECTIONS
+    // ═══════════════════════════════════════════════════════════════
+    function renderPlatformGrid(gridId, games) {
+      const grid = document.getElementById(gridId);
+      if (!grid) return;
+      grid.innerHTML = '';
+      games.forEach(g => {
+        const card = createGameCard(g);
+        grid.appendChild(card);
+      });
+    }
+
+    function renderPlatformSections() {
+      const mobileGames = GAMES.filter(g => g.platform === 'mobile').slice(0, 6);
+      const pcGames = GAMES.filter(g => g.platform === 'pc').slice(0, 6);
+      const responsiveGames = GAMES.filter(g => g.platform === 'responsive').slice(0, 6);
+      renderPlatformGrid('mobile-grid', mobileGames);
+      renderPlatformGrid('pc-grid', pcGames);
+      renderPlatformGrid('responsive-grid', responsiveGames);
+    }
+
+    function showPlatform(platform) {
+      activeCategory = 'all';
+      renderCatBar();
+      const filtered = GAMES.filter(g => g.platform === platform);
+      gridTitle.innerHTML = '<span>' + (platform === 'mobile' ? '📱' : platform === 'pc' ? '🖥️' : '🔄') + '</span> ' + platform.toUpperCase() + ' GAMES (' + filtered.length + ')';
+      grid.innerHTML = '';
+      _renderedList = filtered;
+      _renderedCount = 0;
+      _renderBatch(Math.min(BATCH_SIZE, filtered.length));
+      _setupInfiniteScroll();
+      gridTitle.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
     //  SEARCH LOGIC
     // ═══════════════════════════════════════════════════════════════
     let drawerActiveCat = 'all';
@@ -693,6 +758,7 @@
       await loadFavorites();
       GAMES.sort((a, b) => (b.plays || 0) - (a.plays || 0));
       renderCatBar();
+      renderPlatformSections();
       renderMainGrid();
       renderSidebarMinis();
       renderSearchCats();

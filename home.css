@@ -697,6 +697,52 @@ footer {
 .game-card:nth-child(8) { animation-delay: 0.08s; }
 
 /* ================================================================
+   PLATFORM SECTIONS (Mobile / PC / Responsive horizontal rows)
+   ================================================================ */
+.platform-section {
+  padding: 16px 8px 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.platform-section .section-title {
+  color: rgba(255,255,255,0.9);
+}
+.platform-section .section-desc {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  padding: 0 8px 8px;
+}
+.game-grid--horizontal {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding: 0 8px 12px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.game-grid--horizontal .game-card {
+  min-width: 160px;
+  max-width: 160px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+.see-all-btn {
+  display: inline-block;
+  margin: 8px 8px 0;
+  padding: 8px 16px;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.7);
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.see-all-btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+/* ================================================================
    RESPONSIVE — TABLET (≤1024px)
    ================================================================ */
 @media (max-width: 1024px) {
@@ -782,6 +828,11 @@ footer {
   .game-card.hero .game-card-label {
     padding: 40px 10px 10px;
     font-size: 14px;
+  }
+
+  .game-grid--horizontal .game-card {
+    min-width: 140px;
+    max-width: 140px;
   }
 
   .search-drawer {

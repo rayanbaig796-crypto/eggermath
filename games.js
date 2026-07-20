@@ -20,7 +20,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "LEGION GAMES",
     "credit": "https://2v2-io.com",
-    "plays": 1800
+    "plays": 1800,
+    "platform": "responsive"
   },
   {
     "id": "gm-tanked-io",
@@ -41,7 +42,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1747
+    "plays": 1747,
+    "platform": "responsive"
   },
   {
     "id": "gm-knight-arena-io",
@@ -61,7 +63,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1741
+    "plays": 1741,
+    "platform": "responsive"
   },
   {
     "id": "gm-swordbattle-io",
@@ -82,7 +85,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1565
+    "plays": 1565,
+    "platform": "responsive"
   },
   {
     "id": "gm-ants-io",
@@ -103,7 +107,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1561
+    "plays": 1561,
+    "platform": "responsive"
   },
   {
     "id": "gm-battledudes-io",
@@ -124,7 +129,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1553
+    "plays": 1553,
+    "platform": "responsive"
   },
   {
     "id": "gm-cobraz-io",
@@ -145,7 +151,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1518
+    "plays": 1518,
+    "platform": "responsive"
   },
   {
     "id": "gm-knife-io",
@@ -166,7 +173,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1509
+    "plays": 1509,
+    "platform": "responsive"
   },
   {
     "id": "gm-gulper-io",
@@ -187,7 +195,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1499
+    "plays": 1499,
+    "platform": "responsive"
   },
   {
     "id": "gm-gatdamn-io",
@@ -206,7 +215,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1326
+    "plays": 1326,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-io",
@@ -227,7 +237,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1310
+    "plays": 1310,
+    "platform": "pc"
   },
   {
     "id": "gm-territory-io",
@@ -248,7 +259,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1307
+    "plays": 1307,
+    "platform": "responsive"
   },
   {
     "id": "gm-python-io",
@@ -267,7 +279,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1292
+    "plays": 1292,
+    "platform": "responsive"
   },
   {
     "id": "gm-bumper-ball-io",
@@ -288,7 +301,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1291
+    "plays": 1291,
+    "platform": "responsive"
   },
   {
     "id": "gm-tetris",
@@ -308,7 +322,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1274
+    "plays": 1274,
+    "platform": "responsive"
   },
   {
     "id": "gm-bulletz-io",
@@ -325,7 +340,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1265
+    "plays": 1265,
+    "platform": "responsive"
   },
   {
     "id": "gm-sudoku",
@@ -346,7 +362,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1260
+    "plays": 1260,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocky-warfare-the-aweper-zombie",
@@ -365,7 +382,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1212
+    "plays": 1212,
+    "platform": "pc"
   },
   {
     "id": "gm-bubble-shooter-legend-2",
@@ -384,7 +402,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1197
+    "plays": 1197,
+    "platform": "pc"
   },
   {
     "id": "gm-zombie-quell-3d",
@@ -405,7 +424,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1178
+    "plays": 1178,
+    "platform": "pc"
   },
   {
     "id": "gm-bubble-shooter-2023-game",
@@ -419,7 +439,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1160
+    "plays": 1160,
+    "platform": "responsive"
   },
   {
     "id": "gm-urban-riot-blaster",
@@ -440,7 +461,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1158
+    "plays": 1158,
+    "platform": "pc"
   },
   {
     "id": "gm-bubble-shooter-wheel-game",
@@ -454,7 +476,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1151
+    "plays": 1151,
+    "platform": "responsive"
   },
   {
     "id": "gm-deadly-zombie-virus",
@@ -473,7 +496,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1150
+    "plays": 1150,
+    "platform": "pc"
   },
   {
     "id": "gm-bubble-shooter-colors-game-game",
@@ -487,7 +511,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1149
+    "plays": 1149,
+    "platform": "responsive"
   },
   {
     "id": "gm-good-guys-amp-bad-boys-zombie-survival-gui",
@@ -508,7 +533,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1145
+    "plays": 1145,
+    "platform": "pc"
   },
   {
     "id": "gm-bubble-shooter-saga-online-game",
@@ -522,7 +548,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1144
+    "plays": 1144,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter-genies-game",
@@ -536,7 +563,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1143
+    "plays": 1143,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter-pro-2-game",
@@ -550,7 +578,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1140
+    "plays": 1140,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-bubble-shooter-game",
@@ -564,7 +593,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1135
+    "plays": 1135,
+    "platform": "responsive"
   },
   {
     "id": "gm-wood-gems-bubble-shooter-game",
@@ -578,7 +608,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1134
+    "plays": 1134,
+    "platform": "responsive"
   },
   {
     "id": "gm-dino-eggs-bubble-shooter-game",
@@ -592,7 +623,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1133
+    "plays": 1133,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter-pirates-3-game",
@@ -606,7 +638,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1126
+    "plays": 1126,
+    "platform": "responsive"
   },
   {
     "id": "gm-doodle-jump-4",
@@ -624,7 +657,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1114
+    "plays": 1114,
+    "platform": "pc"
   },
   {
     "id": "gm-gun-shooting-game",
@@ -645,7 +679,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1107
+    "plays": 1107,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-danger-run",
@@ -666,7 +701,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1102
+    "plays": 1102,
+    "platform": "pc"
   },
   {
     "id": "gm-city-car-driving-simulator",
@@ -685,7 +721,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1094
+    "plays": 1094,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter",
@@ -705,7 +742,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1094
+    "plays": 1094,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter-aura",
@@ -726,7 +764,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1071
+    "plays": 1071,
+    "platform": "mobile"
   },
   {
     "id": "gm-destroy-godzillas-3d-shooter",
@@ -747,7 +786,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1068
+    "plays": 1068,
+    "platform": "pc"
   },
   {
     "id": "gm-weekend-sudoku-33-game",
@@ -761,7 +801,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1060
+    "plays": 1060,
+    "platform": "responsive"
   },
   {
     "id": "gm-weekend-sudoku-27-game",
@@ -775,7 +816,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1058
+    "plays": 1058,
+    "platform": "responsive"
   },
   {
     "id": "gm-tanks-for-the-nation",
@@ -796,7 +838,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1057
+    "plays": 1057,
+    "platform": "pc"
   },
   {
     "id": "gm-noob-vs-zombie-2",
@@ -817,7 +860,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1052
+    "plays": 1052,
+    "platform": "pc"
   },
   {
     "id": "gm-flappy-bird",
@@ -839,7 +883,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1049
+    "plays": 1049,
+    "platform": "mobile"
   },
   {
     "id": "gm-weekend-sudoku-13-game",
@@ -853,7 +898,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1049
+    "plays": 1049,
+    "platform": "responsive"
   },
   {
     "id": "gm-combat-pixel-zombie-survival",
@@ -874,7 +920,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1047
+    "plays": 1047,
+    "platform": "mobile"
   },
   {
     "id": "gm-word-search",
@@ -895,7 +942,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1041
+    "plays": 1041,
+    "platform": "mobile"
   },
   {
     "id": "gm-real-savior-kids",
@@ -914,7 +962,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1038
+    "plays": 1038,
+    "platform": "pc"
   },
   {
     "id": "gm-superior-trial",
@@ -935,7 +984,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1037
+    "plays": 1037,
+    "platform": "mobile"
   },
   {
     "id": "gm-zombie-catchers",
@@ -954,7 +1004,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1033
+    "plays": 1033,
+    "platform": "pc"
   },
   {
     "id": "gm-join-the-gang-and-fight",
@@ -975,7 +1026,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1028
+    "plays": 1028,
+    "platform": "pc"
   },
   {
     "id": "gm-noob-vs-zombie",
@@ -994,7 +1046,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1022
+    "plays": 1022,
+    "platform": "pc"
   },
   {
     "id": "gm-horror-hospital",
@@ -1015,7 +1068,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 1005
+    "plays": 1005,
+    "platform": "pc"
   },
   {
     "id": "gm-poppy-playtime-survival",
@@ -1032,7 +1086,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 998
+    "plays": 998,
+    "platform": "pc"
   },
   {
     "id": "gm-mahjong-solitaire",
@@ -1051,7 +1106,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 978
+    "plays": 978,
+    "platform": "responsive"
   },
   {
     "id": "gm-sudoku-master",
@@ -1070,7 +1126,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 973
+    "plays": 973,
+    "platform": "mobile"
   },
   {
     "id": "gm-carrush",
@@ -1091,7 +1148,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 960
+    "plays": 960,
+    "platform": "pc"
   },
   {
     "id": "gm-racing-horizon",
@@ -1113,7 +1171,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 954
+    "plays": 954,
+    "platform": "responsive"
   },
   {
     "id": "gm-solitaire",
@@ -1132,7 +1191,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 952
+    "plays": 952,
+    "platform": "responsive"
   },
   {
     "id": "gm-fairway-solitaire-classic-cards-game-game",
@@ -1146,7 +1206,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 951
+    "plays": 951,
+    "platform": "responsive"
   },
   {
     "id": "gm-fruit-merger",
@@ -1166,7 +1227,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 945
+    "plays": 945,
+    "platform": "pc"
   },
   {
     "id": "gm-car-stunt",
@@ -1187,7 +1249,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 944
+    "plays": 944,
+    "platform": "responsive"
   },
   {
     "id": "gm-beat-shooter-3d",
@@ -1208,7 +1271,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 942
+    "plays": 942,
+    "platform": "pc"
   },
   {
     "id": "gm-hero-rescue-puzzle",
@@ -1229,7 +1293,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 939
+    "plays": 939,
+    "platform": "pc"
   },
   {
     "id": "gm-emerland-solitaire-game",
@@ -1243,7 +1308,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 934
+    "plays": 934,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-archer",
@@ -1264,7 +1330,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 933
+    "plays": 933,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-klondike-solitaire-game",
@@ -1278,7 +1345,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 929
+    "plays": 929,
+    "platform": "responsive"
   },
   {
     "id": "gm-angry-birds",
@@ -1297,7 +1365,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 928
+    "plays": 928,
+    "platform": "pc"
   },
   {
     "id": "gm-head-football-3d",
@@ -1318,7 +1387,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 925
+    "plays": 925,
+    "platform": "responsive"
   },
   {
     "id": "gm-solitaire-card-sort-puzzle-game",
@@ -1332,7 +1402,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 924
+    "plays": 924,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-blast-puzzle",
@@ -1353,7 +1424,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 920
+    "plays": 920,
+    "platform": "mobile"
   },
   {
     "id": "gm-car-park-simulator",
@@ -1373,7 +1445,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 918
+    "plays": 918,
+    "platform": "responsive"
   },
   {
     "id": "gm-soccer-simulator",
@@ -1394,7 +1467,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 918
+    "plays": 918,
+    "platform": "responsive"
   },
   {
     "id": "gm-scary-vending-machine",
@@ -1413,7 +1487,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 912
+    "plays": 912,
+    "platform": "mobile"
   },
   {
     "id": "gm-car-evolution-pro-math-gates",
@@ -1434,7 +1509,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 911
+    "plays": 911,
+    "platform": "mobile"
   },
   {
     "id": "gm-doodle-jump",
@@ -1455,7 +1531,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 910
+    "plays": 910,
+    "platform": "pc"
   },
   {
     "id": "gm-horror-eyes-escape",
@@ -1476,7 +1553,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 910
+    "plays": 910,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-car-drive",
@@ -1497,7 +1575,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 909
+    "plays": 909,
+    "platform": "responsive"
   },
   {
     "id": "gm-pixel-gun-apocalypse-6-remastered",
@@ -1519,7 +1598,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 907
+    "plays": 907,
+    "platform": "pc"
   },
   {
     "id": "gm-tank-battle",
@@ -1540,7 +1620,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 907
+    "plays": 907,
+    "platform": "pc"
   },
   {
     "id": "gm-weapon-run",
@@ -1561,7 +1642,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 904
+    "plays": 904,
+    "platform": "pc"
   },
   {
     "id": "gm-football-world-cup-pro",
@@ -1581,7 +1663,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 902
+    "plays": 902,
+    "platform": "responsive"
   },
   {
     "id": "gm-spiny-ninja",
@@ -1599,7 +1682,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 902
+    "plays": 902,
+    "platform": "responsive"
   },
   {
     "id": "gm-glam-guru-puzzle-collection",
@@ -1618,7 +1702,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 899
+    "plays": 899,
+    "platform": "responsive"
   },
   {
     "id": "gm-pinball-football-kids",
@@ -1637,7 +1722,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 893
+    "plays": 893,
+    "platform": "responsive"
   },
   {
     "id": "gm-granny-creepy-evil-scream-scary",
@@ -1654,7 +1740,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 890
+    "plays": 890,
+    "platform": "pc"
   },
   {
     "id": "gm-scary-granny-horror-game",
@@ -1670,7 +1757,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 889
+    "plays": 889,
+    "platform": "pc"
   },
   {
     "id": "gm-horror-eye",
@@ -1691,7 +1779,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 887
+    "plays": 887,
+    "platform": "pc"
   },
   {
     "id": "gm-deadly-hunters-run",
@@ -1712,7 +1801,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 886
+    "plays": 886,
+    "platform": "pc"
   },
   {
     "id": "gm-rally-championship",
@@ -1733,7 +1823,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 883
+    "plays": 883,
+    "platform": "mobile"
   },
   {
     "id": "gm-last-z-survival-shooter",
@@ -1752,7 +1843,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 871
+    "plays": 871,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-gaga-game",
@@ -1766,7 +1858,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 864
+    "plays": 864,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-emoji-game",
@@ -1780,7 +1873,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 864
+    "plays": 864,
+    "platform": "responsive"
   },
   {
     "id": "gm-mahjong-sunset-game",
@@ -1794,7 +1888,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 863
+    "plays": 863,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-fun-doctor-game",
@@ -1808,7 +1903,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 862
+    "plays": 862,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-mario-game",
@@ -1822,7 +1918,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 862
+    "plays": 862,
+    "platform": "responsive"
   },
   {
     "id": "gm-happy-chef-bubble-game",
@@ -1836,7 +1933,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 862
+    "plays": 862,
+    "platform": "responsive"
   },
   {
     "id": "gm-cowboy-zombie-game",
@@ -1850,7 +1948,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 860
+    "plays": 860,
+    "platform": "responsive"
   },
   {
     "id": "gm-superhero-io-game",
@@ -1864,7 +1963,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 860
+    "plays": 860,
+    "platform": "responsive"
   },
   {
     "id": "gm-house-evolution-3d-game",
@@ -1878,7 +1978,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 860
+    "plays": 860,
+    "platform": "responsive"
   },
   {
     "id": "gm-state-wars",
@@ -1895,7 +1996,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 858
+    "plays": 858,
+    "platform": "responsive"
   },
   {
     "id": "gm-welding-simulation-3d-game",
@@ -1909,7 +2011,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 858
+    "plays": 858,
+    "platform": "responsive"
   },
   {
     "id": "gm-explosions-game",
@@ -1923,7 +2026,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 857
+    "plays": 857,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-hunter-zombie-game",
@@ -1937,7 +2041,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 857
+    "plays": 857,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-shooters-game",
@@ -1951,7 +2056,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 856
+    "plays": 856,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombies-4-weapon-merge",
@@ -1970,7 +2076,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 855
+    "plays": 855,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-hunter-game",
@@ -1984,7 +2091,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 855
+    "plays": 855,
+    "platform": "responsive"
   },
   {
     "id": "gm-gothic-fashion-game",
@@ -1998,7 +2106,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 854
+    "plays": 854,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-killer-squad-game",
@@ -2012,7 +2121,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 854
+    "plays": 854,
+    "platform": "responsive"
   },
   {
     "id": "gm-summer-vacation-family-picnic-game",
@@ -2026,7 +2136,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 854
+    "plays": 854,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-tsunami-online-game",
@@ -2040,7 +2151,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 853
+    "plays": 853,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-farm-game",
@@ -2054,7 +2166,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 853
+    "plays": 853,
+    "platform": "responsive"
   },
   {
     "id": "gm-mahjong-connect-classic-game",
@@ -2068,7 +2181,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 852
+    "plays": 852,
+    "platform": "responsive"
   },
   {
     "id": "gm-magic-action-gun-game",
@@ -2089,7 +2203,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 851
+    "plays": 851,
+    "platform": "pc"
   },
   {
     "id": "gm-celebrations-switch-blocks-game",
@@ -2103,7 +2218,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 851
+    "plays": 851,
+    "platform": "responsive"
   },
   {
     "id": "gm-division-bird-image-uncover-game",
@@ -2117,7 +2233,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 850
+    "plays": 850,
+    "platform": "responsive"
   },
   {
     "id": "gm-chicken-io-game",
@@ -2131,7 +2248,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 850
+    "plays": 850,
+    "platform": "responsive"
   },
   {
     "id": "gm-combat-zombie-warfare-game",
@@ -2145,7 +2263,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 850
+    "plays": 850,
+    "platform": "responsive"
   },
   {
     "id": "gm-plants-vs-zombies-jigsaw-game",
@@ -2159,7 +2278,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 849
+    "plays": 849,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-sewing-clothes-game",
@@ -2173,7 +2293,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 848
+    "plays": 848,
+    "platform": "responsive"
   },
   {
     "id": "gm-gumball-darwin-competition-party-game",
@@ -2187,7 +2308,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 847
+    "plays": 847,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-driving-game",
@@ -2201,7 +2323,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 847
+    "plays": 847,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-bird-io-game",
@@ -2215,7 +2338,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 847
+    "plays": 847,
+    "platform": "responsive"
   },
   {
     "id": "gm-agent-action-game",
@@ -2229,7 +2353,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 846
+    "plays": 846,
+    "platform": "responsive"
   },
   {
     "id": "gm-game-bubble-pop-adventures-game",
@@ -2243,7 +2368,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 846
+    "plays": 846,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-flappy-mario-game",
@@ -2257,7 +2383,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 846
+    "plays": 846,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-massacre-game",
@@ -2271,7 +2398,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 845
+    "plays": 845,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-girl-cosplay-sailor-challenge-game",
@@ -2285,7 +2413,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 845
+    "plays": 845,
+    "platform": "responsive"
   },
   {
     "id": "gm-shadowgun-war-game",
@@ -2306,7 +2435,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 844
+    "plays": 844,
+    "platform": "pc"
   },
   {
     "id": "gm-defense-base-2",
@@ -2327,7 +2457,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 844
+    "plays": 844,
+    "platform": "pc"
   },
   {
     "id": "gm-obby-minecraft-ultimate-game",
@@ -2341,7 +2472,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 844
+    "plays": 844,
+    "platform": "responsive"
   },
   {
     "id": "gm-millonario-2021-trivia-quiz-game-game",
@@ -2355,7 +2487,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 844
+    "plays": 844,
+    "platform": "responsive"
   },
   {
     "id": "gm-transporters-io-game",
@@ -2369,7 +2502,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 844
+    "plays": 844,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-war-zombie-game",
@@ -2383,7 +2517,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 843
+    "plays": 843,
+    "platform": "responsive"
   },
   {
     "id": "gm-girl-squad-fashion-game",
@@ -2397,7 +2532,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 843
+    "plays": 843,
+    "platform": "responsive"
   },
   {
     "id": "gm-shoot-angry-zombies-game",
@@ -2411,7 +2547,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 842
+    "plays": 842,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-mahjong-connect-2-game",
@@ -2425,7 +2562,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 842
+    "plays": 842,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-online-edition-find-the-imposter-game",
@@ -2439,7 +2577,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 842
+    "plays": 842,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxing-hero-punch-champions-game",
@@ -2453,7 +2592,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 841
+    "plays": 841,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-horror-house-escape-game",
@@ -2467,7 +2607,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 841
+    "plays": 841,
+    "platform": "responsive"
   },
   {
     "id": "gm-air-fighter-3d",
@@ -2488,7 +2629,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 840
+    "plays": 840,
+    "platform": "pc"
   },
   {
     "id": "gm-celebrity-fashion-battle-game",
@@ -2502,7 +2644,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 840
+    "plays": 840,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-spin-game",
@@ -2516,7 +2659,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 840
+    "plays": 840,
+    "platform": "responsive"
   },
   {
     "id": "gm-special-forces-war-zombie-attack-game",
@@ -2530,7 +2674,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 839
+    "plays": 839,
+    "platform": "responsive"
   },
   {
     "id": "gm-advent-mahjong-game",
@@ -2544,7 +2689,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 839
+    "plays": 839,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-tailor-clothing-3d-game",
@@ -2558,7 +2704,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 839
+    "plays": 839,
+    "platform": "responsive"
   },
   {
     "id": "gm-plant-girl-defense-zombie-game",
@@ -2572,7 +2719,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 839
+    "plays": 839,
+    "platform": "responsive"
   },
   {
     "id": "gm-hole-io-game",
@@ -2586,7 +2734,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 838
+    "plays": 838,
+    "platform": "responsive"
   },
   {
     "id": "gm-math-boxing-christmas-addition-game",
@@ -2600,7 +2749,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 838
+    "plays": 838,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-doctor-body-examination-game",
@@ -2614,7 +2764,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 837
+    "plays": 837,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombie-city-parking-game",
@@ -2628,7 +2779,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 837
+    "plays": 837,
+    "platform": "responsive"
   },
   {
     "id": "gm-impostor-snake-io-game",
@@ -2642,7 +2794,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 836
+    "plays": 836,
+    "platform": "responsive"
   },
   {
     "id": "gm-cat-family-educational-games-game",
@@ -2656,7 +2809,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 835
+    "plays": 835,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-mission-truck-game",
@@ -2670,7 +2824,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 835
+    "plays": 835,
+    "platform": "responsive"
   },
   {
     "id": "gm-millionnaire-quiz-2021-game",
@@ -2684,7 +2839,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 835
+    "plays": 835,
+    "platform": "responsive"
   },
   {
     "id": "gm-american-block-sniper-survival-online-game",
@@ -2698,7 +2854,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 834
+    "plays": 834,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-shoe-design-game",
@@ -2712,7 +2869,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 834
+    "plays": 834,
+    "platform": "responsive"
   },
   {
     "id": "gm-walkers-of-fashion-game",
@@ -2726,7 +2884,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 834
+    "plays": 834,
+    "platform": "responsive"
   },
   {
     "id": "gm-mahjong",
@@ -2747,7 +2906,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 832
+    "plays": 832,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-zombie-shooter-game",
@@ -2761,7 +2921,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 832
+    "plays": 832,
+    "platform": "responsive"
   },
   {
     "id": "gm-mechangelion-robot-fight-game",
@@ -2775,7 +2936,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 831
+    "plays": 831,
+    "platform": "responsive"
   },
   {
     "id": "gm-fireboy-and-watergirls-io-game",
@@ -2789,7 +2951,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 831
+    "plays": 831,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-survival-challenge-game",
@@ -2803,7 +2966,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 831
+    "plays": 831,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-mario-differences-game",
@@ -2817,7 +2981,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 831
+    "plays": 831,
+    "platform": "responsive"
   },
   {
     "id": "gm-shooting-zombie-fps-xtreme-good-vs-bad-boys-game",
@@ -2831,7 +2996,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 830
+    "plays": 830,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-closet-makeover-game",
@@ -2845,7 +3011,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 830
+    "plays": 830,
+    "platform": "responsive"
   },
   {
     "id": "gm-brain-iq-test-minecraft-quiz-game",
@@ -2859,7 +3026,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 830
+    "plays": 830,
+    "platform": "responsive"
   },
   {
     "id": "gm-shooting-survival-skibidi-toilet-game",
@@ -2873,7 +3041,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 829
+    "plays": 829,
+    "platform": "responsive"
   },
   {
     "id": "gm-guns-vs-magic",
@@ -2892,7 +3061,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 827
+    "plays": 827,
+    "platform": "pc"
   },
   {
     "id": "gm-space-mission-truck-nice-truck-game",
@@ -2906,7 +3076,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 826
+    "plays": 826,
+    "platform": "responsive"
   },
   {
     "id": "gm-horse-racing",
@@ -2927,7 +3098,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 825
+    "plays": 825,
+    "platform": "responsive"
   },
   {
     "id": "gm-new-year-celebration-final-episode-game",
@@ -2941,7 +3113,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 825
+    "plays": 825,
+    "platform": "responsive"
   },
   {
     "id": "gm-merge-miners-3d-puzzle",
@@ -2962,7 +3135,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 824
+    "plays": 824,
+    "platform": "responsive"
   },
   {
     "id": "gm-commando-gun-shooting",
@@ -2981,7 +3155,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 823
+    "plays": 823,
+    "platform": "pc"
   },
   {
     "id": "gm-mortal-brothers-survival-friends-game",
@@ -2995,7 +3170,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 823
+    "plays": 823,
+    "platform": "responsive"
   },
   {
     "id": "gm-tower-defense-zombies-game",
@@ -3009,7 +3185,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 822
+    "plays": 822,
+    "platform": "pc"
   },
   {
     "id": "gm-ultimate-speed-driving",
@@ -3030,7 +3207,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 821
+    "plays": 821,
+    "platform": "responsive"
   },
   {
     "id": "gm-snowfight-io-game",
@@ -3044,7 +3222,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 817
+    "plays": 817,
+    "platform": "responsive"
   },
   {
     "id": "gm-minecraft-zombie-survial-game",
@@ -3058,7 +3237,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 817
+    "plays": 817,
+    "platform": "mobile"
   },
   {
     "id": "gm-stickman-vs-zombies-minecraft-game",
@@ -3072,7 +3252,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 815
+    "plays": 815,
+    "platform": "responsive"
   },
   {
     "id": "gm-sport-sort-puzzle",
@@ -3093,7 +3274,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 808
+    "plays": 808,
+    "platform": "responsive"
   },
   {
     "id": "gm-mahjong-firefly-game",
@@ -3107,7 +3289,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 808
+    "plays": 808,
+    "platform": "responsive"
   },
   {
     "id": "gm-little-tailor-diy-fashion-game",
@@ -3121,7 +3304,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 805
+    "plays": 805,
+    "platform": "responsive"
   },
   {
     "id": "gm-cars-vs-zombies",
@@ -3142,7 +3326,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 804
+    "plays": 804,
+    "platform": "pc"
   },
   {
     "id": "gm-noob-shooter-vs-zombie-game",
@@ -3156,7 +3341,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 799
+    "plays": 799,
+    "platform": "responsive"
   },
   {
     "id": "gm-bts-signature-fashion-style-game",
@@ -3170,7 +3356,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 793
+    "plays": 793,
+    "platform": "responsive"
   },
   {
     "id": "gm-clown-horror-nights",
@@ -3191,7 +3378,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 792
+    "plays": 792,
+    "platform": "pc"
   },
   {
     "id": "gm-zombie-shooter",
@@ -3212,7 +3400,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 791
+    "plays": 791,
+    "platform": "pc"
   },
   {
     "id": "gm-space-invaders",
@@ -3233,7 +3422,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 789
+    "plays": 789,
+    "platform": "mobile"
   },
   {
     "id": "gm-backrooms-slender-horror",
@@ -3253,7 +3443,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 789
+    "plays": 789,
+    "platform": "pc"
   },
   {
     "id": "gm-mineblock-zombie-survival",
@@ -3274,7 +3465,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 787
+    "plays": 787,
+    "platform": "pc"
   },
   {
     "id": "gm-color-pixel-shooter",
@@ -3295,7 +3487,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 785
+    "plays": 785,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-kart-hero",
@@ -3314,7 +3507,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 784
+    "plays": 784,
+    "platform": "mobile"
   },
   {
     "id": "gm-jigsaw-puzzle",
@@ -3335,7 +3529,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 784
+    "plays": 784,
+    "platform": "mobile"
   },
   {
     "id": "gm-defense-tower-2025",
@@ -3353,7 +3548,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 783
+    "plays": 783,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-haul",
@@ -3373,7 +3569,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 779
+    "plays": 779,
+    "platform": "pc"
   },
   {
     "id": "gm-warplane",
@@ -3392,7 +3589,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 778
+    "plays": 778,
+    "platform": "pc"
   },
   {
     "id": "gm-monster-truck-soccer-climb",
@@ -3413,7 +3611,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 776
+    "plays": 776,
+    "platform": "responsive"
   },
   {
     "id": "gm-office-horror-story",
@@ -3433,7 +3632,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 772
+    "plays": 772,
+    "platform": "responsive"
   },
   {
     "id": "gm-pixel-gun-apocalypse-9",
@@ -3453,7 +3653,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 772
+    "plays": 772,
+    "platform": "pc"
   },
   {
     "id": "gm-cut-the-rope",
@@ -3474,7 +3675,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 770
+    "plays": 770,
+    "platform": "responsive"
   },
   {
     "id": "gm-sprunki-shooter-2025",
@@ -3495,7 +3697,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 768
+    "plays": 768,
+    "platform": "mobile"
   },
   {
     "id": "gm-helicopter-rescue-games-3d",
@@ -3516,7 +3719,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 768
+    "plays": 768,
+    "platform": "mobile"
   },
   {
     "id": "gm-funny-racing-game",
@@ -3530,7 +3734,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 767
+    "plays": 767,
+    "platform": "responsive"
   },
   {
     "id": "gm-tps-shooting-zombie-apocalypse",
@@ -3549,7 +3754,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 766
+    "plays": 766,
+    "platform": "pc"
   },
   {
     "id": "gm-zombie-grave-yard",
@@ -3568,7 +3774,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 766
+    "plays": 766,
+    "platform": "pc"
   },
   {
     "id": "gm-car-smash-game",
@@ -3582,7 +3789,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 766
+    "plays": 766,
+    "platform": "responsive"
   },
   {
     "id": "gm-crossy-zombie-game",
@@ -3602,7 +3810,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 765
+    "plays": 765,
+    "platform": "mobile"
   },
   {
     "id": "gm-car-grinding-game",
@@ -3616,7 +3825,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 765
+    "plays": 765,
+    "platform": "responsive"
   },
   {
     "id": "gm-merge-hexa-game",
@@ -3630,7 +3840,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 765
+    "plays": 765,
+    "platform": "responsive"
   },
   {
     "id": "gm-hill-racing-game",
@@ -3644,7 +3855,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 765
+    "plays": 765,
+    "platform": "responsive"
   },
   {
     "id": "gm-scary-granny-house-the-horror-game",
@@ -3665,7 +3877,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 763
+    "plays": 763,
+    "platform": "responsive"
   },
   {
     "id": "gm-pic-pie-puzzles-game",
@@ -3679,7 +3892,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 763
+    "plays": 763,
+    "platform": "responsive"
   },
   {
     "id": "gm-pixel-slide-puzzle",
@@ -3699,7 +3913,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 762
+    "plays": 762,
+    "platform": "mobile"
   },
   {
     "id": "gm-car-parking-gc-game",
@@ -3713,7 +3928,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 762
+    "plays": 762,
+    "platform": "responsive"
   },
   {
     "id": "gm-pizza-ninja-3-game",
@@ -3727,7 +3943,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 762
+    "plays": 762,
+    "platform": "responsive"
   },
   {
     "id": "gm-cars-paint-3d-game",
@@ -3741,7 +3958,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 762
+    "plays": 762,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-sports-badminton",
@@ -3760,7 +3978,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 761
+    "plays": 761,
+    "platform": "responsive"
   },
   {
     "id": "gm-endless-zombie-road",
@@ -3779,7 +3998,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 761
+    "plays": 761,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-and-numbers",
@@ -3800,7 +4020,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 761
+    "plays": 761,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocks-merge-game",
@@ -3814,7 +4035,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 761
+    "plays": 761,
+    "platform": "responsive"
   },
   {
     "id": "gm-coin-sort-puzzle-game",
@@ -3828,7 +4050,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 760
+    "plays": 760,
+    "platform": "responsive"
   },
   {
     "id": "gm-old-car-stunt-game",
@@ -3842,7 +4065,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 760
+    "plays": 760,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-puzzle-chuzzle-classic",
@@ -3863,7 +4087,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 759
+    "plays": 759,
+    "platform": "responsive"
   },
   {
     "id": "gm-dino-run",
@@ -3884,7 +4109,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 759
+    "plays": 759,
+    "platform": "mobile"
   },
   {
     "id": "gm-ninja-drop-game",
@@ -3898,7 +4124,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 759
+    "plays": 759,
+    "platform": "responsive"
   },
   {
     "id": "gm-gt-racing-game",
@@ -3912,7 +4139,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 758
+    "plays": 758,
+    "platform": "responsive"
   },
   {
     "id": "gm-head-soccer-exclusive-game",
@@ -3926,7 +4154,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 758
+    "plays": 758,
+    "platform": "responsive"
   },
   {
     "id": "gm-star-ninja-chop-game",
@@ -3940,7 +4169,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 758
+    "plays": 758,
+    "platform": "responsive"
   },
   {
     "id": "gm-mr-one-punch-action-fighting-game",
@@ -3958,7 +4188,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "pc"
   },
   {
     "id": "gm-panda-baby-bear-care-game",
@@ -3972,7 +4203,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-merge-mania-game",
@@ -3986,7 +4218,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-car-racer-game",
@@ -4000,7 +4233,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "responsive"
   },
   {
     "id": "gm-merge-the-numbers-2-game",
@@ -4014,7 +4248,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "responsive"
   },
   {
     "id": "gm-mad-cars-game",
@@ -4028,7 +4263,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 756
+    "plays": 756,
+    "platform": "responsive"
   },
   {
     "id": "gm-clay-craft-tycoon",
@@ -4049,7 +4285,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 755
+    "plays": 755,
+    "platform": "mobile"
   },
   {
     "id": "gm-europe-soccer-cup-2021-game",
@@ -4063,7 +4300,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 755
+    "plays": 755,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-parking-pro-car-parking-game-driving-game-3d-game",
@@ -4077,7 +4315,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 755
+    "plays": 755,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-merge-game",
@@ -4091,7 +4330,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 754
+    "plays": 754,
+    "platform": "responsive"
   },
   {
     "id": "gm-virus-cards-memory-game",
@@ -4105,7 +4345,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 754
+    "plays": 754,
+    "platform": "responsive"
   },
   {
     "id": "gm-mahjong-match",
@@ -4124,7 +4365,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 753
+    "plays": 753,
+    "platform": "responsive"
   },
   {
     "id": "gm-racing-in-car-2-game",
@@ -4138,7 +4380,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 753
+    "plays": 753,
+    "platform": "responsive"
   },
   {
     "id": "gm-booba-jigsaw-puzzle-game",
@@ -4152,7 +4395,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 753
+    "plays": 753,
+    "platform": "responsive"
   },
   {
     "id": "gm-ninja-defender-game",
@@ -4166,7 +4410,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 753
+    "plays": 753,
+    "platform": "responsive"
   },
   {
     "id": "gm-amazing-cars-game",
@@ -4180,7 +4425,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 753
+    "plays": 753,
+    "platform": "responsive"
   },
   {
     "id": "gm-santa-racing-game",
@@ -4194,7 +4440,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 752
+    "plays": 752,
+    "platform": "responsive"
   },
   {
     "id": "gm-merge-sesame-game",
@@ -4208,7 +4455,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 752
+    "plays": 752,
+    "platform": "responsive"
   },
   {
     "id": "gm-ninja-cutter-game",
@@ -4222,7 +4470,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 752
+    "plays": 752,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-simpsons-puzzle-game",
@@ -4236,7 +4485,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 752
+    "plays": 752,
+    "platform": "responsive"
   },
   {
     "id": "gm-merge-veggies-game",
@@ -4250,7 +4500,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 752
+    "plays": 752,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-2019-puzzle-game",
@@ -4264,7 +4515,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 751
+    "plays": 751,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-drivers-online-fun-city-game",
@@ -4278,7 +4530,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 751
+    "plays": 751,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-shooter-2-game",
@@ -4292,7 +4545,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 751
+    "plays": 751,
+    "platform": "responsive"
   },
   {
     "id": "gm-grid-blocks-puzzle-game",
@@ -4306,7 +4560,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 750
+    "plays": 750,
+    "platform": "responsive"
   },
   {
     "id": "gm-climb-racing-3d-game",
@@ -4320,7 +4575,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 750
+    "plays": 750,
+    "platform": "responsive"
   },
   {
     "id": "gm-air-space-shooter-game",
@@ -4334,7 +4590,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 750
+    "plays": 750,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocks-of-puzzle-game",
@@ -4348,7 +4605,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 750
+    "plays": 750,
+    "platform": "responsive"
   },
   {
     "id": "gm-hydro-racing-3d-game",
@@ -4362,7 +4620,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 749
+    "plays": 749,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-block-puzzle-game",
@@ -4376,7 +4635,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 749
+    "plays": 749,
+    "platform": "responsive"
   },
   {
     "id": "gm-shooter-game",
@@ -4390,7 +4650,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 749
+    "plays": 749,
+    "platform": "pc"
   },
   {
     "id": "gm-save-water",
@@ -4410,7 +4671,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 748
+    "plays": 748,
+    "platform": "responsive"
   },
   {
     "id": "gm-unblock-ball-slide-puzzle-2-game",
@@ -4424,7 +4686,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 748
+    "plays": 748,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-tweety-game",
@@ -4438,7 +4701,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 748
+    "plays": 748,
+    "platform": "responsive"
   },
   {
     "id": "gm-cool-cars-jigsaw-puzzle-2-game",
@@ -4452,7 +4716,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 747
+    "plays": 747,
+    "platform": "responsive"
   },
   {
     "id": "gm-gummies-puzzle-game",
@@ -4466,7 +4731,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 747
+    "plays": 747,
+    "platform": "responsive"
   },
   {
     "id": "gm-cartoon-pimple-pop-game",
@@ -4480,7 +4746,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 746
+    "plays": 746,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-slope-game",
@@ -4494,7 +4761,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 746
+    "plays": 746,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-out-game",
@@ -4508,7 +4776,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 746
+    "plays": 746,
+    "platform": "responsive"
   },
   {
     "id": "gm-bts-cars-coloring-game",
@@ -4522,7 +4791,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 746
+    "plays": 746,
+    "platform": "responsive"
   },
   {
     "id": "gm-head-soccerr-2022-game",
@@ -4536,7 +4806,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-babysitter-and-baby-care-game",
@@ -4550,7 +4821,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-carrot-farm-escape-game",
@@ -4564,7 +4836,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-bike-racing-game",
@@ -4578,7 +4851,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-draw-rainbow-ninja-game",
@@ -4592,7 +4866,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-car-driving-3d-game",
@@ -4606,7 +4881,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-spongebob-halloween-jigsaw-puzzle-game",
@@ -4620,7 +4896,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-ambulance-emergency-simulator-2021-game",
@@ -4634,7 +4911,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-wednesday-addams-jigsaw-puzzle-game",
@@ -4648,7 +4926,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-range-rover-car-parking-game",
@@ -4662,7 +4941,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-john-hypershooter-3d-game",
@@ -4676,7 +4956,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-golf-super-game",
@@ -4690,7 +4971,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 745
+    "plays": 745,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-hazel-pet-care-game",
@@ -4704,7 +4986,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 744
+    "plays": 744,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-puzzle-guardian-puzzle-game",
@@ -4718,7 +5001,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 744
+    "plays": 744,
+    "platform": "responsive"
   },
   {
     "id": "gm-pregnant-mommy-caring-game",
@@ -4732,7 +5016,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 743
+    "plays": 743,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-maverick-bad-boys-killer-game",
@@ -4746,7 +5031,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 743
+    "plays": 743,
+    "platform": "responsive"
   },
   {
     "id": "gm-witch-word-halloween-puzzle-game-game",
@@ -4760,7 +5046,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 743
+    "plays": 743,
+    "platform": "responsive"
   },
   {
     "id": "gm-mergemaster-game",
@@ -4774,7 +5061,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 742
+    "plays": 742,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-shooter-vs-aliens-and-asterods-game",
@@ -4788,7 +5076,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 742
+    "plays": 742,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-taylor-farm-tour-caring-animals-game",
@@ -4802,7 +5091,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 742
+    "plays": 742,
+    "platform": "responsive"
   },
   {
     "id": "gm-drift-boss-supercar-game",
@@ -4816,7 +5106,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 742
+    "plays": 742,
+    "platform": "responsive"
   },
   {
     "id": "gm-draw-car-3d-game",
@@ -4830,7 +5121,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-poppy-game",
@@ -4844,7 +5136,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-foot-care-game",
@@ -4858,7 +5151,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-xtreme-real-city-car-parking-game",
@@ -4872,7 +5166,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-cg-girls-jigsaw-puzzle-game",
@@ -4886,7 +5181,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-parking-car-parking-multiplayer-game-game",
@@ -4900,7 +5196,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-racing-3d-game",
@@ -4914,7 +5211,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 741
+    "plays": 741,
+    "platform": "responsive"
   },
   {
     "id": "gm-shape-puzzle-game",
@@ -4928,7 +5226,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-jet-boat-racing-game",
@@ -4942,7 +5241,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-penguin-caretaker-escape-game",
@@ -4956,7 +5256,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-dual-car-control-game",
@@ -4970,7 +5271,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-extreme-car-driving-simulator-sbh-game",
@@ -4984,7 +5286,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-car-driving-free-game",
@@ -4998,7 +5301,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 740
+    "plays": 740,
+    "platform": "responsive"
   },
   {
     "id": "gm-model-dress-up-3d",
@@ -5017,7 +5321,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-2026-2027-cars-drag-puzzle",
@@ -5037,7 +5342,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "mobile"
   },
   {
     "id": "gm-happy-easter-puzzle-game",
@@ -5051,7 +5357,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-scary-halloween-adventure-game",
@@ -5065,7 +5372,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-domestic-birds-puzzle-game",
@@ -5079,7 +5387,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-shooter-101-game",
@@ -5093,7 +5402,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-pj-masks-jigsaw-puzzle-game",
@@ -5107,7 +5417,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-play-train-racing-3d-game",
@@ -5121,7 +5432,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 739
+    "plays": 739,
+    "platform": "responsive"
   },
   {
     "id": "gm-snowman-2020-puzzle-game",
@@ -5135,7 +5447,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-cargo-truck-montain-simulator-game",
@@ -5149,7 +5462,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-2024-fps-shooter-game",
@@ -5163,7 +5477,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-tank-shooter-game",
@@ -5177,7 +5492,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "pc"
   },
   {
     "id": "gm-cartoon-football-games-for-kids-game",
@@ -5191,7 +5507,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-goal-finger-soccer-game",
@@ -5205,7 +5522,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-sonic-wheelie-challenge-game",
@@ -5219,7 +5537,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 738
+    "plays": 738,
+    "platform": "responsive"
   },
   {
     "id": "gm-scary-house-clown-evil",
@@ -5238,7 +5557,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 737
+    "plays": 737,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-jigsaw-puzzles-game",
@@ -5252,7 +5572,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 737
+    "plays": 737,
+    "platform": "responsive"
   },
   {
     "id": "gm-shaolin-soccer-game",
@@ -5266,7 +5587,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 737
+    "plays": 737,
+    "platform": "responsive"
   },
   {
     "id": "gm-tic-tac-toe-puzzle-game",
@@ -5280,7 +5602,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 735
+    "plays": 735,
+    "platform": "responsive"
   },
   {
     "id": "gm-bugs-bunny-jigsaw-puzzle-collection-game",
@@ -5294,7 +5617,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 735
+    "plays": 735,
+    "platform": "responsive"
   },
   {
     "id": "gm-street-car-race-ultimate-game",
@@ -5308,7 +5632,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 735
+    "plays": 735,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-pet-doctor-care-game",
@@ -5322,7 +5647,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 734
+    "plays": 734,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-speed-paint-game",
@@ -5336,7 +5662,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 734
+    "plays": 734,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-escape-game",
@@ -5350,7 +5677,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 734
+    "plays": 734,
+    "platform": "responsive"
   },
   {
     "id": "gm-hero-tower-wars-merge-game",
@@ -5364,7 +5692,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 734
+    "plays": 734,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-turtle-jigsaw-puzzles-game",
@@ -5378,7 +5707,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 734
+    "plays": 734,
+    "platform": "responsive"
   },
   {
     "id": "gm-ddzombiescoming",
@@ -5394,7 +5724,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 733
+    "plays": 733,
+    "platform": "mobile"
   },
   {
     "id": "gm-stickman-ghost-online-game",
@@ -5408,7 +5739,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 733
+    "plays": 733,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-numbers-puzzle-game",
@@ -5422,7 +5754,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 733
+    "plays": 733,
+    "platform": "responsive"
   },
   {
     "id": "gm-sliding-puzzle-get-the-pattern-game",
@@ -5436,7 +5769,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 733
+    "plays": 733,
+    "platform": "responsive"
   },
   {
     "id": "gm-colorify-color-by-number",
@@ -5454,7 +5788,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 732
+    "plays": 732,
+    "platform": "mobile"
   },
   {
     "id": "gm-anime-christmas-jigsaw-puzzle-2-game",
@@ -5468,7 +5803,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 732
+    "plays": 732,
+    "platform": "responsive"
   },
   {
     "id": "gm-call-of-bravery-shooter-game",
@@ -5482,7 +5818,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 732
+    "plays": 732,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-puzzle-game",
@@ -5496,7 +5833,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 732
+    "plays": 732,
+    "platform": "responsive"
   },
   {
     "id": "gm-metal-shooter-brother-squad-game",
@@ -5510,7 +5848,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 731
+    "plays": 731,
+    "platform": "responsive"
   },
   {
     "id": "gm-imposter-rotate-puzzle-game",
@@ -5524,7 +5863,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 731
+    "plays": 731,
+    "platform": "responsive"
   },
   {
     "id": "gm-valorant-jigsaw-puzzle-planet-game",
@@ -5538,7 +5878,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 731
+    "plays": 731,
+    "platform": "responsive"
   },
   {
     "id": "gm-ultimate-dog-racing-game-2020-game",
@@ -5552,7 +5893,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 731
+    "plays": 731,
+    "platform": "responsive"
   },
   {
     "id": "gm-wolf-simulator-forest-hunt-3d",
@@ -5573,7 +5915,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 730
+    "plays": 730,
+    "platform": "pc"
   },
   {
     "id": "gm-modern-hard-car-parking-game-game",
@@ -5587,7 +5930,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 730
+    "plays": 730,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-hero-game",
@@ -5601,7 +5945,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 730
+    "plays": 730,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-night-survive-game",
@@ -5615,7 +5960,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 729
+    "plays": 729,
+    "platform": "responsive"
   },
   {
     "id": "gm-fidget-trading-card-toy-game",
@@ -5629,7 +5975,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 729
+    "plays": 729,
+    "platform": "responsive"
   },
   {
     "id": "gm-panda-caretaker-escape-game",
@@ -5643,7 +5990,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 728
+    "plays": 728,
+    "platform": "responsive"
   },
   {
     "id": "gm-truck-racing-game",
@@ -5657,7 +6005,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 727
+    "plays": 727,
+    "platform": "responsive"
   },
   {
     "id": "gm-neighbor-sponge-scary-secret-3d-game",
@@ -5671,7 +6020,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 727
+    "plays": 727,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-shooter-game",
@@ -5685,7 +6035,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 725
+    "plays": 725,
+    "platform": "pc"
   },
   {
     "id": "gm-kids-tractors-puzzle-game",
@@ -5699,7 +6050,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 725
+    "plays": 725,
+    "platform": "responsive"
   },
   {
     "id": "gm-mermaid-newborn-baby-care-game",
@@ -5713,7 +6065,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 725
+    "plays": 725,
+    "platform": "responsive"
   },
   {
     "id": "gm-nonogram-picture-cross-puzzle-game-game",
@@ -5727,7 +6080,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 725
+    "plays": 725,
+    "platform": "responsive"
   },
   {
     "id": "gm-doge-rush-draw-home-puzzle-game",
@@ -5741,7 +6095,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 724
+    "plays": 724,
+    "platform": "responsive"
   },
   {
     "id": "gm-euro-cargo-transporter-truck-driver-simulator-2019-game",
@@ -5755,7 +6110,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 724
+    "plays": 724,
+    "platform": "responsive"
   },
   {
     "id": "gm-advanced-car-parking-simulator-3d-game",
@@ -5769,7 +6125,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 724
+    "plays": 724,
+    "platform": "responsive"
   },
   {
     "id": "gm-soccer-game",
@@ -5783,7 +6140,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 722
+    "plays": 722,
+    "platform": "responsive"
   },
   {
     "id": "gm-boat-racing-game",
@@ -5797,7 +6155,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 722
+    "plays": 722,
+    "platform": "responsive"
   },
   {
     "id": "gm-chained-cars-impossible-stunts-3d-game",
@@ -5811,7 +6170,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 722
+    "plays": 722,
+    "platform": "responsive"
   },
   {
     "id": "gm-coronavirus-shooter-game",
@@ -5825,7 +6185,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 721
+    "plays": 721,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-attack-game",
@@ -5839,7 +6200,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 720
+    "plays": 720,
+    "platform": "responsive"
   },
   {
     "id": "gm-slide-puzzle-game",
@@ -5853,7 +6215,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 718
+    "plays": 718,
+    "platform": "responsive"
   },
   {
     "id": "gm-asterix-and-obelix-jigsaw-puzzle-game",
@@ -5867,7 +6230,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 718
+    "plays": 718,
+    "platform": "responsive"
   },
   {
     "id": "gm-scary-run-game",
@@ -5881,7 +6245,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 717
+    "plays": 717,
+    "platform": "responsive"
   },
   {
     "id": "gm-match-hit-game",
@@ -5895,7 +6260,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 717
+    "plays": 717,
+    "platform": "responsive"
   },
   {
     "id": "gm-poker-web-game",
@@ -5909,7 +6275,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 713
+    "plays": 713,
+    "platform": "mobile"
   },
   {
     "id": "gm-battleship-game",
@@ -5923,7 +6290,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 713
+    "plays": 713,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-match-saga-mobile-friendly-fullscreen-game",
@@ -5937,7 +6305,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 712
+    "plays": 712,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-head-soccer-game",
@@ -5951,7 +6320,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 711
+    "plays": 711,
+    "platform": "responsive"
   },
   {
     "id": "gm-beach-run-game",
@@ -5965,7 +6335,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 711
+    "plays": 711,
+    "platform": "responsive"
   },
   {
     "id": "gm-capboy-run-game",
@@ -5979,7 +6350,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 711
+    "plays": 711,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-matching-game",
@@ -5993,7 +6365,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 710
+    "plays": 710,
+    "platform": "responsive"
   },
   {
     "id": "gm-johnny-runner-game",
@@ -6007,7 +6380,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 710
+    "plays": 710,
+    "platform": "responsive"
   },
   {
     "id": "gm-xiblba-match-game",
@@ -6021,7 +6395,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 709
+    "plays": 709,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-stunt-racing-car-games-game",
@@ -6035,7 +6410,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 709
+    "plays": 709,
+    "platform": "responsive"
   },
   {
     "id": "gm-memory-match",
@@ -6056,7 +6432,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 708
+    "plays": 708,
+    "platform": "mobile"
   },
   {
     "id": "gm-blob-runner-3d-online-game",
@@ -6070,7 +6447,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 708
+    "plays": 708,
+    "platform": "responsive"
   },
   {
     "id": "gm-amazing-spain-puzzle-game",
@@ -6084,7 +6462,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 707
+    "plays": 707,
+    "platform": "responsive"
   },
   {
     "id": "gm-match-to-paint-game-game",
@@ -6098,7 +6477,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 707
+    "plays": 707,
+    "platform": "responsive"
   },
   {
     "id": "gm-turtle-run-adventure-game",
@@ -6112,7 +6492,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 707
+    "plays": 707,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-number-puzzle",
@@ -6132,7 +6513,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 706
+    "plays": 706,
+    "platform": "responsive"
   },
   {
     "id": "gm-runner-apocalypse-game",
@@ -6146,7 +6528,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 706
+    "plays": 706,
+    "platform": "responsive"
   },
   {
     "id": "gm-drift-master-game",
@@ -6160,7 +6543,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 706
+    "plays": 706,
+    "platform": "responsive"
   },
   {
     "id": "gm-stair-run-game-game",
@@ -6174,7 +6558,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 706
+    "plays": 706,
+    "platform": "responsive"
   },
   {
     "id": "gm-mini-car-runner-meme-games",
@@ -6195,7 +6580,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 705
+    "plays": 705,
+    "platform": "responsive"
   },
   {
     "id": "gm-ninja-warrior-game",
@@ -6209,7 +6595,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 705
+    "plays": 705,
+    "platform": "responsive"
   },
   {
     "id": "gm-green-chick-jump-game",
@@ -6223,7 +6610,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 704
+    "plays": 704,
+    "platform": "responsive"
   },
   {
     "id": "gm-xtrem-demolition-derby-racing-game",
@@ -6237,7 +6625,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 704
+    "plays": 704,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocky-sky-jumping-game",
@@ -6251,7 +6640,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 704
+    "plays": 704,
+    "platform": "responsive"
   },
   {
     "id": "gm-tom-jerry-runner-game",
@@ -6265,7 +6655,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 704
+    "plays": 704,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-mario-stack-jump-game",
@@ -6279,7 +6670,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 704
+    "plays": 704,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-parking-drifter-game",
@@ -6293,7 +6685,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 703
+    "plays": 703,
+    "platform": "responsive"
   },
   {
     "id": "gm-pick-and-match-game-game",
@@ -6307,7 +6700,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 703
+    "plays": 703,
+    "platform": "responsive"
   },
   {
     "id": "gm-pony-run-magic-trails-game",
@@ -6321,7 +6715,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 703
+    "plays": 703,
+    "platform": "responsive"
   },
   {
     "id": "gm-barbie-jump-rope-game",
@@ -6335,7 +6730,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 703
+    "plays": 703,
+    "platform": "responsive"
   },
   {
     "id": "gm-ladder-stacking-run-game",
@@ -6349,7 +6745,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 702
+    "plays": 702,
+    "platform": "responsive"
   },
   {
     "id": "gm-great-air-battles-game",
@@ -6363,7 +6760,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 702
+    "plays": 702,
+    "platform": "responsive"
   },
   {
     "id": "gm-jelly-matching-game",
@@ -6377,7 +6775,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 702
+    "plays": 702,
+    "platform": "responsive"
   },
   {
     "id": "gm-lof-snakes-and-ladders-game",
@@ -6391,7 +6790,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 701
+    "plays": 701,
+    "platform": "responsive"
   },
   {
     "id": "gm-hungry-snake-game",
@@ -6405,7 +6805,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 701
+    "plays": 701,
+    "platform": "responsive"
   },
   {
     "id": "gm-funny-cars",
@@ -6426,7 +6827,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 700
+    "plays": 700,
+    "platform": "responsive"
   },
   {
     "id": "gm-numbers-snake-game",
@@ -6440,7 +6842,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 700
+    "plays": 700,
+    "platform": "responsive"
   },
   {
     "id": "gm-match-the-figures-game",
@@ -6454,7 +6857,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 699
+    "plays": 699,
+    "platform": "responsive"
   },
   {
     "id": "gm-infinite-snake-3d-run-game",
@@ -6468,7 +6872,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 699
+    "plays": 699,
+    "platform": "responsive"
   },
   {
     "id": "gm-delicious-food-match-3-deluxes-game",
@@ -6482,7 +6887,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 699
+    "plays": 699,
+    "platform": "responsive"
   },
   {
     "id": "gm-haggo-jaggo-runner-game",
@@ -6496,7 +6902,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 699
+    "plays": 699,
+    "platform": "responsive"
   },
   {
     "id": "gm-cube-jumper-escape-game",
@@ -6510,7 +6917,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 699
+    "plays": 699,
+    "platform": "responsive"
   },
   {
     "id": "gm-kids-learn-professions-puzzle-game",
@@ -6524,7 +6932,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 698
+    "plays": 698,
+    "platform": "mobile"
   },
   {
     "id": "gm-grimace-ball-jumpling-game",
@@ -6538,7 +6947,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 697
+    "plays": 697,
+    "platform": "responsive"
   },
   {
     "id": "gm-tile-farm-story-matching-game-game",
@@ -6552,7 +6962,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 697
+    "plays": 697,
+    "platform": "responsive"
   },
   {
     "id": "gm-match-3-game",
@@ -6566,7 +6977,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 696
+    "plays": 696,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-master-run-rush-game-3d-game",
@@ -6580,7 +6992,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 696
+    "plays": 696,
+    "platform": "responsive"
   },
   {
     "id": "gm-snake-chain-escape",
@@ -6601,7 +7014,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "mobile"
   },
   {
     "id": "gm-warship-battle-game",
@@ -6615,7 +7029,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "responsive"
   },
   {
     "id": "gm-funny-walk-fail-run-game",
@@ -6629,7 +7044,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "responsive"
   },
   {
     "id": "gm-stuart-the-minion-jigsaw-puzzle-game",
@@ -6643,7 +7059,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "mobile"
   },
   {
     "id": "gm-seahorse-jump-game",
@@ -6657,7 +7074,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "responsive"
   },
   {
     "id": "gm-jump-or-block-colors-game-game",
@@ -6671,7 +7089,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 695
+    "plays": 695,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-birds-smash",
@@ -6692,7 +7111,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 694
+    "plays": 694,
+    "platform": "responsive"
   },
   {
     "id": "gm-lollipop-stack-run-game",
@@ -6706,7 +7126,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 694
+    "plays": 694,
+    "platform": "responsive"
   },
   {
     "id": "gm-frog-match-master-game",
@@ -6720,7 +7141,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 694
+    "plays": 694,
+    "platform": "responsive"
   },
   {
     "id": "gm-pocket-sniper-sniper-game-game",
@@ -6734,7 +7156,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 693
+    "plays": 693,
+    "platform": "responsive"
   },
   {
     "id": "gm-sniper-champion-3d-game",
@@ -6748,7 +7171,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 693
+    "plays": 693,
+    "platform": "responsive"
   },
   {
     "id": "gm-kong-hero-super-kong-jump-2020-game",
@@ -6762,7 +7186,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 693
+    "plays": 693,
+    "platform": "responsive"
   },
   {
     "id": "gm-roll-run-3d-game",
@@ -6776,7 +7201,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 693
+    "plays": 693,
+    "platform": "responsive"
   },
   {
     "id": "gm-night-racing",
@@ -6797,7 +7223,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-guys",
@@ -6816,7 +7243,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-shoot-run-monster-hunting-game",
@@ -6830,7 +7258,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-badger-runner-game",
@@ -6844,7 +7273,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-fire-and-water-stickman-game",
@@ -6858,7 +7288,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-match-3-game",
@@ -6872,7 +7303,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 692
+    "plays": 692,
+    "platform": "responsive"
   },
   {
     "id": "gm-angry-bird-speed-2-0-run-game",
@@ -6886,7 +7318,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 691
+    "plays": 691,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-prison-warriors",
@@ -6906,7 +7339,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 690
+    "plays": 690,
+    "platform": "pc"
   },
   {
     "id": "gm-sand-route-puzzle",
@@ -6927,7 +7361,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 690
+    "plays": 690,
+    "platform": "mobile"
   },
   {
     "id": "gm-cake-crunch-game",
@@ -6941,7 +7376,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 690
+    "plays": 690,
+    "platform": "responsive"
   },
   {
     "id": "gm-marine-match-up-game",
@@ -6955,7 +7391,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 689
+    "plays": 689,
+    "platform": "responsive"
   },
   {
     "id": "gm-jump-into-wow-christmas-game",
@@ -6969,7 +7406,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 689
+    "plays": 689,
+    "platform": "responsive"
   },
   {
     "id": "gm-sky-runners-game",
@@ -6983,7 +7421,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 689
+    "plays": 689,
+    "platform": "responsive"
   },
   {
     "id": "gm-piggy-on-the-run-game",
@@ -6997,7 +7436,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 689
+    "plays": 689,
+    "platform": "responsive"
   },
   {
     "id": "gm-spongebob-sponge-on-the-run-jigsaw-game-game",
@@ -7011,7 +7451,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 688
+    "plays": 688,
+    "platform": "responsive"
   },
   {
     "id": "gm-golf-battle-game",
@@ -7025,7 +7466,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 688
+    "plays": 688,
+    "platform": "responsive"
   },
   {
     "id": "gm-battle-jitsu-game",
@@ -7039,7 +7481,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 687
+    "plays": 687,
+    "platform": "responsive"
   },
   {
     "id": "gm-fnf-music-battle-game",
@@ -7053,7 +7496,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 687
+    "plays": 687,
+    "platform": "responsive"
   },
   {
     "id": "gm-arcade-thief-runner",
@@ -7074,7 +7518,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 686
+    "plays": 686,
+    "platform": "mobile"
   },
   {
     "id": "gm-xmas-memory-match-game",
@@ -7088,7 +7533,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 686
+    "plays": 686,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-mario-endless-run-game",
@@ -7102,7 +7548,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 686
+    "plays": 686,
+    "platform": "responsive"
   },
   {
     "id": "gm-off-the-hook-ring-puzzle",
@@ -7123,7 +7570,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 685
+    "plays": 685,
+    "platform": "mobile"
   },
   {
     "id": "gm-cube-endless-jumping-game",
@@ -7137,7 +7585,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 685
+    "plays": 685,
+    "platform": "responsive"
   },
   {
     "id": "gm-big-head-wall-run-game",
@@ -7151,7 +7600,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 685
+    "plays": 685,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-them-jumper-2-game",
@@ -7165,7 +7615,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 685
+    "plays": 685,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-monsters-match-3-game",
@@ -7179,7 +7630,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 683
+    "plays": 683,
+    "platform": "pc"
   },
   {
     "id": "gm-battleship-war-multiplayer-game",
@@ -7193,7 +7645,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 683
+    "plays": 683,
+    "platform": "responsive"
   },
   {
     "id": "gm-parking-out-jumpgame-game",
@@ -7207,7 +7660,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 682
+    "plays": 682,
+    "platform": "responsive"
   },
   {
     "id": "gm-friends-battle-eat-a-food-game",
@@ -7221,7 +7675,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 680
+    "plays": 680,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-on-the-road",
@@ -7241,7 +7696,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 678
+    "plays": 678,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-driving-in-big-city",
@@ -7262,7 +7718,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 678
+    "plays": 678,
+    "platform": "responsive"
   },
   {
     "id": "gm-idle-builder-game",
@@ -7276,7 +7733,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 678
+    "plays": 678,
+    "platform": "mobile"
   },
   {
     "id": "gm-nitro-car-racing-game",
@@ -7297,7 +7755,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 677
+    "plays": 677,
+    "platform": "responsive"
   },
   {
     "id": "gm-gun-shooting-games-sniper-3d",
@@ -7316,7 +7775,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 677
+    "plays": 677,
+    "platform": "pc"
   },
   {
     "id": "gm-samurai-girl-runner-game-adventure-assassin-ninja-game",
@@ -7330,7 +7790,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 676
+    "plays": 676,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman-warriors-superhero-fight",
@@ -7349,7 +7810,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 675
+    "plays": 675,
+    "platform": "pc"
   },
   {
     "id": "gm-snow-drifting-3d-champ-2024-game",
@@ -7363,7 +7825,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 673
+    "plays": 673,
+    "platform": "responsive"
   },
   {
     "id": "gm-flex-run-3d-game",
@@ -7377,7 +7840,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 673
+    "plays": 673,
+    "platform": "responsive"
   },
   {
     "id": "gm-crowd-city-join-clash-runner-game",
@@ -7391,7 +7855,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 673
+    "plays": 673,
+    "platform": "responsive"
   },
   {
     "id": "gm-soccer-duel",
@@ -7410,7 +7875,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 672
+    "plays": 672,
+    "platform": "responsive"
   },
   {
     "id": "gm-stickman3d-shooter",
@@ -7428,7 +7894,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 671
+    "plays": 671,
+    "platform": "pc"
   },
   {
     "id": "gm-tangled-climber-escape",
@@ -7449,7 +7916,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 671
+    "plays": 671,
+    "platform": "mobile"
   },
   {
     "id": "gm-minecraft-pixel-gun-shooter",
@@ -7470,7 +7938,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 669
+    "plays": 669,
+    "platform": "pc"
   },
   {
     "id": "gm-nut-bolt-puzzle-game",
@@ -7488,7 +7957,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 669
+    "plays": 669,
+    "platform": "mobile"
   },
   {
     "id": "gm-superbike-hero",
@@ -7509,7 +7979,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 668
+    "plays": 668,
+    "platform": "mobile"
   },
   {
     "id": "gm-monster-truck-parking-free-3d-blue-game",
@@ -7523,7 +7994,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 668
+    "plays": 668,
+    "platform": "responsive"
   },
   {
     "id": "gm-ben-10-omniverse-runner-game-adventure-game",
@@ -7537,7 +8009,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 668
+    "plays": 668,
+    "platform": "responsive"
   },
   {
     "id": "gm-drift-car-driving",
@@ -7557,7 +8030,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 667
+    "plays": 667,
+    "platform": "responsive"
   },
   {
     "id": "gm-unroll-ball-roll-the-ball-game",
@@ -7571,7 +8045,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 666
+    "plays": 666,
+    "platform": "responsive"
   },
   {
     "id": "gm-gunmach-game",
@@ -7585,7 +8060,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 666
+    "plays": 666,
+    "platform": "responsive"
   },
   {
     "id": "gm-idle-miner-tycoon-mine-manager-and-management-game",
@@ -7599,7 +8075,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 666
+    "plays": 666,
+    "platform": "responsive"
   },
   {
     "id": "gm-goat-escape-game",
@@ -7613,7 +8090,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 665
+    "plays": 665,
+    "platform": "responsive"
   },
   {
     "id": "gm-brainrot-clicker",
@@ -7634,7 +8112,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 664
+    "plays": 664,
+    "platform": "mobile"
   },
   {
     "id": "gm-2048-cube-game",
@@ -7648,7 +8127,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 664
+    "plays": 664,
+    "platform": "responsive"
   },
   {
     "id": "gm-tallest-towers-game",
@@ -7662,7 +8142,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 664
+    "plays": 664,
+    "platform": "responsive"
   },
   {
     "id": "gm-gravity-balls-game",
@@ -7676,7 +8157,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 664
+    "plays": 664,
+    "platform": "responsive"
   },
   {
     "id": "gm-grand-extreme-racing",
@@ -7696,7 +8178,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 663
+    "plays": 663,
+    "platform": "responsive"
   },
   {
     "id": "gm-sea-kings",
@@ -7717,7 +8200,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 663
+    "plays": 663,
+    "platform": "pc"
   },
   {
     "id": "gm-blocks-deluxe-game",
@@ -7731,7 +8215,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 663
+    "plays": 663,
+    "platform": "responsive"
   },
   {
     "id": "gm-fighter-2d-game",
@@ -7745,7 +8230,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 663
+    "plays": 663,
+    "platform": "responsive"
   },
   {
     "id": "gm-lion-king-escape-game",
@@ -7759,7 +8245,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 663
+    "plays": 663,
+    "platform": "responsive"
   },
   {
     "id": "gm-labubu-puzzle-challenge",
@@ -7780,7 +8267,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 662
+    "plays": 662,
+    "platform": "responsive"
   },
   {
     "id": "gm-king-of-ball-game",
@@ -7794,7 +8282,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 662
+    "plays": 662,
+    "platform": "responsive"
   },
   {
     "id": "gm-escape-heroes-game",
@@ -7808,7 +8297,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 662
+    "plays": 662,
+    "platform": "responsive"
   },
   {
     "id": "gm-pinball-legends-game",
@@ -7822,7 +8312,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 662
+    "plays": 662,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocks-cruch-game",
@@ -7836,7 +8327,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 661
+    "plays": 661,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-girl-escape-game",
@@ -7850,7 +8342,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 661
+    "plays": 661,
+    "platform": "responsive"
   },
   {
     "id": "gm-temple-escape-run-game",
@@ -7864,7 +8357,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 660
+    "plays": 660,
+    "platform": "responsive"
   },
   {
     "id": "gm-sticky-ball-rush-game",
@@ -7878,7 +8372,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 660
+    "plays": 660,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-drop-game",
@@ -7892,7 +8387,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 660
+    "plays": 660,
+    "platform": "responsive"
   },
   {
     "id": "gm-birds-sort-color-match-puzzle",
@@ -7913,7 +8409,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 659
+    "plays": 659,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-bounce-game",
@@ -7927,7 +8424,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 659
+    "plays": 659,
+    "platform": "responsive"
   },
   {
     "id": "gm-astrologist-escape-2-game",
@@ -7941,7 +8439,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 659
+    "plays": 659,
+    "platform": "responsive"
   },
   {
     "id": "gm-hexa-puzzle-master",
@@ -7959,7 +8458,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-cooking-game",
@@ -7973,7 +8473,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-stack-jump-3d-game",
@@ -7987,7 +8488,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-ball-challenge-game",
@@ -8001,7 +8503,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-dress-cake-fondant-cakes-game",
@@ -8015,7 +8518,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-love-balls-pin-game",
@@ -8029,7 +8533,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 658
+    "plays": 658,
+    "platform": "responsive"
   },
   {
     "id": "gm-car-chasing",
@@ -8047,7 +8552,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 657
+    "plays": 657,
+    "platform": "mobile"
   },
   {
     "id": "gm-knights-fight-game",
@@ -8061,7 +8567,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 657
+    "plays": 657,
+    "platform": "responsive"
   },
   {
     "id": "gm-stacky-bird-zoo-run-super-casual-flying-bird-game-game",
@@ -8075,7 +8582,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 656
+    "plays": 656,
+    "platform": "responsive"
   },
   {
     "id": "gm-road-block-escape-game",
@@ -8089,7 +8597,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 656
+    "plays": 656,
+    "platform": "responsive"
   },
   {
     "id": "gm-de-loredo-fight-game",
@@ -8103,7 +8612,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 656
+    "plays": 656,
+    "platform": "responsive"
   },
   {
     "id": "gm-iron-man-parkour-game",
@@ -8117,7 +8627,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 655
+    "plays": 655,
+    "platform": "responsive"
   },
   {
     "id": "gm-amgel-kids-room-escape-1-game",
@@ -8131,7 +8642,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 655
+    "plays": 655,
+    "platform": "responsive"
   },
   {
     "id": "gm-head-sports-soccer",
@@ -8149,7 +8661,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-ins-life-royal-ball-game",
@@ -8163,7 +8676,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-offroad-4x4-driving-jeep-game",
@@ -8177,7 +8691,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-block-game",
@@ -8191,7 +8706,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-g2m-castle-escape-game",
@@ -8205,7 +8721,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-counter-craft-lego-clash-game",
@@ -8219,7 +8736,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-99-balls-game",
@@ -8233,7 +8751,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-ace-air-fighter-game",
@@ -8247,7 +8766,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-escape-game-game",
@@ -8261,7 +8781,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-shadow-motorbike-rider-game",
@@ -8275,7 +8796,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-tank-war-ice-age-game",
@@ -8289,7 +8811,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 654
+    "plays": 654,
+    "platform": "responsive"
   },
   {
     "id": "gm-break-bricks-2-player",
@@ -8308,7 +8831,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 653
+    "plays": 653,
+    "platform": "responsive"
   },
   {
     "id": "gm-moto-x3m-bike-race-game-race-game",
@@ -8322,7 +8846,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 653
+    "plays": 653,
+    "platform": "responsive"
   },
   {
     "id": "gm-jewel-monsters-game",
@@ -8336,7 +8861,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-ball-matching-game",
@@ -8350,7 +8876,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-rainbow-princess-cake-maker-game",
@@ -8364,7 +8891,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-trucks-jigsaw-game",
@@ -8378,7 +8906,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-old-prisoner-escape-game",
@@ -8392,7 +8921,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-lost-temple-game",
@@ -8406,7 +8936,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-of-blocks-3d-game",
@@ -8420,7 +8951,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 652
+    "plays": 652,
+    "platform": "responsive"
   },
   {
     "id": "gm-speedy-ball-game",
@@ -8434,7 +8966,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 651
+    "plays": 651,
+    "platform": "responsive"
   },
   {
     "id": "gm-gully-baseball-game",
@@ -8448,7 +8981,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 651
+    "plays": 651,
+    "platform": "responsive"
   },
   {
     "id": "gm-cat-trap-labyrinth-escape-game",
@@ -8462,7 +8996,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 651
+    "plays": 651,
+    "platform": "responsive"
   },
   {
     "id": "gm-ball-magnet-game",
@@ -8476,7 +9011,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 651
+    "plays": 651,
+    "platform": "responsive"
   },
   {
     "id": "gm-dress-up-the-lovely-princess-game",
@@ -8490,7 +9026,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 651
+    "plays": 651,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-puzzle-2023",
@@ -8509,7 +9046,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-drag-it-puzzle-shapes",
@@ -8527,7 +9065,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-football-cup-superstars",
@@ -8546,7 +9085,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-not-drunk-yet",
@@ -8566,7 +9106,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "pc"
   },
   {
     "id": "gm-wild-hunting-clash-game",
@@ -8580,7 +9121,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-numbers-puzzle-2048-game",
@@ -8594,7 +9136,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-noob-vs-blue-monster-gamee-game",
@@ -8608,7 +9151,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-kill-robots-game",
@@ -8622,7 +9166,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-parkour-boss-game",
@@ -8636,7 +9181,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 650
+    "plays": 650,
+    "platform": "responsive"
   },
   {
     "id": "gm-temple-run-frozen-festival-game",
@@ -8650,7 +9196,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 649
+    "plays": 649,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-dragon-city-destroyer-game",
@@ -8664,7 +9211,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 649
+    "plays": 649,
+    "platform": "responsive"
   },
   {
     "id": "gm-enchanting-boy-escape-game",
@@ -8678,7 +9226,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 649
+    "plays": 649,
+    "platform": "responsive"
   },
   {
     "id": "gm-backyard-entrance-escape-game",
@@ -8692,7 +9241,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 649
+    "plays": 649,
+    "platform": "responsive"
   },
   {
     "id": "gm-ping-pong-battle-table-tennis-game",
@@ -8706,7 +9256,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-truck-extreme-stunts-game",
@@ -8720,7 +9271,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-foosball-funny-game",
@@ -8734,7 +9286,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-of-gumball-coloring-game-game",
@@ -8748,7 +9301,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-tricky-land-escape-game",
@@ -8762,7 +9316,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-street-fighter-online-game-game",
@@ -8776,7 +9331,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-chicken-escape-game",
@@ -8790,7 +9346,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-green-ball-po-game",
@@ -8804,7 +9361,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-tank-trucks-coloring-game",
@@ -8818,7 +9376,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-ava-unicorn-escape-game",
@@ -8832,7 +9391,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-love-balls-halloween-game",
@@ -8846,7 +9406,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 648
+    "plays": 648,
+    "platform": "responsive"
   },
   {
     "id": "gm-snake-blocks-game",
@@ -8860,7 +9421,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 647
+    "plays": 647,
+    "platform": "responsive"
   },
   {
     "id": "gm-connect-the-blocks-game",
@@ -8874,7 +9436,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 647
+    "plays": 647,
+    "platform": "responsive"
   },
   {
     "id": "gm-sewage-cave-escape-game",
@@ -8888,7 +9451,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 647
+    "plays": 647,
+    "platform": "responsive"
   },
   {
     "id": "gm-blockroyale-game",
@@ -8902,7 +9466,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 646
+    "plays": 646,
+    "platform": "responsive"
   },
   {
     "id": "gm-drifting-mania",
@@ -8921,7 +9486,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "pc"
   },
   {
     "id": "gm-guns-bottles-game",
@@ -8935,7 +9501,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-best-battle-cover-royale-game",
@@ -8949,7 +9516,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-ball-blaster-canon-game",
@@ -8963,7 +9531,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-block-3d-game",
@@ -8977,7 +9546,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-spiderman-street-fighter-game",
@@ -8991,7 +9561,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-squirt-gun-war-game",
@@ -9005,7 +9576,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 645
+    "plays": 645,
+    "platform": "responsive"
   },
   {
     "id": "gm-food-gang-run-game",
@@ -9019,7 +9591,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 644
+    "plays": 644,
+    "platform": "responsive"
   },
   {
     "id": "gm-scrubland-escape-game",
@@ -9033,7 +9606,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 644
+    "plays": 644,
+    "platform": "responsive"
   },
   {
     "id": "gm-rainbow-but-it-s-alphabet-lore-run-game",
@@ -9047,7 +9621,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 643
+    "plays": 643,
+    "platform": "responsive"
   },
   {
     "id": "gm-draw-the-bike-bridge-game",
@@ -9061,7 +9636,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 643
+    "plays": 643,
+    "platform": "responsive"
   },
   {
     "id": "gm-motor-bike-race-game",
@@ -9075,7 +9651,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 643
+    "plays": 643,
+    "platform": "responsive"
   },
   {
     "id": "gm-cerulean-house-escape-game",
@@ -9089,7 +9666,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 643
+    "plays": 643,
+    "platform": "responsive"
   },
   {
     "id": "gm-puzzle-arc",
@@ -9107,7 +9685,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-worldcup-ball-crowd",
@@ -9128,7 +9707,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-balls-rolling-3d-sky-ball-game",
@@ -9142,7 +9722,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-cooking-madness-game-game",
@@ -9156,7 +9737,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-escape-mystic-castle-game",
@@ -9170,7 +9752,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-fruits-samurai-game",
@@ -9184,7 +9767,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-christmas-face-painting-game",
@@ -9198,7 +9782,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 642
+    "plays": 642,
+    "platform": "responsive"
   },
   {
     "id": "gm-brawl-stars-battle",
@@ -9217,7 +9802,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 641
+    "plays": 641,
+    "platform": "pc"
   },
   {
     "id": "gm-princess-castle-cleaning-game",
@@ -9231,7 +9817,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 641
+    "plays": 641,
+    "platform": "responsive"
   },
   {
     "id": "gm-piglet-escape-game",
@@ -9245,7 +9832,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 641
+    "plays": 641,
+    "platform": "responsive"
   },
   {
     "id": "gm-cops-escape-game",
@@ -9259,7 +9847,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 641
+    "plays": 641,
+    "platform": "responsive"
   },
   {
     "id": "gm-bus-driving-amazing-game",
@@ -9273,7 +9862,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 640
+    "plays": 640,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxing-fighter-super-punch-game",
@@ -9287,7 +9877,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 640
+    "plays": 640,
+    "platform": "responsive"
   },
   {
     "id": "gm-caveman-rhino-escape-series-episode-1-game",
@@ -9301,7 +9892,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 640
+    "plays": 640,
+    "platform": "responsive"
   },
   {
     "id": "gm-flappy-balls-game",
@@ -9315,7 +9907,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 640
+    "plays": 640,
+    "platform": "responsive"
   },
   {
     "id": "gm-arrows-puzzle-escape",
@@ -9333,7 +9926,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 639
+    "plays": 639,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocky-race-game",
@@ -9347,7 +9941,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 639
+    "plays": 639,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-at-the-villains-party-game",
@@ -9361,7 +9956,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 639
+    "plays": 639,
+    "platform": "responsive"
   },
   {
     "id": "gm-amgel-easy-room-escape-54-game",
@@ -9375,7 +9971,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 639
+    "plays": 639,
+    "platform": "responsive"
   },
   {
     "id": "gm-triple-death-jump",
@@ -9395,7 +9992,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 638
+    "plays": 638,
+    "platform": "responsive"
   },
   {
     "id": "gm-bubble-merge-2048-game",
@@ -9409,7 +10007,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 638
+    "plays": 638,
+    "platform": "responsive"
   },
   {
     "id": "gm-gunslinger-duel-game",
@@ -9423,7 +10022,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 638
+    "plays": 638,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-destroyer-game",
@@ -9437,7 +10037,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 638
+    "plays": 638,
+    "platform": "responsive"
   },
   {
     "id": "gm-pixel-ball-league-game",
@@ -9451,7 +10052,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 638
+    "plays": 638,
+    "platform": "responsive"
   },
   {
     "id": "gm-tap-tap-popping-battle-game",
@@ -9465,7 +10067,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 637
+    "plays": 637,
+    "platform": "responsive"
   },
   {
     "id": "gm-monsters-attack-impostor-squad-game",
@@ -9479,7 +10082,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 637
+    "plays": 637,
+    "platform": "responsive"
   },
   {
     "id": "gm-princesses-dazzling-goddesses-game",
@@ -9493,7 +10097,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 637
+    "plays": 637,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-bunny-escape-game",
@@ -9507,7 +10112,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "responsive"
   },
   {
     "id": "gm-noise-clicker-game",
@@ -9521,7 +10127,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "mobile"
   },
   {
     "id": "gm-fire-truck-driving-simulator-2024-game",
@@ -9535,7 +10142,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "responsive"
   },
   {
     "id": "gm-ball-jump-switch-game",
@@ -9549,7 +10157,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "responsive"
   },
   {
     "id": "gm-green-alien-escape-game",
@@ -9563,7 +10172,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "responsive"
   },
   {
     "id": "gm-g2l-out-house-escape-game",
@@ -9577,7 +10187,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 636
+    "plays": 636,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-makeup-girl-game",
@@ -9591,7 +10202,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 635
+    "plays": 635,
+    "platform": "responsive"
   },
   {
     "id": "gm-gunslinger-duel-western-duel-game-game",
@@ -9605,7 +10217,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 635
+    "plays": 635,
+    "platform": "responsive"
   },
   {
     "id": "gm-holubets-home-farming-and-cooking-game",
@@ -9619,7 +10232,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 635
+    "plays": 635,
+    "platform": "responsive"
   },
   {
     "id": "gm-awesome-tanks-3-game-game",
@@ -9633,7 +10247,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 634
+    "plays": 634,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-truck-race-arena-game",
@@ -9647,7 +10262,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 634
+    "plays": 634,
+    "platform": "responsive"
   },
   {
     "id": "gm-gun-of-janissary-game",
@@ -9661,7 +10277,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 634
+    "plays": 634,
+    "platform": "responsive"
   },
   {
     "id": "gm-skytractor-parking-game",
@@ -9675,7 +10292,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 634
+    "plays": 634,
+    "platform": "responsive"
   },
   {
     "id": "gm-amgel-halloween-room-escape-22-game",
@@ -9689,7 +10307,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 634
+    "plays": 634,
+    "platform": "responsive"
   },
   {
     "id": "gm-kid-ball-adventure-game",
@@ -9703,7 +10322,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-cottage-estate-escape-game",
@@ -9717,7 +10337,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-parkour-game",
@@ -9731,7 +10352,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-volleyball-game",
@@ -9745,7 +10367,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-little-princess-tale-game",
@@ -9759,7 +10382,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-high-christmas-game",
@@ -9773,7 +10397,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-jungle-escape-game-game",
@@ -9787,7 +10412,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 633
+    "plays": 633,
+    "platform": "responsive"
   },
   {
     "id": "gm-roblox-climb-motorbike-game",
@@ -9801,7 +10427,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 632
+    "plays": 632,
+    "platform": "responsive"
   },
   {
     "id": "gm-unicorn-slime-game",
@@ -9815,7 +10442,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 632
+    "plays": 632,
+    "platform": "responsive"
   },
   {
     "id": "gm-island-princess-magic-quest-game",
@@ -9829,7 +10457,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 632
+    "plays": 632,
+    "platform": "responsive"
   },
   {
     "id": "gm-astrologer-house-escape-game",
@@ -9843,7 +10472,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 632
+    "plays": 632,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-guy-stick-column-runner",
@@ -9864,7 +10494,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "pc"
   },
   {
     "id": "gm-christmas-block-collapse-game",
@@ -9878,7 +10509,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-asmr-slime-maker-diy-game",
@@ -9892,7 +10524,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-mcparkour-noob-noob-baby-game",
@@ -9906,7 +10539,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-martin-princess-in-trouble-game",
@@ -9920,7 +10554,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-ballerina-princess-debut-maker-game",
@@ -9934,7 +10569,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-small-unicorn-escape-game",
@@ -9948,7 +10584,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-parkour-craft-noob-steve-2-game",
@@ -9962,7 +10599,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 631
+    "plays": 631,
+    "platform": "responsive"
   },
   {
     "id": "gm-wrestler-escape-game",
@@ -9976,7 +10614,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 630
+    "plays": 630,
+    "platform": "pc"
   },
   {
     "id": "gm-socket-parkour-game",
@@ -9990,7 +10629,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 630
+    "plays": 630,
+    "platform": "mobile"
   },
   {
     "id": "gm-truck-simulator-parking-3d-game",
@@ -10004,7 +10644,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 630
+    "plays": 630,
+    "platform": "responsive"
   },
   {
     "id": "gm-hug-and-kis-station-escape-game",
@@ -10018,7 +10659,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 630
+    "plays": 630,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-truck-stunt-madness-game",
@@ -10032,7 +10674,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 629
+    "plays": 629,
+    "platform": "responsive"
   },
   {
     "id": "gm-grey-checked-room-escape-game",
@@ -10046,7 +10689,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 629
+    "plays": 629,
+    "platform": "responsive"
   },
   {
     "id": "gm-heli-monsters-giant-hunter-game",
@@ -10060,7 +10704,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 628
+    "plays": 628,
+    "platform": "responsive"
   },
   {
     "id": "gm-cupcake-maker-princess-elena-game",
@@ -10074,7 +10719,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 628
+    "plays": 628,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-midnight-royal-ball-adventure-game",
@@ -10088,7 +10734,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 627
+    "plays": 627,
+    "platform": "responsive"
   },
   {
     "id": "gm-amgel-kids-room-escape-92-game",
@@ -10102,7 +10749,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 627
+    "plays": 627,
+    "platform": "responsive"
   },
   {
     "id": "gm-monster-truck-stunts-mega-ramps-game",
@@ -10116,7 +10764,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 626
+    "plays": 626,
+    "platform": "responsive"
   },
   {
     "id": "gm-amgel-tiny-room-escape-6-game",
@@ -10130,7 +10779,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 626
+    "plays": 626,
+    "platform": "responsive"
   },
   {
     "id": "gm-vampire-princess-rebecca-first-date-game",
@@ -10144,7 +10794,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 626
+    "plays": 626,
+    "platform": "responsive"
   },
   {
     "id": "gm-retro-defenders-towers-war-game",
@@ -10158,7 +10809,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 626
+    "plays": 626,
+    "platform": "responsive"
   },
   {
     "id": "gm-magic-fairy-princess-dressup-game",
@@ -10172,7 +10824,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 623
+    "plays": 623,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-make-cup-cake-game",
@@ -10186,7 +10839,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 622
+    "plays": 622,
+    "platform": "mobile"
   },
   {
     "id": "gm-cool-arabian-princess-dress-up-game",
@@ -10200,7 +10854,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 620
+    "plays": 620,
+    "platform": "responsive"
   },
   {
     "id": "gm-ice-princess-doll-house-design-and-decoration-game-game",
@@ -10214,7 +10869,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 620
+    "plays": 620,
+    "platform": "responsive"
   },
   {
     "id": "gm-extreme-car-driving-simulator",
@@ -10230,7 +10886,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 619
+    "plays": 619,
+    "platform": "responsive"
   },
   {
     "id": "gm-offroad-driving-truck-transport-game",
@@ -10244,7 +10901,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 619
+    "plays": 619,
+    "platform": "responsive"
   },
   {
     "id": "gm-nitro-speed-car-racing",
@@ -10261,7 +10919,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 618
+    "plays": 618,
+    "platform": "responsive"
   },
   {
     "id": "gm-tiki-cave-escape-game",
@@ -10275,7 +10934,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 618
+    "plays": 618,
+    "platform": "responsive"
   },
   {
     "id": "gm-blaze-monster-machines-differences-game",
@@ -10289,7 +10949,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 618
+    "plays": 618,
+    "platform": "responsive"
   },
   {
     "id": "gm-bring-the-ball-game",
@@ -10303,7 +10964,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 617
+    "plays": 617,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-good-dinosaur-cooking-adventure-game",
@@ -10317,7 +10979,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 616
+    "plays": 616,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-stacky-runner",
@@ -10338,7 +11001,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 615
+    "plays": 615,
+    "platform": "responsive"
   },
   {
     "id": "gm-blocky-bird",
@@ -10359,7 +11023,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 615
+    "plays": 615,
+    "platform": "responsive"
   },
   {
     "id": "gm-fighter-game",
@@ -10373,7 +11038,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 615
+    "plays": 615,
+    "platform": "responsive"
   },
   {
     "id": "gm-dominoes-big-3-game",
@@ -10387,7 +11053,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 615
+    "plays": 615,
+    "platform": "responsive"
   },
   {
     "id": "gm-jewels-classic-jewel-crush-legend-game",
@@ -10401,7 +11068,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 615
+    "plays": 615,
+    "platform": "responsive"
   },
   {
     "id": "gm-hallowen-memory-game",
@@ -10415,7 +11083,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 614
+    "plays": 614,
+    "platform": "responsive"
   },
   {
     "id": "gm-knight-in-love-game",
@@ -10429,7 +11098,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 614
+    "plays": 614,
+    "platform": "responsive"
   },
   {
     "id": "gm-defender-game",
@@ -10443,7 +11113,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 614
+    "plays": 614,
+    "platform": "responsive"
   },
   {
     "id": "gm-war-machine-game",
@@ -10457,7 +11128,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-forest-escape-series-episode-1-game",
@@ -10471,7 +11143,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "responsive"
   },
   {
     "id": "gm-warrior-game",
@@ -10485,7 +11158,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "responsive"
   },
   {
     "id": "gm-7-doors-escape-game",
@@ -10499,7 +11173,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "mobile"
   },
   {
     "id": "gm-zoo-memory-game",
@@ -10513,7 +11188,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "responsive"
   },
   {
     "id": "gm-wedding-dress-game",
@@ -10527,7 +11203,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 613
+    "plays": 613,
+    "platform": "responsive"
   },
   {
     "id": "gm-cooking-fever-game",
@@ -10541,7 +11218,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 611
+    "plays": 611,
+    "platform": "responsive"
   },
   {
     "id": "gm-pets-beauty-salon-game",
@@ -10555,7 +11233,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 611
+    "plays": 611,
+    "platform": "responsive"
   },
   {
     "id": "gm-jewel-miner-quest-game",
@@ -10569,7 +11248,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 610
+    "plays": 610,
+    "platform": "responsive"
   },
   {
     "id": "gm-cat-avatar-maker-game",
@@ -10583,7 +11263,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 610
+    "plays": 610,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-killer-game",
@@ -10597,7 +11278,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 610
+    "plays": 610,
+    "platform": "responsive"
   },
   {
     "id": "gm-angry-fish-coloring-game",
@@ -10611,7 +11293,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 609
+    "plays": 609,
+    "platform": "responsive"
   },
   {
     "id": "gm-onward-jigsaw-game-game",
@@ -10625,7 +11308,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 609
+    "plays": 609,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-pomni-cosplay-asmr-game",
@@ -10639,7 +11323,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 608
+    "plays": 608,
+    "platform": "responsive"
   },
   {
     "id": "gm-jewel-halloween-game",
@@ -10653,7 +11338,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 608
+    "plays": 608,
+    "platform": "responsive"
   },
   {
     "id": "gm-mafia-sniper-crime-shooting",
@@ -10672,7 +11358,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 607
+    "plays": 607,
+    "platform": "responsive"
   },
   {
     "id": "gm-slime-jelly-bouncer",
@@ -10693,7 +11380,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 607
+    "plays": 607,
+    "platform": "responsive"
   },
   {
     "id": "gm-alien-catcher-game",
@@ -10707,7 +11395,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 607
+    "plays": 607,
+    "platform": "responsive"
   },
   {
     "id": "gm-peppa-pig-coloring-game",
@@ -10721,7 +11410,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 607
+    "plays": 607,
+    "platform": "responsive"
   },
   {
     "id": "gm-rescue-the-girl-1-game",
@@ -10735,7 +11425,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 606
+    "plays": 606,
+    "platform": "responsive"
   },
   {
     "id": "gm-anime-dress-up-mania-game",
@@ -10749,7 +11440,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 606
+    "plays": 606,
+    "platform": "responsive"
   },
   {
     "id": "gm-cave-horror-game",
@@ -10763,7 +11455,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 606
+    "plays": 606,
+    "platform": "responsive"
   },
   {
     "id": "gm-snake-warz",
@@ -10779,7 +11472,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-knights-game",
@@ -10793,7 +11487,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-bart-simpson-dress-up-game",
@@ -10807,7 +11502,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-dominos-pirates-game",
@@ -10821,7 +11517,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-defender-war-game",
@@ -10835,7 +11532,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-popeye-dress-up-game",
@@ -10849,7 +11547,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 605
+    "plays": 605,
+    "platform": "responsive"
   },
   {
     "id": "gm-sky-warrior-alien-attacks-game",
@@ -10863,7 +11562,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 604
+    "plays": 604,
+    "platform": "responsive"
   },
   {
     "id": "gm-princess-pony-unicorn-salon-game",
@@ -10877,7 +11577,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 604
+    "plays": 604,
+    "platform": "responsive"
   },
   {
     "id": "gm-rainy-day-dress-up-game",
@@ -10891,7 +11592,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 604
+    "plays": 604,
+    "platform": "responsive"
   },
   {
     "id": "gm-mine-noob-maze-game",
@@ -10905,7 +11607,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 603
+    "plays": 603,
+    "platform": "responsive"
   },
   {
     "id": "gm-pool-buddy-4-game",
@@ -10919,7 +11622,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 603
+    "plays": 603,
+    "platform": "responsive"
   },
   {
     "id": "gm-breakout-neon-drift",
@@ -10936,7 +11640,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "pc"
   },
   {
     "id": "gm-bts-santa-claus-coloring-game",
@@ -10950,7 +11655,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-messi-in-a-maze-game",
@@ -10964,7 +11670,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-traffic-racer-king-game",
@@ -10978,7 +11685,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-huggy-wuggy-coloring-game",
@@ -10992,7 +11700,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-lands-game",
@@ -11006,7 +11715,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-alien-war-game",
@@ -11020,7 +11730,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 602
+    "plays": 602,
+    "platform": "responsive"
   },
   {
     "id": "gm-snowman-from-fire-game",
@@ -11034,7 +11745,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 601
+    "plays": 601,
+    "platform": "responsive"
   },
   {
     "id": "gm-water-color-sorting-game",
@@ -11048,7 +11760,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 601
+    "plays": 601,
+    "platform": "responsive"
   },
   {
     "id": "gm-wedding-dress-up-new-bride-game",
@@ -11062,7 +11775,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 601
+    "plays": 601,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-brickout-game",
@@ -11076,7 +11790,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 601
+    "plays": 601,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-hazel-tomato-farming-game",
@@ -11090,7 +11805,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 601
+    "plays": 601,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-driving-3d",
@@ -11111,7 +11827,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-handbrake-parking",
@@ -11132,7 +11849,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-nadia-show-dress-up-game-game",
@@ -11146,7 +11864,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-noob-vs-pro-horsecraft-game",
@@ -11160,7 +11879,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-spring-fashion-color-dress-game",
@@ -11174,7 +11894,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-helicopter-jigsaw-game",
@@ -11188,7 +11909,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-mathpups-adventures-game",
@@ -11202,7 +11924,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-race-3d-game",
@@ -11216,7 +11939,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-cocktail-brain-game",
@@ -11230,7 +11954,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-pet-loki-virtual-dog-game",
@@ -11244,7 +11969,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-coloring-book-for-pj-masks-game",
@@ -11258,7 +11984,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 600
+    "plays": 600,
+    "platform": "responsive"
   },
   {
     "id": "gm-colors-grid-game",
@@ -11272,7 +11999,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 599
+    "plays": 599,
+    "platform": "responsive"
   },
   {
     "id": "gm-box-tower-3d-game",
@@ -11286,7 +12014,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 599
+    "plays": 599,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-land-game",
@@ -11300,7 +12029,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 599
+    "plays": 599,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-dinosaurs-coloring-game",
@@ -11314,7 +12044,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 599
+    "plays": 599,
+    "platform": "responsive"
   },
   {
     "id": "gm-laser-bots-the-hero-robot-shooting-game-game",
@@ -11328,7 +12059,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "pc"
   },
   {
     "id": "gm-aliens-in-chains-game",
@@ -11342,7 +12074,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "responsive"
   },
   {
     "id": "gm-hexa-word-game",
@@ -11356,7 +12089,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "responsive"
   },
   {
     "id": "gm-spaceman-adventure-game",
@@ -11370,7 +12104,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-fashion-dress-up-game-game",
@@ -11384,7 +12119,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "responsive"
   },
   {
     "id": "gm-airplane-war-hd-game",
@@ -11398,7 +12134,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 598
+    "plays": 598,
+    "platform": "responsive"
   },
   {
     "id": "gm-stack-builder-skycrapper-game",
@@ -11412,7 +12149,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 597
+    "plays": 597,
+    "platform": "responsive"
   },
   {
     "id": "gm-onward-jigsaw-game",
@@ -11426,7 +12164,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 596
+    "plays": 596,
+    "platform": "responsive"
   },
   {
     "id": "gm-stumble-guys-coloring-book-game",
@@ -11440,7 +12179,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 596
+    "plays": 596,
+    "platform": "responsive"
   },
   {
     "id": "gm-fruit-catch-game",
@@ -11454,7 +12194,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 596
+    "plays": 596,
+    "platform": "responsive"
   },
   {
     "id": "gm-archery-strike-2-game",
@@ -11468,7 +12209,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 595
+    "plays": 595,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-space-colorfull-pin-pull-game-game",
@@ -11482,7 +12224,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 595
+    "plays": 595,
+    "platform": "responsive"
   },
   {
     "id": "gm-coloring-book-toy-shop-game",
@@ -11496,7 +12239,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 595
+    "plays": 595,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-page-asmr-game",
@@ -11510,7 +12254,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 595
+    "plays": 595,
+    "platform": "responsive"
   },
   {
     "id": "gm-truck-cross-country-game",
@@ -11524,7 +12269,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 595
+    "plays": 595,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-adventure-pinball-game",
@@ -11538,7 +12284,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 594
+    "plays": 594,
+    "platform": "responsive"
   },
   {
     "id": "gm-game-of-farm-game",
@@ -11552,7 +12299,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 594
+    "plays": 594,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-coloring-books-game",
@@ -11566,7 +12314,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-army-truck-simulator-2024-game",
@@ -11580,7 +12329,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-traffic-g-game",
@@ -11594,7 +12344,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-pony-pet-salon-game-game",
@@ -11608,7 +12359,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-humans-rescue-game",
@@ -11622,7 +12374,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-word-link-game",
@@ -11636,7 +12389,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 593
+    "plays": 593,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-cotton-candy-3d-game",
@@ -11650,7 +12404,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 592
+    "plays": 592,
+    "platform": "responsive"
   },
   {
     "id": "gm-riddlemath-game",
@@ -11664,7 +12419,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-colors-mumble-game",
@@ -11678,7 +12434,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-rescue-the-tiny-old-man-game",
@@ -11692,7 +12449,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-unicorn-for-girls-dress-up-game",
@@ -11706,7 +12464,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-uphill-offroad-bicycle-rider-game",
@@ -11720,7 +12479,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-chibi-sup-color-game",
@@ -11734,7 +12494,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-color-stars-game",
@@ -11748,7 +12509,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-hungry-caterpillar-game",
@@ -11762,7 +12524,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 591
+    "plays": 591,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-frenzy-2021-game",
@@ -11776,7 +12539,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-baby-unicorn-virtual-pony-pet-game",
@@ -11790,7 +12554,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-candy-the-rope-game",
@@ -11804,7 +12569,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-dress-up-and-makeup-game",
@@ -11818,7 +12584,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-brain-test-tricky-puzzle-journey-game",
@@ -11832,7 +12599,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-helicopter-assassin-game",
@@ -11846,7 +12614,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-doctor-pets-be-vet-and-help-animals-game",
@@ -11860,7 +12629,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-rescue-the-puppy-game",
@@ -11874,7 +12644,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 590
+    "plays": 590,
+    "platform": "responsive"
   },
   {
     "id": "gm-memory-game",
@@ -11888,7 +12659,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 589
+    "plays": 589,
+    "platform": "responsive"
   },
   {
     "id": "gm-jewel-legend-game",
@@ -11902,7 +12674,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 589
+    "plays": 589,
+    "platform": "responsive"
   },
   {
     "id": "gm-duet-cats-halloween-cat-music-game",
@@ -11916,7 +12689,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 588
+    "plays": 588,
+    "platform": "responsive"
   },
   {
     "id": "gm-magic-pet-salon-game",
@@ -11930,7 +12704,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 587
+    "plays": 587,
+    "platform": "responsive"
   },
   {
     "id": "gm-brawl-stars-christmas-coloring-game",
@@ -11944,7 +12719,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 587
+    "plays": 587,
+    "platform": "responsive"
   },
   {
     "id": "gm-circus-restaurant-game",
@@ -11958,7 +12734,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 587
+    "plays": 587,
+    "platform": "responsive"
   },
   {
     "id": "gm-farm-animal-jigsaw-game",
@@ -11972,7 +12749,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 586
+    "plays": 586,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-fashion-stylist-dress-up-game",
@@ -11986,7 +12764,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 586
+    "plays": 586,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-dress-up-show-game",
@@ -12000,7 +12779,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 586
+    "plays": 586,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-super-slime-pet-game",
@@ -12014,7 +12794,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 585
+    "plays": 585,
+    "platform": "responsive"
   },
   {
     "id": "gm-kids-and-snowman-dress-up-game",
@@ -12028,7 +12809,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 585
+    "plays": 585,
+    "platform": "responsive"
   },
   {
     "id": "gm-rainbow-princess-pony-makeup-2-game",
@@ -12042,7 +12824,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 584
+    "plays": 584,
+    "platform": "responsive"
   },
   {
     "id": "gm-happy-farm-familly-game",
@@ -12056,7 +12839,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 584
+    "plays": 584,
+    "platform": "responsive"
   },
   {
     "id": "gm-little-panda-pet-salon-game",
@@ -12070,7 +12854,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 584
+    "plays": 584,
+    "platform": "responsive"
   },
   {
     "id": "gm-winx-tecna-dressup-game",
@@ -12084,7 +12869,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 584
+    "plays": 584,
+    "platform": "responsive"
   },
   {
     "id": "gm-trucks-slide-2-game",
@@ -12098,7 +12884,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 583
+    "plays": 583,
+    "platform": "responsive"
   },
   {
     "id": "gm-basketball-hero-jigsaw-game",
@@ -12112,7 +12899,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 583
+    "plays": 583,
+    "platform": "responsive"
   },
   {
     "id": "gm-letter-layout-coloring-game",
@@ -12126,7 +12914,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 583
+    "plays": 583,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-baby-dress-up-game",
@@ -12140,7 +12929,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 582
+    "plays": 582,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-crosswords-html5-game",
@@ -12154,7 +12944,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 581
+    "plays": 581,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-maze-challenge-game",
@@ -12168,7 +12959,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 581
+    "plays": 581,
+    "platform": "responsive"
   },
   {
     "id": "gm-battle-tanks-city-of-war-mobile-game",
@@ -12182,7 +12974,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 581
+    "plays": 581,
+    "platform": "responsive"
   },
   {
     "id": "gm-wedding-dress-gameup-game",
@@ -12196,7 +12989,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 581
+    "plays": 581,
+    "platform": "responsive"
   },
   {
     "id": "gm-gun-mob-stickman-run",
@@ -12217,7 +13011,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 580
+    "plays": 580,
+    "platform": "mobile"
   },
   {
     "id": "gm-feed-my-monster",
@@ -12236,7 +13031,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 580
+    "plays": 580,
+    "platform": "mobile"
   },
   {
     "id": "gm-different-color-skirt-tryout-game",
@@ -12250,7 +13046,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 580
+    "plays": 580,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-up-dress-up-game",
@@ -12264,7 +13061,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 580
+    "plays": 580,
+    "platform": "responsive"
   },
   {
     "id": "gm-archery-game",
@@ -12278,7 +13076,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 579
+    "plays": 579,
+    "platform": "pc"
   },
   {
     "id": "gm-fashion-studio-wedding-dress-2-game",
@@ -12292,7 +13091,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 579
+    "plays": 579,
+    "platform": "responsive"
   },
   {
     "id": "gm-many-brick-block-3d",
@@ -12310,7 +13110,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 578
+    "plays": 578,
+    "platform": "responsive"
   },
   {
     "id": "gm-lady-pool-game",
@@ -12324,7 +13125,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 578
+    "plays": 578,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-princess-dress-up-queen-growth-plan-game",
@@ -12338,7 +13140,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 578
+    "plays": 578,
+    "platform": "responsive"
   },
   {
     "id": "gm-stewardess-beauty-salon-game",
@@ -12352,7 +13155,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 578
+    "plays": 578,
+    "platform": "responsive"
   },
   {
     "id": "gm-enjoyable-girl-dress-up-game",
@@ -12366,7 +13170,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 578
+    "plays": 578,
+    "platform": "responsive"
   },
   {
     "id": "gm-flying-wings-hover-craft-game",
@@ -12380,7 +13185,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 577
+    "plays": 577,
+    "platform": "responsive"
   },
   {
     "id": "gm-space-war-shooting-game",
@@ -12394,7 +13200,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 577
+    "plays": 577,
+    "platform": "pc"
   },
   {
     "id": "gm-alice-in-wonderland-dressup-game",
@@ -12408,7 +13215,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 577
+    "plays": 577,
+    "platform": "responsive"
   },
   {
     "id": "gm-wow-wow-wubbzy-coloring-book-game",
@@ -12422,7 +13230,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 576
+    "plays": 576,
+    "platform": "responsive"
   },
   {
     "id": "gm-coloring-book-for-mickey-mouse-game",
@@ -12436,7 +13245,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 576
+    "plays": 576,
+    "platform": "responsive"
   },
   {
     "id": "gm-dragon-game",
@@ -12450,7 +13260,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 575
+    "plays": 575,
+    "platform": "responsive"
   },
   {
     "id": "gm-anime-couples-dress-up-2021-game",
@@ -12464,7 +13275,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 575
+    "plays": 575,
+    "platform": "responsive"
   },
   {
     "id": "gm-fire-steve-and-water-alex-game",
@@ -12478,7 +13290,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 575
+    "plays": 575,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-pop-the-balloons",
@@ -12499,7 +13312,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 574
+    "plays": 574,
+    "platform": "responsive"
   },
   {
     "id": "gm-dr-psycho-hospital-escape",
@@ -12519,7 +13333,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 573
+    "plays": 573,
+    "platform": "pc"
   },
   {
     "id": "gm-moto-x3m-pool-party-game",
@@ -12533,7 +13348,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 573
+    "plays": 573,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-dress-in-tulle-style-game",
@@ -12547,7 +13363,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 573
+    "plays": 573,
+    "platform": "responsive"
   },
   {
     "id": "gm-raya-and-the-last-dragon-jigsaw-game",
@@ -12561,7 +13378,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 572
+    "plays": 572,
+    "platform": "responsive"
   },
   {
     "id": "gm-chopping-food-perfect-slices-game",
@@ -12575,7 +13393,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 572
+    "plays": 572,
+    "platform": "responsive"
   },
   {
     "id": "gm-robots-battle-mech-arena",
@@ -12594,7 +13413,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 571
+    "plays": 571,
+    "platform": "pc"
   },
   {
     "id": "gm-cinderella-color-book-game",
@@ -12608,7 +13428,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 571
+    "plays": 571,
+    "platform": "responsive"
   },
   {
     "id": "gm-shoot-color-game",
@@ -12622,7 +13443,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 567
+    "plays": 567,
+    "platform": "responsive"
   },
   {
     "id": "gm-truck-offroad-drive-heavy-transport-game",
@@ -12636,7 +13458,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 567
+    "plays": 567,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-elements-game",
@@ -12650,7 +13473,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 566
+    "plays": 566,
+    "platform": "responsive"
   },
   {
     "id": "gm-zigzag-taxi-game",
@@ -12664,7 +13488,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 564
+    "plays": 564,
+    "platform": "responsive"
   },
   {
     "id": "gm-real-apple-catcher-extreme-fruit-catcher-surprise-game",
@@ -12678,7 +13503,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 563
+    "plays": 563,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-cup-2026-memory-quest",
@@ -12699,7 +13525,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 562
+    "plays": 562,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-climb-game",
@@ -12713,7 +13540,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 562
+    "plays": 562,
+    "platform": "responsive"
   },
   {
     "id": "gm-lofys-numbers-game",
@@ -12727,7 +13555,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 562
+    "plays": 562,
+    "platform": "responsive"
   },
   {
     "id": "gm-hunter-assassin-game",
@@ -12741,7 +13570,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 561
+    "plays": 561,
+    "platform": "responsive"
   },
   {
     "id": "gm-idle-restaurant-game",
@@ -12755,7 +13585,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 561
+    "plays": 561,
+    "platform": "mobile"
   },
   {
     "id": "gm-rocket-punch-game",
@@ -12769,7 +13600,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 561
+    "plays": 561,
+    "platform": "responsive"
   },
   {
     "id": "gm-coloring-book-for-kids-animal-coloring-pages-is-th-game",
@@ -12783,7 +13615,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 561
+    "plays": 561,
+    "platform": "responsive"
   },
   {
     "id": "gm-1010-christmas-game",
@@ -12797,7 +13630,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 561
+    "plays": 561,
+    "platform": "responsive"
   },
   {
     "id": "gm-stick-duel-medieval-wars",
@@ -12813,7 +13647,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 560
+    "plays": 560,
+    "platform": "responsive"
   },
   {
     "id": "gm-memorize-halloween-game",
@@ -12827,7 +13662,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 559
+    "plays": 559,
+    "platform": "responsive"
   },
   {
     "id": "gm-mini-golf-2d-game",
@@ -12841,7 +13677,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 559
+    "plays": 559,
+    "platform": "responsive"
   },
   {
     "id": "gm-crazy-goat-hunter-game",
@@ -12855,7 +13692,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 559
+    "plays": 559,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-rocket-buddy-game",
@@ -12869,7 +13707,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 558
+    "plays": 558,
+    "platform": "responsive"
   },
   {
     "id": "gm-gyrfalcon-jigsaw-game",
@@ -12883,7 +13722,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 558
+    "plays": 558,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-nail-salon-game",
@@ -12897,7 +13737,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 558
+    "plays": 558,
+    "platform": "responsive"
   },
   {
     "id": "gm-crazy-driving",
@@ -12914,7 +13755,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 557
+    "plays": 557,
+    "platform": "responsive"
   },
   {
     "id": "gm-noob-steve-christmas-game",
@@ -12928,7 +13770,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 557
+    "plays": 557,
+    "platform": "responsive"
   },
   {
     "id": "gm-findergarten-christmas-game",
@@ -12942,7 +13785,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 557
+    "plays": 557,
+    "platform": "responsive"
   },
   {
     "id": "gm-bus-mountain-drive-game",
@@ -12956,7 +13800,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 556
+    "plays": 556,
+    "platform": "responsive"
   },
   {
     "id": "gm-boat-rush-2d-game",
@@ -12970,7 +13815,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 556
+    "plays": 556,
+    "platform": "responsive"
   },
   {
     "id": "gm-paint-with-santa-game",
@@ -12984,7 +13830,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 555
+    "plays": 555,
+    "platform": "responsive"
   },
   {
     "id": "gm-happy-fishing-day-game",
@@ -12998,7 +13845,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 555
+    "plays": 555,
+    "platform": "responsive"
   },
   {
     "id": "gm-2048",
@@ -13017,7 +13865,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 554
+    "plays": 554,
+    "platform": "responsive"
   },
   {
     "id": "gm-dress-up-unicorn-game",
@@ -13031,7 +13880,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 554
+    "plays": 554,
+    "platform": "responsive"
   },
   {
     "id": "gm-noob-rocket-punch-game",
@@ -13045,7 +13895,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 554
+    "plays": 554,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-2020-slide-game",
@@ -13059,7 +13910,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 553
+    "plays": 553,
+    "platform": "responsive"
   },
   {
     "id": "gm-pinball-galaxy-game",
@@ -13073,7 +13925,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 553
+    "plays": 553,
+    "platform": "responsive"
   },
   {
     "id": "gm-corona-virus-jigsaw-game",
@@ -13087,7 +13940,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 553
+    "plays": 553,
+    "platform": "responsive"
   },
   {
     "id": "gm-mega-painting-pictures-game",
@@ -13101,7 +13955,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 553
+    "plays": 553,
+    "platform": "responsive"
   },
   {
     "id": "gm-paint-island-game",
@@ -13115,7 +13970,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 552
+    "plays": 552,
+    "platform": "responsive"
   },
   {
     "id": "gm-wars-island-commander",
@@ -13136,7 +13992,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "pc"
   },
   {
     "id": "gm-dead-paradise",
@@ -13156,7 +14013,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "pc"
   },
   {
     "id": "gm-stack-maze-challenge",
@@ -13177,7 +14035,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-funny-pumpkins-game",
@@ -13191,7 +14050,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "responsive"
   },
   {
     "id": "gm-coach-bus-simulator-game",
@@ -13205,7 +14065,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "responsive"
   },
   {
     "id": "gm-draw-to-win-stars-game",
@@ -13219,7 +14080,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "responsive"
   },
   {
     "id": "gm-heart-lock-and-key-jigsaw-game",
@@ -13233,7 +14095,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 551
+    "plays": 551,
+    "platform": "responsive"
   },
   {
     "id": "gm-cutos-quest-game",
@@ -13247,7 +14110,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 550
+    "plays": 550,
+    "platform": "responsive"
   },
   {
     "id": "gm-avoid-waterdrops-game",
@@ -13261,7 +14125,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 550
+    "plays": 550,
+    "platform": "responsive"
   },
   {
     "id": "gm-bus-game-drive-game",
@@ -13275,7 +14140,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 550
+    "plays": 550,
+    "platform": "responsive"
   },
   {
     "id": "gm-steel-advance",
@@ -13296,7 +14162,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 549
+    "plays": 549,
+    "platform": "responsive"
   },
   {
     "id": "gm-cut-the-grass-game",
@@ -13310,7 +14177,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 549
+    "plays": 549,
+    "platform": "responsive"
   },
   {
     "id": "gm-colourful-flower-garden-jigsaw-game",
@@ -13324,7 +14192,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 549
+    "plays": 549,
+    "platform": "responsive"
   },
   {
     "id": "gm-boat-dash-game",
@@ -13338,7 +14207,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 549
+    "plays": 549,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-doll-cook-cakes-game",
@@ -13352,7 +14222,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 549
+    "plays": 549,
+    "platform": "responsive"
   },
   {
     "id": "gm-ping-pong-table-tennis-game",
@@ -13366,7 +14237,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 548
+    "plays": 548,
+    "platform": "responsive"
   },
   {
     "id": "gm-still-life-jigsaw-game",
@@ -13380,7 +14252,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 548
+    "plays": 548,
+    "platform": "responsive"
   },
   {
     "id": "gm-london-taxi-driver-game",
@@ -13394,7 +14267,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 548
+    "plays": 548,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-a-space-tasks-game",
@@ -13408,7 +14282,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 547
+    "plays": 547,
+    "platform": "responsive"
   },
   {
     "id": "gm-456-challenge-jigsaw-game",
@@ -13422,7 +14297,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 547
+    "plays": 547,
+    "platform": "responsive"
   },
   {
     "id": "gm-masha-and-the-bear-jigsaw-puzzles-for-kids-game",
@@ -13436,7 +14312,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 547
+    "plays": 547,
+    "platform": "responsive"
   },
   {
     "id": "gm-connect-dots-56-game",
@@ -13450,7 +14327,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 547
+    "plays": 547,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-toilet-tennis-game",
@@ -13464,7 +14342,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 546
+    "plays": 546,
+    "platform": "responsive"
   },
   {
     "id": "gm-pipes-connect-game",
@@ -13478,7 +14357,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 546
+    "plays": 546,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-afternoon-tea-princess-tea-party-game",
@@ -13492,7 +14372,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 546
+    "plays": 546,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-makeup-artist-game",
@@ -13506,7 +14387,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 545
+    "plays": 545,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-star-concert-makeup-game",
@@ -13520,7 +14402,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 545
+    "plays": 545,
+    "platform": "responsive"
   },
   {
     "id": "gm-paint-them-all-game",
@@ -13534,7 +14417,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 544
+    "plays": 544,
+    "platform": "responsive"
   },
   {
     "id": "gm-makeup-slime-cooking-master-2-game",
@@ -13548,7 +14432,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 544
+    "plays": 544,
+    "platform": "responsive"
   },
   {
     "id": "gm-bus-jam-sort-game",
@@ -13562,7 +14447,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 543
+    "plays": 543,
+    "platform": "responsive"
   },
   {
     "id": "gm-knife-throw-halloween-game",
@@ -13576,7 +14462,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 543
+    "plays": 543,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-chuni-bot-2-game",
@@ -13590,7 +14477,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 543
+    "plays": 543,
+    "platform": "responsive"
   },
   {
     "id": "gm-is-it-golf-game",
@@ -13604,7 +14492,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 542
+    "plays": 542,
+    "platform": "responsive"
   },
   {
     "id": "gm-wild-girls-slot-win-big-playing-online-casino-game",
@@ -13618,7 +14507,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 542
+    "plays": 542,
+    "platform": "responsive"
   },
   {
     "id": "gm-happy-halloween-hd-game",
@@ -13632,7 +14522,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 542
+    "plays": 542,
+    "platform": "responsive"
   },
   {
     "id": "gm-island-treats-jigsaw-game",
@@ -13646,7 +14537,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 542
+    "plays": 542,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-sweeper-game",
@@ -13660,7 +14552,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 541
+    "plays": 541,
+    "platform": "responsive"
   },
   {
     "id": "gm-15-halloween-games-game",
@@ -13674,7 +14567,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 541
+    "plays": 541,
+    "platform": "responsive"
   },
   {
     "id": "gm-king-penguin-jigsaw-game",
@@ -13688,7 +14582,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 541
+    "plays": 541,
+    "platform": "responsive"
   },
   {
     "id": "gm-water-city-racers-game",
@@ -13702,7 +14597,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 541
+    "plays": 541,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-face-art-game",
@@ -13716,7 +14612,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 540
+    "plays": 540,
+    "platform": "responsive"
   },
   {
     "id": "gm-birds-connect-deluxe-game",
@@ -13730,7 +14627,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 540
+    "plays": 540,
+    "platform": "responsive"
   },
   {
     "id": "gm-jigsaw-game",
@@ -13744,7 +14642,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 540
+    "plays": 540,
+    "platform": "responsive"
   },
   {
     "id": "gm-xmas-jigsaw-deluxe-game",
@@ -13758,7 +14657,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 540
+    "plays": 540,
+    "platform": "responsive"
   },
   {
     "id": "gm-cute-owl-slide-game",
@@ -13772,7 +14672,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 539
+    "plays": 539,
+    "platform": "responsive"
   },
   {
     "id": "gm-frozen-2-jigsaw-game",
@@ -13786,7 +14687,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 539
+    "plays": 539,
+    "platform": "responsive"
   },
   {
     "id": "gm-black-and-white-halloween-game",
@@ -13800,7 +14702,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 538
+    "plays": 538,
+    "platform": "responsive"
   },
   {
     "id": "gm-kids-happy-kitchen-game",
@@ -13814,7 +14717,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 537
+    "plays": 537,
+    "platform": "responsive"
   },
   {
     "id": "gm-drop-the-numbers-game",
@@ -13828,7 +14732,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 537
+    "plays": 537,
+    "platform": "responsive"
   },
   {
     "id": "gm-guess-shape-of-water-game",
@@ -13842,7 +14747,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 537
+    "plays": 537,
+    "platform": "responsive"
   },
   {
     "id": "gm-draw-climber-2-game",
@@ -13856,7 +14762,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 537
+    "plays": 537,
+    "platform": "responsive"
   },
   {
     "id": "gm-hair-salon-dress-up-girl-game",
@@ -13870,7 +14777,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 536
+    "plays": 536,
+    "platform": "responsive"
   },
   {
     "id": "gm-western-escape",
@@ -13888,7 +14796,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-traffic-escapee",
@@ -13904,7 +14813,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-smurfs-jigsaw-game",
@@ -13918,7 +14828,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-makeup-master-game-game",
@@ -13932,7 +14843,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-factory-2-game",
@@ -13946,7 +14858,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-cycle-sprint-master-game",
@@ -13960,7 +14873,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 535
+    "plays": 535,
+    "platform": "responsive"
   },
   {
     "id": "gm-mini-tennis-game",
@@ -13974,7 +14888,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 534
+    "plays": 534,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-snow-hidden-object-game",
@@ -13988,7 +14903,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 533
+    "plays": 533,
+    "platform": "responsive"
   },
   {
     "id": "gm-drawing-christmas-for-kids-game",
@@ -14002,7 +14918,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 533
+    "plays": 533,
+    "platform": "responsive"
   },
   {
     "id": "gm-domestic-animals-jigsaw-game",
@@ -14016,7 +14933,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 533
+    "plays": 533,
+    "platform": "responsive"
   },
   {
     "id": "gm-tennis-world-tour-game",
@@ -14030,7 +14948,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 533
+    "plays": 533,
+    "platform": "responsive"
   },
   {
     "id": "gm-makeup-studio-halloween-game",
@@ -14044,7 +14963,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 533
+    "plays": 533,
+    "platform": "responsive"
   },
   {
     "id": "gm-crossword",
@@ -14065,7 +14985,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 532
+    "plays": 532,
+    "platform": "mobile"
   },
   {
     "id": "gm-chickz-stack",
@@ -14084,7 +15005,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 532
+    "plays": 532,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-of-alice-animal-numbers-game",
@@ -14098,7 +15020,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 532
+    "plays": 532,
+    "platform": "responsive"
   },
   {
     "id": "gm-power-shift-arena",
@@ -14119,7 +15042,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 531
+    "plays": 531,
+    "platform": "responsive"
   },
   {
     "id": "gm-brainstorming",
@@ -14140,7 +15064,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 531
+    "plays": 531,
+    "platform": "mobile"
   },
   {
     "id": "gm-taxi-driver-las-vegas-game",
@@ -14154,7 +15079,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 531
+    "plays": 531,
+    "platform": "responsive"
   },
   {
     "id": "gm-drone-pizza-delivery-simulator-game",
@@ -14168,7 +15094,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 531
+    "plays": 531,
+    "platform": "responsive"
   },
   {
     "id": "gm-naughty-baby-prankster",
@@ -14187,7 +15114,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 530
+    "plays": 530,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-is-coming-episode-6-game",
@@ -14201,7 +15129,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 530
+    "plays": 530,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-basketball",
@@ -14222,7 +15151,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-bowling-hit-3d-game",
@@ -14236,7 +15166,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-guys-2d-christmas-game",
@@ -14250,7 +15181,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-fashion-makeup-nail-salon-nail-game-game",
@@ -14264,7 +15196,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-russian-bus-simulator-game",
@@ -14278,7 +15211,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-new-makeup-snow-queen-elsa-game",
@@ -14292,7 +15226,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 529
+    "plays": 529,
+    "platform": "responsive"
   },
   {
     "id": "gm-marina-sea-fishing-master-game",
@@ -14306,7 +15241,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 528
+    "plays": 528,
+    "platform": "responsive"
   },
   {
     "id": "gm-surprise-makeup-doll-unbox-game",
@@ -14320,7 +15256,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 527
+    "plays": 527,
+    "platform": "responsive"
   },
   {
     "id": "gm-cooking-frenzy",
@@ -14336,7 +15273,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 525
+    "plays": 525,
+    "platform": "responsive"
   },
   {
     "id": "gm-paint-strike-game",
@@ -14350,7 +15288,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 525
+    "plays": 525,
+    "platform": "responsive"
   },
   {
     "id": "gm-trick-or-treat-halloween-games-game",
@@ -14364,7 +15303,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 525
+    "plays": 525,
+    "platform": "responsive"
   },
   {
     "id": "gm-rainbow-girls-hallowen-salon-game",
@@ -14378,7 +15318,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 524
+    "plays": 524,
+    "platform": "responsive"
   },
   {
     "id": "gm-cookie-busting-game",
@@ -14392,7 +15333,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 522
+    "plays": 522,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-game-jigsaw-game",
@@ -14406,7 +15348,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 522
+    "plays": 522,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-bear-jigsaw-game",
@@ -14420,7 +15363,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 521
+    "plays": 521,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-of-alice-sequencing-numbers-game",
@@ -14434,7 +15378,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 521
+    "plays": 521,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-trucks-hidden-bells-game",
@@ -14448,7 +15393,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 520
+    "plays": 520,
+    "platform": "responsive"
   },
   {
     "id": "gm-halloween-remembers-game",
@@ -14462,7 +15408,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 520
+    "plays": 520,
+    "platform": "responsive"
   },
   {
     "id": "gm-break-a-lucky-blocks-catch-brainrots",
@@ -14483,7 +15430,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 511
+    "plays": 511,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-defense-game",
@@ -14497,7 +15445,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 510
+    "plays": 510,
+    "platform": "responsive"
   },
   {
     "id": "gm-pac-man-maze",
@@ -14515,7 +15464,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 508
+    "plays": 508,
+    "platform": "responsive"
   },
   {
     "id": "gm-retro-kick-boxing-game",
@@ -14529,7 +15479,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 505
+    "plays": 505,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-baby-girl-christmas-fun-holiday-game",
@@ -14543,7 +15494,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 504
+    "plays": 504,
+    "platform": "responsive"
   },
   {
     "id": "gm-easter-jigsaw-game",
@@ -14557,7 +15509,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 503
+    "plays": 503,
+    "platform": "responsive"
   },
   {
     "id": "gm-basketball-goat",
@@ -14577,7 +15530,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 500
+    "plays": 500,
+    "platform": "responsive"
   },
   {
     "id": "gm-truck-slam",
@@ -14594,7 +15548,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 499
+    "plays": 499,
+    "platform": "responsive"
   },
   {
     "id": "gm-restaurant-rush",
@@ -14615,7 +15570,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 499
+    "plays": 499,
+    "platform": "responsive"
   },
   {
     "id": "gm-ice-slushy-maker-rainbow-desserts-game",
@@ -14629,7 +15585,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 499
+    "plays": 499,
+    "platform": "responsive"
   },
   {
     "id": "gm-metro-bus-simulator-game",
@@ -14643,7 +15600,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 497
+    "plays": 497,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-it-fish-jigsaw-game",
@@ -14657,7 +15615,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 494
+    "plays": 494,
+    "platform": "responsive"
   },
   {
     "id": "gm-easter-bunny-slide-game",
@@ -14671,7 +15630,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 493
+    "plays": 493,
+    "platform": "responsive"
   },
   {
     "id": "gm-fnf-rainbow-friends-battle-mod-game",
@@ -14685,7 +15645,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 492
+    "plays": 492,
+    "platform": "responsive"
   },
   {
     "id": "gm-driver-highway",
@@ -14706,7 +15667,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 487
+    "plays": 487,
+    "platform": "responsive"
   },
   {
     "id": "gm-christmas-food-click-2024-game",
@@ -14720,7 +15682,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 481
+    "plays": 481,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-kulka",
@@ -14741,7 +15704,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 479
+    "plays": 479,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-hazel-easter-fun-game",
@@ -14755,7 +15719,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 479
+    "plays": 479,
+    "platform": "responsive"
   },
   {
     "id": "gm-head-sport-basketball",
@@ -14772,7 +15737,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 469
+    "plays": 469,
+    "platform": "responsive"
   },
   {
     "id": "gm-cut-art-master",
@@ -14791,7 +15757,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 463
+    "plays": 463,
+    "platform": "mobile"
   },
   {
     "id": "gm-highway-racers",
@@ -14808,7 +15775,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 454
+    "plays": 454,
+    "platform": "responsive"
   },
   {
     "id": "gm-mad-day-special",
@@ -14829,7 +15797,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 453
+    "plays": 453,
+    "platform": "pc"
   },
   {
     "id": "gm-retro-tiny-tennis",
@@ -14849,7 +15818,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 453
+    "plays": 453,
+    "platform": "responsive"
   },
   {
     "id": "gm-ricochet-arena",
@@ -14870,7 +15840,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 452
+    "plays": 452,
+    "platform": "pc"
   },
   {
     "id": "gm-city-ride",
@@ -14891,7 +15862,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 446
+    "plays": 446,
+    "platform": "pc"
   },
   {
     "id": "gm-galaxy-defense",
@@ -14908,7 +15880,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 440
+    "plays": 440,
+    "platform": "responsive"
   },
   {
     "id": "gm-max-speed",
@@ -14929,7 +15902,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 434
+    "plays": 434,
+    "platform": "responsive"
   },
   {
     "id": "gm-arcade-breakout",
@@ -14947,7 +15921,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 429
+    "plays": 429,
+    "platform": "responsive"
   },
   {
     "id": "gm-little-dentist-for-kids",
@@ -14968,7 +15943,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 425
+    "plays": 425,
+    "platform": "responsive"
   },
   {
     "id": "gm-burger-shop",
@@ -14989,7 +15965,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 424
+    "plays": 424,
+    "platform": "responsive"
   },
   {
     "id": "gm-jigsawadventure",
@@ -15005,7 +15982,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 419
+    "plays": 419,
+    "platform": "responsive"
   },
   {
     "id": "gm-geometry-dash-nemesis",
@@ -15024,7 +16002,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 418
+    "plays": 418,
+    "platform": "responsive"
   },
   {
     "id": "gm-vehicle-masters",
@@ -15044,7 +16023,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 417
+    "plays": 417,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-eggs-surprise",
@@ -15065,7 +16045,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 412
+    "plays": 412,
+    "platform": "responsive"
   },
   {
     "id": "gm-panda-adventure",
@@ -15084,7 +16065,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 404
+    "plays": 404,
+    "platform": "responsive"
   },
   {
     "id": "gm-sea-port-controller",
@@ -15102,7 +16084,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 397
+    "plays": 397,
+    "platform": "responsive"
   },
   {
     "id": "gm-slendrina-must-die-the-asylum",
@@ -15118,7 +16101,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 395
+    "plays": 395,
+    "platform": "pc"
   },
   {
     "id": "gm-fall-beans-ultimate-knockout-race",
@@ -15134,7 +16118,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 394
+    "plays": 394,
+    "platform": "responsive"
   },
   {
     "id": "gm-sausage-man-shooting-adventure",
@@ -15153,7 +16138,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 384
+    "plays": 384,
+    "platform": "pc"
   },
   {
     "id": "gm-panda-story",
@@ -15172,7 +16158,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 365
+    "plays": 365,
+    "platform": "responsive"
   },
   {
     "id": "gm-neon-striker",
@@ -15193,7 +16180,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 313
+    "plays": 313,
+    "platform": "responsive"
   },
   {
     "id": "gm-annoying-boss-game",
@@ -15214,7 +16202,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 307
+    "plays": 307,
+    "platform": "pc"
   },
   {
     "id": "gm-street-mayhem-driver",
@@ -15235,7 +16224,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 305
+    "plays": 305,
+    "platform": "pc"
   },
   {
     "id": "gm-brick-game-3d",
@@ -15256,7 +16246,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 302
+    "plays": 302,
+    "platform": "responsive"
   },
   {
     "id": "gm-pacman",
@@ -15276,7 +16267,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 298
+    "plays": 298,
+    "platform": "responsive"
   },
   {
     "id": "gm-rotating-bones",
@@ -15297,7 +16289,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 296
+    "plays": 296,
+    "platform": "responsive"
   },
   {
     "id": "gm-geometry-dash-blackboard",
@@ -15315,7 +16308,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 295
+    "plays": 295,
+    "platform": "pc"
   },
   {
     "id": "gm-one-shot-duel-snipe-hide",
@@ -15334,7 +16328,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 289
+    "plays": 289,
+    "platform": "pc"
   },
   {
     "id": "gm-kofi-adventure",
@@ -15355,7 +16350,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 289
+    "plays": 289,
+    "platform": "responsive"
   },
   {
     "id": "gm-aqua-fish-rush",
@@ -15376,7 +16372,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 285
+    "plays": 285,
+    "platform": "responsive"
   },
   {
     "id": "gm-12-12-game",
@@ -15390,7 +16387,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 275
+    "plays": 275,
+    "platform": "responsive"
   },
   {
     "id": "gm-ring-game",
@@ -15404,7 +16402,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 275
+    "plays": 275,
+    "platform": "responsive"
   },
   {
     "id": "gm-aroka-game",
@@ -15418,7 +16417,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 274
+    "plays": 274,
+    "platform": "responsive"
   },
   {
     "id": "gm-kitty-drop-3d",
@@ -15439,7 +16439,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 272
+    "plays": 272,
+    "platform": "mobile"
   },
   {
     "id": "gm-find-me-game",
@@ -15453,7 +16454,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 271
+    "plays": 271,
+    "platform": "responsive"
   },
   {
     "id": "gm-brickbox-game",
@@ -15467,7 +16469,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 270
+    "plays": 270,
+    "platform": "responsive"
   },
   {
     "id": "gm-set-bot-2-game",
@@ -15481,7 +16484,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 270
+    "plays": 270,
+    "platform": "responsive"
   },
   {
     "id": "gm-rubik-3d-game",
@@ -15495,7 +16499,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 269
+    "plays": 269,
+    "platform": "responsive"
   },
   {
     "id": "gm-ronni-game",
@@ -15509,7 +16514,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 269
+    "plays": 269,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-sixty-game",
@@ -15523,7 +16529,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 268
+    "plays": 268,
+    "platform": "responsive"
   },
   {
     "id": "gm-floppy-bird-game",
@@ -15537,7 +16544,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 268
+    "plays": 268,
+    "platform": "responsive"
   },
   {
     "id": "gm-push-em-all-game",
@@ -15551,7 +16559,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 268
+    "plays": 268,
+    "platform": "responsive"
   },
   {
     "id": "gm-jelly-breaks-game",
@@ -15565,7 +16574,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 267
+    "plays": 267,
+    "platform": "responsive"
   },
   {
     "id": "gm-hidden-kitty-game",
@@ -15579,7 +16589,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 267
+    "plays": 267,
+    "platform": "responsive"
   },
   {
     "id": "gm-hero-inc-2-game",
@@ -15593,7 +16604,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 267
+    "plays": 267,
+    "platform": "responsive"
   },
   {
     "id": "gm-hero-tales-game",
@@ -15607,7 +16619,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 267
+    "plays": 267,
+    "platform": "responsive"
   },
   {
     "id": "gm-ghost-in-the-dark",
@@ -15628,7 +16641,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 266
+    "plays": 266,
+    "platform": "pc"
   },
   {
     "id": "gm-cubecombo-game",
@@ -15642,7 +16656,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 266
+    "plays": 266,
+    "platform": "responsive"
   },
   {
     "id": "gm-fun-bump-3d-game",
@@ -15656,7 +16671,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 266
+    "plays": 266,
+    "platform": "responsive"
   },
   {
     "id": "gm-jack-pumpkin-game",
@@ -15670,7 +16686,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-knife-smash-game",
@@ -15684,7 +16701,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-otaho-bird-game",
@@ -15698,7 +16716,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-master-theif-game",
@@ -15712,7 +16731,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-money-fest-game",
@@ -15726,7 +16746,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-globies-world-game",
@@ -15740,7 +16761,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 265
+    "plays": 265,
+    "platform": "responsive"
   },
   {
     "id": "gm-hook-throw-3d-game",
@@ -15754,7 +16776,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-hit-the-glow-game",
@@ -15768,7 +16791,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-crazy-lemmings-game",
@@ -15782,7 +16806,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-egg-splash-game",
@@ -15796,7 +16821,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-game-changer-game",
@@ -15810,7 +16836,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-staire-race-game",
@@ -15824,7 +16851,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 264
+    "plays": 264,
+    "platform": "responsive"
   },
   {
     "id": "gm-silhouette-art-game",
@@ -15838,7 +16866,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-nut-and-bolt-game",
@@ -15852,7 +16881,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-disco-sheep-game",
@@ -15866,7 +16896,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-air-horn-game",
@@ -15880,7 +16911,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-pocket-wings-game",
@@ -15894,7 +16926,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-detto-man-2-game",
@@ -15908,7 +16941,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-open-the-pin-game",
@@ -15922,7 +16956,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-tap-tap-dash-game",
@@ -15936,7 +16971,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-kangahang-game",
@@ -15950,7 +16986,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-box-vs-triangles-2-game",
@@ -15964,7 +17001,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 263
+    "plays": 263,
+    "platform": "responsive"
   },
   {
     "id": "gm-astro-destroyer-game",
@@ -15978,7 +17016,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-t-rex-n-y-online-game",
@@ -15992,7 +17031,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-higpp-game",
@@ -16006,7 +17046,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-zigzag-glide-game",
@@ -16020,7 +17061,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-gozu-adventures-2-game",
@@ -16034,7 +17076,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxes-funny-game",
@@ -16048,7 +17091,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-push-him-game",
@@ -16062,7 +17106,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-save-the-miner-game",
@@ -16076,7 +17121,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-pop-candies-game",
@@ -16090,7 +17136,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-ant-city-game",
@@ -16104,7 +17151,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-crush-all-game",
@@ -16118,7 +17166,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-piggy-night-game",
@@ -16132,7 +17181,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 262
+    "plays": 262,
+    "platform": "responsive"
   },
   {
     "id": "gm-save-the-ghost-game",
@@ -16146,7 +17196,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-hippo-pizzeria-game",
@@ -16160,7 +17211,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-yummy-link-game",
@@ -16174,7 +17226,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-army-commando-game",
@@ -16188,7 +17241,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-emoji-make-up-game",
@@ -16202,7 +17256,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-find-the-treasure-game",
@@ -16216,7 +17271,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 261
+    "plays": 261,
+    "platform": "responsive"
   },
   {
     "id": "gm-wild-west-gold-rush",
@@ -16237,7 +17293,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "mobile"
   },
   {
     "id": "gm-phone-case-diy-3-game",
@@ -16251,7 +17308,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-agent-skibidi-game",
@@ -16265,7 +17323,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-birds-of-prey-slide-game",
@@ -16279,7 +17338,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-whack-e-m-all-game",
@@ -16293,7 +17353,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-dungeon-game",
@@ -16307,7 +17368,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-brawl-star-game",
@@ -16321,7 +17383,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-kaka-bot-2-game",
@@ -16335,7 +17398,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-pick-a-lock-game",
@@ -16349,7 +17413,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-pizza-maker-master-game",
@@ -16363,7 +17428,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-bomber-man-game",
@@ -16377,7 +17443,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-first-day-of-school-game",
@@ -16391,7 +17458,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-rexo-2-game",
@@ -16405,7 +17473,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-daily-habits-game",
@@ -16419,7 +17488,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 260
+    "plays": 260,
+    "platform": "responsive"
   },
   {
     "id": "gm-chicken-shooting-2d-game",
@@ -16433,7 +17503,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-gladiators-game",
@@ -16447,7 +17518,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-zombo-game",
@@ -16461,7 +17533,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-cluckles-game",
@@ -16475,7 +17548,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-buddy-kick-2-game",
@@ -16489,7 +17563,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-lumberjack-river-game",
@@ -16503,7 +17578,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-mob-city-game",
@@ -16517,7 +17593,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-kai-archer-game",
@@ -16531,7 +17608,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 259
+    "plays": 259,
+    "platform": "responsive"
   },
   {
     "id": "gm-dino-hide-n-shoot-game",
@@ -16545,7 +17623,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-la-shark-game",
@@ -16559,7 +17638,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-owl-cant-sleep-game",
@@ -16573,7 +17653,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-star-girls-makeover-game",
@@ -16587,7 +17668,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-airport-security-game",
@@ -16601,7 +17683,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-geometry-dash-subzero-arcade-game",
@@ -16615,7 +17698,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 258
+    "plays": 258,
+    "platform": "responsive"
   },
   {
     "id": "gm-street-food-deep-fried-game",
@@ -16629,7 +17713,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-hand-over-hand-game",
@@ -16643,7 +17728,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-paws-and-claws-game",
@@ -16657,7 +17743,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-family-road-trip-game",
@@ -16671,7 +17758,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-subaru-brz-slide-game",
@@ -16685,7 +17773,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-force-master-3d-game",
@@ -16699,7 +17788,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-president-party-game",
@@ -16713,7 +17803,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-sea-fish-game",
@@ -16727,7 +17818,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-ultimate-plants-td-game",
@@ -16741,7 +17833,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 257
+    "plays": 257,
+    "platform": "responsive"
   },
   {
     "id": "gm-teen-titans-hidden-game",
@@ -16755,7 +17848,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-airport-manager-master-game",
@@ -16769,7 +17863,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-typeshift-game",
@@ -16783,7 +17878,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-geometry-dash-clone-game",
@@ -16797,7 +17893,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-breaking-fall-game",
@@ -16811,7 +17908,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-charge-now-game",
@@ -16825,7 +17923,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-roller-to-sky-3d-game",
@@ -16839,7 +17938,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-tattoo-salon-art-design-game",
@@ -16853,7 +17953,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 256
+    "plays": 256,
+    "platform": "responsive"
   },
   {
     "id": "gm-mermaids-slide-game",
@@ -16867,7 +17968,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 255
+    "plays": 255,
+    "platform": "responsive"
   },
   {
     "id": "gm-five-nights-at-freddy-s-game",
@@ -16881,7 +17983,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 255
+    "plays": 255,
+    "platform": "responsive"
   },
   {
     "id": "gm-hungry-chameleon-game",
@@ -16895,7 +17998,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 255
+    "plays": 255,
+    "platform": "responsive"
   },
   {
     "id": "gm-miner-dash-game",
@@ -16909,7 +18013,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 255
+    "plays": 255,
+    "platform": "responsive"
   },
   {
     "id": "gm-arrow-hit-game",
@@ -16923,7 +18028,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-fps-cow-boy-game",
@@ -16937,7 +18043,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-red-impostor-solo-kill-game",
@@ -16951,7 +18058,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-meet-the-birds-game",
@@ -16965,7 +18073,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-girl-animal-save-game",
@@ -16979,7 +18088,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-prime-snooker-showdown-game",
@@ -16993,7 +18103,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-galactic-attack-game",
@@ -17007,7 +18118,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-last-viking-game",
@@ -17021,7 +18133,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 254
+    "plays": 254,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-taylor-bed-time-game",
@@ -17035,7 +18148,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-chicken-ko-game",
@@ -17049,7 +18163,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-bunny-goal-game",
@@ -17063,7 +18178,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-tic-tac-toe-pro-game",
@@ -17077,7 +18193,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-hungry-crab-game",
@@ -17091,7 +18208,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-xo-game-game",
@@ -17105,7 +18223,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-fatty-ken-game",
@@ -17119,7 +18238,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-type-it-game",
@@ -17133,7 +18253,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-voodoo-doll-game-game",
@@ -17147,7 +18268,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-kick-game-game",
@@ -17161,7 +18283,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-mini-steps-game",
@@ -17175,7 +18298,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-bridge-ladder-game",
@@ -17189,7 +18313,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-nissan-ariya-concept-slide-game",
@@ -17203,7 +18328,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-snowman-family-time-game",
@@ -17217,7 +18343,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-angry-bull-game",
@@ -17231,7 +18358,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-limo-city-drive-2020-game",
@@ -17245,7 +18373,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-toilet-roll-game",
@@ -17259,7 +18388,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 253
+    "plays": 253,
+    "platform": "responsive"
   },
   {
     "id": "gm-bffs-golden-hour-game",
@@ -17273,7 +18403,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-horse-slide-game",
@@ -17287,7 +18418,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "pc"
   },
   {
     "id": "gm-dont-drop-the-pig-game",
@@ -17301,7 +18433,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-battboy-adventure-game",
@@ -17315,7 +18448,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-play-game-online-all-mode-game",
@@ -17329,7 +18463,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-yoyo-hero-3d-game",
@@ -17343,7 +18478,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-avatar-maker-mermaid-game",
@@ -17357,7 +18493,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-donuts-pop-game",
@@ -17371,7 +18508,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-save-the-fish-game",
@@ -17385,7 +18523,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-flying-bat-game",
@@ -17399,7 +18538,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-unicorn-chef-mermaid-cake-game",
@@ -17413,7 +18553,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 252
+    "plays": 252,
+    "platform": "responsive"
   },
   {
     "id": "gm-hello-kitty-good-night-game",
@@ -17427,7 +18568,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-wanted-dead-or-alive-game",
@@ -17441,7 +18583,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-mister-lifter-game",
@@ -17455,7 +18598,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxy-boo-poppy-playtime-game",
@@ -17469,7 +18613,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-phone-case-diy-2-casetify-game-game",
@@ -17483,7 +18628,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-35-arcade-games-2022-game",
@@ -17497,7 +18643,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-hekov-bot-game",
@@ -17511,7 +18658,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 251
+    "plays": 251,
+    "platform": "responsive"
   },
   {
     "id": "gm-fish-trip-game",
@@ -17525,7 +18673,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-imposter-assassin-3d-game",
@@ -17539,7 +18688,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-teen-titans-go-swamp-attack-game",
@@ -17553,7 +18703,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-headlight-heroes-game",
@@ -17567,7 +18718,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-evil-grandpa-chainsaw-killer-game",
@@ -17581,7 +18733,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-lane-change-3d-game",
@@ -17595,7 +18748,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-red-us-2-game",
@@ -17609,7 +18763,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-turbo-skater-race-stars-game",
@@ -17623,7 +18778,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-hazel-first-rain-game",
@@ -17637,7 +18793,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-lost-kitty-go-home-game",
@@ -17651,7 +18808,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 250
+    "plays": 250,
+    "platform": "responsive"
   },
   {
     "id": "gm-save-woman-game",
@@ -17665,7 +18823,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-fidget-pop-online-game",
@@ -17679,7 +18838,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-aim-game",
@@ -17693,7 +18853,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "pc"
   },
   {
     "id": "gm-sausage-party-game",
@@ -17707,7 +18868,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-rotare-2021-game",
@@ -17721,7 +18883,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-five-hoops-game",
@@ -17735,7 +18898,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-stick-santa-game",
@@ -17749,7 +18913,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-box-of-sport-games-game",
@@ -17763,7 +18928,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 249
+    "plays": 249,
+    "platform": "responsive"
   },
   {
     "id": "gm-polygon-flight-simulator-game",
@@ -17777,7 +18943,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-dora-find-5-differences-game",
@@ -17791,7 +18958,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-who-will-save-game",
@@ -17805,7 +18973,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-red-and-blue-adventure-2-game",
@@ -17819,7 +18988,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-classic-tetrix-game",
@@ -17833,7 +19003,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-kitty-meow-meow-city-heroes-game",
@@ -17847,7 +19018,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-hair-salon-game",
@@ -17861,7 +19033,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-hospital-doctor-help-game",
@@ -17875,7 +19048,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-hex-2048-game",
@@ -17889,7 +19063,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-masha-pizza-maker-pizzeria-game",
@@ -17903,7 +19078,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxes-physic-game",
@@ -17917,7 +19093,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 248
+    "plays": 248,
+    "platform": "responsive"
   },
   {
     "id": "gm-zwnj-single-stroke-trail",
@@ -17934,7 +19111,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "mobile"
   },
   {
     "id": "gm-siren-head-3-game-game",
@@ -17948,7 +19126,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-phantom-rabbit-game",
@@ -17962,7 +19141,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-light-stream-game",
@@ -17976,7 +19156,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-mad-joker-game",
@@ -17990,7 +19171,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-moto-maniac-3-game",
@@ -18004,7 +19186,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-turn-over-master-driving-game-game",
@@ -18018,7 +19201,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-bodyparts-game",
@@ -18032,7 +19216,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-perfect-tongue-fun-run-3d-game-game",
@@ -18046,7 +19231,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-geometry-dash-game",
@@ -18060,7 +19246,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-weird-pong-game",
@@ -18074,7 +19261,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-taylor-build-a-treehouse-game",
@@ -18088,7 +19276,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-kart-race-game",
@@ -18102,7 +19291,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-it-xmas-game",
@@ -18116,7 +19306,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-barbie-with-kitty-game",
@@ -18130,7 +19321,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 247
+    "plays": 247,
+    "platform": "responsive"
   },
   {
     "id": "gm-what-kind-of-santa-claus-are-you-game",
@@ -18144,7 +19336,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-solve-game",
@@ -18158,7 +19351,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-the-imposter-game",
@@ -18172,7 +19366,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-gift-glide-game",
@@ -18186,7 +19381,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-zumba-quest-game",
@@ -18200,7 +19396,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-stairway-to-heaven-game",
@@ -18214,7 +19411,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-passenger-overloaded-game",
@@ -18228,7 +19426,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-jack-game",
@@ -18242,7 +19441,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-cafe-3-in-a-row-game",
@@ -18256,7 +19456,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-1010-treasure-rush-game",
@@ -18270,7 +19471,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-archer-shot-game",
@@ -18284,7 +19486,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 246
+    "plays": 246,
+    "platform": "responsive"
   },
   {
     "id": "gm-poppy-strike-4-game",
@@ -18298,7 +19501,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-rage-road-online-game",
@@ -18312,7 +19516,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-pick-go-game",
@@ -18326,7 +19531,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-black-sphere-game",
@@ -18340,7 +19546,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-crazy-cone-sweeper-game",
@@ -18354,7 +19561,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-find-the-girl-s-house-key-game",
@@ -18368,7 +19576,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-school-games-2023-game",
@@ -18382,7 +19591,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-droid-adventure-game",
@@ -18396,7 +19606,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-spiderman-scene-creator-game",
@@ -18410,7 +19621,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-wheel-of-fortune-game",
@@ -18424,7 +19636,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-red-handed-game",
@@ -18438,7 +19651,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-skull-racer-game",
@@ -18452,7 +19666,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-shot-them-all-game",
@@ -18466,7 +19681,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-everwing-game",
@@ -18480,7 +19696,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-march-madnesss-game",
@@ -18494,7 +19711,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-plumber-game",
@@ -18508,7 +19726,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-helle-bot-2-game",
@@ -18522,7 +19741,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-rabbitii-game",
@@ -18536,7 +19756,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 245
+    "plays": 245,
+    "platform": "responsive"
   },
   {
     "id": "gm-slenderman-lost-at-school",
@@ -18554,7 +19775,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "pc"
   },
   {
     "id": "gm-aquapark-shark-game",
@@ -18568,7 +19790,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-gift-drop-game",
@@ -18582,7 +19805,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-guy-2024-game",
@@ -18596,7 +19820,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-dr-driver-2-game",
@@ -18610,7 +19835,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-ice-cube-man-2-game",
@@ -18624,7 +19850,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-fall-boxes-game",
@@ -18638,7 +19865,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-celebrity-social-media-adventure-game",
@@ -18652,7 +19880,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-rick-and-morty-hidden-game",
@@ -18666,7 +19895,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 244
+    "plays": 244,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-piano-children-song-game",
@@ -18680,7 +19910,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-killmaster-secret-agent-game",
@@ -18694,7 +19925,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-boxes-chaser-game",
@@ -18708,7 +19940,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-jelly-dye-game",
@@ -18722,7 +19955,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-ski-xmas-game",
@@ -18736,7 +19970,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-snowman-slide-game",
@@ -18750,7 +19985,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-man-game",
@@ -18764,7 +20000,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-squid-game-game",
@@ -18778,7 +20015,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 243
+    "plays": 243,
+    "platform": "responsive"
   },
   {
     "id": "gm-cleaner-race-game",
@@ -18792,7 +20030,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-percys-froggy-frenzy-game",
@@ -18806,7 +20045,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-celebrity-pimple-pop-game",
@@ -18820,7 +20060,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-factory-game",
@@ -18834,7 +20075,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "mobile"
   },
   {
     "id": "gm-billards-hd-game",
@@ -18848,7 +20090,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-pumper-crazy-defence-game",
@@ -18862,7 +20105,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-moto-skyrace-mayhem-game",
@@ -18876,7 +20120,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-home-scapes-game",
@@ -18890,7 +20135,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-pivot-strike-game",
@@ -18904,7 +20150,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-daring-jack-game",
@@ -18918,7 +20165,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-new-city-simulator-game",
@@ -18932,7 +20180,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-cops-chase-game",
@@ -18946,7 +20195,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 242
+    "plays": 242,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-adventure-of-finn-bonnie-game",
@@ -18960,7 +20210,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-red-and-green-3-game",
@@ -18974,7 +20225,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-scavenger-game",
@@ -18988,7 +20240,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-mommy-stikman-vs-huggy-wuggy-game",
@@ -19002,7 +20255,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-chen-bots-2-game",
@@ -19016,7 +20270,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-royal-girl-wedding-day-game",
@@ -19030,7 +20285,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-ben-10-hidden-keys-game",
@@ -19044,7 +20300,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-hugie-wugie-slide-game",
@@ -19058,7 +20315,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-bunny-devil-game",
@@ -19072,7 +20330,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-kids-animal-fun-game",
@@ -19086,7 +20345,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 241
+    "plays": 241,
+    "platform": "responsive"
   },
   {
     "id": "gm-rise-up-free-arcade-game-game",
@@ -19100,7 +20360,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 240
+    "plays": 240,
+    "platform": "responsive"
   },
   {
     "id": "gm-roof-rails-color-stack-3d-game",
@@ -19114,7 +20375,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 240
+    "plays": 240,
+    "platform": "responsive"
   },
   {
     "id": "gm-purple-and-pink-2-game",
@@ -19128,7 +20390,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 240
+    "plays": 240,
+    "platform": "responsive"
   },
   {
     "id": "gm-corona-vaccinee-game",
@@ -19142,7 +20405,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 240
+    "plays": 240,
+    "platform": "responsive"
   },
   {
     "id": "gm-santa-claus-funny-time-game",
@@ -19156,7 +20420,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-street-food-maker-game",
@@ -19170,7 +20435,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-grapple-grip-game",
@@ -19184,7 +20450,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-chicken-love-game",
@@ -19198,7 +20465,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-frog-feast-game",
@@ -19212,7 +20480,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-corn-scraper-game",
@@ -19226,7 +20495,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-hungry-shapes-game",
@@ -19240,7 +20510,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-magical-eats-game",
@@ -19254,7 +20525,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-dentist-master-2d-game",
@@ -19268,7 +20540,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-smile-style-game",
@@ -19282,7 +20555,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-pint-the-cactus-game",
@@ -19296,7 +20570,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-juice-fresh-game",
@@ -19310,7 +20585,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 239
+    "plays": 239,
+    "platform": "responsive"
   },
   {
     "id": "gm-command-strike-fps-offline-game",
@@ -19324,7 +20600,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-astronout-destroyer-game",
@@ -19338,7 +20615,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-epic-ring-of-power-game",
@@ -19352,7 +20630,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-make-up-cosmetic-box-cake-maker-best-cooking-game-game",
@@ -19366,7 +20645,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-dolly-wants-to-play-game",
@@ -19380,7 +20660,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-us-online-play-game",
@@ -19394,7 +20675,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-mickey-mouse-hidden-stars-game",
@@ -19408,7 +20690,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-hospital-game-new-surgery-doctor-simulator-game",
@@ -19422,7 +20705,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 238
+    "plays": 238,
+    "platform": "responsive"
   },
   {
     "id": "gm-fastlane-revenge-online-game",
@@ -19436,7 +20720,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 237
+    "plays": 237,
+    "platform": "responsive"
   },
   {
     "id": "gm-winx-bloom-casual-game",
@@ -19450,7 +20735,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 237
+    "plays": 237,
+    "platform": "responsive"
   },
   {
     "id": "gm-tiktok-inspired-outfits-game",
@@ -19464,7 +20750,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 237
+    "plays": 237,
+    "platform": "responsive"
   },
   {
     "id": "gm-unscrew-them-all-game",
@@ -19478,7 +20765,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 237
+    "plays": 237,
+    "platform": "responsive"
   },
   {
     "id": "gm-candi-cruz-saga-game",
@@ -19492,7 +20780,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 237
+    "plays": 237,
+    "platform": "responsive"
   },
   {
     "id": "gm-mob-control-shoot-game",
@@ -19506,7 +20795,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-wrestle-online-sports-game-game",
@@ -19520,7 +20810,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-double-wedding-look-game",
@@ -19534,7 +20825,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-crazy-glass-legend-game",
@@ -19548,7 +20840,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-dangerous-parachute-game",
@@ -19562,7 +20855,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-choo-choo-train-for-kids-game",
@@ -19576,7 +20870,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-city-constructor-driver-3d-fun-run-3d-game-game",
@@ -19590,7 +20885,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-highschool-cheerleader-2-game",
@@ -19604,7 +20900,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 236
+    "plays": 236,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-of-alice-parts-of-the-house-game",
@@ -19618,7 +20915,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 235
+    "plays": 235,
+    "platform": "responsive"
   },
   {
     "id": "gm-bloody-nightmare-game",
@@ -19632,7 +20930,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 235
+    "plays": 235,
+    "platform": "responsive"
   },
   {
     "id": "gm-noob-steve-cave-game",
@@ -19646,7 +20945,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 235
+    "plays": 235,
+    "platform": "responsive"
   },
   {
     "id": "gm-skibidi-elastic-head-game",
@@ -19660,7 +20960,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-coachella-hairstyle-design-game",
@@ -19674,7 +20975,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-world-cup-game",
@@ -19688,7 +20990,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-fps-shooting-game-multiplayer-game",
@@ -19702,7 +21005,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-street-encounter-game",
@@ -19716,7 +21020,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-game-the-revenge-game",
@@ -19730,7 +21035,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-heros-combat-flying-game",
@@ -19744,7 +21050,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 234
+    "plays": 234,
+    "platform": "responsive"
   },
   {
     "id": "gm-mage-girl-adventure-game",
@@ -19758,7 +21065,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 233
+    "plays": 233,
+    "platform": "responsive"
   },
   {
     "id": "gm-jungle-plumber-challenge-2-game",
@@ -19772,7 +21080,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 233
+    "plays": 233,
+    "platform": "responsive"
   },
   {
     "id": "gm-swamp-attack-online-game",
@@ -19786,7 +21095,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "responsive"
   },
   {
     "id": "gm-dolls-surprise-kinder-eggs-game",
@@ -19800,7 +21110,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "responsive"
   },
   {
     "id": "gm-big-team-game",
@@ -19814,7 +21125,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "mobile"
   },
   {
     "id": "gm-dungeon-caves-game",
@@ -19828,7 +21140,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "responsive"
   },
   {
     "id": "gm-platform-adventure-go-game",
@@ -19842,7 +21155,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "responsive"
   },
   {
     "id": "gm-frogman-vs-maskguy-game",
@@ -19856,7 +21170,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 232
+    "plays": 232,
+    "platform": "responsive"
   },
   {
     "id": "gm-sushi-drop",
@@ -19876,7 +21191,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-staircase-to-heaven-game",
@@ -19890,7 +21206,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-hippo-valentine-s-cafe-game-game",
@@ -19904,7 +21221,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-feed-pac-game",
@@ -19918,7 +21236,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-corsair-hidden-things-game",
@@ -19932,7 +21251,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-animal-dental-hospital-game",
@@ -19946,7 +21266,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-first-aid-tips-game",
@@ -19960,7 +21281,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-back-2-school-makeover-game",
@@ -19974,7 +21296,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-disney-super-arcade-game",
@@ -19988,7 +21311,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 231
+    "plays": 231,
+    "platform": "responsive"
   },
   {
     "id": "gm-cinema-lovers-hidden-kiss-game",
@@ -20002,7 +21326,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 230
+    "plays": 230,
+    "platform": "responsive"
   },
   {
     "id": "gm-hidden-objects-hello-love-game",
@@ -20016,7 +21341,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 230
+    "plays": 230,
+    "platform": "responsive"
   },
   {
     "id": "gm-critical-strike-global-ops-game",
@@ -20030,7 +21356,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 229
+    "plays": 229,
+    "platform": "responsive"
   },
   {
     "id": "gm-my-secret-college-crush-game",
@@ -20044,7 +21371,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 229
+    "plays": 229,
+    "platform": "responsive"
   },
   {
     "id": "gm-go-santa-go",
@@ -20065,7 +21393,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 228
+    "plays": 228,
+    "platform": "responsive"
   },
   {
     "id": "gm-stick-archer-game",
@@ -20079,7 +21408,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 228
+    "plays": 228,
+    "platform": "responsive"
   },
   {
     "id": "gm-power-rangers-skateboading-game",
@@ -20093,7 +21423,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 228
+    "plays": 228,
+    "platform": "responsive"
   },
   {
     "id": "gm-chip-and-dale-2021-slide-game",
@@ -20107,7 +21438,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 228
+    "plays": 228,
+    "platform": "responsive"
   },
   {
     "id": "gm-honey-bear-game",
@@ -20121,7 +21453,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 227
+    "plays": 227,
+    "platform": "responsive"
   },
   {
     "id": "gm-tuktuk-chingchi-rickshaw-3d-game",
@@ -20135,7 +21468,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 227
+    "plays": 227,
+    "platform": "responsive"
   },
   {
     "id": "gm-hippo-family-airport-adventure-game",
@@ -20149,7 +21483,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 227
+    "plays": 227,
+    "platform": "responsive"
   },
   {
     "id": "gm-real-jcb-excavator-simulator-game",
@@ -20163,7 +21498,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 226
+    "plays": 226,
+    "platform": "responsive"
   },
   {
     "id": "gm-gladiator-game",
@@ -20177,7 +21513,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 225
+    "plays": 225,
+    "platform": "responsive"
   },
   {
     "id": "gm-imposter-attack-solo-killer-game",
@@ -20191,7 +21528,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 225
+    "plays": 225,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-hazel-new-year-party-game",
@@ -20205,7 +21543,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 225
+    "plays": 225,
+    "platform": "responsive"
   },
   {
     "id": "gm-camping-adventures-family-road-game",
@@ -20219,7 +21558,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 225
+    "plays": 225,
+    "platform": "responsive"
   },
   {
     "id": "gm-jail-drop",
@@ -20240,7 +21580,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 224
+    "plays": 224,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-panda-earthquake-safety-game",
@@ -20254,7 +21595,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 224
+    "plays": 224,
+    "platform": "responsive"
   },
   {
     "id": "gm-santa-claus-miracle-hidden-game",
@@ -20268,7 +21610,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 224
+    "plays": 224,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-powerpuff-girls-differences-game",
@@ -20282,7 +21625,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 222
+    "plays": 222,
+    "platform": "responsive"
   },
   {
     "id": "gm-nail-salon-girls-nail-design-game",
@@ -20296,7 +21640,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "responsive"
   },
   {
     "id": "gm-bullet-bender-mr-bollet-game",
@@ -20310,7 +21655,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "mobile"
   },
   {
     "id": "gm-kick-game",
@@ -20324,7 +21670,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "responsive"
   },
   {
     "id": "gm-wedding-game",
@@ -20338,7 +21685,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "responsive"
   },
   {
     "id": "gm-funnyvehicles-game",
@@ -20352,7 +21700,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "responsive"
   },
   {
     "id": "gm-tap-switch-game",
@@ -20366,7 +21715,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "mobile"
   },
   {
     "id": "gm-crazy-caves-2-game",
@@ -20380,7 +21730,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "mobile"
   },
   {
     "id": "gm-strawberry-shortcake-bake-shop-desserts-cooking-game",
@@ -20394,7 +21745,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 221
+    "plays": 221,
+    "platform": "responsive"
   },
   {
     "id": "gm-pop-it-infinity",
@@ -20415,7 +21767,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 220
+    "plays": 220,
+    "platform": "responsive"
   },
   {
     "id": "gm-nina-the-killer-go-to-sleep-my-prince-game",
@@ -20429,7 +21782,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 220
+    "plays": 220,
+    "platform": "responsive"
   },
   {
     "id": "gm-sweet-baby-girl-cleanup-messy-house-game",
@@ -20443,7 +21797,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 220
+    "plays": 220,
+    "platform": "responsive"
   },
   {
     "id": "gm-safari-ride-difference-game",
@@ -20457,7 +21812,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 219
+    "plays": 219,
+    "platform": "pc"
   },
   {
     "id": "gm-masha-bee-hand-doctor-game-online-hospital-surgery-game",
@@ -20471,7 +21827,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 219
+    "plays": 219,
+    "platform": "responsive"
   },
   {
     "id": "gm-adventure-home-game",
@@ -20485,7 +21842,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 218
+    "plays": 218,
+    "platform": "responsive"
   },
   {
     "id": "gm-ben-10-t-rex-runner-game",
@@ -20499,7 +21857,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 218
+    "plays": 218,
+    "platform": "responsive"
   },
   {
     "id": "gm-samurai-game",
@@ -20513,7 +21872,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 218
+    "plays": 218,
+    "platform": "responsive"
   },
   {
     "id": "gm-free-kick-game",
@@ -20527,7 +21887,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 218
+    "plays": 218,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-anime-piano-hero-academia-games-game",
@@ -20541,7 +21902,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 218
+    "plays": 218,
+    "platform": "responsive"
   },
   {
     "id": "gm-mega-fall-ragdoll-simulator-game",
@@ -20555,7 +21917,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 217
+    "plays": 217,
+    "platform": "responsive"
   },
   {
     "id": "gm-dangerous-circle-online-game",
@@ -20569,7 +21932,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 217
+    "plays": 217,
+    "platform": "responsive"
   },
   {
     "id": "gm-squid-game-green-light-red-light-hints-game",
@@ -20583,7 +21947,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 216
+    "plays": 216,
+    "platform": "responsive"
   },
   {
     "id": "gm-santa-weightlifter-game",
@@ -20597,7 +21962,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 216
+    "plays": 216,
+    "platform": "responsive"
   },
   {
     "id": "gm-celebrity-game",
@@ -20611,7 +21977,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 216
+    "plays": 216,
+    "platform": "responsive"
   },
   {
     "id": "gm-among-impostor-collapse-game",
@@ -20625,7 +21992,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 216
+    "plays": 216,
+    "platform": "responsive"
   },
   {
     "id": "gm-popular-hair-salon-game",
@@ -20639,7 +22007,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 215
+    "plays": 215,
+    "platform": "responsive"
   },
   {
     "id": "gm-brick-breaker",
@@ -20660,7 +22029,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 213
+    "plays": 213,
+    "platform": "responsive"
   },
   {
     "id": "gm-hop-hop",
@@ -20681,7 +22051,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 213
+    "plays": 213,
+    "platform": "responsive"
   },
   {
     "id": "gm-castel-game-game",
@@ -20695,7 +22066,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 213
+    "plays": 213,
+    "platform": "mobile"
   },
   {
     "id": "gm-penalty-shootout-game",
@@ -20709,7 +22081,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 213
+    "plays": 213,
+    "platform": "responsive"
   },
   {
     "id": "gm-wonderful-high-heels-game",
@@ -20723,7 +22096,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 213
+    "plays": 213,
+    "platform": "responsive"
   },
   {
     "id": "gm-baby-repeater",
@@ -20744,7 +22118,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 212
+    "plays": 212,
+    "platform": "responsive"
   },
   {
     "id": "gm-kingdom-of-pixels-game",
@@ -20758,7 +22133,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 212
+    "plays": 212,
+    "platform": "responsive"
   },
   {
     "id": "gm-goal-game",
@@ -20772,7 +22148,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 212
+    "plays": 212,
+    "platform": "responsive"
   },
   {
     "id": "gm-side-off-game",
@@ -20786,7 +22163,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 210
+    "plays": 210,
+    "platform": "responsive"
   },
   {
     "id": "gm-power-game",
@@ -20800,7 +22178,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 208
+    "plays": 208,
+    "platform": "responsive"
   },
   {
     "id": "gm-pizza-game",
@@ -20814,7 +22193,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 208
+    "plays": 208,
+    "platform": "responsive"
   },
   {
     "id": "gm-ice-cream-game",
@@ -20828,7 +22208,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 208
+    "plays": 208,
+    "platform": "responsive"
   },
   {
     "id": "gm-retro-blaster",
@@ -20849,7 +22230,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 206
+    "plays": 206,
+    "platform": "responsive"
   },
   {
     "id": "gm-tattoo-dash-artistic-designs-shop-simulator-game-game",
@@ -20863,7 +22245,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 205
+    "plays": 205,
+    "platform": "responsive"
   },
   {
     "id": "gm-don-t-tap-the-white-tile-game",
@@ -20877,7 +22260,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 203
+    "plays": 203,
+    "platform": "responsive"
   },
   {
     "id": "gm-banana-joe",
@@ -20898,7 +22282,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 202
+    "plays": 202,
+    "platform": "responsive"
   },
   {
     "id": "gm-foot-doctor-simulator",
@@ -20919,7 +22304,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 202
+    "plays": 202,
+    "platform": "responsive"
   },
   {
     "id": "gm-save-the-girl-game",
@@ -20933,7 +22319,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 202
+    "plays": 202,
+    "platform": "responsive"
   },
   {
     "id": "gm-trap-cursor",
@@ -20954,7 +22341,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 201
+    "plays": 201,
+    "platform": "responsive"
   },
   {
     "id": "gm-nitro-rally",
@@ -20975,7 +22363,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 200
+    "plays": 200,
+    "platform": "responsive"
   },
   {
     "id": "gm-neon-blaster",
@@ -20995,7 +22384,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 200
+    "plays": 200,
+    "platform": "responsive"
   },
   {
     "id": "gm-ice-man-3d-game",
@@ -21009,7 +22399,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 200
+    "plays": 200,
+    "platform": "responsive"
   },
   {
     "id": "gm-perfect-tongue",
@@ -21030,7 +22421,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 198
+    "plays": 198,
+    "platform": "mobile"
   },
   {
     "id": "gm-forest-man",
@@ -21049,7 +22441,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 198
+    "plays": 198,
+    "platform": "responsive"
   },
   {
     "id": "gm-spa-with-daddy-game",
@@ -21063,7 +22456,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 196
+    "plays": 196,
+    "platform": "responsive"
   },
   {
     "id": "gm-memorize-the-birds-game",
@@ -21077,7 +22471,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 196
+    "plays": 196,
+    "platform": "responsive"
   },
   {
     "id": "gm-nitro-rally-time-attack-2",
@@ -21099,7 +22494,8 @@ var GAMES = [
     "trending": true,
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 194
+    "plays": 194,
+    "platform": "responsive"
   },
   {
     "id": "gm-target-hit-shooting-range",
@@ -21120,7 +22516,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 194
+    "plays": 194,
+    "platform": "pc"
   },
   {
     "id": "gm-burger-game",
@@ -21134,7 +22531,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 194
+    "plays": 194,
+    "platform": "responsive"
   },
   {
     "id": "gm-girl-beauty-salon-game",
@@ -21148,7 +22546,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 193
+    "plays": 193,
+    "platform": "responsive"
   },
   {
     "id": "gm-ants-touch-game",
@@ -21162,7 +22561,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 191
+    "plays": 191,
+    "platform": "responsive"
   },
   {
     "id": "gm-the-crazy-dentist-wojak-game-game",
@@ -21176,7 +22576,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 191
+    "plays": 191,
+    "platform": "responsive"
   },
   {
     "id": "gm-formula-1-race",
@@ -21197,7 +22598,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 189
+    "plays": 189,
+    "platform": "responsive"
   },
   {
     "id": "gm-nastya-hand-doctor-fun-games-for-girls-online-game",
@@ -21211,7 +22613,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 188
+    "plays": 188,
+    "platform": "mobile"
   },
   {
     "id": "gm-jungle-animal-summer-makeover-game-game",
@@ -21225,7 +22628,8 @@ var GAMES = [
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 187
+    "plays": 187,
+    "platform": "responsive"
   },
   {
     "id": "gm-arcade-pong-deluxe",
@@ -21245,7 +22649,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 184
+    "plays": 184,
+    "platform": "responsive"
   },
   {
     "id": "gm-motocross-22",
@@ -21265,7 +22670,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 182
+    "plays": 182,
+    "platform": "responsive"
   },
   {
     "id": "gm-little-bubu-fillz",
@@ -21286,7 +22692,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 182
+    "plays": 182,
+    "platform": "mobile"
   },
   {
     "id": "gm-super-coconut-basket",
@@ -21304,7 +22711,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 182
+    "plays": 182,
+    "platform": "responsive"
   },
   {
     "id": "gm-ms-pacman",
@@ -21323,7 +22731,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 180
+    "plays": 180,
+    "platform": "responsive"
   },
   {
     "id": "gm-zumba-mania",
@@ -21341,7 +22750,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 180
+    "plays": 180,
+    "platform": "responsive"
   },
   {
     "id": "gm-apex-racer",
@@ -21360,7 +22770,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 178
+    "plays": 178,
+    "platform": "responsive"
   },
   {
     "id": "gm-super-goal-keeper",
@@ -21381,7 +22792,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 176
+    "plays": 176,
+    "platform": "responsive"
   },
   {
     "id": "gm-find-the-missing-letter",
@@ -21402,7 +22814,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 175
+    "plays": 175,
+    "platform": "responsive"
   },
   {
     "id": "gm-voxel-frontier",
@@ -21423,7 +22836,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 172
+    "plays": 172,
+    "platform": "responsive"
   },
   {
     "id": "gm-memorize-and-repeat-the-shape",
@@ -21444,7 +22858,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 169
+    "plays": 169,
+    "platform": "mobile"
   },
   {
     "id": "gm-pacman-adventure",
@@ -21465,7 +22880,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 166
+    "plays": 166,
+    "platform": "mobile"
   },
   {
     "id": "gm-geometry-goal-dash-2026",
@@ -21486,7 +22902,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 165
+    "plays": 165,
+    "platform": "responsive"
   },
   {
     "id": "gm-endless-tunnel",
@@ -21503,7 +22920,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 162
+    "plays": 162,
+    "platform": "mobile"
   },
   {
     "id": "gm-logic-islands",
@@ -21520,7 +22938,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 161
+    "plays": 161,
+    "platform": "mobile"
   },
   {
     "id": "gm-ant-destroyer-2",
@@ -21541,7 +22960,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 157
+    "plays": 157,
+    "platform": "mobile"
   },
   {
     "id": "gm-panda-dash-auto-shooting",
@@ -21560,7 +22980,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 156
+    "plays": 156,
+    "platform": "pc"
   },
   {
     "id": "gm-wonder-vending-machine",
@@ -21581,7 +23002,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 156
+    "plays": 156,
+    "platform": "responsive"
   },
   {
     "id": "gm-brazil-tiny-goalie",
@@ -21601,7 +23023,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 156
+    "plays": 156,
+    "platform": "responsive"
   },
   {
     "id": "gm-free-city-drive",
@@ -21619,7 +23042,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 155
+    "plays": 155,
+    "platform": "responsive"
   },
   {
     "id": "gm-donut-crash-saga",
@@ -21638,7 +23062,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 146
+    "plays": 146,
+    "platform": "responsive"
   },
   {
     "id": "gm-zoolympics",
@@ -21654,7 +23079,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 141
+    "plays": 141,
+    "platform": "mobile"
   },
   {
     "id": "gm-cyber-smash",
@@ -21670,7 +23096,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 139
+    "plays": 139,
+    "platform": "pc"
   },
   {
     "id": "gm-smoothie-maker",
@@ -21688,7 +23115,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 138
+    "plays": 138,
+    "platform": "responsive"
   },
   {
     "id": "gm-master-archer-2025",
@@ -21707,7 +23135,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 137
+    "plays": 137,
+    "platform": "responsive"
   },
   {
     "id": "gm-pizza-maker",
@@ -21724,7 +23153,8 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 129
+    "plays": 129,
+    "platform": "responsive"
   },
   {
     "id": "gm-canyon-valley-rally",
@@ -21740,6 +23170,7 @@ var GAMES = [
     "videoUrl": "",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
-    "plays": 127
+    "plays": 127,
+    "platform": "responsive"
   }
 ];
