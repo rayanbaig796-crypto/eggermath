@@ -56,18 +56,6 @@
     .game-info-bar { animation: fadeIn 0.3s ease 0.1s both; }
     .related-section { animation: fadeIn 0.3s ease 0.2s both; }
     .skeleton { background: linear-gradient(90deg, rgba(255,255,255,0.06) 25%, rgba(255,255,255,0.12) 50%, rgba(255,255,255,0.06) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 6px; }
-    #touch-overlay button[data-key] { font-family: 'Inter', system-ui, sans-serif; -webkit-tap-highlight-color: transparent; transition: background 0.1s ease, transform 0.08s ease; cursor: default; }
-    #touch-overlay button[data-key]:active { background: rgba(255,255,255,0.25) !important; border-color: rgba(255,255,255,0.4) !important; transform: scale(0.92); }
-    #touch-toggle { transition: background 0.2s ease; }
-    .iframe-container.fullscreen #touch-overlay { z-index: 10000; }
-    .iframe-container.fullscreen #touch-toggle { z-index: 10001; }
-    @media (max-width: 768px) {
-      #dpad { bottom: 16px !important; left: 12px !important; }
-      #dpad > div { width: 110px !important; height: 110px !important; }
-      #dpad button[data-key] { width: 38px !important; height: 38px !important; font-size: 16px !important; }
-      #action-buttons { bottom: 16px !important; right: 12px !important; gap: 8px !important; }
-      #action-buttons button[data-key=" "] { width: 56px !important; height: 56px !important; }
-    }
   </style>
   <script>
     (function(){
@@ -148,24 +136,7 @@
           <button id="retry-direct-btn" style="display:none;padding:8px 20px;border-radius:8px;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.7);border:1px solid rgba(255,255,255,0.2);font-weight:600;cursor:pointer;font-size:12px;margin-top:8px;">Load Direct</button>
         </div>
       </div>
-      <!-- TOUCH CONTROLS OVERLAY (hidden by default, shown on touch devices) -->
-      <div id="touch-overlay" style="display:none;position:absolute;inset:0;z-index:40;pointer-events:none;">
-        <button id="touch-toggle" style="position:absolute;top:8px;right:8px;z-index:60;pointer-events:auto;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.2);color:white;font-size:18px;display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);cursor:pointer;">🎮</button>
-        <div id="dpad" style="position:absolute;bottom:20px;left:20px;pointer-events:auto;touch-action:none;">
-          <div style="position:relative;width:130px;height:130px;">
-            <button data-key="ArrowUp" style="position:absolute;top:0;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:20px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;">&#9650;</button>
-            <button data-key="ArrowLeft" style="position:absolute;top:50%;left:0;transform:translateY(-50%);width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:20px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;">&#9664;</button>
-            <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:28px;height:28px;border-radius:50%;background:rgba(255,255,255,0.06);pointer-events:none;"></div>
-            <button data-key="ArrowRight" style="position:absolute;top:50%;right:0;transform:translateY(-50%);width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:20px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;">&#9654;</button>
-            <button data-key="ArrowDown" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:8px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:20px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;">&#9660;</button>
-          </div>
-        </div>
-        <div id="action-buttons" style="position:absolute;bottom:20px;right:20px;pointer-events:auto;touch-action:none;display:flex;flex-direction:column;align-items:center;gap:10px;">
-          <button data-key=" " data-mouse="true" style="width:64px;height:64px;border-radius:50%;background:rgba(229,57,53,0.35);border:2px solid rgba(229,57,53,0.6);color:white;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;text-transform:uppercase;letter-spacing:0.05em;">ACT</button>
-          <button data-key="Enter" style="width:48px;height:48px;border-radius:50%;background:rgba(135,220,131,0.25);border:2px solid rgba(135,220,131,0.5);color:white;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;text-transform:uppercase;letter-spacing:0.05em;">OK</button>
-          <button data-key="Shift" style="width:40px;height:40px;border-radius:50%;background:rgba(255,193,7,0.2);border:2px solid rgba(255,193,7,0.4);color:white;font-size:9px;font-weight:800;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;text-transform:uppercase;">SFT</button>
-        </div>
-      </div>
+
       <iframe
         id="game-iframe"
         sandbox="allow-scripts allow-same-origin allow-popups allow-pointer-lock allow-forms allow-presentation"
@@ -705,86 +676,6 @@
       refreshFavUI();
       renderRelated();
     }
-
-    // ─── TOUCH CONTROLS (mobile only) ──────────────────────────
-    (function() {
-      function isTouchDevice() {
-        if ('ontouchstart' in window) return true;
-        if (navigator.maxTouchPoints > 0) return true;
-        try { if (window.matchMedia && window.matchMedia('(pointer:coarse)').matches) return true; } catch(e) {}
-        return false;
-      }
-      if (!isTouchDevice()) return;
-
-      var overlay = document.getElementById('touch-overlay');
-      var toggleBtn = document.getElementById('touch-toggle');
-      var gameIframe = document.getElementById('game-iframe');
-      if (!overlay || !gameIframe) return;
-
-      var controlsVisible = false;
-      var activeKeys = {};
-      var keyCodeMap = {
-        'ArrowUp': 38, 'ArrowDown': 40, 'ArrowLeft': 37, 'ArrowRight': 39,
-        ' ': 32, 'Enter': 13, 'Shift': 16
-      };
-
-      function showControls() { overlay.style.display = 'block'; controlsVisible = true; }
-      function hideControls() { overlay.style.display = 'none'; controlsVisible = false; releaseAllKeys(); }
-
-      toggleBtn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        if (controlsVisible) hideControls(); else showControls();
-      });
-
-      function dispatchKey(key, type) {
-        var opts = {
-          key: key, code: key === ' ' ? 'Space' : 'Key' + key.toUpperCase(),
-          keyCode: keyCodeMap[key] || 0, which: keyCodeMap[key] || 0,
-          bubbles: true, cancelable: true
-        };
-        try { document.dispatchEvent(new KeyboardEvent(type, opts)); } catch(e) {}
-        try {
-          var w = gameIframe.contentWindow;
-          if (w) { w.document.dispatchEvent(new KeyboardEvent(type, opts)); w.dispatchEvent(new KeyboardEvent(type, opts)); }
-        } catch(e) {}
-      }
-
-      function pressKey(key) { if (!activeKeys[key]) { activeKeys[key] = true; dispatchKey(key, 'keydown'); } }
-      function releaseKey(key) { if (activeKeys[key]) { activeKeys[key] = false; dispatchKey(key, 'keyup'); } }
-      function releaseAllKeys() {
-        Object.keys(activeKeys).forEach(function(k) { if (activeKeys[k]) { activeKeys[k] = false; dispatchKey(k, 'keyup'); } });
-      }
-
-      var buttons = overlay.querySelectorAll('[data-key]');
-      buttons.forEach(function(btn) {
-        var key = btn.getAttribute('data-key');
-        var isMouse = btn.hasAttribute('data-mouse');
-        btn.addEventListener('touchstart', function(e) {
-          e.preventDefault(); e.stopPropagation();
-          pressKey(key); btn.style.opacity = '0.7';
-          btn.style.transform = btn.style.transform ? btn.style.transform + ' scale(0.92)' : 'scale(0.92)';
-          if (isMouse) {
-            try { var w = gameIframe.contentWindow; if (w) w.document.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true })); } catch(e) {}
-          }
-        }, { passive: false });
-        btn.addEventListener('touchend', function(e) {
-          e.preventDefault(); e.stopPropagation();
-          releaseKey(key); btn.style.opacity = '1';
-          btn.style.transform = btn.style.transform ? btn.style.transform.replace(' scale(0.92)', '') : '';
-        }, { passive: false });
-        btn.addEventListener('touchcancel', function() { releaseKey(key); btn.style.opacity = '1'; }, { passive: false });
-      });
-
-      document.addEventListener('touchend', function(e) {
-        var tl = e.changedTouches;
-        for (var i = 0; i < tl.length; i++) {
-          var el = document.elementFromPoint(tl[i].clientX, tl[i].clientY);
-          if (!el || !el.closest('#touch-overlay')) { releaseAllKeys(); break; }
-        }
-      }, { passive: true });
-
-      showControls();
-    })();
 
     // ─── FIND GAME ────────────────────────────────────────────
     if ('serviceWorker' in navigator) {
