@@ -22,27 +22,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-knight-arena-io",
-    "title": "Knight Arena.io",
-    "category": ".IO",
-    "description": "Knight Arena.io - play now on EggerMath",
-    "tags": [
-      "io",
-      "io-games",
-      "action",
-      "multiplayer",
-      "war"
-    ],
-    "thumb": "https://img.gamemonetize.com/jk1td0afcrs97lw6bdk8grh4huukppu8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jk1td0afcrs97lw6bdk8grh4huukppu8/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1741,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-swordbattle-io",
     "title": "Swordbattle.io",
     "category": ".IO",
@@ -106,28 +85,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 1553,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cobraz-io",
-    "title": "CobraZ io",
-    "category": ".IO",
-    "description": "CobraZ io - play now on EggerMath",
-    "tags": [
-      "io",
-      "action",
-      "first-person-shooter",
-      "free-games-for-your-website",
-      "multiplayer",
-      "shooter"
-    ],
-    "thumb": "https://img.gamemonetize.com/zq8jygdk9xuwh7puv21h1hvtn2m7xff9/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zq8jygdk9xuwh7puv21h1hvtn2m7xff9/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1518,
     "platform": "responsive"
   },
   {
@@ -342,26 +299,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-blocky-warfare-the-aweper-zombie",
-    "title": "Blocky Warfare the Aweper Zombie",
-    "category": "Action",
-    "description": "Blocky Warfare the Aweper Zombie - play now on EggerMath",
-    "tags": [
-      "action",
-      "multiplayer",
-      "shooter",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/5wm5fzhuc0dbgfugxd5t6vp25ydkspkx/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5wm5fzhuc0dbgfugxd5t6vp25ydkspkx/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1212,
-    "platform": "pc"
-  },
-  {
     "id": "gm-bubble-shooter-legend-2",
     "title": "Bubble Shooter Legend 2",
     "category": "Shooting",
@@ -491,28 +428,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-good-guys-amp-bad-boys-zombie-survival-gui",
-    "title": "Good Guys &amp; Bad Boys Zombie Survival GUI",
-    "category": "Shooting",
-    "description": "Good Guys &amp; Bad Boys Zombie Survival GUI - play now on EggerMath",
-    "tags": [
-      "action",
-      "mentolatux",
-      "shoot",
-      "shooter",
-      "shooting",
-      "survival"
-    ],
-    "thumb": "https://img.gamemonetize.com/f18vmxidmr661qlw0sez84ioo303oktj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/f18vmxidmr661qlw0sez84ioo303oktj/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1145,
-    "platform": "pc"
-  },
-  {
     "id": "gm-bubble-shooter-saga-online-game",
     "title": "Bubble Shooter Saga Online",
     "category": "Arcade",
@@ -637,28 +552,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-gun-shooting-game",
-    "title": "Gun Shooting Game",
-    "category": ".IO",
-    "description": "Gun Shooting Game - play now on EggerMath",
-    "tags": [
-      "io",
-      "io-games",
-      "enemies",
-      "fire",
-      "first-person-shooter",
-      "gun"
-    ],
-    "thumb": "https://img.gamemonetize.com/ft7ejczl0cd4bqtrgbj2k67nyika12ft/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ft7ejczl0cd4bqtrgbj2k67nyika12ft/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1107,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-among-us-danger-run",
     "title": "Among Us Danger Run",
     "category": "Action",
@@ -679,26 +572,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 1102,
     "platform": "pc"
-  },
-  {
-    "id": "gm-city-car-driving-simulator",
-    "title": "City Car Driving Simulator",
-    "category": "Racing",
-    "description": "City Car Driving Simulator - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "multiplayer",
-      "simulation",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/m64eqewf2d82qocqezn2u9u30eh1j215/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/m64eqewf2d82qocqezn2u9u30eh1j215/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1094,
-    "platform": "responsive"
   },
   {
     "id": "gm-bubble-shooter",
@@ -878,50 +751,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-combat-pixel-zombie-survival",
-    "title": "Combat Pixel Zombie Survival",
-    "category": "Shooting",
-    "description": "Combat Pixel Zombie Survival - play now on EggerMath",
-    "tags": [
-      "android",
-      "mobile",
-      "multiplayer",
-      "shooting",
-      "webgl",
-      "zombie"
-    ],
-    "thumb": "https://img.gamemonetize.com/2c4574gdzbt9ce31odgmyjlhhrbfs9id/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2c4574gdzbt9ce31odgmyjlhhrbfs9id/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1047,
-    "platform": "mobile"
-  },
-  {
-    "id": "gm-word-search",
-    "title": "Word Search",
-    "category": "Hypercasual",
-    "description": "Word Search - play now on EggerMath",
-    "tags": [
-      "design",
-      "educational",
-      "games",
-      "matching",
-      "memory",
-      "relaxation"
-    ],
-    "thumb": "https://img.gamemonetize.com/tgdmjoexdk2rjvfk2eyvmhx4ibugauz3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/tgdmjoexdk2rjvfk2eyvmhx4ibugauz3/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 1041,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-real-savior-kids",
     "title": "Real Savior Kids",
     "category": "Action",
@@ -1048,44 +877,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-poppy-playtime-survival",
-    "title": "Poppy Playtime Survival",
-    "category": "Action",
-    "description": "Poppy Playtime Survival - play now on EggerMath",
-    "tags": [
-      "action",
-      "minecraft"
-    ],
-    "thumb": "https://img.gamemonetize.com/iethnkm9gt8fc2bgopavrw9zpg5ehmt6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/iethnkm9gt8fc2bgopavrw9zpg5ehmt6/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 998,
-    "platform": "pc"
-  },
-  {
-    "id": "gm-mahjong-solitaire",
-    "title": "Mahjong Solitaire",
-    "category": "Arcade",
-    "description": "Mahjong Solitaire - play now on EggerMath",
-    "tags": [
-      "card",
-      "mahjong",
-      "solitaire",
-      "strategy"
-    ],
-    "thumb": "https://img.gamemonetize.com/6xztc78l3oss5f8rgmpknh0ziqwz0t67/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6xztc78l3oss5f8rgmpknh0ziqwz0t67/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 978,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-sudoku-master",
     "title": "Sudoku Master",
     "category": "Hypercasual",
@@ -1126,49 +917,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 960,
     "platform": "pc"
-  },
-  {
-    "id": "gm-racing-horizon",
-    "title": "Racing Horizon",
-    "category": "Racing",
-    "description": "Racing Horizon - play now on EggerMath",
-    "tags": [
-      "adventure",
-      "car",
-      "driving",
-      "race",
-      "simulation",
-      "traffic"
-    ],
-    "thumb": "https://img.gamemonetize.com/qgb6n2r17f8b3a5gvf0lf1mncx6fzd2e/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qgb6n2r17f8b3a5gvf0lf1mncx6fzd2e/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "trending": true,
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 954,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-solitaire",
-    "title": "Solitaire",
-    "category": "Puzzle",
-    "description": "Solitaire - play now on EggerMath",
-    "tags": [
-      "card",
-      "solitaire",
-      "strategy"
-    ],
-    "thumb": "https://img.gamemonetize.com/yhgdcw5brwugmqftpt96krmliugwgcxe/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/yhgdcw5brwugmqftpt96krmliugwgcxe/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "trending": true,
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 952,
-    "platform": "responsive"
   },
   {
     "id": "gm-fairway-solitaire-classic-cards-game-game",
@@ -1271,21 +1019,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 939,
     "platform": "pc"
-  },
-  {
-    "id": "gm-emerland-solitaire-game",
-    "title": "Emerland Solitaire",
-    "category": "Arcade",
-    "description": "Emerland Solitaire - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/p64058ybqqb8gwhmesfp87rsqm1m4o7n/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/p64058ybqqb8gwhmesfp87rsqm1m4o7n/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 934,
-    "platform": "responsive"
   },
   {
     "id": "gm-stickman-archer",
@@ -1447,48 +1180,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-scary-vending-machine",
-    "title": "Scary Vending Machine",
-    "category": "Clicker",
-    "description": "Scary Vending Machine - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "kids",
-      "simulation",
-      "simulator"
-    ],
-    "thumb": "https://img.gamemonetize.com/pye3cyuqan6c3iztumkqeapvju73qc3m/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/pye3cyuqan6c3iztumkqeapvju73qc3m/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 912,
-    "platform": "mobile"
-  },
-  {
-    "id": "gm-car-evolution-pro-math-gates",
-    "title": "Car Evolution Pro : Math Gates",
-    "category": "Hypercasual",
-    "description": "Car Evolution Pro : Math Gates - play now on EggerMath",
-    "tags": [
-      "brain",
-      "car",
-      "car-tuning",
-      "cars",
-      "casual",
-      "educational"
-    ],
-    "thumb": "https://img.gamemonetize.com/sqtuqupfoswoie8rutb8035178dem34x/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sqtuqupfoswoie8rutb8035178dem34x/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 911,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-doodle-jump",
     "title": "Doodle Jump",
     "category": "Action",
@@ -1508,73 +1199,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 910,
-    "platform": "pc"
-  },
-  {
-    "id": "gm-horror-eyes-escape",
-    "title": "Horror Eyes Escape",
-    "category": "Adventure",
-    "description": "Horror Eyes Escape - play now on EggerMath",
-    "tags": [
-      "action",
-      "adventure",
-      "blood",
-      "escape",
-      "horror",
-      "rescue"
-    ],
-    "thumb": "https://img.gamemonetize.com/vqhi6n4h4rifpx7a87m9d3kzzwo8njm0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vqhi6n4h4rifpx7a87m9d3kzzwo8njm0/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 910,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-city-car-drive",
-    "title": "City Car Drive",
-    "category": "Racing",
-    "description": "City Car Drive - play now on EggerMath",
-    "tags": [
-      "car",
-      "crazy",
-      "drift",
-      "fun",
-      "funny",
-      "race"
-    ],
-    "thumb": "https://img.gamemonetize.com/yxrd3amtk039me5div39dfkmhu0451kd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/yxrd3amtk039me5div39dfkmhu0451kd/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 909,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pixel-gun-apocalypse-6-remastered",
-    "title": "Pixel Gun Apocalypse 6 Remastered",
-    "category": "Shooting",
-    "description": "Pixel Gun Apocalypse 6 Remastered - play now on EggerMath",
-    "tags": [
-      "mentolatux",
-      "multiplayer",
-      "shooting",
-      "survival",
-      "unity-games",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/2n1fjjb60t0qm1my4j5eq2idayb36r4j/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2n1fjjb60t0qm1my4j5eq2idayb36r4j/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "trending": true,
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 907,
     "platform": "pc"
   },
   {
@@ -1622,46 +1246,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-football-world-cup-pro",
-    "title": "Football World Cup Pro",
-    "category": "Soccer",
-    "description": "Football World Cup Pro - play now on EggerMath",
-    "tags": [
-      "io",
-      "football",
-      "hypercasual",
-      "soccer",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/e21upe2h6uz6slpz0srxh3qj5tovz2hv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/e21upe2h6uz6slpz0srxh3qj5tovz2hv/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 902,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-spiny-ninja",
-    "title": "Spiny Ninja",
-    "category": "Boys",
-    "description": "Spiny Ninja - play now on EggerMath",
-    "tags": [
-      "action",
-      "arcade",
-      "escape"
-    ],
-    "thumb": "https://img.gamemonetize.com/qaf0mdi5q3wwrffzylznwf5tatpoogj8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qaf0mdi5q3wwrffzylznwf5tatpoogj8/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 902,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-glam-guru-puzzle-collection",
     "title": "Glam Guru Puzzle Collection",
     "category": "Puzzle",
@@ -1702,63 +1286,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-granny-creepy-evil-scream-scary",
-    "title": "Granny Creepy Evil Scream Scary",
-    "category": "Action",
-    "description": "Granny Creepy Evil Scream Scary - play now on EggerMath",
-    "tags": [
-      "action",
-      "adventure"
-    ],
-    "thumb": "https://img.gamemonetize.com/sselz7ur8i9ww24z2wx4orajfvnjy438/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sselz7ur8i9ww24z2wx4orajfvnjy438/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 890,
-    "platform": "pc"
-  },
-  {
-    "id": "gm-scary-granny-horror-game",
-    "title": "Scary granny horror game",
-    "category": "Action",
-    "description": "Scary granny horror game - play now on EggerMath",
-    "tags": [
-      "action"
-    ],
-    "thumb": "https://img.gamemonetize.com/kxmbc244tjwl6cqzoy9jj2shecp4nimc/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kxmbc244tjwl6cqzoy9jj2shecp4nimc/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 889,
-    "platform": "pc"
-  },
-  {
-    "id": "gm-horror-eye",
-    "title": "Horror Eye",
-    "category": "Action",
-    "description": "Horror Eye - play now on EggerMath",
-    "tags": [
-      "action",
-      "adventure",
-      "casual",
-      "game",
-      "horror",
-      "shooting"
-    ],
-    "thumb": "https://img.gamemonetize.com/2dzkz4ddpprxjcpwfs1akerpw2b2wfjv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2dzkz4ddpprxjcpwfs1akerpw2b2wfjv/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 887,
-    "platform": "pc"
-  },
-  {
     "id": "gm-deadly-hunters-run",
     "title": "Deadly Hunters Run",
     "category": "Action",
@@ -1781,28 +1308,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-rally-championship",
-    "title": "Rally Championship",
-    "category": "Arcade",
-    "description": "Rally Championship - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "car",
-      "drift",
-      "drifting",
-      "driving",
-      "mobile"
-    ],
-    "thumb": "https://img.gamemonetize.com/lor9twj628e1nbr14vfjr59f89bqdexb/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/lor9twj628e1nbr14vfjr59f89bqdexb/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 883,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-last-z-survival-shooter",
     "title": "Last Z Survival Shooter",
     "category": "Adventure",
@@ -1820,21 +1325,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 871,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fashion-gaga-game",
-    "title": "FASHION GAGA",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game FASHION GAGA !Every girl likes beautiful dresses. Today top model wants to try different style dresses. Now our dress styles include fashion outfits, earrings, necklaces, shoes, and bags Do you want to join them? Sure, come and have try!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/pazbtb3u610p114yqeoacndttx07g546/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/pazbtb3u610p114yqeoacndttx07g546/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 864,
     "platform": "responsive"
   },
   {
@@ -1976,21 +1466,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-welding-simulation-3d-game",
-    "title": "Welding Simulation 3D",
-    "category": "Arcade",
-    "description": "Welding Simulation 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/34i5ksx0tqi5llssxv52qlkw0o5d825s/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/34i5ksx0tqi5llssxv52qlkw0o5d825s/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 858,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-explosions-game",
     "title": "Explosions",
     "category": "Arcade",
@@ -2101,21 +1576,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-summer-vacation-family-picnic-game",
-    "title": "Summer Vacation",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Summer Vacation – Family Picnic !Download Sumer Vacation – Family Picnic for FREE and play most addictive adventure game ever created! Our new simulation game will let you stimulate realistic trip within very wide selection levels with different objectives. First, you will have to prepare items that you will need for your trip, then you will have to prepare your care, travel, fix tent, take care injured little penguin, build snowman, cook some food and then return to your hometown. Summer Vacation is great picnic game that you will love and you will not feel bored even if you play for hours nonstop.  There are lots successful arcade games Play store, however, very few snow games can boast success Summer Vacation that has taken whole world by storm. Our kids game provides you great way to relieve all stress with its hours fun and brain-tickling effect. Your only motive is to live realistic trip without going out your current place.  Why do you need to download and install Summer Vacation – Family Picnic your Android smartphone or tablet for Free instead other arcade games?",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6q402lpjjs5a3g26uqo2m6wynepp2vl8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6q402lpjjs5a3g26uqo2m6wynepp2vl8/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 854,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-zombie-tsunami-online-game",
     "title": "Zombie Tsunami Online",
     "category": "Arcade",
@@ -2143,21 +1603,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 853,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-mahjong-connect-classic-game",
-    "title": "Mahjong Connect Classic",
-    "category": "Arcade",
-    "description": "Mahjong Connect Classic - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/9z30xwyvz4hecn63sj653vx7mg970ax7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/9z30xwyvz4hecn63sj653vx7mg970ax7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 852,
     "platform": "responsive"
   },
   {
@@ -2213,51 +1658,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-chicken-io-game",
-    "title": "Chicken.io",
-    "category": ".IO",
-    "description": "Chicken.io - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/0urph1plrs4l8ul5d9bu7itfb7nqpbtq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/0urph1plrs4l8ul5d9bu7itfb7nqpbtq/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 850,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-combat-zombie-warfare-game",
-    "title": "Combat Zombie Warfare",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Combat Zombie Warfare !Welcome to realistic fight shooting Combat Zombie Warfare, this game you will fight against enemy zombie, soldier and real players around world. Choose your weapon and favorite map then finish all levels campaign, only need to shoot this virtual game.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4yo3n4ozaubytl1p1nmj01nuhqyn0mn5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4yo3n4ozaubytl1p1nmj01nuhqyn0mn5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 850,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-plants-vs-zombies-jigsaw-game",
-    "title": "Plants vs Zombies Jigsaw",
-    "category": "Arcade",
-    "description": "Plants vs Zombies Jigsaw - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/qyaw5jdk7t7z62zvsznn84nge55e7l77/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qyaw5jdk7t7z62zvsznn84nge55e7l77/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 849,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fashion-sewing-clothes-game",
     "title": "Fashion Sewing Clothes",
     "category": "Arcade",
@@ -2280,36 +1680,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/i9fwyq65upnf1203w5gpp2oc7apz2ulk/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/i9fwyq65upnf1203w5gpp2oc7apz2ulk/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 847,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-zombie-driving-game",
-    "title": "Zombie Driving",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Zombie Driving !Drive your way through zombie apocalypse. Fire your guns and kill all zombies your path. Avoid other cars and obstacles and get as far as you can. Zombie Squad allows you to choose your car and upgrade it. Personalize your car by changing its weapon or its armor. Also, you can buy new car models store. Kill all zombies your way, gather as many coins as you can, and upgrade your ride this amazing game for android!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hq427aawjhsnwrdt37cp9xp8u51zo1mq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hq427aawjhsnwrdt37cp9xp8u51zo1mq/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 847,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-flappy-bird-io-game",
-    "title": "Flappy Bird .io",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Flappy Bird .io  !Play flappy bird .io here online for free. Click screen, to get started. Fly bird as far as you can without hitting pipe.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5rn49bwgdwelc4zr2zvj4xtle2n4ecnj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5rn49bwgdwelc4zr2zvj4xtle2n4ecnj/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -2452,21 +1822,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-millonario-2021-trivia-quiz-game-game",
-    "title": "Millonario 2021 : Trivia Quiz Game",
-    "category": "Arcade",
-    "description": "Millonario 2021 : Trivia Quiz Game - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/nb1j4uqtx27n9h68ymq20ozukkbd4rpr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/nb1j4uqtx27n9h68ymq20ozukkbd4rpr/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 844,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-transporters-io-game",
     "title": "Transporters IO",
     "category": "Arcade",
@@ -2509,21 +1864,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 843,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-shoot-angry-zombies-game",
-    "title": "Shoot Angry Zombies",
-    "category": "Arcade",
-    "description": "Shoot Angry Zombies - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zg2pjpib6obxspiarfyeg7y6jn0ahqah/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zg2pjpib6obxspiarfyeg7y6jn0ahqah/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 842,
     "platform": "responsive"
   },
   {
@@ -2609,21 +1949,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-celebrity-fashion-battle-game",
-    "title": "Celebrity Fashion Battle",
-    "category": "Arcade",
-    "description": "Celebrity Fashion Battle - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/gggvagk4g1l9m074y1ot42yfvy38kir5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gggvagk4g1l9m074y1ot42yfvy38kir5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 840,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-bubble-spin-game",
     "title": "bubble Spin",
     "category": "Arcade",
@@ -2696,21 +2021,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 839,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-hole-io-game",
-    "title": "Hole IO",
-    "category": ".IO",
-    "description": "Hole IO - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/b1x9qp14oxl36rwmt0vmu63az35ytda4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/b1x9qp14oxl36rwmt0vmu63az35ytda4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 838,
     "platform": "responsive"
   },
   {
@@ -2804,36 +2114,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-millionnaire-quiz-2021-game",
-    "title": "Millionnaire Quiz 2021",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Millionnaire Quiz 2021 !Official Who Wants to Be Millionaire? Trivia Game!      Do you love game show trivia? Have you always dreamed taking home win from game show? Now you can, with Official Who Wants to Be Millionaire Trivia Game. Based hit game show, now you can show off your game show trivia knowledge and win big!      TV's top trending game show is now your phone and tablet! Test your trivia knowledge, call audience, collect your team experts and win! Download now to scale Money Tree to top to become MILLIONAIRE for FREE today!      Do you have vast trivia knowledge? Love playing against others? Play games against family, friends and other trivia players to win! Show you know most trivia by answering questions different game show trivia categories like music, cinema, sports, science, math and geography. Become star game show trivia by learning fun and interesting facts!      Can you win Official Who Wants to Be Millionaire? Game Show Trivia Game?      Stumped big trivia question? You can unlock and collect famous experts who can be your lifeline! Ask Shakespeare about English. Let Caesar cover history. Da Vinci, Napoleon, Beethoven and Newton - all here to help you win trivia glory!      Some Who Wants to Be Millionaire: Trivia's AWESOME Features:   + Unlock new cities and travel world for new Millionaire trivia experiences!   + Use classic trivia boosts such as 50:50, ask audience, & all new ask an expert!   + Unlock team Trivia experts to help you win every trivia challenge!   + Scale to top daily leaderboard and win against friends and family!   + Always new trivia and Who Wants to be Millionaire Game Show content!   + Play & win Millionaire trivia go with our offline mode!      ULTIMATE MILLIONAIRE TRIVIA EXPERIENCE:   Join thrill becoming MILLIONAIRE! Win cities around world from Rome to Rio! Start playing Official Who Wants to Be Millionaire Trivia Game for free and show your Trivia knowledge!      EXCLUSIVE OFFLINE MODE:   Now you can play Who Wants to Be Millionaire offline. With our offline mode, you can play home or road. Win anytime, anywhere      BUILD AND TRAIN YOUR EXPERTS:   Collect and train your experts, each with their own attributes and expertise! Don't let any trivia stump you. From history to English to music to math, we have trivia expert who can help you win and become millionaire!      CLIMB LEADERBOARDS:   Know any interesting trivia facts? Well may just come handy when you find yourself faced off against million-dollar question! Rank up against scores hundreds thousands trivia players around world as you target top Leaderboards! Show off your clever wits with most fun trivia show world!      Download Official Who Wants to Be Millionaire? Trivia Game today!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5pgo1ayer5pit9po5koal0my0o3t8fvd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5pgo1ayer5pit9po5koal0my0o3t8fvd/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 835,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-american-block-sniper-survival-online-game",
-    "title": "American Block Sniper Survival Online",
-    "category": "Arcade",
-    "description": "American Block Sniper Survival Online - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/dy2tps9hmgrhuwhk557cdykcx3puevbb/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/dy2tps9hmgrhuwhk557cdykcx3puevbb/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 834,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fashion-shoe-design-game",
     "title": "Fashion Shoe Design",
     "category": "Arcade",
@@ -2841,21 +2121,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/7cphkofbcxm1nyx4gsp18evlmprt798q/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/7cphkofbcxm1nyx4gsp18evlmprt798q/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 834,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-walkers-of-fashion-game",
-    "title": "Walkers of fashion",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Walkers of fashion !Walkers Fashion is premier destination for fashion enthusiasts. With keen eye for style and passion for staying on-trend, we curate diverse collection clothing and accessories to elevate your wardrobe. Our team fashion experts scours globe to bring you latest vogue designs. Whether youre seeking chic streetwear or elegant evening wear, Walkers Fashion has you covered. Explore our carefully selected pieces and discover your signature look. Step confidently into world fashion with us, where style knows no bounds.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/2rys1vl7jpjxdx3ygzmzsv78xbroqb8o/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2rys1vl7jpjxdx3ygzmzsv78xbroqb8o/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -2880,21 +2145,6 @@ var GAMES = [
     "embedUrl": "https://html5.gamemonetize.co/p59ubh65nhswxb0azf9lwwqcqraljsd8/",
     "source": "gamemonetize",
     "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 832,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-super-zombie-shooter-game",
-    "title": "Super Zombie Shooter",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Super Zombie Shooter !Super Zombie Shooter features non stop zombie shooting using big arsenal weapons unlocked level progress, your mission is to survive zombie swarm and find exit each level.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/agrrgb6ibm88hhvw2b9qu8sgb1ome9pm/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/agrrgb6ibm88hhvw2b9qu8sgb1ome9pm/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 832,
@@ -2961,21 +2211,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-shooting-zombie-fps-xtreme-good-vs-bad-boys-game",
-    "title": "Shooting Zombie fps Xtreme Good vs Bad Boys",
-    "category": "Arcade",
-    "description": "Shooting Zombie fps Xtreme Good vs Bad Boys - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/afazlcawhhxr8v6zalxj6zwtm1r58yyi/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/afazlcawhhxr8v6zalxj6zwtm1r58yyi/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 830,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fashion-closet-makeover-game",
     "title": "Fashion Closet Makeover",
     "category": "Arcade",
@@ -3004,41 +2239,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 830,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-shooting-survival-skibidi-toilet-game",
-    "title": "Shooting Survival Skibidi Toilet",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Shooting Survival Skibidi Toilet !Skibidi toilet enemy is spawn from ground and come to play, player have 2 guns and shooting to finish number to kill to end wave, environment is forest with good quality tree, grass, texture and much more fun i nthis shooting game",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/xg9q4ctueabftzhgjpeqxym0ki7488ms/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/xg9q4ctueabftzhgjpeqxym0ki7488ms/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 829,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-guns-vs-magic",
-    "title": "Guns vs Magic",
-    "category": "Action",
-    "description": "Guns vs Magic - play now on EggerMath",
-    "tags": [
-      "action",
-      "magic",
-      "rpg",
-      "shooting"
-    ],
-    "thumb": "https://img.gamemonetize.com/58a8hxphe6fot3s3xx7vxznjxi6o1g5l/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/58a8hxphe6fot3s3xx7vxznjxi6o1g5l/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 827,
-    "platform": "pc"
   },
   {
     "id": "gm-space-mission-truck-nice-truck-game",
@@ -3184,21 +2384,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 821,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-snowfight-io-game",
-    "title": "SnowFight.io",
-    "category": "Boys",
-    "description": "SnowFight.io - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/q2ibbexftbhzlrxex57ka753iss1ub7l/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/q2ibbexftbhzlrxex57ka753iss1ub7l/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 817,
     "platform": "responsive"
   },
   {
@@ -3509,25 +2694,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-defense-tower-2025",
-    "title": "Defense Tower 2025",
-    "category": "Adventure",
-    "description": "Defense Tower 2025 - play now on EggerMath",
-    "tags": [
-      "action",
-      "adventure",
-      "tower-defense"
-    ],
-    "thumb": "https://img.gamemonetize.com/cmf9r0la5swe9ku3t754dbu3y723nvwf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cmf9r0la5swe9ku3t754dbu3y723nvwf/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 783,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-monster-haul",
     "title": "Monster Haul",
     "category": "Action",
@@ -3589,48 +2755,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 776,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-office-horror-story",
-    "title": "Office Horror Story",
-    "category": "Adventure",
-    "description": "Office Horror Story - play now on EggerMath",
-    "tags": [
-      "action",
-      "escape",
-      "ghost",
-      "interactive",
-      "shooting"
-    ],
-    "thumb": "https://img.gamemonetize.com/n8k0tmcc6ou0mrxb3pmaw9owf8f9lc68/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/n8k0tmcc6ou0mrxb3pmaw9owf8f9lc68/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 772,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pixel-gun-apocalypse-9",
-    "title": "Pixel gun apocalypse 9",
-    "category": "Shooting",
-    "description": "Pixel gun apocalypse 9 - play now on EggerMath",
-    "tags": [
-      "blocky",
-      "mentolatux",
-      "multiplayer",
-      "shooting",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/xvs7921geqt5caum1lczpvbc9xj0p06g/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/xvs7921geqt5caum1lczpvbc9xj0p06g/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 772,
-    "platform": "pc"
   },
   {
     "id": "gm-cut-the-rope",
@@ -3712,26 +2836,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 767,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-tps-shooting-zombie-apocalypse",
-    "title": "TPS Shooting Zombie Apocalypse",
-    "category": "Shooting",
-    "description": "TPS Shooting Zombie Apocalypse - play now on EggerMath",
-    "tags": [
-      "gun",
-      "shoot",
-      "shooting",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/5qr4e0qhf2drldij11xkgdcv068sr64b/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5qr4e0qhf2drldij11xkgdcv068sr64b/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 766,
-    "platform": "pc"
   },
   {
     "id": "gm-zombie-grave-yard",
@@ -3835,28 +2939,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-scary-granny-house-the-horror-game",
-    "title": "Scary Granny House - The Horror Game",
-    "category": "Adventure",
-    "description": "Scary Granny House - The Horror Game - play now on EggerMath",
-    "tags": [
-      "adventure",
-      "crazy",
-      "escape",
-      "ghost",
-      "halloween",
-      "house"
-    ],
-    "thumb": "https://img.gamemonetize.com/sybpauppb4lokl7s8p321d9lrsor18kt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sybpauppb4lokl7s8p321d9lrsor18kt/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 763,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-pic-pie-puzzles-game",
     "title": "Pic Pie Puzzles",
     "category": "Arcade",
@@ -3923,83 +3005,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-cars-paint-3d-game",
-    "title": "Cars Paint 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Cars Paint 3D !CARS PAINT 3D is fun addictive hyper casual game.Think logically and complete Levels.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cg30v2o7my45ooe35q439tti3nq3yf6a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cg30v2o7my45ooe35q439tti3nq3yf6a/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 762,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-stickman-sports-badminton",
-    "title": "Stickman Sports Badminton",
-    "category": "Stickman",
-    "description": "Stickman Sports Badminton - play now on EggerMath",
-    "tags": [
-      "classic",
-      "retro",
-      "sports",
-      "stickman"
-    ],
-    "thumb": "https://img.gamemonetize.com/c6zx75jasrpsm0b6a4utgps07dxhs3h5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/c6zx75jasrpsm0b6a4utgps07dxhs3h5/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 761,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-endless-zombie-road",
-    "title": "Endless Zombie Road",
-    "category": "Adventure",
-    "description": "Endless Zombie Road - play now on EggerMath",
-    "tags": [
-      "driving",
-      "race",
-      "racing",
-      "zombie"
-    ],
-    "thumb": "https://img.gamemonetize.com/auzt421o2jy48asa4bmkuzstan0lhjxr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/auzt421o2jy48asa4bmkuzstan0lhjxr/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 761,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-color-and-numbers",
-    "title": "Color And Numbers",
-    "category": "Boys",
-    "description": "Color And Numbers - play now on EggerMath",
-    "tags": [
-      "color",
-      "coloring",
-      "draw",
-      "drawing",
-      "educational",
-      "family"
-    ],
-    "thumb": "https://img.gamemonetize.com/mj6qcqat1umkqkkl31q2o1t0jeb7xgq6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/mj6qcqat1umkqkkl31q2o1t0jeb7xgq6/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 761,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-blocks-merge-game",
     "title": "Blocks Merge",
     "category": "Arcade",
@@ -4022,21 +3027,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/imaqq34l0iw90484l470rs0cfu7pofze/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/imaqq34l0iw90484l470rs0cfu7pofze/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 760,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-old-car-stunt-game",
-    "title": "Old Car Stunt",
-    "category": "Arcade",
-    "description": "Old Car Stunt - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/nivfrc2g7thgq6bifgnysgca54iob5oy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/nivfrc2g7thgq6bifgnysgca54iob5oy/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -4149,25 +3139,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-mr-one-punch-action-fighting-game",
-    "title": "Mr One Punch: Action Fighting Game",
-    "category": "Action",
-    "description": "Mr One Punch: Action Fighting Game - play now on EggerMath",
-    "tags": [
-      "fight",
-      "fighting",
-      "street-fighting"
-    ],
-    "thumb": "https://img.gamemonetize.com/eis539n3diu3w1bh203tecnrwnvgn0t2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/eis539n3diu3w1bh203tecnrwnvgn0t2/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 756,
-    "platform": "pc"
-  },
-  {
     "id": "gm-panda-baby-bear-care-game",
     "title": "Panda Baby Bear Care",
     "category": "Arcade",
@@ -4220,21 +3191,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/py9hpat0q4l8sh0f5dzdi7dc7al0uygi/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/py9hpat0q4l8sh0f5dzdi7dc7al0uygi/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 756,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-mad-cars-game",
-    "title": "Mad Cars",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Mad Cars !Here is great arcade game famous Car web game, formatted to work mobile devices.      Have Fun!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jw0nujwmxmzfhvdfopkq6hfeurkkxy5r/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jw0nujwmxmzfhvdfopkq6hfeurkkxy5r/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -4585,21 +3541,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-hydro-racing-3d-game",
-    "title": "Hydro Racing 3D",
-    "category": "Arcade",
-    "description": "Hydro Racing 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/86ry4skcozo3e5pwk0f4zco0nvxfi22b/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/86ry4skcozo3e5pwk0f4zco0nvxfi22b/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 749,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-color-block-puzzle-game",
     "title": "Color Block Puzzle",
     "category": "Arcade",
@@ -4726,21 +3667,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-stickman-slope-game",
-    "title": "Stickman Slope",
-    "category": "Arcade",
-    "description": "Stickman Slope - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/9c770qzqna7l7uhtldp12ot1grkd9ovs/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/9c770qzqna7l7uhtldp12ot1grkd9ovs/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 746,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-car-out-game",
     "title": "Car Out",
     "category": "Arcade",
@@ -4778,21 +3704,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/7o0l92v2q5b0q2b44uq3je2c00u9evwc/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/7o0l92v2q5b0q2b44uq3je2c00u9evwc/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 745,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-babysitter-and-baby-care-game",
-    "title": "Babysitter and Baby Care",
-    "category": "Arcade",
-    "description": "Babysitter and Baby Care - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ij0weu6y9151vyjx9louubbg6peovzod/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ij0weu6y9151vyjx9louubbg6peovzod/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -4876,21 +3787,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-ambulance-emergency-simulator-2021-game",
-    "title": "Ambulance Emergency Simulator 2021",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ambulance Emergency Simulator 2021 !Immediately respond to incidents that require emergency. Do your missions as emergency service.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zxuwy1p1sccsriad24vzkuyu6igikotk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zxuwy1p1sccsriad24vzkuyu6igikotk/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 745,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-wednesday-addams-jigsaw-puzzle-game",
     "title": "Wednesday Addams Jigsaw Puzzle",
     "category": "Arcade",
@@ -4898,36 +3794,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/mlp29u0ptlyi7gojhddz3bvanpjt70y9/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/mlp29u0ptlyi7gojhddz3bvanpjt70y9/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 745,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-range-rover-car-parking-game",
-    "title": "Range Rover Car Parking",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Range Rover Car Parking !If you are looking for an awesome car parking simulator game then Car Parking 3D Pro: City Car Driving is very one to perfect your driving skills!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cpe17n07rldu2hvf01ewo63tnhe8m9qz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cpe17n07rldu2hvf01ewo63tnhe8m9qz/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 745,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-john-hypershooter-3d-game",
-    "title": "John Hypershooter 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game John Hypershooter 3D !Stylish, deadly and smooth as billiard ball, John is man mission this non-stop platform shooter game where action never ends.      Do you have what takes to bring down underground world mafia? 'Less talk, more bullets' – that's Johnny's motto as he runs, jumps, spins, slides and keeps shooting till every bad guy's bitten dust.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/juw560moncq6q3rwwxegzq1lchil693p/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/juw560moncq6q3rwwxegzq1lchil693p/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5011,21 +3877,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-witch-word-halloween-puzzle-game-game",
-    "title": "Witch Word: Halloween Puzzle Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Witch Word: Halloween Puzzle Game !Now play world's most popular word game and test your vocabulary for FREE! Swipe to connect letters and build all hidden words to win! Halloween Witch Party to have fun.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/uyw3laqx94mo4mvsi7in7ha2ou0tt287/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/uyw3laqx94mo4mvsi7in7ha2ou0tt287/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 743,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-mergemaster-game",
     "title": "MergeMaster",
     "category": "Arcade",
@@ -5071,21 +3922,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-drift-boss-supercar-game",
-    "title": "Drift Boss Supercar",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Drift Boss Supercar !It's first drift racing game that features real-time combat and realistic physics.        Win most sought-after automobiles, burn tyres racetrack, play with your pals free roam, and revel game's distinct retro aesthetic.        Although game is designed classically, you should know trick. cars have realistic physics, which makes them more enjoyable to drive. Drifting assistance, steering assistance, or any other gimmicks are not available. Although is still simple to operate and play, everything this racing game is dependent your performance.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jvaj0o72qrimeyyowslcypv59mzglwtu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jvaj0o72qrimeyyowslcypv59mzglwtu/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 742,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-draw-car-3d-game",
     "title": "Draw Car 3D",
     "category": "Arcade",
@@ -5093,51 +3929,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/t1r0cmlexylcv82l04v4fb19zuocayi1/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/t1r0cmlexylcv82l04v4fb19zuocayi1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 741,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-flappy-poppy-game",
-    "title": "Flappy Poppy",
-    "category": "Arcade",
-    "description": "Flappy Poppy - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5rmm1tsxyktsoxnqksmj2gsqfqlx8yst/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5rmm1tsxyktsoxnqksmj2gsqfqlx8yst/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 741,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-foot-care-game",
-    "title": "Foot Care",
-    "category": "Arcade",
-    "description": "Foot Care - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/43gz0ljeia8asp8g9xuw47zpo2uacfnh/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/43gz0ljeia8asp8g9xuw47zpo2uacfnh/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 741,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-xtreme-real-city-car-parking-game",
-    "title": "Xtreme Real City Car Parking",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Xtreme Real City Car Parking !Driving challenge come with Advance Features this game. Park your cars supermarket building and enhance your parking skills. this vital parking, driving, and simulation! This is Multi-level simulation game that you never play before! Park your Car without hitting any obstacles! Avoid crashing into barriers and other vehicles! This is quite challenge. Do you think you can park amazing cars accurately? Get ready for this supermarket modern car parking game!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/xkquf2fyvfx2uea7lma86dz9m2khhszf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/xkquf2fyvfx2uea7lma86dz9m2khhszf/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5161,36 +3952,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-parking-car-parking-multiplayer-game-game",
-    "title": "Parking Car Parking Multiplayer game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Parking Car Parking Multiplayer game !More than just parking: open-world multiplayer mode, car tuning, free walking!  Thousands players are waiting for you.  Join us!    Multiplayer open world mode  • Free walking.  • Free open world with real gas stations and car services.  • Compete against real players multiplayer racing.  • Exchange cars with real players.  • Thousands real players every day.  • Friend list.  • Voice Chat.  • Police mode    Car customization  • Adjustable suspension, wheel angle and more.  • Engine tuning: swap engine, turbo, gearbox and exhaust.  • Visual auto tungs: Dynamic vynils, car body parts.    High-quality open world  • Highly-detailed environments  • 100 cars with real interior.  • 16 player skins  • Buildings with interior      Interesting gameplay  •82 real-life parking and driving challenges.  •Different vehicles: Tow truck, pickup, trucks, sport and classic cars.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/nad2or807qb5klumn97rzx4o74va1ixg/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/nad2or807qb5klumn97rzx4o74va1ixg/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 741,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-space-racing-3d-game",
-    "title": "Space Racing 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Space Racing 3D !Space Racing 3D is unique star-space racing game! Upgrade special aircrafts, burn up space with fastest and most exhilarating racing action!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/8aqdddcnovc98rvxjbebhaxrnb3duqd2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/8aqdddcnovc98rvxjbebhaxrnb3duqd2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 741,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-shape-puzzle-game",
     "title": "Shape Puzzle",
     "category": "Puzzle",
@@ -5206,21 +3967,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-jet-boat-racing-game",
-    "title": "Jet Boat Racing",
-    "category": "Arcade",
-    "description": "Jet Boat Racing - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5r7362qipp68day343iq059sm3jp8wkv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5r7362qipp68day343iq059sm3jp8wkv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 740,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-penguin-caretaker-escape-game",
     "title": "Penguin Caretaker Escape",
     "category": "Arcade",
@@ -5228,21 +3974,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/gudmc8aeuy9aliq6ebctgyz4t8jcgquw/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/gudmc8aeuy9aliq6ebctgyz4t8jcgquw/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 740,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-dual-car-control-game",
-    "title": "Dual Car Control",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Dual Car Control !Dual Two Carget car immediately and walk away.There are only some points you need to pay attention to. You control 2 cars same time.Take cars to safe area without hitting obstacles, don't get caught by aliens.free so start playing now.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6h7thqgq4clxjk88se9icgt4qg7wlzer/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6h7thqgq4clxjk88se9icgt4qg7wlzer/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5427,21 +4158,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-cargo-truck-montain-simulator-game",
-    "title": "Cargo Truck Montain Simulator",
-    "category": "Arcade",
-    "description": "Cargo Truck Montain Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/dua7f3lyka1ousc42knq5s53pggj2011/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/dua7f3lyka1ousc42knq5s53pggj2011/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 738,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-halloween-2024-fps-shooter-game",
     "title": "HALLOWEEN 2024 FPS SHOOTER",
     "category": "Arcade",
@@ -5552,21 +4268,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-shaolin-soccer-game",
-    "title": "Shaolin Soccer",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Shaolin Soccer !is an engaging puzzle game where your objective is to descend safely. appears straightforward first glance but offers profound depth. Navigate through numerous levels, honing your intellect while enjoying journey. Website Developer  <href='https://www.bestcrazygames.com/home/keyword/stickman'>https://www.bestcrazygames.com/home/keyword/stickman</a>",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/1re3k4h9vkknttyops13remtr23af95n/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/1re3k4h9vkknttyops13remtr23af95n/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 737,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-tic-tac-toe-puzzle-game",
     "title": "Tic Tac Toe Puzzle",
     "category": "Arcade",
@@ -5619,21 +4320,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/kqtdqi95ozrguk4wiz3kcb2j25lziej2/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/kqtdqi95ozrguk4wiz3kcb2j25lziej2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 734,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-car-speed-paint-game",
-    "title": "CAR SPEED PAINT",
-    "category": "Puzzle",
-    "description": "CAR SPEED PAINT - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/yuo6d3wdxh11u07f1vnvplrgbjyk0cqz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/yuo6d3wdxh11u07f1vnvplrgbjyk0cqz/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5813,21 +4499,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-metal-shooter-brother-squad-game",
-    "title": "Metal Shooter Brother Squad",
-    "category": "Arcade",
-    "description": "Metal Shooter Brother Squad - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/as4yihf49vvpozd9qn4l6tnxv10fmfvq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/as4yihf49vvpozd9qn4l6tnxv10fmfvq/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 731,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-imposter-rotate-puzzle-game",
     "title": "Imposter Rotate Puzzle",
     "category": "Arcade",
@@ -5850,21 +4521,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/fvawm0htkqziru9hicf6tzo87nqf4kej/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/fvawm0htkqziru9hicf6tzo87nqf4kej/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 731,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ultimate-dog-racing-game-2020-game",
-    "title": "Ultimate Dog Racing Game 2020",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ultimate Dog Racing Game 2020 !Ultimate dog racing game is being started mighty stadium with huge crowd Dog Race Sim 2020 : Dog Racing Games. Enjoy this dog racing simulator game and become crazy dog racer. Dog racing is an interesting dog race championship with many racing dog breeds and this is more fun than dog chase race.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/wucf01p57bkqndzhonarhdodu3jhfnib/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/wucf01p57bkqndzhonarhdodu3jhfnib/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5902,21 +4558,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/x0kip3nnftinc3ti7zon5gogvu9x83ro/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/x0kip3nnftinc3ti7zon5gogvu9x83ro/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 730,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-stickman-hero-game",
-    "title": "Stickman Hero",
-    "category": "Stickman",
-    "description": "Stickman Hero - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/imwsoj6dod2izstzsmsr9uu0asegbc8k/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/imwsoj6dod2izstzsmsr9uu0asegbc8k/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -5985,21 +4626,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-neighbor-sponge-scary-secret-3d-game",
-    "title": "Neighbor Sponge. Scary Secret 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Neighbor Sponge. Scary Secret 3D !Play for guy whose name is Bob! You came to bottom neighborhood city and settled next to sponge neighbor. You liked his unusually huge pineapple house. You thought he was very kind. He has huge mustache and he always says hello to strangers. You have learned that he works fast food restaurant which is famous for its crab burgers. After some time, you learned that secret burger recipe was stolen.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/p1liye3ag2o6r9y8oc3hbfh5a49v51pv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/p1liye3ag2o6r9y8oc3hbfh5a49v51pv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 727,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-space-shooter-game",
     "title": "Space Shooter",
     "category": "Shooting",
@@ -6045,21 +4671,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-nonogram-picture-cross-puzzle-game-game",
-    "title": "Nonogram: Picture Cross Puzzle Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Nonogram: Picture Cross Puzzle Game !Nonogram: Picture Cross Puzzle Game requires your math knowledge and space-imagination skills to work out three difficulties puzzles. As typical arcade puzzle game, you need to fill blank up with correct locations according to number tips. Glad you will complete all levels!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/0arwbjpr1zv67xod0lyzgp7q7cpj0o30/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/0arwbjpr1zv67xod0lyzgp7q7cpj0o30/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 725,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-doge-rush-draw-home-puzzle-game",
     "title": "Doge Rush Draw Home Puzzle",
     "category": "Arcade",
@@ -6067,21 +4678,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/6zjncg8mzhdlx2cfjrlq4u8xwk9xja8k/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/6zjncg8mzhdlx2cfjrlq4u8xwk9xja8k/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 724,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-euro-cargo-transporter-truck-driver-simulator-2019-game",
-    "title": "Euro Cargo Transporter Truck Driver Simulator 2019",
-    "category": "Arcade",
-    "description": "Euro Cargo Transporter Truck Driver Simulator 2019 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/h3ke66kpqw2a7pzmxzy2x1vvjpkwdjjv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/h3ke66kpqw2a7pzmxzy2x1vvjpkwdjjv/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -6132,36 +4728,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 722,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-chained-cars-impossible-stunts-3d-game",
-    "title": "Chained Cars Impossible Stunts 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Chained Cars Impossible Stunts 3D !Chained Cars 3d is new fast beam drive and unique ramp real car racing games simulator. this accident simulator furious endless runner rivals car games chain breaker driving game, you are dealing with two joined cars and your task is to limit your speed crazy offroad bus vs Prado Jeep traffic racing. Bored chained bike racing games try this new beam drive motor car games 3d. player has to make sure that his chain break driving car games which is chained alliance with another race cars is moving towards its destination limited time. Chained cars look simple free racing games but needs special driving & parking skills and perfect car driver to maintain speed before clashes while racing. Chains are attached to your drift rival car driving game. Challenge Furious adrenaline cargo coach crazy chain breaker fuel race through city streets.        Be King Road chained car games take care your impossible chain car stunts while driving through your real car racing rival. Chain Breaker, beyond its simple pickup and play nature, is way combines elements environment so that things get more complex, more difficult, and more rewarding further players make chain luxury bus driving free racing games. This free drag race cars racing games Chain Breaker doesn't simply increase difficulty by making things come out although that is certainly part as well real furious speed city police stunt car driver. Driving luxury city bus parking mania is superb game from roller coaster, off-road cargo train, farming cargo tractor and oil tanker cargo train parking games. Be real speed sports car driver, drift car racing is never being this awesome, get behind wheel chained car games rival and accept impossible stunt adventure challenge.        Do you love impossible real free racing games? If yes! Then this fast speed turbo drift, drag car racing games is perfect for you! Become bravest driver city, test your driving & parking mania skills. Get ready for racing experience. There are many barriers racing track, so be careful your chain not to be break. We added some extra off-road obstacles to make your chained car games ride really tougher. Become driving car master different zones earth by enjoying snowy wind new car games 3d. You need free race cars games to be stunt driver order to win car racing games, race pedals are not only key factors this Chained Cars Speed asphalt Racing - Chain Break Driving game chains but breaks and controls car are also more important, chained driving are there to race your cars to just drive carefully to avoid car accidents, this game distance between chained cars is not only factor which needs to be taken care off but also if cars collide with each other race cars is off and they will catch fire. driving games chained cars off-road chain sports car dangerous stunts with sports. Chained Cars Impossible Stunts – Car Games 2019 is an endless car racing game. Get yourself sport car and start to perform impossible stunts difficult city tracks. You should be great driver and complete challenging missions.        Have you ever wanted to drive crazy like this free racing games? t's time to drive various sports cars city. Chained cars look simple game but needs special driving skills and perfect car driver to maintain speed before clashes while racing. Race cars accident simulator Driving crazy chained car games through traffic and reach destination point safely and show your best driving skills.        GAME FEATURES IMPOSSIBLE CHAINED CAR STUNTS FREE CAR GAMES        • Detailed 3d Environment    • Smooth and Realistic Chained Racing Car driving games Controls    • Lots motor car game challenging missions    • Multiple cars to choose from    • Beautiful Asphalt Racing Tracks    • Realistic Car Racing Games Sound effects",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6i5splfy8ksnm75lmabf86basvyhosku/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6i5splfy8ksnm75lmabf86basvyhosku/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 722,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-coronavirus-shooter-game",
-    "title": "Coronavirus Shooter",
-    "category": "Sports",
-    "description": "Coronavirus Shooter - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ac330yte6z14mutdl1aewj05i2rtun04/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ac330yte6z14mutdl1aewj05i2rtun04/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 721,
     "platform": "responsive"
   },
   {
@@ -6345,21 +4911,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-johnny-runner-game",
-    "title": "Johnny Runner",
-    "category": "Arcade",
-    "description": "Johnny Runner - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/s4t8nbovy30x8q26fcsnkmw6esove29a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/s4t8nbovy30x8q26fcsnkmw6esove29a/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 710,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-xiblba-match-game",
     "title": "Xiblba Match",
     "category": "Arcade",
@@ -6390,43 +4941,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-memory-match",
-    "title": "Memory Match",
-    "category": "Clicker",
-    "description": "Memory Match - play now on EggerMath",
-    "tags": [
-      "brain",
-      "card",
-      "html",
-      "matching",
-      "memory",
-      "mobile"
-    ],
-    "thumb": "https://img.gamemonetize.com/hldlw7bxofc60ehfq86f8hhpd3t8ttc7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hldlw7bxofc60ehfq86f8hhpd3t8ttc7/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 708,
-    "platform": "mobile"
-  },
-  {
-    "id": "gm-blob-runner-3d-online-game",
-    "title": "Blob Runner 3D Online",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Blob Runner 3D Online !Blob Runner 3D is popular game that worth your time. Running towards destination is your only goal. What's more, don't forget to collect. Collect more and more diamond your road to unlock various skins. You must like them. Why not try this attractive game now?",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/lzk79csglrmscxp811n7bfg5xg998h2a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/lzk79csglrmscxp811n7bfg5xg998h2a/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 708,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-amazing-spain-puzzle-game",
     "title": "Amazing Spain Puzzle",
     "category": "Sports",
@@ -6449,21 +4963,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/ejc7qtqyqj9ckxyk4awlw77q0rucgo4r/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/ejc7qtqyqj9ckxyk4awlw77q0rucgo4r/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 707,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-turtle-run-adventure-game",
-    "title": "Turtle Run Adventure",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Turtle Run Adventure  !Welcome to",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/19tnruneuhcolums1k9xnptd1jxh8r59/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/19tnruneuhcolums1k9xnptd1jxh8r59/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -6523,43 +5022,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-stair-run-game-game",
-    "title": "Stair Run Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Stair Run Game !Stair Run is recommended as not merely collecting but also an avoiding arcade game with three-dimensional stickman game art animation. is managed for you to overpass all red areas by means collecting blue blocks and making stairs air. Why not challenge youself and complete all levels Stair Run?",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/69jgoowls660ic9wjf7dqzui04tkkof8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/69jgoowls660ic9wjf7dqzui04tkkof8/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 706,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-mini-car-runner-meme-games",
-    "title": "Mini Car Runner   Meme Games",
-    "category": "Arcade",
-    "description": "Mini Car Runner   Meme Games - play now on EggerMath",
-    "tags": [
-      "brainrot",
-      "car",
-      "cars",
-      "driving",
-      "endless",
-      "fun"
-    ],
-    "thumb": "https://img.gamemonetize.com/5sh8t4wul1u5743j9cd6jap365ow17b3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5sh8t4wul1u5743j9cd6jap365ow17b3/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 705,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-ninja-warrior-game",
     "title": "Ninja Warrior",
     "category": "Boys",
@@ -6582,36 +5044,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/cslrrgm6mwvmc76w9i79oub0si1laxdn/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/cslrrgm6mwvmc76w9i79oub0si1laxdn/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 704,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-xtrem-demolition-derby-racing-game",
-    "title": "Xtrem Demolition Derby Racing",
-    "category": "Soccer",
-    "description": "Xtrem Demolition Derby Racing - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/j28un08ca751dh8qdbg2li7551clevgy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/j28un08ca751dh8qdbg2li7551clevgy/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 704,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-blocky-sky-jumping-game",
-    "title": "Blocky Sky Jumping",
-    "category": "Arcade",
-    "description": "Blocky Sky Jumping - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/k9ohqerk3x03cpgjayyfy5bsca8zau8g/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/k9ohqerk3x03cpgjayyfy5bsca8zau8g/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -6707,21 +5139,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 703,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ladder-stacking-run-game",
-    "title": "Ladder Stacking Run",
-    "category": "Arcade",
-    "description": "Ladder Stacking Run - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/borcebmf8rrcoe9tw9qb6c6xh6etgp9s/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/borcebmf8rrcoe9tw9qb6c6xh6etgp9s/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 702,
     "platform": "responsive"
   },
   {
@@ -6882,21 +5299,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-cube-jumper-escape-game",
-    "title": "Cube Jumper: Escape",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Cube Jumper: Escape !Cube Jumper: Escape, prepare for an adrenaline-fueled challenge! Take control nimble cube as you navigate treacherous terrain with dangerous spikes. Your mission is to leap with precision, evading every deadly obstacle that stands your way. Engage fast-paced, heart-pounding action as you strive to reach safety finish line. Explore myriad meticulously designed levels, each testing your reflexes and timing to limit. With its captivating gameplay and addictive mechanics, Cube Jumper: Escape is ultimate test your jumping prowess. Will you conquer cube and escape to victory?",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5o8x964bvy7afr2com43b5r54c9z8cw6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5o8x964bvy7afr2com43b5r54c9z8cw6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 699,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-kids-learn-professions-puzzle-game",
     "title": "Kids Learn Professions Puzzle",
     "category": "Clicker",
@@ -6910,36 +5312,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 698,
     "platform": "mobile"
-  },
-  {
-    "id": "gm-grimace-ball-jumpling-game",
-    "title": "Grimace Ball Jumpling",
-    "category": "Arcade",
-    "description": "Grimace Ball Jumpling - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/2eeizpsva0s0kdpw0zf5trn08s98fsva/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2eeizpsva0s0kdpw0zf5trn08s98fsva/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 697,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-tile-farm-story-matching-game-game",
-    "title": "Tile Farm Story: Matching Game",
-    "category": "Arcade",
-    "description": "Tile Farm Story: Matching Game - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/anregpt2zsbb2kprn71x109fopzzl0s3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/anregpt2zsbb2kprn71x109fopzzl0s3/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 697,
-    "platform": "responsive"
   },
   {
     "id": "gm-match-3-game",
@@ -7121,66 +5493,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-pocket-sniper-sniper-game-game",
-    "title": "Pocket Sniper",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Pocket Sniper - Sniper Game !Aim through your sniper scope and make your best shot!    Gameplay:  ▲ Hold and drag your sniper scope to aim, release to shoot  ▲ When aiming moving target, time your shot for best outcome  ▲ Upgrade weapon regularly  ▲ Shoot buildings and fuel tank for extra fun    Game features:  ▲ Simple shooting with puzzle twist  ▲ Low coin? Bonus stages will fix you up  ▲ Collect all 5 sniper rifles and adventure different maps  ▲ Infinite ammo, so don't be afraid if you missed your target    Stay frosty! Leverage your wits and expertise sniping to bring them down.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6mn8n13d09urkv8n01zxaaqp673ge9ol/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6mn8n13d09urkv8n01zxaaqp673ge9ol/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 693,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-sniper-champion-3d-game",
-    "title": "Sniper Champion 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Sniper Champion 3D !Are you good shooting targets with sniper rifle? Sniper Champion 3D is first-person shooting skillful arcade game. objective is to win over 1000 scores sixty seconds all levels. more scores you won, more stars you are able to win finally. targets will arise randomly. So you need to aim fast and shoot yellow areas for most 500 scores. Don't worry about ammo and shooting speed, keep calm and concentrate your quick aiming!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/xlxt1dhywnxtm1f4jclxvdq4kvuovm3y/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/xlxt1dhywnxtm1f4jclxvdq4kvuovm3y/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 693,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-kong-hero-super-kong-jump-2020-game",
-    "title": "Kong Hero Super Kong Jump 2020",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Kong Hero Super Kong Jump 2020 !Super Kong Jump - Monkey Bros & Banana Forest Tale you PLAY as Mono who has to overcome obstacles and defeat enemies to find his brother and save world. JUMP and RUN through exciting levels and discover breathtaking places with lots hiding places.        Giant invaders have come from outer world to conquest earth, they spread corruption and slaved animals from earth, but they didn't expect to clash with Monkey bros.    Mono needs to find his brother and save world, with his assistant Doctor and your help to kick Giants out this planet.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/3nazkw8a3o58ysm6tvnarwutvys1b02f/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3nazkw8a3o58ysm6tvnarwutvys1b02f/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 693,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-roll-run-3d-game",
-    "title": "Roll Run 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Roll Run 3D !Roll Run 3D is New Unique Concept with Rolling , Just Tap to Roll Ball and Reach Destination , Be Aware with Obstacles . Have Fun.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/z9ktl7tosune3hu65l1g2wy9cey55bv4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/z9ktl7tosune3hu65l1g2wy9cey55bv4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 693,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-night-racing",
     "title": "Night Racing",
     "category": "Racing",
@@ -7195,26 +5507,6 @@ var GAMES = [
     ],
     "thumb": "https://img.gamemonetize.com/vpyg4xx30zcxx3sv2p8ke2ws7bvwg08v/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/vpyg4xx30zcxx3sv2p8ke2ws7bvwg08v/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 692,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fall-guys",
-    "title": "Fall Guys",
-    "category": ".IO",
-    "description": "Fall Guys - play now on EggerMath",
-    "tags": [
-      "io",
-      "io-games",
-      "adventure",
-      "arcade"
-    ],
-    "thumb": "https://img.gamemonetize.com/cfipwmjrgu4jqwxftrz1spb1djl8ev9r/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cfipwmjrgu4jqwxftrz1spb1djl8ev9r/",
     "source": "gamemonetize",
     "videoUrl": "",
     "developer": "GameMonetize",
@@ -7386,21 +5678,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-sky-runners-game",
-    "title": "Sky Runners",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Sky Runners !Play as different characters as you run, jump and avoid obstacles stunning 3D environments. Move over and under challenging obstacles this fast and crazy runner and racing game! MULTIPLE CHARACTERS Choose your favorite character to win race and beat this running game challenge!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/i79w6g2rwo5itk5z8o1oiw8ivwi41bpd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/i79w6g2rwo5itk5z8o1oiw8ivwi41bpd/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 689,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-piggy-on-the-run-game",
     "title": "Piggy On The Run",
     "category": "Arcade",
@@ -7476,28 +5753,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-arcade-thief-runner",
-    "title": "Arcade Thief Runner",
-    "category": "Adventure",
-    "description": "Arcade Thief Runner - play now on EggerMath",
-    "tags": [
-      "adventure",
-      "android",
-      "arcade",
-      "ipad",
-      "iphone",
-      "mobile"
-    ],
-    "thumb": "https://img.gamemonetize.com/b629r9v8v23onnfc13ts7bgj0taiihmw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/b629r9v8v23onnfc13ts7bgj0taiihmw/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 686,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-xmas-memory-match-game",
     "title": "Xmas Memory Match",
     "category": "Arcade",
@@ -7557,21 +5812,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/wunfy9l4jvv4yr22qtx6epgeqqb98gq4/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/wunfy9l4jvv4yr22qtx6epgeqqb98gq4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 685,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-big-head-wall-run-game",
-    "title": "BIG HEAD WALL RUN",
-    "category": "Arcade",
-    "description": "BIG HEAD WALL RUN - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/fxx57ocunuyil5wfxnfqvsq4fts1shy7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/fxx57ocunuyil5wfxnfqvsq4fts1shy7/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -7790,36 +6030,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-snow-drifting-3d-champ-2024-game",
-    "title": "Snow Drifting 3D Champ 2024",
-    "category": "Arcade",
-    "description": "Snow Drifting 3D Champ 2024 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/min7zahcevrdpz7dou7ag9db2uhh7sku/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/min7zahcevrdpz7dou7ag9db2uhh7sku/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 673,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-flex-run-3d-game",
-    "title": "Flex Run 3D",
-    "category": "Stickman",
-    "description": "Flex Run 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ji4obyfmpocoh3brhc9j6m0m1trnrynq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ji4obyfmpocoh3brhc9j6m0m1trnrynq/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 673,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-crowd-city-join-clash-runner-game",
     "title": "Crowd City Join Clash Runner",
     "category": "Arcade",
@@ -7832,26 +6042,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 673,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-soccer-duel",
-    "title": "Soccer Duel",
-    "category": "Soccer",
-    "description": "Soccer Duel - play now on EggerMath",
-    "tags": [
-      "casual",
-      "online",
-      "soccer",
-      "sport"
-    ],
-    "thumb": "https://img.gamemonetize.com/cmu4j0nhxsgrh6dg4kkjgm0fmblfenzn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cmu4j0nhxsgrh6dg4kkjgm0fmblfenzn/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 672,
     "platform": "responsive"
   },
   {
@@ -8010,21 +6200,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-unroll-ball-roll-the-ball-game",
-    "title": "Unroll Ball",
-    "category": "Arcade",
-    "description": "Unroll Ball - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/7j9nze3k335kib7i35x903mcwcuuw2u4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/7j9nze3k335kib7i35x903mcwcuuw2u4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 666,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-gunmach-game",
     "title": "Gunmach",
     "category": "Arcade",
@@ -8032,21 +6207,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/cdb9dsve5x538n85wlpw73r7nmilalqn/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/cdb9dsve5x538n85wlpw73r7nmilalqn/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 666,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-idle-miner-tycoon-mine-manager-and-management-game",
-    "title": "Idle Miner Tycoon: Mine Manager and Management",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Idle Miner Tycoon: Mine Manager and Management !Are you true gold miner? Become mine factory tycoon, build an empire, earn money, build business and get rich this idle tycoon simulator game where you can make money by investing!  Expand your millionaire mining and increase productivity with gold miner who will automate workflow your factory! Discover manager strategy to invest and earn as much cash as possible this idle tycoon simulator - Live as miner millionaire tycoon! Be gold digger and start digging for gold now! This is not clicker mining game: no need for endless tapping like other clickers or idle simulator.    Do you like idle clicker and earn money simulator games? Want to be gold digger? Idle Miner Tycoon is simulation game that mixes mining management and earning tons money to become rich capitalist millionaire. Unlike other simulator and clicker games, aim this miner simulator is to build gold resources to gain as many idle benefits as possible: with income that you make from mine, you will have to hire and pay managers, upgrade your factory, and mining buildings as well as optimize your miner for perfect timing whole mining process. What makes this different from other idle games is that you can become mine manager tycoon, build millionaire factory, and earn money by optimizing factory workflow this manager game like clicker simulator. Make more factories this idle simulator until you become rich gold tycoon! Enjoy this miner tycoon adventure, try this money simulator game and become gold miner.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/n7eqj2zsikjg1pomx28m6qe8b0hd4ofs/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/n7eqj2zsikjg1pomx28m6qe8b0hd4ofs/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -8107,21 +6267,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-tallest-towers-game",
-    "title": "Tallest Towers",
-    "category": "Arcade",
-    "description": "Tallest Towers - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/m3squ653v8pagrbnfwih2whyt1rq4mgk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/m3squ653v8pagrbnfwih2whyt1rq4mgk/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 664,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-gravity-balls-game",
     "title": "Gravity Balls",
     "category": "Arcade",
@@ -8135,49 +6280,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 664,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-grand-extreme-racing",
-    "title": "Grand Extreme Racing",
-    "category": "Racing",
-    "description": "Grand Extreme Racing - play now on EggerMath",
-    "tags": [
-      "car",
-      "driving",
-      "race",
-      "racing",
-      "stunts"
-    ],
-    "thumb": "https://img.gamemonetize.com/74es9ol4goak4wnj2sljc1x47wmf855t/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/74es9ol4goak4wnj2sljc1x47wmf855t/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 663,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-sea-kings",
-    "title": "Sea Kings",
-    "category": "Action",
-    "description": "Sea Kings - play now on EggerMath",
-    "tags": [
-      "action",
-      "adventure",
-      "arena",
-      "battleship",
-      "boat",
-      "multiplayer"
-    ],
-    "thumb": "https://img.gamemonetize.com/azd2160bf0hum6z3y5miuyxym0yjnqxw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/azd2160bf0hum6z3y5miuyxym0yjnqxw/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 663,
-    "platform": "pc"
   },
   {
     "id": "gm-blocks-deluxe-game",
@@ -8322,51 +6424,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-temple-escape-run-game",
-    "title": "Temple Escape Run",
-    "category": "Soccer",
-    "description": "Temple Escape Run - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cd0a0wkvtmpzg0qbo48ecwretizt75mj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cd0a0wkvtmpzg0qbo48ecwretizt75mj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 660,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-sticky-ball-rush-game",
-    "title": "Sticky Ball Rush",
-    "category": "Arcade",
-    "description": "Sticky Ball Rush - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bcznzqo3mszgdi4guplt68us5v44mi5a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bcznzqo3mszgdi4guplt68us5v44mi5a/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 660,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-monster-drop-game",
-    "title": "Monster Drop",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Monster Drop !Monster Drop is just coolest physics-based puzzle game available.   Built from ground up with team artists and programmers to give you best gaming experience possible.   Main Goal:   Drop monster onto metal block by destroying all other blocks.   Once all blocks are gone and monster is metal block, press ZAPPER button to fry monster!   But be careful, hit ground and it's all over and Monster will eat you.   Features:   - 90 well crafted levels.   - Monster Zapper to destroy monsters.   - 3 words with all new monsters.   - Smooth 60 frame one second Gameplay.   Enjoy!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/risxt3a21i0u9jnjtdwdxywzzlro1qk0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/risxt3a21i0u9jnjtdwdxywzzlro1qk0/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 660,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-birds-sort-color-match-puzzle",
     "title": "Birds Sort Color Match Puzzle",
     "category": "Puzzle",
@@ -8383,21 +6440,6 @@ var GAMES = [
     "embedUrl": "https://html5.gamemonetize.co/i7b34e3h3odt7n6qawle56nlyypm0h2r/",
     "source": "gamemonetize",
     "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 659,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-block-bounce-game",
-    "title": "Block Bounce",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Block Bounce !Try to sign best score this great hyper casual game!   Enjoy it!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/dsyscnu31ft7jzt3sjqmptq9y4yjqcmb/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/dsyscnu31ft7jzt3sjqmptq9y4yjqcmb/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 659,
@@ -8577,21 +6619,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-de-loredo-fight-game",
-    "title": "De Loredo Fight",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game De Loredo Fight !De loredo and forces change",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6vks144wxybm22l6gvk0oankgqfgd94v/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6vks144wxybm22l6gvk0oankgqfgd94v/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 656,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-iron-man-parkour-game",
     "title": "Iron Man Parkour",
     "category": "Arcade",
@@ -8622,25 +6649,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-head-sports-soccer",
-    "title": "Head Sports Soccer",
-    "category": "Sports",
-    "description": "Head Sports Soccer - play now on EggerMath",
-    "tags": [
-      "football",
-      "soccer",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/mxg4u39zgocq4san446v7gwqow7m3fiu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/mxg4u39zgocq4san446v7gwqow7m3fiu/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-ins-life-royal-ball-game",
     "title": "Ins Life Royal Ball",
     "category": "Arcade",
@@ -8648,36 +6656,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/488r0tiqq2zyobevw3kezbijlfo095mn/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/488r0tiqq2zyobevw3kezbijlfo095mn/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-offroad-4x4-driving-jeep-game",
-    "title": "Offroad 4x4 Driving Jeep",
-    "category": "Arcade",
-    "description": "Offroad 4x4 Driving Jeep - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/nymjfiot4pbx417j24l8f3ovoj7omja8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/nymjfiot4pbx417j24l8f3ovoj7omja8/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-block-block-game",
-    "title": "Block Block",
-    "category": "Arcade",
-    "description": "Block Block - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/091f7iqbtu52wtx5id1qjt913yndvyev/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/091f7iqbtu52wtx5id1qjt913yndvyev/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -8701,21 +6679,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-counter-craft-lego-clash-game",
-    "title": "Counter Craft Lego Clash",
-    "category": "Arcade",
-    "description": "Counter Craft Lego Clash - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/8j61zidug6qtyo3s36pnngiw9b32yoy7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/8j61zidug6qtyo3s36pnngiw9b32yoy7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-99-balls-game",
     "title": "99 Balls",
     "category": "Arcade",
@@ -8723,36 +6686,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/jf095b7b7qfs6de11pm3dck1xl5ynnk6/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/jf095b7b7qfs6de11pm3dck1xl5ynnk6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ace-air-fighter-game",
-    "title": "Ace Air Fighter",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ace Air Fighter !Air Fighter is challenging game that will give you battle-field like experience. With amazing graphics and theme, all you have to swing with your fighter and kill enemies travelling your way. just swipe or touch your finger screen to move your plane. Keep mind that you have unlimited amount bullets to destroy fighter .",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bwepeimvy9pdiehthjtuan0m7h1usio4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bwepeimvy9pdiehthjtuan0m7h1usio4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 654,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-escape-game-game",
-    "title": "Escape Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Escape Game !We hope you have fun time with Escape Game",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/9gyoib9mgy109238lqjgw6dgjfjc3lzk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/9gyoib9mgy109238lqjgw6dgjfjc3lzk/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -8916,81 +6849,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-world-of-blocks-3d-game",
-    "title": "World of Blocks 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game World of Blocks 3D !Do you like building games? World Blocks 3D invites you into completely open and huge craft world. this world, you can use dozens items / mines to design most things you can imagine and take actions world your own. For example, first design, then fly over your unique design using flying mode! This wonderful simulation game may become addictive for you. is possible to design completely different world every game.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hfxm19oajh1bvl8ypij28ec1bdcrms87/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hfxm19oajh1bvl8ypij28ec1bdcrms87/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 652,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-speedy-ball-game",
-    "title": "Speedy Ball",
-    "category": "Arcade",
-    "description": "Speedy Ball - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vsargix3s1jmbjjamhiyrxxyubxjrjln/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vsargix3s1jmbjjamhiyrxxyubxjrjln/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 651,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-gully-baseball-game",
-    "title": "Gully Baseball",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Gully Baseball !Gully Baseball is game where you play baseball with your opponent and destroy most building windows to win match, use your mouse to play game",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bt8n8cv7gqzzyxfsrh8t7ew5qczv0deb/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bt8n8cv7gqzzyxfsrh8t7ew5qczv0deb/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 651,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cat-trap-labyrinth-escape-game",
-    "title": "Cat Trap Labyrinth Escape",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Cat Trap Labyrinth Escape !Navigate through intricate Cat Trap Labyrinth Escape! Maneuver through maze cunning traps and challenges to liberate trapped felines. Utilize cunning strategies and quick reflexes to outwit labyrinths devious designs. Can you navigate to freedom and rescue cats before its too late? Website Developer  <href='https://www.playbestgames.online/'>https://www.playbestgames.online/</a>",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/dp10mw78lw6535wk58njcp9hmm8crkjm/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/dp10mw78lw6535wk58njcp9hmm8crkjm/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 651,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ball-magnet-game",
-    "title": "Ball Magnet",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ball Magnet !Get ready for an extremely new, simple, original, but same time challenging. Move magnet to attract blocks and cubes but avoid bombs have fun with this wonderful game.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/kgbuat7dn6vlavdit9oj1fftmnkaysxi/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kgbuat7dn6vlavdit9oj1fftmnkaysxi/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 651,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-dress-up-the-lovely-princess-game",
     "title": "Dress Up The Lovely Princess",
     "category": "Arcade",
@@ -9065,27 +6923,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-not-drunk-yet",
-    "title": "Not Drunk Yet!",
-    "category": "Action",
-    "description": "Not Drunk Yet! - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "avoid",
-      "highscore",
-      "race",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/3patc8i0moikmychbk1z2dm7idcjhlbr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3patc8i0moikmychbk1z2dm7idcjhlbr/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 650,
-    "platform": "pc"
-  },
-  {
     "id": "gm-wild-hunting-clash-game",
     "title": "Wild Hunting Clash",
     "category": "Arcade",
@@ -9131,21 +6968,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-kill-robots-game",
-    "title": "Kill Robots",
-    "category": "Arcade",
-    "description": "Kill Robots - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cdjqctxbm3tmyc38p92hkpyuc0n9gf4x/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cdjqctxbm3tmyc38p92hkpyuc0n9gf4x/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 650,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-parkour-boss-game",
     "title": "Parkour Boss",
     "category": "Arcade",
@@ -9168,21 +6990,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/z8ud3po55n6uhr9d86moe2ur7rzlffs0/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/z8ud3po55n6uhr9d86moe2ur7rzlffs0/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 649,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-monster-dragon-city-destroyer-game",
-    "title": "Monster Dragon City Destroyer",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Monster Dragon City Destroyer ! people city dragon games have forgotten about your super powers dragon city attack games for which you were famous for. Come and launch severe attack flying attack city dragon games to attest past authority your strong powers dragon city games.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/sdnt60j9vxclzfzg4zyhuy1wcsve0ozs/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sdnt60j9vxclzfzg4zyhuy1wcsve0ozs/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -9228,21 +7035,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/80whi1rzhhbrxn1f4le2ll0cf5vx5wv2/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/80whi1rzhhbrxn1f4le2ll0cf5vx5wv2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 648,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-monster-truck-extreme-stunts-game",
-    "title": "Monster Truck Extreme Stunts",
-    "category": "Arcade",
-    "description": "Monster Truck Extreme Stunts - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/v4n2fp1keev6q4w8tih0rcxgo0czdaf8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/v4n2fp1keev6q4w8tih0rcxgo0czdaf8/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -9481,21 +7273,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-best-battle-cover-royale-game",
-    "title": "Best battle Cover Royale",
-    "category": "Cooking",
-    "description": "Best battle Cover Royale - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/wd4119shme4h2345szt6s85bogkb0od7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/wd4119shme4h2345szt6s85bogkb0od7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 645,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-ball-blaster-canon-game",
     "title": "Ball Blaster Canon",
     "category": "Arcade",
@@ -9518,21 +7295,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/ftgx1mb3sserhqdhlkup0hn357eq81sl/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/ftgx1mb3sserhqdhlkup0hn357eq81sl/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 645,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-spiderman-street-fighter-game",
-    "title": "Spiderman: Street Fighter",
-    "category": "Arcade",
-    "description": "Spiderman: Street Fighter - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/1zah7rt9fe0hyzg06gge9xmigsgw6gig/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/1zah7rt9fe0hyzg06gge9xmigsgw6gig/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -9665,28 +7427,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-worldcup-ball-crowd",
-    "title": "WorldCup Ball Crowd",
-    "category": "Soccer",
-    "description": "WorldCup Ball Crowd - play now on EggerMath",
-    "tags": [
-      "ball",
-      "football",
-      "physics",
-      "shooting",
-      "soccer",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/14ckhxducpq5r1k2ai99466rli0eddy3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/14ckhxducpq5r1k2ai99466rli0eddy3/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 642,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-balls-rolling-3d-sky-ball-game",
     "title": "Balls Rolling 3D: Sky Ball",
     "category": "Arcade",
@@ -9724,21 +7464,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/qm3b7eigprj281ivjgvw0p6hqsne503g/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/qm3b7eigprj281ivjgvw0p6hqsne503g/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 642,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fruits-samurai-game",
-    "title": "Fruits Samurai",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Fruits Samurai !WILDLY ADDICTING    Oddly Satisfying        Choose right path for samurai to cut and slice all fruits!    This puzzles sounds easy, but you have to be super strategic to cut all fruits!            1. Test your skills.    2. Feel your way through game    3. Amazing puzzle!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/wdi264h1hmk2qvu4lietcetgxeyehnee/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/wdi264h1hmk2qvu4lietcetgxeyehnee/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -9804,21 +7529,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/kcoq0hznqot6qjnwdstmgg8jtbwp4h4d/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/kcoq0hznqot6qjnwdstmgg8jtbwp4h4d/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 641,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cops-escape-game",
-    "title": "Cops Escape",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Cops Escape !When you play as fugitive, run around map, dodging cops and other annoying obstacles. Climb buildings and avoid traps to outwit law enforcement and get to finish line.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/3lqld3tqb2q4gis2lse15gm4dyh377ra/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3lqld3tqb2q4gis2lse15gm4dyh377ra/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -9948,27 +7658,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 639,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-triple-death-jump",
-    "title": "Triple Death Jump",
-    "category": "Arcade",
-    "description": "Triple Death Jump - play now on EggerMath",
-    "tags": [
-      "hypercasual",
-      "jump",
-      "jumping",
-      "race",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/vup7wiymkkia5u86ukhfc6oqa58ntfiq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vup7wiymkkia5u86ukhfc6oqa58ntfiq/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 638,
     "platform": "responsive"
   },
   {
@@ -10107,21 +7796,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-fire-truck-driving-simulator-2024-game",
-    "title": "Fire Truck Driving Simulator 2024",
-    "category": "Arcade",
-    "description": "Fire Truck Driving Simulator 2024 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ndh1rwjfkejjktdkkwb2bl80tgpg5l03/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ndh1rwjfkejjktdkkwb2bl80tgpg5l03/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 636,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-ball-jump-switch-game",
     "title": "Ball Jump Switch",
     "category": "Cooking",
@@ -10249,21 +7923,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/m12amwovnoc6klh9vovqkbjmm2hb6j35/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/m12amwovnoc6klh9vovqkbjmm2hb6j35/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 634,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-skytractor-parking-game",
-    "title": "SkyTractor Parking",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game SkyTractor Parking !Welcome to SkyTractor Park, ultimate thrill-seeking adventure where youll experience adrenaline rush maneuvering tractors towering skyscrapers. Get ready to test your skills this heart-pounding parking challenge as you navigate through precarious heights and tight spaces. With realistic physics and stunning urban landscapes, SkyTractor Park offers an immersive and exhilarating gameplay experience. Show off your precision and control as you perform daring stunts and perfect your parking techniques. Can you conquer urban heights and become master SkyTractor Park? Get behind wheel and embark this sky-high trac",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/p55ys1z4esv4ostmoseqvddb05dauziw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/p55ys1z4esv4ostmoseqvddb05dauziw/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -10504,21 +8163,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-mcparkour-noob-noob-baby-game",
-    "title": "MCParkour Noob &amp; Noob Baby",
-    "category": "Arcade",
-    "description": "MCParkour Noob &amp; Noob Baby - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/kat17jf8il5l1bpaqfa30bk0qcogv2q3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kat17jf8il5l1bpaqfa30bk0qcogv2q3/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 631,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-super-martin-princess-in-trouble-game",
     "title": "Super Martin Princess In Trouble",
     "category": "Arcade",
@@ -10526,21 +8170,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/dvb149vxae0fluzz40fiq5k93m0j0jbf/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/dvb149vxae0fluzz40fiq5k93m0j0jbf/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 631,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ballerina-princess-debut-maker-game",
-    "title": "Ballerina Princess Debut Maker",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ballerina Princess Debut Maker ! Let our  Ballerina Princess Debut Maker  'games for girls' make your childhood dreams come true and inspire you to create most beautiful interior design for your little baby doll. Your ballerina princess deserves only best and we know pressure creating perfect virtual dollhouse can sometimes be overwhelming. But don't worry, our girly room decorating app got you covered. When you see wide range furniture miniatures our 'princess leotard' provides, you won't search for other home clean up games no more. Enter your brand new playhouse and let your imagination run wild! Our 'house decorating games' will help you and your charming princess to become more independent. You will not only decorate your own house but do all room cleaning as well. By this point you should not have any doubts about getting yourself this amazing dream house maker. But case you do, maybe fact that you can get these 'princess ballerina games' for free helps you change your mind.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/uklzyr0605arpf4luhz5qzrhrpjytbzn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/uklzyr0605arpf4luhz5qzrhrpjytbzn/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -10609,21 +8238,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-truck-simulator-parking-3d-game",
-    "title": "Truck Simulator Parking 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Truck Simulator Parking 3D !This transport truck adventure is thrilling offroad truck driving game with freestyle feat and insane stunts crazy heights. This simulator game 2020 is test and training for drivers who have height phobias. As impossible racer climb massive gravity defying grand paths impossible tracks driving simulator game 2020.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hfvy5h3dlnj8w9ec0vtqezc6i7s9rqd9/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hfvy5h3dlnj8w9ec0vtqezc6i7s9rqd9/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 630,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-hug-and-kis-station-escape-game",
     "title": "Hug and Kis Station Escape",
     "category": "Arcade",
@@ -10636,21 +8250,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 630,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-monster-truck-stunt-madness-game",
-    "title": "Monster Truck Stunt Madness",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Monster Truck Stunt Madness !Are you mad for stunt tracks?, then take your driving to whole New World with Monster Truck Stunt Madness! Expert MOST Extreme 4X4 monster truck action riding, you have ever experienced. this whole new racing, jump between tall props, fall down and again drive over raised platforms, destroy terrific props to compete Stunt Driving Courses as fast as you can. 75 stunt levels and 6 different environment are wating for you. Use WASD or Arrows to drive.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/nurvwjtg72y2x30sacq7m9b7h8mrtjng/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/nurvwjtg72y2x30sacq7m9b7h8mrtjng/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 629,
     "platform": "responsive"
   },
   {
@@ -10676,21 +8275,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/tloh1r8i3pywjg2n3wyemj2uqjlktcnj/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/tloh1r8i3pywjg2n3wyemj2uqjlktcnj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 628,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cupcake-maker-princess-elena-game",
-    "title": "CupCake Maker Princess Elena",
-    "category": "Arcade",
-    "description": "CupCake Maker Princess Elena - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/59sc4ubcy500v8n7w1x8k5vuwslvu7a0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/59sc4ubcy500v8n7w1x8k5vuwslvu7a0/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -10726,21 +8310,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 627,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-monster-truck-stunts-mega-ramps-game",
-    "title": "Monster truck stunts mega ramps",
-    "category": "Arcade",
-    "description": "Monster truck stunts mega ramps - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/c7ch6q55gha9c8deporwsucmu9xft57q/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/c7ch6q55gha9c8deporwsucmu9xft57q/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 626,
     "platform": "responsive"
   },
   {
@@ -10789,21 +8358,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-magic-fairy-princess-dressup-game",
-    "title": "Magic Fairy Princess Dressup",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Magic Fairy Princess Dressup !Magic Fairy Princess Dressup - Love Story Game      As noble princess magic kingdom, you are gonna take part big party. With tons gorgeous dresses and perfect makeup, are you ready now? Will you meet your prince this grand prom? Everything is ready for you. Come and join us now.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/rlv4hwc0bdyzmwoo89p38dqk9jb9yukq/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/rlv4hwc0bdyzmwoo89p38dqk9jb9yukq/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 623,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-princess-make-cup-cake-game",
     "title": "PRINCESS MAKE CUP CAKE",
     "category": "Clicker",
@@ -10819,36 +8373,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-cool-arabian-princess-dress-up-game",
-    "title": "Cool Arabian Princess Dress Up",
-    "category": "Arcade",
-    "description": "Cool Arabian Princess Dress Up - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/8boiygm44nmvzm0yjcrx55hx2xfzxnf5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/8boiygm44nmvzm0yjcrx55hx2xfzxnf5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 620,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ice-princess-doll-house-design-and-decoration-game-game",
-    "title": "Ice Princess Doll House Design and Decoration Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ice Princess Doll House Design and Decoration Game !This is Ice Doll House! Let's decorate interior home and become best interior designer!       It's so much fun to decorate your own home to fit your taste and style. right color wallpaper or paint can make room pop. Perfect decorations walls and shelves can bring room to life. Only you can make your home beautiful, so let's start designing your dream house!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/pwc8qaltfighu4zpnq8emj3alaacfbe4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/pwc8qaltfighu4zpnq8emj3alaacfbe4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 620,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-extreme-car-driving-simulator",
     "title": "Extreme Car Driving Simulator",
     "category": "Boys",
@@ -10860,21 +8384,6 @@ var GAMES = [
     "embedUrl": "https://html5.gamemonetize.co/wtmr1ws4khywnki9fm53csa0txss21tb/",
     "source": "gamemonetize",
     "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 619,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-offroad-driving-truck-transport-game",
-    "title": "Offroad Driving Truck Transport",
-    "category": "Arcade",
-    "description": "Offroad Driving Truck Transport - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4bk844pemos2hamkblsoxh01dzxbqm3h/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4bk844pemos2hamkblsoxh01dzxbqm3h/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 619,
@@ -10956,50 +8465,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 616,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-among-stacky-runner",
-    "title": "Among Stacky Runner",
-    "category": "Adventure",
-    "description": "Among Stacky Runner - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "block",
-      "boy",
-      "boys",
-      "kid",
-      "kids"
-    ],
-    "thumb": "https://img.gamemonetize.com/857z8hbp0ig8d5cygg8k8ab4imcaclal/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/857z8hbp0ig8d5cygg8k8ab4imcaclal/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 615,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-blocky-bird",
-    "title": "Blocky Bird",
-    "category": "Arcade",
-    "description": "Blocky Bird - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "bird",
-      "boy",
-      "boys",
-      "casual",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/3qnxa8d9cu3yfk1k0zdebqrxhdgad6ml/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3qnxa8d9cu3yfk1k0zdebqrxhdgad6ml/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 615,
     "platform": "responsive"
   },
   {
@@ -11180,21 +8645,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 613,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cooking-fever-game",
-    "title": "Cooking Fever",
-    "category": "Cooking",
-    "description": "Cooking Fever - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/gjoyan7afiku0fybvbqz47ael89zkuz1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gjoyan7afiku0fybvbqz47ael89zkuz1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 611,
     "platform": "responsive"
   },
   {
@@ -11542,21 +8992,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-princess-pony-unicorn-salon-game",
-    "title": "Princess Pony Unicorn Salon",
-    "category": "Sports",
-    "description": "Princess Pony Unicorn Salon - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vistlg6hdxe5s1vpz8um2cll5jpy3lez/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vistlg6hdxe5s1vpz8um2cll5jpy3lez/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 604,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-rainy-day-dress-up-game",
     "title": "Rainy Day Dress up",
     "category": "Arcade",
@@ -11680,21 +9115,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-candy-lands-game",
-    "title": "candy lands",
-    "category": "Arcade",
-    "description": "candy lands - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/gt98q2k3w0ufv5uwg1fu8re9eye1zzzc/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gt98q2k3w0ufv5uwg1fu8re9eye1zzzc/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 602,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-alien-war-game",
     "title": "Alien War",
     "category": "Arcade",
@@ -11717,36 +9137,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/y9zg87e1bteat838q2crhrra6ybg6s2j/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/y9zg87e1bteat838q2crhrra6ybg6s2j/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 601,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-water-color-sorting-game",
-    "title": "Water Color Sorting",
-    "category": "Arcade",
-    "description": "Water Color Sorting - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/0iz34byke0ki09wmofrpa7tcxo8nxvtk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/0iz34byke0ki09wmofrpa7tcxo8nxvtk/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 601,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-wedding-dress-up-new-bride-game",
-    "title": "Wedding Dress Up New Bride",
-    "category": "Arcade",
-    "description": "Wedding Dress Up New Bride - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hvk3ca4deflhaqy3zuve2qkoyq6kyqrf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hvk3ca4deflhaqy3zuve2qkoyq6kyqrf/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -11782,50 +9172,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 601,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-city-driving-3d",
-    "title": "City Driving 3D",
-    "category": "Racing",
-    "description": "City Driving 3D - play now on EggerMath",
-    "tags": [
-      "car",
-      "cars",
-      "hypercasual",
-      "puzzle",
-      "race",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/05l0t209lvph2dicezjpg3au0t5iowuo/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/05l0t209lvph2dicezjpg3au0t5iowuo/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 600,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-handbrake-parking",
-    "title": "Handbrake Parking",
-    "category": "Arcade",
-    "description": "Handbrake Parking - play now on EggerMath",
-    "tags": [
-      "boys",
-      "car",
-      "cars",
-      "html",
-      "parking",
-      "race"
-    ],
-    "thumb": "https://img.gamemonetize.com/c61lcm62hw24xktuca6b49x7bey8fqu7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/c61lcm62hw24xktuca6b49x7bey8fqu7/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 600,
     "platform": "responsive"
   },
   {
@@ -11986,21 +9332,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/y50lz0crbkxp9nnw3a99lozeaz12ibwz/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/y50lz0crbkxp9nnw3a99lozeaz12ibwz/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 599,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-candy-land-game",
-    "title": "candy land",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game candy land !candy land is an easy game but needs some concentration.All what you have to is to left click and try to throw candy Columns and fill them. good luck !",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/mzqrf1w4of9tal1saozuxv50qkck6bg9/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/mzqrf1w4of9tal1saozuxv50qkck6bg9/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12174,21 +9505,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-archery-strike-2-game",
-    "title": "Archery Strike 2",
-    "category": "Arcade",
-    "description": "Archery Strike 2 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hrl0haoxqmcgterl5ng6mut10atmpmx7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hrl0haoxqmcgterl5ng6mut10atmpmx7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 595,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-among-us-space-colorfull-pin-pull-game-game",
     "title": "Among Us Space Colorfull",
     "category": "Arcade",
@@ -12211,21 +9527,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/ilckuwtf83re4ka0a4nd6f8rhaeiefnx/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/ilckuwtf83re4ka0a4nd6f8rhaeiefnx/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 595,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-color-page-asmr-game",
-    "title": "Color Page ASMR",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Color Page ASMR !Color Page ASMR is very casual painting game, suitable for all ages to spend time. Pick up brush, follow tutorial game to paint and paint corresponding color. Interested showing off your skills?",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/izh4eyrcyahp6op6osc0oxa6r7uwsw1i/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/izh4eyrcyahp6op6osc0oxa6r7uwsw1i/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12294,21 +9595,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-army-truck-simulator-2024-game",
-    "title": "Army Truck Simulator 2024",
-    "category": "Arcade",
-    "description": "Army Truck Simulator 2024 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/3p0c5gp13e1cmlw7dew2pvjulv2akyxu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3p0c5gp13e1cmlw7dew2pvjulv2akyxu/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 593,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-traffic-g-game",
     "title": "Traffic Gо",
     "category": "Arcade",
@@ -12324,21 +9610,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-pony-pet-salon-game-game",
-    "title": "Pony Pet Salon Game",
-    "category": "Arcade",
-    "description": "Pony Pet Salon Game - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/024xv00p1jyp2kjpyljyb2pv22kbkd1k/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/024xv00p1jyp2kjpyljyb2pv22kbkd1k/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 593,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-humans-rescue-game",
     "title": "Humans Rescue",
     "category": "Arcade",
@@ -12346,21 +9617,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/vtr67oxhjkyanc9h1frc8rqrhkzyzj3q/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/vtr67oxhjkyanc9h1frc8rqrhkzyzj3q/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 593,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-word-link-game",
-    "title": "Word Link",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Word Link !Concentrate to find all hidden words given letters and connect them anyway you like to catch word! starts off as an easy word game and becomes challenging! You will have fun improving your vocabulary and spelling skills. Your brain will thank you for workout! Free crossword puzzles",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/u83lsjhdx0ic53u4urkqcl84dn21k2wf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/u83lsjhdx0ic53u4urkqcl84dn21k2wf/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12399,21 +9655,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-colors-mumble-game",
-    "title": "Colors Mumble",
-    "category": "Arcade",
-    "description": "Colors Mumble - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ps3872nw6h7kfuxzsael3bq9ttzhhmyc/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ps3872nw6h7kfuxzsael3bq9ttzhhmyc/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 591,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-rescue-the-tiny-old-man-game",
     "title": "Rescue The Tiny Old Man",
     "category": "Arcade",
@@ -12421,36 +9662,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/vbl6tru3hhh9hpgnetb7fhpt8muvetz4/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/vbl6tru3hhh9hpgnetb7fhpt8muvetz4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 591,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-unicorn-for-girls-dress-up-game",
-    "title": "Unicorn For girls Dress up",
-    "category": "Arcade",
-    "description": "Unicorn For girls Dress up - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/eif34cabv948jjnt4pei7zg2naky3csh/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/eif34cabv948jjnt4pei7zg2naky3csh/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 591,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-uphill-offroad-bicycle-rider-game",
-    "title": "UPHill OffRoad Bicycle Rider",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game UPHill OffRoad Bicycle Rider !Hill Climb Cycling is best for maintaining fitness. So become best freestyle MTB Mountain Bike cyclist and ride with full speed by controlling BMX MTB Mountain Bike (Bike) handlebars with strong wrist grip. Race 2 wheeler monster Mountain Bike bicycle by kicking fast paddle to perform stunts freestyle Hill Climb Racing. Every level very enjoyable and exciting. You can racing with Trial bike racing arena",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/l1jlef8brnqdbfhb960pzktyjax1b20w/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/l1jlef8brnqdbfhb960pzktyjax1b20w/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12526,36 +9737,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/j9o95hqjhcp48fdncal6dgsyjfbb8u0s/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/j9o95hqjhcp48fdncal6dgsyjfbb8u0s/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 590,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-candy-the-rope-game",
-    "title": "Candy The Rope",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Candy The Rope !Candy Rope is wonderful puzzle game which goal is very simple, to get little candy  monster mouth.   To achieve this, you will have to cut one or more ropes and fight gravity and take care baby Monster.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6gy6se08cmal2xitpjicxhy1nx0nnr8z/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6gy6se08cmal2xitpjicxhy1nx0nnr8z/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 590,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-baby-dress-up-and-makeup-game",
-    "title": "Baby Dress Up and Makeup",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Baby Dress Up and Makeup !If you ever wondered how is like to look after baby this baby game might give you an idea about because you'll be assign to take care cute little girl who needs an immediately bath and course following actions that comes along with process. To be able to reach dress up part you have to make sure you accomplish all steps from previous phase: treatment. First you have to check out if her hair needs haircut and if so you have to do right away. Once you are done put hat to protect her eyes from water drops and shampoo. Wet her hair and add some conditioner to smooth her scalp then rub for few minutes because it'll confer fresh and shiny look. Wash her up and then dry her hair, right after that unravel it.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/do1mrt89dljdqi8zenrvbfwr6x3w6i0j/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/do1mrt89dljdqi8zenrvbfwr6x3w6i0j/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12699,21 +9880,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-circus-restaurant-game",
-    "title": "Circus Restaurant",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Circus Restaurant !Are you food lover? Become Masterchef your restaurant, build restaurant empire different countries, make money from your foods, and accelerate your development by investing your business. this idle tycoon simulator game, unlock your products, upgrade your recipes, decorate your restaurant, and recruit new chefs and waiters to run your profitable restaurant.    ★Manage your restaurant  Join adventure running restaurant from scratch.    ★Meet masters  Collaborate with various famous characters who quickly take your restaurant to world level.    ★Get to know world cuisines  Serve food to your customers from all around to world.    ★Decorate your restaurant  Renovate and customize! Make your own style all restaurants.    ★Finish missions  Do not miss special surprise end world with specially crafted missions.    ★Keep earning offline  As you grow your restaurant, your income will increase when you are offline.    ★Join competition  Compare yourself to chefs from all around world leaderboard.    ★Welcome special guests  Provide good service to Gourmet and VIP customers to make more money from your restaurant empire.    Restaurant Tycoon - Idle Game is an exciting game that includes strategy, fun, and delicious foods from different countries. Become billionaire by developing new strategies for new products, ingredients, chefs, cutters, waiters and tables.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/531f01wlxovdz5ukpjhf17nv70qp3x8b/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/531f01wlxovdz5ukpjhf17nv70qp3x8b/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 587,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-farm-animal-jigsaw-game",
     "title": "Farm Animal Jigsaw",
     "category": "Arcade",
@@ -12721,21 +9887,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/1001ga1hubg8pnvykeh201jtfv35fugh/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/1001ga1hubg8pnvykeh201jtfv35fugh/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 586,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-super-fashion-stylist-dress-up-game",
-    "title": "Super Fashion Stylist Dress Up",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Super Fashion Stylist Dress Up !Hey, Dress Up Lovers Girls. All top international event show and choose best stylist dress up model and celebrity fashion designed. Real-life fashion dress up activities. Take runway girls stunning look time Are you ready to beauty contest most important day. Super model dress up is perfect game for fashion stylist game. Girls accessories items top, dress, shoes, hairstyles, bottoms, bracelets, jewellery, socks, bag, etc using glamorous items better look and win contests.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/lrnyd14588wr0gql1id1z090k57xcarx/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/lrnyd14588wr0gql1id1z090k57xcarx/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12766,21 +9917,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/fx9689izaqwmv6xruq40nh2yrvfjzlv5/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/fx9689izaqwmv6xruq40nh2yrvfjzlv5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 585,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-kids-and-snowman-dress-up-game",
-    "title": "Kids and Snowman Dress Up",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Kids and Snowman Dress Up !Do you want to become one best snowman builders town winter? Make your winter vacation trip more memorable and make your own snowman these DIY snowman maker games. You have to collect snow to make different sizes snow balls to make your DIY snowman. Roll snow and make body snow man this maker game. Then select snowman eyes, hands, hats and glasses for snowman body. Use your imaginations and make best snowman.    Choose your favorite snowman and use some awesome stickers such as eyes, hat, scarf and much more super exciting decorations for your creation. Enjoy this DIY snowman make game and build your own snowman. Hurry up before snowman melts. This DIY game lets you do by yourself, and design your own snowman. So what are you waiting for? Come & join this DIY snowman maker winter adventure & have fun by playing these DIY games.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vrar2gtpg2izyz8iesed3g4fa21flv1v/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vrar2gtpg2izyz8iesed3g4fa21flv1v/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -12879,21 +10015,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-letter-layout-coloring-game",
-    "title": "Letter Layout Coloring",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Letter Layout Coloring !Immerse yourself captivating world Letter Layout Coloring! This puzzle game challenges your creativity and cognitive skills as you arrange colorful letters to form words. With dynamic layout that evolves with each level, youll embark journey linguistic discovery. Solve puzzles, unlock achievements, and unveil vibrant spectrum language. Letter Layout Coloring is thrilling fusion linguistic artistry and strategic thinking, making perfect game for word enthusiasts seeking delightful challenge. Website Developer  <href='https://www.coolcrazygames.com/popular'>https://www.coolcrazygames.com/popular</a>",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6e19nblmuagla3dbso7k0uko43jlmqxu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6e19nblmuagla3dbso7k0uko43jlmqxu/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 583,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-cute-baby-dress-up-game",
     "title": "Cute Baby Dress Up",
     "category": "Arcade",
@@ -12946,21 +10067,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/ytfh0tmweje4z5b6o8xgiqfuhtu3q49p/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/ytfh0tmweje4z5b6o8xgiqfuhtu3q49p/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 581,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-wedding-dress-gameup-game",
-    "title": "wedding dress  gameup",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game wedding dress  gameup !This app brings dress up games for girls to next level and combines them with fashion colouring book games. CHOOSE and PAINT bride and groom's clothes, skin, hair and makeup any color, glitter, or gradient. Select background and enjoy an endless amount free coloring pages for girls and adults! Open coolest wedding salon year!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/c9r49wk1sscx9b4r5tp0iy4uc2yvfewl/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/c9r49wk1sscx9b4r5tp0iy4uc2yvfewl/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -13024,36 +10130,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 580,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-fashion-up-dress-up-game",
-    "title": "Fashion Up: Dress Up",
-    "category": "Arcade",
-    "description": "Fashion Up: Dress Up - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/y4qtq59k3vozh41khw96xbknhsl8hhpf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/y4qtq59k3vozh41khw96xbknhsl8hhpf/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 580,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-archery-game",
-    "title": "ARCHERY",
-    "category": "Shooting",
-    "description": "ARCHERY - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/o0r5zqlrk5g8xf3gfhx7arsv6fj5zbvo/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/o0r5zqlrk5g8xf3gfhx7arsv6fj5zbvo/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 579,
-    "platform": "pc"
   },
   {
     "id": "gm-fashion-studio-wedding-dress-2-game",
@@ -13135,51 +10211,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-enjoyable-girl-dress-up-game",
-    "title": "Enjoyable Girl Dress Up",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Enjoyable Girl Dress Up !You should start with makeup first and make best makeup using various makeup materials. After completing make-up, you should choose clothes that are suitable for make-up from large wardrobe and combine with make-up. You have to try again and find most beautiful one to choose most beautiful makeup and most beautiful clothes. To make beautiful girl happy, you should try various combinations and choose most beautiful one.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/fy1a09dbmd1y5wwhn3sod9oqa6ay86on/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/fy1a09dbmd1y5wwhn3sod9oqa6ay86on/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 578,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-flying-wings-hover-craft-game",
-    "title": "Flying Wings Hover Craft",
-    "category": "Arcade",
-    "description": "Flying Wings Hover Craft - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zfozvec547amud62dn9m035mi18qpd70/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zfozvec547amud62dn9m035mi18qpd70/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 577,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-space-war-shooting-game",
-    "title": "Space War Shooting",
-    "category": "Shooting",
-    "description": "Space War Shooting - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/93ivs6yrb3exsy5l1qcwuhbhhx1k6lfg/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/93ivs6yrb3exsy5l1qcwuhbhhx1k6lfg/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 577,
-    "platform": "pc"
-  },
-  {
     "id": "gm-alice-in-wonderland-dressup-game",
     "title": "Alice in Wonderland Dressup",
     "category": "Arcade",
@@ -13240,21 +10271,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-anime-couples-dress-up-2021-game",
-    "title": "Anime Couples Dress Up 2021",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Anime Couples Dress Up 2021 !Hey, girl, this vacation is gonna be really fine! plane is already waiting for you to fly to other countries, so grab your fashion luggage, call your boyfriend and have fun. internet is waiting for your blog with different dresses and suits some really hot fashion places! Download Fashion Vacation - Couple Travel Style game and dress yourself up!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/p37cebb99vhcd8a225mh1n7pnuxlerd4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/p37cebb99vhcd8a225mh1n7pnuxlerd4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 575,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fire-steve-and-water-alex-game",
     "title": "Fire Steve and Water Alex",
     "category": "Arcade",
@@ -13268,49 +10284,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 575,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-pop-pop-the-balloons",
-    "title": "Pop Pop The Balloons",
-    "category": "Boys",
-    "description": "Pop Pop The Balloons - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "boys",
-      "casual",
-      "click",
-      "clicker",
-      "girls"
-    ],
-    "thumb": "https://img.gamemonetize.com/gg5piuwsxkhw86scw1vs7ty80pyzt0p8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gg5piuwsxkhw86scw1vs7ty80pyzt0p8/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 574,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-dr-psycho-hospital-escape",
-    "title": "Dr. Psycho - Hospital Escape",
-    "category": "Action",
-    "description": "Dr. Psycho - Hospital Escape - play now on EggerMath",
-    "tags": [
-      "doctor",
-      "escape",
-      "ghost",
-      "vampire",
-      "zombie"
-    ],
-    "thumb": "https://img.gamemonetize.com/tf24465q9fhckqby7ilyond4qnby8dzc/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/tf24465q9fhckqby7ilyond4qnby8dzc/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 573,
-    "platform": "pc"
   },
   {
     "id": "gm-moto-x3m-pool-party-game",
@@ -13358,21 +10331,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-chopping-food-perfect-slices-game",
-    "title": "Chopping Food Perfect Slices",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Chopping Food Perfect Slices !Cut food into perfect slices ... have fun slicing!                  Cut various food items into perfect slices with this awesome game!                  - Simple controls         - Fun gameplay         - Addictive game",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/1zujhi6ymnanufklszlu75i2lvl45nd6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/1zujhi6ymnanufklszlu75i2lvl45nd6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 572,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-robots-battle-mech-arena",
     "title": "Robots Battle Mech Arena",
     "category": "Action",
@@ -13408,36 +10366,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-shoot-color-game",
-    "title": "Shoot Color",
-    "category": "Stickman",
-    "description": "Shoot Color - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/e1axk4cf4o1jju0cgampjz48u5hgnyq2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/e1axk4cf4o1jju0cgampjz48u5hgnyq2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 567,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-truck-offroad-drive-heavy-transport-game",
-    "title": "Truck Offroad Drive Heavy Transport",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Truck Offroad Drive Heavy Transport !excitement 4x4 hill cars being driven 4x4 jeep games comes from giving goals offroad racing 3D with new dimensions and bringing back original offline racing games' essence.          As you assume driver's position 4x4 jeep games, voyage, which may start with hill adventures jobs, becomes increasingly cruel.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/qx19f0rfljwt9e7dkcs0xdaw4pw8zpzv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qx19f0rfljwt9e7dkcs0xdaw4pw8zpzv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 567,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-cute-elements-game",
     "title": "Cute Elements",
     "category": "Arcade",
@@ -13450,36 +10378,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 566,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-zigzag-taxi-game",
-    "title": "ZigZag Taxi",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game ZigZag Taxi  !Build roads and get taxi to ending platform! This simple, addicting, 1 touch casual game will keep you distracted for hours. Over 100 levels addicting gameplay! Tap & hold your screen to build bridges for taxi to ride on! perfect tap timing is key.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/8yjtkpfthixeff4ne8puuu2h39t1joes/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/8yjtkpfthixeff4ne8puuu2h39t1joes/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 564,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-real-apple-catcher-extreme-fruit-catcher-surprise-game",
-    "title": "Real Apple Catcher Extreme fruit catcher surprise",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Real Apple Catcher Extreme fruit catcher surprise !Real Battle between YOU and APPLES. Prove yourself real apple catcher. This awesome game users have to clear mission smartly to catch real fall down apples from trees. This game show battle between You, Apples and Timer to achieve target given time to move next mission.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/qb406e994kmeyeq7trnaqys6m6i3gi56/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qb406e994kmeyeq7trnaqys6m6i3gi56/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 563,
     "platform": "responsive"
   },
   {
@@ -13550,36 +10448,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-idle-restaurant-game",
-    "title": "Idle Restaurant",
-    "category": "Clicker",
-    "description": "Idle Restaurant - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/5032u7kprap4qrxrcydaq69rof6dv3d1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/5032u7kprap4qrxrcydaq69rof6dv3d1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 561,
-    "platform": "mobile"
-  },
-  {
-    "id": "gm-rocket-punch-game",
-    "title": "Rocket Punch",
-    "category": "Arcade",
-    "description": "Rocket Punch - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/p36crlo97l8733ymahjazlj8acn3eoo4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/p36crlo97l8733ymahjazlj8acn3eoo4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 561,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-coloring-book-for-kids-animal-coloring-pages-is-th-game",
     "title": "Coloring Book For Kids: Animal Coloring Pages is t",
     "category": "Arcade",
@@ -13627,21 +10495,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-memorize-halloween-game",
-    "title": "memorize Halloween",
-    "category": "Arcade",
-    "description": "memorize Halloween - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/95yxn7efid9rpk5d07r408mhw1h2fark/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/95yxn7efid9rpk5d07r408mhw1h2fark/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 559,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-mini-golf-2d-game",
     "title": "Mini Golf 2D",
     "category": "Arcade",
@@ -13649,21 +10502,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/xmn5atm5gowgxr23cyzee4t2t8e6cup9/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/xmn5atm5gowgxr23cyzee4t2t8e6cup9/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 559,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-crazy-goat-hunter-game",
-    "title": "Crazy Goat Hunter",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Crazy Goat Hunter !You are crazy goat hunter and your mission is to find and shoot all goats forest.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jp8ghuz91r6c02hqqzfdx3z6lnhnwzng/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jp8ghuz91r6c02hqqzfdx3z6lnhnwzng/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -13762,21 +10600,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 557,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-bus-mountain-drive-game",
-    "title": "Bus Mountain Drive",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Bus Mountain Drive !Do you love playing driving simulation games? Do you like buses? If yes, then Mountain Drive is bus simulator game that you will love.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/m1mc8mhzi7nqb13mxkg4iljdgwytcsuz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/m1mc8mhzi7nqb13mxkg4iljdgwytcsuz/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 556,
     "platform": "responsive"
   },
   {
@@ -14030,36 +10853,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-coach-bus-simulator-game",
-    "title": "Coach Bus Simulator",
-    "category": "Arcade",
-    "description": "Coach Bus Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/isme0g6gsfbshpzua3t6zni25dh8ifa1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/isme0g6gsfbshpzua3t6zni25dh8ifa1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 551,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-draw-to-win-stars-game",
-    "title": "Draw To Win Stars",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Draw To Win Stars !Draw To Win Stars is unique game where you use your drawing skills to connect and guide plant to collect all stars each level. With creative and strategic drawing, you navigate through obstacles and puzzles, aiming to gather every star along way.  Website Developer  <href='https://www.playbestgames.io/'>https://www.playbestgames.io/</a>",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bfpagbpiq6b3daveuspto28ch8wsbzap/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bfpagbpiq6b3daveuspto28ch8wsbzap/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 551,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-heart-lock-and-key-jigsaw-game",
     "title": "HEART LOCK AND KEY JIGSAW",
     "category": "Arcade",
@@ -14172,21 +10965,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-boat-dash-game",
-    "title": "Boat & Dash!",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Boat & Dash! !Boat & Dash is fun game with one finger control. Control running boat and smash boxes, wheels, drums placed way. Avoid striking rocks else you end your life. simple game to play but hard to clear higher levels.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/k4k527gzxb11q3uqv9y23yy5lhsrnn68/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/k4k527gzxb11q3uqv9y23yy5lhsrnn68/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 549,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-cute-doll-cook-cakes-game",
     "title": "Cute Doll Cook Cakes",
     "category": "Arcade",
@@ -14224,21 +11002,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/vjfr1ybp2n9tbsnorh5r5q5szc7g82p4/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/vjfr1ybp2n9tbsnorh5r5q5szc7g82p4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 548,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-london-taxi-driver-game",
-    "title": "London Taxi Driver",
-    "category": "Arcade",
-    "description": "London Taxi Driver - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vtc8l5shf7pc2szb2jnawdyp64edclr7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vtc8l5shf7pc2szb2jnawdyp64edclr7/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -14304,21 +11067,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 547,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-skibidi-toilet-tennis-game",
-    "title": "Skibidi Toilet Tennis",
-    "category": "Arcade",
-    "description": "Skibidi Toilet Tennis - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/90ie5u1rn2x61ly7yktw3dq6u5kbqj2m/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/90ie5u1rn2x61ly7yktw3dq6u5kbqj2m/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 546,
     "platform": "responsive"
   },
   {
@@ -14454,21 +11202,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 543,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-is-it-golf-game",
-    "title": "Is It Golf?",
-    "category": "Arcade",
-    "description": "Is It Golf? - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bgl5naaniqtaga914mbzpzeehpazus56/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bgl5naaniqtaga914mbzpzeehpazus56/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 542,
     "platform": "responsive"
   },
   {
@@ -14757,25 +11490,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-western-escape",
-    "title": "Western Escape",
-    "category": "Adventure",
-    "description": "Western Escape - play now on EggerMath",
-    "tags": [
-      "brain",
-      "escape",
-      "skill"
-    ],
-    "thumb": "https://img.gamemonetize.com/l84bof61fjm4hzwbzhz2br3n23stg0t1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/l84bof61fjm4hzwbzhz2br3n23stg0t1/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 535,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-traffic-escapee",
     "title": "traffic escapee",
     "category": "Puzzle",
@@ -15044,36 +11758,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-taxi-driver-las-vegas-game",
-    "title": "Taxi Driver Las Vegas",
-    "category": "Arcade",
-    "description": "Taxi Driver Las Vegas - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/stz0s4mvb541uczwkkr918qkwfzuigl8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/stz0s4mvb541uczwkkr918qkwfzuigl8/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 531,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-drone-pizza-delivery-simulator-game",
-    "title": "Drone Pizza Delivery Simulator",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Drone Pizza Delivery Simulator  !Start your drone and become pizza delivery boy. Dare to deliver tasks that are challenging for real traffic driving. will be fun as pizza boys drone around big city. Play pizza boy to show superb skills pizza delivery drone riders, so that all orders can be delivered time.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/408k16fykv56w9qpaaqupe71lcijs2wr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/408k16fykv56w9qpaaqupe71lcijs2wr/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 531,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-naughty-baby-prankster",
     "title": "Naughty Baby Prankster",
     "category": "Adventure",
@@ -15109,43 +11793,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-super-basketball",
-    "title": "Super Basketball",
-    "category": "Sports",
-    "description": "Super Basketball - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "basketball",
-      "boy",
-      "boys",
-      "family",
-      "sport"
-    ],
-    "thumb": "https://img.gamemonetize.com/qwrhh0m4voxg3ywln6og3xc85f14px88/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qwrhh0m4voxg3ywln6og3xc85f14px88/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 529,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-bowling-hit-3d-game",
-    "title": "Bowling Hit 3D",
-    "category": "Stickman",
-    "description": "Bowling Hit 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/8gyhq5ekdr4lx5diowxvl4wb1lubpamy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/8gyhq5ekdr4lx5diowxvl4wb1lubpamy/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 529,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fall-guys-2d-christmas-game",
     "title": "Fall Guys 2D Christmas",
     "category": "Arcade",
@@ -15176,21 +11823,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-russian-bus-simulator-game",
-    "title": "Russian Bus Simulator",
-    "category": "Arcade",
-    "description": "Russian Bus Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ya06bqsg283w8fq8laygu496ea1kevfd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ya06bqsg283w8fq8laygu496ea1kevfd/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 529,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-new-makeup-snow-queen-elsa-game",
     "title": "New Makeup Snow Queen Elsa",
     "category": "Arcade",
@@ -15203,21 +11835,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 529,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-marina-sea-fishing-master-game",
-    "title": "Marina Sea Fishing Master",
-    "category": "Arcade",
-    "description": "Marina Sea Fishing Master - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hbj8tsnudw2st8z62you725db7bq1r7j/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hbj8tsnudw2st8z62you725db7bq1r7j/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 528,
     "platform": "responsive"
   },
   {
@@ -15247,36 +11864,6 @@ var GAMES = [
     "embedUrl": "https://html5.gamemonetize.co/01no4wrdg0yxrtbubnpv3h4k3gukuwuu/",
     "source": "gamemonetize",
     "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 525,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-paint-strike-game",
-    "title": "Paint Strike",
-    "category": "Sports",
-    "description": "Paint Strike - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/v5mxn051uc17xl74yaivcvf8nhhdiene/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/v5mxn051uc17xl74yaivcvf8nhhdiene/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 525,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-trick-or-treat-halloween-games-game",
-    "title": "Trick Or Treat Halloween Games",
-    "category": "Arcade",
-    "description": "Trick Or Treat Halloween Games - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/iuytzh5kg73akxyktv090snzugaut60o/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/iuytzh5kg73akxyktv090snzugaut60o/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 525,
@@ -15388,28 +11975,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-break-a-lucky-blocks-catch-brainrots",
-    "title": "Break a Lucky Blocks: Catch Brainrots",
-    "category": "Adventure",
-    "description": "Break a Lucky Blocks: Catch Brainrots - play now on EggerMath",
-    "tags": [
-      "brainrot",
-      "brainrot-italian",
-      "brainrot-sahuuur",
-      "catch",
-      "italian-brainrot",
-      "minecraft"
-    ],
-    "thumb": "https://img.gamemonetize.com/71mom061nzsa9i8lsnbblv6q1zceocwz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/71mom061nzsa9i8lsnbblv6q1zceocwz/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 511,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-christmas-defense-game",
     "title": "Christmas Defense",
     "category": "Sports",
@@ -15422,40 +11987,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 510,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pac-man-maze",
-    "title": "PAC-MAN Maze",
-    "category": "Puzzle",
-    "description": "PAC-MAN Maze - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "logic",
-      "puzzle"
-    ],
-    "thumb": "https://img.gamemonetize.com/sb6uvujhmo7ssn2qlmkww2wz8gkzeb58/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sb6uvujhmo7ssn2qlmkww2wz8gkzeb58/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 508,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-retro-kick-boxing-game",
-    "title": "Retro Kick Boxing",
-    "category": "Soccer",
-    "description": "Retro Kick Boxing - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/tlxxo7rd2i5f5l9vyjjs7o24ob3itgfz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/tlxxo7rd2i5f5l9vyjjs7o24ob3itgfz/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 505,
     "platform": "responsive"
   },
   {
@@ -15550,36 +12081,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-ice-slushy-maker-rainbow-desserts-game",
-    "title": "Ice Slushy Maker Rainbow Desserts",
-    "category": "Stickman",
-    "description": "Ice Slushy Maker Rainbow Desserts - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/q4wijjtbr29mppbsjfqd1goygb1kd894/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/q4wijjtbr29mppbsjfqd1goygb1kd894/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 499,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-metro-bus-simulator-game",
-    "title": "Metro Bus Simulator",
-    "category": "Girls",
-    "description": "Metro Bus Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/50tjocfe6yd865gpu0gqfgssxm56gfql/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/50tjocfe6yd865gpu0gqfgssxm56gfql/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 497,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-pop-it-fish-jigsaw-game",
     "title": "Pop It Fish Jigsaw",
     "category": "Cooking",
@@ -15607,21 +12108,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 493,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fnf-rainbow-friends-battle-mod-game",
-    "title": "FNF Rainbow Friends Battle Mod",
-    "category": "Sports",
-    "description": "FNF Rainbow Friends Battle Mod - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cv1yx35ckyaxfqhfhlioqa7rb9nz1ep3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cv1yx35ckyaxfqhfhlioqa7rb9nz1ep3/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 492,
     "platform": "responsive"
   },
   {
@@ -15699,24 +12185,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-head-sport-basketball",
-    "title": "Head Sport Basketball",
-    "category": "Sports",
-    "description": "Head Sport Basketball - play now on EggerMath",
-    "tags": [
-      "basketball",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/e0urtq2lpo8128fr0akdtbdfos2pyldk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/e0urtq2lpo8128fr0akdtbdfos2pyldk/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 469,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-cut-art-master",
     "title": "Cut Art Master",
     "category": "Hypercasual",
@@ -15777,27 +12245,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-retro-tiny-tennis",
-    "title": "Retro Tiny Tennis",
-    "category": "Sports",
-    "description": "Retro Tiny Tennis - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "ball",
-      "sport",
-      "sports",
-      "tennis"
-    ],
-    "thumb": "https://img.gamemonetize.com/l5i1t3twy4zbyrv0u7dktn4jyigw89zv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/l5i1t3twy4zbyrv0u7dktn4jyigw89zv/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 453,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-ricochet-arena",
     "title": "Ricochet Arena",
     "category": "Action",
@@ -15842,46 +12289,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-galaxy-defense",
-    "title": "Galaxy Defense",
-    "category": "Adventure",
-    "description": "Galaxy Defense - play now on EggerMath",
-    "tags": [
-      "defense",
-      "spaceship"
-    ],
-    "thumb": "https://img.gamemonetize.com/fnb1393lhmc38z7jcyzkz55bfuu2jo2y/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/fnb1393lhmc38z7jcyzkz55bfuu2jo2y/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 440,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-max-speed",
-    "title": "Max Speed",
-    "category": "Racing",
-    "description": "Max Speed - play now on EggerMath",
-    "tags": [
-      "action",
-      "car",
-      "dinosaur",
-      "race",
-      "racing",
-      "wheel"
-    ],
-    "thumb": "https://img.gamemonetize.com/ai9lo8rruqqnfxpsvk6fveoe6yzs9bfo/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ai9lo8rruqqnfxpsvk6fveoe6yzs9bfo/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 434,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-arcade-breakout",
     "title": "Arcade Breakout",
     "category": "Arcade",
@@ -15898,28 +12305,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 429,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-little-dentist-for-kids",
-    "title": "Little Dentist For Kids",
-    "category": "Boys",
-    "description": "Little Dentist For Kids - play now on EggerMath",
-    "tags": [
-      "baby-hazel",
-      "boys",
-      "cartoon",
-      "doctor",
-      "girls",
-      "simulation"
-    ],
-    "thumb": "https://img.gamemonetize.com/tt6lztclwletj1n232qr252femkc9bi5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/tt6lztclwletj1n232qr252femkc9bi5/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 425,
     "platform": "responsive"
   },
   {
@@ -16003,28 +12388,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-my-eggs-surprise",
-    "title": "My Eggs Surprise",
-    "category": "Boys",
-    "description": "My Eggs Surprise - play now on EggerMath",
-    "tags": [
-      "family",
-      "girl",
-      "girls",
-      "kids",
-      "machine",
-      "simulation"
-    ],
-    "thumb": "https://img.gamemonetize.com/ae5y8bps459axv48pej9lgndt802ejf6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ae5y8bps459axv48pej9lgndt802ejf6/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 412,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-panda-adventure",
     "title": "Panda Adventure",
     "category": "Adventure",
@@ -16062,23 +12425,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 397,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-slendrina-must-die-the-asylum",
-    "title": "Slendrina Must Die: The Asylum",
-    "category": "Action",
-    "description": "Slendrina Must Die: The Asylum - play now on EggerMath",
-    "tags": [
-      "action"
-    ],
-    "thumb": "https://img.gamemonetize.com/3c8kwxl3kmav9k5ac06nei520fsgq3gu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3c8kwxl3kmav9k5ac06nei520fsgq3gu/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 395,
-    "platform": "pc"
   },
   {
     "id": "gm-fall-beans-ultimate-knockout-race",
@@ -16160,28 +12506,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-annoying-boss-game",
-    "title": "Annoying Boss Game",
-    "category": "Action",
-    "description": "Annoying Boss Game - play now on EggerMath",
-    "tags": [
-      "cartoon",
-      "casual",
-      "clicker",
-      "crazy",
-      "fight",
-      "fighting"
-    ],
-    "thumb": "https://img.gamemonetize.com/rsdggmqp6nyh80aol8cjwy6kw3k7m9w7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/rsdggmqp6nyh80aol8cjwy6kw3k7m9w7/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 307,
-    "platform": "pc"
-  },
-  {
     "id": "gm-street-mayhem-driver",
     "title": "Street Mayhem Driver",
     "category": "Action",
@@ -16244,28 +12568,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 298,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-rotating-bones",
-    "title": "Rotating Bones",
-    "category": "Arcade",
-    "description": "Rotating Bones - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "brain",
-      "html",
-      "physics",
-      "puzzle",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/jiy6r3qcfnm27kjclfe5o42za0fvu3kk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jiy6r3qcfnm27kjclfe5o42za0fvu3kk/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 296,
     "platform": "responsive"
   },
   {
@@ -16509,21 +12811,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-floppy-bird-game",
-    "title": "Floppy Bird",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Floppy Bird !Help little Red Bird to flying through sky trying to avoid obstacles that can kill bird and you need to help bird pass through it!                  It's easy to start and hard to finish game; tap screen for free falling flapping bird to fly through obstacles!                  How to play:         -Tap to flap your wings to fly.         -Avoid pipes.                  Floppy Red Bird is best bird game to play and entertain your kids for hours!                  Flap your wings to fly... and have fun with this great game!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4quogjhlrha79mduhigkn8kkf86ozkgt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4quogjhlrha79mduhigkn8kkf86ozkgt/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 268,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-push-em-all-game",
     "title": "Push'em all",
     "category": "Arcade",
@@ -16636,36 +12923,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-fun-bump-3d-game",
-    "title": "Fun Bump 3D",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Fun Bump 3D !With all kinds colorful 3D blocks, Fun Bump 3D needs you to help stickman and push ball to finish line each level. You are only allowed to bump and push blocks that have same colors as yours. Or else, you will lose game directly. Try to use special blocks with large sizes and higher width, good luck!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/316qdkdukh24k0tl2psf3it2nfa36w2q/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/316qdkdukh24k0tl2psf3it2nfa36w2q/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 266,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-jack-pumpkin-game",
-    "title": "Jack Pumpkin",
-    "category": "Arcade",
-    "description": "Jack Pumpkin - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/qb5mqgbwtesk9brxrx3i25i1gh1u6ocx/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/qb5mqgbwtesk9brxrx3i25i1gh1u6ocx/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 265,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-knife-smash-game",
     "title": "Knife Smash",
     "category": "Arcade",
@@ -16703,21 +12960,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/8rvuw7pn4ozemcklhxa7dzz726t2n5hj/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/8rvuw7pn4ozemcklhxa7dzz726t2n5hj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 265,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-money-fest-game",
-    "title": "Money Fest",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Money Fest !You can now play Money Fest game Web without downloading to your computer. Start making money by collecting coins scattered throughout level. You can increase your money by doing some math operations. If you divide or subtract, you lose money. If your balance drops below zero, game will fail. So you have to be careful along way. Also, sometimes discounts, taxes, and many ways to lose/make money will appear way. Money Fest game, you have to be careful and do math quickly. Visit meyagames.com for this fun hypercasual game and much more.  Have fun.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/35cqz2kdzwg7ox6xcmzpy776c42p28aw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/35cqz2kdzwg7ox6xcmzpy776c42p28aw/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -16771,21 +13013,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-crazy-lemmings-game",
-    "title": "Crazy Lemmings",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Crazy Lemmings !Lemmings Savior is highly addictive game where you control life craft to bounce crazy lemmings to safety as they jump off cliff. Grab craft and try to save all crazy Lemmings that you can!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/io8djrb19vw0qj6o6hdau1oacxxgh4du/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/io8djrb19vw0qj6o6hdau1oacxxgh4du/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 264,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-egg-splash-game",
     "title": "Egg Splash",
     "category": "Arcade",
@@ -16793,36 +13020,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/rzd86qf40oq39wg8aya5383a9g5tec46/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/rzd86qf40oq39wg8aya5383a9g5tec46/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 264,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-game-changer-game",
-    "title": "Game Changer",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Game Changer !GameChanger is an adventure game with loads traps and hurdles.   Here is our cute little guy too has to reach destination.   For that help little guy to successfully manage and escape from traps; complete all levels and win game.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/esnoyrx7g5e6jvxmvrw8ff68fspa6th2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/esnoyrx7g5e6jvxmvrw8ff68fspa6th2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 264,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-staire-race-game",
-    "title": "Staire Race",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Staire Race !Stair Race 3D Game Get ready for one most challenging games and build your stairs as fast as you can! You have to compete large arena who is best building stairs against variety difficult enemies order to win, you have to pick up staircase plans and use them to build stairs and reach next platform But watch out, enemies with more boards collected than you can easily crush you when you bump into them which will cause you to lose all your collected plans But course works reverse too, so try to collect as many plans as you can and beat your enemies to get big advantage Winning rounds will not only give you pleasure being best player world will also unlock cool new skins for your character and plans Are you ready to compete worlds biggest stair building challenge? Get ready for one most challenging games and build your stairs as fast as you can",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/cvyynje4d6s1kgrh6vwiazccb3eyr2uh/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/cvyynje4d6s1kgrh6vwiazccb3eyr2uh/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -16853,21 +13050,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/2fcl63xms01b6w2jai0osfpkrpykl70l/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/2fcl63xms01b6w2jai0osfpkrpykl70l/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 263,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-baby-disco-sheep-game",
-    "title": "Baby Disco Sheep",
-    "category": "Arcade",
-    "description": "Baby Disco Sheep - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/csncqgdzhps64uwd29ofiejwua2uaotn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/csncqgdzhps64uwd29ofiejwua2uaotn/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -16928,21 +13110,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/8ho90bvsacii440luujovrhu9614eqg6/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/8ho90bvsacii440luujovrhu9614eqg6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 263,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-tap-tap-dash-game",
-    "title": "Tap Tap Dash",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Tap Tap Dash !* Insanely addictive game-play! Don't say we didn't warn you *      Tap to jump or change direction   Don't fall off path   Unlock new characters   Only 1000 levels to beat. That shouldn't be too hard, right?      Be sure to get your friends to play to see who can get furthest.      Good luck!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4md1xfma01ycdwo58gf2bvlr0y58r1jv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4md1xfma01ycdwo58gf2bvlr0y58r1jv/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -17056,36 +13223,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-boxes-funny-game",
-    "title": "Boxes Funny",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Boxes Funny !magical land Bunnyville, boxes dreams becoming greatest egg collector. Every year, Bunnyville hosts Egg-stravaganza, where Boxes jump over elastics to catch magical colored eggs. Boxes must navigate through various challenging paths filled with moving elastics and tricky obstacles. As Boxes collects more eggs, new areas Bunnyville open up, each with tougher challenges. ultimate goal is to find rare Rainbow Egg, hidden most difficult part Bunnyville.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/hbz4nougtuei8y7f4lgcke2r3itnge5t/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/hbz4nougtuei8y7f4lgcke2r3itnge5t/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 262,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-push-him-game",
-    "title": "Push Him!",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Push Him! !Don't let your rivals get to finish line using various traps. Buy new traps, upgrade old ones, watch your rivals scatter different directions!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/fqsueqyrxlcl3b76wkpqrrmyycp3a2kv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/fqsueqyrxlcl3b76wkpqrrmyycp3a2kv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 262,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-save-the-miner-game",
     "title": "Save the Miner",
     "category": "Arcade",
@@ -17108,21 +13245,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/qo2xcxe6274kh4i3icwnmolxdt642p5s/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/qo2xcxe6274kh4i3icwnmolxdt642p5s/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 262,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ant-city-game",
-    "title": "Ant City",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Ant City !If you want to play with magnifying glass, now's your chance. Your only choice is to be merciless with this human city. burn your population with magnifying glass: people, dogs, cars, helicopters",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/fek2axgn3cki0zupae3e1i4jsyaxdgco/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/fek2axgn3cki0zupae3e1i4jsyaxdgco/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -17161,21 +13283,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-save-the-ghost-game",
-    "title": "Save The Ghost",
-    "category": "Arcade",
-    "description": "Save The Ghost - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/r3gmtkconupko6pcznviwhjuxkox3e0v/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/r3gmtkconupko6pcznviwhjuxkox3e0v/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 261,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-hippo-pizzeria-game",
     "title": "Hippo Pizzeria",
     "category": "Arcade",
@@ -17198,21 +13305,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/adxiytcr1le9xbq5y5x023e3o37d71bv/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/adxiytcr1le9xbq5y5x023e3o37d71bv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 261,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-army-commando-game",
-    "title": "Army Commando",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Army Commando !ruthless group terrorists is determined to create chaos global scale! You'll need to stop them all costs this first-person shooter game. Take them down, one by one, as you infiltrate their secret headquarters and attempt to meet each one your objectives.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/kvs3849rw9d64489g28f2mrhu618jcr4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kvs3849rw9d64489g28f2mrhu618jcr4/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -17393,21 +13485,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-pizza-maker-master-game",
-    "title": "Pizza Maker Master",
-    "category": "Arcade",
-    "description": "Pizza Maker Master - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/v7m0709t4i6k7g5r6rmpep2s1jalcvl7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/v7m0709t4i6k7g5r6rmpep2s1jalcvl7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 260,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-bomber-man-game",
     "title": "Bomber Man",
     "category": "Arcade",
@@ -17465,21 +13542,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 260,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-chicken-shooting-2d-game",
-    "title": "Chicken Shooting 2D",
-    "category": "Arcade",
-    "description": "Chicken Shooting 2D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4184rrpbl655z0ozrzo6ai5bb1vfl5b4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4184rrpbl655z0ozrzo6ai5bb1vfl5b4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 259,
     "platform": "responsive"
   },
   {
@@ -17558,21 +13620,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-mob-city-game",
-    "title": "Mob City",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Mob City !crime rate Mob City has increased You have to complete missions to help city Drive cars and use powerful weapons",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bfsms7l3dlsd341p3xozborfx0gcj2cv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bfsms7l3dlsd341p3xozborfx0gcj2cv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 259,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-kai-archer-game",
     "title": "KaI Archer",
     "category": "Arcade",
@@ -17595,36 +13642,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/v95y3tnx0r9zhi5d47d10g3wkvr6d8s9/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/v95y3tnx0r9zhi5d47d10g3wkvr6d8s9/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 258,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-la-shark-game",
-    "title": "LA Shark",
-    "category": "Arcade",
-    "description": "LA Shark - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/4maax82rnoy8ddom10plvwvetftk2ao7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/4maax82rnoy8ddom10plvwvetftk2ao7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 258,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-owl-cant-sleep-game",
-    "title": "Owl Cant Sleep",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Owl Cant Sleep !Why can't Owl sleep?  Because he thinks about adventure OWL day long! (Get it?)  Join adventurous Owl as he embarks his quest for new heights!  Discover endless possibilities; explore new worlds.  Tap and hold to squish, then release to let Owl jump from one platform to another!  Save and meet new bunch quirky pals along way!  Oops... We did warn you about spikes, didn't we?  Owl Can't Sleep is newest endless platform game developed by  Orangenose Studio; team behind the #1 hit game Hardest Game Ever 2!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6qvx7lhukj5id8xxzty33j2o8jxg7afe/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6qvx7lhukj5id8xxzty33j2o8jxg7afe/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -17693,21 +13710,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-hand-over-hand-game",
-    "title": "Hand Over Hand",
-    "category": "Arcade",
-    "description": "Hand Over Hand - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/mc3f8eh6sqnelupms1u6ffbwg0b0ua8m/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/mc3f8eh6sqnelupms1u6ffbwg0b0ua8m/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 257,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-paws-and-claws-game",
     "title": "Paws And Claws",
     "category": "Arcade",
@@ -17715,21 +13717,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/en4j0pajm5nmp9k3rdo2lwrozgx2mwoj/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/en4j0pajm5nmp9k3rdo2lwrozgx2mwoj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 257,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-family-road-trip-game",
-    "title": "Family Road Trip",
-    "category": "Arcade",
-    "description": "Family Road Trip - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/syr1b28rfhadl71nas7l7vxmeo1s37ov/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/syr1b28rfhadl71nas7l7vxmeo1s37ov/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -17828,21 +13815,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-airport-manager-master-game",
-    "title": "AirPort Manager Master",
-    "category": "Arcade",
-    "description": "AirPort Manager Master - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/7pia5uy8ih8vnpptodi28tb99tlg1t78/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/7pia5uy8ih8vnpptodi28tb99tlg1t78/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 256,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-typeshift-game",
     "title": "TypeShift",
     "category": "Arcade",
@@ -17873,21 +13845,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-breaking-fall-game",
-    "title": "Breaking Fall",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Breaking Fall !most addictive hypercasual Elevator fall game!    Let elevator go down without touching obstacles!    Elevator Fall is 3D hypercasual arcade game where gamers save elevator from numerous obstacles. goal is to safely reach ground and rescue falling character.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ihjlvgg6jexxptlmeu9mpajepvvxlpx4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ihjlvgg6jexxptlmeu9mpajepvvxlpx4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 256,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-charge-now-game",
     "title": "CHARGE NOW",
     "category": "Arcade",
@@ -17910,21 +13867,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/7pyzeoiplpjcfhj16pcmooi5egrreiq7/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/7pyzeoiplpjcfhj16pcmooi5egrreiq7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 256,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-tattoo-salon-art-design-game",
-    "title": "Tattoo Salon Art Design",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Tattoo Salon Art Design !Ever wanted to have tattoo? Wondering about sleeve made out painted pictures your body? Look no further! Your search is over! You are right spot and we guarantee that you will not be disappointed! Download this tattooing game and become best there is this area work! Become Ink Master that everybody is talking about!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/gua3hpi2x2i17zu2oqlxg6w2kycycxvs/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gua3hpi2x2i17zu2oqlxg6w2kycycxvs/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -18015,21 +13957,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/iosy2flfibcrge3t6asdkzdi9xh9pr88/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/iosy2flfibcrge3t6asdkzdi9xh9pr88/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 254,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-red-impostor-solo-kill-game",
-    "title": "Red impostor Solo Kill",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Red impostor Solo Kill !Imposter solo kill is free new 3D imposter killing game. There are many imposters different color spaceship. Your mission is simple play with all imposter spaceship. Imposter red color is hunter spaceship. Their target is to kill all hunter spaceship. Now there are many tricks how red imposter kill their crewmates spaceship. If red imposter become fails killing their crewmate game will ended. So, you need to make best strategy to kill cremates.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/v515gtw1vv7qxfo1d4pcxh9f4lqpawv5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/v515gtw1vv7qxfo1d4pcxh9f4lqpawv5/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -18323,51 +14250,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-angry-bull-game",
-    "title": "ANGRY BULL",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game ANGRY BULL !Help People! Save Your City    bulls have escaped arena and are danger to people. Your mission is to shoot all aggressive bulls before they become serious threat to city inhabitants.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ayy2oy6wamz79m6gnx7nxpls36hc74di/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ayy2oy6wamz79m6gnx7nxpls36hc74di/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 253,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-limo-city-drive-2020-game",
-    "title": "Limo City Drive 2020",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Limo City Drive 2020 !Drive Ultimate Limo City Drive 2020 to fulfill duty passengers transportation. As Limo Traffic or Off Road Driving simulator Game your job is to pick up passengers from one destination and drop them their desired destination through challenging city and off roads.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zboullsywp4ynwhvmon5wjofsboybi1a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zboullsywp4ynwhvmon5wjofsboybi1a/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 253,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-skibidi-toilet-roll-game",
-    "title": "Skibidi Toilet Roll",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Skibidi Toilet Roll  !winter season is coming and Skibidi Toilet needs help to find all missing sweets! So help Skibidi to find all missing Christmas sweets! enjoy this fantastic game Christmas atmosphere. Spin Skididi, avoid obstacles and dangers and travel through three different worlds to recover all missing sweets. Enjoy this great puzzle cool game!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/c8hx9eklsrwc6y5jge531vdmkxxm1lnt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/c8hx9eklsrwc6y5jge531vdmkxxm1lnt/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 253,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-bffs-golden-hour-game",
     "title": "BFFs Golden Hour",
     "category": "Arcade",
@@ -18398,21 +14280,6 @@ var GAMES = [
     "platform": "pc"
   },
   {
-    "id": "gm-dont-drop-the-pig-game",
-    "title": "Dont Drop The Pig",
-    "category": "Arcade",
-    "description": "Dont Drop The Pig - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/gfioz5xcvjd7z1gv3hl9ycefzmxf8odf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/gfioz5xcvjd7z1gv3hl9ycefzmxf8odf/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 252,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-the-battboy-adventure-game",
     "title": "The Battboy Adventure",
     "category": "Arcade",
@@ -18420,51 +14287,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/kjeiokyw2c1axgy4c7i3gyplur90l2z6/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/kjeiokyw2c1axgy4c7i3gyplur90l2z6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 252,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-squid-play-game-online-all-mode-game",
-    "title": "Squid Game Online All mode",
-    "category": "Arcade",
-    "description": "Squid Game Online All mode - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/sgbv6vdbsg7cwkx932zljpjmavgu4dcf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sgbv6vdbsg7cwkx932zljpjmavgu4dcf/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 252,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-yoyo-hero-3d-game",
-    "title": "Yoyo Hero 3D",
-    "category": "Arcade",
-    "description": "Yoyo Hero 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/z81741sqycgn866j2m05wk0b0z6zfdsw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/z81741sqycgn866j2m05wk0b0z6zfdsw/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 252,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-avatar-maker-mermaid-game",
-    "title": "Avatar Maker: Mermaid",
-    "category": "Arcade",
-    "description": "Avatar Maker: Mermaid - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/21gh5hsp4nkhc36r2x92r51om4iq7wq9/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/21gh5hsp4nkhc36r2x92r51om4iq7wq9/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -18563,36 +14385,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-mister-lifter-game",
-    "title": "Mister Lifter",
-    "category": "Arcade",
-    "description": "Mister Lifter - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/sthqc7up1wvl7pr1ytnsmi7l91sn0a64/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sthqc7up1wvl7pr1ytnsmi7l91sn0a64/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 251,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-boxy-boo-poppy-playtime-game",
-    "title": "Boxy Boo",
-    "category": "Arcade",
-    "description": "Boxy Boo - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/delsm0609k7yf00jm6qygqvjxtq2ztpj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/delsm0609k7yf00jm6qygqvjxtq2ztpj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 251,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-phone-case-diy-2-casetify-game-game",
     "title": "Phone Case DIY 2",
     "category": "Arcade",
@@ -18600,21 +14392,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/chqus7dya051pc02snslpsl5448f4d99/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/chqus7dya051pc02snslpsl5448f4d99/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 251,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-35-arcade-games-2022-game",
-    "title": "35 Arcade Games 2022",
-    "category": "Arcade",
-    "description": "35 Arcade Games 2022 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/1j24acrh0mvngfxwvpfqvhfj7l4dqc0k/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/1j24acrh0mvngfxwvpfqvhfj7l4dqc0k/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -18653,21 +14430,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-imposter-assassin-3d-game",
-    "title": "Imposter Assassin 3D",
-    "category": "Arcade",
-    "description": "Imposter Assassin 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/kjixdc9mw89s3k1rdka4eotbmrgggvkn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kjixdc9mw89s3k1rdka4eotbmrgggvkn/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 250,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-teen-titans-go-swamp-attack-game",
     "title": "Teen Titans Go ! Swamp Attack",
     "category": "Arcade",
@@ -18690,21 +14452,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/sxno23qww9a1r261es286wllbiqnasqy/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/sxno23qww9a1r261es286wllbiqnasqy/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 250,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-evil-grandpa-chainsaw-killer-game",
-    "title": "Evil Grandpa: Chainsaw Killer",
-    "category": "Arcade",
-    "description": "Evil Grandpa: Chainsaw Killer - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/y3hv4ganej5bjxhzv4vgy3ziwkj6ntpy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/y3hv4ganej5bjxhzv4vgy3ziwkj6ntpy/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -18788,21 +14535,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-save-woman-game",
-    "title": "Save Woman",
-    "category": "Arcade",
-    "description": "Save Woman - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/anmx97a28zeucvdolw194vdhno0ftjqd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/anmx97a28zeucvdolw194vdhno0ftjqd/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 249,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-fidget-pop-online-game",
     "title": "Fidget Pop Online",
     "category": "Arcade",
@@ -18816,21 +14548,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 249,
     "platform": "responsive"
-  },
-  {
-    "id": "gm-aim-game",
-    "title": "Aim",
-    "category": "Shooting",
-    "description": "Aim - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/un37res0ywy0rsoiqcuighkqf453z9o2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/un37res0ywy0rsoiqcuighkqf453z9o2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 249,
-    "platform": "pc"
   },
   {
     "id": "gm-sausage-party-game",
@@ -18890,36 +14607,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 249,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-box-of-sport-games-game",
-    "title": "Box of Sport Games",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Box of Sport Games !2 sport Games           Air Hockey and Pong",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/a47pvu7a27r0p0ftbzb08tghf016p3vv/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/a47pvu7a27r0p0ftbzb08tghf016p3vv/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 249,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-polygon-flight-simulator-game",
-    "title": "Polygon Flight Simulator",
-    "category": "Arcade",
-    "description": "Polygon Flight Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jxcgkmz8u2tpdhvvfed9ecl25bqkspxt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jxcgkmz8u2tpdhvvfed9ecl25bqkspxt/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 248,
     "platform": "responsive"
   },
   {
@@ -19013,21 +14700,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-hospital-doctor-help-game",
-    "title": "Hospital Doctor Help",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Hospital Doctor Help !This time you will become their doctor your own hospital and cure some unusual animal patients. They are 7 cute animals patients who required your love and care!            this free kids game --- My Hospital - Baby Dr. Panda, you can use many different kinds medical instruments to treat animals' sickness.Select your adorable character and take role great panda doctor by playing these free games cleaning animals, lower temperature, stitch wounds, check patient heartbeat and more!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vylo8lgz7kb8cj20f23kw6wpweskagg6/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vylo8lgz7kb8cj20f23kw6wpweskagg6/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 248,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-hex-2048-game",
     "title": "Hex",
     "category": "Arcade",
@@ -19035,21 +14707,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/rq85o8mx0oq2rvxm7b3itmrinr9mlgsb/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/rq85o8mx0oq2rvxm7b3itmrinr9mlgsb/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 248,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-masha-pizza-maker-pizzeria-game",
-    "title": "Masha Pizza Maker",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Masha Pizza Maker - Pizzeria !looking for kitchen,Pizzeria or Pizza Near me? you dnt need to worry, we are here with new game pizza Maker - Pizzeria. this virtual pizzeria where you will know about how to make pizzas. This is pizzeria where you can make your oun choice pizza recipe. forget about pizza shop and pizza restaurants, pizza maker - pizzeria is perfect pizza shop and restaurant itself.After playing this game cooking pizza will become your hobby. Start playing Pizza maker - Pizzeria game. Just show your cooking ability and show your cooking pizza talent. Pizza maker - Pizzeria is best virtual pizzeria where you can make your choice pizzas recipes.          Pizza Maker - pizzeria is Free Pizza Cooking Games. this game user can make his own choice pizzas, bake and slice it.. this game contains lots various ingredients like vegetables, nuts, cheese, fruits, live foods, sauces, spices, User can use any ingredients he like to use pizza making process and then he can bake oven and slice it..this games contains some mini games which user will love to play and enjoy. Pizza maker is cooking games for Cooking Lovers. is one top games app market. Download to your mobile device, You can know how to become chef, and design and make your own choices pizzas. Delicious and yummy pizza is favorite recepie everybody. Anyone can bake Homemade pizza by him self after playing Crazy Pizza Maker.You can bake your own delicious pizza and make mouth watering food with Pizza Maker - pizzeria.          Use your creativity to choose from huge collection ingredients and bake any kind pizzas you like your kitchen. including green chilli, red chilli, capsycum, mashroom, pineapple, orange, green olives, black olives, cheese slice,cheese shred, paneer, butter, 4 types pizza spread, pomgranate, sausages, red chilli sauce, green chilli sauce, tomato katchup, black pepper, 4 types pizza base, chocolates, sea foods, spices, carrot, corn,onion, brinjal, garlic,tomato,donuts, bananas, 4 types meats, etc.          Be best baker & make world's Best Pizza.is chance to become best professional chef and make perfect and yummy pizza.          Features :     -High Quality Graphics     -Smooth Developing     -4 Different types Pizza Bases     -Mini Games     -Fruit cut Ninja     -Endless gameplay with unlimited combinations     -Baking and Eating Pizza     -Eatery Game     -Baking Game     -Cooking Game     -Chef Game     -Pizzas     -Cooking Pizzas     -Pizzeria     -how to make pizza     -cooking Hobby     -pizza shop     -pizza restaurants     -pizza recipe     -Pizza Near me     -Screenshots can be saved your Photo Gallery     -huge selection ingredients     -Pizza Margherita     -Pizza Marinara     -Chicago Pizza     -New York Style Pizza     -Thin Crust Pizza     -Double cheese Pizza     -PEPPY PANEER     -MEXICAN Pizza     -VEG EXTRAVAGANZA Pizza     -Easy to grasp     -Hard to Master Game     -Endless Gameplay     -Smooth gameplay controls     -Small APK File Size     -Greatly Addictive Game     -new games 2018",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/mmy794trpqvcgythr49gv715x1a1ql5d/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/mmy794trpqvcgythr49gv715x1a1ql5d/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -19089,21 +14746,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 247,
     "platform": "mobile"
-  },
-  {
-    "id": "gm-siren-head-3-game-game",
-    "title": "Siren Head 3 Game",
-    "category": "Arcade",
-    "description": "Siren Head 3 Game - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jwkd6mlipe9b4pt6yx160p7r62djopmj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jwkd6mlipe9b4pt6yx160p7r62djopmj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 247,
-    "platform": "responsive"
   },
   {
     "id": "gm-super-phantom-rabbit-game",
@@ -19256,21 +14898,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-kart-race-game",
-    "title": "Kart Race",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Kart Race !Come show your skills as pilot and your intelligence to use super powers karts! With this perfect combination, you will be great Starlit Kart champion!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zalli0g9rxkir5ifl0xt986g2rlvqnem/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zalli0g9rxkir5ifl0xt986g2rlvqnem/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 247,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-pop-it-xmas-game",
     "title": "Pop It Xmas",
     "category": "Arcade",
@@ -19298,21 +14925,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 247,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-what-kind-of-santa-claus-are-you-game",
-    "title": "What kind of Santa Claus are you",
-    "category": "Arcade",
-    "description": "What kind of Santa Claus are you - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/djhxmee66ztiky6p2to9j6o3wk75p452/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/djhxmee66ztiky6p2to9j6o3wk75p452/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 246,
     "platform": "responsive"
   },
   {
@@ -19376,21 +14988,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-stairway-to-heaven-game",
-    "title": "Stairway to Heaven",
-    "category": "Arcade",
-    "description": "Stairway to Heaven - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/t0pb8odq6yuyhbd4g3x6seje7wzm6ni0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/t0pb8odq6yuyhbd4g3x6seje7wzm6ni0/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 246,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-passenger-overloaded-game",
     "title": "passenger Overloaded",
     "category": "Arcade",
@@ -19398,36 +14995,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/o9nfui6tvtvhwzbcz7a0ox14e1fe4i2p/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/o9nfui6tvtvhwzbcz7a0ox14e1fe4i2p/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 246,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fall-jack-game",
-    "title": "Fall Jack",
-    "category": "Arcade",
-    "description": "Fall Jack - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/1manxic79w99h6dlzh29icas3jmvdft5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/1manxic79w99h6dlzh29icas3jmvdft5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 246,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cafe-3-in-a-row-game",
-    "title": "Cafe",
-    "category": "Arcade",
-    "description": "Cafe - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/3oaob6u1c8gfazh2dixor22zv420j6l1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3oaob6u1c8gfazh2dixor22zv420j6l1/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -19448,36 +15015,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 246,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-archer-shot-game",
-    "title": "Archer Shot",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Archer Shot !This is unique game its genre! Combining action with strategy and tower defence!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/15f8vt3wlgl95d4rw22whuifdhzuifvk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/15f8vt3wlgl95d4rw22whuifdhzuifvk/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 246,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-poppy-strike-4-game",
-    "title": "Poppy Strike 4",
-    "category": "Arcade",
-    "description": "Poppy Strike 4 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vel5s0zugcbmee6ctd22fw9c2arhxc5y/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vel5s0zugcbmee6ctd22fw9c2arhxc5y/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 245,
     "platform": "responsive"
   },
   {
@@ -19556,21 +15093,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-my-school-games-2023-game",
-    "title": "My School Games 2023",
-    "category": "Arcade",
-    "description": "My School Games 2023 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/87wjw4sawy1kxg233j296ndoj68i2m4s/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/87wjw4sawy1kxg233j296ndoj68i2m4s/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 245,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-super-droid-adventure-game",
     "title": "Super Droid Adventure",
     "category": "Arcade",
@@ -19616,21 +15138,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-red-handed-game",
-    "title": "Red Handed",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Red Handed ! stealth game where you have to get caught",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/zquzuvtnffg0pzng1one7pet0n9oddj0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/zquzuvtnffg0pzng1one7pet0n9oddj0/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 245,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-skull-racer-game",
     "title": "Skull Racer",
     "category": "Arcade",
@@ -19638,36 +15145,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/tmz77i06tw04z3kuaezifpc0j7tssnwm/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/tmz77i06tw04z3kuaezifpc0j7tssnwm/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 245,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-shot-them-all-game",
-    "title": "Shot Them All",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Shot Them All !Sort all color balls tubes,  How far can you go?    Sort Puzzle is fun and addictive puzzle game! Try to sort colored balls tubes until all balls with same color stay same tube. challenging yet refreshing game to exercise your brain!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/infzr3gab8pouaqzntw10fwpm1i2blxt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/infzr3gab8pouaqzntw10fwpm1i2blxt/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 245,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-everwing-game",
-    "title": "EVERWING",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game EVERWING !EverWing game is very simple game where you have to click your character and try to kill by enemies without touching them watchout you have to be fast.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/rbh8i66qwph5az2d6zkte7l6xwajbs87/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/rbh8i66qwph5az2d6zkte7l6xwajbs87/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -19736,25 +15213,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-slenderman-lost-at-school",
-    "title": "Slenderman Lost at School",
-    "category": "Action",
-    "description": "Slenderman Lost at School - play now on EggerMath",
-    "tags": [
-      "escape",
-      "horror",
-      "level"
-    ],
-    "thumb": "https://img.gamemonetize.com/24gnovw92p6d8dz6lr9jg0sp3ug9xrmd/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/24gnovw92p6d8dz6lr9jg0sp3ug9xrmd/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 244,
-    "platform": "pc"
-  },
-  {
     "id": "gm-aquapark-shark-game",
     "title": "Aquapark Shark",
     "category": "Arcade",
@@ -19785,21 +15243,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-fall-guy-2024-game",
-    "title": "Fall Guy 2024",
-    "category": "Arcade",
-    "description": "Fall Guy 2024 - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/v3yu7w2xefhhjb1aqdv7xb41t990o291/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/v3yu7w2xefhhjb1aqdv7xb41t990o291/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 244,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-dr-driver-2-game",
     "title": "Dr Driver 2",
     "category": "Arcade",
@@ -19822,21 +15265,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/uq6pdwthb6sbh7455gk8vk64l5e44cz7/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/uq6pdwthb6sbh7455gk8vk64l5e44cz7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 244,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-fall-boxes-game",
-    "title": "Fall Boxes",
-    "category": "Arcade",
-    "description": "Fall Boxes - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/lnb5mp9so170rz5tety8obgtud873j1x/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/lnb5mp9so170rz5tety8obgtud873j1x/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -19905,21 +15333,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-boxes-chaser-game",
-    "title": "Boxes Chaser",
-    "category": "Arcade",
-    "description": "Boxes Chaser - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/71gv5nc8syk7ax4b9ubbdk5pvm7nawog/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/71gv5nc8syk7ax4b9ubbdk5pvm7nawog/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 243,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-jelly-dye-game",
     "title": "Jelly Dye",
     "category": "Arcade",
@@ -19977,36 +15390,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 243,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-the-squid-game-game",
-    "title": "The Squid Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game The Squid Game !Join fun mixture running and survival 3D game. Where red and green light indicates what you need to do stop run to survive!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/89hzuv3lj2tdav8sv4f7y61jwj2jx9xy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/89hzuv3lj2tdav8sv4f7y61jwj2jx9xy/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 243,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-cleaner-race-game",
-    "title": "Cleaner Race",
-    "category": "Arcade",
-    "description": "Cleaner Race - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/y7pwif6rxy0sn74qsl8cb0o1m3h2y0nt/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/y7pwif6rxy0sn74qsl8cb0o1m3h2y0nt/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 242,
     "platform": "responsive"
   },
   {
@@ -20070,36 +15453,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-pumper-crazy-defence-game",
-    "title": "Pumper Crazy Defence",
-    "category": "Arcade",
-    "description": "Pumper Crazy Defence - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/kp4ecindzau92zrtsmrdyxc6h7z2kztj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/kp4ecindzau92zrtsmrdyxc6h7z2kztj/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 242,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-moto-skyrace-mayhem-game",
-    "title": "Moto SkyRace Mayhem",
-    "category": "Arcade",
-    "description": "Moto SkyRace Mayhem - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/dtqubanhh13214g8hgn2xsi9v83vdut1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/dtqubanhh13214g8hgn2xsi9v83vdut1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 242,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-home-scapes-game",
     "title": "Home Scapes",
     "category": "Arcade",
@@ -20107,21 +15460,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/os4y1u1wp43901lecyhzddw4y2y4q04f/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/os4y1u1wp43901lecyhzddw4y2y4q04f/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 242,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pivot-strike-game",
-    "title": "Pivot Strike",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Pivot Strike !Pivot Strike is very unique, one touch to drag your ships around, tap screen to pivot ships.                    When lined up your ship lead has double fire rate, when side by side ships can fire but half fire rate.                    Blue Ship destroys blue enemies and Red Ship destroys red enemies, Blue Ship can absorb red bullets, Red Ship can absorb blue bullets.                    Three trophy system that unlocks based players scores.                    Play Now!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/w7h6a7ptghpf97rd4awx5c3aao5eo99f/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/w7h6a7ptghpf97rd4awx5c3aao5eo99f/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20197,36 +15535,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/5n047jnx4lgoovn8ouegm23y36ktb0jg/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/5n047jnx4lgoovn8ouegm23y36ktb0jg/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 241,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-scavenger-game",
-    "title": "Scavenger",
-    "category": "Arcade",
-    "description": "Scavenger - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/37cy0h9qqngoz4l5pxuk05lbocn75sb1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/37cy0h9qqngoz4l5pxuk05lbocn75sb1/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 241,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-mommy-stikman-vs-huggy-wuggy-game",
-    "title": "Mommy Stikman Vs Huggy Wuggy",
-    "category": "Arcade",
-    "description": "Mommy Stikman Vs Huggy Wuggy - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jpiri3l7gi6fr08h21xe8p2dicmunqea/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jpiri3l7gi6fr08h21xe8p2dicmunqea/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20322,21 +15630,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 241,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-rise-up-free-arcade-game-game",
-    "title": "Rise up free arcade game",
-    "category": "Arcade",
-    "description": "Rise up free arcade game - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/akj0vk0n2pweimrg1nqoilwdzyrmg8hr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/akj0vk0n2pweimrg1nqoilwdzyrmg8hr/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 240,
     "platform": "responsive"
   },
   {
@@ -20460,21 +15753,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-corn-scraper-game",
-    "title": "Corn Scraper",
-    "category": "Arcade",
-    "description": "Corn Scraper - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/flbdw4ocymullejs44jqs5hbcaa82r1i/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/flbdw4ocymullejs44jqs5hbcaa82r1i/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 239,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-hungry-shapes-game",
     "title": "Hungry Shapes",
     "category": "Arcade",
@@ -20482,21 +15760,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/9lnghe4jsf62n93ao2yml5x1sdoef5tp/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/9lnghe4jsf62n93ao2yml5x1sdoef5tp/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 239,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-magical-eats-game",
-    "title": "Magical Eats",
-    "category": "Arcade",
-    "description": "Magical Eats - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/9hpprtl7iy4oomii690xg6qk2nz7itny/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/9hpprtl7iy4oomii690xg6qk2nz7itny/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20535,21 +15798,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-pint-the-cactus-game",
-    "title": "pint the cactus",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game pint the cactus !Use Space to launch needles.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/3b55aqjj6fuw15avpzboaq0cs1qzs2xu/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/3b55aqjj6fuw15avpzboaq0cs1qzs2xu/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 239,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-juice-fresh-game",
     "title": "Juice Fresh",
     "category": "Arcade",
@@ -20565,21 +15813,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-command-strike-fps-offline-game",
-    "title": "Command Strike FPS Offline",
-    "category": "Arcade",
-    "description": "Command Strike FPS Offline - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/t7x6opco5bllwyx9zxsg4v0gtjylrauw/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/t7x6opco5bllwyx9zxsg4v0gtjylrauw/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 238,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-astronout-destroyer-game",
     "title": "Astronout Destroyer",
     "category": "Arcade",
@@ -20587,51 +15820,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/jf9tglir0dv9vck30ktg6cs3ftzywi1g/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/jf9tglir0dv9vck30ktg6cs3ftzywi1g/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 238,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-epic-ring-of-power-game",
-    "title": "Epic Ring of Power",
-    "category": "Arcade",
-    "description": "Epic Ring of Power - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/jnn4tuzsoa5diqocuyl4kaaszqjussvp/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/jnn4tuzsoa5diqocuyl4kaaszqjussvp/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 238,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-make-up-cosmetic-box-cake-maker-best-cooking-game-game",
-    "title": "Make Up Cosmetic Box Cake Maker",
-    "category": "Arcade",
-    "description": "Make Up Cosmetic Box Cake Maker - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/b37i71e7xa0z2cygrv94bkzozzb5gmkr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/b37i71e7xa0z2cygrv94bkzozzb5gmkr/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 238,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-dolly-wants-to-play-game",
-    "title": "Dolly Wants To Play",
-    "category": "Arcade",
-    "description": "Dolly Wants To Play - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6wpfegd31wui2qq3wggsl0dh7fxaf857/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6wpfegd31wui2qq3wggsl0dh7fxaf857/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20662,21 +15850,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/406m3aoedlsuf0jv0otu7mqhgbkj9t5d/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/406m3aoedlsuf0jv0otu7mqhgbkj9t5d/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 238,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-hospital-game-new-surgery-doctor-simulator-game",
-    "title": "Hospital Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Hospital Game - New Surgery Doctor Simulator !Cure your way through quirkiest and funniest diseases My Hospital - ultimate simulation game where you design, manage and maintain your very own medical centre!    Create elixirs, farm and harvest your own medical plants and produce cures for hundreds patients that need your help. It's world where Panacea rules and every treatment is available your fingertips!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/djhcqgraywcsgo8iekageu1l2eir20zg/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/djhcqgraywcsgo8iekageu1l2eir20zg/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20805,21 +15978,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-crazy-glass-legend-game",
-    "title": "Crazy Glass Legend",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Crazy Glass Legend !Welcome to This Brand new Puzzle Game 'Crazy Glass Legend' and start journey Fill water glass for thirsty crow. crow is depressed because he was thirsty. Your task is to draw line to make glass filled with water and bring smile to crow's face.            Crazy Glass Legend, Make Crow Happy Try to find best way to complete each level. You can come up with your own solution so be creative and don't be afraid to think outside box!            Play Happy Crow this Diwali holiday and enjoy your holiday. Some levels may seem easy but let's see if you can actually get 3 stars.            features :      * dynamic mechanism. Draw lines freely to complete levels!      * Simple, smart and fun puzzles but can be challenging too      * Lots levels with more coming soon!      * Fun and relaxing theme that will make you stay for quite some time",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/25slao69dt3lxpm19d7z3mx5sds1izv5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/25slao69dt3lxpm19d7z3mx5sds1izv5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 236,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-dangerous-parachute-game",
     "title": "Dangerous Parachute",
     "category": "Arcade",
@@ -20827,21 +15985,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/plhlw1nwphvjxhny62s9knxzb5zwctl4/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/plhlw1nwphvjxhny62s9knxzb5zwctl4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 236,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-choo-choo-train-for-kids-game",
-    "title": "Choo Choo Train For Kids",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Choo Choo Train For Kids !All kids love trains! This is classic Choo Choo Train educational game.                  Let your child make train growing and learn letters and numbers and colors same time!                  Very simple rules to play:         - Click screen and watch train going to place you clicked!         - Click numbers and learn counting same time!         - Use piano to listen and learn music notes!         - Collect colors and learn them!         - Listen and repeat funny animals noise!         - Pop Balloons and whack mole funny animals!         - It's baby's quite game!                  HEY LITTLE KID CHOO CHOO TRAIN IS COMING! PLAY NOW!!!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/uwnlizmq70nl6d7qi11u2efmp7ezl69a/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/uwnlizmq70nl6d7qi11u2efmp7ezl69a/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20865,21 +16008,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-highschool-cheerleader-2-game",
-    "title": "HighSchool Cheerleader 2",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game HighSchool Cheerleader 2 !You are new girl school and you have decided to participate selections cheerleading troupe! Join troupe and show them what you can do! Your dancing skills will help make you pro cheerleader and maybe even captain! Help your troupe win top prize big cheerleading competition!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/d8ukrtu50qfnh4kqra6n6jq8nqspu9e2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/d8ukrtu50qfnh4kqra6n6jq8nqspu9e2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 236,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-world-of-alice-parts-of-the-house-game",
     "title": "World of Alice   Parts of the House",
     "category": "Arcade",
@@ -20887,21 +16015,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/u4uov6u5ypcn4pv281u9fwo8d5age6u5/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/u4uov6u5ypcn4pv281u9fwo8d5age6u5/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 235,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-bloody-nightmare-game",
-    "title": "Bloody Nightmare",
-    "category": "Arcade",
-    "description": "Bloody Nightmare - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/l8t6erjoip3935d7pj3v613vd3gv0knn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/l8t6erjoip3935d7pj3v613vd3gv0knn/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -20970,21 +16083,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-fps-shooting-game-multiplayer-game",
-    "title": "FPS Shooting Game Multiplayer",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game FPS Shooting Game Multiplayer !Pixel Shooting 3D attempt Day-to-day enemy by adversary, no walking dead can visit unkilled if you, along with entire individual race, should stay. Minecraft available multiplayer games were never more than satisfying before! Delight outstanding animation graphics and attempt to make via 3d game zombies 3D as well as pixel weapon    Survival Pixel Block Minecraft game is survival stone pixel gun 3d styled match anywhere you need to make through towns, farms, terminals, and train terminals loaded with zombies.   You need to obtain some lotions to endure from individuals that have turned into zombies, shooting games multiplayer, and also safeguard your own from those that wish to take cream away this multiplayer game.   You can have fun Fight Gun 3D also Pixel Block Battle Online PVP FPS game if you are down and tired.   Someone that is passing could become your friend, free Minecraft games.   Register with Battle now for your nation, for humankind, and yourself.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/b7hccdlcstor4os39biv11cbn31vyjcy/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/b7hccdlcstor4os39biv11cbn31vyjcy/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 234,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-street-encounter-game",
     "title": "Street Encounter",
     "category": "Arcade",
@@ -20992,36 +16090,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/81s215gz4rgywngkncebh7izlepynf8e/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/81s215gz4rgywngkncebh7izlepynf8e/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 234,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-squid-game-the-revenge-game",
-    "title": "Squid Game: The Revenge",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Squid Game: The Revenge !Squid Game Online is an online action game that we hand picked. This is one our favorite mobile action games that we have to play. Simply click big play button to start having fun. If you want more titles like this, then check out Impostor Killer or Run Into Death.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/uta03xb8w0e0lof76htoj1zh76zehchs/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/uta03xb8w0e0lof76htoj1zh76zehchs/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 234,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-super-heros-combat-flying-game",
-    "title": "Super heros Combat & flying",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Super heros Combat & flying !Join this daring new imagination Marvel Universe, equip your Champions and play your part this epic real-time Action-RPG brawl!    Customize your Marvel Champions with weapons and gear.    Then, team up with your network friends high-action, real-time team battles.    Deal devastating damage close range with your Black Panther. Use high powered ranged attacks with your Web Warrior and Iron Legionnaire.    Amplify your allies with your Supreme Storm and Sorcerer, dealing bursts damage to defeated groups enemies.    Maestro, an evil version Hulk from an alternate future, ruled planet formed from fused and alternate timelines.    Due to mysterious murder leader Battleworld, this world has fallen into disarray.    barons rose to control their lands, seeking to turn tide war their favor, choosing to settle their differences with secret war.    As Barons launch their Champions into battle, it's up to YOU ​​to rise from rookie to legendary BATTLEWORLD hero!    FEATURES KINGDOM MARVEL CHAMPIONS:    CUSTOMIZE YOUR CHAMPION AND MAKE YOUR MARVEL!  • only Marvel game with flexible customization options allowing you to mix and match gear and weapons  • Earn gear, weapons and upgrades as you earn victories battlefield to upgrade and strengthen your champions  • more powerful your champions become, more successful you will be!  • New equipment and weapons are constantly being added!    BATTLE EPIC REAL-TIME MULTIPLAYER Brawls  • Fight competitive 3v3 battles for epic rewards and claim your victory Arena Conquest  • Brawl for supremacy utter chaos Deathmatch 2v2v2 clashes  • Fend off increasingly difficult waves enemies Stronghold and earn rewards to strengthen your roster  • Overcome unique status effects and strategize new with your team as part limited-time global quests    DOMINATE WITH YOUR ALLIANCE  • Team up to overcome challenges and earn huge rewards for you and your Alliance!  • Create community champions ready to take challenges Battleworld!  • Strategize with your team to choose right mix champions to dominate leaderboards!    LIVE BREATHTAKING FIGHT WONDERFUL NEW WORLD  • Explore deep history Battleworld, full mystery, intrigue and fierce battles  • Enjoy inspiring graphics with Champions, Battle Arenas, and spectacular animations inspired by iconic Marvel characters and settings.  • battle barbarian wastelands Gamma Horde, high-tech landscapes Iron House Stark Prime, dimensional quirks ancient temple Vishanti, military-style camps Patriotic Garrison Peggy Carter, And much more!",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/828fclzriowwfd1w1eqnhoenjgrxbklk/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/828fclzriowwfd1w1eqnhoenjgrxbklk/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -21067,21 +16135,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/ihnz6hc69rab7n2cfzl5x30udswdh2dz/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/ihnz6hc69rab7n2cfzl5x30udswdh2dz/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 232,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-dolls-surprise-kinder-eggs-game",
-    "title": "Dolls Surprise Kinder Eggs",
-    "category": "Arcade",
-    "description": "Dolls Surprise Kinder Eggs - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/bhdijpxa2smxlcn4ctv7dgusbxxjyjda/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/bhdijpxa2smxlcn4ctv7dgusbxxjyjda/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -21147,27 +16200,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 232,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-sushi-drop",
-    "title": "Sushi Drop",
-    "category": "Cooking",
-    "description": "Sushi Drop - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "block",
-      "boys",
-      "physics",
-      "puzzle"
-    ],
-    "thumb": "https://img.gamemonetize.com/y6mm6o224n6saeyjatp12b8oc12jc82y/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/y6mm6o224n6saeyjatp12b8oc12jc82y/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 231,
     "platform": "responsive"
   },
   {
@@ -21321,21 +16353,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-critical-strike-global-ops-game",
-    "title": "Critical Strike Global Ops",
-    "category": "Arcade",
-    "description": "Critical Strike Global Ops - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ju1jg4fg4beharxn9k6uck2286omnfm7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ju1jg4fg4beharxn9k6uck2286omnfm7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 229,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-my-secret-college-crush-game",
     "title": "My Secret College Crush",
     "category": "Arcade",
@@ -21348,28 +16365,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 229,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-go-santa-go",
-    "title": "Go Santa Go",
-    "category": "Arcade",
-    "description": "Go Santa Go - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "casual",
-      "christmas",
-      "endless",
-      "race",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/50owo5cgnqhsmae8a3hjq95by6e6dh58/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/50owo5cgnqhsmae8a3hjq95by6e6dh58/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 228,
     "platform": "responsive"
   },
   {
@@ -21418,36 +16413,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-honey-bear-game",
-    "title": "Honey Bear",
-    "category": "Stickman",
-    "description": "Honey Bear - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/vpmvr62j3smklcze9h647doupyur47s3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/vpmvr62j3smklcze9h647doupyur47s3/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 227,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-tuktuk-chingchi-rickshaw-3d-game",
-    "title": "TukTuk Chingchi Rickshaw 3D",
-    "category": "Arcade",
-    "description": "TukTuk Chingchi Rickshaw 3D - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/2kra5w5uwrgpf6yuq1sqfhadgs85ggdn/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/2kra5w5uwrgpf6yuq1sqfhadgs85ggdn/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 227,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-hippo-family-airport-adventure-game",
     "title": "Hippo Family Airport Adventure",
     "category": "Arcade",
@@ -21493,21 +16458,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-imposter-attack-solo-killer-game",
-    "title": "Imposter Attack solo Killer",
-    "category": "Arcade",
-    "description": "Imposter Attack solo Killer - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/ycxx489g6bztv8dpdru4uiu97sywf6xe/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ycxx489g6bztv8dpdru4uiu97sywf6xe/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 225,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-baby-hazel-new-year-party-game",
     "title": "Baby Hazel New Year Party",
     "category": "Arcade",
@@ -21520,43 +16470,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 225,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-camping-adventures-family-road-game",
-    "title": "Camping Adventures: Family Road",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Camping Adventures: Family Road !Enjoy this game for FREE – or unlock ALL Original Stories games with unlimited play by signing up for GHOS Subscription!    Road Trip is back with another amazing tour United States! You'll get to explore beautiful locations across Western states while hunting for hidden objects. beautiful hi-resolution scenes combined with more than 2,200 hidden objects to locate will delight hidden object fans! Try your hand 8 fun mini-games to test your puzzle-solving",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/w1ad7q8pbzksmc54l8dv2cf8h2146yy4/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/w1ad7q8pbzksmc54l8dv2cf8h2146yy4/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 225,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-jail-drop",
-    "title": "Jail Drop",
-    "category": "Arcade",
-    "description": "Jail Drop - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "block",
-      "family",
-      "girl",
-      "girls",
-      "kids"
-    ],
-    "thumb": "https://img.gamemonetize.com/z3urkmn3w3h0frx1up2d3gxgphatdeln/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/z3urkmn3w3h0frx1up2d3gxgphatdeln/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 224,
     "platform": "responsive"
   },
   {
@@ -21605,36 +16518,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-nail-salon-girls-nail-design-game",
-    "title": "Nail Salon",
-    "category": "Girls",
-    "description": "Nail Salon - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/j7cgjdm6rbrnczqdzshjei56zmvrmzej/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/j7cgjdm6rbrnczqdzshjei56zmvrmzej/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 221,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-bullet-bender-mr-bollet-game",
-    "title": "Bullet Bender",
-    "category": "Clicker",
-    "description": "Bullet Bender - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6tpwvmdlkye8fw5h9b7rtcvohwelfi4m/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6tpwvmdlkye8fw5h9b7rtcvohwelfi4m/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 221,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-kick-game",
     "title": "Kick",
     "category": "Soccer",
@@ -21657,21 +16540,6 @@ var GAMES = [
     "tags": [],
     "thumb": "https://img.gamemonetize.com/k2s108vjvhz66alblu5vikzpzjgj6e5r/512x384.jpg",
     "embedUrl": "https://html5.gamemonetize.co/k2s108vjvhz66alblu5vikzpzjgj6e5r/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 221,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-funnyvehicles-game",
-    "title": "FunnyVehicles",
-    "category": "Girls",
-    "description": "FunnyVehicles - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/375jnz9zls4s27ku5pqhsin4fv5dybr7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/375jnz9zls4s27ku5pqhsin4fv5dybr7/",
     "source": "gamemonetize",
     "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     "developer": "GameMonetize",
@@ -21722,43 +16590,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 221,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pop-it-infinity",
-    "title": "Pop it Infinity",
-    "category": "Arcade",
-    "description": "Pop it Infinity - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "ball",
-      "best",
-      "brain",
-      "click",
-      "clicker"
-    ],
-    "thumb": "https://img.gamemonetize.com/epfd49h8p0c794xcqxvk6xakmar1wwgc/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/epfd49h8p0c794xcqxvk6xakmar1wwgc/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 220,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-nina-the-killer-go-to-sleep-my-prince-game",
-    "title": "Nina The Killer: Go To Sleep My Prince",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Nina The Killer: Go To Sleep My Prince !There is new killer town and her name is Nina. Once normal Jeff Killer fangirl, she went insane after fatal incident during her school years when some bullies had been harassing her and her brother. One day she killed bullies and bleached her face so that her normal skin became pale.      There are two different story levels to complete. Play as Poisonguy and hunt after Nina, or become Nina Killer herself and try to escape from asylum.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/njhcn02b9jpxmbei5cmlxgi7x3fw8tww/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/njhcn02b9jpxmbei5cmlxgi7x3fw8tww/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 220,
     "platform": "responsive"
   },
   {
@@ -21867,36 +16698,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-super-anime-piano-hero-academia-games-game",
-    "title": "Super Anime Piano Hero Academia Games",
-    "category": "Arcade",
-    "description": "Super Anime Piano Hero Academia Games - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/6gpzefcfp9o40z322bmsnajaadyix9x7/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/6gpzefcfp9o40z322bmsnajaadyix9x7/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 218,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-mega-fall-ragdoll-simulator-game",
-    "title": "Mega Fall Ragdoll Simulator",
-    "category": "Stickman",
-    "description": "Mega Fall Ragdoll Simulator - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/silz8kmpkeyd6wdwtkirsv1dijinroaf/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/silz8kmpkeyd6wdwtkirsv1dijinroaf/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 217,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-dangerous-circle-online-game",
     "title": "Dangerous Circle Online",
     "category": "Stickman",
@@ -21909,21 +16710,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 217,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-squid-game-green-light-red-light-hints-game",
-    "title": "Squid Game Green Light Red Light Hints",
-    "category": "Arcade",
-    "description": "Squid Game Green Light Red Light Hints - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/etp56l9axninm4hfoue23ndqkvbpkho2/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/etp56l9axninm4hfoue23ndqkvbpkho2/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 216,
     "platform": "responsive"
   },
   {
@@ -22009,28 +16795,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-hop-hop",
-    "title": "Hop Hop",
-    "category": "Arcade",
-    "description": "Hop Hop - play now on EggerMath",
-    "tags": [
-      "animal",
-      "arcade",
-      "baby-games",
-      "casual",
-      "cat",
-      "cute"
-    ],
-    "thumb": "https://img.gamemonetize.com/sbt3vsoi2b1vmia16xbwkm11rvwk3285/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/sbt3vsoi2b1vmia16xbwkm11rvwk3285/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 213,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-castel-game-game",
     "title": "Castel game",
     "category": "Clicker",
@@ -22046,21 +16810,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-penalty-shootout-game",
-    "title": "Penalty Shootout",
-    "category": "Soccer",
-    "description": "Penalty Shootout - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/b46l5vtxnf43dqevb6pitkx6z8b7f2as/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/b46l5vtxnf43dqevb6pitkx6z8b7f2as/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 213,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-wonderful-high-heels-game",
     "title": "Wonderful High Heels",
     "category": "Soccer",
@@ -22073,28 +16822,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 213,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-baby-repeater",
-    "title": "Baby Repeater",
-    "category": "Arcade",
-    "description": "Baby Repeater - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "baby",
-      "click",
-      "clicker",
-      "kids",
-      "memory"
-    ],
-    "thumb": "https://img.gamemonetize.com/minek995x3d12zbj5pcw4q1ak97ku16u/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/minek995x3d12zbj5pcw4q1ak97ku16u/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 212,
     "platform": "responsive"
   },
   {
@@ -22188,43 +16915,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-retro-blaster",
-    "title": "Retro Blaster",
-    "category": "Arcade",
-    "description": "Retro Blaster - play now on EggerMath",
-    "tags": [
-      "alien",
-      "arcade",
-      "battle",
-      "flight",
-      "shoot-em-up",
-      "space"
-    ],
-    "thumb": "https://img.gamemonetize.com/agt1ynvye0hgzqyh8psbclsvj6brwm1f/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/agt1ynvye0hgzqyh8psbclsvj6brwm1f/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 206,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-tattoo-dash-artistic-designs-shop-simulator-game-game",
-    "title": "Tattoo Dash : Artistic Designs Shop Simulator Game",
-    "category": "Arcade",
-    "description": "enjoy this fantastic game Tattoo Dash : Artistic Designs Shop Simulator Game !Hey Tattoo Lovers!! Here's one best game for tattoo artist or tattoo lover. Do play this cool game and run your own tattoo shop by drawing stylish tattoos. This tattoo shop game includes perfect gameplay for you. Different artistic tattoo designs will be there your shop. So many customers will come to your workshop to have an amazing tattoo their body part. Enhance your tattoo shop by serving number customers. So what are you waiting for guys? Install this game and enjoy its addictive gameplay. Don't forget to share with your friends & family.",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/rhgaqhvx7faqm7p4rzqnard7xg4i40ww/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/rhgaqhvx7faqm7p4rzqnard7xg4i40ww/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 205,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-don-t-tap-the-white-tile-game",
     "title": "Don't Tap The White Tile",
     "category": "Soccer",
@@ -22237,28 +16927,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 203,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-banana-joe",
-    "title": "Banana Joe",
-    "category": "Arcade",
-    "description": "Banana Joe - play now on EggerMath",
-    "tags": [
-      "animal",
-      "arcade",
-      "boy",
-      "boys",
-      "casual",
-      "html"
-    ],
-    "thumb": "https://img.gamemonetize.com/18i00qkjir9y9l0otan4feixmbf95kl8/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/18i00qkjir9y9l0otan4feixmbf95kl8/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 202,
     "platform": "responsive"
   },
   {
@@ -22321,28 +16989,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-nitro-rally",
-    "title": "Nitro Rally",
-    "category": "Racing",
-    "description": "Nitro Rally - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "cars",
-      "drifting",
-      "driving",
-      "race",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/h9525975x3qt3893lubg93qmxxqk2uy0/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/h9525975x3qt3893lubg93qmxxqk2uy0/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 200,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-neon-blaster",
     "title": "NEON BLASTER",
     "category": "Arcade",
@@ -22401,26 +17047,6 @@ var GAMES = [
     "platform": "mobile"
   },
   {
-    "id": "gm-forest-man",
-    "title": "Forest Man",
-    "category": "Arcade",
-    "description": "Forest Man - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "boys",
-      "casual",
-      "hypercasual"
-    ],
-    "thumb": "https://img.gamemonetize.com/iftepofdwszgp11u9nu3zrmkchsng5c3/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/iftepofdwszgp11u9nu3zrmkchsng5c3/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 198,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-spa-with-daddy-game",
     "title": "Spa With Daddy",
     "category": "Girls",
@@ -22451,29 +17077,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-nitro-rally-time-attack-2",
-    "title": "Nitro Rally Time Attack 2",
-    "category": "Racing",
-    "description": "Nitro Rally Time Attack 2 - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "boy",
-      "boys",
-      "car",
-      "cars",
-      "race"
-    ],
-    "thumb": "https://img.gamemonetize.com/0flf09joy4lm4f8gtfdb4bve74uiqf0q/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/0flf09joy4lm4f8gtfdb4bve74uiqf0q/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "trending": true,
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 194,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-target-hit-shooting-range",
     "title": "Target Hit Shooting Range",
     "category": "Shooting",
@@ -22494,21 +17097,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 194,
     "platform": "pc"
-  },
-  {
-    "id": "gm-burger-game",
-    "title": "Burger",
-    "category": "Cooking",
-    "description": "Burger - play now on EggerMath",
-    "tags": [],
-    "thumb": "https://img.gamemonetize.com/j1j98a0dzbubhnbie2wa1p76msnix46h/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/j1j98a0dzbubhnbie2wa1p76msnix46h/",
-    "source": "gamemonetize",
-    "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 194,
-    "platform": "responsive"
   },
   {
     "id": "gm-girl-beauty-salon-game",
@@ -22553,28 +17141,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 191,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-formula-1-race",
-    "title": "Formula 1 Race",
-    "category": "Racing",
-    "description": "Formula 1 Race - play now on EggerMath",
-    "tags": [
-      "adventure",
-      "balance",
-      "car",
-      "cars",
-      "classic",
-      "racing"
-    ],
-    "thumb": "https://img.gamemonetize.com/0klgiozzdsbppjb16apnxwnxbsjez29z/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/0klgiozzdsbppjb16apnxwnxbsjez29z/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 189,
     "platform": "responsive"
   },
   {
@@ -22629,27 +17195,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-motocross-22",
-    "title": "Motocross 22",
-    "category": "Racing",
-    "description": "Motocross 22 - play now on EggerMath",
-    "tags": [
-      "motorcycle",
-      "race",
-      "racing",
-      "sport",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/9imcoewcu50a4gow435sjtjktk4vyk0l/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/9imcoewcu50a4gow435sjtjktk4vyk0l/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 182,
-    "platform": "responsive"
-  },
-  {
     "id": "gm-little-bubu-fillz",
     "title": "Little Bubu Fillz",
     "category": "Hypercasual",
@@ -22670,45 +17215,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 182,
     "platform": "mobile"
-  },
-  {
-    "id": "gm-super-coconut-basket",
-    "title": "Super coconut Basket",
-    "category": "Arcade",
-    "description": "Super coconut Basket - play now on EggerMath",
-    "tags": [
-      "basketball",
-      "sport",
-      "sports"
-    ],
-    "thumb": "https://img.gamemonetize.com/50dysyxn9pxewpq6m59rq149gmlibxkj/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/50dysyxn9pxewpq6m59rq149gmlibxkj/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 182,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-ms-pacman",
-    "title": "Ms. PACMAN",
-    "category": "Arcade",
-    "description": "Ms. PACMAN - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "fun",
-      "pacman",
-      "puzzle"
-    ],
-    "thumb": "https://img.gamemonetize.com/f1djvhknqgkzouuoeka0axh12pi030ui/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/f1djvhknqgkzouuoeka0axh12pi030ui/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 180,
-    "platform": "responsive"
   },
   {
     "id": "gm-zumba-mania",
@@ -22769,28 +17275,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 176,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-find-the-missing-letter",
-    "title": "Find The Missing Letter",
-    "category": "Boys",
-    "description": "Find The Missing Letter - play now on EggerMath",
-    "tags": [
-      "family",
-      "girl",
-      "girls",
-      "kids",
-      "letters",
-      "puzzle"
-    ],
-    "thumb": "https://img.gamemonetize.com/xzph4hhwg4zvjpy76lid025e2sj35o0p/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/xzph4hhwg4zvjpy76lid025e2sj35o0p/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 175,
     "platform": "responsive"
   },
   {
@@ -22882,24 +17366,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "gm-endless-tunnel",
-    "title": "Endless Tunnel",
-    "category": "Hypercasual",
-    "description": "Endless Tunnel - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "highscore"
-    ],
-    "thumb": "https://img.gamemonetize.com/s9o277gxa9w0uy0fy2u8gncehnv49v61/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/s9o277gxa9w0uy0fy2u8gncehnv49v61/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 162,
-    "platform": "mobile"
-  },
-  {
     "id": "gm-logic-islands",
     "title": "Logic Islands",
     "category": "Hypercasual",
@@ -22915,28 +17381,6 @@ var GAMES = [
     "developer": "GameMonetize",
     "credit": "https://gamemonetize.com",
     "plays": 161,
-    "platform": "mobile"
-  },
-  {
-    "id": "gm-ant-destroyer-2",
-    "title": "Ant Destroyer 2",
-    "category": "Boys",
-    "description": "Ant Destroyer 2 - play now on EggerMath",
-    "tags": [
-      "android",
-      "animal",
-      "arcade",
-      "boy",
-      "boys",
-      "clicker"
-    ],
-    "thumb": "https://img.gamemonetize.com/o4e1ay78mrdxm2d2b352c4yrzhhd7rv1/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/o4e1ay78mrdxm2d2b352c4yrzhhd7rv1/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 157,
     "platform": "mobile"
   },
   {
@@ -22958,68 +17402,6 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 156,
     "platform": "pc"
-  },
-  {
-    "id": "gm-wonder-vending-machine",
-    "title": "Wonder Vending Machine",
-    "category": "Cooking",
-    "description": "Wonder Vending Machine - play now on EggerMath",
-    "tags": [
-      "brain",
-      "cook",
-      "cooking",
-      "family",
-      "girl",
-      "girls"
-    ],
-    "thumb": "https://img.gamemonetize.com/42qmdy4702lj3m47x11wufecedyoxjdr/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/42qmdy4702lj3m47x11wufecedyoxjdr/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 156,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-brazil-tiny-goalie",
-    "title": "Brazil Tiny Goalie",
-    "category": "Soccer",
-    "description": "Brazil Tiny Goalie - play now on EggerMath",
-    "tags": [
-      "arcade",
-      "boy",
-      "casual",
-      "football",
-      "soccer"
-    ],
-    "thumb": "https://img.gamemonetize.com/oqpv39tj9zfy1xo7z035rh8kq5ve8szi/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/oqpv39tj9zfy1xo7z035rh8kq5ve8szi/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 156,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-free-city-drive",
-    "title": "Free City Drive",
-    "category": "Racing",
-    "description": "Free City Drive - play now on EggerMath",
-    "tags": [
-      "drifting",
-      "driving",
-      "webgl"
-    ],
-    "thumb": "https://img.gamemonetize.com/ykcp72g9g0g12q6r4f0mhxs8bhtlt34r/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/ykcp72g9g0g12q6r4f0mhxs8bhtlt34r/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 155,
-    "platform": "responsive"
   },
   {
     "id": "gm-donut-crash-saga",
@@ -23074,79 +17456,5 @@ var GAMES = [
     "credit": "https://gamemonetize.com",
     "plays": 139,
     "platform": "pc"
-  },
-  {
-    "id": "gm-smoothie-maker",
-    "title": "Smoothie Maker",
-    "category": "Cooking",
-    "description": "Smoothie Maker - play now on EggerMath",
-    "tags": [
-      "cook",
-      "cooking",
-      "fun"
-    ],
-    "thumb": "https://img.gamemonetize.com/e3ks7wldbivsnzm92lq7bgtzj4eel9cz/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/e3ks7wldbivsnzm92lq7bgtzj4eel9cz/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 138,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-master-archer-2025",
-    "title": "Master Archer 2025",
-    "category": "Adventure",
-    "description": "Master Archer 2025 - play now on EggerMath",
-    "tags": [
-      "adventure",
-      "arcade",
-      "arrows",
-      "enemies"
-    ],
-    "thumb": "https://img.gamemonetize.com/69b1fcb4p2ce5ty7aaoexe1yfm7wte2t/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/69b1fcb4p2ce5ty7aaoexe1yfm7wte2t/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 137,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-pizza-maker",
-    "title": "Pizza Maker",
-    "category": "Cooking",
-    "description": "Pizza Maker - play now on EggerMath",
-    "tags": [
-      "cook",
-      "cooking"
-    ],
-    "thumb": "https://img.gamemonetize.com/olmx0edmmvb0jg26my0dkmx5scnfgcx5/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/olmx0edmmvb0jg26my0dkmx5scnfgcx5/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 129,
-    "platform": "responsive"
-  },
-  {
-    "id": "gm-canyon-valley-rally",
-    "title": "Canyon Valley Rally",
-    "category": "Racing",
-    "description": "Canyon Valley Rally - play now on EggerMath",
-    "tags": [
-      "car"
-    ],
-    "thumb": "https://img.gamemonetize.com/i25hdjl1os61qfy4fhxmi48iszq2ug2c/512x384.jpg",
-    "embedUrl": "https://html5.gamemonetize.co/i25hdjl1os61qfy4fhxmi48iszq2ug2c/",
-    "source": "gamemonetize",
-    "videoUrl": "",
-    "developer": "GameMonetize",
-    "credit": "https://gamemonetize.com",
-    "plays": 127,
-    "platform": "responsive"
   }
 ];
