@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://html5.gamemonetize.co" crossorigin>
-  <link rel="dns-prefetch" href="https://html5.gamemonetize.co">
-  <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
+  <link rel="preconnect" href="https://www.y8.com" crossorigin>
+  <link rel="dns-prefetch" href="https://www.y8.com">
+  <link rel="preconnect" href="https://cdn2.y8.com" crossorigin>
+  <link rel="preconnect" href="https://storage.y8.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
   <title>Play Free Games Online — EggerMath</title>
-  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up. 1400+ HTML5 games available.">
+  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up. 500+ HTML5 games available.">
   <meta name="keywords" content="play free games online, browser games, free HTML5 games, no download games">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
@@ -32,7 +33,7 @@
   <meta name="twitter:description" content="Free browser games on EggerMath. No downloads!" id="tw-desc">
   <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png" id="tw-image">
 
-  <link rel="stylesheet" href="./game-page.css?v=19">
+  <link rel="stylesheet" href="./game-page.css?v=20">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
   <style>
     .game-ad-banner, .ad-container, .ad-wrapper, .ad-slot, .ad-banner,
@@ -225,7 +226,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=19"></script>
+  <script src="./games.js?v=20"></script>
   <script>
     // ─── API BASE ───────────────────────────────────────────────
     const API = '';
@@ -373,7 +374,10 @@
       let embedUrl;
       let gameHash = '';
       let directUrl = '';
-      if (game.source === 'itch.io' || game.source === 'github') {
+      if (game.source === 'y8') {
+        embedUrl = game.embedUrl;
+        directUrl = game.embedUrl;
+      } else if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
         directUrl = game.embedUrl;
       } else {
@@ -491,6 +495,7 @@
       function preloadGameAssets() {
         if (_preloaded) return;
         _preloaded = true;
+        if (game.source === 'y8') return;
         var hash = (game.embedUrl || '').match(/gamemonetize\.co\/([a-zA-Z0-9_-]+)/);
         if (!hash) return;
         var base = '/play/' + hash[1] + '/';

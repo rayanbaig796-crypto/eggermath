@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eggermath-v3';
+const CACHE_NAME = 'eggermath-v4';
 const STATIC_ASSETS = [
   '/home.css',
   '/game-page.css',
