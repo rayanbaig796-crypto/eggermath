@@ -741,6 +741,56 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /y8/<slug> — Responsive Y8 game wrapper (cached) ────────────
+  const y8PathMatch = parsedUrl.pathname.match(/^\/y8\/([a-zA-Z0-9_-]+)$/);
+  if (y8PathMatch) {
+    const slug = y8PathMatch[1];
+    const cacheKey = 'y8:v1:' + slug;
+    const cached = cacheGet(cacheKey);
+    if (cached) {
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
+        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
+        res.end();
+        return;
+      }
+      const headers = Object.assign({}, cached.headers);
+      headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'public, max-age=86400';
+      headers['ETag'] = cached.etag;
+      res.writeHead(cached.statusCode, headers);
+      res.end(cached.body);
+      return;
+    }
+
+    const y8EmbedUrl = 'https://www.y8.com/embed/' + slug;
+    try {
+      const result = await fetchUrl(y8EmbedUrl);
+      const html = result.body.toString('utf-8');
+      const storageMatch = html.match(/src="(https:\/\/storage\.y8\.com\/[^"]+)"/);
+      if (storageMatch) {
+        const storageUrl = storageMatch[1];
+        const wrapper = '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;overflow:hidden;background:#000}iframe{width:100%;height:100%;border:none;display:block}</style></head><body><iframe src="' + storageUrl + '" allowfullscreen allow="autoplay; fullscreen; pointer-lock; clipboard-write"></iframe></body></html>';
+        const buf = Buffer.from(wrapper, 'utf-8');
+        cacheSet(cacheKey, 200, { 'content-type': 'text/html; charset=utf-8' }, buf);
+        const headers = securityHeaders();
+        headers['Content-Type'] = 'text/html; charset=utf-8';
+        headers['X-Cache'] = 'MISS';
+        headers['Cache-Control'] = 'public, max-age=86400';
+        headers['ETag'] = genETag(buf);
+        res.writeHead(200, headers);
+        res.end(buf);
+      } else {
+        res.writeHead(302, { 'Location': y8EmbedUrl });
+        res.end();
+      }
+    } catch (e) {
+      res.writeHead(302, { 'Location': y8EmbedUrl });
+      res.end();
+    }
+    return;
+  }
+
   // ── /play?url=<url> — Smart proxy with URL rewriting (cached) ─
   if (parsedUrl.pathname === '/play') {
     const targetUrl = parsedUrl.query.url;
@@ -1080,4 +1130,5 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`EggerMath server running at http://localhost:${PORT}`);
   console.log(`  Proxy:    /proxy?url=<encoded-url>  (cached)`);
   console.log(`  Player:   /play?url=<encoded-url>   (cached + rewritten)`);
+  console.log(`  Y8 Game:  /y8/<slug>                (cached + responsive)`);
 });

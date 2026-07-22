@@ -375,7 +375,12 @@
       let gameHash = '';
       let directUrl = '';
       if (game.source === 'y8') {
-        embedUrl = game.embedUrl;
+        var y8Slug = (game.embedUrl || '').match(/y8\.com\/embed\/([a-zA-Z0-9_-]+)/);
+        if (y8Slug) {
+          embedUrl = '/y8/' + y8Slug[1];
+        } else {
+          embedUrl = game.embedUrl;
+        }
         directUrl = game.embedUrl;
       } else if (game.source === 'itch.io' || game.source === 'github') {
         embedUrl = game.embedUrl;
