@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-44ZYW1XML3"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-44ZYW1XML3');</script>
   <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
   <link rel="dns-prefetch" href="https://img.gamemonetize.co">
   <title>EggerMath — Play 1400+ Free Browser Games Online | No Download Required</title>
@@ -85,7 +83,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
-  <link rel="stylesheet" href="./home.css?v=18">
+  <link rel="stylesheet" href="./home.css?v=19">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
 </head>
 <body>
@@ -99,38 +97,11 @@
       <span class="mobile-logo-name">EGGERMATH</span>
     </a>
     <div class="mobile-actions">
-      <button class="mobile-btn" id="mobile-menu-btn" title="Menu">
-        <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
       <button class="mobile-btn" id="mobile-search-btn" title="Search">
         <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
     </div>
   </header>
-
-  <!-- ============================================================
-       MOBILE MENU DRAWER (hidden on desktop)
-  ============================================================ -->
-  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
-  <nav class="mobile-menu" id="mobile-menu">
-    <div class="mobile-menu-header">
-      <span class="mobile-menu-title">Menu</span>
-      <button class="mobile-menu-close" id="mobile-menu-close">
-        <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <div class="mobile-menu-links">
-      <a href="/" class="mobile-menu-link">Home</a>
-      <a href="onboarding.html" class="mobile-menu-link">Getting Started</a>
-      <a href="blog.html" class="mobile-menu-link">Blog</a>
-      <a href="advertise.html" class="mobile-menu-link">Advertise</a>
-      <a href="takedown.html" class="mobile-menu-link">DMCA</a>
-      <a href="about.html" class="mobile-menu-link">About</a>
-      <a href="privacy.html" class="mobile-menu-link">Privacy</a>
-      <a href="terms.html" class="mobile-menu-link">Terms</a>
-      <a href="contact.html" class="mobile-menu-link">Contact</a>
-    </div>
-  </nav>
 
   <!-- ============================================================
        LEFT SIDEBAR (desktop only)
@@ -209,66 +180,6 @@
     <!-- Hidden SEO h1 - visually represented by the sidebar logo and section title -->
     <h1>EggerMath — Free Browser Games</h1>
 
-    <!-- MOBILE GAMES SECTION -->
-    <section class="platform-section" id="mobile-section">
-      <div class="platform-header">
-        <div class="platform-header-left">
-          <div class="platform-icon">📱</div>
-          <div>
-            <div class="platform-title">Mobile Games</div>
-            <div class="platform-count" id="mobile-count"></div>
-          </div>
-        </div>
-      </div>
-      <div class="platform-desc">Touch-friendly games optimized for your phone</div>
-      <div class="platform-scroll-wrapper">
-        <div class="platform-scroll" id="mobile-grid"></div>
-        <button class="platform-arrow left" onclick="scrollPlatform('mobile-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <button class="platform-arrow right" onclick="scrollPlatform('mobile-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
-      </div>
-      <a class="see-all-link" onclick="showPlatform('mobile'); return false;">See All Mobile Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </section>
-
-    <!-- PC GAMES SECTION -->
-    <section class="platform-section" id="pc-section">
-      <div class="platform-header">
-        <div class="platform-header-left">
-          <div class="platform-icon">🖥️</div>
-          <div>
-            <div class="platform-title">PC Games</div>
-            <div class="platform-count" id="pc-count"></div>
-          </div>
-        </div>
-      </div>
-      <div class="platform-desc">Best played with keyboard and mouse</div>
-      <div class="platform-scroll-wrapper">
-        <div class="platform-scroll" id="pc-grid"></div>
-        <button class="platform-arrow left" onclick="scrollPlatform('pc-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <button class="platform-arrow right" onclick="scrollPlatform('pc-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
-      </div>
-      <a class="see-all-link" onclick="showPlatform('pc'); return false;">See All PC Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </section>
-
-    <!-- RESPONSIVE GAMES SECTION -->
-    <section class="platform-section" id="responsive-section">
-      <div class="platform-header">
-        <div class="platform-header-left">
-          <div class="platform-icon">🔄</div>
-          <div>
-            <div class="platform-title">Play Anywhere</div>
-            <div class="platform-count" id="responsive-count"></div>
-          </div>
-        </div>
-      </div>
-      <div class="platform-desc">Works on mobile, tablet, and desktop</div>
-      <div class="platform-scroll-wrapper">
-        <div class="platform-scroll" id="responsive-grid"></div>
-        <button class="platform-arrow left" onclick="scrollPlatform('responsive-grid',-1)"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
-        <button class="platform-arrow right" onclick="scrollPlatform('responsive-grid',1)"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
-      </div>
-      <a class="see-all-link" onclick="showPlatform('responsive'); return false;">See All Responsive Games <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </section>
-
     <div class="section-title" id="grid-title"><span>🎮</span> ALL GAMES</div>
     
     <!-- GAME GRID -->
@@ -319,7 +230,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=18"></script>
+  <script src="./games.js?v=19"></script>
   <script>
     // ═══════════════════════════════════════════════════════════════
     //  DOM ELEMENTS
@@ -433,8 +344,7 @@
       // Label + developer credit
       const labelClass = isDrawer ? 'search-item-label' : 'game-card-label';
       const devCredit = (game.developer && !isDrawer) ? `<div style="font-size:10px;color:rgba(255,255,255,0.35);margin-top:1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">by ${game.developer}</div>` : '';
-      const catBadge = (!isDrawer) ? `<div class="game-card-badge">${game.category}</div>` : '';
-      const labelHtml = `${catBadge}<div class="${labelClass}">${game.title}</div>${devCredit}`;
+      const labelHtml = `<div class="${labelClass}">${game.title}</div>${devCredit}`;
 
       // Fav btn (only on main grid, not drawer)
       let favHtml = '';
@@ -524,10 +434,6 @@
       grid.innerHTML = '';
       _renderedCount = 0;
       _renderedList = [];
-
-      // Show platform sections only on "all" category
-      const platformSections = document.querySelectorAll('.platform-section');
-      platformSections.forEach(s => s.style.display = activeCategory === 'all' ? '' : 'none');
 
       if (activeCategory === 'favorites') {
         const favs = getFavorites();
@@ -657,68 +563,6 @@
     }
 
     // ═══════════════════════════════════════════════════════════════
-    //  PLATFORM SECTIONS
-    // ═══════════════════════════════════════════════════════════════
-    function createPlatformCard(g) {
-      const a = document.createElement('a');
-      a.href = 'game.html?id=' + g.id;
-      a.className = 'platform-card';
-      a.title = g.title;
-      a.innerHTML =
-        '<img src="' + (g.thumb || '') + '" alt="' + (g.title || '') + '" loading="lazy">' +
-        '<div class="platform-card-badge">' + (g.category || '') + '</div>' +
-        '<div class="platform-card-content">' +
-          '<div class="platform-card-title">' + (g.title || '') + '</div>' +
-          '<div class="platform-card-meta"><span>' + (g.plays || 0).toLocaleString() + ' plays</span></div>' +
-        '</div>';
-      return a;
-    }
-
-    function renderPlatformGrid(gridId, games) {
-      const grid = document.getElementById(gridId);
-      if (!grid) return;
-      grid.innerHTML = '';
-      games.forEach(g => grid.appendChild(createPlatformCard(g)));
-    }
-
-    function scrollPlatform(gridId, dir) {
-      const grid = document.getElementById(gridId);
-      if (!grid) return;
-      grid.scrollBy({ left: dir * 220, behavior: 'smooth' });
-    }
-
-    function renderPlatformSections() {
-      const mobileGames = GAMES.filter(g => g.platform === 'mobile').slice(0, 10);
-      const pcGames = GAMES.filter(g => g.platform === 'pc').slice(0, 10);
-      const responsiveGames = GAMES.filter(g => g.platform === 'responsive').slice(0, 10);
-      renderPlatformGrid('mobile-grid', mobileGames);
-      renderPlatformGrid('pc-grid', pcGames);
-      renderPlatformGrid('responsive-grid', responsiveGames);
-      // Update counts
-      const mc = GAMES.filter(g => g.platform === 'mobile').length;
-      const pc = GAMES.filter(g => g.platform === 'pc').length;
-      const rc = GAMES.filter(g => g.platform === 'responsive').length;
-      var el;
-      el = document.getElementById('mobile-count'); if (el) el.textContent = mc + ' games';
-      el = document.getElementById('pc-count'); if (el) el.textContent = pc + ' games';
-      el = document.getElementById('responsive-count'); if (el) el.textContent = rc + ' games';
-    }
-
-    function showPlatform(platform) {
-      activeCategory = 'all';
-      renderCatBar();
-      const filtered = GAMES.filter(g => g.platform === platform);
-      const icon = platform === 'mobile' ? '📱' : platform === 'pc' ? '🖥️' : '🔄';
-      gridTitle.innerHTML = '<span>' + icon + '</span> ' + platform.toUpperCase() + ' GAMES (' + filtered.length + ')';
-      grid.innerHTML = '';
-      _renderedList = filtered;
-      _renderedCount = 0;
-      _renderBatch(Math.min(BATCH_SIZE, filtered.length));
-      _setupInfiniteScroll();
-      gridTitle.scrollIntoView({ behavior: 'smooth' });
-    }
-
-    // ═══════════════════════════════════════════════════════════════
     //  SEARCH LOGIC
     // ═══════════════════════════════════════════════════════════════
     let drawerActiveCat = 'all';
@@ -790,28 +634,8 @@
     if (mobileSearchBtn) mobileSearchBtn.addEventListener('click', openSearch);
     document.getElementById('search-close').addEventListener('click', closeSearch);
     drawerOverlay.addEventListener('click', closeSearch);
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') { closeSearch(); closeMobileMenu(); } });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeSearch(); });
     searchInput.addEventListener('input', renderSearchDrawer);
-
-    // Mobile menu toggle
-    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenuClose = document.getElementById('mobile-menu-close');
-
-    function openMobileMenu() {
-      mobileMenuOverlay.classList.add('active');
-      mobileMenu.classList.add('open');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeMobileMenu() {
-      mobileMenuOverlay.classList.remove('active');
-      mobileMenu.classList.remove('open');
-      document.body.style.overflow = '';
-    }
-    if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMobileMenu);
-    if (mobileMenuClose) mobileMenuClose.addEventListener('click', closeMobileMenu);
-    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
 
     // ═══════════════════════════════════════════════════════════════
     //  INIT
@@ -820,7 +644,6 @@
       await loadFavorites();
       GAMES.sort((a, b) => (b.plays || 0) - (a.plays || 0));
       renderCatBar();
-      renderPlatformSections();
       renderMainGrid();
       renderSidebarMinis();
       renderSearchCats();
