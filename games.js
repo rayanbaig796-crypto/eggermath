@@ -1,4 +1,4 @@
-var GAMES = [
+const GAMES = [
   {
     "id": "y8-lexi_s_urban_story",
     "title": "Lexi S Urban Story",
@@ -252,23 +252,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 3912,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_friendship_bracelet",
-    "title": "Blonde Sofia Friendship Bracelet",
-    "category": "Girls",
-    "description": "Blonde Sofia Friendship Bracelet - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/405629/file/w180h135_webp-4832d3a49e983bfb2eec9ae962ddc351.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_friendship_bracelet",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3054,
     "platform": "responsive"
   },
   {
@@ -935,23 +918,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-baby_cathy_ep_51_aquarium_keeper",
-    "title": "Baby Cathy Ep 51 Aquarium Keeper",
-    "category": "Girls",
-    "description": "Baby Cathy Ep 51 Aquarium Keeper - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/400317/file/w180h135_webp-9006031bdd592ebc7480a7b4fbb87691.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep_51_aquarium_keeper",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6878,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-starline_puzzle",
     "title": "Starline Puzzle",
     "category": "Puzzle",
@@ -1105,40 +1071,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_friend_makeover",
-    "title": "Diary Maggie Friend Makeover",
-    "category": "Girls",
-    "description": "Diary Maggie Friend Makeover - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/398989/file/w180h135_webp-171152fcedf7753fe8885178ec03936a.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_friend_makeover",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2391,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_underwater",
-    "title": "Blonde Sofia Underwater",
-    "category": "Girls",
-    "description": "Blonde Sofia Underwater - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/398913/file/w180h135_webp-9b0502ab313b384f0810b60100104f8a.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_underwater",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2030,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-perfect_roll_slide_puzzle",
     "title": "Perfect Roll Slide Puzzle",
     "category": "Puzzle",
@@ -1255,23 +1187,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 3360,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_nature_spirit",
-    "title": "Diary Maggie Nature Spirit",
-    "category": "Girls",
-    "description": "Diary Maggie Nature Spirit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/397569/file/w180h135_webp-7c371536c0f2ff073d7b0341e5b3cb4b.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_nature_spirit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5862,
     "platform": "responsive"
   },
   {
@@ -1394,23 +1309,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-baby_cathy_ep49_1st_flight",
-    "title": "Baby Cathy Ep49 1st Flight",
-    "category": "Girls",
-    "description": "Baby Cathy Ep49 1st Flight - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/396121/file/w180h135_webp-ba9777ab68c13722bb2ade17a6df3322.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep49_1st_flight",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3067,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-trendy_fashion_valentine_s_part_3",
     "title": "Trendy Fashion Valentine S Part 3",
     "category": "Girls",
@@ -1530,23 +1428,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-blonde_sofia_cosmic_idol_maker",
-    "title": "Blonde Sofia Cosmic Idol Maker",
-    "category": "Girls",
-    "description": "Blonde Sofia Cosmic Idol Maker - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/394843/file/w180h135_webp-4b6a3b0780d8072287743c32c2df844a.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_cosmic_idol_maker",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1594,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-black_hole_eats",
     "title": "Black Hole Eats",
     "category": "Other",
@@ -1646,23 +1527,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6539,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_style_fusion",
-    "title": "Blonde Sofia Style Fusion",
-    "category": "Girls",
-    "description": "Blonde Sofia Style Fusion - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/392053/file/w180h135_webp-9e6397658ff83d21214a5b79b1d742c6.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_style_fusion",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6391,
     "platform": "responsive"
   },
   {
@@ -1802,57 +1666,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-trendy_fashion_world_tour_part_2",
-    "title": "Trendy Fashion World Tour Part 2",
-    "category": "Girls",
-    "description": "Trendy Fashion World Tour Part 2 - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/389193/file/w180h135_webp-dd90478aabc95721dec10f361d319854.webp",
-    "embedUrl": "https://www.y8.com/embed/trendy_fashion_world_tour_part_2",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9502,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_thanksgiving",
-    "title": "Diary Maggie Thanksgiving",
-    "category": "Girls",
-    "description": "Diary Maggie Thanksgiving - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/389087/file/w180h135_webp-aa6e052f0b26995969fd91feeff9a5e0.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_thanksgiving",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8421,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_holiday_accident",
-    "title": "Blonde Sofia Holiday Accident",
-    "category": "Girls",
-    "description": "Blonde Sofia Holiday Accident - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/388615/file/w180h135_webp-72bba3dbc3bb20666ac667abddd6e250.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_holiday_accident",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3342,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxies_kitchen_rainbow_pudding",
     "title": "Roxies Kitchen Rainbow Pudding",
     "category": "Other",
@@ -1904,23 +1717,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_christmas",
-    "title": "Diary Maggie Christmas",
-    "category": "Girls",
-    "description": "Diary Maggie Christmas - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/388461/file/w180h135_webp-b1dd24a642b75ee0c094ab3a6a8bacf0.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_christmas",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10077,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-sara_vet_life_ep_8_hamster",
     "title": "Sara Vet Life Ep 8 Hamster",
     "category": "Other",
@@ -1935,40 +1731,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 4796,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep47_pretty_drinks",
-    "title": "Baby Cathy Ep47 Pretty Drinks",
-    "category": "Girls",
-    "description": "Baby Cathy Ep47 Pretty Drinks - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/387525/file/w180h135_webp-ed64e9c6ef971c673d3fc88e00a64913.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep47_pretty_drinks",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1464,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep46_shrinky_dink",
-    "title": "Baby Cathy Ep46 Shrinky Dink",
-    "category": "Girls",
-    "description": "Baby Cathy Ep46 Shrinky Dink - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/387581/file/w180h135_webp-dff6059770da539a8c3b2444489fced8.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep46_shrinky_dink",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7754,
     "platform": "responsive"
   },
   {
@@ -1989,23 +1751,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_graphic_tee",
-    "title": "Diary Maggie Graphic Tee",
-    "category": "Girls",
-    "description": "Diary Maggie Graphic Tee - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/387417/file/w180h135_webp-d540656758d7a5df6ca005908fd48533.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_graphic_tee",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2887,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-triple_cups",
     "title": "Triple Cups",
     "category": "Other",
@@ -2020,23 +1765,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 8399,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-maria_s_gothic_seasons_dress_up",
-    "title": "Maria S Gothic Seasons Dress Up",
-    "category": "Girls",
-    "description": "Maria S Gothic Seasons Dress Up - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/386853/file/w180h135_webp-bd52db4afed68dd255bd8a4f0363f97b.webp",
-    "embedUrl": "https://www.y8.com/embed/maria_s_gothic_seasons_dress_up",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7173,
     "platform": "responsive"
   },
   {
@@ -2139,40 +1867,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6758,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_zen_bonsai",
-    "title": "Blonde Sofia Zen Bonsai",
-    "category": "Girls",
-    "description": "Blonde Sofia Zen Bonsai - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/385393/file/w180h135_webp-660f24a9d6c69a025443d5314c6daa76.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_zen_bonsai",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7012,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_zodiac_game",
-    "title": "Blonde Sofia Zodiac Game",
-    "category": "Girls",
-    "description": "Blonde Sofia Zodiac Game - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/385391/file/w180h135_webp-9c4e39261cb55aad6f609bb3d8a8cccb.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_zodiac_game",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9140,
     "platform": "responsive"
   },
   {
@@ -2295,23 +1989,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-baby_cathy_ep45_bento_box",
-    "title": "Baby Cathy Ep45 Bento Box",
-    "category": "Girls",
-    "description": "Baby Cathy Ep45 Bento Box - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/384075/file/w180h135_webp-5f9fda081887ddb74dcc0fa1824ed7ea.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep45_bento_box",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2911,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-build_balance_webgl",
     "title": "Build Balance",
     "category": "Strategy",
@@ -2363,23 +2040,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-blonde_sofia_goth_makeover",
-    "title": "Blonde Sofia Goth Makeover",
-    "category": "Girls",
-    "description": "Blonde Sofia Goth Makeover - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383757/file/w180h135_webp-082936aafc543f056adf743fad921bf0.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_goth_makeover",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6332,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-jump_stack_3d",
     "title": "Jump Stack 3D",
     "category": "Arcade",
@@ -2411,23 +2071,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 5407,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-maria_s_magical_seasons_dress_up",
-    "title": "Maria S Magical Seasons Dress Up",
-    "category": "Girls",
-    "description": "Maria S Magical Seasons Dress Up - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383485/file/w180h135_webp-ff338ed94f9e1d7dd342e6f22b5eec71.webp",
-    "embedUrl": "https://www.y8.com/embed/maria_s_magical_seasons_dress_up",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9416,
     "platform": "responsive"
   },
   {
@@ -2652,23 +2295,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_summer_holiday",
-    "title": "Diary Maggie Summer Holiday",
-    "category": "Girls",
-    "description": "Diary Maggie Summer Holiday - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/190035/file/w180h135_webp-b475441235c1bede3e092ac90850a3fd.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_summer_holiday",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2357,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-sara_vet_life_ep_3",
     "title": "Sara Vet Life Ep 3",
     "category": "Other",
@@ -2805,159 +2431,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_ice_cream_waffle",
-    "title": "Diary Maggie Ice Cream Waffle",
-    "category": "Girls",
-    "description": "Diary Maggie Ice Cream Waffle - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383373/file/w180h135_webp-ea414eec4859f285192ae11a297618c9.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_ice_cream_waffle",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7830,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_colorful_classic",
-    "title": "Toddie Colorful Classic",
-    "category": "Girls",
-    "description": "Toddie Colorful Classic - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408605/file/w180h135_webp-0ff927ac19cf809cd0b64fad248c601d.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_colorful_classic",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4673,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_part_time_job",
-    "title": "Blonde Sofia Part Time Job",
-    "category": "Girls",
-    "description": "Blonde Sofia Part Time Job - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/407429/file/w180h135_webp-7d78206d77f149417c538e8167a0ae15.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_part_time_job",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 990,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_mozaic_maker",
-    "title": "Blonde Sofia Mozaic Maker",
-    "category": "Girls",
-    "description": "Blonde Sofia Mozaic Maker - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408607/file/w180h135_webp-b42677411d79f5bf1be87bd3ea34b9fa.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_mozaic_maker",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5606,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_twin_style",
-    "title": "Kiddo Twin Style",
-    "category": "Girls",
-    "description": "Kiddo Twin Style - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408599/file/w180h135_webp-e09c9b58baa8821be4485476b96a2895.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_twin_style",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4698,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_in_swimsuit",
-    "title": "Teen In Swimsuit",
-    "category": "Girls",
-    "description": "Teen In Swimsuit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408601/file/w180h135_webp-a83f1b69452381badb079a22583bb938.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_in_swimsuit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6103,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_after_playground",
-    "title": "Toddie After Playground",
-    "category": "Girls",
-    "description": "Toddie After Playground - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408589/file/w180h135_webp-06895c5c312a730271f735d4f8c3f2a6.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_after_playground",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4973,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_deep_clean_house",
-    "title": "Blonde Sofia Deep Clean House",
-    "category": "Girls",
-    "description": "Blonde Sofia Deep Clean House - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408609/file/w180h135_webp-ed0ef0ad1cc97ad3293a833978d5cdf8.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_deep_clean_house",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 797,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_camp_time",
-    "title": "Blonde Sofia Camp Time",
-    "category": "Girls",
-    "description": "Blonde Sofia Camp Time - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408583/file/w180h135_webp-5c99f421d498931585f9e5afd44459c2.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_camp_time",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 917,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-bottle_shooter_3d",
     "title": "Bottle Shooter 3D",
     "category": "Shooting",
@@ -2975,40 +2448,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_bold_and_fun",
-    "title": "Teen Bold And Fun",
-    "category": "Girls",
-    "description": "Teen Bold And Fun - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408581/file/w180h135_webp-32d2446d1e012424810a24c736a9a891.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_bold_and_fun",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9314,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_fruity_bingsu",
-    "title": "Blonde Sofia Fruity Bingsu",
-    "category": "Girls",
-    "description": "Blonde Sofia Fruity Bingsu - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408577/file/w180h135_webp-62c07689ce66b9c77673e846f2d879ed.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_fruity_bingsu",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4261,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-decor_my_pizza",
     "title": "Decor My Pizza",
     "category": "Girls",
@@ -3023,23 +2462,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 10016,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_kawaii_edgy",
-    "title": "Teen Kawaii Edgy",
-    "category": "Girls",
-    "description": "Teen Kawaii Edgy - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408579/file/w180h135_webp-0b10179dadce3a059fa02bef130630ff.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_kawaii_edgy",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1092,
     "platform": "responsive"
   },
   {
@@ -3091,23 +2513,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 3634,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_fortune_teller",
-    "title": "Girly Fortune Teller",
-    "category": "Girls",
-    "description": "Girly Fortune Teller - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408573/file/w180h135_webp-444b067e35973b529df9f58881133e22.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_fortune_teller",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8071,
     "platform": "responsive"
   },
   {
@@ -3179,40 +2584,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_mariposa",
-    "title": "Kiddo Mariposa",
-    "category": "Girls",
-    "description": "Kiddo Mariposa - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408597/file/w180h135_webp-990fd86d99c847149eee32176fbb3b85.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_mariposa",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2016,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_it_kitchen",
-    "title": "Decor It Kitchen",
-    "category": "Girls",
-    "description": "Decor It Kitchen - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408643/file/w180h135_webp-5b3389e5fb2c6a92281c3179d50ad491.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_it_kitchen",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3062,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-teen_space_idol",
     "title": "Teen Space Idol",
     "category": "Girls",
@@ -3227,159 +2598,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 9843,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_it_garage",
-    "title": "Decor It Garage",
-    "category": "Girls",
-    "description": "Decor It Garage - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408591/file/w180h135_webp-88f9c5e9842d366947c28bf37389587e.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_it_garage",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8618,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_modern_chinese",
-    "title": "Toddie Modern Chinese",
-    "category": "Girls",
-    "description": "Toddie Modern Chinese - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408585/file/w180h135_webp-846f49a05ba3f57a3925db0b78f7600e.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_modern_chinese",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8125,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_casual_suit",
-    "title": "Kiddo Casual Suit",
-    "category": "Girls",
-    "description": "Kiddo Casual Suit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408651/file/w180h135_webp-5971e1565ac77d1422f69137b54ccae2.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_casual_suit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1313,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_easter_egg",
-    "title": "Diary Maggie Easter Egg",
-    "category": "Girls",
-    "description": "Diary Maggie Easter Egg - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383371/file/w180h135_webp-5447d456d5f185ac699dded51fffe657.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_easter_egg",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6798,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_diary",
-    "title": "Decor My Diary",
-    "category": "Girls",
-    "description": "Decor My Diary - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408649/file/w180h135_webp-c6d92ab645f98a8ca848c34afa063840.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_diary",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9117,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_quirky_look",
-    "title": "Girly Quirky Look",
-    "category": "Girls",
-    "description": "Girly Quirky Look - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408647/file/w180h135_webp-af2013b816dc78b3affd9190d9dcd6c4.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_quirky_look",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7601,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_ladybug",
-    "title": "Toddie Ladybug",
-    "category": "Girls",
-    "description": "Toddie Ladybug - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408641/file/w180h135_webp-a894b446f669dba01449400efd628982.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_ladybug",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8307,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep44_fire_prevention",
-    "title": "Baby Cathy Ep44 Fire Prevention",
-    "category": "Girls",
-    "description": "Baby Cathy Ep44 Fire Prevention - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408633/file/w180h135_webp-dc99accabe1f30a12d177137bbe52d93.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep44_fire_prevention",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2115,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_arcadecore",
-    "title": "Teen Arcadecore",
-    "category": "Girls",
-    "description": "Teen Arcadecore - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408617/file/w180h135_webp-77db06be3642631770615c0675de663c.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_arcadecore",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3548,
     "platform": "responsive"
   },
   {
@@ -3400,23 +2618,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-toddie_vintage_babydoll",
-    "title": "Toddie Vintage Babydoll",
-    "category": "Girls",
-    "description": "Toddie Vintage Babydoll - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408639/file/w180h135_webp-5ed78a3ac603adcc3e07adcd74de687e.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_vintage_babydoll",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6842,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-toddie_hanfu",
     "title": "Toddie Hanfu",
     "category": "Girls",
@@ -3434,40 +2635,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_rainbowcore",
-    "title": "Kiddo Rainbowcore",
-    "category": "Girls",
-    "description": "Kiddo Rainbowcore - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408635/file/w180h135_webp-09706f236197c050e6db86caf162bfec.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_rainbowcore",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6970,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_mean_girls",
-    "title": "Teen Mean Girls",
-    "category": "Girls",
-    "description": "Teen Mean Girls - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408625/file/w180h135_webp-1352cfbfc180a74b15645359de792be8.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_mean_girls",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3219,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-pet_kawai_rei",
     "title": "Pet Kawai Rei",
     "category": "Other",
@@ -3482,23 +2649,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 1276,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_urban_glam",
-    "title": "Teen Urban Glam",
-    "category": "Girls",
-    "description": "Teen Urban Glam - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408631/file/w180h135_webp-434a046984c086f397b8cc8fd239a57a.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_urban_glam",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1637,
     "platform": "responsive"
   },
   {
@@ -3604,210 +2754,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-diary_maggie_gardening",
-    "title": "Diary Maggie Gardening",
-    "category": "Girls",
-    "description": "Diary Maggie Gardening - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383369/file/w180h135_webp-1993af9253fb279b26161df941cebe94.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_gardening",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6949,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_concert_ootd",
-    "title": "Girly Concert Ootd",
-    "category": "Girls",
-    "description": "Girly Concert Ootd - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408615/file/w180h135_webp-daf20511810addc71b34388aa1bb1fc4.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_concert_ootd",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9997,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_dark_coquette",
-    "title": "Girly Dark Coquette",
-    "category": "Girls",
-    "description": "Girly Dark Coquette - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3411/file/w180h135_webp-e7341fe551b638630fcf7b13ba818b2b.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_dark_coquette",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1623,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_fairy_kei",
-    "title": "Kiddo Fairy Kei",
-    "category": "Girls",
-    "description": "Kiddo Fairy Kei - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3545/file/w180h135_webp-8487353c6ad42056fb620ab8328bf6ee.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_fairy_kei",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4556,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_romantic_goth",
-    "title": "Girly Romantic Goth",
-    "category": "Girls",
-    "description": "Girly Romantic Goth - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3403/file/w180h135_webp-0e2cc05f02a3a7729dd710634be2826f.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_romantic_goth",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2007,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_pastel_cyberpunk",
-    "title": "Teen Pastel Cyberpunk",
-    "category": "Girls",
-    "description": "Teen Pastel Cyberpunk - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3293/file/w180h135_webp-cb1f7f8c08dd51b9707b9498a97fbe3a.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_pastel_cyberpunk",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8445,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_bed",
-    "title": "Decor My Bed",
-    "category": "Girls",
-    "description": "Decor My Bed - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3213/file/w180h135_webp-b1308aca4872be32c98305af9d5ef648.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_bed",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8988,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_adventure_time",
-    "title": "Girly Adventure Time",
-    "category": "Girls",
-    "description": "Girly Adventure Time - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3397/file/w180h135_webp-8370264f4ce026ccb8ec611ab92b7837.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_adventure_time",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3614,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_nerd_and_popular",
-    "title": "Teen Nerd And Popular",
-    "category": "Girls",
-    "description": "Teen Nerd And Popular - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3287/file/w180h135_webp-b47b5a581853c97293ab99beddf494af.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_nerd_and_popular",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7839,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_tiny_atelier",
-    "title": "Toddie Tiny Atelier",
-    "category": "Girls",
-    "description": "Toddie Tiny Atelier - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3221/file/w180h135_webp-984f444c38eb6b2039bca2725a16b0a1.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_tiny_atelier",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1088,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_cat_cafe",
-    "title": "Decor My Cat Cafe",
-    "category": "Girls",
-    "description": "Decor My Cat Cafe - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/3207/file/w180h135_webp-0fe646445336bef9c99c9b216ef74da5.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_cat_cafe",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3220,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_moony_cute",
-    "title": "Kiddo Moony Cute",
-    "category": "Girls",
-    "description": "Kiddo Moony Cute - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2947/file/w180h135_webp-26848ad5f34c7bd6bc75080d45bf23d2.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_moony_cute",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3675,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-water_sort_puzzle_webgl",
     "title": "Water Sort Puzzle",
     "category": "Puzzle",
@@ -3856,74 +2802,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 4787,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_fruity",
-    "title": "Toddie Fruity",
-    "category": "Girls",
-    "description": "Toddie Fruity - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2937/file/w180h135_webp-d72b18ed7225fa40d3e6c0c19a9e65fb.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_fruity",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7742,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_spring_picnic",
-    "title": "Blonde Sofia Spring Picnic",
-    "category": "Girls",
-    "description": "Blonde Sofia Spring Picnic - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2941/file/w180h135_webp-099cf0f80dfbb9b7798a344cb7861935.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_spring_picnic",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 527,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_kawaii_mushkin",
-    "title": "Toddie Kawaii Mushkin",
-    "category": "Girls",
-    "description": "Toddie Kawaii Mushkin - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2931/file/w180h135_webp-efdf314842ccee2e3fbcbd0ae052ef54.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_kawaii_mushkin",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2665,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_in_braids",
-    "title": "Kiddo In Braids",
-    "category": "Girls",
-    "description": "Kiddo In Braids - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408663/file/w180h135_webp-7f6cc539aff44a28c6a6963bd0c2150b.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_in_braids",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8035,
     "platform": "responsive"
   },
   {
@@ -3978,74 +2856,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-blonde_sofia_idol_wannabe",
-    "title": "Blonde Sofia Idol Wannabe",
-    "category": "Girls",
-    "description": "Blonde Sofia Idol Wannabe - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408665/file/w180h135_webp-f53b2cfa72ff984e89abcdc3941fb6d1.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_idol_wannabe",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1601,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_it_living_room",
-    "title": "Decor It Living Room",
-    "category": "Girls",
-    "description": "Decor It Living Room - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408659/file/w180h135_webp-f0c39d5332cfeadff1d2065ffb62f7f8.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_it_living_room",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7340,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_foam_party",
-    "title": "Girly Foam Party",
-    "category": "Girls",
-    "description": "Girly Foam Party - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408657/file/w180h135_webp-b70a39a3f0aac5a99f7413608a3fe05e.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_foam_party",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4800,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_pretty_wicked",
-    "title": "Girly Pretty Wicked",
-    "category": "Girls",
-    "description": "Girly Pretty Wicked - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408655/file/w180h135_webp-92c173946b90a1dabf242c819a22446c.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_pretty_wicked",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5816,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-diary_maggie_love_is_caring",
     "title": "Diary Maggie Love Is Caring",
     "category": "Racing",
@@ -4060,23 +2870,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 7287,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_swimming_pool",
-    "title": "Decor My Swimming Pool",
-    "category": "Girls",
-    "description": "Decor My Swimming Pool - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2465/file/w180h135_webp-ddf95cf84cde717496aa707cd5fa43b7.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_swimming_pool",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2323,
     "platform": "responsive"
   },
   {
@@ -4097,23 +2890,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-decor_my_kitty_wall",
-    "title": "Decor My Kitty Wall",
-    "category": "Girls",
-    "description": "Decor My Kitty Wall - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/2449/file/w180h135_webp-1c1f3fd4ce68f48a53332586e475adcb.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_kitty_wall",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6137,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxies_kitchen_cheesecake",
     "title": "Roxies Kitchen Cheesecake",
     "category": "Other",
@@ -4128,23 +2904,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 1527,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_choco_day",
-    "title": "Blonde Sofia Choco Day",
-    "category": "Girls",
-    "description": "Blonde Sofia Choco Day - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1873/file/w180h135_webp-9f66b4b3427a689d9f4168bd5a20bc5b.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_choco_day",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2571,
     "platform": "responsive"
   },
   {
@@ -4165,57 +2924,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-toddie_vintage_school_day",
-    "title": "Toddie Vintage School Day",
-    "category": "Girls",
-    "description": "Toddie Vintage School Day - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1495/file/w180h135_webp-9dbeac7271f3d090ad5e446ff22feb4f.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_vintage_school_day",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2829,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_spring_hanfu",
-    "title": "Girly Spring Hanfu",
-    "category": "Girls",
-    "description": "Girly Spring Hanfu - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1491/file/w180h135_webp-e1e4fd3e457d96f6724c04c7692d1fb4.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_spring_hanfu",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1928,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_cute_numberblox",
-    "title": "Toddie Cute Numberblox",
-    "category": "Girls",
-    "description": "Toddie Cute Numberblox - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1487/file/w180h135_webp-be747450fbfe28957ea182c19937f729.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_cute_numberblox",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1504,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxies_kitchen_wagyu_steak",
     "title": "Roxies Kitchen Wagyu Steak",
     "category": "Other",
@@ -4233,23 +2941,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_cute_princess",
-    "title": "Teen Cute Princess",
-    "category": "Girls",
-    "description": "Teen Cute Princess - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1479/file/w180h135_webp-076e46940f142ef91a2bb1dee9aad423.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_cute_princess",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3323,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-family_s_day_out",
     "title": "Family S Day Out",
     "category": "Other",
@@ -4264,40 +2955,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 1617,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_princess_loli",
-    "title": "Kiddo Princess Loli",
-    "category": "Girls",
-    "description": "Kiddo Princess Loli - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1295/file/w180h135_webp-10593d562d2f89e0d332ca807972433d.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_princess_loli",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8491,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_cute_dress",
-    "title": "Kiddo Cute Dress",
-    "category": "Girls",
-    "description": "Kiddo Cute Dress - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1475/file/w180h135_webp-3bd07a702d529f8660469e05b8c6f077.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_dress",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6641,
     "platform": "responsive"
   },
   {
@@ -4369,23 +3026,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_in_denim",
-    "title": "Girly In Denim",
-    "category": "Girls",
-    "description": "Girly In Denim - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1293/file/w180h135_webp-1d406ab48f44d36ab83a2057ceb2e866.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_in_denim",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8064,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-golf_puzzle",
     "title": "Golf Puzzle",
     "category": "Puzzle",
@@ -4437,108 +3077,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_pretty_look",
-    "title": "Teen Pretty Look",
-    "category": "Girls",
-    "description": "Teen Pretty Look - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1291/file/w180h135_webp-914646c31e252369884a28c54333d198.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_pretty_look",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9002,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep43_love_day",
-    "title": "Baby Cathy Ep43 Love Day",
-    "category": "Girls",
-    "description": "Baby Cathy Ep43 Love Day - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1471/file/w180h135_webp-d2d8cdb0b34d8b187f7060498f186dae.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep43_love_day",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3332,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_emo",
-    "title": "Kiddo Emo",
-    "category": "Girls",
-    "description": "Kiddo Emo - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1287/file/w180h135_webp-dd615e9474b53ab49a2d2a597af73999.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_emo",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7385,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_garden",
-    "title": "Decor Cute Garden",
-    "category": "Girls",
-    "description": "Decor Cute Garden - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/919/file/w180h135_webp-208075ee94f2d4171945f90d9cc5ba9b.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_garden",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9705,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_tanghulu",
-    "title": "Blonde Sofia Tanghulu",
-    "category": "Girls",
-    "description": "Blonde Sofia Tanghulu - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1289/file/w180h135_webp-8c7b6f3de1b367c43f3bf1656e196ef7.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_tanghulu",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 948,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_cute_skirt",
-    "title": "Toddie Cute Skirt",
-    "category": "Girls",
-    "description": "Toddie Cute Skirt - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1101/file/w180h135_webp-d323905d12c103f54850a17db61fa979.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_cute_skirt",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3706,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-block_puzzle_block_game",
     "title": "Block Puzzle Block Game",
     "category": "Puzzle",
@@ -4553,23 +3091,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 4550,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_dry_yoghurt",
-    "title": "Blonde Sofia Dry Yoghurt",
-    "category": "Girls",
-    "description": "Blonde Sofia Dry Yoghurt - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1105/file/w180h135_webp-f23b47198dfc8c7af7c4f3b6ed754d66.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_dry_yoghurt",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8199,
     "platform": "responsive"
   },
   {
@@ -4590,91 +3111,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_marching_band",
-    "title": "Kiddo Marching Band",
-    "category": "Girls",
-    "description": "Kiddo Marching Band - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1097/file/w180h135_webp-9dcbb23a1aeed58cb30008d481a658c1.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_marching_band",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2248,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_high_school",
-    "title": "Teen High School",
-    "category": "Girls",
-    "description": "Teen High School - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1103/file/w180h135_webp-5ddbdfaade6ac54133c1989dc2c75363.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_high_school",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1196,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_onesies",
-    "title": "Toddie Onesies",
-    "category": "Girls",
-    "description": "Toddie Onesies - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/923/file/w180h135_webp-1352da3c586181a2fbf14cf78cbbee56.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_onesies",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 808,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_library",
-    "title": "Decor My Library",
-    "category": "Girls",
-    "description": "Decor My Library - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/385339/file/w180h135_webp-b2046d18702ecf9f1f23865496763fe2.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_library",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5421,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_romantic_pink",
-    "title": "Girly Romantic Pink",
-    "category": "Girls",
-    "description": "Girly Romantic Pink - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/1099/file/w180h135_webp-8b3a3922ea9ef52adc4ba4599b1662e3.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_romantic_pink",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5770,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-kiddo_colorful_sporty",
     "title": "Kiddo Colorful Sporty",
     "category": "Sports",
@@ -4689,125 +3125,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 5321,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_bakery",
-    "title": "Decor My Bakery",
-    "category": "Girls",
-    "description": "Decor My Bakery - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/903/file/w180h135_webp-cbbef4de49eb9e9aad5934c054579543.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_bakery",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1977,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_frutiger_aero",
-    "title": "Teen Frutiger Aero",
-    "category": "Girls",
-    "description": "Teen Frutiger Aero - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/907/file/w180h135_webp-e383c1fdc54aae25e0ddd07a8b4577d5.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_frutiger_aero",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2206,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_winter_holiday",
-    "title": "Diary Maggie Winter Holiday",
-    "category": "Girls",
-    "description": "Diary Maggie Winter Holiday - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383359/file/w180h135_webp-f5e810dc69996b4b3c4b165b8ee858d5.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_winter_holiday",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2540,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_old_european",
-    "title": "Girly Old European",
-    "category": "Girls",
-    "description": "Girly Old European - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/905/file/w180h135_webp-f2dfc5e4476aff7d665db9f6f895dce3.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_old_european",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3323,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_wedding",
-    "title": "Decor My Wedding",
-    "category": "Girls",
-    "description": "Decor My Wedding - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/897/file/w180h135_webp-d321cf8d2c8aeacdbf964840e6191c88.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_wedding",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 550,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_birthday",
-    "title": "Diary Maggie Birthday",
-    "category": "Girls",
-    "description": "Diary Maggie Birthday - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383367/file/w180h135_webp-904010022f3e1d5b397545b51eff71d8.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_birthday",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10452,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_angelic_etherial",
-    "title": "Girly Angelic Etherial",
-    "category": "Girls",
-    "description": "Girly Angelic Etherial - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/925/file/w180h135_webp-52ab81746c083dc222196e83378c7ea6.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_angelic_etherial",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6951,
     "platform": "responsive"
   },
   {
@@ -4828,176 +3145,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_jazzy_mood",
-    "title": "Girly Jazzy Mood",
-    "category": "Girls",
-    "description": "Girly Jazzy Mood - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29653/file/w180h135_webp-51b167a79883ad68633d567f81450dcb.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_jazzy_mood",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9628,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_apple_pie",
-    "title": "Toddie Apple Pie",
-    "category": "Girls",
-    "description": "Toddie Apple Pie - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29645/file/w180h135_webp-36c22e851f5f230133677c6465c99aa4.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_apple_pie",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3983,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_chinatown",
-    "title": "Girly Chinatown",
-    "category": "Girls",
-    "description": "Girly Chinatown - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29637/file/w180h135_webp-e825289c9c789aa4b60592a5883cd616.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_chinatown",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6568,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_nursery",
-    "title": "Decor Cute Nursery",
-    "category": "Girls",
-    "description": "Decor Cute Nursery - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29193/file/w180h135_webp-83bd612cd694fa0dcfcf10d54f49c4bf.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_nursery",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6984,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_american_diner",
-    "title": "Teen American Diner",
-    "category": "Girls",
-    "description": "Teen American Diner - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29199/file/w180h135_webp-2b3a1dd7012747a879c7756e1bc63abf.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_american_diner",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8202,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_lol_look",
-    "title": "Toddie Lol Look",
-    "category": "Girls",
-    "description": "Toddie Lol Look - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29185/file/w180h135_webp-53a7385308dd6f1dbfe5d31b22349b37.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_lol_look",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1098,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_alien_stuff",
-    "title": "Kiddo Alien Stuff",
-    "category": "Girls",
-    "description": "Kiddo Alien Stuff - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/31269/file/w180h135_webp-b5ccf6dd9ca001d930e8667c197e7a1f.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_alien_stuff",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1154,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_new_year_eve",
-    "title": "Girly New Year Eve",
-    "category": "Girls",
-    "description": "Girly New Year Eve - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29177/file/w180h135_webp-5653660d4d0ee9030ebad8695db8b404.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_new_year_eve",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1532,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_gyaru_style",
-    "title": "Teen Gyaru Style",
-    "category": "Girls",
-    "description": "Teen Gyaru Style - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29169/file/w180h135_webp-e32056fa90b3b8e8dfec5cde46ed2b6b.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_gyaru_style",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6751,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_cute_sailor",
-    "title": "Kiddo Cute Sailor",
-    "category": "Girls",
-    "description": "Kiddo Cute Sailor - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/29161/file/w180h135_webp-572933e1bb60f2d117b48a0e433ea094.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_sailor",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2853,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxies_kitchen_kimchi_jjigae",
     "title": "Roxies Kitchen Kimchi Jjigae",
     "category": "Other",
@@ -5015,91 +3162,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_mermaid_core",
-    "title": "Girly Mermaid Core",
-    "category": "Girls",
-    "description": "Girly Mermaid Core - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28747/file/w180h135_webp-e97b9d772941e8f5d5cf731a9c82e9b2.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_mermaid_core",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 612,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep42_christmas_eve",
-    "title": "Baby Cathy Ep42 Christmas Eve",
-    "category": "Girls",
-    "description": "Baby Cathy Ep42 Christmas Eve - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/392409/file/w180h135_webp-53a149f20fe3b5c8203f0aa17bc2b382.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep42_christmas_eve",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 589,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_clowncore",
-    "title": "Toddie Clowncore",
-    "category": "Girls",
-    "description": "Toddie Clowncore - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28219/file/w180h135_webp-227303b19ce975d9683b55a19c60de32.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_clowncore",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10205,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_christmas_party",
-    "title": "Blonde Sofia Christmas Party",
-    "category": "Girls",
-    "description": "Blonde Sofia Christmas Party - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28715/file/w180h135_webp-f2c5bd62b6b1561c4d554b666e7c0d57.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_christmas_party",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8647,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_christmas_time",
-    "title": "Toddie Christmas Time",
-    "category": "Girls",
-    "description": "Toddie Christmas Time - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27601/file/w180h135_webp-58559fda4c04c260191c2c58843660ae.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_christmas_time",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6591,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-kiddo_in_wonderland",
     "title": "Kiddo In Wonderland",
     "category": "Girls",
@@ -5114,108 +3176,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 5954,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_shop",
-    "title": "Decor Cute Shop",
-    "category": "Girls",
-    "description": "Decor Cute Shop - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28733/file/w180h135_webp-4564d90e228975860f286423a1efae92.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_shop",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1934,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_fashion_tattoo",
-    "title": "Girly Fashion Tattoo",
-    "category": "Girls",
-    "description": "Girly Fashion Tattoo - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28227/file/w180h135_webp-22f093644f411e9b1efb47b999e968ac.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_fashion_tattoo",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9670,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_winter_clothing",
-    "title": "Toddie Winter Clothing",
-    "category": "Girls",
-    "description": "Toddie Winter Clothing - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27609/file/w180h135_webp-c5abe7670db53e9c917dc55acc6d3f89.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_winter_clothing",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 668,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_resin_shaker",
-    "title": "Blonde Sofia Resin Shaker",
-    "category": "Girls",
-    "description": "Blonde Sofia Resin Shaker - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/28233/file/w180h135_webp-b659b8704eff348a6615cdbaa3b04ee4.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_resin_shaker",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9221,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_school_day",
-    "title": "Toddie School Day",
-    "category": "Girls",
-    "description": "Toddie School Day - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27059/file/w180h135_webp-3fc87918a8ca789e569c69b9ba637a17.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_school_day",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5070,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_homework",
-    "title": "Diary Maggie Homework",
-    "category": "Girls",
-    "description": "Diary Maggie Homework - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/383365/file/w180h135_webp-821378527b64caacbe5e654d2de05b90.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_homework",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8610,
     "platform": "responsive"
   },
   {
@@ -5253,91 +3213,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_eskimo_wear",
-    "title": "Teen Eskimo Wear",
-    "category": "Girls",
-    "description": "Teen Eskimo Wear - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27035/file/w180h135_webp-ccce36a27fa48e6ce5ba53777e7b0ca2.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_eskimo_wear",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2907,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_equestrian",
-    "title": "Girly Equestrian",
-    "category": "Girls",
-    "description": "Girly Equestrian - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27025/file/w180h135_webp-4f230c77e1567f036cea32fdff579a8a.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_equestrian",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4243,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_hood_style",
-    "title": "Teen Hood Style",
-    "category": "Girls",
-    "description": "Teen Hood Style - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/27017/file/w180h135_webp-e87478faaa3ccdb25dbceb251f8c1ffa.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_hood_style",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2490,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_purse",
-    "title": "Decor My Purse",
-    "category": "Girls",
-    "description": "Decor My Purse - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26749/file/w180h135_webp-c35fcd03b44312d1e9592f2bf9958b60.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_purse",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 839,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_cute_shoes",
-    "title": "Toddie Cute Shoes",
-    "category": "Girls",
-    "description": "Toddie Cute Shoes - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26733/file/w180h135_webp-05f73161f2489a6e679aa9bbd1fad994.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_cute_shoes",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1946,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-sport_merge",
     "title": "Sport Merge",
     "category": "Sports",
@@ -5352,57 +3227,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 4676,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_shop",
-    "title": "Decor My Shop",
-    "category": "Girls",
-    "description": "Decor My Shop - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26743/file/w180h135_webp-b379055460f39d6dfa0a1e78c3a42ecb.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_shop",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5542,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_cute_polynesian",
-    "title": "Toddie Cute Polynesian",
-    "category": "Girls",
-    "description": "Toddie Cute Polynesian - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26725/file/w180h135_webp-7d9df452d7957837d1a8edadd8d91cb9.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_cute_polynesian",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2741,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_flower_gardener",
-    "title": "Teen Flower Gardener",
-    "category": "Girls",
-    "description": "Teen Flower Gardener - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26105/file/w180h135_webp-cb8541d3b1e13c45bbaa6e5d33978be6.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_flower_gardener",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8084,
     "platform": "responsive"
   },
   {
@@ -5474,91 +3298,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-blonde_sofia_thanksgiving_party",
-    "title": "Blonde Sofia Thanksgiving Party",
-    "category": "Girls",
-    "description": "Blonde Sofia Thanksgiving Party - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26113/file/w180h135_webp-2bca6df9eef46728acb13315622081b2.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_thanksgiving_party",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10288,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_techwear",
-    "title": "Teen Techwear",
-    "category": "Girls",
-    "description": "Teen Techwear - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26089/file/w180h135_webp-cad8b30252653821efec82684cde30f4.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_techwear",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1454,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_cooper",
-    "title": "Decor My Cooper",
-    "category": "Girls",
-    "description": "Decor My Cooper - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26129/file/w180h135_webp-c035a9acb7557428768b01dd146281bd.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_cooper",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7209,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_fall_fashion",
-    "title": "Girly Fall Fashion",
-    "category": "Girls",
-    "description": "Girly Fall Fashion - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26097/file/w180h135_webp-2a7df4932a7e42f7fa4c3fd0ff02b36a.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_fall_fashion",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8293,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_american_girl",
-    "title": "Teen American Girl",
-    "category": "Girls",
-    "description": "Teen American Girl - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/26081/file/w180h135_webp-c20be8fc27a937e130e775fe7dae1edd.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_american_girl",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8432,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-trishape_connect",
     "title": "Trishape Connect",
     "category": "Puzzle",
@@ -5627,23 +3366,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_scout",
-    "title": "Kiddo Scout",
-    "category": "Girls",
-    "description": "Kiddo Scout - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/25697/file/w180h135_webp-d1780aa6eabc0fd7461b49801d51935a.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_scout",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6939,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-toddie_ballerina",
     "title": "Toddie Ballerina",
     "category": "Girls",
@@ -5661,40 +3383,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-decor_cute_kitchen",
-    "title": "Decor Cute Kitchen",
-    "category": "Girls",
-    "description": "Decor Cute Kitchen - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/24403/file/w180h135_webp-368c5d09af6bb6c803db1acb125d7350.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_kitchen",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8919,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_fall_stylish",
-    "title": "Kiddo Fall Stylish",
-    "category": "Girls",
-    "description": "Kiddo Fall Stylish - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/25689/file/w180h135_webp-eea4f65c95292d83dde59c736379ef08.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_fall_stylish",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5463,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-daring_ninja",
     "title": "Daring Ninja",
     "category": "Shooting",
@@ -5709,23 +3397,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6674,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_futuristic_fashion",
-    "title": "Kiddo Futuristic Fashion",
-    "category": "Girls",
-    "description": "Kiddo Futuristic Fashion - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/25137/file/w180h135_webp-fba4b0cb584c1d7973c71500c4700ccc.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_futuristic_fashion",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3556,
     "platform": "responsive"
   },
   {
@@ -5814,40 +3485,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-decor_my_phone_case",
-    "title": "Decor My Phone Case",
-    "category": "Girls",
-    "description": "Decor My Phone Case - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/25121/file/w180h135_webp-ded29963a7bec8d60446f9119c9e19c7.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_phone_case",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9896,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep41_making_halloween",
-    "title": "Baby Cathy Ep41 Making Halloween",
-    "category": "Girls",
-    "description": "Baby Cathy Ep41 Making Halloween - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/25129/file/w180h135_webp-7328b447e1111baa7ed4c5ef0296286e.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep41_making_halloween",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9540,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-sushi_merge",
     "title": "Sushi Merge",
     "category": "Other",
@@ -5933,23 +3570,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-decor_my_classroom",
-    "title": "Decor My Classroom",
-    "category": "Girls",
-    "description": "Decor My Classroom - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/24395/file/w180h135_webp-da6cbe62c10491438bc72b08cc205f6c.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_classroom",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6117,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-juicy_shot",
     "title": "Juicy Shot",
     "category": "Other",
@@ -6001,23 +3621,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_hawaiian_outfit",
-    "title": "Girly Hawaiian Outfit",
-    "category": "Girls",
-    "description": "Girly Hawaiian Outfit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/24387/file/w180h135_webp-41cbaeb63781f32034d64a42f61e65d4.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_hawaiian_outfit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10391,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-doggie_dash",
     "title": "Doggie Dash",
     "category": "Arcade",
@@ -6032,40 +3635,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 4088,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_cross_stitch",
-    "title": "Blonde Sofia Cross Stitch",
-    "category": "Girls",
-    "description": "Blonde Sofia Cross Stitch - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23769/file/w180h135_webp-085c2ba1811581995c974222f2a23f1f.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_cross_stitch",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3334,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_diy_phonecase",
-    "title": "Diary Maggie Diy Phonecase",
-    "category": "Girls",
-    "description": "Diary Maggie Diy Phonecase - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/407407/file/w180h135_webp-fee89c747dda2fc6e161d0b8ffa8d305.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_diy_phonecase",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3174,
     "platform": "responsive"
   },
   {
@@ -6103,176 +3672,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_little_chef",
-    "title": "Teen Little Chef",
-    "category": "Girls",
-    "description": "Teen Little Chef - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23737/file/w180h135_webp-ca785234bc09199eebf6ae07a5c1d0be.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_little_chef",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3696,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_street_dancer",
-    "title": "Kiddo Street Dancer",
-    "category": "Girls",
-    "description": "Kiddo Street Dancer - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/24363/file/w180h135_webp-19c9aabe8474bc2969b78ca5d927de99.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_street_dancer",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3395,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_fashionable_winter",
-    "title": "Girly Fashionable Winter",
-    "category": "Girls",
-    "description": "Girly Fashionable Winter - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23117/file/w180h135_webp-ef4923fe0afd59d6fdf519b429ee8f3b.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_fashionable_winter",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4499,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_tomboy",
-    "title": "Toddie Tomboy",
-    "category": "Girls",
-    "description": "Toddie Tomboy - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23099/file/w180h135_webp-e5820427d1a2168c087655182c0d15fe.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_tomboy",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8983,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_fairycore_necklace",
-    "title": "Decor Fairycore Necklace",
-    "category": "Girls",
-    "description": "Decor Fairycore Necklace - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23087/file/w180h135_webp-738379054259e1a4a312c474f3db22e2.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_fairycore_necklace",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7176,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_living_room",
-    "title": "Decor Cute Living Room",
-    "category": "Girls",
-    "description": "Decor Cute Living Room - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23079/file/w180h135_webp-7f62d7f3c2d8ec305baf5bfe143e599b.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_living_room",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5182,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_pretty_tomboy",
-    "title": "Girly Pretty Tomboy",
-    "category": "Girls",
-    "description": "Girly Pretty Tomboy - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/22407/file/w180h135_webp-a0f7f1a96eec40e35f7d3d99d5f0008b.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_pretty_tomboy",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6555,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_gothic_milady",
-    "title": "Teen Gothic Milady",
-    "category": "Girls",
-    "description": "Teen Gothic Milady - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/22399/file/w180h135_webp-336624e5695ad41b6ba101cb2a42cbd9.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_gothic_milady",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 788,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_cute_punk",
-    "title": "Teen Cute Punk",
-    "category": "Girls",
-    "description": "Teen Cute Punk - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/22393/file/w180h135_webp-fed7b6ba6daca2f0958fdefeef50187e.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_cute_punk",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8701,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_queen_of_heart",
-    "title": "Toddie Queen Of Heart",
-    "category": "Girls",
-    "description": "Toddie Queen Of Heart - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/22383/file/w180h135_webp-44d023d99537d5bd2af65604479cbf83.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_queen_of_heart",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4781,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-blonde_sofia_spa_day",
     "title": "Blonde Sofia Spa Day",
     "category": "Girls",
@@ -6287,40 +3686,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 1527,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_office",
-    "title": "Decor My Office",
-    "category": "Girls",
-    "description": "Decor My Office - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/22375/file/w180h135_webp-8fded210680191b969539fd9e510b6d0.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_office",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2353,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_red_polka",
-    "title": "Kiddo Red Polka",
-    "category": "Girls",
-    "description": "Kiddo Red Polka - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21881/file/w180h135_webp-b49430d52cae8f3c1fb00f76c5642c33.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_red_polka",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10264,
     "platform": "responsive"
   },
   {
@@ -6392,23 +3757,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-toddie_fun_preschool",
-    "title": "Toddie Fun Preschool",
-    "category": "Girls",
-    "description": "Toddie Fun Preschool - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21873/file/w180h135_webp-63c4081b74777ea78a93573f4a90ca36.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_fun_preschool",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5471,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-merge_cash",
     "title": "Merge Cash",
     "category": "Other",
@@ -6423,125 +3771,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6393,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_witch_cake",
-    "title": "Teen Witch Cake",
-    "category": "Girls",
-    "description": "Teen Witch Cake - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21867/file/w180h135_webp-ea535342e5073d01973571d7c38af399.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_witch_cake",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3961,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-space_blasters_html5",
-    "title": "Space Blasters",
-    "category": "Girls",
-    "description": "Space Blasters - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/23155/file/w180h135_webp-b6dbed065253ebc4c0932c82016ddeaa.webp",
-    "embedUrl": "https://www.y8.com/embed/space_blasters_html5",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9483,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_cheer_squad",
-    "title": "Teen Cheer Squad",
-    "category": "Girls",
-    "description": "Teen Cheer Squad - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21859/file/w180h135_webp-abda84a630624f4a75989b063f14f350.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_cheer_squad",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7573,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_making_jewelry",
-    "title": "Blonde Sofia Making Jewelry",
-    "category": "Girls",
-    "description": "Blonde Sofia Making Jewelry - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21263/file/w180h135_webp-f222f117b7625991e891f1c957eb25f1.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_making_jewelry",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2942,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-diary_maggie_making_pancake",
-    "title": "Diary Maggie Making Pancake",
-    "category": "Girls",
-    "description": "Diary Maggie Making Pancake - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/407409/file/w180h135_webp-e5bc7285e11fe3be0a9fe7d60d5f363d.webp",
-    "embedUrl": "https://www.y8.com/embed/diary_maggie_making_pancake",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9046,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_candy_maid",
-    "title": "Teen Candy Maid",
-    "category": "Girls",
-    "description": "Teen Candy Maid - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21251/file/w180h135_webp-613d735ae9c39f47a702fdc632b497c0.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_candy_maid",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 788,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_japanese_maid",
-    "title": "Girly Japanese Maid",
-    "category": "Girls",
-    "description": "Girly Japanese Maid - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21243/file/w180h135_webp-fe36ddca4961dbd96be3111079c71787.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_japanese_maid",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2661,
     "platform": "responsive"
   },
   {
@@ -6596,23 +3825,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_tropical_vibes",
-    "title": "Kiddo Tropical Vibes",
-    "category": "Girls",
-    "description": "Kiddo Tropical Vibes - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21219/file/w180h135_webp-f34e109587856fec42c35bf5c3cfc10f.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_tropical_vibes",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2526,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-mythical_creatures",
     "title": "Mythical Creatures",
     "category": "Other",
@@ -6647,74 +3859,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_long_coat",
-    "title": "Girly Long Coat",
-    "category": "Girls",
-    "description": "Girly Long Coat - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/21211/file/w180h135_webp-661ced2bc8d9f19e40106b6c03948564.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_long_coat",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1878,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_summer_flower",
-    "title": "Teen Summer Flower",
-    "category": "Girls",
-    "description": "Teen Summer Flower - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/20585/file/w180h135_webp-0eba1845e5a7d06adc6e4c95c7ce8c6b.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_summer_flower",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1564,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_elegant_chic",
-    "title": "Girly Elegant Chic",
-    "category": "Girls",
-    "description": "Girly Elegant Chic - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/20577/file/w180h135_webp-f8a51e6eb12a2ccfb900e176e5f8df12.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_elegant_chic",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7398,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_modern_korean",
-    "title": "Teen Modern Korean",
-    "category": "Girls",
-    "description": "Teen Modern Korean - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/20569/file/w180h135_webp-41d362f4f497676977ea8f89b7d392bf.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_modern_korean",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7529,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-level_devil_trap_path",
     "title": "Level Devil Trap Path",
     "category": "Other",
@@ -6729,23 +3873,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6998,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_cabin",
-    "title": "Decor My Cabin",
-    "category": "Girls",
-    "description": "Decor My Cabin - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19797/file/w180h135_webp-8262a78d0aa61f519eb16a7e727f8766.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_cabin",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8800,
     "platform": "responsive"
   },
   {
@@ -6783,74 +3910,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_neon_fun",
-    "title": "Kiddo Neon Fun",
-    "category": "Girls",
-    "description": "Kiddo Neon Fun - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/20561/file/w180h135_webp-8a8fd9bd2c49c166b7baff6253177176.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_neon_fun",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5539,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_in_plaids",
-    "title": "Toddie In Plaids",
-    "category": "Girls",
-    "description": "Toddie In Plaids - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19789/file/w180h135_webp-2f845f56b19cb40cba1215abadcc9745.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_in_plaids",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8846,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_cute_shirts",
-    "title": "Girly Cute Shirts",
-    "category": "Girls",
-    "description": "Girly Cute Shirts - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19781/file/w180h135_webp-09718f5649ac2cbee92ff407604db686.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_cute_shirts",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2092,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_slime_maker",
-    "title": "Blonde Sofia Slime Maker",
-    "category": "Girls",
-    "description": "Blonde Sofia Slime Maker - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19773/file/w180h135_webp-50a16d9a1c40a3e77ea9afaaa806a177.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_slime_maker",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7849,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-lusy_s_glam_galore",
     "title": "Lusy S Glam Galore",
     "category": "Other",
@@ -6865,142 +3924,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 2341,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_strawberry",
-    "title": "Toddie Strawberry",
-    "category": "Girls",
-    "description": "Toddie Strawberry - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19765/file/w180h135_webp-37f11e32e674e9032cd826b1a49eb697.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_strawberry",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1957,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_jollie_bee",
-    "title": "Toddie Jollie Bee",
-    "category": "Girls",
-    "description": "Toddie Jollie Bee - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19327/file/w180h135_webp-00c5ad829be90cdac82515c797840c00.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_jollie_bee",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4490,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_rockstar",
-    "title": "Teen Rockstar",
-    "category": "Girls",
-    "description": "Teen Rockstar - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19317/file/w180h135_webp-65a20622b7c2d46c2ac4868d2861823c.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_rockstar",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5971,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_school_days",
-    "title": "Teen School Days",
-    "category": "Girls",
-    "description": "Teen School Days - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19301/file/w180h135_webp-755ebfe6524efeff7bf1ab15e1e2e3aa.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_school_days",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10348,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_bathroom",
-    "title": "Decor Cute Bathroom",
-    "category": "Girls",
-    "description": "Decor Cute Bathroom - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19293/file/w180h135_webp-3efd42c880eac099a184c90e462a9210.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_bathroom",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8339,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_back_to_school",
-    "title": "Kiddo Back To School",
-    "category": "Girls",
-    "description": "Kiddo Back To School - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/19285/file/w180h135_webp-fb0a83b5d1671626d656fdd4ced89ad1.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_back_to_school",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1046,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_big_jackets",
-    "title": "Teen Big Jackets",
-    "category": "Girls",
-    "description": "Teen Big Jackets - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18453/file/w180h135_webp-3af0596fbd0dd151cb549e0e1e00c093.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_big_jackets",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6094,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_romantic_summer",
-    "title": "Girly Romantic Summer",
-    "category": "Girls",
-    "description": "Girly Romantic Summer - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18445/file/w180h135_webp-2fce08576fa263696300eaa6777d5353.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_romantic_summer",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1128,
     "platform": "responsive"
   },
   {
@@ -7021,23 +3944,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_funny_socks",
-    "title": "Teen Funny Socks",
-    "category": "Girls",
-    "description": "Teen Funny Socks - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18431/file/w180h135_webp-b2f0116f0ae95e01578c1f0fa4fe1d00.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_funny_socks",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3880,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-math_cross",
     "title": "Math Cross",
     "category": "Educational",
@@ -7052,57 +3958,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 5404,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_candy_maker",
-    "title": "Blonde Sofia Candy Maker",
-    "category": "Girls",
-    "description": "Blonde Sofia Candy Maker - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18197/file/w180h135_webp-409fa18ae70668e7817a0324d3e84b4d.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_candy_maker",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10320,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_long_hair",
-    "title": "Kiddo Long Hair",
-    "category": "Girls",
-    "description": "Kiddo Long Hair - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18187/file/w180h135_webp-9fb94d5fa1b17a68cc66dfa0da668629.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_long_hair",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4911,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_long_sleeve",
-    "title": "Girly Long Sleeve",
-    "category": "Girls",
-    "description": "Girly Long Sleeve - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/18181/file/w180h135_webp-9b83518a7a1db77e0032f90fc24003c0.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_long_sleeve",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2173,
     "platform": "responsive"
   },
   {
@@ -7191,193 +4046,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-baby_cathy_ep40_fun_glamping",
-    "title": "Baby Cathy Ep40 Fun Glamping",
-    "category": "Girls",
-    "description": "Baby Cathy Ep40 Fun Glamping - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/16487/file/w180h135_webp-c3a7564b3b04d47ca4a20cdfa4694981.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep40_fun_glamping",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3258,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_nursery",
-    "title": "Decor My Nursery",
-    "category": "Girls",
-    "description": "Decor My Nursery - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/17441/file/w180h135_webp-23ee62a88526569f1efcff989ff5746c.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_nursery",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5407,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_face_paint",
-    "title": "Toddie Face Paint",
-    "category": "Girls",
-    "description": "Toddie Face Paint - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/17449/file/w180h135_webp-b077dacff4f98d89f03094258aa5fdc9.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_face_paint",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9505,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_military_look",
-    "title": "Teen Military Look",
-    "category": "Girls",
-    "description": "Teen Military Look - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/16521/file/w180h135_webp-c09b58b39c6e7c01b8114c4bc2ccf2b4.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_military_look",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3710,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_kawaii_overall",
-    "title": "Kiddo Kawaii Overall",
-    "category": "Girls",
-    "description": "Kiddo Kawaii Overall - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/16513/file/w180h135_webp-eb00e15ddd880ac53deb062119be17bc.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_kawaii_overall",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8728,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_geisha",
-    "title": "Blonde Sofia Geisha",
-    "category": "Girls",
-    "description": "Blonde Sofia Geisha - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15717/file/w180h135_webp-215340250c20f57cfe6c635ec0508bb7.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_geisha",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10360,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cute_bedroom",
-    "title": "Decor Cute Bedroom",
-    "category": "Girls",
-    "description": "Decor Cute Bedroom - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/16471/file/w180h135_webp-3e24a40ab55f6be17c6e9f5ec5369dc2.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cute_bedroom",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5438,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-trendy_fashion_designer",
-    "title": "Trendy Fashion Designer",
-    "category": "Girls",
-    "description": "Trendy Fashion Designer - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/16807/file/w180h135_webp-793694a03bb773604285979e14d9de97.webp",
-    "embedUrl": "https://www.y8.com/embed/trendy_fashion_designer",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10390,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_funky_milkshake",
-    "title": "Decor Funky Milkshake",
-    "category": "Girls",
-    "description": "Decor Funky Milkshake - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15749/file/w180h135_webp-02793ebf0bd99e9ed8a9bc4560f2d9dc.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_funky_milkshake",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8745,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_cute_galaxy",
-    "title": "Kiddo Cute Galaxy",
-    "category": "Girls",
-    "description": "Kiddo Cute Galaxy - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15741/file/w180h135_webp-a88167dc1a3868f85267d1d6d9a9838e.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_galaxy",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5341,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_high_necks",
-    "title": "Girly High Necks",
-    "category": "Girls",
-    "description": "Girly High Necks - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15699/file/w180h135_webp-6f9b35bb3cfd1abbdc499f72a9502fc5.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_high_necks",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6892,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxies_kitchen_mini_tart",
     "title": "Roxies Kitchen Mini Tart",
     "category": "Creative",
@@ -7392,23 +4060,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 816,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_popsicle",
-    "title": "Decor Popsicle",
-    "category": "Girls",
-    "description": "Decor Popsicle - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15211/file/w180h135_webp-dc3c61107c42098817fe2e6c3b6fb835.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_popsicle",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5446,
     "platform": "responsive"
   },
   {
@@ -7429,23 +4080,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_cute_costume",
-    "title": "Kiddo Cute Costume",
-    "category": "Girls",
-    "description": "Kiddo Cute Costume - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/15195/file/w180h135_webp-5dc9e220eb1438cc54d38fbb1a767a2d.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_costume",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8053,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-ultimate_4x4_sim",
     "title": "Ultimate 4x4 Sim",
     "category": "Other",
@@ -7463,23 +4097,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_and_young",
-    "title": "Teen And Young",
-    "category": "Girls",
-    "description": "Teen And Young - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/14737/file/w180h135_webp-24c7658b3ea5d10aa193a5f7cd9e429d.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_and_young",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9256,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-doctor_c_mermaid_case",
     "title": "Doctor C Mermaid Case",
     "category": "Other",
@@ -7494,74 +4111,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 7710,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_birthday_makeover",
-    "title": "Blonde Sofia Birthday Makeover",
-    "category": "Girls",
-    "description": "Blonde Sofia Birthday Makeover - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/14705/file/w180h135_webp-1ef2029f2488a824ec1f174471335a8f.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_birthday_makeover",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5540,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_monster_high",
-    "title": "Kiddo Monster High",
-    "category": "Girls",
-    "description": "Kiddo Monster High - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/14713/file/w180h135_webp-cc1ee490b8dbb4b74cde90e4ca2a5eef.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_monster_high",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5935,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_two_colors",
-    "title": "Girly Two Colors",
-    "category": "Girls",
-    "description": "Girly Two Colors - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/14137/file/w180h135_webp-2df19f6edadeb85cb7dc0bec466e3bc5.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_two_colors",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7605,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_pretty_drinks",
-    "title": "Decor Pretty Drinks",
-    "category": "Girls",
-    "description": "Decor Pretty Drinks - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13877/file/w180h135_webp-cf02ab6277d85624bc61ac8496e200df.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_pretty_drinks",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6703,
     "platform": "responsive"
   },
   {
@@ -7630,40 +4179,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 8711,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_tteokbokki_fever",
-    "title": "Blonde Sofia Tteokbokki Fever",
-    "category": "Girls",
-    "description": "Blonde Sofia Tteokbokki Fever - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12601/file/w180h135_webp-efede9fa148502858cf74357ecefd17b.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_tteokbokki_fever",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3327,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_back_to_school",
-    "title": "Blonde Sofia Back To School",
-    "category": "Girls",
-    "description": "Blonde Sofia Back To School - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13261/file/w180h135_webp-1d7f35b5096ff4893daf42f83e42ec0f.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_back_to_school",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6557,
     "platform": "responsive"
   },
   {
@@ -7786,74 +4301,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_rebel_style",
-    "title": "Teen Rebel Style",
-    "category": "Girls",
-    "description": "Teen Rebel Style - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13251/file/w180h135_webp-f35ea3d2e82603a07681d6cd4c6f35ad.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_rebel_style",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8474,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_pop_outfit",
-    "title": "Girly Pop Outfit",
-    "category": "Girls",
-    "description": "Girly Pop Outfit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13885/file/w180h135_webp-9c0428823679fc1335d9a154e6d6428a.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_pop_outfit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2576,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_oversize_shirt",
-    "title": "Toddie Oversize Shirt",
-    "category": "Girls",
-    "description": "Toddie Oversize Shirt - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13237/file/w180h135_webp-d503412c0d3184359fb371da95275112.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_oversize_shirt",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4697,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_in_jeans",
-    "title": "Toddie In Jeans",
-    "category": "Girls",
-    "description": "Toddie In Jeans - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12947/file/w180h135_webp-c89f827f3ecaea415070bddad0728bbc.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_in_jeans",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4920,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-alien_onslaught",
     "title": "Alien Onslaught",
     "category": "Other",
@@ -7888,23 +4335,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_cute_tomboy",
-    "title": "Kiddo Cute Tomboy",
-    "category": "Girls",
-    "description": "Kiddo Cute Tomboy - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/13229/file/w180h135_webp-d76fefdd839e11b6603815ffba5b74e4.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_tomboy",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 806,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-heroes_archers",
     "title": "Heroes Archers",
     "category": "Sports",
@@ -7919,23 +4349,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 8392,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_white_gothic",
-    "title": "Toddie White Gothic",
-    "category": "Girls",
-    "description": "Toddie White Gothic - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12939/file/w180h135_webp-c80ed190a01ed5856b886c243060e3fc.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_white_gothic",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6135,
     "platform": "responsive"
   },
   {
@@ -7956,74 +4369,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_think_twice",
-    "title": "Teen Think Twice",
-    "category": "Girls",
-    "description": "Teen Think Twice - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12931/file/w180h135_webp-39ef74029e6aa45612b44c9b9f1d1f75.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_think_twice",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7667,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_princess_dress",
-    "title": "Kiddo Princess Dress",
-    "category": "Girls",
-    "description": "Kiddo Princess Dress - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12617/file/w180h135_webp-3be77decab62cb97e1a6dae51ea09f02.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_princess_dress",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7074,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_cake_pop",
-    "title": "Decor Cake Pop",
-    "category": "Girls",
-    "description": "Decor Cake Pop - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12625/file/w180h135_webp-aa402a5661759c12fd813cf500540690.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_cake_pop",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9761,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_hairy_problem",
-    "title": "Blonde Sofia Hairy Problem",
-    "category": "Girls",
-    "description": "Blonde Sofia Hairy Problem - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12073/file/w180h135_webp-6c1f2fa20c4cd28eb65afd73c6acfb11.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_hairy_problem",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3535,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-formula_car_stunt_racing",
     "title": "Formula Car Stunt Racing",
     "category": "Racing",
@@ -8041,23 +4386,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-girly_festival_boho",
-    "title": "Girly Festival Boho",
-    "category": "Girls",
-    "description": "Girly Festival Boho - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/11697/file/w180h135_webp-e6ca9da53fd6053d9d8b0af604f03104.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_festival_boho",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 1922,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-roxie_kitchen_king_crab",
     "title": "Roxie Kitchen King Crab",
     "category": "Other",
@@ -8072,91 +4400,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 9453,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_streaming",
-    "title": "Decor Streaming",
-    "category": "Girls",
-    "description": "Decor Streaming - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/11683/file/w180h135_webp-55056751734f1cd8ad33f7c1ed2cc468.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_streaming",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2058,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_y2k_rave",
-    "title": "Teen Y2k Rave",
-    "category": "Girls",
-    "description": "Teen Y2k Rave - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12081/file/w180h135_webp-6101eceb1373a78fb00b8b8eeb34609e.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_y2k_rave",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4890,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_the_vet",
-    "title": "Blonde Sofia The Vet",
-    "category": "Girls",
-    "description": "Blonde Sofia The Vet - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/12065/file/w180h135_webp-553eb36763a6a75d5bdb26a0facf9d7d.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_the_vet",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 2259,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_cool_outfit",
-    "title": "Teen Cool Outfit",
-    "category": "Girls",
-    "description": "Teen Cool Outfit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/11707/file/w180h135_webp-00765949da77b14bdf75204cf5da9b5d.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_cool_outfit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 10422,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-decor_my_livingroom",
-    "title": "Decor My Livingroom",
-    "category": "Girls",
-    "description": "Decor My Livingroom - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/11675/file/w180h135_webp-4f93194169fb42d924e4d701ee1ba29a.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_livingroom",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8416,
     "platform": "responsive"
   },
   {
@@ -8211,23 +4454,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-decor_my_crocs",
-    "title": "Decor My Crocs",
-    "category": "Girls",
-    "description": "Decor My Crocs - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10785/file/w180h135_webp-426a15905aab618daae44ad79ff91538.webp",
-    "embedUrl": "https://www.y8.com/embed/decor_my_crocs",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9301,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-hospital_werewolf_emergency",
     "title": "Hospital Werewolf Emergency",
     "category": "Simulation",
@@ -8279,125 +4505,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-kiddo_fun_outfit",
-    "title": "Kiddo Fun Outfit",
-    "category": "Girls",
-    "description": "Kiddo Fun Outfit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10419/file/w180h135_webp-92850510346211ce64531340c98d2e30.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_fun_outfit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 3285,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_bad_makeup",
-    "title": "Blonde Sofia Bad Makeup",
-    "category": "Girls",
-    "description": "Blonde Sofia Bad Makeup - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10095/file/w180h135_webp-87907f2020e13f688a433f0fc1333328.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_bad_makeup",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 8639,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-girly_beach_boho",
-    "title": "Girly Beach Boho",
-    "category": "Girls",
-    "description": "Girly Beach Boho - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10409/file/w180h135_webp-02982cdd39aba5af3097d6c83ee238df.webp",
-    "embedUrl": "https://www.y8.com/embed/girly_beach_boho",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 6454,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_spring_makeover",
-    "title": "Blonde Sofia Spring Makeover",
-    "category": "Girls",
-    "description": "Blonde Sofia Spring Makeover - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10079/file/w180h135_webp-9bb8e2cd47c20fe4c3db720ffcbe5a54.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_spring_makeover",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 5735,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-kiddo_cute_jacket",
-    "title": "Kiddo Cute Jacket",
-    "category": "Girls",
-    "description": "Kiddo Cute Jacket - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10119/file/w180h135_webp-8d7128c2d5da8b618e5d3bd821e54f81.webp",
-    "embedUrl": "https://www.y8.com/embed/kiddo_cute_jacket",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 4224,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-blonde_sofia_equestrian",
-    "title": "Blonde Sofia Equestrian",
-    "category": "Girls",
-    "description": "Blonde Sofia Equestrian - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10103/file/w180h135_webp-c9819a6e118ffc4041bd9c36f0074ab2.webp",
-    "embedUrl": "https://www.y8.com/embed/blonde_sofia_equestrian",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7535,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-baby_cathy_ep39_raising_crops",
-    "title": "Baby Cathy Ep39 Raising Crops",
-    "category": "Girls",
-    "description": "Baby Cathy Ep39 Raising Crops - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/10087/file/w180h135_webp-e7ef1e800ba1161463d7787c54f72b83.webp",
-    "embedUrl": "https://www.y8.com/embed/baby_cathy_ep39_raising_crops",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9042,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-best_moments_spring_photoshoot",
     "title": "Best Moments Spring Photoshoot",
     "category": "Shooting",
@@ -8412,23 +4519,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 8993,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-toddie_fun_style",
-    "title": "Toddie Fun Style",
-    "category": "Girls",
-    "description": "Toddie Fun Style - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/8497/file/w180h135_webp-84a0a280d58b5ea7487297ce577f0ba8.webp",
-    "embedUrl": "https://www.y8.com/embed/toddie_fun_style",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 9520,
     "platform": "responsive"
   },
   {
@@ -8449,23 +4539,6 @@ var GAMES = [
     "platform": "responsive"
   },
   {
-    "id": "y8-teen_y2k_emo",
-    "title": "Teen Y2k Emo",
-    "category": "Girls",
-    "description": "Teen Y2k Emo - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/7795/file/w180h135_webp-fd816d2e589cb54513d669f200f9c815.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_y2k_emo",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7267,
-    "platform": "responsive"
-  },
-  {
     "id": "y8-baby_cathy_ep38_brother_caretaker",
     "title": "Baby Cathy Ep38 Brother Caretaker",
     "category": "Racing",
@@ -8480,23 +4553,6 @@ var GAMES = [
     "developer": "Y8",
     "credit": "https://y8.com",
     "plays": 6436,
-    "platform": "responsive"
-  },
-  {
-    "id": "y8-teen_ugg_outfit",
-    "title": "Teen Ugg Outfit",
-    "category": "Girls",
-    "description": "Teen Ugg Outfit - play now on EggerMath",
-    "tags": [
-      "girls"
-    ],
-    "thumb": "https://cdn2.y8.com/cloudimage/7801/file/w180h135_webp-8aa829e372192ce0ba957037cbdf9ffe.webp",
-    "embedUrl": "https://www.y8.com/embed/teen_ugg_outfit",
-    "source": "y8",
-    "videoUrl": "",
-    "developer": "Y8",
-    "credit": "https://y8.com",
-    "plays": 7978,
     "platform": "responsive"
   }
 ];
