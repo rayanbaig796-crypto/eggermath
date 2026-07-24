@@ -1237,3 +1237,82 @@ footer {
   transform: translateY(-2px);
   transition: transform 0.2s ease;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   HORIZONTAL SCROLL SECTIONS (GamePix-style)
+   ═══════════════════════════════════════════════════════════════ */
+.hscroll-sections {
+  margin-bottom: 24px;
+}
+.hscroll-section {
+  margin-bottom: 28px;
+}
+.hscroll-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 0 2px;
+}
+.hscroll-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+.hscroll-label {
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.02em;
+}
+.hscroll-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+.hscroll-row::-webkit-scrollbar { display: none; }
+.hscroll-card {
+  flex: 0 0 180px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hscroll-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+.hscroll-thumb {
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.2s ease, opacity 0.3s ease;
+  opacity: 0.6;
+}
+.hscroll-card:hover .hscroll-thumb {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.hscroll-card-title {
+  padding: 8px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hscroll-card { flex: 0 0 140px; }
+  .hscroll-label { font-size: 14px; }
+  .hscroll-icon { font-size: 16px; }
+  .hscroll-card-title { font-size: 11px; padding: 6px 8px; }
+}

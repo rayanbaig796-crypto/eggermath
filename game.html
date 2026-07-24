@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
   <title>Play Free Games Online — EggerMath</title>
-  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up. 3000+ HTML5 games available.">
+  <meta name="description" content="Play free browser games instantly on EggerMath. No downloads, no sign-up. 8000+ HTML5 games available.">
   <meta name="keywords" content="play free games online, browser games, free HTML5 games, no download games">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
@@ -33,7 +33,7 @@
   <meta name="twitter:description" content="Free browser games on EggerMath. No downloads!" id="tw-desc">
   <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png" id="tw-image">
 
-  <link rel="stylesheet" href="./game-page.css?v=20">
+  <link rel="stylesheet" href="./game-page.css?v=21">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
   <style>
     .game-ad-banner, .ad-container, .ad-wrapper, .ad-slot, .ad-banner,
@@ -378,6 +378,14 @@
         var y8Slug = (game.embedUrl || '').match(/y8\.com\/embed\/([a-zA-Z0-9_-]+)/);
         if (y8Slug) {
           embedUrl = '/y8/' + y8Slug[1];
+        } else {
+          embedUrl = game.embedUrl;
+        }
+        directUrl = game.embedUrl;
+      } else if (game.source === 'gamepix') {
+        var gpSlug = (game.embedUrl || '').match(/gamepix\.com\/play\/([a-zA-Z0-9_-]+)/);
+        if (gpSlug) {
+          embedUrl = '/gamepix/' + gpSlug[1];
         } else {
           embedUrl = game.embedUrl;
         }

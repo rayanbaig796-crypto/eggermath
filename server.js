@@ -791,6 +791,42 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /gamepix/<slug> — Responsive GamePix game wrapper (cached) ──
+  const gpPathMatch = parsedUrl.pathname.match(/^\/gamepix\/([a-zA-Z0-9_-]+)$/);
+  if (gpPathMatch) {
+    const slug = gpPathMatch[1];
+    const cacheKey = 'gp:v1:' + slug;
+    const cached = cacheGet(cacheKey);
+    if (cached) {
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
+        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
+        res.end();
+        return;
+      }
+      const headers = Object.assign({}, cached.headers);
+      headers['X-Cache'] = 'HIT';
+      headers['Cache-Control'] = 'public, max-age=86400';
+      headers['ETag'] = cached.etag;
+      res.writeHead(cached.statusCode, headers);
+      res.end(cached.body);
+      return;
+    }
+
+    const gpEmbedUrl = 'https://play.gamepix.com/' + slug + '/embed';
+    const wrapper = '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;overflow:hidden;background:#000}iframe{width:100%;height:100%;border:none;display:block}</style></head><body><iframe src="' + gpEmbedUrl + '" allowfullscreen allow="autoplay; fullscreen; pointer-lock; clipboard-write"></iframe></body></html>';
+    const buf = Buffer.from(wrapper, 'utf-8');
+    cacheSet(cacheKey, 200, { 'content-type': 'text/html; charset=utf-8' }, buf);
+    const gpHeaders = securityHeaders();
+    gpHeaders['Content-Type'] = 'text/html; charset=utf-8';
+    gpHeaders['X-Cache'] = 'MISS';
+    gpHeaders['Cache-Control'] = 'public, max-age=86400';
+    gpHeaders['ETag'] = genETag(buf);
+    res.writeHead(200, gpHeaders);
+    res.end(buf);
+    return;
+  }
+
   // ── /play?url=<url> — Smart proxy with URL rewriting (cached) ─
   if (parsedUrl.pathname === '/play') {
     const targetUrl = parsedUrl.query.url;
@@ -1131,4 +1167,5 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`  Proxy:    /proxy?url=<encoded-url>  (cached)`);
   console.log(`  Player:   /play?url=<encoded-url>   (cached + rewritten)`);
   console.log(`  Y8 Game:  /y8/<slug>                (cached + responsive)`);
+  console.log(`  GP Game:  /gamepix/<slug>            (cached + responsive)`);
 });

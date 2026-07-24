@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
   <link rel="dns-prefetch" href="https://img.gamemonetize.co">
-  <title>EggerMath — Play 3000+ Free Browser Games Online | No Download Required</title>
-  <meta name="description" content="Play 3000+ free online browser games instantly. Arcade, racing, puzzle, action games — no download, no install. Play now on EggerMath!">
+  <title>EggerMath — Play 8000+ Free Browser Games Online | No Download Required</title>
+  <meta name="description" content="Play 8000+ free online browser games instantly. Arcade, racing, puzzle, action games — no download, no install. Play now on EggerMath!">
   <meta name="keywords" content="free online games, browser games, play games online, no download games, arcade games, racing games, puzzle games">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
@@ -16,15 +16,15 @@
   <!-- Open Graph (Facebook / Discord / WhatsApp previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EggerMath">
-  <meta property="og:title" content="EggerMath — Play 3000+ Free Browser Games">
-  <meta property="og:description" content="Play 3000+ free online browser games instantly. No download required.">
+  <meta property="og:title" content="EggerMath — Play 8000+ Free Browser Games">
+  <meta property="og:description" content="Play 8000+ free online browser games instantly. No download required.">
   <meta property="og:url" content="https://www.eggermath.com">
   <meta property="og:image" content="https://www.eggermath.com/images/eggermath-logo.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EggerMath — Play 3000+ Free Browser Games Instantly">
-  <meta name="twitter:description" content="Play 3000+ free unblocked browser games instantly. No downloads, no sign-up!">
+  <meta name="twitter:title" content="EggerMath — Play 8000+ Free Browser Games Instantly">
+  <meta name="twitter:description" content="Play 8000+ free unblocked browser games instantly. No downloads, no sign-up!">
   <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png">
 
   <!-- JSON-LD Structured Data -->
@@ -34,7 +34,7 @@
     "@type": "WebSite",
     "name": "EggerMath",
     "url": "https://www.eggermath.com",
-    "description": "Play 3000+ free unblocked browser games instantly. No downloads or sign-up required.",
+    "description": "Play 8000+ free unblocked browser games instantly. No downloads or sign-up required.",
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
@@ -52,7 +52,7 @@
     "name": "EggerMath",
     "url": "https://www.eggermath.com",
     "logo": "https://www.eggermath.com/images/eggermath-logo.png",
-    "description": "Play 3000+ free browser games online. Arcade, racing, puzzle, action games — no download required.",
+    "description": "Play 8000+ free browser games online. Arcade, racing, puzzle, action games — no download required.",
     "sameAs": [],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -67,7 +67,7 @@
     "@type": "ItemList",
     "name": "Popular Free Browser Games",
     "url": "https://www.eggermath.com",
-    "numberOfItems": 1430,
+    "numberOfItems": 8000,
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "url": "https://www.eggermath.com/game.html?id=gm-car-evolution-pro-math-gates" },
       { "@type": "ListItem", "position": 2, "url": "https://www.eggermath.com/game.html?id=gm-city-ride" },
@@ -83,7 +83,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
-  <link rel="stylesheet" href="./home.css?v=20">
+  <link rel="stylesheet" href="./home.css?v=21">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
 </head>
 <body>
@@ -180,6 +180,11 @@
     <!-- Hidden SEO h1 - visually represented by the sidebar logo and section title -->
     <h1>EggerMath — Free Browser Games</h1>
 
+    <!-- HORIZONTAL SCROLL SECTIONS (like GamePix) -->
+    <div class="hscroll-sections" id="hscroll-sections">
+      <!-- Injected via JS -->
+    </div>
+
     <div class="section-title" id="grid-title"><span>🎮</span> ALL GAMES</div>
     
     <!-- GAME GRID -->
@@ -230,7 +235,7 @@
   <!-- ============================================================
        JAVASCRIPT
   ============================================================ -->
-  <script src="./games.js?v=20"></script>
+  <script src="./games.js?v=21"></script>
   <script>
     // ═══════════════════════════════════════════════════════════════
     //  DOM ELEMENTS
@@ -638,11 +643,66 @@
     searchInput.addEventListener('input', renderSearchDrawer);
 
     // ═══════════════════════════════════════════════════════════════
+    //  HORIZONTAL SCROLL SECTIONS (like GamePix)
+    // ═══════════════════════════════════════════════════════════════
+    const HSECTIONS = [
+      { label: 'Most Popular', icon: '🔥', filter: function(){ return true; }, limit: 30 },
+      { label: 'Racing', icon: '⚡', filter: function(g){ return g.category==='Racing'; }, limit: 24 },
+      { label: 'Puzzle', icon: '🧩', filter: function(g){ return g.category==='Puzzle'; }, limit: 24 },
+      { label: 'Action', icon: '🎯', filter: function(g){ return g.category==='Action'; }, limit: 24 },
+      { label: 'Sports', icon: '🏀', filter: function(g){ return g.category==='Sports'; }, limit: 24 },
+      { label: 'Educational', icon: '📚', filter: function(g){ return g.category==='Educational'; }, limit: 24 },
+      { label: 'Arcade', icon: '🚀', filter: function(g){ return g.category==='Arcade'; }, limit: 24 },
+      { label: 'Adventure', icon: '🗡️', filter: function(g){ return g.category==='Adventure'; }, limit: 24 },
+      { label: 'Shooting', icon: '💥', filter: function(g){ return g.category==='Shooting'; }, limit: 24 },
+      { label: 'Simulation', icon: '🏗️', filter: function(g){ return g.category==='Simulation'; }, limit: 24 },
+      { label: 'Strategy', icon: '♟️', filter: function(g){ return g.category==='Strategy'; }, limit: 24 },
+      { label: 'Girls', icon: '👧', filter: function(g){ return g.category==='Girls'; }, limit: 24 },
+      { label: 'Creative', icon: '🎨', filter: function(g){ return g.category==='Creative'; }, limit: 24 },
+      { label: 'Card Games', icon: '🃏', filter: function(g){ return g.category==='Card'; }, limit: 24 },
+    ];
+
+    function renderHSections() {
+      var container = document.getElementById('hscroll-sections');
+      if (!container) return;
+      container.innerHTML = '';
+      HSECTIONS.forEach(function(sec) {
+        var games = GAMES.filter(sec.filter);
+        if (sec.label === 'Most Popular') games = games.sort(function(a,b){ return (b.plays||0)-(a.plays||0); });
+        games = games.slice(0, sec.limit);
+        if (games.length === 0) return;
+        var section = document.createElement('div');
+        section.className = 'hscroll-section';
+        var header = document.createElement('div');
+        header.className = 'hscroll-header';
+        header.innerHTML = '<span class="hscroll-icon">' + sec.icon + '</span><span class="hscroll-label">' + sec.label + '</span>';
+        section.appendChild(header);
+        var row = document.createElement('div');
+        row.className = 'hscroll-row';
+        games.forEach(function(game) {
+          var card = document.createElement('a');
+          card.href = 'game.html?id=' + game.id;
+          card.className = 'hscroll-card';
+          card.title = game.title;
+          var imgSrc = getGameImg(game);
+          var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='200' height='150' fill='%23222'/%3E%3C/svg%3E";
+          card.innerHTML = '<img src="' + placeholder + '" data-src="' + imgSrc + '" alt="' + game.title + '" loading="lazy" class="hscroll-thumb"><div class="hscroll-card-title">' + game.title + '</div>';
+          var img = card.querySelector('img');
+          if (img) { img.dataset.realSrc = img.dataset.src; img.removeAttribute('data-src'); if (_imgObserver) _imgObserver.observe(img); }
+          row.appendChild(card);
+        });
+        section.appendChild(row);
+        container.appendChild(section);
+      });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
     //  INIT
     // ═══════════════════════════════════════════════════════════════
     (async function init() {
       await loadFavorites();
-      GAMES.sort((a, b) => (b.plays || 0) - (a.plays || 0));
+      GAMES.sort(function(a,b){ return (b.plays||0)-(a.plays||0); });
+      renderHSections();
       renderCatBar();
       renderMainGrid();
       renderSidebarMinis();
