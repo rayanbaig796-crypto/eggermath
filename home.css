@@ -1303,6 +1303,10 @@ footer {
   scrollbar-width: none;
   padding: 6px 4px 10px;
   scroll-behavior: smooth;
+  cursor: grab;
+}
+.hscroll-row:active {
+  cursor: grabbing;
 }
 .hscroll-row::-webkit-scrollbar { display: none; }
 .hscroll-scroll-wrap {
@@ -1343,7 +1347,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,0.06);

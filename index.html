@@ -720,13 +720,31 @@
 
         arrowL.addEventListener('click', function() { row.scrollBy({ left: -400, behavior: 'smooth' }); });
         arrowR.addEventListener('click', function() { row.scrollBy({ left: 400, behavior: 'smooth' }); });
+
+        // Mouse drag-to-scroll
+        (function(r) {
+          var isDown = false, startX, scrollLeft;
+          r.addEventListener('mousedown', function(e) {
+            isDown = true; r.style.cursor = 'grabbing';
+            startX = e.pageX - r.offsetLeft;
+            scrollLeft = r.scrollLeft;
+          });
+          r.addEventListener('mouseleave', function() { isDown = false; r.style.cursor = ''; });
+          r.addEventListener('mouseup', function() { isDown = false; r.style.cursor = ''; });
+          r.addEventListener('mousemove', function(e) {
+            if (!isDown) return;
+            e.preventDefault();
+            var x = e.pageX - r.offsetLeft;
+            r.scrollLeft = scrollLeft - (x - startX) * 1.5;
+          });
+        })(row);
         row.addEventListener('scroll', function() {
-          arrowL.style.opacity = row.scrollLeft <= 5 ? '0' : '1';
-          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0' : '1';
+          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
+          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0.3' : '1';
         });
         setTimeout(function() {
-          arrowL.style.opacity = '0';
-          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0' : '1';
+          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
+          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0.3' : '1';
         }, 200);
         container.appendChild(section);
       });
