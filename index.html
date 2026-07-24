@@ -713,13 +713,13 @@
         arrowL.addEventListener('click', function() { row.scrollBy({ left: -400, behavior: 'smooth' }); });
         arrowR.addEventListener('click', function() { row.scrollBy({ left: 400, behavior: 'smooth' }); });
         row.addEventListener('scroll', function() {
-          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
-          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0.3' : '1';
+          arrowL.style.opacity = row.scrollLeft <= 5 ? '0' : '1';
+          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0' : '1';
         });
         setTimeout(function() {
-          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
-          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0.3' : '1';
-        }, 100);
+          arrowL.style.opacity = '0';
+          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0' : '1';
+        }, 200);
         container.appendChild(section);
       });
 
