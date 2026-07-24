@@ -721,13 +721,14 @@
         arrowL.addEventListener('click', function() { row.scrollBy({ left: -400, behavior: 'smooth' }); });
         arrowR.addEventListener('click', function() { row.scrollBy({ left: 400, behavior: 'smooth' }); });
 
-        // Mouse drag-to-scroll
+        // Mouse drag-to-scroll (blocks click if dragged)
         (function(r) {
-          var isDown = false, startX, scrollLeft;
+          var isDown = false, startX, scrollLeft, didDrag = false;
           r.addEventListener('mousedown', function(e) {
-            isDown = true; r.style.cursor = 'grabbing';
+            isDown = true; didDrag = false; r.style.cursor = 'grabbing';
             startX = e.pageX - r.offsetLeft;
             scrollLeft = r.scrollLeft;
+            e.preventDefault();
           });
           r.addEventListener('mouseleave', function() { isDown = false; r.style.cursor = ''; });
           r.addEventListener('mouseup', function() { isDown = false; r.style.cursor = ''; });
@@ -735,8 +736,13 @@
             if (!isDown) return;
             e.preventDefault();
             var x = e.pageX - r.offsetLeft;
-            r.scrollLeft = scrollLeft - (x - startX) * 1.5;
+            var dx = x - startX;
+            if (Math.abs(dx) > 5) didDrag = true;
+            r.scrollLeft = scrollLeft - dx * 1.5;
           });
+          r.addEventListener('click', function(e) {
+            if (didDrag) { e.preventDefault(); e.stopPropagation(); didDrag = false; }
+          }, true);
         })(row);
         row.addEventListener('scroll', function() {
           arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
