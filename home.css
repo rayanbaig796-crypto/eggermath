@@ -1264,6 +1264,26 @@ footer {
   color: #fff;
   letter-spacing: 0.02em;
 }
+.hscroll-count {
+  font-size: 12px;
+  color: rgba(255,255,255,0.35);
+  font-weight: 500;
+  margin-left: 4px;
+}
+.hscroll-viewall {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--green);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.hscroll-viewall:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
 .hscroll-row {
   display: flex;
   gap: 12px;
@@ -1274,6 +1294,41 @@ footer {
   padding-bottom: 4px;
 }
 .hscroll-row::-webkit-scrollbar { display: none; }
+.hscroll-scroll-wrap {
+  position: relative;
+}
+.hscroll-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 36px;
+  border: none;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s, background 0.2s;
+  border-radius: 6px;
+}
+.hscroll-arrow:hover {
+  background: rgba(0,0,0,0.9);
+  opacity: 1;
+}
+.hscroll-arrow-left {
+  left: 0;
+}
+.hscroll-arrow-right {
+  right: 0;
+}
+.hscroll-scroll-wrap .hscroll-row {
+  padding: 4px 40px;
+}
 .hscroll-card {
   flex: 0 0 180px;
   scroll-snap-align: start;
@@ -1315,4 +1370,8 @@ footer {
   .hscroll-label { font-size: 14px; }
   .hscroll-icon { font-size: 16px; }
   .hscroll-card-title { font-size: 11px; padding: 6px 8px; }
+  .hscroll-arrow { width: 28px; font-size: 18px; }
+  .hscroll-scroll-wrap .hscroll-row { padding: 4px 32px; }
+  .hscroll-count { display: none; }
+  .hscroll-viewall { font-size: 11px; }
 }

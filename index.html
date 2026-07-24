@@ -669,14 +669,29 @@
       HSECTIONS.forEach(function(sec) {
         var games = GAMES.filter(sec.filter);
         if (sec.label === 'Most Popular') games = games.sort(function(a,b){ return (b.plays||0)-(a.plays||0); });
+        var totalCount = games.length;
         games = games.slice(0, sec.limit);
         if (games.length === 0) return;
         var section = document.createElement('div');
         section.className = 'hscroll-section';
         var header = document.createElement('div');
         header.className = 'hscroll-header';
-        header.innerHTML = '<span class="hscroll-icon">' + sec.icon + '</span><span class="hscroll-label">' + sec.label + '</span>';
+        var catName = sec.label;
+        header.innerHTML = '<span class="hscroll-icon">' + sec.icon + '</span><span class="hscroll-label">' + catName + '</span><span class="hscroll-count">' + totalCount + ' games</span><a href="javascript:void(0)" class="hscroll-viewall" data-cat="' + catName + '">View All →</a>';
         section.appendChild(header);
+
+        var scrollWrap = document.createElement('div');
+        scrollWrap.className = 'hscroll-scroll-wrap';
+        var arrowL = document.createElement('button');
+        arrowL.className = 'hscroll-arrow hscroll-arrow-left';
+        arrowL.innerHTML = '‹';
+        arrowL.setAttribute('aria-label', 'Scroll left');
+        var arrowR = document.createElement('button');
+        arrowR.className = 'hscroll-arrow hscroll-arrow-right';
+        arrowR.innerHTML = '›';
+        arrowR.setAttribute('aria-label', 'Scroll right');
+        scrollWrap.appendChild(arrowL);
+
         var row = document.createElement('div');
         row.className = 'hscroll-row';
         games.forEach(function(game) {
@@ -691,8 +706,38 @@
           if (img) { img.dataset.realSrc = img.dataset.src; img.removeAttribute('data-src'); if (_imgObserver) _imgObserver.observe(img); }
           row.appendChild(card);
         });
-        section.appendChild(row);
+        scrollWrap.appendChild(row);
+        scrollWrap.appendChild(arrowR);
+        section.appendChild(scrollWrap);
+
+        arrowL.addEventListener('click', function() { row.scrollBy({ left: -400, behavior: 'smooth' }); });
+        arrowR.addEventListener('click', function() { row.scrollBy({ left: 400, behavior: 'smooth' }); });
+        row.addEventListener('scroll', function() {
+          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
+          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0.3' : '1';
+        });
+        setTimeout(function() {
+          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
+          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0.3' : '1';
+        }, 100);
         container.appendChild(section);
+      });
+
+      // View All click handler — set category and scroll to grid
+      container.querySelectorAll('.hscroll-viewall').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var cat = this.getAttribute('data-cat');
+          // Find matching category
+          var matchCat = categories.find(function(c) { return c.toLowerCase() === cat.toLowerCase(); });
+          if (!matchCat && cat === 'Most Popular') matchCat = 'all';
+          if (!matchCat && cat === 'Card Games') matchCat = 'Card';
+          if (matchCat) {
+            activeCategory = matchCat;
+            renderCatBar();
+            renderMainGrid();
+            document.getElementById('grid-title').scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
       });
     }
 
