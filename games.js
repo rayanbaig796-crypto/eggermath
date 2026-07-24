@@ -5,7 +5,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 1066 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/1066",
-    "thumb": "https://cdn2.y8.com/cloudimage/1066/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/164389/file/w180h135_webp-0792957a5554b13581c60b5c27947f87.webp",
     "source": "y8"
   },
   {
@@ -14,7 +14,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Penalty Kicks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/penalty_kicks",
-    "thumb": "https://cdn2.y8.com/cloudimage/penalty_kicks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386899/file/w180h135_webp-4379cd48b3355c9bfb3e6398e69b0fff.webp",
     "source": "y8"
   },
   {
@@ -23,7 +23,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Kick Ups free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kick_ups",
-    "thumb": "https://cdn2.y8.com/cloudimage/kick_ups/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392863/file/w180h135_webp-a7337b7a744e26b64e3b7445b88dfaec.webp",
     "source": "y8"
   },
   {
@@ -49,7 +49,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bed Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bed_wars_",
-    "thumb": "https://cdn2.y8.com/cloudimage/bed_wars_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408861/file/w180h135_webp-88a8fb1db8937e97c3671a93f124aa46.webp",
     "source": "y8"
   },
   {
@@ -60,7 +60,7 @@ const GAMES = [
     "tags": [
       "action"
     ],
-    "thumb": "https://cdn2.y8.com/cloudimage/408835/file/w180h135_webp-ca04d9c9eb806b2d57b38539688e2a94.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408837/file/w180h135_webp-4ced8688f72c05bca7f7ab0a5a37c61c.webp",
     "embedUrl": "https://www.y8.com/embed/slap_battle",
     "source": "y8",
     "videoUrl": "",
@@ -75,7 +75,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Ball Fighting 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_ball_fighting_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_ball_fighting_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/397241/file/w180h135_webp-49e5d318231fa636b2a5cff263aab7e1.webp",
     "source": "y8"
   },
   {
@@ -84,7 +84,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Craft Of Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/craft_of_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/craft_of_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392727/file/w180h135_webp-bcd3eaf5eaff8ecd931d7300adcc11ef.webp",
     "source": "y8"
   },
   {
@@ -93,7 +93,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crazy Flasher 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_flasher_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_flasher_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145587/file/w180h135_webp-794e5ca130f3bdb4eb56aba524b6d331.webp",
     "source": "y8"
   },
   {
@@ -102,7 +102,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Anime Battle 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anime_battle_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/anime_battle_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1633/file/w180h135_webp-fccdd4097acfbe6bea57010383781d45.webp",
     "source": "y8"
   },
   {
@@ -111,7 +111,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Electricman 2 Hs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/electricman_2_hs",
-    "thumb": "https://cdn2.y8.com/cloudimage/electricman_2_hs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385991/file/w180h135_webp-4022a979fae75746f495732e140c154c.webp",
     "source": "y8"
   },
   {
@@ -120,7 +120,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Draw Action free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_action",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_action/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400913/file/w180h135_webp-3680e6fda925405ee04707ee65b3d2c3.webp",
     "source": "y8"
   },
   {
@@ -129,7 +129,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Age Of War 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/age_of_war_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/age_of_war_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/172021/file/w180h135_webp-f09571ea2a82fb46e7de90976f319fa8.webp",
     "source": "y8"
   },
   {
@@ -138,7 +138,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Championship Cock Fighters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/championship_cock_fighters",
-    "thumb": "https://cdn2.y8.com/cloudimage/championship_cock_fighters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145145/file/w180h135_webp-9607680b6ec6e1c1830caa6f50aff008.webp",
     "source": "y8"
   },
   {
@@ -147,7 +147,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Fist 3 Age Of The Warrior free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_fist_3_age_of_the_warrior",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_fist_3_age_of_the_warrior/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144265/file/w180h135_webp-fbfe58db3d4f99d01c0bccd0fc4ca9fd.webp",
     "source": "y8"
   },
   {
@@ -156,7 +156,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Creetor Animation Fighting Luffy Vs Naruto free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creetor_animation_fighting_luffy_vs_naruto",
-    "thumb": "https://cdn2.y8.com/cloudimage/creetor_animation_fighting_luffy_vs_naruto/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401173/file/w180h135_webp-ff2eea3859177d70673243639a3a3846.webp",
     "source": "y8"
   },
   {
@@ -165,7 +165,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Arm Fight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arm_fight",
-    "thumb": "https://cdn2.y8.com/cloudimage/arm_fight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149063/file/w180h135_webp-494e585c5ecd08bf968a4484de437a36.webp",
     "source": "y8"
   },
   {
@@ -174,7 +174,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bush Versus Kerry free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bush_versus_kerry",
-    "thumb": "https://cdn2.y8.com/cloudimage/bush_versus_kerry/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144415/file/w180h135_webp-5305aa8b15d2ebcdfb5a1768024f10f8.webp",
     "source": "y8"
   },
   {
@@ -183,7 +183,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Duel free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_duel",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_duel/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342745/file/w180h135_webp-78d0368e04959e245511ff1f37f44673.webp",
     "source": "y8"
   },
   {
@@ -192,7 +192,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crowd Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crowd_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/crowd_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5397/file/w180h135_webp-39e0212352a5179639d5404b2c9274c6.webp",
     "source": "y8"
   },
   {
@@ -201,7 +201,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Buddy Relaxing Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/buddy_relaxing_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/buddy_relaxing_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10123/file/w180h135_webp-628d77dcea61c0435308acf281fa2cde.webp",
     "source": "y8"
   },
   {
@@ -210,7 +210,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cuphead Brothers In Arms free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cuphead_brothers_in_arms",
-    "thumb": "https://cdn2.y8.com/cloudimage/cuphead_brothers_in_arms/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11881/file/w180h135_webp-c05a4ce2f841ff70c004765cd2588b06.webp",
     "source": "y8"
   },
   {
@@ -219,7 +219,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Ball Fighting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_ball_fighting",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_ball_fighting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/121267/file/w180h135_webp-35d936a9cc7583276230caa43106267a.webp",
     "source": "y8"
   },
   {
@@ -228,7 +228,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Ball Fighting 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_ball_fighting_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_ball_fighting_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/121315/file/w180h135_webp-01151e58d639fa3319058abafdb65fa8.webp",
     "source": "y8"
   },
   {
@@ -237,7 +237,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Angry Visitor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_visitor",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_visitor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37925/file/w180h135_webp-da1eb4bd618fe20da1c9904adb7157c3.webp",
     "source": "y8"
   },
   {
@@ -246,7 +246,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ben 10 Alien Rivals free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben_10_alien_rivals",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben_10_alien_rivals/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85979/file/w180h135_webp-c47c357fd6d6daa03ffce7f82caa5f14.webp",
     "source": "y8"
   },
   {
@@ -255,7 +255,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Comic Stars Fighting 3 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/comic_stars_fighting_3_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/comic_stars_fighting_3_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/116261/file/w180h135_webp-c08ad78b33956ee9b70537bc9d0c9675.webp",
     "source": "y8"
   },
   {
@@ -264,7 +264,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Fist 2 Battle For The Blade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_fist_2_battle_for_the_blade",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_fist_2_battle_for_the_blade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146393/file/w180h135_webp-33ddd49e9394e7aa4d27b96a3ce71b0d.webp",
     "source": "y8"
   },
   {
@@ -273,7 +273,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crazy Zombie V3 0 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_zombie_v3_0",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_zombie_v3_0/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/114711/file/w180h135_webp-fcfb67dfb8f10ca95919e6e56971b4ff.webp",
     "source": "y8"
   },
   {
@@ -282,7 +282,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Count Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/count_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/count_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22973/file/w180h135_webp-12c84292a4903e35ed40ba638862f3f1.webp",
     "source": "y8"
   },
   {
@@ -291,7 +291,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dinosaur Hunt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaur_hunt_",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaur_hunt_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74125/file/w180h135_webp-c111de2697a7b2b1b8751c4d509f6e26.webp",
     "source": "y8"
   },
   {
@@ -300,7 +300,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dino Simulator City Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_simulator_city_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_simulator_city_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28841/file/w180h135_webp-66625cb2562c02f40162b8eca8c5168a.webp",
     "source": "y8"
   },
   {
@@ -309,7 +309,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Capoeira Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/capoeira_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/capoeira_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143829/file/w180h135_webp-1769eb8b065e0be650c62ce4a9b885ec.webp",
     "source": "y8"
   },
   {
@@ -318,7 +318,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Achilles Ii Origin Of A Legend free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/achilles_ii_origin_of_a_legend",
-    "thumb": "https://cdn2.y8.com/cloudimage/achilles_ii_origin_of_a_legend/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/127897/file/w180h135_webp-4143d49484c99b49fc0492fb09848a26.webp",
     "source": "y8"
   },
   {
@@ -327,7 +327,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dad N Me free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dad_n_me",
-    "thumb": "https://cdn2.y8.com/cloudimage/dad_n_me/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143921/file/w180h135_webp-a31eb5fe113492df94702b759a832c0d.webp",
     "source": "y8"
   },
   {
@@ -336,7 +336,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Combat Tournament Legends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/combat_tournament_legends",
-    "thumb": "https://cdn2.y8.com/cloudimage/combat_tournament_legends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/122829/file/w180h135_webp-2bd1e0e6602b716913b0de0a01f8e555.webp",
     "source": "y8"
   },
   {
@@ -345,7 +345,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Black Panther Jungle Pursuit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_panther_jungle_pursuit",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_panther_jungle_pursuit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/57651/file/w180h135_webp-a1bc06573d2ec91a72250ef6718dbc4f.webp",
     "source": "y8"
   },
   {
@@ -354,7 +354,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chaos Faction free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chaos_faction",
-    "thumb": "https://cdn2.y8.com/cloudimage/chaos_faction/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/348345/file/w180h135_webp-d8bd0f1e9fd6af5828bc8b7c8ff34fd3.webp",
     "source": "y8"
   },
   {
@@ -363,7 +363,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crazy Zombie V2 0 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_zombie_v2_0",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_zombie_v2_0/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/141109/file/w180h135_webp-0296bc074626d75f62785c9a52145471.webp",
     "source": "y8"
   },
   {
@@ -372,7 +372,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Ball Z Power Level Demo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_ball_z_power_level_demo",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_ball_z_power_level_demo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/153675/file/w180h135_webp-980abf86282e00ca8305312594be72d4.webp",
     "source": "y8"
   },
   {
@@ -381,7 +381,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battle In Megaville free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_in_megaville",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_in_megaville/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144555/file/w180h135_webp-577d58cd754e041b432822c7a1286fba.webp",
     "source": "y8"
   },
   {
@@ -390,7 +390,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ace Gangster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ace_gangster",
-    "thumb": "https://cdn2.y8.com/cloudimage/ace_gangster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/108891/file/w180h135_webp-d9c374537aa41c1c7f59d8ce7f263719.webp",
     "source": "y8"
   },
   {
@@ -399,7 +399,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chaos Faction 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chaos_faction_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/chaos_faction_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/397887/file/w180h135_webp-0837e6e25a21b448bbd85b785c3eeb2b.webp",
     "source": "y8"
   },
   {
@@ -408,7 +408,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Double Edged free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/double_edged",
-    "thumb": "https://cdn2.y8.com/cloudimage/double_edged/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/121403/file/w180h135_webp-0b062a47adb21e250e05e2919a65f4c1.webp",
     "source": "y8"
   },
   {
@@ -417,7 +417,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chuck Norris free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chuck_norris",
-    "thumb": "https://cdn2.y8.com/cloudimage/chuck_norris/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/147167/file/w180h135_webp-0b6e5d7066ab2aca2e1cdb6cd55714f3.webp",
     "source": "y8"
   },
   {
@@ -426,7 +426,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Achilles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/achilles",
-    "thumb": "https://cdn2.y8.com/cloudimage/achilles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/150969/file/w180h135_webp-b498503174cfb7ea1cec9f1f4162671f.webp",
     "source": "y8"
   },
   {
@@ -435,7 +435,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cyber Dog Assembly free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_dog_assembly",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_dog_assembly/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406029/file/w180h135_webp-b85741ecfad727dcd0fe7e9ab776a004.webp",
     "source": "y8"
   },
   {
@@ -444,7 +444,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Deep Worm 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deep_worm_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/deep_worm_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19235/file/w180h135_webp-ac6625a0719e7c996f22b3e5b9bf5c67.webp",
     "source": "y8"
   },
   {
@@ -453,7 +453,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bananaman Food Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bananaman_food_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/bananaman_food_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/53227/file/w180h135_webp-047b121af39f8368e987067723150157.webp",
     "source": "y8"
   },
   {
@@ -462,7 +462,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Comic Stars Fighting 3 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/comic_stars_fighting_3_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/comic_stars_fighting_3_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/101299/file/w180h135_webp-f27764d287221e4fa14681214139b846.webp",
     "source": "y8"
   },
   {
@@ -471,7 +471,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Death Deserves Holidays free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_deserves_holidays",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_deserves_holidays/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/67165/file/w180h135_webp-77c64356123686fe21ceca3b1d826ed7.webp",
     "source": "y8"
   },
   {
@@ -480,7 +480,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Asgard Skill Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asgard_skill_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/asgard_skill_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403965/file/w180h135_webp-5a30345f9327f4a4f26ee47b03669403.webp",
     "source": "y8"
   },
   {
@@ -489,7 +489,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bonkers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bonkers",
-    "thumb": "https://cdn2.y8.com/cloudimage/bonkers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77071/file/w180h135_webp-752310e83f43a7db1008bcd53539d8e0.webp",
     "source": "y8"
   },
   {
@@ -498,7 +498,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Adventure Time Break The Worm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adventure_time_break_the_worm",
-    "thumb": "https://cdn2.y8.com/cloudimage/adventure_time_break_the_worm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21637/file/w180h135_webp-edb1cec2f8c905f5024ee947031088ec.webp",
     "source": "y8"
   },
   {
@@ -507,7 +507,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 2 Player Skibidi Toilet Fight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_skibidi_toilet_fight",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_skibidi_toilet_fight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17587/file/w180h135_webp-d33197f248e966fa5ea1296aae3b8b47.webp",
     "source": "y8"
   },
   {
@@ -516,7 +516,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Angry City Smasher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_city_smasher",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_city_smasher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21529/file/w180h135_webp-551b3ea382b103040929a075b6995530.webp",
     "source": "y8"
   },
   {
@@ -525,7 +525,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ben 10 Omnitrix Glitch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben_10_omnitrix_glitch",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben_10_omnitrix_glitch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77737/file/w180h135_webp-36d09ffe2d55914136d432500b8b5eb8.webp",
     "source": "y8"
   },
   {
@@ -534,7 +534,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Digital Baby Kung Fu V2 0 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/digital_baby_kung_fu_v2_0",
-    "thumb": "https://cdn2.y8.com/cloudimage/digital_baby_kung_fu_v2_0/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/131521/file/w180h135_webp-070c3abf4564705d6ed6b6768c1579b8.webp",
     "source": "y8"
   },
   {
@@ -543,7 +543,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Brainrot Mob Clash 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brainrot_mob_clash_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/brainrot_mob_clash_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393249/file/w180h135_webp-c1d3ba11e92caf3edb8e53bd9bfbf110.webp",
     "source": "y8"
   },
   {
@@ -552,7 +552,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 3 Foot Ninja Ii free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3_foot_ninja_ii",
-    "thumb": "https://cdn2.y8.com/cloudimage/3_foot_ninja_ii/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144589/file/w180h135_webp-f2afebf97f0a5450eac7fe7b00a6fe3b.webp",
     "source": "y8"
   },
   {
@@ -561,7 +561,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crime Wars San Andreas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crime_wars_san_andreas",
-    "thumb": "https://cdn2.y8.com/cloudimage/crime_wars_san_andreas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404419/file/w180h135_webp-be87a76c374d011984eb56b3057b291f.webp",
     "source": "y8"
   },
   {
@@ -570,7 +570,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Age Of Apes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/age_of_apes",
-    "thumb": "https://cdn2.y8.com/cloudimage/age_of_apes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3745/file/w180h135_webp-d6a6438799d7291ebb91089c7fea9c3b.webp",
     "source": "y8"
   },
   {
@@ -579,7 +579,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Simulator Multiplayer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_simulator_multiplayer",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_simulator_multiplayer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343153/file/w180h135_webp-874ed8a99b6e20d95051723db332da5b.webp",
     "source": "y8"
   },
   {
@@ -588,7 +588,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Egg Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/egg_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/egg_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143833/file/w180h135_webp-eaf8a696008b9dbe4aed916e83586251.webp",
     "source": "y8"
   },
   {
@@ -597,7 +597,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chaos War 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chaos_war_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/chaos_war_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149907/file/w180h135_webp-a73f36bf10376a7076a34adaee2ba00c.webp",
     "source": "y8"
   },
   {
@@ -606,7 +606,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Call Of Duty Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/call_of_duty_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/call_of_duty_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24107/file/w180h135_webp-825df675c3c7ba08d1ea2a01ab768ceb.webp",
     "source": "y8"
   },
   {
@@ -615,7 +615,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Elevating Tensions free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/elevating_tensions",
-    "thumb": "https://cdn2.y8.com/cloudimage/elevating_tensions/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30411/file/w180h135_webp-969b6cde9ccb8c31aa349702e105d382.webp",
     "source": "y8"
   },
   {
@@ -624,7 +624,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battle Of The Behemoths free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_of_the_behemoths",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_of_the_behemoths/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102753/file/w180h135_webp-9af5ecf04a575e0a9f042bdbb5b9ecc3.webp",
     "source": "y8"
   },
   {
@@ -633,7 +633,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Catscratch This Means War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catscratch_this_means_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/catscratch_this_means_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/151049/file/w180h135_webp-d4012960bcd91a83bed38ea8f44a5816.webp",
     "source": "y8"
   },
   {
@@ -642,7 +642,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Avatar Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avatar_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/avatar_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385995/file/w180h135_webp-5d76152ca4e4671f451c2387a9dbd0e5.webp",
     "source": "y8"
   },
   {
@@ -651,7 +651,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynamons 6 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_6",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_6/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27313/file/w180h135_webp-4c2820ba7a1f4547ecc4fc937a9932d0.webp",
     "source": "y8"
   },
   {
@@ -660,7 +660,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Anacroz Tactics free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anacroz_tactics",
-    "thumb": "https://cdn2.y8.com/cloudimage/anacroz_tactics/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144389/file/w180h135_webp-bfd70d59773804784380e6faae77abbc.webp",
     "source": "y8"
   },
   {
@@ -669,7 +669,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bomber Friends 2 Player free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bomber_friends_2_player",
-    "thumb": "https://cdn2.y8.com/cloudimage/bomber_friends_2_player/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/235957/file/w180h135_webp-69ab800cd164073c4785beadde8941d3.webp",
     "source": "y8"
   },
   {
@@ -678,7 +678,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Break Out Of The Siege free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/break_out_of_the_siege",
-    "thumb": "https://cdn2.y8.com/cloudimage/break_out_of_the_siege/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1737/file/w180h135_webp-62001343042ace7be6801fd386784e69.webp",
     "source": "y8"
   },
   {
@@ -687,7 +687,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Captain America Shield Strike free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/captain_america_shield_strike",
-    "thumb": "https://cdn2.y8.com/cloudimage/captain_america_shield_strike/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24261/file/w180h135_webp-d4a1d0b23402357addc78f9d1c1dc143.webp",
     "source": "y8"
   },
   {
@@ -696,7 +696,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battle Of The Battles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_of_the_battles",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_of_the_battles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7641/file/w180h135_webp-6fd7a73064bd5f9e5585a14cf11b1deb.webp",
     "source": "y8"
   },
   {
@@ -705,7 +705,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Comic Stars Fighting 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/comic_stars_fighting_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/comic_stars_fighting_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/134093/file/w180h135_webp-70fa28020c1e8587d16953268bc585d6.webp",
     "source": "y8"
   },
   {
@@ -714,7 +714,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Archer Trial By Fate free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_trial_by_fate",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_trial_by_fate/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407791/file/w180h135_webp-26b5cf660772ee7b20397f7773c96dad.webp",
     "source": "y8"
   },
   {
@@ -723,7 +723,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Blades Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blades_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/blades_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90961/file/w180h135_webp-77216706aad314cf90a49a1a8f4fd338.webp",
     "source": "y8"
   },
   {
@@ -732,7 +732,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynamons 7 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_7",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_7/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10039/file/w180h135_webp-d84af515ccef80237d8bef10673b41df.webp",
     "source": "y8"
   },
   {
@@ -741,7 +741,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dead Samurai free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_samurai",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_samurai/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383343/file/w180h135_webp-2454bd2d3a370172facc833da84c0bde.webp",
     "source": "y8"
   },
   {
@@ -750,7 +750,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Boxers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_boxers",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_boxers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384455/file/w180h135_webp-fac0d6997ca1b96e559df4fa97089b75.webp",
     "source": "y8"
   },
   {
@@ -759,7 +759,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynamons 11 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_11",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_11/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5337/file/w180h135_webp-d7c4fb3d2c2c8ddc83fa2b0621e152e3.webp",
     "source": "y8"
   },
   {
@@ -768,7 +768,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragon Ball 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_ball_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_ball_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384213/file/w180h135_webp-de4104a5c607e0deae0c9bfb826bf5d3.webp",
     "source": "y8"
   },
   {
@@ -777,7 +777,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Champions Of Chaos free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/champions_of_chaos",
-    "thumb": "https://cdn2.y8.com/cloudimage/champions_of_chaos/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/177945/file/w180h135_webp-3bc020a80f92a5ee766bc8264923864d.webp",
     "source": "y8"
   },
   {
@@ -786,7 +786,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Atm Cash Deposit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atm_cash_deposit",
-    "thumb": "https://cdn2.y8.com/cloudimage/atm_cash_deposit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65417/file/w180h135_webp-2042a78ae72ee281a40293b570cb3e87.webp",
     "source": "y8"
   },
   {
@@ -795,7 +795,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bloody Rage 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloody_rage_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloody_rage_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/124823/file/w180h135_webp-858e6806745bce2d891e3597fdbca06b.webp",
     "source": "y8"
   },
   {
@@ -804,7 +804,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Boxing Physics free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxing_physics",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxing_physics/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405483/file/w180h135_webp-599cf1c5e6bb1ae792fbfcd5f6129b0f.webp",
     "source": "y8"
   },
   {
@@ -813,7 +813,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cadillacs And Dinosaurs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cadillacs_and_dinosaurs",
-    "thumb": "https://cdn2.y8.com/cloudimage/cadillacs_and_dinosaurs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342605/file/w180h135_webp-567c14bdf25c3675c6c71d5800a044dc.webp",
     "source": "y8"
   },
   {
@@ -822,7 +822,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Big City Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_city_battle_",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_city_battle_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6827/file/w180h135_webp-36f225395850be0dfa832ac6031ea49a.webp",
     "source": "y8"
   },
   {
@@ -831,7 +831,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Attack Of The Fever Heads free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_of_the_fever_heads",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_of_the_fever_heads/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145301/file/w180h135_webp-9f61f24ee30c7196918e11670b1f8e66.webp",
     "source": "y8"
   },
   {
@@ -840,7 +840,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Champion Archer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/champion_archer",
-    "thumb": "https://cdn2.y8.com/cloudimage/champion_archer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/150401/file/w180h135_webp-1f3f58e24c64ffe1cf0375741c346c9e.webp",
     "source": "y8"
   },
   {
@@ -849,7 +849,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play A Sitch In Time 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_sitch_in_time_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_sitch_in_time_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149155/file/w180h135_webp-bc47305a23113c2560eb7f13a2b4f3ab.webp",
     "source": "y8"
   },
   {
@@ -858,7 +858,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Celebrity Smackdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/celebrity_smackdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/celebrity_smackdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148903/file/w180h135_webp-5aa641975bcc373db606c5d53b335976.webp",
     "source": "y8"
   },
   {
@@ -867,7 +867,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bullet Time Fighting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bullet_time_fighting",
-    "thumb": "https://cdn2.y8.com/cloudimage/bullet_time_fighting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145133/file/w180h135_webp-d93c6967b16f49c9ee213f4b38d9a774.webp",
     "source": "y8"
   },
   {
@@ -876,7 +876,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bark N Blast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bark_n_blast",
-    "thumb": "https://cdn2.y8.com/cloudimage/bark_n_blast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383617/file/w180h135_webp-cb97586f408d741c6a3808e3cadba444.webp",
     "source": "y8"
   },
   {
@@ -885,7 +885,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Color Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_run_webgl",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_run_webgl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16585/file/w180h135_webp-edf9c009c00dac165b3cf7e38c4c4906.webp",
     "source": "y8"
   },
   {
@@ -894,7 +894,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chief Joust free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chief_joust",
-    "thumb": "https://cdn2.y8.com/cloudimage/chief_joust/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9183/file/w180h135_webp-3b433fb574a55e58c0a9751ddee37964.webp",
     "source": "y8"
   },
   {
@@ -903,7 +903,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Slap Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_slap_wars_",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_slap_wars_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36351/file/w180h135_webp-c290336ff2e7fc925850b089d42fe302.webp",
     "source": "y8"
   },
   {
@@ -912,7 +912,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Duell 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_duell_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_duell_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89689/file/w180h135_webp-83d4f29c83d33050a4dfda4308ce12bd.webp",
     "source": "y8"
   },
   {
@@ -921,7 +921,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cowboy Survival Zombie free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cowboy_survival_zombie",
-    "thumb": "https://cdn2.y8.com/cloudimage/cowboy_survival_zombie/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/62917/file/w180h135_webp-001a7907f0d67cedfa57c2554107e3a6.webp",
     "source": "y8"
   },
   {
@@ -930,7 +930,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Antistress Relaxation Box free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/antistress_relaxation_box",
-    "thumb": "https://cdn2.y8.com/cloudimage/antistress_relaxation_box/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20317/file/w180h135_webp-04f47c2e254d4904c13e95ea54d81225.webp",
     "source": "y8"
   },
   {
@@ -939,7 +939,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Celebrity Smackdown 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/celebrity_smackdown_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/celebrity_smackdown_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383173/file/w180h135_webp-4253109fb3e5eec04f0e7e94d85777fb.webp",
     "source": "y8"
   },
   {
@@ -948,7 +948,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Danny Phantom Freak For All free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/danny_phantom_freak_for_all",
-    "thumb": "https://cdn2.y8.com/cloudimage/danny_phantom_freak_for_all/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/147089/file/w180h135_webp-de57016e9935c3f5017fa64ed1324f66.webp",
     "source": "y8"
   },
   {
@@ -957,7 +957,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Attack Stages free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_stages",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_stages/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31487/file/w180h135_webp-bc357f3704a6e5c0ca0114dbf45bef45.webp",
     "source": "y8"
   },
   {
@@ -966,7 +966,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 10-103 Null Kelvin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/10-103_null_kelvin",
-    "thumb": "https://cdn2.y8.com/cloudimage/10-103_null_kelvin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28129/file/w180h135_webp-4550a21762bbd597b9435d6a2e462a4f.webp",
     "source": "y8"
   },
   {
@@ -975,7 +975,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Black Soldier Of Rome free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_soldier_of_rome",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_soldier_of_rome/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36121/file/w180h135_webp-c2f54dc74b1d3901a05d1a4459255d7e.webp",
     "source": "y8"
   },
   {
@@ -984,7 +984,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Champaaaagne free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/champaaaagne_",
-    "thumb": "https://cdn2.y8.com/cloudimage/champaaaagne_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15559/file/w180h135_webp-dad428b1e56175b417b5f1e54bb7f065.webp",
     "source": "y8"
   },
   {
@@ -993,7 +993,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Backpack Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backpack_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/backpack_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15547/file/w180h135_webp-637ac09b0fa831ad4115c879ee203faa.webp",
     "source": "y8"
   },
   {
@@ -1002,7 +1002,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Armadillo Knight 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armadillo_knight_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/armadillo_knight_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383237/file/w180h135_webp-135a2d0b34cba97d831bec01434e5d45.webp",
     "source": "y8"
   },
   {
@@ -1011,7 +1011,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynasty Street free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynasty_street",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynasty_street/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144473/file/w180h135_webp-2f357c01b3cc00b1fd4e69ddef7ef131.webp",
     "source": "y8"
   },
   {
@@ -1020,7 +1020,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chimps Ahoy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chimps_ahoy",
-    "thumb": "https://cdn2.y8.com/cloudimage/chimps_ahoy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/61373/file/w180h135_webp-576492fe165532f606268502fcb19736.webp",
     "source": "y8"
   },
   {
@@ -1029,7 +1029,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ancient Fighters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ancient_fighters",
-    "thumb": "https://cdn2.y8.com/cloudimage/ancient_fighters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/224021/file/w180h135_webp-033293613156978efeaa1acbe8f1f337.webp",
     "source": "y8"
   },
   {
@@ -1038,7 +1038,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bearsus Bear Knuckle Fighting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bearsus_bear_knuckle_fighting",
-    "thumb": "https://cdn2.y8.com/cloudimage/bearsus_bear_knuckle_fighting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29619/file/w180h135_webp-001149d3ff920554805675940f0d9e7a.webp",
     "source": "y8"
   },
   {
@@ -1047,7 +1047,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Catch Huggy Wuggy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catch_huggy_wuggy_",
-    "thumb": "https://cdn2.y8.com/cloudimage/catch_huggy_wuggy_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37383/file/w180h135_webp-449b7cfce0372c9a88502367d2733194.webp",
     "source": "y8"
   },
   {
@@ -1056,7 +1056,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crunch Ball 3000 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crunch_ball_3000",
-    "thumb": "https://cdn2.y8.com/cloudimage/crunch_ball_3000/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106811/file/w180h135_webp-7a5fd8692d8ec1f287fce74c26c861af.webp",
     "source": "y8"
   },
   {
@@ -1065,7 +1065,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chick Adee free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chick_adee",
-    "thumb": "https://cdn2.y8.com/cloudimage/chick_adee/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402051/file/w180h135_webp-938da0de37c8e7bef56fe299210d38db.webp",
     "source": "y8"
   },
   {
@@ -1074,7 +1074,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Demon Castle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/demon_castle",
-    "thumb": "https://cdn2.y8.com/cloudimage/demon_castle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76487/file/w180h135_webp-676ee0fe4a2450787149189dc1476bcb.webp",
     "source": "y8"
   },
   {
@@ -1083,7 +1083,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Celebrity Smackdown 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/celebrity_smackdown_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/celebrity_smackdown_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383171/file/w180h135_webp-b7e0c8c0989677a0ab45ebb653638e0a.webp",
     "source": "y8"
   },
   {
@@ -1092,7 +1092,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bighouse Beatdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bighouse_beatdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/bighouse_beatdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144267/file/w180h135_webp-6e36605939f9cd7904ace00814c6f9d4.webp",
     "source": "y8"
   },
   {
@@ -1101,7 +1101,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Castel Wars New Era free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castel_wars_new_era",
-    "thumb": "https://cdn2.y8.com/cloudimage/castel_wars_new_era/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33235/file/w180h135_webp-ecdc5d151460f2cfcd4f9e20b12351de.webp",
     "source": "y8"
   },
   {
@@ -1110,7 +1110,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Aevarrons Coliseum free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aevarrons_coliseum",
-    "thumb": "https://cdn2.y8.com/cloudimage/aevarrons_coliseum/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146901/file/w180h135_webp-ecfe5671749f9d7fe4481124ab0126be.webp",
     "source": "y8"
   },
   {
@@ -1119,7 +1119,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bosozoku Fighters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bosozoku_fighters",
-    "thumb": "https://cdn2.y8.com/cloudimage/bosozoku_fighters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342387/file/w180h135_webp-9d1e9430e2f63ad75b67a82014a88ade.webp",
     "source": "y8"
   },
   {
@@ -1128,7 +1128,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 30 Days Remain free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/30_days_remain",
-    "thumb": "https://cdn2.y8.com/cloudimage/30_days_remain/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/67401/file/w180h135_webp-894101fc6cd6f4e2a257fc49ce1442f4.webp",
     "source": "y8"
   },
   {
@@ -1137,7 +1137,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Car Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27371/file/w180h135_webp-f8007a351ddad73ad7b04aa3e44534e6.webp",
     "source": "y8"
   },
   {
@@ -1146,7 +1146,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cards Of The Undead free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cards_of_the_undead",
-    "thumb": "https://cdn2.y8.com/cloudimage/cards_of_the_undead/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17753/file/w180h135_webp-ba5c59d625cc1f43e68e166be8941595.webp",
     "source": "y8"
   },
   {
@@ -1155,7 +1155,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynamons 8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_8",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19163/file/w180h135_webp-12cc5a46d4c2b6ee58d18de476158b20.webp",
     "source": "y8"
   },
   {
@@ -1164,7 +1164,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play A Sitch In Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_sitch_in_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_sitch_in_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145717/file/w180h135_webp-9597dd2b1254beb13811b073fc67a243.webp",
     "source": "y8"
   },
   {
@@ -1173,7 +1173,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Basebrawl free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basebrawl",
-    "thumb": "https://cdn2.y8.com/cloudimage/basebrawl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30793/file/w180h135_webp-0fb71805181e266083bd0d840791cd33.webp",
     "source": "y8"
   },
   {
@@ -1182,7 +1182,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play A Brave Man Who Can Barely Push Slime free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_brave_man_who_can_barely_push_slime",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_brave_man_who_can_barely_push_slime/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85781/file/w180h135_webp-6fca3a044db7aa1da73dc54c73421e53.webp",
     "source": "y8"
   },
   {
@@ -1191,7 +1191,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Chill The Piro Lite free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chill_the_piro_lite",
-    "thumb": "https://cdn2.y8.com/cloudimage/chill_the_piro_lite/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68031/file/w180h135_webp-a4f2f15e2351bf6d2c6f91773b225436.webp",
     "source": "y8"
   },
   {
@@ -1200,7 +1200,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Afk Heroes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/afk_heroes",
-    "thumb": "https://cdn2.y8.com/cloudimage/afk_heroes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74741/file/w180h135_webp-1a8e9637ee4ccd567df754359b826a5f.webp",
     "source": "y8"
   },
   {
@@ -1209,7 +1209,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dragonball Z free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragonball_z",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragonball_z/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/151897/file/w180h135_webp-1e437289b37487b223997398173be2df.webp",
     "source": "y8"
   },
   {
@@ -1218,7 +1218,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ben 10 Boxing 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben_10_boxing_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben_10_boxing_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/120903/file/w180h135_webp-b3f0416af15ad4ca7cfca305d0de532f.webp",
     "source": "y8"
   },
   {
@@ -1227,7 +1227,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play 2 Players Drunken Brawl free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_players_drunken_brawl",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_players_drunken_brawl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17169/file/w180h135_webp-f5e2dfcc75288b857439f1b9d827ced1.webp",
     "source": "y8"
   },
   {
@@ -1236,7 +1236,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dye Hard free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dye_hard",
-    "thumb": "https://cdn2.y8.com/cloudimage/dye_hard/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386005/file/w180h135_webp-010f445082372463706dcd6735e0538c.webp",
     "source": "y8"
   },
   {
@@ -1245,7 +1245,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dinosaur Runner 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaur_runner_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaur_runner_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13491/file/w180h135_webp-adea7c135b0c68e50199fb7df0fa8d73.webp",
     "source": "y8"
   },
   {
@@ -1254,7 +1254,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dungeon Master Knight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dungeon_master_knight",
-    "thumb": "https://cdn2.y8.com/cloudimage/dungeon_master_knight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5613/file/w180h135_webp-10e059dd10a829eec0da02fd1425ac60.webp",
     "source": "y8"
   },
   {
@@ -1263,7 +1263,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Card Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/card_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/card_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24795/file/w180h135_webp-c87c4e05c3c97486888fa40401c5bbf7.webp",
     "source": "y8"
   },
   {
@@ -1272,7 +1272,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Armadillo Knight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armadillo_knight",
-    "thumb": "https://cdn2.y8.com/cloudimage/armadillo_knight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383241/file/w180h135_webp-6e4bca585054474a7a524d564065745c.webp",
     "source": "y8"
   },
   {
@@ -1281,7 +1281,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bullet League Robogeddon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bullet_league_robogeddon",
-    "thumb": "https://cdn2.y8.com/cloudimage/bullet_league_robogeddon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/63457/file/w180h135_webp-346d0e1a1917e1aa4966a4e77d3f0084.webp",
     "source": "y8"
   },
   {
@@ -1290,7 +1290,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Attack To Magix free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_to_magix",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_to_magix/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/155887/file/w180h135_webp-2cb6e3f9ded76b5d18917ba65e898ae6.webp",
     "source": "y8"
   },
   {
@@ -1299,7 +1299,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Cat Wars Flash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_wars_flash",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_wars_flash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/161327/file/w180h135_webp-c79b130fbfe63124dccde42ddb5e7117.webp",
     "source": "y8"
   },
   {
@@ -1308,7 +1308,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Castel Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castel_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/castel_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9191/file/w180h135_webp-ba63bb00dd92bfddec06848e5e0fb9fa.webp",
     "source": "y8"
   },
   {
@@ -1317,7 +1317,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Avatar Elemental Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avatar_elemental_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/avatar_elemental_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148459/file/w180h135_webp-71920c30becfbd8c14afc5a7123730e5.webp",
     "source": "y8"
   },
   {
@@ -1326,7 +1326,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Contractomaton free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/contractomaton",
-    "thumb": "https://cdn2.y8.com/cloudimage/contractomaton/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2831/file/w180h135_webp-f043905cfef4842d701d594b42b419ad.webp",
     "source": "y8"
   },
   {
@@ -1335,7 +1335,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Bloxing Federation free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloxing_federation",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloxing_federation/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6999/file/w180h135_webp-175af1cb62cd913180e640945671d4b7.webp",
     "source": "y8"
   },
   {
@@ -1344,7 +1344,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Craft Conflict free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/craft_conflict",
-    "thumb": "https://cdn2.y8.com/cloudimage/craft_conflict/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19167/file/w180h135_webp-eed2a7ae73b575a45ddc30cd7281014b.webp",
     "source": "y8"
   },
   {
@@ -1353,7 +1353,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Boxing Ultimate free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_boxing_ultimate",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_boxing_ultimate/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20747/file/w180h135_webp-cc78f5ae261d3ae28be0575328f6f458.webp",
     "source": "y8"
   },
   {
@@ -1362,7 +1362,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Eat Blobs Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/eat_blobs_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/eat_blobs_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16657/file/w180h135_webp-c30c70cf764e96ad8519f90810fa8dde.webp",
     "source": "y8"
   },
   {
@@ -1371,7 +1371,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Boxing 2 X 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxing_2_x_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxing_2_x_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144767/file/w180h135_webp-a34f8df7affe61cff6cacb69589b7a38.webp",
     "source": "y8"
   },
   {
@@ -1380,7 +1380,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Alien Hunters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_hunters_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_hunters_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18945/file/w180h135_webp-81f2caf39f070bb63597e69bdf8ca4b9.webp",
     "source": "y8"
   },
   {
@@ -1389,7 +1389,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Ben 10 Tomb Of Doom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben_10_tomb_of_doom",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben_10_tomb_of_doom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14531/file/w180h135_webp-d21dcd33bb0c0a459b3a84e57a93c302.webp",
     "source": "y8"
   },
   {
@@ -1407,7 +1407,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battlefield General free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battlefield_general",
-    "thumb": "https://cdn2.y8.com/cloudimage/battlefield_general/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146203/file/w180h135_webp-4c9bcc008336b2c4b7ccb30bb9a10e4a.webp",
     "source": "y8"
   },
   {
@@ -1479,7 +1479,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battle Day Brawl free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_day_brawl",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_day_brawl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17097/file/w180h135_webp-b77b0ae3170adede586ccc6ee9de91a0.webp",
     "source": "y8"
   },
   {
@@ -1515,7 +1515,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Battle For Goblin Cave free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_for_goblin_cave",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_for_goblin_cave/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11897/file/w180h135_webp-1c7b2917b0695057e4c04fe75cc9e1a0.webp",
     "source": "y8"
   },
   {
@@ -1533,7 +1533,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Crazy Flasher 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_flasher_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_flasher_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149565/file/w180h135_webp-d8773138f33fb82e890ecee9b1d84e4d.webp",
     "source": "y8"
   },
   {
@@ -1587,7 +1587,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Drunken Spin Punch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_spin_punch",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_spin_punch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35643/file/w180h135_webp-3a98373c1fe52ca460968733d0584d57.webp",
     "source": "y8"
   },
   {
@@ -1623,7 +1623,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Clash Of Skulls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clash_of_skulls",
-    "thumb": "https://cdn2.y8.com/cloudimage/clash_of_skulls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/72473/file/w180h135_webp-a509d4edfb71dc1095e93bc8dac81431.webp",
     "source": "y8"
   },
   {
@@ -1650,7 +1650,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Annoying Cousin Punch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/annoying_cousin_punch",
-    "thumb": "https://cdn2.y8.com/cloudimage/annoying_cousin_punch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389091/file/w180h135_webp-3ccbadc7908ce0ff10120b0a49af9f96.webp",
     "source": "y8"
   },
   {
@@ -1785,7 +1785,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dynamons 5 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_5",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21707/file/w180h135_webp-b8d72334652358e37b99bc80ba9f4d1c.webp",
     "source": "y8"
   },
   {
@@ -1803,7 +1803,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Count Masters Clash Pusher 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/count_masters_clash_pusher_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/count_masters_clash_pusher_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27749/file/w180h135_webp-9ee0a8085444b2ea609ab3cc6bfd767e.webp",
     "source": "y8"
   },
   {
@@ -1965,7 +1965,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Animation Vs Minecraft free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animation_vs_minecraft",
-    "thumb": "https://cdn2.y8.com/cloudimage/animation_vs_minecraft/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385779/file/w180h135_webp-cf2d6c58fe99bd7ad20d9159df8694de.webp",
     "source": "y8"
   },
   {
@@ -2037,7 +2037,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Dinosaurs Merge Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaurs_merge_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaurs_merge_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10107/file/w180h135_webp-c83b3eee9bbcf0d76937b5bc2158232d.webp",
     "source": "y8"
   },
   {
@@ -2055,7 +2055,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Draw Fighter 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_fighter_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_fighter_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29023/file/w180h135_webp-349d7428148f4048f6fed369c8838e25.webp",
     "source": "y8"
   },
   {
@@ -2118,7 +2118,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Block Battle - Noob Vs Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_battle_-_noob_vs_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_battle_-_noob_vs_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401669/file/w180h135_webp-ce3bfc0015f6af4640f3b866000621f4.webp",
     "source": "y8"
   },
   {
@@ -2217,7 +2217,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Knife Hit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/knife_hit_",
-    "thumb": "https://cdn2.y8.com/cloudimage/knife_hit_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403835/file/w180h135_webp-36bdd03ff3ffd19219482e998bcbc4a0.webp",
     "source": "y8"
   },
   {
@@ -2243,7 +2243,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Hit The Glow free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hit_the_glow",
-    "thumb": "https://cdn2.y8.com/cloudimage/hit_the_glow/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389053/file/w180h135_webp-69809eece54543d6f9a7becb7d025ec9.webp",
     "source": "y8"
   },
   {
@@ -2252,7 +2252,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Phases Of Black And White free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/phases_of_black_and_white",
-    "thumb": "https://cdn2.y8.com/cloudimage/phases_of_black_and_white/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387799/file/w180h135_webp-5b1640302ede9f4e2a3aa33bd9b5834d.webp",
     "source": "y8"
   },
   {
@@ -2261,7 +2261,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Schitalochka free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/schitalochka",
-    "thumb": "https://cdn2.y8.com/cloudimage/schitalochka/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392557/file/w180h135_webp-a2e2daca7c3788e3f8eafe407f1e35eb.webp",
     "source": "y8"
   },
   {
@@ -2270,7 +2270,7 @@ const GAMES = [
     "category": "Action",
     "description": "Play Swipes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swipes",
-    "thumb": "https://cdn2.y8.com/cloudimage/swipes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393457/file/w180h135_webp-b91541b6f1da3d17d34c3d0fba0dcecc.webp",
     "source": "y8"
   },
   {
@@ -2279,7 +2279,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Brutal Wanderer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brutal_wanderer",
-    "thumb": "https://cdn2.y8.com/cloudimage/brutal_wanderer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405737/file/w180h135_webp-4a3ff21b2723d2b4af8c700a7e108afb.webp",
     "source": "y8"
   },
   {
@@ -2288,7 +2288,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Avatar Fortress Fight 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avatar_fortress_fight_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/avatar_fortress_fight_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148577/file/w180h135_webp-88d8267480bb401453e2b3aa0acd32da.webp",
     "source": "y8"
   },
   {
@@ -2297,7 +2297,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dumb Ways To Die Original free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dumb_ways_to_die_original",
-    "thumb": "https://cdn2.y8.com/cloudimage/dumb_ways_to_die_original/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68623/file/w180h135_webp-00844c6df34bd890a73a00dc4c1dbe9b.webp",
     "source": "y8"
   },
   {
@@ -2306,7 +2306,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Backrooms free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backrooms",
-    "thumb": "https://cdn2.y8.com/cloudimage/backrooms/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25073/file/w180h135_webp-75f52d68bf7aa3d70910d97ee4c0097e.webp",
     "source": "y8"
   },
   {
@@ -2315,7 +2315,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play 99 Nights In The Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/99_nights_in_the_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/99_nights_in_the_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/396419/file/w180h135_webp-4e8920f7d4daec59d40cb235be24bad8.webp",
     "source": "y8"
   },
   {
@@ -2324,7 +2324,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Deepest Sword free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deepest_sword",
-    "thumb": "https://cdn2.y8.com/cloudimage/deepest_sword/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21445/file/w180h135_webp-bd43f3de34265875a91b130a8d1183db.webp",
     "source": "y8"
   },
   {
@@ -2333,7 +2333,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Arm Wrestle My Ego free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arm_wrestle_my_ego",
-    "thumb": "https://cdn2.y8.com/cloudimage/arm_wrestle_my_ego/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146903/file/w180h135_webp-055a0e379e211b20145027c56e087d13.webp",
     "source": "y8"
   },
   {
@@ -2342,7 +2342,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bob The Robber 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bob_the_robber_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/bob_the_robber_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384705/file/w180h135_webp-7ec8879878d2a31f0fddaefd6f2fc41d.webp",
     "source": "y8"
   },
   {
@@ -2351,7 +2351,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Blockcraft free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blockcraft",
-    "thumb": "https://cdn2.y8.com/cloudimage/blockcraft/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407109/file/w180h135_webp-3c1116c8dd1fb4a4ce6abcf89b28b1dd.webp",
     "source": "y8"
   },
   {
@@ -2378,7 +2378,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cactus Mccoy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cactus_mccoy",
-    "thumb": "https://cdn2.y8.com/cloudimage/cactus_mccoy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/180857/file/w180h135_webp-1c46efa79e61ab420e5dee28ce0854fc.webp",
     "source": "y8"
   },
   {
@@ -2387,7 +2387,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Avatar Fortress Fight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avatar_fortress_fight",
-    "thumb": "https://cdn2.y8.com/cloudimage/avatar_fortress_fight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148431/file/w180h135_webp-c591bf755ccc6a3f47f2434efaf2662f.webp",
     "source": "y8"
   },
   {
@@ -2396,7 +2396,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Sitch In Time 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_sitch_in_time_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_sitch_in_time_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145957/file/w180h135_webp-a623f86d08b464c185d86f7a20d62c61.webp",
     "source": "y8"
   },
   {
@@ -2405,7 +2405,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve 7 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_7",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_7/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48569/file/w180h135_webp-3445bc2b789a9eeebfe85cb47c59bda7.webp",
     "source": "y8"
   },
   {
@@ -2414,7 +2414,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Amazing Circus Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_circus_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_circus_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29163/file/w180h135_webp-01211ca4ed1b5fc365285b582c658331.webp",
     "source": "y8"
   },
   {
@@ -2423,7 +2423,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Devil Cry free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devil_cry",
-    "thumb": "https://cdn2.y8.com/cloudimage/devil_cry/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34131/file/w180h135_webp-6248c4e5c19d66a56a9a5b7a2290273b.webp",
     "source": "y8"
   },
   {
@@ -2432,7 +2432,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ben10 Hero Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben10_hero_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben10_hero_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31801/file/w180h135_webp-7261551b5e3583d5f0055fa2dd37fe42.webp",
     "source": "y8"
   },
   {
@@ -2441,7 +2441,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Crocodile Simulator Beach Hunt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crocodile_simulator_beach_hunt",
-    "thumb": "https://cdn2.y8.com/cloudimage/crocodile_simulator_beach_hunt/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/43167/file/w180h135_webp-4eff830366f726c52de13eec71210131.webp",
     "source": "y8"
   },
   {
@@ -2450,7 +2450,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cat Chaos Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_chaos_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_chaos_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/4567/file/w180h135_webp-7da611a000517dd7c462eb5a02a575fc.webp",
     "source": "y8"
   },
   {
@@ -2459,7 +2459,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Apple Onion The Floor Is Lava free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apple_onion_the_floor_is_lava_",
-    "thumb": "https://cdn2.y8.com/cloudimage/apple_onion_the_floor_is_lava_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69903/file/w180h135_webp-e4e35d9459524b1fcbcc37e3f99873e8.webp",
     "source": "y8"
   },
   {
@@ -2468,7 +2468,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ball Adventure 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_adventure_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_adventure_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/39491/file/w180h135_webp-833d4b47d0af59128e69977178ebce52.webp",
     "source": "y8"
   },
   {
@@ -2477,7 +2477,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Amazing Strange Rope Police Vice Spider Vegas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_strange_rope_police_vice_spider_vegas",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_strange_rope_police_vice_spider_vegas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48533/file/w180h135_webp-8fe408454b49b8fa7e3ff41eef3ba8f3.webp",
     "source": "y8"
   },
   {
@@ -2486,7 +2486,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Big Bad Ape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_bad_ape",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_bad_ape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384447/file/w180h135_webp-c2fee2717f64a744a253e44ef55f05d8.webp",
     "source": "y8"
   },
   {
@@ -2504,7 +2504,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Conquer Kingdoms free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/conquer_kingdoms",
-    "thumb": "https://cdn2.y8.com/cloudimage/conquer_kingdoms/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3031/file/w180h135_webp-14adaac1b8e23a98807f5d22888524be.webp",
     "source": "y8"
   },
   {
@@ -2513,7 +2513,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Flying Machine free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_flying_machine",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_flying_machine/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66111/file/w180h135_webp-704e0672cf08fbb157bcf2a41b6cdbc4.webp",
     "source": "y8"
   },
   {
@@ -2522,7 +2522,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Alex 2d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alex_2d",
-    "thumb": "https://cdn2.y8.com/cloudimage/alex_2d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/45205/file/w180h135_webp-0f6ec7ec35691395e533599813031662.webp",
     "source": "y8"
   },
   {
@@ -2531,7 +2531,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Batman The Cobblebot Caper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/batman_the_cobblebot_caper",
-    "thumb": "https://cdn2.y8.com/cloudimage/batman_the_cobblebot_caper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144279/file/w180h135_webp-f15bb610e3e5b259fbae2ee6cacfd0c1.webp",
     "source": "y8"
   },
   {
@@ -2540,7 +2540,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Big Escape 3 Out At Sea free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_escape_3_out_at_sea",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_escape_3_out_at_sea/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64109/file/w180h135_webp-0eaa7c3617b1071a6265c036c1678558.webp",
     "source": "y8"
   },
   {
@@ -2549,7 +2549,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Clickventure Castaway free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clickventure_castaway",
-    "thumb": "https://cdn2.y8.com/cloudimage/clickventure_castaway/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90063/file/w180h135_webp-5f0c370f7511544320612a4b1dca4b2d.webp",
     "source": "y8"
   },
   {
@@ -2558,7 +2558,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dinosaur Rampage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaur_rampage",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaur_rampage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/395225/file/w180h135_webp-808fb3333c509b6b213218950c1dd1cd.webp",
     "source": "y8"
   },
   {
@@ -2567,7 +2567,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Weekend At Villa Apate free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_weekend_at_villa_apate",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_weekend_at_villa_apate/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28291/file/w180h135_webp-aaca43c1365e6afb44728ce546e62f04.webp",
     "source": "y8"
   },
   {
@@ -2576,7 +2576,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Barp The Balldragon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barp_the_balldragon",
-    "thumb": "https://cdn2.y8.com/cloudimage/barp_the_balldragon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10193/file/w180h135_webp-0256518da3cb6aa748d68524a65b3bee.webp",
     "source": "y8"
   },
   {
@@ -2585,7 +2585,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Car Eats Car Winter Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_eats_car_winter_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_eats_car_winter_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78015/file/w180h135_webp-775e853d6ae0c22ea05a82163227e0bd.webp",
     "source": "y8"
   },
   {
@@ -2594,7 +2594,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adversator Moba free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adversator_moba",
-    "thumb": "https://cdn2.y8.com/cloudimage/adversator_moba/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30775/file/w180h135_webp-7715a6e1a008e6c501fdbf4dc62b8ced.webp",
     "source": "y8"
   },
   {
@@ -2603,7 +2603,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dan The Man free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dan_the_man",
-    "thumb": "https://cdn2.y8.com/cloudimage/dan_the_man/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383937/file/w180h135_webp-f7572e8484b1ba8313e1df55fff25ffa.webp",
     "source": "y8"
   },
   {
@@ -2612,7 +2612,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Be Cool Scooby Doo World Of Mystery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/be_cool_scooby_doo_world_of_mystery",
-    "thumb": "https://cdn2.y8.com/cloudimage/be_cool_scooby_doo_world_of_mystery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90081/file/w180h135_webp-b886a57abb8dbc3fa2ed810886ce4c46.webp",
     "source": "y8"
   },
   {
@@ -2621,7 +2621,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baby Chicco Adventures free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_chicco_adventures",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_chicco_adventures/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14919/file/w180h135_webp-3bcfaa27ad6be77942cf275039faa224.webp",
     "source": "y8"
   },
   {
@@ -2630,7 +2630,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam N Eve The Love Quest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_n_eve_the_love_quest",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_n_eve_the_love_quest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/99605/file/w180h135_webp-07da56cb22ab26c38c65a016862942b2.webp",
     "source": "y8"
   },
   {
@@ -2639,7 +2639,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Apollo Platformer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apollo_platformer",
-    "thumb": "https://cdn2.y8.com/cloudimage/apollo_platformer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9019/file/w180h135_webp-1d1ec0a1c3542b64f70706331621678d.webp",
     "source": "y8"
   },
   {
@@ -2648,7 +2648,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cameraman Vs Skibidi Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cameraman_vs_skibidi_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/cameraman_vs_skibidi_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1247/file/w180h135_webp-68b561ddb26de1035e34b858b09f5c2a.webp",
     "source": "y8"
   },
   {
@@ -2657,7 +2657,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Arena Of Blood free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arena_of_blood",
-    "thumb": "https://cdn2.y8.com/cloudimage/arena_of_blood/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408209/file/w180h135_webp-13ca8cc654b6fb5d95bcc1d87111b8fd.webp",
     "source": "y8"
   },
   {
@@ -2666,7 +2666,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Drowning Cross free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drowning_cross",
-    "thumb": "https://cdn2.y8.com/cloudimage/drowning_cross/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386227/file/w180h135_webp-83232c02adb5515c4760f27099390f92.webp",
     "source": "y8"
   },
   {
@@ -2675,7 +2675,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dog free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dog_",
-    "thumb": "https://cdn2.y8.com/cloudimage/dog_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/87407/file/w180h135_webp-e6b323d0926cbf7adc05c8dcbc314a38.webp",
     "source": "y8"
   },
   {
@@ -2684,7 +2684,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Block Blasty Saga free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_blasty_saga",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_blasty_saga/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30311/file/w180h135_webp-a88c01d0b3513460f316496bd5d5ceeb.webp",
     "source": "y8"
   },
   {
@@ -2693,7 +2693,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Backrooms Escape Part 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backrooms_escape_part_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/backrooms_escape_part_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21407/file/w180h135_webp-f0b021cc5288181f501de52f67966525.webp",
     "source": "y8"
   },
   {
@@ -2702,7 +2702,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Black Beaks Treasure Cove free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_beaks_treasure_cove",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_beaks_treasure_cove/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144199/file/w180h135_webp-6a41297bdd9cc4c33d81366589499c74.webp",
     "source": "y8"
   },
   {
@@ -2711,7 +2711,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cabin Horror free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cabin_horror",
-    "thumb": "https://cdn2.y8.com/cloudimage/cabin_horror/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/44377/file/w180h135_webp-f67c0e033601f8633f13e10d5073f205.webp",
     "source": "y8"
   },
   {
@@ -2720,7 +2720,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Death Run 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_run_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_run_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384681/file/w180h135_webp-826ea0410ee5c54ded8da36c7422e26e.webp",
     "source": "y8"
   },
   {
@@ -2729,7 +2729,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Attack On Titan Wip 02 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_on_titan_wip_02",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_on_titan_wip_02/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47743/file/w180h135_webp-4cf104d97777d2ede3030db5555edaf4.webp",
     "source": "y8"
   },
   {
@@ -2738,7 +2738,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cat From Hell - Cat Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_from_hell_-_cat_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_from_hell_-_cat_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5083/file/w180h135_webp-558e0689a40b8dc696eddf84815ed804.webp",
     "source": "y8"
   },
   {
@@ -2747,7 +2747,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dino Squad Adventure 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_squad_adventure_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_squad_adventure_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/53367/file/w180h135_webp-5c7af4b898371cb29c2faba9ef685171.webp",
     "source": "y8"
   },
   {
@@ -2756,7 +2756,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Black Hole Vs Monster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_hole_vs_monster",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_hole_vs_monster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27789/file/w180h135_webp-967878a0008a57456cdbbf100ff8a336.webp",
     "source": "y8"
   },
   {
@@ -2765,7 +2765,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Armor Mayhem free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armor_mayhem",
-    "thumb": "https://cdn2.y8.com/cloudimage/armor_mayhem/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/179131/file/w180h135_webp-6e23600faac9ff89a3027a1e563342e9.webp",
     "source": "y8"
   },
   {
@@ -2774,7 +2774,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baldi At School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baldi_at_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/baldi_at_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388281/file/w180h135_webp-915e835c0de2d1b633748754c8119e39.webp",
     "source": "y8"
   },
   {
@@ -2783,7 +2783,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bounce Heroes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bounce_heroes",
-    "thumb": "https://cdn2.y8.com/cloudimage/bounce_heroes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402839/file/w180h135_webp-ce10b148786186ee15c38c770a31115b.webp",
     "source": "y8"
   },
   {
@@ -2792,7 +2792,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cardmare Descent free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cardmare_descent",
-    "thumb": "https://cdn2.y8.com/cloudimage/cardmare_descent/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403059/file/w180h135_webp-7d1ce09185a0f52b7ec409a497d14524.webp",
     "source": "y8"
   },
   {
@@ -2801,7 +2801,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cavern Of Gears free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cavern_of_gears",
-    "thumb": "https://cdn2.y8.com/cloudimage/cavern_of_gears/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408013/file/w180h135_webp-18183b166d66056537bd303134f77065.webp",
     "source": "y8"
   },
   {
@@ -2810,7 +2810,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bean Parkour free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bean_parkour",
-    "thumb": "https://cdn2.y8.com/cloudimage/bean_parkour/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16427/file/w180h135_webp-fa76e7977be4c8ed0cd9cf49bd6ebd58.webp",
     "source": "y8"
   },
   {
@@ -2819,7 +2819,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play 3d Dino Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_dino_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_dino_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24189/file/w180h135_webp-f3ad0d5ea679a3c586fe86dcb09aa47f.webp",
     "source": "y8"
   },
   {
@@ -2828,7 +2828,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dungeon And Puzzles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dungeon_and_puzzles",
-    "thumb": "https://cdn2.y8.com/cloudimage/dungeon_and_puzzles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11903/file/w180h135_webp-3af443d53498219553fc1cc6847f75b9.webp",
     "source": "y8"
   },
   {
@@ -2837,7 +2837,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dave Dave Dave free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dave_dave_dave",
-    "thumb": "https://cdn2.y8.com/cloudimage/dave_dave_dave/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13705/file/w180h135_webp-a9ed3100e1e1a65731b1a7ad7f5d22b0.webp",
     "source": "y8"
   },
   {
@@ -2846,7 +2846,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam Eve 5 Part 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_eve_5_part_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_eve_5_part_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/43147/file/w180h135_webp-4986af80b75fd791afa012867db03644.webp",
     "source": "y8"
   },
   {
@@ -2855,7 +2855,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve Go free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_go",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_go/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/59973/file/w180h135_webp-a46b0386ef2c8581eaca2e4abf8b3f93.webp",
     "source": "y8"
   },
   {
@@ -2864,7 +2864,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dynamons free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/327081/file/w180h135_webp-563dc649d2ad7f80f9aa8d713301fbd5.webp",
     "source": "y8"
   },
   {
@@ -2873,7 +2873,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve 6 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_6",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_6/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64341/file/w180h135_webp-61903c998523785670996e1ab7f2c3ae.webp",
     "source": "y8"
   },
   {
@@ -2882,7 +2882,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Digital Circus Parkour free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/digital_circus_parkour",
-    "thumb": "https://cdn2.y8.com/cloudimage/digital_circus_parkour/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30269/file/w180h135_webp-5e24566044071ca23580f8e1cb615a20.webp",
     "source": "y8"
   },
   {
@@ -2891,7 +2891,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Backrooms Among Us Rolling Giant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backrooms_among_us_rolling_giant",
-    "thumb": "https://cdn2.y8.com/cloudimage/backrooms_among_us_rolling_giant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10743/file/w180h135_webp-552bf6f8e0cefa84280c89ab3b9d45c5.webp",
     "source": "y8"
   },
   {
@@ -2900,7 +2900,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bridal Race 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bridal_race_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bridal_race_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8307/file/w180h135_webp-21287b8b2d44c7ca5ce6e559424b35af.webp",
     "source": "y8"
   },
   {
@@ -2909,7 +2909,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Demon Raid 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/demon_raid_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/demon_raid_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16411/file/w180h135_webp-17cae05f5fdb2d58d9617a34d957d561.webp",
     "source": "y8"
   },
   {
@@ -2918,7 +2918,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Calm Before The Storm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/calm_before_the_storm",
-    "thumb": "https://cdn2.y8.com/cloudimage/calm_before_the_storm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51033/file/w180h135_webp-a35d4ca951545bd946612ca92374aafc.webp",
     "source": "y8"
   },
   {
@@ -2927,7 +2927,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Between Breath free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/between_breath",
-    "thumb": "https://cdn2.y8.com/cloudimage/between_breath/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25469/file/w180h135_webp-0151feaa1120d4348222268937e5f7fa.webp",
     "source": "y8"
   },
   {
@@ -2936,7 +2936,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dear Edmund free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dear_edmund",
-    "thumb": "https://cdn2.y8.com/cloudimage/dear_edmund/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3229/file/w180h135_webp-4e95a8bfdac82c52ee3fbd39a296e2c3.webp",
     "source": "y8"
   },
   {
@@ -2945,7 +2945,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/180981/file/w180h135_webp-70f25908ba571094b67c785e62ad9f53.webp",
     "source": "y8"
   },
   {
@@ -2954,7 +2954,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Diary Of A Wimpy Kid The Meltdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diary_of_a_wimpy_kid_the_meltdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/diary_of_a_wimpy_kid_the_meltdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106347/file/w180h135_webp-3d2b0d5494cb31c895348d38fb84f01e.webp",
     "source": "y8"
   },
   {
@@ -2963,7 +2963,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Aidan In Danger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aidan_in_danger",
-    "thumb": "https://cdn2.y8.com/cloudimage/aidan_in_danger/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/238129/file/w180h135_webp-b8410bff55483609c19354f93f3eafa0.webp",
     "source": "y8"
   },
   {
@@ -2972,7 +2972,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dynamons 9 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_9",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_9/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24837/file/w180h135_webp-612f02eb322c8227453045258c6742c6.webp",
     "source": "y8"
   },
   {
@@ -2981,7 +2981,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Avalanche Bfast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avalanche_bfast",
-    "thumb": "https://cdn2.y8.com/cloudimage/avalanche_bfast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/147763/file/w180h135_webp-1763b36db59a6e64c9eff98630ba72ea.webp",
     "source": "y8"
   },
   {
@@ -2990,7 +2990,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dominator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dominator",
-    "thumb": "https://cdn2.y8.com/cloudimage/dominator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34323/file/w180h135_webp-2a223940306a45d69e3ada991b4cdc40.webp",
     "source": "y8"
   },
   {
@@ -2999,7 +2999,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bleach Training free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bleach_training",
-    "thumb": "https://cdn2.y8.com/cloudimage/bleach_training/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146655/file/w180h135_webp-0b53a828ce10e6b3e99f3d0e00e4998b.webp",
     "source": "y8"
   },
   {
@@ -3008,7 +3008,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Arcuz Behind The Dark free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcuz_behind_the_dark",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcuz_behind_the_dark/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/174947/file/w180h135_webp-577bc9e2cc927206ec2948554400c806.webp",
     "source": "y8"
   },
   {
@@ -3017,7 +3017,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bob The Robber 5 The Temple Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bob_the_robber_5_the_temple_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/bob_the_robber_5_the_temple_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/98667/file/w180h135_webp-498e9e885608e635a397af0523ceef06.webp",
     "source": "y8"
   },
   {
@@ -3026,7 +3026,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ball Hero Adventure Red Bounce Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_hero_adventure_red_bounce_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_hero_adventure_red_bounce_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/55585/file/w180h135_webp-ddc6698f104858437cd0026a8bdb2df5.webp",
     "source": "y8"
   },
   {
@@ -3035,7 +3035,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bamboo Panda free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bamboo_panda_",
-    "thumb": "https://cdn2.y8.com/cloudimage/bamboo_panda_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89881/file/w180h135_webp-760a9c7aec35a6f6ecabb730d9042afc.webp",
     "source": "y8"
   },
   {
@@ -3044,7 +3044,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dinosaur Bone Digging free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaur_bone_digging",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaur_bone_digging/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51153/file/w180h135_webp-b9539e856f451844526e3572f26860f9.webp",
     "source": "y8"
   },
   {
@@ -3053,7 +3053,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Agent Hunt Hitman Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/agent_hunt_hitman_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/agent_hunt_hitman_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31869/file/w180h135_webp-91e25340b7494b734df15889d520ed01.webp",
     "source": "y8"
   },
   {
@@ -3062,7 +3062,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Angry Rex Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_rex_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_rex_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30729/file/w180h135_webp-6f6a3a395515cf5a7b4e70d19883d52c.webp",
     "source": "y8"
   },
   {
@@ -3071,7 +3071,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Deep Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deep_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/deep_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50989/file/w180h135_webp-41150400bba0bdf6ea2197c432e8fc04.webp",
     "source": "y8"
   },
   {
@@ -3080,7 +3080,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play 2 Minutes To Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_minutes_to_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_minutes_to_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76373/file/w180h135_webp-672bccd24afab61c48d21c5860930a14.webp",
     "source": "y8"
   },
   {
@@ -3089,7 +3089,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bmo Play Along With Me free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bmo_play_along_with_me",
-    "thumb": "https://cdn2.y8.com/cloudimage/bmo_play_along_with_me/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89129/file/w180h135_webp-8b2950173642a523a0ecb1742dcee97b.webp",
     "source": "y8"
   },
   {
@@ -3098,7 +3098,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Crowscare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crowscare",
-    "thumb": "https://cdn2.y8.com/cloudimage/crowscare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35141/file/w180h135_webp-ca4ecd67409442d9c330eec081349899.webp",
     "source": "y8"
   },
   {
@@ -3107,7 +3107,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Nick Bounty Mini Mystery A Case Of The Crabs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_nick_bounty_mini_mystery_a_case_of_the_crabs_",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_nick_bounty_mini_mystery_a_case_of_the_crabs_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143739/file/w180h135_webp-e8f2cc2e4431b0363bf48f6a35aaebc8.webp",
     "source": "y8"
   },
   {
@@ -3116,7 +3116,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cross Strike free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cross_strike",
-    "thumb": "https://cdn2.y8.com/cloudimage/cross_strike/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36847/file/w180h135_webp-b8034bd9cf55843ca5aebd49f73d5fdc.webp",
     "source": "y8"
   },
   {
@@ -3125,7 +3125,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Assault Part 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/assault_part_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/assault_part_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342453/file/w180h135_webp-5f175e1da8587d1964c1622201156887.webp",
     "source": "y8"
   },
   {
@@ -3134,7 +3134,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bloom In The Dark free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloom_in_the_dark",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloom_in_the_dark/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383559/file/w180h135_webp-5da359d2a03f4a322a641a8159357c5d.webp",
     "source": "y8"
   },
   {
@@ -3143,7 +3143,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dumb Ways To Die 2 The Games free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dumb_ways_to_die_2_the_games",
-    "thumb": "https://cdn2.y8.com/cloudimage/dumb_ways_to_die_2_the_games/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/221003/file/w180h135_webp-43870d1187b6fc7df003437a746a05d1.webp",
     "source": "y8"
   },
   {
@@ -3152,7 +3152,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Drop Guys Knockout Tournament free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drop_guys_knockout_tournament",
-    "thumb": "https://cdn2.y8.com/cloudimage/drop_guys_knockout_tournament/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/240985/file/w180h135_webp-82d566b7cd09638975c49e4905dab88f.webp",
     "source": "y8"
   },
   {
@@ -3161,7 +3161,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Babaylan Horde Of The Aswang free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/babaylan_horde_of_the_aswang",
-    "thumb": "https://cdn2.y8.com/cloudimage/babaylan_horde_of_the_aswang/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407775/file/w180h135_webp-65d444b70653686e6ae1b4cc4f81c011.webp",
     "source": "y8"
   },
   {
@@ -3170,7 +3170,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ball And Girlfriend free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_and_girlfriend",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_and_girlfriend/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3573/file/w180h135_webp-c77a920a022389eaf794acbbdac7c27b.webp",
     "source": "y8"
   },
   {
@@ -3179,7 +3179,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dungeon Of Dark Shadows free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dungeon_of_dark_shadows",
-    "thumb": "https://cdn2.y8.com/cloudimage/dungeon_of_dark_shadows/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13253/file/w180h135_webp-486654f69517282ecf7b62226b7874e3.webp",
     "source": "y8"
   },
   {
@@ -3188,7 +3188,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Effing Worms free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/effing_worms",
-    "thumb": "https://cdn2.y8.com/cloudimage/effing_worms/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/113865/file/w180h135_webp-0bf270d21fbee44bb24a4f118f6e5ff2.webp",
     "source": "y8"
   },
   {
@@ -3197,7 +3197,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dynamons World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38273/file/w180h135_webp-212c54d8838cbff47ad510b9ffd76a85.webp",
     "source": "y8"
   },
   {
@@ -3206,7 +3206,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Darkmaster And Lightmaiden free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/darkmaster_and_lightmaiden",
-    "thumb": "https://cdn2.y8.com/cloudimage/darkmaster_and_lightmaiden/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73857/file/w180h135_webp-742f4d4a2585f26eafed25ddf2317569.webp",
     "source": "y8"
   },
   {
@@ -3215,7 +3215,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Alone Again free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alone_again",
-    "thumb": "https://cdn2.y8.com/cloudimage/alone_again/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2933/file/w180h135_webp-405aceafc1b69ab1ab04ab9f116631f5.webp",
     "source": "y8"
   },
   {
@@ -3224,7 +3224,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Duo Survival 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/duo_survival_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/duo_survival_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14105/file/w180h135_webp-2fee96822eaa8f0767363a29da40b901.webp",
     "source": "y8"
   },
   {
@@ -3233,7 +3233,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Diseviled 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diseviled_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/diseviled_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406595/file/w180h135_webp-533b27447c9f356267aeb6b10d6550e0.webp",
     "source": "y8"
   },
   {
@@ -3242,7 +3242,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dome Romantik free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dome_romantik",
-    "thumb": "https://cdn2.y8.com/cloudimage/dome_romantik/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21989/file/w180h135_webp-7159982d01e0d1ce8e8423f30b52b71a.webp",
     "source": "y8"
   },
   {
@@ -3251,7 +3251,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adventure Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adventure_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/adventure_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82679/file/w180h135_webp-3d3e050a4c14d382062097c95cab01dc.webp",
     "source": "y8"
   },
   {
@@ -3260,7 +3260,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Blox Fruits free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blox_fruits",
-    "thumb": "https://cdn2.y8.com/cloudimage/blox_fruits/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390319/file/w180h135_webp-273608e7a30766ebe545d9ee3fa56241.webp",
     "source": "y8"
   },
   {
@@ -3269,7 +3269,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dexomon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dexomon",
-    "thumb": "https://cdn2.y8.com/cloudimage/dexomon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75823/file/w180h135_webp-fcc8608dd78523057472b6208e69b5ec.webp",
     "source": "y8"
   },
   {
@@ -3278,7 +3278,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Boj Giggly Park Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boj_giggly_park_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/boj_giggly_park_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40409/file/w180h135_webp-89cb23a2885d2433f682178840ecf21d.webp",
     "source": "y8"
   },
   {
@@ -3287,7 +3287,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Banana Duck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/banana_duck",
-    "thumb": "https://cdn2.y8.com/cloudimage/banana_duck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19183/file/w180h135_webp-195d92073b9d123584407a6298373a89.webp",
     "source": "y8"
   },
   {
@@ -3296,7 +3296,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/105095/file/w180h135_webp-eb4436bdbaeb1ca695d32306020e7284.webp",
     "source": "y8"
   },
   {
@@ -3305,7 +3305,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Chipollino Another Story free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chipollino_another_story",
-    "thumb": "https://cdn2.y8.com/cloudimage/chipollino_another_story/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42905/file/w180h135_webp-e73092e4f733a848b0efaccbf8a705b4.webp",
     "source": "y8"
   },
   {
@@ -3314,7 +3314,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baffatron free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baffatron",
-    "thumb": "https://cdn2.y8.com/cloudimage/baffatron/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386055/file/w180h135_webp-2d4e0f34aba7f9a384379cda5429d757.webp",
     "source": "y8"
   },
   {
@@ -3323,7 +3323,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Craftmine free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/craftmine",
-    "thumb": "https://cdn2.y8.com/cloudimage/craftmine/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/46569/file/w180h135_webp-df2bbde8e59e3764a73538e17959b4d2.webp",
     "source": "y8"
   },
   {
@@ -3332,7 +3332,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Abysma free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/abysma",
-    "thumb": "https://cdn2.y8.com/cloudimage/abysma/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17851/file/w180h135_webp-07bd57ac4ca5ac8ff584ab6334b4650a.webp",
     "source": "y8"
   },
   {
@@ -3341,7 +3341,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Red Boat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_red_boat",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_red_boat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3807/file/w180h135_webp-074663e874f0d687fc358b3e82596bd0.webp",
     "source": "y8"
   },
   {
@@ -3350,7 +3350,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Arthisio The Vanishing Point free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arthisio_the_vanishing_point",
-    "thumb": "https://cdn2.y8.com/cloudimage/arthisio_the_vanishing_point/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1349/file/w180h135_webp-1c1cda74581e8c103bbb053b5de065c0.webp",
     "source": "y8"
   },
   {
@@ -3359,7 +3359,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Acend free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/acend",
-    "thumb": "https://cdn2.y8.com/cloudimage/acend/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24855/file/w180h135_webp-644c244df91a3a55b23f96c9e1ec0ab2.webp",
     "source": "y8"
   },
   {
@@ -3368,7 +3368,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baldi In The Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baldi_in_the_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/baldi_in_the_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390831/file/w180h135_webp-ed113221227ea3d5e5d48502678352f4.webp",
     "source": "y8"
   },
   {
@@ -3377,7 +3377,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Blightborne free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blightborne",
-    "thumb": "https://cdn2.y8.com/cloudimage/blightborne/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/67935/file/w180h135_webp-e215ac2d41bd856bc8f79c97075bd875.webp",
     "source": "y8"
   },
   {
@@ -3403,7 +3403,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bomb Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bomb_rush_",
-    "thumb": "https://cdn2.y8.com/cloudimage/bomb_rush_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/87585/file/w180h135_webp-2db3337f1d324c8c3da7bf3f5a562ac2.webp",
     "source": "y8"
   },
   {
@@ -3412,7 +3412,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Husk At Dusk free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_husk_at_dusk",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_husk_at_dusk/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35365/file/w180h135_webp-efb3e22601188436e39176cb96769cf4.webp",
     "source": "y8"
   },
   {
@@ -3421,7 +3421,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Archer S Bounty free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_s_bounty",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_s_bounty/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28127/file/w180h135_webp-e699cfa724dc2280646fb29a78350c79.webp",
     "source": "y8"
   },
   {
@@ -3430,7 +3430,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bob The Robber 4 Season 2 Russia free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bob_the_robber_4_season_2_russia",
-    "thumb": "https://cdn2.y8.com/cloudimage/bob_the_robber_4_season_2_russia/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/97837/file/w180h135_webp-72dbc287aa5df3781584cd25edb58538.webp",
     "source": "y8"
   },
   {
@@ -3439,7 +3439,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Derive free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/derive",
-    "thumb": "https://cdn2.y8.com/cloudimage/derive/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78657/file/w180h135_webp-a766a9c08533b7af31e3af8aaca216f4.webp",
     "source": "y8"
   },
   {
@@ -3448,7 +3448,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cube Island 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cube_island_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/cube_island_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9679/file/w180h135_webp-01cc1abfa152502240bb74935f66490f.webp",
     "source": "y8"
   },
   {
@@ -3457,7 +3457,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Castle Craft free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_craft",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_craft/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26385/file/w180h135_webp-89f95f73d5c69868cc7423307c7548c7.webp",
     "source": "y8"
   },
   {
@@ -3466,7 +3466,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dynamons 12 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_12",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_12/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342703/file/w180h135_webp-4e2bc8caa7e998fd5172bc7c9e8b4da6.webp",
     "source": "y8"
   },
   {
@@ -3475,7 +3475,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dungeon Of Dalogus free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dungeon_of_dalogus",
-    "thumb": "https://cdn2.y8.com/cloudimage/dungeon_of_dalogus/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/62319/file/w180h135_webp-e3e3c765fe7cc9a61b549c6d44550e03.webp",
     "source": "y8"
   },
   {
@@ -3484,7 +3484,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ascent free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ascent_",
-    "thumb": "https://cdn2.y8.com/cloudimage/ascent_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31931/file/w180h135_webp-36a5efa1b0ee05a52c574ea418366d39.webp",
     "source": "y8"
   },
   {
@@ -3493,7 +3493,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Candy Kingdom Skyblock Parkour free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_kingdom_skyblock_parkour",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_kingdom_skyblock_parkour/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15991/file/w180h135_webp-02576c94752b85c28125f46c912aca7d.webp",
     "source": "y8"
   },
   {
@@ -3502,7 +3502,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve 8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_8",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90725/file/w180h135_webp-86cb6ab66d65273aa5c10e84e54e5a4b.webp",
     "source": "y8"
   },
   {
@@ -3511,7 +3511,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Clicker Knights Vs Dragons free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clicker_knights_vs_dragons",
-    "thumb": "https://cdn2.y8.com/cloudimage/clicker_knights_vs_dragons/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27897/file/w180h135_webp-cca310192a1ef34237c6eca5aa775e8b.webp",
     "source": "y8"
   },
   {
@@ -3520,7 +3520,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dysfunctional free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dysfunctional",
-    "thumb": "https://cdn2.y8.com/cloudimage/dysfunctional/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82987/file/w180h135_webp-a59fa13f4cfa720f7a376d2f4c30eda1.webp",
     "source": "y8"
   },
   {
@@ -3529,7 +3529,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Colorless Ruins free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/colorless_ruins",
-    "thumb": "https://cdn2.y8.com/cloudimage/colorless_ruins/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/70391/file/w180h135_webp-1d5a12a300bd486fbcd248e3770c6327.webp",
     "source": "y8"
   },
   {
@@ -3538,7 +3538,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Big Ice Tower Tiny Square free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_ice_tower_tiny_square",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_ice_tower_tiny_square/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35233/file/w180h135_webp-0c5268d2f5d20a1a1dfa52d5271e75f3.webp",
     "source": "y8"
   },
   {
@@ -3547,7 +3547,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cave Buster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cave_buster",
-    "thumb": "https://cdn2.y8.com/cloudimage/cave_buster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25859/file/w180h135_webp-e8dba671c292769e5b4cc8d2837cc2ac.webp",
     "source": "y8"
   },
   {
@@ -3565,7 +3565,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Animalcraft Friends 2 Player free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animalcraft_friends_2_player",
-    "thumb": "https://cdn2.y8.com/cloudimage/animalcraft_friends_2_player/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18649/file/w180h135_webp-a43572097ae05de0bb7e56b8e5ae1ddc.webp",
     "source": "y8"
   },
   {
@@ -3574,7 +3574,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play A Tower In The Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_tower_in_the_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_tower_in_the_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35827/file/w180h135_webp-1acd35ce388599df103118be618d597c.webp",
     "source": "y8"
   },
   {
@@ -3583,7 +3583,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Drac Franc Dungeon Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drac_franc_dungeon_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/drac_franc_dungeon_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7279/file/w180h135_webp-76ad847a7c203427fcd06ac5bcee8ae6.webp",
     "source": "y8"
   },
   {
@@ -3592,7 +3592,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bunnicula The Cursed Diamond free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunnicula_the_cursed_diamond",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunnicula_the_cursed_diamond/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/53633/file/w180h135_webp-b443574344d47ee6212759ffa8ace5de.webp",
     "source": "y8"
   },
   {
@@ -3601,7 +3601,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dying Rogue free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dying_rogue",
-    "thumb": "https://cdn2.y8.com/cloudimage/dying_rogue/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/81011/file/w180h135_webp-99a8e38598b5a41b6891fb1e6814304d.webp",
     "source": "y8"
   },
   {
@@ -3610,7 +3610,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Close Quarter Combat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/close_quarter_combat",
-    "thumb": "https://cdn2.y8.com/cloudimage/close_quarter_combat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/150223/file/w180h135_webp-ff331e1014af147d83f2c706e4e212d1.webp",
     "source": "y8"
   },
   {
@@ -3619,7 +3619,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Cops Evade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cops_evade",
-    "thumb": "https://cdn2.y8.com/cloudimage/cops_evade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23205/file/w180h135_webp-53a7a27eaa8f45cae5681190e33d27ff.webp",
     "source": "y8"
   },
   {
@@ -3628,7 +3628,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dark Assassin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_assassin",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_assassin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19567/file/w180h135_webp-d746075718352c25f199d1c475616453.webp",
     "source": "y8"
   },
   {
@@ -3637,7 +3637,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Adam And Eve Go Xmas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adam_and_eve_go_xmas",
-    "thumb": "https://cdn2.y8.com/cloudimage/adam_and_eve_go_xmas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92047/file/w180h135_webp-2bc50b158e52d00c0be6bb993e458e67.webp",
     "source": "y8"
   },
   {
@@ -3646,7 +3646,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Chasm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chasm",
-    "thumb": "https://cdn2.y8.com/cloudimage/chasm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383531/file/w180h135_webp-08a77d286f76c1be71b9682c4052be5c.webp",
     "source": "y8"
   },
   {
@@ -3655,7 +3655,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Alone Ii free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alone_ii_",
-    "thumb": "https://cdn2.y8.com/cloudimage/alone_ii_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15011/file/w180h135_webp-215ee416c702e7e607b29b3bf9949dd1.webp",
     "source": "y8"
   },
   {
@@ -3664,7 +3664,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Ben 10 Drone Destruction free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ben_10_drone_destruction",
-    "thumb": "https://cdn2.y8.com/cloudimage/ben_10_drone_destruction/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35225/file/w180h135_webp-d640400f9837a9715a510bbcfd5b5019.webp",
     "source": "y8"
   },
   {
@@ -3673,7 +3673,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Bodyparts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bodyparts",
-    "thumb": "https://cdn2.y8.com/cloudimage/bodyparts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22165/file/w180h135_webp-88650604dd4dc826acc8831f6ebf15b0.webp",
     "source": "y8"
   },
   {
@@ -3682,7 +3682,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baby Baby Baby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_baby_baby",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_baby_baby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189013/file/w180h135_webp-9e11d1dcdd4d69168ffe00288c4aabea.webp",
     "source": "y8"
   },
   {
@@ -3736,7 +3736,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Diseviled free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diseviled",
-    "thumb": "https://cdn2.y8.com/cloudimage/diseviled/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408925/file/w180h135_webp-d72f42085c6fc8addbce6fe435f73448.webp",
     "source": "y8"
   },
   {
@@ -3754,7 +3754,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dog Rescue free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dog_rescue",
-    "thumb": "https://cdn2.y8.com/cloudimage/dog_rescue/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24101/file/w180h135_webp-90f1074eb3664cbe7254a4dbb4ff04e7.webp",
     "source": "y8"
   },
   {
@@ -3871,7 +3871,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dust A Post Apocalyptic Role Playing Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dust_a_post_apocalyptic_role_playing_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/dust_a_post_apocalyptic_role_playing_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77443/file/w180h135_webp-ff12f9bf0d8f17f8b03a986c91160693.webp",
     "source": "y8"
   },
   {
@@ -3970,7 +3970,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dragon World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38253/file/w180h135_webp-e0fad15e3d81673dd58226c52dd37a14.webp",
     "source": "y8"
   },
   {
@@ -3997,7 +3997,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dynamons 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynamons_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynamons_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36701/file/w180h135_webp-a79ddf9fc3d5b7733d06ec292d5d06ab.webp",
     "source": "y8"
   },
   {
@@ -4006,7 +4006,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dreamgate free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dreamgate",
-    "thumb": "https://cdn2.y8.com/cloudimage/dreamgate/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50559/file/w180h135_webp-95cc885c47bb2ac9cc00e479da5ff6fd.webp",
     "source": "y8"
   },
   {
@@ -4042,7 +4042,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Dungeon Deck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dungeon_deck",
-    "thumb": "https://cdn2.y8.com/cloudimage/dungeon_deck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21651/file/w180h135_webp-068d2662fc19a70e2ad23bac4b6ac9ba.webp",
     "source": "y8"
   },
   {
@@ -4069,7 +4069,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Baby The Great free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_the_great",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_the_great/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28175/file/w180h135_webp-417f511da4e213c3a398899f19fac903.webp",
     "source": "y8"
   },
   {
@@ -4105,7 +4105,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Clash Of Orcs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clash_of_orcs",
-    "thumb": "https://cdn2.y8.com/cloudimage/clash_of_orcs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68179/file/w180h135_webp-c2db23bc3043116e99d31e62ac2a3026.webp",
     "source": "y8"
   },
   {
@@ -4132,7 +4132,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Archer Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_hero_",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_hero_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7887/file/w180h135_webp-f5519babb32b1c0e07cd7fc3231e878f.webp",
     "source": "y8"
   },
   {
@@ -4141,7 +4141,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Akumanor Escape Dx free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/akumanor_escape_dx",
-    "thumb": "https://cdn2.y8.com/cloudimage/akumanor_escape_dx/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38645/file/w180h135_webp-01f2b963cbfd116000468a6fcefb9383.webp",
     "source": "y8"
   },
   {
@@ -4168,7 +4168,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Colored Downhill free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/colored_downhill",
-    "thumb": "https://cdn2.y8.com/cloudimage/colored_downhill/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/93295/file/w180h135_webp-682ac24774b4e826daeb1af7542ae659.webp",
     "source": "y8"
   },
   {
@@ -4204,7 +4204,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Craig Of The Creek Recycle Squad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/craig_of_the_creek_recycle_squad",
-    "thumb": "https://cdn2.y8.com/cloudimage/craig_of_the_creek_recycle_squad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25713/file/w180h135_webp-945c0705e48f3d494f37cecfb0da6d73.webp",
     "source": "y8"
   },
   {
@@ -4276,7 +4276,7 @@ const GAMES = [
     "category": "Adventure",
     "description": "Play Battle Of Heroes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_of_heroes_webgl",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_of_heroes_webgl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3083/file/w180h135_webp-7340128272729ed0bb6803530e4a5a24.webp",
     "source": "y8"
   },
   {
@@ -4569,7 +4569,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play 2 For 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_for_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_for_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386755/file/w180h135_webp-f8623ceb329ef7f09d95057cf9901351.webp",
     "source": "y8"
   },
   {
@@ -4578,7 +4578,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play 4 In A Row Cats free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4_in_a_row_cats",
-    "thumb": "https://cdn2.y8.com/cloudimage/4_in_a_row_cats/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392155/file/w180h135_webp-3c3cb28d7e1c1efb22a0014e08a0e993.webp",
     "source": "y8"
   },
   {
@@ -4587,7 +4587,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play 4x4 Legends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4x4_legends",
-    "thumb": "https://cdn2.y8.com/cloudimage/4x4_legends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385663/file/w180h135_webp-3e6d0a1729cabe1d2501fc586a551b81.webp",
     "source": "y8"
   },
   {
@@ -4596,7 +4596,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play 5 Fruit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/5_fruit",
-    "thumb": "https://cdn2.y8.com/cloudimage/5_fruit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388063/file/w180h135_webp-6bcd1a077f74f973be00fddc4c188222.webp",
     "source": "y8"
   },
   {
@@ -4605,7 +4605,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play A Lovely Easter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_lovely_easter",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_lovely_easter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/57937/file/w180h135_webp-578043eb1f6fb48d175592d0d94025c9.webp",
     "source": "y8"
   },
   {
@@ -4614,7 +4614,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play A Night To Remember free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_night_to_remember",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_night_to_remember/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388635/file/w180h135_webp-79e0fd45ed9f4097578bada7595e7204.webp",
     "source": "y8"
   },
   {
@@ -4623,7 +4623,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Abandoned City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/abandoned_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/abandoned_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389483/file/w180h135_webp-d4434e2b5fc2c0ee5bbc06af9048b52b.webp",
     "source": "y8"
   },
   {
@@ -4632,7 +4632,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Ahoy Pirates Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ahoy_pirates_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/ahoy_pirates_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393469/file/w180h135_webp-df0160c09c0d3481f887bf4f6b0b975a.webp",
     "source": "y8"
   },
   {
@@ -4641,7 +4641,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Air Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405495/file/w180h135_webp-98f093f899f6ba16f9d8b12193bd6b4a.webp",
     "source": "y8"
   },
   {
@@ -4650,7 +4650,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Airport Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airport_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/airport_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384449/file/w180h135_webp-5140d918ec8937901947f1464dd95540.webp",
     "source": "y8"
   },
   {
@@ -4659,7 +4659,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Alien Aggression free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_aggression",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_aggression/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392627/file/w180h135_webp-92117b1fc4e281f257fc7a2bcc33dffe.webp",
     "source": "y8"
   },
   {
@@ -4668,7 +4668,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Alien Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388057/file/w180h135_webp-9f98c275abf66b1f4f3ca844edcef170.webp",
     "source": "y8"
   },
   {
@@ -4677,7 +4677,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Aliens Enemy Aggression free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aliens_enemy_aggression",
-    "thumb": "https://cdn2.y8.com/cloudimage/aliens_enemy_aggression/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389441/file/w180h135_webp-f6271f54d659d369a234e369b91b5b36.webp",
     "source": "y8"
   },
   {
@@ -4686,7 +4686,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Amazing Cube Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_cube_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_cube_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389773/file/w180h135_webp-be18cc1821ede63b3d2d2b61e3b68c56.webp",
     "source": "y8"
   },
   {
@@ -4695,7 +4695,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Amazing Tattoo Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_tattoo_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_tattoo_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/58651/file/w180h135_webp-dad6a360e82c9977c02b53fbb5da7a69.webp",
     "source": "y8"
   },
   {
@@ -4704,7 +4704,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Angry Cat Shot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_cat_shot",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_cat_shot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387495/file/w180h135_webp-6fffd4550a2038003c91d49612021932.webp",
     "source": "y8"
   },
   {
@@ -4713,7 +4713,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Angry Farmer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_farmer",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_farmer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388979/file/w180h135_webp-f30c18e6da82c9646fef92ac52eb1119.webp",
     "source": "y8"
   },
   {
@@ -4722,7 +4722,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Apollo Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apollo_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/apollo_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389371/file/w180h135_webp-bb0892bef4b414c775aadd26f4163052.webp",
     "source": "y8"
   },
   {
@@ -4731,7 +4731,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Archer Duel Shadow Fight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_duel_shadow_fight",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_duel_shadow_fight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7383/file/w180h135_webp-7dd22b83a9238a7bff7d0c1bbd6268fe.webp",
     "source": "y8"
   },
   {
@@ -4740,7 +4740,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Arena Of Screaming free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arena_of_screaming",
-    "thumb": "https://cdn2.y8.com/cloudimage/arena_of_screaming/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392109/file/w180h135_webp-2ffd99e137fc35a9ce0b3e39173f7031.webp",
     "source": "y8"
   },
   {
@@ -4749,7 +4749,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Astronaut Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/astronaut_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/astronaut_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392169/file/w180h135_webp-7606fac643480e740dda8aceeb4991a4.webp",
     "source": "y8"
   },
   {
@@ -4758,7 +4758,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Atv Beach free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_beach",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_beach/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389123/file/w180h135_webp-61a70ef161ce1b8723a43223438f427d.webp",
     "source": "y8"
   },
   {
@@ -4767,7 +4767,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Atv Beach 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_beach_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_beach_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405011/file/w180h135_webp-e2640e108c8429e3a5230b31d3e8cc49.webp",
     "source": "y8"
   },
   {
@@ -4776,7 +4776,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Atv Junkyard 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_junkyard_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_junkyard_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389139/file/w180h135_webp-85c17549e70ed0ff53754187c83a6612.webp",
     "source": "y8"
   },
   {
@@ -4785,7 +4785,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Aurelias Foot Injuring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aurelias_foot_injuring",
-    "thumb": "https://cdn2.y8.com/cloudimage/aurelias_foot_injuring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407959/file/w180h135_webp-d9902d5848f57d502c2af1073126bfeb.webp",
     "source": "y8"
   },
   {
@@ -4794,7 +4794,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Avoid The Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avoid_the_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/avoid_the_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388083/file/w180h135_webp-187fdf694aa00681db8da38053ed0a00.webp",
     "source": "y8"
   },
   {
@@ -4803,7 +4803,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Baby Dinosaur Park free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_dinosaur_park",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_dinosaur_park/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/54315/file/w180h135_webp-7c980ae6e9e0daa9b548e0e4978edbcf.webp",
     "source": "y8"
   },
   {
@@ -4812,7 +4812,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Baby Mother S Surprise free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_mother_s_surprise",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_mother_s_surprise/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407993/file/w180h135_webp-25bac7010842dbefba7be2c9c20712c5.webp",
     "source": "y8"
   },
   {
@@ -4821,7 +4821,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Baby Olie 1st Day At School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_olie_1st_day_at_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_olie_1st_day_at_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/72205/file/w180h135_webp-c0cd34970148f998aa8b108a2c0fef49.webp",
     "source": "y8"
   },
   {
@@ -4830,7 +4830,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Baby Olie Camp With Mom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_olie_camp_with_mom",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_olie_camp_with_mom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77701/file/w180h135_webp-9f4a942b76f75114ddbd5e09f3790ff5.webp",
     "source": "y8"
   },
   {
@@ -4839,7 +4839,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bachelor Vs Cupidon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bachelor_vs_cupidon",
-    "thumb": "https://cdn2.y8.com/cloudimage/bachelor_vs_cupidon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387703/file/w180h135_webp-8475421f28fff6146fb07fc397f801d1.webp",
     "source": "y8"
   },
   {
@@ -4848,7 +4848,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Ball 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386657/file/w180h135_webp-f1b7567e9ec3143e8d7af1c8ac61610d.webp",
     "source": "y8"
   },
   {
@@ -4874,7 +4874,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Ball Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387157/file/w180h135_webp-5c5ede2fd02853506571626631f789e4.webp",
     "source": "y8"
   },
   {
@@ -4900,7 +4900,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Balloon Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/balloon_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/balloon_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388229/file/w180h135_webp-59656a15d7f8f4a2baee1f7d3a022933.webp",
     "source": "y8"
   },
   {
@@ -4909,7 +4909,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Balloon Paradise free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/balloon_paradise",
-    "thumb": "https://cdn2.y8.com/cloudimage/balloon_paradise/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393645/file/w180h135_webp-5cb983cdc941bdec92964f50258851b8.webp",
     "source": "y8"
   },
   {
@@ -4918,7 +4918,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Balloon Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/balloon_pop_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/balloon_pop_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390403/file/w180h135_webp-4f73a9431bac6668d9f5dde562d29c11.webp",
     "source": "y8"
   },
   {
@@ -4927,7 +4927,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bartender Perfect Mix free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bartender_perfect_mix",
-    "thumb": "https://cdn2.y8.com/cloudimage/bartender_perfect_mix/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383579/file/w180h135_webp-71945474e6431e7acb2c62483dcab26c.webp",
     "source": "y8"
   },
   {
@@ -4936,7 +4936,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bartender The Celeb Mix free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bartender_the_celeb_mix",
-    "thumb": "https://cdn2.y8.com/cloudimage/bartender_the_celeb_mix/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403789/file/w180h135_webp-a155e99987520e87a3717d07966477d8.webp",
     "source": "y8"
   },
   {
@@ -4945,7 +4945,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bartender The Wedding free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bartender_the_wedding",
-    "thumb": "https://cdn2.y8.com/cloudimage/bartender_the_wedding/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406617/file/w180h135_webp-3555b33027c474afae21da77447f9489.webp",
     "source": "y8"
   },
   {
@@ -4954,7 +4954,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Basher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basher",
-    "thumb": "https://cdn2.y8.com/cloudimage/basher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392867/file/w180h135_webp-df4f1ae998618693723939bb1a5750e7.webp",
     "source": "y8"
   },
   {
@@ -4963,7 +4963,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Basket Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_ball_",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_ball_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388095/file/w180h135_webp-10efe3454f2a4b107efad8b777f3db25.webp",
     "source": "y8"
   },
   {
@@ -4972,7 +4972,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Basket Training free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_training",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_training/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388079/file/w180h135_webp-4255787540afc944383a03fa4126cd29.webp",
     "source": "y8"
   },
   {
@@ -4981,7 +4981,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle Castle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_castle",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_castle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389259/file/w180h135_webp-e43c88adffd1e0ec8f6d1e8aaf7d007c.webp",
     "source": "y8"
   },
   {
@@ -4990,7 +4990,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle Factory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_factory",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_factory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389157/file/w180h135_webp-0416b1b38e1bbaa9ea16041b29ed0d62.webp",
     "source": "y8"
   },
   {
@@ -4999,7 +4999,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle In Wasteland free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_in_wasteland",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_in_wasteland/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389255/file/w180h135_webp-8bbbb79ad3530288e0f5bc0fc801904d.webp",
     "source": "y8"
   },
   {
@@ -5008,7 +5008,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle Robot Samurai Age free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_robot_samurai_age",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_robot_samurai_age/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383647/file/w180h135_webp-73ed8ecc7f1eb389a52f4c9607e3e26f.webp",
     "source": "y8"
   },
   {
@@ -5017,7 +5017,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle Robot T-Rex Age free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_robot_t-rex_age",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_robot_t-rex_age/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383817/file/w180h135_webp-2a43a234adcf06d6eb20e1a7893dd00c.webp",
     "source": "y8"
   },
   {
@@ -5026,7 +5026,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battle Robot Wolf Age free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_robot_wolf_age",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_robot_wolf_age/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405021/file/w180h135_webp-997f3900f0a863bee719b9fad50a6622.webp",
     "source": "y8"
   },
   {
@@ -5044,7 +5044,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Battles Of Sorogh free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battles_of_sorogh",
-    "thumb": "https://cdn2.y8.com/cloudimage/battles_of_sorogh/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388327/file/w180h135_webp-3105ba4dd897067cf501548aed748122.webp",
     "source": "y8"
   },
   {
@@ -5053,7 +5053,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Beer Pushing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beer_pushing",
-    "thumb": "https://cdn2.y8.com/cloudimage/beer_pushing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390699/file/w180h135_webp-d0e3453981f092e4bc5e324c33ee8a22.webp",
     "source": "y8"
   },
   {
@@ -5062,7 +5062,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bento Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bento_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/bento_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75297/file/w180h135_webp-3f9a4dec5b88ccb1fdf47be1947444b6.webp",
     "source": "y8"
   },
   {
@@ -5071,7 +5071,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Berry Picking Weekend Farmer Fun free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/berry_picking_weekend_farmer_fun",
-    "thumb": "https://cdn2.y8.com/cloudimage/berry_picking_weekend_farmer_fun/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/39209/file/w180h135_webp-0a93ae35ea5267371c7eedaaddf9ec31.webp",
     "source": "y8"
   },
   {
@@ -5080,7 +5080,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff Blonde Rivals free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_blonde_rivals",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_blonde_rivals/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386085/file/w180h135_webp-5cfeb06cb57a86724af83a1137308c5f.webp",
     "source": "y8"
   },
   {
@@ -5089,7 +5089,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff Goes Camping free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_goes_camping",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_goes_camping/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75231/file/w180h135_webp-518afee8d6014bb7f92d64aebdc1baa9.webp",
     "source": "y8"
   },
   {
@@ -5098,7 +5098,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff Homecoming free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_homecoming",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_homecoming/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79985/file/w180h135_webp-f792bdbc170c479f7062c35af75c73d1.webp",
     "source": "y8"
   },
   {
@@ -5107,7 +5107,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff Rival Blind Date free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_rival_blind_date",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_rival_blind_date/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35915/file/w180h135_webp-65018bd2b9d3f0d5e0ea8b59864bde7b.webp",
     "source": "y8"
   },
   {
@@ -5116,7 +5116,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff School Competition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_school_competition",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_school_competition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77711/file/w180h135_webp-ad69357b1309f0c1cf6e4b9be46f408c.webp",
     "source": "y8"
   },
   {
@@ -5125,7 +5125,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bff Surprise Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_surprise_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_surprise_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75221/file/w180h135_webp-b21cf77dd61e9816af4b5c539c99dc73.webp",
     "source": "y8"
   },
   {
@@ -5134,7 +5134,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Biggest Gum free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/biggest_gum",
-    "thumb": "https://cdn2.y8.com/cloudimage/biggest_gum/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387597/file/w180h135_webp-d81f065497707cf93681ab1bb79c34e0.webp",
     "source": "y8"
   },
   {
@@ -5143,7 +5143,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Blackforest Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blackforest_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/blackforest_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71481/file/w180h135_webp-cd58b1fdb3fcb0107a9cd732dfdde7cc.webp",
     "source": "y8"
   },
   {
@@ -5169,7 +5169,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Blonde Ashley Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blonde_ashley_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/blonde_ashley_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406611/file/w180h135_webp-865159a74b103134720cf720baa08fbd.webp",
     "source": "y8"
   },
   {
@@ -5178,7 +5178,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Blonde Ashley Mask Design free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blonde_ashley_mask_design",
-    "thumb": "https://cdn2.y8.com/cloudimage/blonde_ashley_mask_design/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407443/file/w180h135_webp-7f24aeb9d993d705098995526c5db0ad.webp",
     "source": "y8"
   },
   {
@@ -5187,7 +5187,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Blood And Meat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blood_and_meat",
-    "thumb": "https://cdn2.y8.com/cloudimage/blood_and_meat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393113/file/w180h135_webp-c08bc98d5b4d3994a60cddfcc6f46387.webp",
     "source": "y8"
   },
   {
@@ -5196,7 +5196,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Blood Sewage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blood_sewage",
-    "thumb": "https://cdn2.y8.com/cloudimage/blood_sewage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389491/file/w180h135_webp-38aaee7698cbb4c70f8fdb27eb51f019.webp",
     "source": "y8"
   },
   {
@@ -5205,7 +5205,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bone Slasher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bone_slasher",
-    "thumb": "https://cdn2.y8.com/cloudimage/bone_slasher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393461/file/w180h135_webp-da35310d526516fcba34cfcf0b56c2e2.webp",
     "source": "y8"
   },
   {
@@ -5214,7 +5214,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bottle Flip free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bottle_flip",
-    "thumb": "https://cdn2.y8.com/cloudimage/bottle_flip/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102521/file/w180h135_webp-df139a13921e94622c83642be434c2a8.webp",
     "source": "y8"
   },
   {
@@ -5223,7 +5223,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bounce Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bounce_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/bounce_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102311/file/w180h135_webp-ab24bd4e389cb8065d729a1f377fc296.webp",
     "source": "y8"
   },
   {
@@ -5232,7 +5232,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bouncing Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bouncing_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/bouncing_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388351/file/w180h135_webp-aa6f371ccd077a17a72fee0402ba1151.webp",
     "source": "y8"
   },
   {
@@ -5241,7 +5241,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Box Tower free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/box_tower",
-    "thumb": "https://cdn2.y8.com/cloudimage/box_tower/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405945/file/w180h135_webp-5539054fb7159bce117e6817d6504779.webp",
     "source": "y8"
   },
   {
@@ -5250,7 +5250,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Boxkid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxkid",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxkid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389071/file/w180h135_webp-edca0f7aaa5168cfac31f9e8f6262d9f.webp",
     "source": "y8"
   },
   {
@@ -5259,7 +5259,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Boxlife Enhanced free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxlife_enhanced",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxlife_enhanced/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388741/file/w180h135_webp-f6837674637d7e3c2198499961daa847.webp",
     "source": "y8"
   },
   {
@@ -5268,7 +5268,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Brawl Bash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brawl_bash",
-    "thumb": "https://cdn2.y8.com/cloudimage/brawl_bash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389059/file/w180h135_webp-7df83c00b14b5795aa72e73a87abd1a3.webp",
     "source": "y8"
   },
   {
@@ -5277,7 +5277,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Breakfast For Mom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/breakfast_for_mom",
-    "thumb": "https://cdn2.y8.com/cloudimage/breakfast_for_mom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/100115/file/w180h135_webp-d3e8691afaf13687e04f02650fbefd15.webp",
     "source": "y8"
   },
   {
@@ -5286,7 +5286,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Breakfast Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/breakfast_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/breakfast_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391247/file/w180h135_webp-21c84975aa84b1e38a4fcdc6482a6b33.webp",
     "source": "y8"
   },
   {
@@ -5295,7 +5295,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Burning Wheels Backyard free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burning_wheels_backyard",
-    "thumb": "https://cdn2.y8.com/cloudimage/burning_wheels_backyard/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405943/file/w180h135_webp-2305e52bd6e5946300b09904e3866608.webp",
     "source": "y8"
   },
   {
@@ -5304,7 +5304,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Downhill Rush 2 Power Stroke free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/downhill_rush_2_power_stroke",
-    "thumb": "https://cdn2.y8.com/cloudimage/downhill_rush_2_power_stroke/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343253/file/w180h135_webp-defdd7fe4e37d0f1300957436066acc5.webp",
     "source": "y8"
   },
   {
@@ -5313,7 +5313,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Derby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_derby",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_derby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389003/file/w180h135_webp-c88b04e2c8753361f2ce1460aa923025.webp",
     "source": "y8"
   },
   {
@@ -5322,7 +5322,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Devrim Driving Challenges free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devrim_driving_challenges",
-    "thumb": "https://cdn2.y8.com/cloudimage/devrim_driving_challenges/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389147/file/w180h135_webp-29cec0bc613deb10800f931129c7a2c9.webp",
     "source": "y8"
   },
   {
@@ -5331,7 +5331,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play F1 Super Prix free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/f1_super_prix",
-    "thumb": "https://cdn2.y8.com/cloudimage/f1_super_prix/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343045/file/w180h135_webp-edbe29c567ec4088457abac0a49ef6e2.webp",
     "source": "y8"
   },
   {
@@ -5340,7 +5340,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Burning Wheels Kitchen Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burning_wheels_kitchen_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/burning_wheels_kitchen_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383509/file/w180h135_webp-9789d5360de04e587e54fc11624026eb.webp",
     "source": "y8"
   },
   {
@@ -5349,7 +5349,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play City Cop Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_cop_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_cop_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386317/file/w180h135_webp-07c52f1cab540e142f1e42e0a411fbd5.webp",
     "source": "y8"
   },
   {
@@ -5358,7 +5358,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Commando Strike Force free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/commando_strike_force",
-    "thumb": "https://cdn2.y8.com/cloudimage/commando_strike_force/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343247/file/w180h135_webp-b689c02200677b0d9b8214e9948ed8bb.webp",
     "source": "y8"
   },
   {
@@ -5367,7 +5367,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Counter Force Conflict free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/counter_force_conflict",
-    "thumb": "https://cdn2.y8.com/cloudimage/counter_force_conflict/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403811/file/w180h135_webp-e3a97787fcbffad75c2fbd94af6cca2d.webp",
     "source": "y8"
   },
   {
@@ -5376,7 +5376,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Butcher Aggression free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/butcher_aggression",
-    "thumb": "https://cdn2.y8.com/cloudimage/butcher_aggression/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385109/file/w180h135_webp-2b7f73ba2c4e01c891a728bf31e76625.webp",
     "source": "y8"
   },
   {
@@ -5385,7 +5385,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Devastator Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devastator_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/devastator_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389057/file/w180h135_webp-ef75394d257904a9a03c7187708a51be.webp",
     "source": "y8"
   },
   {
@@ -5394,7 +5394,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dino Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383363/file/w180h135_webp-c5925865e30c967355af3cd268325a63.webp",
     "source": "y8"
   },
   {
@@ -5403,7 +5403,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play City Of Fear free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_of_fear",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_of_fear/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389373/file/w180h135_webp-0ac24e9e0467b7c2341adc7c014983ce.webp",
     "source": "y8"
   },
   {
@@ -5412,7 +5412,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cliff Diving free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cliff_diving",
-    "thumb": "https://cdn2.y8.com/cloudimage/cliff_diving/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343129/file/w180h135_webp-d62482fd9f6b0008a3a3cf033648b5ff.webp",
     "source": "y8"
   },
   {
@@ -5421,7 +5421,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dd Dunk Line free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_dunk_line",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_dunk_line/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387337/file/w180h135_webp-96506ea51f99cffbb59d7e6c999f7fe6.webp",
     "source": "y8"
   },
   {
@@ -5430,7 +5430,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cpl Tournament free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cpl_tournament",
-    "thumb": "https://cdn2.y8.com/cloudimage/cpl_tournament/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386889/file/w180h135_webp-90859932fa5204db30d133a128ae9c4c.webp",
     "source": "y8"
   },
   {
@@ -5439,7 +5439,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Kitty Pregnant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_kitty_pregnant",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_kitty_pregnant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407587/file/w180h135_webp-24215fa521fbf7ac699d43c7310a35d6.webp",
     "source": "y8"
   },
   {
@@ -5448,7 +5448,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Lips Plastic Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_lips_plastic_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_lips_plastic_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407635/file/w180h135_webp-6e1a6e67c5fde1b7e881ae78b8ecf25c.webp",
     "source": "y8"
   },
   {
@@ -5457,7 +5457,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Puppy Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_puppy_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_puppy_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33883/file/w180h135_webp-e3d0eb7d19c357c51e2572a32e46b12f.webp",
     "source": "y8"
   },
   {
@@ -5466,7 +5466,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Churros Ice Cream free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/churros_ice_cream",
-    "thumb": "https://cdn2.y8.com/cloudimage/churros_ice_cream/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408087/file/w180h135_webp-aedf64cf4073d2d1c5372a461029395d.webp",
     "source": "y8"
   },
   {
@@ -5475,7 +5475,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Burger Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_burger_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_burger_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406933/file/w180h135_webp-f1fdcc0e794bdd1b3d8eff7696d7ea17.webp",
     "source": "y8"
   },
   {
@@ -5484,7 +5484,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dream House Designer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dream_house_designer",
-    "thumb": "https://cdn2.y8.com/cloudimage/dream_house_designer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407941/file/w180h135_webp-3a8aaf2cd295eed8066694f87ae8013b.webp",
     "source": "y8"
   },
   {
@@ -5493,7 +5493,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Cake Baker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_cake_baker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_cake_baker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408089/file/w180h135_webp-64ab100ca4f5ebf0cf93d3db91e52339.webp",
     "source": "y8"
   },
   {
@@ -5502,7 +5502,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Decor Bathroom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_bathroom",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_bathroom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6483/file/w180h135_webp-45cd9c03cd125c706b181d8398c29e61.webp",
     "source": "y8"
   },
   {
@@ -5511,7 +5511,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Decor Bedroom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_bedroom",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_bedroom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3811/file/w180h135_webp-99d5d3c6c949faa71a4bc11b40b803f2.webp",
     "source": "y8"
   },
   {
@@ -5520,7 +5520,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Pasta Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pasta_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pasta_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76035/file/w180h135_webp-4ec59395b09e23b7a2398b865cb20d55.webp",
     "source": "y8"
   },
   {
@@ -5529,7 +5529,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Teddy Slacking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_teddy_slacking",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_teddy_slacking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389605/file/w180h135_webp-81d65de49cb8a0b869fa3376bb7a2701.webp",
     "source": "y8"
   },
   {
@@ -5538,7 +5538,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dd Slices free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_slices",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_slices/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403843/file/w180h135_webp-c3556ce47605f2fb1de99b791dc09624.webp",
     "source": "y8"
   },
   {
@@ -5547,7 +5547,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Can I Eat It free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/can_i_eat_it",
-    "thumb": "https://cdn2.y8.com/cloudimage/can_i_eat_it/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389625/file/w180h135_webp-4423d361925b64b2f89bd9ede2f8ad7a.webp",
     "source": "y8"
   },
   {
@@ -5556,7 +5556,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dragon Evolution free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_evolution",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_evolution/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66019/file/w180h135_webp-7c3ef957f0f8022efeeab51ddbd89dde.webp",
     "source": "y8"
   },
   {
@@ -5565,7 +5565,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Diseviled 3 Stolen Kingdom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diseviled_3_stolen_kingdom",
-    "thumb": "https://cdn2.y8.com/cloudimage/diseviled_3_stolen_kingdom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406267/file/w180h135_webp-b5911509fb7b49a1dab399a59ef03843.webp",
     "source": "y8"
   },
   {
@@ -5574,7 +5574,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Caveman Adventures free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/caveman_adventures",
-    "thumb": "https://cdn2.y8.com/cloudimage/caveman_adventures/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389301/file/w180h135_webp-f9ae58e932ad1815bb217cf48b61912c.webp",
     "source": "y8"
   },
   {
@@ -5583,7 +5583,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crevice Animal free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crevice_animal",
-    "thumb": "https://cdn2.y8.com/cloudimage/crevice_animal/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388449/file/w180h135_webp-cf6d92c8558c285064d5b10ab7e1bed8.webp",
     "source": "y8"
   },
   {
@@ -5592,7 +5592,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Ezender Keeper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ezender_keeper",
-    "thumb": "https://cdn2.y8.com/cloudimage/ezender_keeper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391553/file/w180h135_webp-7f9d722a35ee423a308d1b502269dc9a.webp",
     "source": "y8"
   },
   {
@@ -5601,7 +5601,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Runner free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_runner",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_runner/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392921/file/w180h135_webp-c9e0974020037f1a20ca1bff54197be9.webp",
     "source": "y8"
   },
   {
@@ -5610,7 +5610,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cake Design free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_design",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_design/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391271/file/w180h135_webp-50feacb1a86e146f9c03eacf1f1dbc7a.webp",
     "source": "y8"
   },
   {
@@ -5619,7 +5619,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Epic Robo Fight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/epic_robo_fight",
-    "thumb": "https://cdn2.y8.com/cloudimage/epic_robo_fight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386031/file/w180h135_webp-89de418d321fceaabbf87c494800e73d.webp",
     "source": "y8"
   },
   {
@@ -5628,7 +5628,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cyber Champions Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_champions_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_champions_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343075/file/w180h135_webp-93c3401553f3f16e3d689699291ba2da.webp",
     "source": "y8"
   },
   {
@@ -5637,7 +5637,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Drunken Archers Duel free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drunken_archers_duel",
-    "thumb": "https://cdn2.y8.com/cloudimage/drunken_archers_duel/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342729/file/w180h135_webp-e2be15d4448b646a166bd929e6fbf0bf.webp",
     "source": "y8"
   },
   {
@@ -5646,7 +5646,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cyber City Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_city_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_city_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386635/file/w180h135_webp-dac9f89c839760329059a7212301f331.webp",
     "source": "y8"
   },
   {
@@ -5655,7 +5655,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cyber Cat Assembly free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_cat_assembly",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_cat_assembly/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403947/file/w180h135_webp-5e9e85c28fb219f846c3f1cdaede6766.webp",
     "source": "y8"
   },
   {
@@ -5664,7 +5664,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Spin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_spin",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_spin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384377/file/w180h135_webp-07cd93401062e11fb7cc9f63c44cbac8.webp",
     "source": "y8"
   },
   {
@@ -5673,7 +5673,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dd Happy Glass free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_happy_glass",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_happy_glass/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403841/file/w180h135_webp-8d92184aeed0a2732d03f8aff4510f87.webp",
     "source": "y8"
   },
   {
@@ -5699,7 +5699,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Fidget Spinner Revolution free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fidget_spinner_revolution",
-    "thumb": "https://cdn2.y8.com/cloudimage/fidget_spinner_revolution/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405399/file/w180h135_webp-1874a5b00184fdb2ae3b0ea368f6d8be.webp",
     "source": "y8"
   },
   {
@@ -5708,7 +5708,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Canvas Friends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/canvas_friends",
-    "thumb": "https://cdn2.y8.com/cloudimage/canvas_friends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405097/file/w180h135_webp-2eb9cc21688d6e8618090fcf99a1c9b5.webp",
     "source": "y8"
   },
   {
@@ -5717,7 +5717,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Fat Boy Dream free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fat_boy_dream",
-    "thumb": "https://cdn2.y8.com/cloudimage/fat_boy_dream/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393651/file/w180h135_webp-f261a9a9ed0a67a291167a0e1fa958f1.webp",
     "source": "y8"
   },
   {
@@ -5726,7 +5726,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Choose Gravity free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/choose_gravity",
-    "thumb": "https://cdn2.y8.com/cloudimage/choose_gravity/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393847/file/w180h135_webp-03178c582f104781f9c51402dbcde447.webp",
     "source": "y8"
   },
   {
@@ -5735,7 +5735,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dangerous Turn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dangerous_turn",
-    "thumb": "https://cdn2.y8.com/cloudimage/dangerous_turn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387027/file/w180h135_webp-4cde679203f9e114da66ec522e4c6c20.webp",
     "source": "y8"
   },
   {
@@ -5744,7 +5744,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Fat Shark free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fat_shark",
-    "thumb": "https://cdn2.y8.com/cloudimage/fat_shark/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383227/file/w180h135_webp-f8fc591740b493bdcfdf7d0a227d45a0.webp",
     "source": "y8"
   },
   {
@@ -5753,7 +5753,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Er Firefighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_firefighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_firefighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69219/file/w180h135_webp-1945c11272c8fb0a9440feb5a1633cfd.webp",
     "source": "y8"
   },
   {
@@ -5762,7 +5762,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Caveman Hunt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/caveman_hunt",
-    "thumb": "https://cdn2.y8.com/cloudimage/caveman_hunt/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392865/file/w180h135_webp-22d1e031716289257f8ffd53782768d2.webp",
     "source": "y8"
   },
   {
@@ -5771,7 +5771,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Combat Penguin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/combat_penguin",
-    "thumb": "https://cdn2.y8.com/cloudimage/combat_penguin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387795/file/w180h135_webp-e519a675ea78a5586f4a87161e7006d9.webp",
     "source": "y8"
   },
   {
@@ -5797,7 +5797,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cube Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cube_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/cube_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390405/file/w180h135_webp-e39f68664c8d6b06c2ee71d38e683f4e.webp",
     "source": "y8"
   },
   {
@@ -5806,7 +5806,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Draw In free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_in",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_in/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387341/file/w180h135_webp-c24089bf01e9313a876ff80d8f05a608.webp",
     "source": "y8"
   },
   {
@@ -5815,7 +5815,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Chef Felicias Rainbow Cake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chef_felicias_rainbow_cake",
-    "thumb": "https://cdn2.y8.com/cloudimage/chef_felicias_rainbow_cake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1469/file/w180h135_webp-59cb66df7b3c9855cb06409217f9562f.webp",
     "source": "y8"
   },
   {
@@ -5824,7 +5824,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Faster Or Slower free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/faster_or_slower",
-    "thumb": "https://cdn2.y8.com/cloudimage/faster_or_slower/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388043/file/w180h135_webp-ea9ec804c4c8cba92bdeb9f24daf854a.webp",
     "source": "y8"
   },
   {
@@ -5833,7 +5833,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute House Chores free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_house_chores",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_house_chores/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76005/file/w180h135_webp-bd842418830b583cc750e7c1501d179a.webp",
     "source": "y8"
   },
   {
@@ -5842,7 +5842,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Decor Slingbag free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_slingbag",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_slingbag/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5169/file/w180h135_webp-c9084950dfd71eff68a4459ddfe3c822.webp",
     "source": "y8"
   },
   {
@@ -5868,7 +5868,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Broken Horn 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/broken_horn_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/broken_horn_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388477/file/w180h135_webp-af006612b5e7331dfe76503d7bc0a6f6.webp",
     "source": "y8"
   },
   {
@@ -5877,7 +5877,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Brutal Battleground free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brutal_battleground",
-    "thumb": "https://cdn2.y8.com/cloudimage/brutal_battleground/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392469/file/w180h135_webp-899c5ab6dafa7b67986ac9f053f5dfd8.webp",
     "source": "y8"
   },
   {
@@ -5886,7 +5886,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Build Your Snowman free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/build_your_snowman",
-    "thumb": "https://cdn2.y8.com/cloudimage/build_your_snowman/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/101227/file/w180h135_webp-3dcff8a94f4846469067cdd9ad8f64ba.webp",
     "source": "y8"
   },
   {
@@ -5895,7 +5895,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bunker Of Monsters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunker_of_monsters",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunker_of_monsters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391587/file/w180h135_webp-43766a2a232debe6878425854289d0d8.webp",
     "source": "y8"
   },
   {
@@ -5904,7 +5904,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Bunny Adventures 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunny_adventures_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunny_adventures_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389129/file/w180h135_webp-ce25153961c5adf0b688befeb7477bee.webp",
     "source": "y8"
   },
   {
@@ -5913,7 +5913,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Burger Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_rush_",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_rush_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68253/file/w180h135_webp-725ef06f0287fb62b4f56b4ca1f1ff9c.webp",
     "source": "y8"
   },
   {
@@ -5922,7 +5922,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Burning Wheels Showdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burning_wheels_showdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/burning_wheels_showdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383829/file/w180h135_webp-1416026611c9c8bf4e3e6ffd133370e2.webp",
     "source": "y8"
   },
   {
@@ -5931,7 +5931,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Candy Color free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_color_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_color_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387599/file/w180h135_webp-d50630a94169e9d5ebe3076569e7584e.webp",
     "source": "y8"
   },
   {
@@ -5940,7 +5940,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Candy Monster Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_monster_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_monster_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386649/file/w180h135_webp-1b6430dee3032c389ab79e2e3048892a.webp",
     "source": "y8"
   },
   {
@@ -5949,7 +5949,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Candy Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388445/file/w180h135_webp-c43f24262fc2a0ffdf3dc13454d4aa09.webp",
     "source": "y8"
   },
   {
@@ -5958,7 +5958,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Candy Super Lines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_super_lines",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_super_lines/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393549/file/w180h135_webp-05040ce6d7616d62bed4fb3711ad8c90.webp",
     "source": "y8"
   },
   {
@@ -5967,7 +5967,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Candy Train free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_train",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_train/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386895/file/w180h135_webp-b90f8a4c36b969758c4e82e5df1a04c6.webp",
     "source": "y8"
   },
   {
@@ -5976,7 +5976,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Captured City 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/captured_city_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/captured_city_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389507/file/w180h135_webp-bdbee8c9c0cd7983c86f979cfee14d7f.webp",
     "source": "y8"
   },
   {
@@ -5985,7 +5985,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Castle Of Monsters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_of_monsters",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_of_monsters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388609/file/w180h135_webp-b061ffe469968c2bce61e684a7775f3c.webp",
     "source": "y8"
   },
   {
@@ -5994,7 +5994,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cat And Ghosts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_and_ghosts",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_and_ghosts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388227/file/w180h135_webp-3add012e45c6dd673e51892fcec6d865.webp",
     "source": "y8"
   },
   {
@@ -6003,7 +6003,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cat Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393465/file/w180h135_webp-cfcd51d85509ce5dcfe76df5951cf10f.webp",
     "source": "y8"
   },
   {
@@ -6012,7 +6012,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cat Vs Dog free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_vs_dog",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_vs_dog/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390677/file/w180h135_webp-bd5f6b019c8790c83e9b011a3f22d1cd.webp",
     "source": "y8"
   },
   {
@@ -6021,7 +6021,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Catch The Ball 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catch_the_ball_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/catch_the_ball_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406039/file/w180h135_webp-5c1be79147b729f15649dcc917e5d0ae.webp",
     "source": "y8"
   },
   {
@@ -6030,7 +6030,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cave Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cave_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/cave_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387161/file/w180h135_webp-6a8313360133034b7a4a2bbe4469e22f.webp",
     "source": "y8"
   },
   {
@@ -6039,7 +6039,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cheesy Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cheesy_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/cheesy_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392507/file/w180h135_webp-e67ec8ad4fbdda170bba5370f17b58c5.webp",
     "source": "y8"
   },
   {
@@ -6048,7 +6048,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Chef Camilla S Delicious Rainbow Donut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chef_camilla_s_delicious_rainbow_donut",
-    "thumb": "https://cdn2.y8.com/cloudimage/chef_camilla_s_delicious_rainbow_donut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407943/file/w180h135_webp-dd963f84b0ce920b4902ddbf99edd88d.webp",
     "source": "y8"
   },
   {
@@ -6057,7 +6057,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Chocolate Mousse Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chocolate_mousse_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/chocolate_mousse_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71507/file/w180h135_webp-40148db54769662bf55cf422df8ca069.webp",
     "source": "y8"
   },
   {
@@ -6066,7 +6066,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Choppin Frenzy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/choppin_frenzy",
-    "thumb": "https://cdn2.y8.com/cloudimage/choppin_frenzy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36533/file/w180h135_webp-66effe55a56bfc111e4cd217a9339aa1.webp",
     "source": "y8"
   },
   {
@@ -6075,7 +6075,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Churros Ice Cream 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/churros_ice_cream_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/churros_ice_cream_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33591/file/w180h135_webp-554c62bb1958989946d95000f63b786b.webp",
     "source": "y8"
   },
   {
@@ -6084,7 +6084,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Circle Flip free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/circle_flip",
-    "thumb": "https://cdn2.y8.com/cloudimage/circle_flip/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393513/file/w180h135_webp-e03eccfb8adebae3bc5136a6bc568978.webp",
     "source": "y8"
   },
   {
@@ -6110,7 +6110,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play City Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386911/file/w180h135_webp-ea92f99f2afd9c5c09f54f6c643ad7f0.webp",
     "source": "y8"
   },
   {
@@ -6119,7 +6119,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cleaning Girl Rpg free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cleaning_girl_rpg",
-    "thumb": "https://cdn2.y8.com/cloudimage/cleaning_girl_rpg/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389593/file/w180h135_webp-444fa8f96c520ad1914d0e736703764a.webp",
     "source": "y8"
   },
   {
@@ -6128,7 +6128,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Clever Frog free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clever_frog",
-    "thumb": "https://cdn2.y8.com/cloudimage/clever_frog/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392387/file/w180h135_webp-ed28c7896e3e22312d702add32eb6039.webp",
     "source": "y8"
   },
   {
@@ -6137,7 +6137,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play College Of Monsters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/college_of_monsters",
-    "thumb": "https://cdn2.y8.com/cloudimage/college_of_monsters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392551/file/w180h135_webp-4924ba8ef98c2471e8a1b3313acad7df.webp",
     "source": "y8"
   },
   {
@@ -6146,7 +6146,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Collrun free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/collrun",
-    "thumb": "https://cdn2.y8.com/cloudimage/collrun/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393471/file/w180h135_webp-af0ed613c8dedf84f10c61b6b1b81299.webp",
     "source": "y8"
   },
   {
@@ -6155,7 +6155,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Colon Colectomy Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/colon_colectomy_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/colon_colectomy_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50299/file/w180h135_webp-382c6940e23c8add6f5d794fc48e8ca3.webp",
     "source": "y8"
   },
   {
@@ -6164,7 +6164,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Circle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_circle",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_circle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392677/file/w180h135_webp-eae7ef62143b0f1e4b3540b4e435f3b0.webp",
     "source": "y8"
   },
   {
@@ -6173,7 +6173,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Cube Flip free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_cube_flip",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_cube_flip/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392609/file/w180h135_webp-2272581b4575166621e7e07ea9545f2f.webp",
     "source": "y8"
   },
   {
@@ -6199,7 +6199,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Lines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_lines",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_lines/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386721/file/w180h135_webp-c9096b2f1e609e2b7dd585b17714e504.webp",
     "source": "y8"
   },
   {
@@ -6208,7 +6208,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406801/file/w180h135_webp-2f10aa2a6d02bb65288a9120e0238174.webp",
     "source": "y8"
   },
   {
@@ -6234,7 +6234,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Color Tower free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_tower",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_tower/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392801/file/w180h135_webp-afad72c166a8657b49596b62706bac17.webp",
     "source": "y8"
   },
   {
@@ -6243,7 +6243,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Coloring Book Animals free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_book_animals",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_book_animals/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406883/file/w180h135_webp-eef8ae8c39e8ed979b50b104ddc8a61f.webp",
     "source": "y8"
   },
   {
@@ -6252,7 +6252,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Combat Zone free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/combat_zone",
-    "thumb": "https://cdn2.y8.com/cloudimage/combat_zone/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389551/file/w180h135_webp-9f20a5aac65b2814ababcf2e4c2cf627.webp",
     "source": "y8"
   },
   {
@@ -6261,7 +6261,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cooking With Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_with_pop",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_with_pop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86511/file/w180h135_webp-dd7cd72d45cd6ba850867170cbdb24a2.webp",
     "source": "y8"
   },
   {
@@ -6270,7 +6270,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cool Boys Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cool_boys_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/cool_boys_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407947/file/w180h135_webp-535effda126fa7599ece08061ab12b62.webp",
     "source": "y8"
   },
   {
@@ -6279,7 +6279,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Corgitective The Missing Ruby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/corgitective_the_missing_ruby",
-    "thumb": "https://cdn2.y8.com/cloudimage/corgitective_the_missing_ruby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389615/file/w180h135_webp-eabfaecf81f68c2d245a5a1eaae8cd75.webp",
     "source": "y8"
   },
   {
@@ -6288,7 +6288,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Counterblow free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/counterblow",
-    "thumb": "https://cdn2.y8.com/cloudimage/counterblow/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391877/file/w180h135_webp-8bc2b26036781f695e17c0317b4f0fe9.webp",
     "source": "y8"
   },
   {
@@ -6297,7 +6297,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Country Girl Style free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/country_girl_style",
-    "thumb": "https://cdn2.y8.com/cloudimage/country_girl_style/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17909/file/w180h135_webp-6a031829f88d7b88ee77d89baca2baaf.webp",
     "source": "y8"
   },
   {
@@ -6306,7 +6306,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cox free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cox",
-    "thumb": "https://cdn2.y8.com/cloudimage/cox/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389261/file/w180h135_webp-2857e6840166011f3d620108175aa2f9.webp",
     "source": "y8"
   },
   {
@@ -6315,7 +6315,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_balls_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_balls_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388495/file/w180h135_webp-ec78f0df8c5b35a7a84f097cac44785e.webp",
     "source": "y8"
   },
   {
@@ -6324,7 +6324,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Freekick free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_freekick",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_freekick/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393685/file/w180h135_webp-c5535263e02f03ed8b6a4cd4075bbf49.webp",
     "source": "y8"
   },
   {
@@ -6333,7 +6333,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388555/file/w180h135_webp-7358fda154a437e0a5e8e5c0bdf2a195.webp",
     "source": "y8"
   },
   {
@@ -6342,7 +6342,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crazy Jump 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_jump_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_jump_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388443/file/w180h135_webp-4839dbbe5c51ff9cfee1756c117ae710.webp",
     "source": "y8"
   },
   {
@@ -6351,7 +6351,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crime Fighter Transformer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crime_fighter_transformer",
-    "thumb": "https://cdn2.y8.com/cloudimage/crime_fighter_transformer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29591/file/w180h135_webp-55af6b28495ddda0c25ca032aa753301.webp",
     "source": "y8"
   },
   {
@@ -6360,7 +6360,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Criminal free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/criminal",
-    "thumb": "https://cdn2.y8.com/cloudimage/criminal/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389247/file/w180h135_webp-c8e8ae7d72fb0af03febfa523796a4af.webp",
     "source": "y8"
   },
   {
@@ -6369,7 +6369,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Crypt Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crypt_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/crypt_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385625/file/w180h135_webp-76d23dd9c7522451b7c819d5d90a6fb1.webp",
     "source": "y8"
   },
   {
@@ -6412,7 +6412,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Baby Tidy Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_baby_tidy_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_baby_tidy_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30649/file/w180h135_webp-a03234f3683c88bafcf11fff58ba5176.webp",
     "source": "y8"
   },
   {
@@ -6421,7 +6421,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Coloring Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_coloring_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_coloring_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86517/file/w180h135_webp-1b5824fdad6d171c6b9c4deb3affcb7e.webp",
     "source": "y8"
   },
   {
@@ -6430,7 +6430,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Ear Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_ear_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_ear_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68235/file/w180h135_webp-da0adb278c107ea6a843a51bd4261ebc.webp",
     "source": "y8"
   },
   {
@@ -6439,7 +6439,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Mouth Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_mouth_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_mouth_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34269/file/w180h135_webp-f9c890e923e51532ae6a0beab9ae8727.webp",
     "source": "y8"
   },
   {
@@ -6448,7 +6448,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Nose Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_nose_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_nose_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/63073/file/w180h135_webp-fd54ff979e617b332f1aff2093c5c9c0.webp",
     "source": "y8"
   },
   {
@@ -6457,7 +6457,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Puppy Dentist free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_puppy_dentist",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_puppy_dentist/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64425/file/w180h135_webp-95a45b9bfbeff46d3a44770af5c43e51.webp",
     "source": "y8"
   },
   {
@@ -6466,7 +6466,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Puppy Pregnant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_puppy_pregnant",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_puppy_pregnant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407607/file/w180h135_webp-0f068b99d0d857b528191d4db2b449c5.webp",
     "source": "y8"
   },
   {
@@ -6475,7 +6475,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Taco Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_taco_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_taco_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79307/file/w180h135_webp-49bd6477594fcb548c166d3538f4eddb.webp",
     "source": "y8"
   },
   {
@@ -6484,7 +6484,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Twin Fall Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_twin_fall_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_twin_fall_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29689/file/w180h135_webp-c3e86d355098ded32be7b7bc34cad6e9.webp",
     "source": "y8"
   },
   {
@@ -6493,7 +6493,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cute Twin Spring Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_twin_spring_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_twin_spring_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21283/file/w180h135_webp-a0edba82794310b9617394f5398f192b.webp",
     "source": "y8"
   },
   {
@@ -6502,7 +6502,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cyber Smilodon Assembling free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_smilodon_assembling",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_smilodon_assembling/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405731/file/w180h135_webp-9674f4f636b67a72b4898983dcfcd7ac.webp",
     "source": "y8"
   },
   {
@@ -6511,7 +6511,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Cyclops Ruins free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyclops_ruins",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyclops_ruins/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392947/file/w180h135_webp-ee1fa81bce96cfdfdef25cf87c5f8a76.webp",
     "source": "y8"
   },
   {
@@ -6520,7 +6520,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dark Days free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_days",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_days/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388473/file/w180h135_webp-f4f9f5bc1c92b18ea9ee124935e77cd4.webp",
     "source": "y8"
   },
   {
@@ -6529,7 +6529,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dark Night free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_night",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_night/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387813/file/w180h135_webp-fc53afe0765318e52d52aaf3393e10c9.webp",
     "source": "y8"
   },
   {
@@ -6538,7 +6538,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dark Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388977/file/w180h135_webp-5b1c2a8b3d69c97ebca0d6dc3bca33c5.webp",
     "source": "y8"
   },
   {
@@ -6547,7 +6547,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dark Times free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_times",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_times/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389565/file/w180h135_webp-1e93c84892a6850c798f7443596ca229.webp",
     "source": "y8"
   },
   {
@@ -6556,7 +6556,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Daytime Creatures free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/daytime_creatures",
-    "thumb": "https://cdn2.y8.com/cloudimage/daytime_creatures/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389299/file/w180h135_webp-98f427a4e3335509c3aca8dd9efe66b3.webp",
     "source": "y8"
   },
   {
@@ -6565,7 +6565,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dd Bounce free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_bounce",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_bounce/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387345/file/w180h135_webp-6df4a3e971e6aa32337f5989ec7cfa58.webp",
     "source": "y8"
   },
   {
@@ -6574,7 +6574,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Decor Streaming free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_streaming",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_streaming/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11683/file/w180h135_webp-55056751734f1cd8ad33f7c1ed2cc468.webp",
     "source": "y8"
   },
   {
@@ -6583,7 +6583,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dentist Doctor Teeth free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dentist_doctor_teeth",
-    "thumb": "https://cdn2.y8.com/cloudimage/dentist_doctor_teeth/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88033/file/w180h135_webp-8e9aab6601f3b5ba879ecfcb62ee9a9c.webp",
     "source": "y8"
   },
   {
@@ -6592,7 +6592,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Desconstruct free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desconstruct",
-    "thumb": "https://cdn2.y8.com/cloudimage/desconstruct/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387139/file/w180h135_webp-7fb28ff0de11b09165842b97670d1545.webp",
     "source": "y8"
   },
   {
@@ -6601,7 +6601,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Desert Claw Rising free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desert_claw_rising",
-    "thumb": "https://cdn2.y8.com/cloudimage/desert_claw_rising/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384391/file/w180h135_webp-40bf8f28c1f4f5bf300a874b65ba673e.webp",
     "source": "y8"
   },
   {
@@ -6610,7 +6610,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Desert Of Evil free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desert_of_evil",
-    "thumb": "https://cdn2.y8.com/cloudimage/desert_of_evil/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389555/file/w180h135_webp-5ed822f38e53e1c09a243b012101d8f1.webp",
     "source": "y8"
   },
   {
@@ -6619,7 +6619,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dino Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393293/file/w180h135_webp-a2aa614c084ceeea52306c93af200b02.webp",
     "source": "y8"
   },
   {
@@ -6628,7 +6628,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dino Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_run_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_run_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393189/file/w180h135_webp-2cf8e060d31bf863343a1c897a30fc86.webp",
     "source": "y8"
   },
   {
@@ -6654,7 +6654,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Don T Drop The White Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/don_t_drop_the_white_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/don_t_drop_the_white_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/103831/file/w180h135_webp-b8657d9dac1ee789d36ba69994139d9e.webp",
     "source": "y8"
   },
   {
@@ -6663,7 +6663,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Don T Drop The White Ball 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/don_t_drop_the_white_ball_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/don_t_drop_the_white_ball_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/103845/file/w180h135_webp-b5bf264cd20f40a4845a1e53db94537a.webp",
     "source": "y8"
   },
   {
@@ -6672,7 +6672,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dots And Lines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dots_and_lines",
-    "thumb": "https://cdn2.y8.com/cloudimage/dots_and_lines/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386371/file/w180h135_webp-c0c64c36c6cbb57fbf6ace275943047f.webp",
     "source": "y8"
   },
   {
@@ -6681,7 +6681,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Downhill Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/downhill_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/downhill_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/381545/file/w180h135_webp-c07b29b644fde255b7ac064ea113e838.webp",
     "source": "y8"
   },
   {
@@ -6690,7 +6690,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dr X free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dr_x",
-    "thumb": "https://cdn2.y8.com/cloudimage/dr_x/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385771/file/w180h135_webp-2b51b4c3ea1b3464644744fbb2438a91.webp",
     "source": "y8"
   },
   {
@@ -6699,7 +6699,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Draw The Path free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_the_path_",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_the_path_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386369/file/w180h135_webp-fdeb780acbdfa5707bfe2f65a7677d83.webp",
     "source": "y8"
   },
   {
@@ -6708,7 +6708,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dread Station free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dread_station",
-    "thumb": "https://cdn2.y8.com/cloudimage/dread_station/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392945/file/w180h135_webp-854e4a4aea7b1b18f8db12faabbdfb2b.webp",
     "source": "y8"
   },
   {
@@ -6717,7 +6717,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dress Designer Studio free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dress_designer_studio",
-    "thumb": "https://cdn2.y8.com/cloudimage/dress_designer_studio/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/105901/file/w180h135_webp-ad79a763eb64a1d36325cb17552e9612.webp",
     "source": "y8"
   },
   {
@@ -6726,7 +6726,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dribble Kings free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dribble_kings",
-    "thumb": "https://cdn2.y8.com/cloudimage/dribble_kings/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390679/file/w180h135_webp-48d415f6f8ba6e050b4e79eb7f73d0bf.webp",
     "source": "y8"
   },
   {
@@ -6735,7 +6735,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Drop Circles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drop_circles",
-    "thumb": "https://cdn2.y8.com/cloudimage/drop_circles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388223/file/w180h135_webp-c42fda2744a451737f2958c000932f90.webp",
     "source": "y8"
   },
   {
@@ -6744,7 +6744,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Dude Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dude_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/dude_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385695/file/w180h135_webp-bbef2763b3d7a6923c1ace637a23451a.webp",
     "source": "y8"
   },
   {
@@ -6753,7 +6753,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Duosometric Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/duosometric_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/duosometric_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387137/file/w180h135_webp-a5f757cf2b6633156cea1c4528a3a07b.webp",
     "source": "y8"
   },
   {
@@ -6762,7 +6762,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Ellie Artist Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ellie_artist_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/ellie_artist_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92239/file/w180h135_webp-e71c2ba7a25f8a758a0dcb51d3aa5ddb.webp",
     "source": "y8"
   },
   {
@@ -6771,7 +6771,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Engineerio free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/engineerio",
-    "thumb": "https://cdn2.y8.com/cloudimage/engineerio/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393309/file/w180h135_webp-bec05587f0a7832077ec8ab696550994.webp",
     "source": "y8"
   },
   {
@@ -6780,7 +6780,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Er Cute Puppy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_cute_puppy",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_cute_puppy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406503/file/w180h135_webp-50d910a8c70e7a37c3f0f64168a1ca82.webp",
     "source": "y8"
   },
   {
@@ -6789,7 +6789,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Evil Money free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/evil_money",
-    "thumb": "https://cdn2.y8.com/cloudimage/evil_money/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392593/file/w180h135_webp-15070bd2839b01b89e3aa13b4b1d66c7.webp",
     "source": "y8"
   },
   {
@@ -6798,7 +6798,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Extreme Moto Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_moto_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_moto_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/381709/file/w180h135_webp-7180bc896a5a451992f6af52a00846d5.webp",
     "source": "y8"
   },
   {
@@ -6807,7 +6807,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Extreme Moto Team free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_moto_team",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_moto_team/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388499/file/w180h135_webp-e2d40d2acf5bb4dd1b6c39ed453a89e0.webp",
     "source": "y8"
   },
   {
@@ -6816,7 +6816,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Extreme Quad Biking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_quad_biking",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_quad_biking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386171/file/w180h135_webp-f5d7ef0213f46f126d91aeebf49064c5.webp",
     "source": "y8"
   },
   {
@@ -6825,7 +6825,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Falling Bottle Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/falling_bottle_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/falling_bottle_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392135/file/w180h135_webp-da02c42b449f038dbe9dd323fe5240e3.webp",
     "source": "y8"
   },
   {
@@ -6834,7 +6834,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Falling Cloud free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/falling_cloud",
-    "thumb": "https://cdn2.y8.com/cloudimage/falling_cloud/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388569/file/w180h135_webp-53cd8ac3a24aff83ede1991ca5b8ee39.webp",
     "source": "y8"
   },
   {
@@ -6843,7 +6843,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Falling Dots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/falling_dots",
-    "thumb": "https://cdn2.y8.com/cloudimage/falling_dots/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393845/file/w180h135_webp-34c7faa028a39a3e8dde9d6c44d71f70.webp",
     "source": "y8"
   },
   {
@@ -6852,7 +6852,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Falling Fruits free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/falling_fruits",
-    "thumb": "https://cdn2.y8.com/cloudimage/falling_fruits/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64635/file/w180h135_webp-ba1c14877056068b73d1b0ac4fb3c991.webp",
     "source": "y8"
   },
   {
@@ -6861,7 +6861,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Falling Ghost free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/falling_ghost",
-    "thumb": "https://cdn2.y8.com/cloudimage/falling_ghost/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389303/file/w180h135_webp-f57ea09ba7b77082953d16c72aa777fb.webp",
     "source": "y8"
   },
   {
@@ -6870,7 +6870,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Family Weekend Outing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/family_weekend_outing",
-    "thumb": "https://cdn2.y8.com/cloudimage/family_weekend_outing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/83767/file/w180h135_webp-13890e1f70113520f0919ccd42edf778.webp",
     "source": "y8"
   },
   {
@@ -6879,7 +6879,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play First Day Of School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/first_day_of_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/first_day_of_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/105907/file/w180h135_webp-44976caf4c3b1e2e1952d768dbe869b1.webp",
     "source": "y8"
   },
   {
@@ -6888,7 +6888,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play First Model Book free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/first_model_book",
-    "thumb": "https://cdn2.y8.com/cloudimage/first_model_book/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/45643/file/w180h135_webp-c0fad0235c0f11da3d77755bc5123553.webp",
     "source": "y8"
   },
   {
@@ -6897,7 +6897,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Fish N Jump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fish_n_jump",
-    "thumb": "https://cdn2.y8.com/cloudimage/fish_n_jump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393647/file/w180h135_webp-2c7390206a33852d705e718ee5120342.webp",
     "source": "y8"
   },
   {
@@ -6906,7 +6906,7 @@ const GAMES = [
     "category": "Arcade",
     "description": "Play Five free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/five",
-    "thumb": "https://cdn2.y8.com/cloudimage/five/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387395/file/w180h135_webp-1f11ea01fafbdb241e50be2262b740d9.webp",
     "source": "y8"
   },
   {
@@ -6949,7 +6949,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Spiders Arena 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spiders_arena_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/spiders_arena_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383513/file/w180h135_webp-aae03fdc8cb122530856d2e657582924.webp",
     "source": "y8"
   },
   {
@@ -6958,7 +6958,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Armored Kitten free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armored_kitten",
-    "thumb": "https://cdn2.y8.com/cloudimage/armored_kitten/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388743/file/w180h135_webp-0a88b6a4e84d52c8462ba2ec9906a279.webp",
     "source": "y8"
   },
   {
@@ -6967,7 +6967,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Skeet Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/skeet_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/skeet_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392613/file/w180h135_webp-3d55475153620bdf654124800d14cd74.webp",
     "source": "y8"
   },
   {
@@ -6976,7 +6976,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Puppy Whisperer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puppy_whisperer",
-    "thumb": "https://cdn2.y8.com/cloudimage/puppy_whisperer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407585/file/w180h135_webp-6124bd855616941d108f5eefa3b7ff37.webp",
     "source": "y8"
   },
   {
@@ -6985,7 +6985,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Grandma Recipe Ramen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/grandma_recipe_ramen",
-    "thumb": "https://cdn2.y8.com/cloudimage/grandma_recipe_ramen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407417/file/w180h135_webp-8b2d6927cbb1510fd392eae9eabf4414.webp",
     "source": "y8"
   },
   {
@@ -6994,7 +6994,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Decor Ipad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_ipad",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_ipad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23805/file/w180h135_webp-58abf7c241c5c6f68658cca4f340e58b.webp",
     "source": "y8"
   },
   {
@@ -7003,7 +7003,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play My Lost Puppy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/my_lost_puppy",
-    "thumb": "https://cdn2.y8.com/cloudimage/my_lost_puppy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391229/file/w180h135_webp-8cefad9cd3050f931b8a4beac9375f66.webp",
     "source": "y8"
   },
   {
@@ -7029,7 +7029,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Choco Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/choco_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/choco_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50195/file/w180h135_webp-4c9a2a904affc44546a63be8bff6e382.webp",
     "source": "y8"
   },
   {
@@ -7038,7 +7038,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Yummy Super Burger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/yummy_super_burger",
-    "thumb": "https://cdn2.y8.com/cloudimage/yummy_super_burger/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27273/file/w180h135_webp-74e3d97cb3ca62d86eaf4782989cd718.webp",
     "source": "y8"
   },
   {
@@ -7047,7 +7047,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Boys Style Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boys_style_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/boys_style_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86505/file/w180h135_webp-ffd4a9aef8269af0c1d0b57771a17be0.webp",
     "source": "y8"
   },
   {
@@ -7056,7 +7056,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Europe Flags free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/europe_flags",
-    "thumb": "https://cdn2.y8.com/cloudimage/europe_flags/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403831/file/w180h135_webp-8de1ad49440238647d02cad09caae81c.webp",
     "source": "y8"
   },
   {
@@ -7099,7 +7099,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Stickman Boost free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stickman_boost",
-    "thumb": "https://cdn2.y8.com/cloudimage/stickman_boost/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383229/file/w180h135_webp-3ed47af0d218585ef60408f7495145bb.webp",
     "source": "y8"
   },
   {
@@ -7108,7 +7108,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Greedy Rabbit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/greedy_rabbit",
-    "thumb": "https://cdn2.y8.com/cloudimage/greedy_rabbit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387981/file/w180h135_webp-710f3e4a4ab97684618e4209a6429ee4.webp",
     "source": "y8"
   },
   {
@@ -7117,7 +7117,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Burger Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384393/file/w180h135_webp-67e850aa82ea8fcbef79e9c9e57f5341.webp",
     "source": "y8"
   },
   {
@@ -7126,7 +7126,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Pizza Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pizza_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/pizza_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65551/file/w180h135_webp-d436c85c4248fd132a2031580d9f207e.webp",
     "source": "y8"
   },
   {
@@ -7135,7 +7135,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Kebab Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kebab_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/kebab_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47297/file/w180h135_webp-acbaaaa36b97bedfcef8741a40890e4a.webp",
     "source": "y8"
   },
   {
@@ -7161,7 +7161,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Brutal Wanderer 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brutal_wanderer_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/brutal_wanderer_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406451/file/w180h135_webp-8548e8401740685526f9681ff9fc3fd8.webp",
     "source": "y8"
   },
   {
@@ -7170,7 +7170,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Pancake Pile-Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pancake_pile-up",
-    "thumb": "https://cdn2.y8.com/cloudimage/pancake_pile-up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385541/file/w180h135_webp-52d0031494d9865914574e45e8371581.webp",
     "source": "y8"
   },
   {
@@ -7196,7 +7196,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Magic World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/magic_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/magic_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387567/file/w180h135_webp-847de3ef04014237c0a2c0d3d8a51244.webp",
     "source": "y8"
   },
   {
@@ -7205,7 +7205,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Stickman Boost 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stickman_boost_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/stickman_boost_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404021/file/w180h135_webp-6b63dc95e28cd4e6270095c115a12723.webp",
     "source": "y8"
   },
   {
@@ -7231,7 +7231,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Puppy House free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puppy_house",
-    "thumb": "https://cdn2.y8.com/cloudimage/puppy_house/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406597/file/w180h135_webp-c03ffc80a0f64d21ad68f582bd980d2b.webp",
     "source": "y8"
   },
   {
@@ -7240,7 +7240,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Boom Burger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boom_burger",
-    "thumb": "https://cdn2.y8.com/cloudimage/boom_burger/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405099/file/w180h135_webp-faf5678c5c5148ec88a05c4b6f37ec74.webp",
     "source": "y8"
   },
   {
@@ -7249,7 +7249,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Air Hostess Kissing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_hostess_kissing_",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_hostess_kissing_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386075/file/w180h135_webp-c67742b1a302bb231d91df45136cb304.webp",
     "source": "y8"
   },
   {
@@ -7258,7 +7258,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Animal Fashion Hair Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_fashion_hair_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_fashion_hair_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79923/file/w180h135_webp-1cd5b772c1d2f03c385a90c460d70d0a.webp",
     "source": "y8"
   },
   {
@@ -7267,7 +7267,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Anigirls Wonderful Clicker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anigirls_wonderful_clicker",
-    "thumb": "https://cdn2.y8.com/cloudimage/anigirls_wonderful_clicker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33759/file/w180h135_webp-25e90903a2c4aa2ac8af240920525f95.webp",
     "source": "y8"
   },
   {
@@ -7276,7 +7276,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Tapocalypse free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tapocalypse",
-    "thumb": "https://cdn2.y8.com/cloudimage/tapocalypse/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389475/file/w180h135_webp-e09b6e41a5cb4896bdfdafb1c0e273c5.webp",
     "source": "y8"
   },
   {
@@ -7285,7 +7285,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Angry Goat Simulator 3d - Mad Goat Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_goat_simulator_3d_-_mad_goat_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_goat_simulator_3d_-_mad_goat_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73737/file/w180h135_webp-521db35b1d134f35861c6e396dea6041.webp",
     "source": "y8"
   },
   {
@@ -7294,7 +7294,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play 2 Player Fnaf Pizza free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_fnaf_pizza",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_fnaf_pizza/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25741/file/w180h135_webp-494b52187e7c1d33e35cfe7c014f1c3f.webp",
     "source": "y8"
   },
   {
@@ -7303,7 +7303,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play 67 Clicker Tap Tap free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/67_clicker_tap_tap",
-    "thumb": "https://cdn2.y8.com/cloudimage/67_clicker_tap_tap/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402013/file/w180h135_webp-9cd8889cf0690fe4797356918aea4a9d.webp",
     "source": "y8"
   },
   {
@@ -7312,7 +7312,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Animals Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34525/file/w180h135_webp-d2345cdca8e020c26265edfcc6943506.webp",
     "source": "y8"
   },
   {
@@ -7383,7 +7383,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Fish World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fish_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/fish_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391849/file/w180h135_webp-e3afa08e87b636687ab99fdf3042d60b.webp",
     "source": "y8"
   },
   {
@@ -7426,7 +7426,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Candy Pig free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_pig",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_pig/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391331/file/w180h135_webp-149f5ff5c8998d06445ebc1073682e80.webp",
     "source": "y8"
   },
   {
@@ -7503,7 +7503,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Er Postman free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_postman",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_postman/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77721/file/w180h135_webp-5f86ed358f2b8be83cf94d05f645fd97.webp",
     "source": "y8"
   },
   {
@@ -7512,7 +7512,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Fluffy Pancake Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fluffy_pancake_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/fluffy_pancake_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50283/file/w180h135_webp-d0e3a3cace6f71fc08fa80b2c125665e.webp",
     "source": "y8"
   },
   {
@@ -7521,7 +7521,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Hacker Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hacker_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/hacker_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387723/file/w180h135_webp-4d41ae0ab40e263039f2e72fbeec38bd.webp",
     "source": "y8"
   },
   {
@@ -7530,7 +7530,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Penalty Y8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/penalty_y8",
-    "thumb": "https://cdn2.y8.com/cloudimage/penalty_y8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387029/file/w180h135_webp-eb691f2a8bf991816bebf2e96bb5027d.webp",
     "source": "y8"
   },
   {
@@ -7539,7 +7539,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Pop It Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pop_it_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/pop_it_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28523/file/w180h135_webp-132947b1818a4c976677e5c4ba336d23.webp",
     "source": "y8"
   },
   {
@@ -7548,7 +7548,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Thief Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/thief_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/thief_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387283/file/w180h135_webp-aeb50de50ae8d538fb15a768ad6e4155.webp",
     "source": "y8"
   },
   {
@@ -7557,7 +7557,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Alias Hyena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alias_hyena",
-    "thumb": "https://cdn2.y8.com/cloudimage/alias_hyena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389125/file/w180h135_webp-a8602cbc873627b02761311786889c34.webp",
     "source": "y8"
   },
   {
@@ -7566,7 +7566,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Australia And Oceania Flags free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/australia_and_oceania_flags",
-    "thumb": "https://cdn2.y8.com/cloudimage/australia_and_oceania_flags/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387159/file/w180h135_webp-3a53d9c0816cc684e66fa3935de005d7.webp",
     "source": "y8"
   },
   {
@@ -7626,7 +7626,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Burger Kitty free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_kitty",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_kitty/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406941/file/w180h135_webp-00c3d7fdaacaa240f18c7952247ec817.webp",
     "source": "y8"
   },
   {
@@ -7635,7 +7635,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Burger Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406137/file/w180h135_webp-d0fa92ed3122cf42c4af02a9169d897d.webp",
     "source": "y8"
   },
   {
@@ -7661,7 +7661,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Chef Chicken Ramen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chef_chicken_ramen",
-    "thumb": "https://cdn2.y8.com/cloudimage/chef_chicken_ramen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82957/file/w180h135_webp-27b87736cc2c9c2d0efc082f5362bb65.webp",
     "source": "y8"
   },
   {
@@ -7670,7 +7670,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Cyber Unicorn Assembly free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_unicorn_assembly",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_unicorn_assembly/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384529/file/w180h135_webp-4316805a07701f2c6644956f3fd38c8d.webp",
     "source": "y8"
   },
   {
@@ -7696,7 +7696,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Decor Cake Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_cake_pop",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_cake_pop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12625/file/w180h135_webp-aa402a5661759c12fd813cf500540690.webp",
     "source": "y8"
   },
   {
@@ -7705,7 +7705,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Decor Funky Milkshake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_funky_milkshake",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_funky_milkshake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15749/file/w180h135_webp-02793ebf0bd99e9ed8a9bc4560f2d9dc.webp",
     "source": "y8"
   },
   {
@@ -7714,7 +7714,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Decor Popsicle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_popsicle",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_popsicle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15211/file/w180h135_webp-dc3c61107c42098817fe2e6c3b6fb835.webp",
     "source": "y8"
   },
   {
@@ -7723,7 +7723,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Deserted Base free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deserted_base",
-    "thumb": "https://cdn2.y8.com/cloudimage/deserted_base/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390003/file/w180h135_webp-0da2c1efb1c3620ed6962062c4867989.webp",
     "source": "y8"
   },
   {
@@ -7817,7 +7817,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Hungry Frog free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hungry_frog",
-    "thumb": "https://cdn2.y8.com/cloudimage/hungry_frog/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393503/file/w180h135_webp-b38f737f2ea96c5c869ecc1838951336.webp",
     "source": "y8"
   },
   {
@@ -7826,7 +7826,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Hungry Spider free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hungry_spider",
-    "thumb": "https://cdn2.y8.com/cloudimage/hungry_spider/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387975/file/w180h135_webp-eca92eda2e58d9c387d4282d704a3a8f.webp",
     "source": "y8"
   },
   {
@@ -7869,7 +7869,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Mad Buggy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mad_buggy",
-    "thumb": "https://cdn2.y8.com/cloudimage/mad_buggy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385863/file/w180h135_webp-81b37e456da52d21cd34112590d822e1.webp",
     "source": "y8"
   },
   {
@@ -7878,7 +7878,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Magic Poly 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/magic_poly_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/magic_poly_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386461/file/w180h135_webp-7a836354aa52679a1b14530ae6c8a343.webp",
     "source": "y8"
   },
   {
@@ -7887,7 +7887,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Mia S Burger Fest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mia_s_burger_fest",
-    "thumb": "https://cdn2.y8.com/cloudimage/mia_s_burger_fest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392025/file/w180h135_webp-f36a42dfe773f643ac0015b170a9b791.webp",
     "source": "y8"
   },
   {
@@ -7947,7 +7947,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Nom Nom Pizza free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/nom_nom_pizza",
-    "thumb": "https://cdn2.y8.com/cloudimage/nom_nom_pizza/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86529/file/w180h135_webp-79879b8bb8bcfd93cdb7c4de011f5950.webp",
     "source": "y8"
   },
   {
@@ -7990,7 +7990,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Santa Or Thief free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/santa_or_thief",
-    "thumb": "https://cdn2.y8.com/cloudimage/santa_or_thief/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388965/file/w180h135_webp-69b0cf6723424141778d87553eb86ec2.webp",
     "source": "y8"
   },
   {
@@ -8033,7 +8033,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Splishy Fish free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/splishy_fish",
-    "thumb": "https://cdn2.y8.com/cloudimage/splishy_fish/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387515/file/w180h135_webp-e42cbf550a15ec63951741844ee5632a.webp",
     "source": "y8"
   },
   {
@@ -8042,7 +8042,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Star Dot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/star_dot",
-    "thumb": "https://cdn2.y8.com/cloudimage/star_dot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386655/file/w180h135_webp-45d7d6033e339f610a202f7403373a0a.webp",
     "source": "y8"
   },
   {
@@ -8068,7 +8068,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Tap 10 Sec free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tap_10_sec",
-    "thumb": "https://cdn2.y8.com/cloudimage/tap_10_sec/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393895/file/w180h135_webp-4de2dd0b617de563b112894842e2fb83.webp",
     "source": "y8"
   },
   {
@@ -8094,7 +8094,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Whack A Mouse free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/whack_a_mouse",
-    "thumb": "https://cdn2.y8.com/cloudimage/whack_a_mouse/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387151/file/w180h135_webp-8960e4dc7a76306baa00f621377e0a37.webp",
     "source": "y8"
   },
   {
@@ -8103,7 +8103,7 @@ const GAMES = [
     "category": "Creative",
     "description": "Play Yummy Super Pizza free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/yummy_super_pizza",
-    "thumb": "https://cdn2.y8.com/cloudimage/yummy_super_pizza/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29431/file/w180h135_webp-a608b27075ea13f64425bd56bea0dd25.webp",
     "source": "y8"
   },
   {
@@ -8112,7 +8112,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Find The Diffs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_find_the_diffs",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_find_the_diffs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13805/file/w180h135_webp-48f32961ce3dfc9714309ac681c98b0b.webp",
     "source": "y8"
   },
   {
@@ -8121,7 +8121,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Beary Spot On free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beary_spot_on",
-    "thumb": "https://cdn2.y8.com/cloudimage/beary_spot_on/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91127/file/w180h135_webp-c25cb2031d2e1e48c24beb37f2275107.webp",
     "source": "y8"
   },
   {
@@ -8130,7 +8130,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Deadlock Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deadlock_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/deadlock_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28629/file/w180h135_webp-9777254f16564876d621d32be68a7abb.webp",
     "source": "y8"
   },
   {
@@ -8139,7 +8139,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animals Word Search free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_word_search",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_word_search/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92911/file/w180h135_webp-1c7c6c79dc85d0606ebb1daec6eaec27.webp",
     "source": "y8"
   },
   {
@@ -8148,7 +8148,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play All For Girls Love Tester free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/all_for_girls_love_tester",
-    "thumb": "https://cdn2.y8.com/cloudimage/all_for_girls_love_tester/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384165/file/w180h135_webp-2e2883baeaa6785360f2d10735c7a06c.webp",
     "source": "y8"
   },
   {
@@ -8157,7 +8157,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Amaze Flags Asia free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amaze_flags_asia",
-    "thumb": "https://cdn2.y8.com/cloudimage/amaze_flags_asia/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5661/file/w180h135_webp-232e534409bf7203a396e459ec2b7085.webp",
     "source": "y8"
   },
   {
@@ -8166,7 +8166,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brain Test Tricky Puzzles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_test_tricky_puzzles",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_test_tricky_puzzles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2147/file/w180h135_webp-c139e50dbeb9153e9444586a0ab9b079.webp",
     "source": "y8"
   },
   {
@@ -8175,7 +8175,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 2048 Wood Edition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_wood_edition",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_wood_edition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91419/file/w180h135_webp-5cc9d482cd9be06cdb28b4d9e118ebb1.webp",
     "source": "y8"
   },
   {
@@ -8184,7 +8184,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Crazy Math free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_math_",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_math_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90557/file/w180h135_webp-fc4f905c15638d091fcf6f937e1cba55.webp",
     "source": "y8"
   },
   {
@@ -8193,7 +8193,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cell To Singularity Evolution free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cell_to_singularity_evolution",
-    "thumb": "https://cdn2.y8.com/cloudimage/cell_to_singularity_evolution/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394097/file/w180h135_webp-689364257c86e4b00aae84a150f65ae7.webp",
     "source": "y8"
   },
   {
@@ -8202,7 +8202,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Abcs Tracer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/abcs_tracer",
-    "thumb": "https://cdn2.y8.com/cloudimage/abcs_tracer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398829/file/w180h135_webp-2181689b45b1db24c803b92b1a5841ce.webp",
     "source": "y8"
   },
   {
@@ -8211,7 +8211,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animals Skin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_skin",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_skin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14803/file/w180h135_webp-cad4566dbcc8f06cd4ede95cff8a18c6.webp",
     "source": "y8"
   },
   {
@@ -8220,7 +8220,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Creative Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creative_coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/creative_coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15127/file/w180h135_webp-732238ee8b5085bdbcf0f980848f5320.webp",
     "source": "y8"
   },
   {
@@ -8229,7 +8229,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Anime Manga Coloring Book free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anime_manga_coloring_book",
-    "thumb": "https://cdn2.y8.com/cloudimage/anime_manga_coloring_book/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22887/file/w180h135_webp-7b9171305b2ea9fead91419d246b8690.webp",
     "source": "y8"
   },
   {
@@ -8238,7 +8238,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Summer Fun free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_summer_fun",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_summer_fun/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/49929/file/w180h135_webp-8bd6dd68ece2ec8e957391f18bcd3247.webp",
     "source": "y8"
   },
   {
@@ -8247,7 +8247,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Countries Of Europe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/countries_of_europe",
-    "thumb": "https://cdn2.y8.com/cloudimage/countries_of_europe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92941/file/w180h135_webp-1a3aa3ad19d96088f4b1e8842c2aa410.webp",
     "source": "y8"
   },
   {
@@ -8256,7 +8256,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bugsbunny Builders Match Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bugsbunny_builders_match_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/bugsbunny_builders_match_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12989/file/w180h135_webp-8b1ffed0bad8faffa6cccdec663ef491.webp",
     "source": "y8"
   },
   {
@@ -8265,7 +8265,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 1 2 3 Pandas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/1_2_3_pandas",
-    "thumb": "https://cdn2.y8.com/cloudimage/1_2_3_pandas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406259/file/w180h135_webp-d12c62ce9d8117ee39961c3d2c1ce37e.webp",
     "source": "y8"
   },
   {
@@ -8274,7 +8274,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Draw Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15721/file/w180h135_webp-73201e6f588c0afc0e37ae448f0190f5.webp",
     "source": "y8"
   },
   {
@@ -8283,7 +8283,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Batwheels Breakdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/batwheels_breakdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/batwheels_breakdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6983/file/w180h135_webp-c70f086b6c972d79c2020868d76ccd0a.webp",
     "source": "y8"
   },
   {
@@ -8292,7 +8292,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cozy Jigsaw Puzzles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cozy_jigsaw_puzzles",
-    "thumb": "https://cdn2.y8.com/cloudimage/cozy_jigsaw_puzzles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401539/file/w180h135_webp-f193a015d65978f6a6868e2f6b8125b7.webp",
     "source": "y8"
   },
   {
@@ -8301,7 +8301,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Amaze Flags Europe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amaze_flags_europe",
-    "thumb": "https://cdn2.y8.com/cloudimage/amaze_flags_europe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26829/file/w180h135_webp-02bf6af93985c0e8da41ef97934a2c60.webp",
     "source": "y8"
   },
   {
@@ -8310,7 +8310,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Candy Match Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_match_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_match_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47185/file/w180h135_webp-7c141cce75960db093b2249ce4402596.webp",
     "source": "y8"
   },
   {
@@ -8319,7 +8319,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dogs Spot The Differences free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dogs_spot_the_differences",
-    "thumb": "https://cdn2.y8.com/cloudimage/dogs_spot_the_differences/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3461/file/w180h135_webp-717b50096cf05ec1550fccbb9c7ca91c.webp",
     "source": "y8"
   },
   {
@@ -8328,7 +8328,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Ball Merge 2048 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_merge_2048",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_merge_2048/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13879/file/w180h135_webp-286b21f9277fe57ebc8ed1c36f1e2430.webp",
     "source": "y8"
   },
   {
@@ -8337,7 +8337,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cake House free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_house",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_house/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/150485/file/w180h135_webp-078531cf1ee09704fd5cb08c462e2217.webp",
     "source": "y8"
   },
   {
@@ -8346,7 +8346,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Children Games free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/children_games",
-    "thumb": "https://cdn2.y8.com/cloudimage/children_games/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71591/file/w180h135_webp-cf1dcc981012590c02f752ee4cb6efc9.webp",
     "source": "y8"
   },
   {
@@ -8355,7 +8355,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Clash Of Trivia free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clash_of_trivia",
-    "thumb": "https://cdn2.y8.com/cloudimage/clash_of_trivia/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24151/file/w180h135_webp-0cfc1d77083e62e0fd6b622f39b42dc4.webp",
     "source": "y8"
   },
   {
@@ -8364,7 +8364,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Skins free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_skins",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_skins/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/83019/file/w180h135_webp-72f9796132ffa60e5fce2fd9912730b9.webp",
     "source": "y8"
   },
   {
@@ -8373,7 +8373,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Detective The Thief free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/detective_the_thief",
-    "thumb": "https://cdn2.y8.com/cloudimage/detective_the_thief/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14201/file/w180h135_webp-17b0a9e20edb4ce5e024caf0a0a30965.webp",
     "source": "y8"
   },
   {
@@ -8382,7 +8382,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bratz Fashion Designer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bratz_fashion_designer",
-    "thumb": "https://cdn2.y8.com/cloudimage/bratz_fashion_designer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148561/file/w180h135_webp-2cd145814ddd1af7e3747d8d3584e256.webp",
     "source": "y8"
   },
   {
@@ -8391,7 +8391,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bts Ducks Coloring Book free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bts_ducks_coloring_book",
-    "thumb": "https://cdn2.y8.com/cloudimage/bts_ducks_coloring_book/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31539/file/w180h135_webp-aa43ee0d1e98fea8720b55ea554bae00.webp",
     "source": "y8"
   },
   {
@@ -8400,7 +8400,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brainstorming 2d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brainstorming_2d",
-    "thumb": "https://cdn2.y8.com/cloudimage/brainstorming_2d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7049/file/w180h135_webp-094bc1f9d973286c8d320d86ed5e046f.webp",
     "source": "y8"
   },
   {
@@ -8409,7 +8409,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dinosaur Spot The Difference free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dinosaur_spot_the_difference",
-    "thumb": "https://cdn2.y8.com/cloudimage/dinosaur_spot_the_difference/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1937/file/w180h135_webp-c50581046f33cfa2cf2b34db9b322098.webp",
     "source": "y8"
   },
   {
@@ -8418,7 +8418,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/98111/file/w180h135_webp-2b7b17749efde852c91e8f4a72937d79.webp",
     "source": "y8"
   },
   {
@@ -8427,7 +8427,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 625 Sandwich Stacker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/625_sandwich_stacker",
-    "thumb": "https://cdn2.y8.com/cloudimage/625_sandwich_stacker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2565/file/w180h135_webp-3a10f146de53e70985d277ef90865db3.webp",
     "source": "y8"
   },
   {
@@ -8436,7 +8436,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Draw And Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_and_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_and_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19669/file/w180h135_webp-1bef60f72628718d046f80d0c8793d94.webp",
     "source": "y8"
   },
   {
@@ -8445,7 +8445,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Color Link free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_link",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_link/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22583/file/w180h135_webp-cf0a12030df2a99bdcdf12205634a38d.webp",
     "source": "y8"
   },
   {
@@ -8454,7 +8454,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bag Art Diy 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bag_art_diy_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bag_art_diy_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13197/file/w180h135_webp-decdba47a11d7469c605e6cca8aaaf08.webp",
     "source": "y8"
   },
   {
@@ -8463,7 +8463,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cooking Show Carrot Lentil Soup free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_carrot_lentil_soup",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_carrot_lentil_soup/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383683/file/w180h135_webp-66436672ec4413d04e2af446ce5b57f7.webp",
     "source": "y8"
   },
   {
@@ -8472,7 +8472,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Connect The Dots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/connect_the_dots_",
-    "thumb": "https://cdn2.y8.com/cloudimage/connect_the_dots_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33807/file/w180h135_webp-e926a78395d3a9e8436c5f28e3f77c4a.webp",
     "source": "y8"
   },
   {
@@ -8481,7 +8481,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Pony Hidden Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pony_hidden_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pony_hidden_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407463/file/w180h135_webp-e3d921f4f93321daf5386471a039d3c1.webp",
     "source": "y8"
   },
   {
@@ -8490,7 +8490,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Connect The Dots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/connect_the_dots",
-    "thumb": "https://cdn2.y8.com/cloudimage/connect_the_dots/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/113533/file/w180h135_webp-7b04ab87514f08eb3ca13a4b57150228.webp",
     "source": "y8"
   },
   {
@@ -8499,7 +8499,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Carpenter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carpenter",
-    "thumb": "https://cdn2.y8.com/cloudimage/carpenter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/83035/file/w180h135_webp-da91a707549befd42cb1f354392b1d90.webp",
     "source": "y8"
   },
   {
@@ -8508,7 +8508,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Games Color Paint free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_games_color_paint",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_games_color_paint/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7429/file/w180h135_webp-063eee5675e0d0475c9b9d55bef676d7.webp",
     "source": "y8"
   },
   {
@@ -8517,7 +8517,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Paint free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_paint",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_paint/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86553/file/w180h135_webp-d47a825b04f1717533e2a7c205246f51.webp",
     "source": "y8"
   },
   {
@@ -8526,7 +8526,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bff Math Class free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_math_class",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_math_class/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20321/file/w180h135_webp-a5c9c290a6fd3a162c69a9b3f712198a.webp",
     "source": "y8"
   },
   {
@@ -8535,7 +8535,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Looney Tunes Tidy-Up Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_looney_tunes_tidy-up_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_looney_tunes_tidy-up_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12589/file/w180h135_webp-231b758e4798e8b1f859ced2765bafc7.webp",
     "source": "y8"
   },
   {
@@ -8544,7 +8544,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brain Draw Line free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_draw_line",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_draw_line/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24203/file/w180h135_webp-c1736c95c0deda3c30f091b24ae72def.webp",
     "source": "y8"
   },
   {
@@ -8553,7 +8553,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Colours Memory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_colours_memory",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_colours_memory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/126655/file/w180h135_webp-7874f1f6d47c501a31659539641470a8.webp",
     "source": "y8"
   },
   {
@@ -8562,7 +8562,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Trivia free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_trivia",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_trivia/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66243/file/w180h135_webp-f4e0d386f73b525c05fb85ae993afe54.webp",
     "source": "y8"
   },
   {
@@ -8571,7 +8571,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brain Test One Line Draw Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_test_one_line_draw_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_test_one_line_draw_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27129/file/w180h135_webp-8ff7a0084affca3a0385ae09fd2e54d0.webp",
     "source": "y8"
   },
   {
@@ -8580,7 +8580,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Draw Html free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_html",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_html/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37911/file/w180h135_webp-0320631d56a63da3073a8101dc5af4bb.webp",
     "source": "y8"
   },
   {
@@ -8589,7 +8589,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Learns Manners free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_learns_manners",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_learns_manners/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30809/file/w180h135_webp-701e32c31759965da5176dbfad6fc036.webp",
     "source": "y8"
   },
   {
@@ -8598,7 +8598,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Christmas Math Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_math_pop_",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_math_pop_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9137/file/w180h135_webp-13b605f4cdcb5b303e40c0b8c0209a3f.webp",
     "source": "y8"
   },
   {
@@ -8607,7 +8607,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Color Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_blocks_",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_blocks_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16871/file/w180h135_webp-ed721ad34a4a936f07fd6d5e3caa8a10.webp",
     "source": "y8"
   },
   {
@@ -8616,7 +8616,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cross Stitch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cross_stitch",
-    "thumb": "https://cdn2.y8.com/cloudimage/cross_stitch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16971/file/w180h135_webp-11a366bac62257a748688676b2905ba2.webp",
     "source": "y8"
   },
   {
@@ -8625,7 +8625,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Christmas Tree free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_christmas_tree",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_christmas_tree/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29953/file/w180h135_webp-5a9019e0e95aa92c592fbc44395633bb.webp",
     "source": "y8"
   },
   {
@@ -8634,7 +8634,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Constructor Bricks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/constructor_bricks",
-    "thumb": "https://cdn2.y8.com/cloudimage/constructor_bricks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394567/file/w180h135_webp-eeebf430e7328f5d62dc5db03708c0a4.webp",
     "source": "y8"
   },
   {
@@ -8643,7 +8643,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Abc free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/abc_",
-    "thumb": "https://cdn2.y8.com/cloudimage/abc_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21493/file/w180h135_webp-b58125fa483fa9f3fb073f76e56caf81.webp",
     "source": "y8"
   },
   {
@@ -8652,7 +8652,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bedevil S Hidden Objects 2 Abandoned free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bedevil_s_hidden_objects_2_abandoned",
-    "thumb": "https://cdn2.y8.com/cloudimage/bedevil_s_hidden_objects_2_abandoned/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404657/file/w180h135_webp-aa1ac2f1d5618c6589d159da21007f19.webp",
     "source": "y8"
   },
   {
@@ -8661,7 +8661,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Antiwirus free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/antiwirus",
-    "thumb": "https://cdn2.y8.com/cloudimage/antiwirus/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400267/file/w180h135_webp-ade06c4d045189d1a2312fd3c2bcbf99.webp",
     "source": "y8"
   },
   {
@@ -8670,7 +8670,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Book Mandala free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_book_mandala",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_book_mandala/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/60863/file/w180h135_webp-c2dd22d243b5ebf835b68d664ad8229f.webp",
     "source": "y8"
   },
   {
@@ -8679,7 +8679,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Book Vehicles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_book_vehicles",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_book_vehicles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33839/file/w180h135_webp-07eceb2a02d3a04e4cf2f870783441bf.webp",
     "source": "y8"
   },
   {
@@ -8688,7 +8688,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Blossom Flowers Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blossom_flowers_coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/blossom_flowers_coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88961/file/w180h135_webp-5295699a393e95c2bda2452f8ecb9e1e.webp",
     "source": "y8"
   },
   {
@@ -8697,7 +8697,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bracket Burger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bracket_burger",
-    "thumb": "https://cdn2.y8.com/cloudimage/bracket_burger/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408189/file/w180h135_webp-adb33e0f8184fe9c2a7a2b7055967800.webp",
     "source": "y8"
   },
   {
@@ -8706,7 +8706,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Girl Jigsaw Puzzles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_girl_jigsaw_puzzles",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_girl_jigsaw_puzzles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9813/file/w180h135_webp-98583ebd706e074bbd375a10a7051c30.webp",
     "source": "y8"
   },
   {
@@ -8715,7 +8715,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Learn Animals free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_learn_animals",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_learn_animals/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69231/file/w180h135_webp-0415aa1526bde5984844edbb4915fdfc.webp",
     "source": "y8"
   },
   {
@@ -8724,7 +8724,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coconuts Concentration Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coconuts_concentration_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/coconuts_concentration_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400093/file/w180h135_webp-5296ce3824c5e3dee4f1412194f9a471.webp",
     "source": "y8"
   },
   {
@@ -8733,7 +8733,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Friendship Day free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_friendship_day",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_friendship_day/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69545/file/w180h135_webp-2ccb4a81598f5d19322d2d1bb9043e82.webp",
     "source": "y8"
   },
   {
@@ -8742,7 +8742,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Naughty Cat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_naughty_cat",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_naughty_cat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342725/file/w180h135_webp-5affe4cc938493a7d6d074ef5ae38275.webp",
     "source": "y8"
   },
   {
@@ -8751,7 +8751,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Asmr Kitty Treatment free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_kitty_treatment",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_kitty_treatment/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383965/file/w180h135_webp-7aa338880d232c94d8c920ac5b31b83c.webp",
     "source": "y8"
   },
   {
@@ -8760,7 +8760,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 2048 Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76575/file/w180h135_webp-3e3ba3f8f147c2bb499799bfd84d70fe.webp",
     "source": "y8"
   },
   {
@@ -8769,7 +8769,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Babies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_babies",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_babies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23159/file/w180h135_webp-4f08b9f3a68f4cc8ef205dc1680da74f.webp",
     "source": "y8"
   },
   {
@@ -8778,7 +8778,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bts Pony Coloring Book free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bts_pony_coloring_book",
-    "thumb": "https://cdn2.y8.com/cloudimage/bts_pony_coloring_book/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25871/file/w180h135_webp-428c139545c9b2933ec237b62fb57d37.webp",
     "source": "y8"
   },
   {
@@ -8787,7 +8787,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Airways Maze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airways_maze",
-    "thumb": "https://cdn2.y8.com/cloudimage/airways_maze/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22051/file/w180h135_webp-c883fb2be4d02cb91332db3db474307b.webp",
     "source": "y8"
   },
   {
@@ -8796,7 +8796,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cmyk Slime Quest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cmyk_slime_quest",
-    "thumb": "https://cdn2.y8.com/cloudimage/cmyk_slime_quest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/99329/file/w180h135_webp-e2337d15aabc4acb983b5a9143c8dce2.webp",
     "source": "y8"
   },
   {
@@ -8805,7 +8805,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bugs Bunny Builders Dump Truck Pile Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bugs_bunny_builders_dump_truck_pile_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/bugs_bunny_builders_dump_truck_pile_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9409/file/w180h135_webp-ba43fd2365f88e4eb34eaa72f435d7d5.webp",
     "source": "y8"
   },
   {
@@ -8814,7 +8814,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brain Puzzle Out free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_puzzle_out",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_puzzle_out/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90437/file/w180h135_webp-e0f548ba267cf107da44dd959ff65580.webp",
     "source": "y8"
   },
   {
@@ -8823,7 +8823,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71991/file/w180h135_webp-ccbb50a4067523828ee26dc30baa0eaa.webp",
     "source": "y8"
   },
   {
@@ -8832,7 +8832,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Twins Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_twins_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_twins_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/167641/file/w180h135_webp-79db18e252d9f30300defc56f776a8b0.webp",
     "source": "y8"
   },
   {
@@ -8841,7 +8841,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/138631/file/w180h135_webp-f9234186a09e3cb1141adebd28cc9fb3.webp",
     "source": "y8"
   },
   {
@@ -8850,7 +8850,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Tiles Mahjong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_tiles_mahjong",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_tiles_mahjong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402511/file/w180h135_webp-3d96f70835b291210b84326e4c73c060.webp",
     "source": "y8"
   },
   {
@@ -8868,7 +8868,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Animal Cross Word free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_animal_cross_word",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_animal_cross_word/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68849/file/w180h135_webp-dadd0ab9a3e182bbf7a61743dd3686b5.webp",
     "source": "y8"
   },
   {
@@ -8877,7 +8877,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 44 Cats Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/44_cats_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/44_cats_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91117/file/w180h135_webp-92c2f41296d89814cfcfdaed2245d81c.webp",
     "source": "y8"
   },
   {
@@ -8886,7 +8886,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Melon My Dream Profession free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_melon_my_dream_profession",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_melon_my_dream_profession/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/587/file/w180h135_webp-c754bedabca39afef5755f968e9c35ec.webp",
     "source": "y8"
   },
   {
@@ -8895,7 +8895,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Journey Difference free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_journey_difference",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_journey_difference/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/134693/file/w180h135_webp-32b887eb92d03665b8a0819e8fb45720.webp",
     "source": "y8"
   },
   {
@@ -8904,7 +8904,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Baby Hazel Dental Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_dental_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_dental_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/140457/file/w180h135_webp-be01280f8a1adf3113bf61fe71fbed8b.webp",
     "source": "y8"
   },
   {
@@ -8913,7 +8913,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Pony Coloring Book free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pony_coloring_book",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pony_coloring_book/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12197/file/w180h135_webp-758ff681a699bfdf0fede26b6ba5f564.webp",
     "source": "y8"
   },
   {
@@ -8922,7 +8922,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Color Hit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_hit",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_hit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/67829/file/w180h135_webp-b992d07f0f048ba3f127e118002119f4.webp",
     "source": "y8"
   },
   {
@@ -8931,7 +8931,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora The Super Treasure Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_the_super_treasure_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_the_super_treasure_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/129507/file/w180h135_webp-a9ea7fd43ace5b814626f8d937daf3d8.webp",
     "source": "y8"
   },
   {
@@ -8940,7 +8940,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Christmas Find The Differences free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_find_the_differences",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_find_the_differences/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37689/file/w180h135_webp-f8f1499603356600f6ebcddb996901e9.webp",
     "source": "y8"
   },
   {
@@ -8949,7 +8949,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora The Explorer La Casa De Dora free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_the_explorer_la_casa_de_dora",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_the_explorer_la_casa_de_dora/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/115597/file/w180h135_webp-1d98d0defe649436666e124121b2251f.webp",
     "source": "y8"
   },
   {
@@ -8958,7 +8958,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Chinese Lemon Chicken free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chinese_lemon_chicken",
-    "thumb": "https://cdn2.y8.com/cloudimage/chinese_lemon_chicken/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/153807/file/w180h135_webp-4629d02445f8a75dd73a44b6531a8be2.webp",
     "source": "y8"
   },
   {
@@ -8967,7 +8967,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Saves Map free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_saves_map",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_saves_map/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/178215/file/w180h135_webp-eb4f631ebf274812c2458d1bc6fc8032.webp",
     "source": "y8"
   },
   {
@@ -8976,7 +8976,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Diamond Painting Asmr Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diamond_painting_asmr_coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/diamond_painting_asmr_coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16005/file/w180h135_webp-349aa19595d29abc283b081ef7956df7.webp",
     "source": "y8"
   },
   {
@@ -8985,7 +8985,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Aquapark Balls Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aquapark_balls_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/aquapark_balls_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21631/file/w180h135_webp-7bfefde6618c4035e08c06339f2a931f.webp",
     "source": "y8"
   },
   {
@@ -8994,7 +8994,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dr Panda School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dr_panda_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/dr_panda_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34173/file/w180h135_webp-ffada3a1b78554e344aa1c16cda45656.webp",
     "source": "y8"
   },
   {
@@ -9003,7 +9003,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 2048 Automatic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_automatic",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_automatic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16435/file/w180h135_webp-fd94b0935e1807309bce6921e18ffe3e.webp",
     "source": "y8"
   },
   {
@@ -9012,7 +9012,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bubble Sorting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bubble_sorting",
-    "thumb": "https://cdn2.y8.com/cloudimage/bubble_sorting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47891/file/w180h135_webp-c9c735512dd0014f2520c903fcb7242e.webp",
     "source": "y8"
   },
   {
@@ -9021,7 +9021,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bunny Ice-Cream Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunny_ice-cream_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunny_ice-cream_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385749/file/w180h135_webp-78b646d34573a07d8a495560f10eb76d.webp",
     "source": "y8"
   },
   {
@@ -9030,7 +9030,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Caroline S Room Ordering Is Fun free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/caroline_s_room_ordering_is_fun",
-    "thumb": "https://cdn2.y8.com/cloudimage/caroline_s_room_ordering_is_fun/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384001/file/w180h135_webp-d1707aad3a45b9350491b1cc49d7dd3c.webp",
     "source": "y8"
   },
   {
@@ -9039,7 +9039,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 2048 Lines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_lines_",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_lines_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10621/file/w180h135_webp-13512a81c7bc839108de09211d0dad32.webp",
     "source": "y8"
   },
   {
@@ -9048,7 +9048,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal S Valentine Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_s_valentine_coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_s_valentine_coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/55885/file/w180h135_webp-ba55603b7f7ecf636c5b865e497b1ab4.webp",
     "source": "y8"
   },
   {
@@ -9057,7 +9057,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Amusement Park Hidden Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amusement_park_hidden_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/amusement_park_hidden_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74811/file/w180h135_webp-5c187ce26e384a8569d507deeee05424.webp",
     "source": "y8"
   },
   {
@@ -9066,7 +9066,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Sandwich Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_sandwich_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_sandwich_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/136319/file/w180h135_webp-79c80350e585754197a11aeeb25e5639.webp",
     "source": "y8"
   },
   {
@@ -9075,7 +9075,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 4096 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4096_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/4096_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11161/file/w180h135_webp-2b3fd475486646967a8516ba462a2699.webp",
     "source": "y8"
   },
   {
@@ -9084,7 +9084,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cube Arena 2048 Merge Numbers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cube_arena_2048_merge_numbers",
-    "thumb": "https://cdn2.y8.com/cloudimage/cube_arena_2048_merge_numbers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28987/file/w180h135_webp-18e001617c348452241d1d3c229135c6.webp",
     "source": "y8"
   },
   {
@@ -9093,7 +9093,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Daily Tairupeinto free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/daily_tairupeinto",
-    "thumb": "https://cdn2.y8.com/cloudimage/daily_tairupeinto/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1579/file/w180h135_webp-4e6857fa2cad7bd3aeb65ae008168b5a.webp",
     "source": "y8"
   },
   {
@@ -9102,7 +9102,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Name free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_name",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_name/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82751/file/w180h135_webp-ead5f226cb2b6adaabed5adeb53a5058.webp",
     "source": "y8"
   },
   {
@@ -9111,7 +9111,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animals Mahjong Connection free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_mahjong_connection",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_mahjong_connection/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65117/file/w180h135_webp-92d21a0f83dc06bd817dcb751b8f1fe8.webp",
     "source": "y8"
   },
   {
@@ -9120,7 +9120,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Train Express free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_train_express",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_train_express/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/119535/file/w180h135_webp-9466a6ee08bb8e33a68c0a5f12de1a69.webp",
     "source": "y8"
   },
   {
@@ -9129,7 +9129,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Crossword Island free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crossword_island",
-    "thumb": "https://cdn2.y8.com/cloudimage/crossword_island/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18307/file/w180h135_webp-cd16ad36dbe59fea69d33120c66ee399.webp",
     "source": "y8"
   },
   {
@@ -9138,7 +9138,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Apples And Numbers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apples_and_numbers",
-    "thumb": "https://cdn2.y8.com/cloudimage/apples_and_numbers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12527/file/w180h135_webp-3f47411459ea2f18c88147ce0e5a3cc2.webp",
     "source": "y8"
   },
   {
@@ -9164,7 +9164,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animals Matching free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_matching",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_matching/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79597/file/w180h135_webp-988fcb6899a818cad2cd18737fdcf2f4.webp",
     "source": "y8"
   },
   {
@@ -9173,7 +9173,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cosmo Pet Starry Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cosmo_pet_starry_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/cosmo_pet_starry_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/4299/file/w180h135_webp-177e6cbe50840409cfced1380ca1b2aa.webp",
     "source": "y8"
   },
   {
@@ -9182,7 +9182,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Babies Differences free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_babies_differences",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_babies_differences/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8967/file/w180h135_webp-6a5ec2c3c4cdbba75da2aa1f046635e8.webp",
     "source": "y8"
   },
   {
@@ -9191,7 +9191,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Puzzles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_puzzles",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_puzzles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2193/file/w180h135_webp-2ec4996ea847134ef3555627d9fe7600.webp",
     "source": "y8"
   },
   {
@@ -9200,7 +9200,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Book Squid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_book_squid",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_book_squid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2271/file/w180h135_webp-6a699b495e7682e9a48d0c4caa2d4f76.webp",
     "source": "y8"
   },
   {
@@ -9209,7 +9209,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Balloon Express free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_balloon_express",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_balloon_express/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/122703/file/w180h135_webp-7bd4fe66a7954314b772d2b857d845ec.webp",
     "source": "y8"
   },
   {
@@ -9218,7 +9218,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Adventure Time Word Search free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adventure_time_word_search",
-    "thumb": "https://cdn2.y8.com/cloudimage/adventure_time_word_search/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77387/file/w180h135_webp-e054de6db19c0182edaf294d1583d614.webp",
     "source": "y8"
   },
   {
@@ -9227,7 +9227,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Cute Pony Memory Quest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pony_memory_quest",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pony_memory_quest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407071/file/w180h135_webp-0b24606979e6c63579c66cc1c859557b.webp",
     "source": "y8"
   },
   {
@@ -9236,7 +9236,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bts Flowers Coloring free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bts_flowers_coloring",
-    "thumb": "https://cdn2.y8.com/cloudimage/bts_flowers_coloring/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21563/file/w180h135_webp-46d153197f70635ba4bc9a1f20740267.webp",
     "source": "y8"
   },
   {
@@ -9245,7 +9245,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Click And Color Dinosaurs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/click_and_color_dinosaurs",
-    "thumb": "https://cdn2.y8.com/cloudimage/click_and_color_dinosaurs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18617/file/w180h135_webp-3324e1fbae8313fcf4d037455a663d8d.webp",
     "source": "y8"
   },
   {
@@ -9254,7 +9254,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Classic Word Search free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_word_search",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_word_search/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/43181/file/w180h135_webp-7e2c627cd0b3c36e728db33c9a1d76a9.webp",
     "source": "y8"
   },
   {
@@ -9263,7 +9263,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Bike Racing Math Algebra free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_racing_math_algebra",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_racing_math_algebra/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9165/file/w180h135_webp-713988cebc3b30ea452070e26d873471.webp",
     "source": "y8"
   },
   {
@@ -9272,7 +9272,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Dental Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_dental_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_dental_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/98025/file/w180h135_webp-4f188040d00dddaefb385325cb95d83f.webp",
     "source": "y8"
   },
   {
@@ -9281,7 +9281,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Countries Of North America free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/countries_of_north_america",
-    "thumb": "https://cdn2.y8.com/cloudimage/countries_of_north_america/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15061/file/w180h135_webp-ebc04cd71184be6ff4d4f94281995862.webp",
     "source": "y8"
   },
   {
@@ -9290,7 +9290,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Animal Words For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_words_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_words_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34553/file/w180h135_webp-9ad7dff1ca5ec49bb0316eee1c3501f7.webp",
     "source": "y8"
   },
   {
@@ -9299,7 +9299,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Color Memory Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_memory_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_memory_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407355/file/w180h135_webp-a1f112d7e077d2c1b191a3517c7f8d7f.webp",
     "source": "y8"
   },
   {
@@ -9308,7 +9308,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Drag And Drop Clothing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drag_and_drop_clothing",
-    "thumb": "https://cdn2.y8.com/cloudimage/drag_and_drop_clothing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13783/file/w180h135_webp-86869adbc47347a91b1d3b39969b8cd6.webp",
     "source": "y8"
   },
   {
@@ -9317,7 +9317,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Desert Oasis Hidden Secrets free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desert_oasis_hidden_secrets",
-    "thumb": "https://cdn2.y8.com/cloudimage/desert_oasis_hidden_secrets/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/229/file/w180h135_webp-e85e0fa7d99abc6cf032b023434a132f.webp",
     "source": "y8"
   },
   {
@@ -9326,7 +9326,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Don T Fall In Lava free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/don_t_fall_in_lava",
-    "thumb": "https://cdn2.y8.com/cloudimage/don_t_fall_in_lava/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11615/file/w180h135_webp-44c3dc27edd731892c1c0f24d4c5704e.webp",
     "source": "y8"
   },
   {
@@ -9335,7 +9335,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Count And Compare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/count_and_compare",
-    "thumb": "https://cdn2.y8.com/cloudimage/count_and_compare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10479/file/w180h135_webp-b4dd4b6c929d18adc3234f69682d681c.webp",
     "source": "y8"
   },
   {
@@ -9344,7 +9344,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Brain For Monster Truck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_for_monster_truck",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_for_monster_truck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7487/file/w180h135_webp-9b6f5b1315e5710b36eab83b83923b86.webp",
     "source": "y8"
   },
   {
@@ -9353,7 +9353,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play 3d Kid Sliding Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_kid_sliding_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_kid_sliding_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393021/file/w180h135_webp-dce5b7d4394ab34d06ad545235e8c584.webp",
     "source": "y8"
   },
   {
@@ -9362,7 +9362,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Vs Monster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_vs_monster",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_vs_monster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/104275/file/w180h135_webp-d85bc8c932e7d1ce39a815009f92b699.webp",
     "source": "y8"
   },
   {
@@ -9371,7 +9371,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Coloring Book Beauty free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coloring_book_beauty",
-    "thumb": "https://cdn2.y8.com/cloudimage/coloring_book_beauty/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5975/file/w180h135_webp-c323d45b6700bb71d5e0f699ae1fed32.webp",
     "source": "y8"
   },
   {
@@ -9380,7 +9380,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Count Master Match Color Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/count_master_match_color_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/count_master_match_color_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2837/file/w180h135_webp-5661ce81f0aa64c37f0dcd5e4d6039ea.webp",
     "source": "y8"
   },
   {
@@ -9389,7 +9389,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dagelijkse Kruiswoord free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dagelijkse_kruiswoord",
-    "thumb": "https://cdn2.y8.com/cloudimage/dagelijkse_kruiswoord/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78123/file/w180h135_webp-495d60f4651fcff8af05b259616e8852.webp",
     "source": "y8"
   },
   {
@@ -9398,7 +9398,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Room Clean free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_room_clean",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_room_clean/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/140583/file/w180h135_webp-30614ea87e64ead560d591de34877982.webp",
     "source": "y8"
   },
   {
@@ -9407,7 +9407,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora The Explorer Super Silly Costume Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_the_explorer_super_silly_costume_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_the_explorer_super_silly_costume_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/114467/file/w180h135_webp-394f95c2dea344910bf8761370d77be4.webp",
     "source": "y8"
   },
   {
@@ -9416,7 +9416,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Draw Bullet Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_bullet_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_bullet_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9969/file/w180h135_webp-eaf7c4b55cfb33366f4328ccaa52c474.webp",
     "source": "y8"
   },
   {
@@ -9425,7 +9425,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Dora Saves The Farm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dora_saves_the_farm",
-    "thumb": "https://cdn2.y8.com/cloudimage/dora_saves_the_farm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/167451/file/w180h135_webp-e08dab3fb3ee1d442f5d4c63f5a2e545.webp",
     "source": "y8"
   },
   {
@@ -9434,7 +9434,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Clarasbigworld free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clarasbigworld",
-    "thumb": "https://cdn2.y8.com/cloudimage/clarasbigworld/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/176619/file/w180h135_webp-68ffb4781d08a0fd46ad44b2ab8aebdd.webp",
     "source": "y8"
   },
   {
@@ -9533,7 +9533,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Draw Half free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_half",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_half/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14491/file/w180h135_webp-afcdb1895e4f0fc94b103b31b7e426d3.webp",
     "source": "y8"
   },
   {
@@ -9605,7 +9605,7 @@ const GAMES = [
     "category": "Educational",
     "description": "Play Construction Set 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/construction_set_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/construction_set_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21937/file/w180h135_webp-d76758266b520ede7f8ed4cb04f4478f.webp",
     "source": "y8"
   },
   {
@@ -10402,7 +10402,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Alba S Back Spa free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alba_s_back_spa",
-    "thumb": "https://cdn2.y8.com/cloudimage/alba_s_back_spa/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407973/file/w180h135_webp-7eb7c4f5c08f62bc3f4dd60d216c046c.webp",
     "source": "y8"
   },
   {
@@ -10411,7 +10411,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Aliens Memory Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aliens_memory_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/aliens_memory_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386725/file/w180h135_webp-592a3f90533b208be904afa0f03e42f6.webp",
     "source": "y8"
   },
   {
@@ -10420,7 +10420,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Allegras Beauty Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/allegras_beauty_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/allegras_beauty_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407955/file/w180h135_webp-65f4aec6126c2fd98087ef4f5afb193d.webp",
     "source": "y8"
   },
   {
@@ -10429,7 +10429,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Angry Teddy Bears free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_teddy_bears",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_teddy_bears/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389295/file/w180h135_webp-f771b9b86ff147b59ff727c68e8324fa.webp",
     "source": "y8"
   },
   {
@@ -10489,7 +10489,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Olie Birthday Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_olie_birthday_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_olie_birthday_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407593/file/w180h135_webp-f3a16283e79c1c8ac897936294c8d0da.webp",
     "source": "y8"
   },
   {
@@ -10498,7 +10498,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Bear Den free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bear_den",
-    "thumb": "https://cdn2.y8.com/cloudimage/bear_den/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389997/file/w180h135_webp-c15b53f3aef116336e78b263021c04e5.webp",
     "source": "y8"
   },
   {
@@ -10507,7 +10507,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Beauty And The Beast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beauty_and_the_beast",
-    "thumb": "https://cdn2.y8.com/cloudimage/beauty_and_the_beast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47193/file/w180h135_webp-a132084309a2378a24da52c038207dcb.webp",
     "source": "y8"
   },
   {
@@ -10516,7 +10516,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Beauty Ella Appendix Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beauty_ella_appendix_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/beauty_ella_appendix_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/46195/file/w180h135_webp-97b2a86f919567029fa549eeafc37554.webp",
     "source": "y8"
   },
   {
@@ -10525,7 +10525,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Beauty Magazine Pageant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beauty_magazine_pageant",
-    "thumb": "https://cdn2.y8.com/cloudimage/beauty_magazine_pageant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/59091/file/w180h135_webp-dc12493913cde2cc89a3a7c8c5e7fc3e.webp",
     "source": "y8"
   },
   {
@@ -10534,7 +10534,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Best Baby Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/best_baby_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/best_baby_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65787/file/w180h135_webp-594eeca8587852bd37de796acbc4bb93.webp",
     "source": "y8"
   },
   {
@@ -10543,7 +10543,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Bff Homework free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_homework",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_homework/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/80007/file/w180h135_webp-ca785c173f107df63438bd4645ca0e8c.webp",
     "source": "y8"
   },
   {
@@ -10552,7 +10552,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Birthday Cake For Mom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/birthday_cake_for_mom",
-    "thumb": "https://cdn2.y8.com/cloudimage/birthday_cake_for_mom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385717/file/w180h135_webp-e5ec547043f31b30dbc5f548ea19d909.webp",
     "source": "y8"
   },
   {
@@ -10561,7 +10561,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Blonde Ashley Instafashion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blonde_ashley_instafashion",
-    "thumb": "https://cdn2.y8.com/cloudimage/blonde_ashley_instafashion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16173/file/w180h135_webp-1304daef72d48fe824d727103a80b057.webp",
     "source": "y8"
   },
   {
@@ -10621,7 +10621,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Boy And Girl Fashion Couple free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boy_and_girl_fashion_couple",
-    "thumb": "https://cdn2.y8.com/cloudimage/boy_and_girl_fashion_couple/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407949/file/w180h135_webp-81b2d0f2d690f877c944d5dbe57ef1bc.webp",
     "source": "y8"
   },
   {
@@ -10630,7 +10630,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Boys Instafashion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boys_instafashion",
-    "thumb": "https://cdn2.y8.com/cloudimage/boys_instafashion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86601/file/w180h135_webp-b1b81a818e45c863647a65ab01791cf8.webp",
     "source": "y8"
   },
   {
@@ -10639,7 +10639,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Braid Hair Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/braid_hair_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/braid_hair_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106179/file/w180h135_webp-0aa2462fdb96726f4d1828e78fb9a4d3.webp",
     "source": "y8"
   },
   {
@@ -10648,7 +10648,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play British Fashion Then Now free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/british_fashion_then_now",
-    "thumb": "https://cdn2.y8.com/cloudimage/british_fashion_then_now/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26229/file/w180h135_webp-630fa3562c97038814f51c3d4f722075.webp",
     "source": "y8"
   },
   {
@@ -10657,7 +10657,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Carol S Haircut Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carol_s_haircut_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/carol_s_haircut_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407633/file/w180h135_webp-812128795fe444e57b2fcae53b72583a.webp",
     "source": "y8"
   },
   {
@@ -10666,7 +10666,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Casino Card Memory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/casino_card_memory",
-    "thumb": "https://cdn2.y8.com/cloudimage/casino_card_memory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392533/file/w180h135_webp-3b8abe673a210b65187b13d54a9b4fe0.webp",
     "source": "y8"
   },
   {
@@ -10675,7 +10675,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_balls_",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_balls_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386491/file/w180h135_webp-82c502e3d2e80652d7ca24c77a452678.webp",
     "source": "y8"
   },
   {
@@ -10684,7 +10684,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Breaker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_breaker",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_breaker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392579/file/w180h135_webp-22567ab638b950f9f68f3c3b72c23b07.webp",
     "source": "y8"
   },
   {
@@ -10693,7 +10693,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Bubbles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_bubbles_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_bubbles_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386373/file/w180h135_webp-9e87c08b477b3d2495d80d4ef556b452.webp",
     "source": "y8"
   },
   {
@@ -10702,7 +10702,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Gifts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_gifts",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_gifts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390689/file/w180h135_webp-b52b624b85a33db4f2d16115ea71c475.webp",
     "source": "y8"
   },
   {
@@ -10711,7 +10711,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Hit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_hit",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_hit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386525/file/w180h135_webp-689443edbb226c965b32ac2c939712e6.webp",
     "source": "y8"
   },
   {
@@ -10720,7 +10720,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Match 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_match_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_match_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393111/file/w180h135_webp-fcd87ac095e4a2ecf3ac8baed2516c5a.webp",
     "source": "y8"
   },
   {
@@ -10729,7 +10729,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392861/file/w180h135_webp-688ad9eb47699d1e6974c8ba1f20e084.webp",
     "source": "y8"
   },
   {
@@ -10738,7 +10738,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Math free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_math",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_math/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387603/file/w180h135_webp-fa0ea3e3c29d311a13dd79b4243a762c.webp",
     "source": "y8"
   },
   {
@@ -10747,7 +10747,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Christmas Panda Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_panda_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_panda_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393323/file/w180h135_webp-7ac325bdce88a5cf7288c5f03a4d4873.webp",
     "source": "y8"
   },
   {
@@ -10756,7 +10756,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Clean Up Hair Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clean_up_hair_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/clean_up_hair_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407981/file/w180h135_webp-98bae82a1713b8f4e72c02827d8426d1.webp",
     "source": "y8"
   },
   {
@@ -10765,7 +10765,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Crazy Jump Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_jump_halloween",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_jump_halloween/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388247/file/w180h135_webp-09e597e5b104383996b7ab0e9497cb17.webp",
     "source": "y8"
   },
   {
@@ -10774,7 +10774,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cute Hair Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_hair_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_hair_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407583/file/w180h135_webp-ae4a18690e05d493b7157a672f69f0fe.webp",
     "source": "y8"
   },
   {
@@ -10783,7 +10783,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cute Kitty Hair Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_kitty_hair_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_kitty_hair_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36865/file/w180h135_webp-1a77fba10ab5da367e4daf08f7fc2923.webp",
     "source": "y8"
   },
   {
@@ -10792,7 +10792,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cute Pet Dentist Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pet_dentist_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pet_dentist_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406483/file/w180h135_webp-fad08689b30ece901cf63ec71729d3cc.webp",
     "source": "y8"
   },
   {
@@ -10801,7 +10801,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cute Princess Of Thrones free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_princess_of_thrones",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_princess_of_thrones/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90293/file/w180h135_webp-cc573e9c3c143362baee7bec8483b2f0.webp",
     "source": "y8"
   },
   {
@@ -10810,7 +10810,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cute Puppy Hair Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_puppy_hair_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_puppy_hair_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37565/file/w180h135_webp-5c6744bc5afb670c3abc5d28535f0bbc.webp",
     "source": "y8"
   },
   {
@@ -10819,7 +10819,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Cyber Bear Assembly free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_bear_assembly",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_bear_assembly/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405721/file/w180h135_webp-7f189ac593374b04913974742ccf4364.webp",
     "source": "y8"
   },
   {
@@ -10828,7 +10828,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Danger Sense Christmas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/danger_sense_christmas",
-    "thumb": "https://cdn2.y8.com/cloudimage/danger_sense_christmas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388453/file/w180h135_webp-bed01cdffc61c7c7af3ae549976f748f.webp",
     "source": "y8"
   },
   {
@@ -10837,7 +10837,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Dead Space 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_space_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_space_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389297/file/w180h135_webp-d3c18494539d8b8ead6134cf56c82c34.webp",
     "source": "y8"
   },
   {
@@ -10846,7 +10846,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Birthday Cake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_birthday_cake",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_birthday_cake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22653/file/w180h135_webp-bc878fa54d6910ddf44dbbdf389f7127.webp",
     "source": "y8"
   },
   {
@@ -10855,7 +10855,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Cute Garden free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_cute_garden",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_cute_garden/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/919/file/w180h135_webp-208075ee94f2d4171945f90d9cc5ba9b.webp",
     "source": "y8"
   },
   {
@@ -10864,7 +10864,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Cute Kitchen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_cute_kitchen",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_cute_kitchen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24403/file/w180h135_webp-368c5d09af6bb6c803db1acb125d7350.webp",
     "source": "y8"
   },
   {
@@ -10873,7 +10873,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Cute Nursery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_cute_nursery",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_cute_nursery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29193/file/w180h135_webp-83bd612cd694fa0dcfcf10d54f49c4bf.webp",
     "source": "y8"
   },
   {
@@ -10882,7 +10882,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Cute Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_cute_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_cute_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28733/file/w180h135_webp-4564d90e228975860f286423a1efae92.webp",
     "source": "y8"
   },
   {
@@ -10891,7 +10891,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Fairycore Necklace free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_fairycore_necklace",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_fairycore_necklace/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23087/file/w180h135_webp-738379054259e1a4a312c474f3db22e2.webp",
     "source": "y8"
   },
   {
@@ -10917,7 +10917,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor It Garage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_it_garage",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_it_garage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408591/file/w180h135_webp-88f9c5e9842d366947c28bf37389587e.webp",
     "source": "y8"
   },
   {
@@ -10926,7 +10926,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor It Kitchen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_it_kitchen",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_it_kitchen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408643/file/w180h135_webp-5b3389e5fb2c6a92281c3179d50ad491.webp",
     "source": "y8"
   },
   {
@@ -10935,7 +10935,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor It Living Room free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_it_living_room",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_it_living_room/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408659/file/w180h135_webp-f0c39d5332cfeadff1d2065ffb62f7f8.webp",
     "source": "y8"
   },
   {
@@ -10944,7 +10944,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor My Diary free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_my_diary",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_my_diary/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408649/file/w180h135_webp-c6d92ab645f98a8ca848c34afa063840.webp",
     "source": "y8"
   },
   {
@@ -11004,7 +11004,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Nail Art free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_nail_art",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_nail_art/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29043/file/w180h135_webp-780f634538ade1937cc80036f78aab72.webp",
     "source": "y8"
   },
   {
@@ -11013,7 +11013,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Decor Pretty Drinks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_pretty_drinks",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_pretty_drinks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13877/file/w180h135_webp-cf02ab6277d85624bc61ac8496e200df.webp",
     "source": "y8"
   },
   {
@@ -11022,7 +11022,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Demolition Man free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/demolition_man",
-    "thumb": "https://cdn2.y8.com/cloudimage/demolition_man/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388233/file/w180h135_webp-c470b047010cc0880bddd63be0f1a423.webp",
     "source": "y8"
   },
   {
@@ -11082,7 +11082,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Dress Up Winter Friends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dress_up_winter_friends",
-    "thumb": "https://cdn2.y8.com/cloudimage/dress_up_winter_friends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79195/file/w180h135_webp-9368ad051f4d4a691a330644f9e7824f.webp",
     "source": "y8"
   },
   {
@@ -11091,7 +11091,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play E Girly Style free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/e_girly_style",
-    "thumb": "https://cdn2.y8.com/cloudimage/e_girly_style/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11767/file/w180h135_webp-6d652e670bd37bc7b9f43f5128baaa43.webp",
     "source": "y8"
   },
   {
@@ -11100,7 +11100,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play E-Gamer Teen Style free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/e-gamer_teen_style",
-    "thumb": "https://cdn2.y8.com/cloudimage/e-gamer_teen_style/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16821/file/w180h135_webp-57ad77fae44e112ba04dc19ee4e0ca4a.webp",
     "source": "y8"
   },
   {
@@ -11109,7 +11109,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Easter Memory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/easter_memory",
-    "thumb": "https://cdn2.y8.com/cloudimage/easter_memory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393875/file/w180h135_webp-d37b3d6cd4d0f9bfa309ea9686d3865b.webp",
     "source": "y8"
   },
   {
@@ -11118,7 +11118,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Emilia Spa Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/emilia_spa_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/emilia_spa_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408067/file/w180h135_webp-8bc62b19fba0496fe88f785dc661a8f9.webp",
     "source": "y8"
   },
   {
@@ -11127,7 +11127,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Emoji Pong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/emoji_pong",
-    "thumb": "https://cdn2.y8.com/cloudimage/emoji_pong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387639/file/w180h135_webp-cae0484c1d1afd3cfff211f9c05cb78b.webp",
     "source": "y8"
   },
   {
@@ -11136,7 +11136,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Fall Fashion Show free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fall_fashion_show",
-    "thumb": "https://cdn2.y8.com/cloudimage/fall_fashion_show/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40083/file/w180h135_webp-7b5f854cdf8056a2fdfa853855f579d6.webp",
     "source": "y8"
   },
   {
@@ -11145,7 +11145,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Famous Fashion Designer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/famous_fashion_designer",
-    "thumb": "https://cdn2.y8.com/cloudimage/famous_fashion_designer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406469/file/w180h135_webp-f64279d373498435057d5cc5981efcc5.webp",
     "source": "y8"
   },
   {
@@ -11154,7 +11154,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Fashion Designer Life free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fashion_designer_life",
-    "thumb": "https://cdn2.y8.com/cloudimage/fashion_designer_life/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76045/file/w180h135_webp-25db05637fd5609ae491fd7a03d3ce27.webp",
     "source": "y8"
   },
   {
@@ -11163,7 +11163,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Fashion Magazine free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fashion_magazine",
-    "thumb": "https://cdn2.y8.com/cloudimage/fashion_magazine/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88597/file/w180h135_webp-182330dbbffb9f01db28df5a906fc2ef.webp",
     "source": "y8"
   },
   {
@@ -11206,7 +11206,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Frenetic Space free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/frenetic_space",
-    "thumb": "https://cdn2.y8.com/cloudimage/frenetic_space/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387705/file/w180h135_webp-d610bb0c13eca0b32de813e49762270f.webp",
     "source": "y8"
   },
   {
@@ -11215,7 +11215,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Fun Doll Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fun_doll_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/fun_doll_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/62823/file/w180h135_webp-e514396f3fff522a249303d6db974f58.webp",
     "source": "y8"
   },
   {
@@ -11224,7 +11224,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Fun Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fun_halloween",
-    "thumb": "https://cdn2.y8.com/cloudimage/fun_halloween/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85901/file/w180h135_webp-5fa8ffadb66f68e9fc9c3b05f414615b.webp",
     "source": "y8"
   },
   {
@@ -11233,7 +11233,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Funny Nail Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_nail_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_nail_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/56357/file/w180h135_webp-6f438d6cbfe32dd351861b34eec3d7ed.webp",
     "source": "y8"
   },
   {
@@ -11242,7 +11242,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Funny Nail Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_nail_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_nail_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407659/file/w180h135_webp-cbc445d98c79e89cd4ee2a39ecf8bf84.webp",
     "source": "y8"
   },
   {
@@ -11251,7 +11251,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Funny Pet Haircut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_pet_haircut",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_pet_haircut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88865/file/w180h135_webp-32622c55c55ebdc5d8e7342613058b01.webp",
     "source": "y8"
   },
   {
@@ -11260,7 +11260,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Funny Toenail Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_toenail_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_toenail_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/56407/file/w180h135_webp-1a0c93f3f669e26a687b9c24f32f23dc.webp",
     "source": "y8"
   },
   {
@@ -11269,7 +11269,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Gardening With Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gardening_with_pop",
-    "thumb": "https://cdn2.y8.com/cloudimage/gardening_with_pop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89317/file/w180h135_webp-722e0f0da360b1fb793d43cbbca6ddd0.webp",
     "source": "y8"
   },
   {
@@ -11278,7 +11278,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Girl Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/girl_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/girl_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88061/file/w180h135_webp-e8ad1a7b0e459dc7893c560fdb8e66bf.webp",
     "source": "y8"
   },
   {
@@ -11287,7 +11287,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Girls Romantic Evening free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/girls_romantic_evening",
-    "thumb": "https://cdn2.y8.com/cloudimage/girls_romantic_evening/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389617/file/w180h135_webp-a2737fd86baa262d2972272cd99cf04c.webp",
     "source": "y8"
   },
   {
@@ -11373,7 +11373,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Guess The Emoji free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/guess_the_emoji",
-    "thumb": "https://cdn2.y8.com/cloudimage/guess_the_emoji/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403927/file/w180h135_webp-a94c40186a22f102cb0b43c4c8ad6cec.webp",
     "source": "y8"
   },
   {
@@ -11382,7 +11382,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween 2018 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_2018",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_2018/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387025/file/w180h135_webp-e86658a85a0ae9880e2aa96fb851c8ba.webp",
     "source": "y8"
   },
   {
@@ -11391,7 +11391,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387719/file/w180h135_webp-9176e333123c260e560776a6f2ac2db1.webp",
     "source": "y8"
   },
   {
@@ -11400,7 +11400,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Makeover For Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_makeover_for_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_makeover_for_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76491/file/w180h135_webp-970e4fe151ead5237a8d4285cbe8782e.webp",
     "source": "y8"
   },
   {
@@ -11409,7 +11409,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Mask Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_mask_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_mask_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76511/file/w180h135_webp-063cbb0fa896712c79268963af1b499f.webp",
     "source": "y8"
   },
   {
@@ -11418,7 +11418,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393295/file/w180h135_webp-0903e28b2a7380e85206c7bbf8425424.webp",
     "source": "y8"
   },
   {
@@ -11427,7 +11427,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Memory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_memory",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_memory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389767/file/w180h135_webp-9f8c827ce853c5205c6f4c138c412719.webp",
     "source": "y8"
   },
   {
@@ -11436,7 +11436,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Halloween Parade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/halloween_parade",
-    "thumb": "https://cdn2.y8.com/cloudimage/halloween_parade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392133/file/w180h135_webp-1179483b6410f00a9112fcc2b96e4e39.webp",
     "source": "y8"
   },
   {
@@ -11445,7 +11445,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Happy Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/happy_halloween_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/happy_halloween_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390659/file/w180h135_webp-315f90d6c39ecde973550b9d1c5513da.webp",
     "source": "y8"
   },
   {
@@ -11454,7 +11454,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Horror Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/horror_halloween",
-    "thumb": "https://cdn2.y8.com/cloudimage/horror_halloween/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387601/file/w180h135_webp-0c4a21ecd526faa1b23a4c449e86959e.webp",
     "source": "y8"
   },
   {
@@ -11463,7 +11463,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Hyper Space Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hyper_space_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/hyper_space_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386007/file/w180h135_webp-326175a7b8393e0655bd7eadddf98bca.webp",
     "source": "y8"
   },
   {
@@ -11472,7 +11472,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Ice Princess Christmas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ice_princess_christmas",
-    "thumb": "https://cdn2.y8.com/cloudimage/ice_princess_christmas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407945/file/w180h135_webp-773e1d64e54c543010edd29ead0399bc.webp",
     "source": "y8"
   },
   {
@@ -11481,7 +11481,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Indian Girl Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/indian_girl_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/indian_girl_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40237/file/w180h135_webp-7ae43f8036ea980224399cf17e206e6f.webp",
     "source": "y8"
   },
   {
@@ -11490,7 +11490,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Insta Autumn Look free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/insta_autumn_look",
-    "thumb": "https://cdn2.y8.com/cloudimage/insta_autumn_look/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31037/file/w180h135_webp-c6425a82b890b3717d55c084d3443cf9.webp",
     "source": "y8"
   },
   {
@@ -11499,7 +11499,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Insta Beauty Pageant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/insta_beauty_pageant",
-    "thumb": "https://cdn2.y8.com/cloudimage/insta_beauty_pageant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16175/file/w180h135_webp-2945e2a1eeda284dfa079a86f06d83d4.webp",
     "source": "y8"
   },
   {
@@ -11508,7 +11508,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Jessica At Spa Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jessica_at_spa_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/jessica_at_spa_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/70735/file/w180h135_webp-ce6de49495dd8c9070f1bc94298d0537.webp",
     "source": "y8"
   },
   {
@@ -11517,7 +11517,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Jewelry Competition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jewelry_competition",
-    "thumb": "https://cdn2.y8.com/cloudimage/jewelry_competition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387595/file/w180h135_webp-e9e315c86a942af25d99e1bcd449f5e5.webp",
     "source": "y8"
   },
   {
@@ -11577,7 +11577,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Kitty Haircut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kitty_haircut",
-    "thumb": "https://cdn2.y8.com/cloudimage/kitty_haircut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89617/file/w180h135_webp-7d8faf2f46eddfc69aad15feb4f63cbf.webp",
     "source": "y8"
   },
   {
@@ -11586,7 +11586,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Lemonade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/lemonade",
-    "thumb": "https://cdn2.y8.com/cloudimage/lemonade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393299/file/w180h135_webp-50fb71e35b1c27c5df4e2d6d6a281761.webp",
     "source": "y8"
   },
   {
@@ -11595,7 +11595,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Little Nails Problems free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/little_nails_problems",
-    "thumb": "https://cdn2.y8.com/cloudimage/little_nails_problems/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407957/file/w180h135_webp-df9e88fd53a14a3c2aaa29a82fab5e18.webp",
     "source": "y8"
   },
   {
@@ -11604,7 +11604,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Little Princess Bathing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/little_princess_bathing",
-    "thumb": "https://cdn2.y8.com/cloudimage/little_princess_bathing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74189/file/w180h135_webp-a73a291c6c49f739b9ede07a4fd5af63.webp",
     "source": "y8"
   },
   {
@@ -11613,7 +11613,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Little Strawberry free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/little_strawberry",
-    "thumb": "https://cdn2.y8.com/cloudimage/little_strawberry/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387729/file/w180h135_webp-e55a6c83f5e2bab26bda7ef542b2de6f.webp",
     "source": "y8"
   },
   {
@@ -11622,7 +11622,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Long Gone Princess Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/long_gone_princess_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/long_gone_princess_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106185/file/w180h135_webp-fbb5606a32ea2f73a0d8a954137a2b70.webp",
     "source": "y8"
   },
   {
@@ -11631,7 +11631,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Love Diary 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/love_diary_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/love_diary_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/49257/file/w180h135_webp-2177fa01c5265e6fb24daf078c930d50.webp",
     "source": "y8"
   },
   {
@@ -11640,7 +11640,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Magic Princess Secret Recipe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/magic_princess_secret_recipe",
-    "thumb": "https://cdn2.y8.com/cloudimage/magic_princess_secret_recipe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74103/file/w180h135_webp-589394675e2ceaf2938748edd548424f.webp",
     "source": "y8"
   },
   {
@@ -11649,7 +11649,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Man Haircut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/man_haircut",
-    "thumb": "https://cdn2.y8.com/cloudimage/man_haircut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406501/file/w180h135_webp-ae9fdb2969285cfc3448db4c013c4345.webp",
     "source": "y8"
   },
   {
@@ -11675,7 +11675,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Maria S Gothic Seasons Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/maria_s_gothic_seasons_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/maria_s_gothic_seasons_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386853/file/w180h135_webp-bd52db4afed68dd255bd8a4f0363f97b.webp",
     "source": "y8"
   },
   {
@@ -11684,7 +11684,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Maria S Magical Seasons Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/maria_s_magical_seasons_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/maria_s_magical_seasons_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383485/file/w180h135_webp-ff338ed94f9e1d7dd342e6f22b5eec71.webp",
     "source": "y8"
   },
   {
@@ -11710,7 +11710,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Memory Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/memory_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/memory_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393727/file/w180h135_webp-b93a5807811a74337164752454e5eba4.webp",
     "source": "y8"
   },
   {
@@ -11719,7 +11719,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Miss Halloween Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/miss_halloween_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/miss_halloween_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76471/file/w180h135_webp-fbf6454484f616277757ab03aac65f04.webp",
     "source": "y8"
   },
   {
@@ -11728,7 +11728,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Modern Fashion Designer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/modern_fashion_designer",
-    "thumb": "https://cdn2.y8.com/cloudimage/modern_fashion_designer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90201/file/w180h135_webp-8eb062244989bc089948e218654c4808.webp",
     "source": "y8"
   },
   {
@@ -11737,7 +11737,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Nintendo Switch Repair free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/nintendo_switch_repair",
-    "thumb": "https://cdn2.y8.com/cloudimage/nintendo_switch_repair/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407423/file/w180h135_webp-fd1cf76d25ece8225a6ea1ebd6c3ff8d.webp",
     "source": "y8"
   },
   {
@@ -11746,7 +11746,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Noughts And Crosses Christmas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/noughts_and_crosses_christmas",
-    "thumb": "https://cdn2.y8.com/cloudimage/noughts_and_crosses_christmas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406237/file/w180h135_webp-ba3f3b4350a7b84ea06578dcdea9d2ec.webp",
     "source": "y8"
   },
   {
@@ -11755,7 +11755,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Noughts And Crosses Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/noughts_and_crosses_halloween",
-    "thumb": "https://cdn2.y8.com/cloudimage/noughts_and_crosses_halloween/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406153/file/w180h135_webp-c78c4823292d575a5571cbfab43bc866.webp",
     "source": "y8"
   },
   {
@@ -11764,7 +11764,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Pregnant Princess Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pregnant_princess_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/pregnant_princess_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342409/file/w180h135_webp-a6dcd0b58342ebc0b9e134e51c83b073.webp",
     "source": "y8"
   },
   {
@@ -11773,7 +11773,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Anna Hand Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_anna_hand_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_anna_hand_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407991/file/w180h135_webp-f9716392148b7970895381f04e797dbe.webp",
     "source": "y8"
   },
   {
@@ -11782,7 +11782,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Castle Wardrobe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_castle_wardrobe",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_castle_wardrobe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407995/file/w180h135_webp-8780cce63ff4070e802455c2eb3d6d33.webp",
     "source": "y8"
   },
   {
@@ -11791,7 +11791,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Gallbladder Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_gallbladder_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_gallbladder_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/54235/file/w180h135_webp-9236e1c340dd9e1de5efefaff8549ce6.webp",
     "source": "y8"
   },
   {
@@ -11800,7 +11800,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Goldblade And The Dangerous Waters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_goldblade_and_the_dangerous_waters",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_goldblade_and_the_dangerous_waters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387715/file/w180h135_webp-19e879d97b0054386f5f4d1795134502.webp",
     "source": "y8"
   },
   {
@@ -11809,7 +11809,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Haircut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_haircut",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_haircut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50331/file/w180h135_webp-f5ff04d86a9c29ca593d959c95770168.webp",
     "source": "y8"
   },
   {
@@ -11818,7 +11818,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Halloween Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_halloween_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_halloween_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408107/file/w180h135_webp-9a8520c9a3c203a9406bde5df71bce80.webp",
     "source": "y8"
   },
   {
@@ -11827,7 +11827,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Hips Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_hips_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_hips_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406575/file/w180h135_webp-18c3a5440ded4caf676fe516d4e0ac49.webp",
     "source": "y8"
   },
   {
@@ -11836,7 +11836,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Kidney Transplant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_kidney_transplant",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_kidney_transplant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/46215/file/w180h135_webp-be74e5afa910ee2543ef3c4601bc35ef.webp",
     "source": "y8"
   },
   {
@@ -11845,7 +11845,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Kitty Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_kitty_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_kitty_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51663/file/w180h135_webp-081c41f0339c6ad8fd62d6001b07bb44.webp",
     "source": "y8"
   },
   {
@@ -11854,7 +11854,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Pregnant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_pregnant_",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_pregnant_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407615/file/w180h135_webp-501f21caed1a5b8c7bcc9d28d43aee57.webp",
     "source": "y8"
   },
   {
@@ -11863,7 +11863,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Pup Rescue free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_pup_rescue",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_pup_rescue/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406929/file/w180h135_webp-39a6c94de00654f7627af87bce6bc976.webp",
     "source": "y8"
   },
   {
@@ -11872,7 +11872,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Sand Castle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_sand_castle",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_sand_castle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86535/file/w180h135_webp-493287ad2f2e48c9a588a72b3b249549.webp",
     "source": "y8"
   },
   {
@@ -11881,7 +11881,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Scoliosis Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_scoliosis_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_scoliosis_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408109/file/w180h135_webp-b924e97bc25ffa58526e08456aedc141.webp",
     "source": "y8"
   },
   {
@@ -11890,7 +11890,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Ski Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_ski_time",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_ski_time/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42661/file/w180h135_webp-dedd11ab4d83c758aa4c98211f4f80ce.webp",
     "source": "y8"
   },
   {
@@ -11899,7 +11899,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Tattoo Work free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_tattoo_work",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_tattoo_work/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407657/file/w180h135_webp-d3bfa96f9f3ec705308c87c52a1e28f1.webp",
     "source": "y8"
   },
   {
@@ -11908,7 +11908,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princess Twins Babies Newborn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princess_twins_babies_newborn",
-    "thumb": "https://cdn2.y8.com/cloudimage/princess_twins_babies_newborn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407431/file/w180h135_webp-1e956095ca357c93b493b63d012e212c.webp",
     "source": "y8"
   },
   {
@@ -11917,7 +11917,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Princesses Selfie Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/princesses_selfie_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/princesses_selfie_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407979/file/w180h135_webp-fbed33ea348c942b0635de2ff556f911.webp",
     "source": "y8"
   },
   {
@@ -11926,7 +11926,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Ragdoll Physics 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ragdoll_physics_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/ragdoll_physics_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407639/file/w180h135_webp-1900905a55949b95235691fe80ea56e4.webp",
     "source": "y8"
   },
   {
@@ -11935,7 +11935,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Rocket Space free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rocket_space",
-    "thumb": "https://cdn2.y8.com/cloudimage/rocket_space/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102491/file/w180h135_webp-a13a868d27254eac42ed27dc592013e9.webp",
     "source": "y8"
   },
   {
@@ -11944,7 +11944,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Romantic Miami free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/romantic_miami",
-    "thumb": "https://cdn2.y8.com/cloudimage/romantic_miami/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71473/file/w180h135_webp-a0fb13afd3c4e2b9299e0236cc5256de.webp",
     "source": "y8"
   },
   {
@@ -11953,7 +11953,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Romantic Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/romantic_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/romantic_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386069/file/w180h135_webp-f61e566e222fd5c1577cb69640613faf.webp",
     "source": "y8"
   },
   {
@@ -11962,7 +11962,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Romantic Salon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/romantic_salon",
-    "thumb": "https://cdn2.y8.com/cloudimage/romantic_salon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64435/file/w180h135_webp-942cad463551fad3835a30b31827c082.webp",
     "source": "y8"
   },
   {
@@ -11971,7 +11971,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Romantic Swimming Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/romantic_swimming_pool",
-    "thumb": "https://cdn2.y8.com/cloudimage/romantic_swimming_pool/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407611/file/w180h135_webp-77b5c9fc6d1d63f50fb8a4988becbdcb.webp",
     "source": "y8"
   },
   {
@@ -11980,7 +11980,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Royal Princess Pregnant free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/royal_princess_pregnant",
-    "thumb": "https://cdn2.y8.com/cloudimage/royal_princess_pregnant/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/103473/file/w180h135_webp-b237c2fa79500b39479ed448b5cea109.webp",
     "source": "y8"
   },
   {
@@ -11989,7 +11989,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Santa Haircut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/santa_haircut",
-    "thumb": "https://cdn2.y8.com/cloudimage/santa_haircut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/93007/file/w180h135_webp-0f1a9de696db36696d0eba40d84d0ee0.webp",
     "source": "y8"
   },
   {
@@ -12007,7 +12007,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Soft Girly Style free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/soft_girly_style",
-    "thumb": "https://cdn2.y8.com/cloudimage/soft_girly_style/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12837/file/w180h135_webp-327ee5e6897abc9c2572486ecc2d9f22.webp",
     "source": "y8"
   },
   {
@@ -12016,7 +12016,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Sophia Princess Valentines Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sophia_princess_valentines_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/sophia_princess_valentines_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5631/file/w180h135_webp-ed81b3dd480b196a573ec3ddf3e10f11.webp",
     "source": "y8"
   },
   {
@@ -12025,7 +12025,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Spa Birthday Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spa_birthday_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/spa_birthday_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38989/file/w180h135_webp-7ae01a72959f5076c90893574e24dfc4.webp",
     "source": "y8"
   },
   {
@@ -12034,7 +12034,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Adventure Pinball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_adventure_pinball",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_adventure_pinball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388501/file/w180h135_webp-bebde3f933da9177921ae1402c0114c5.webp",
     "source": "y8"
   },
   {
@@ -12043,7 +12043,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393675/file/w180h135_webp-7b10b529d9778681b7c26522692716f4.webp",
     "source": "y8"
   },
   {
@@ -12052,7 +12052,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Attack 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_attack_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_attack_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389317/file/w180h135_webp-6d2f464d18f7260b72f39c05ff60bd51.webp",
     "source": "y8"
   },
   {
@@ -12061,7 +12061,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Blasters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_blasters_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_blasters_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23155/file/w180h135_webp-b6dbed065253ebc4c0932c82016ddeaa.webp",
     "source": "y8"
   },
   {
@@ -12070,7 +12070,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Creatures free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_creatures",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_creatures/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392395/file/w180h135_webp-23836a72f07dc83263b9131f8c1a60eb.webp",
     "source": "y8"
   },
   {
@@ -12079,7 +12079,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Lab Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_lab_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_lab_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389449/file/w180h135_webp-097d8c3c29f93345779280243dc5c31d.webp",
     "source": "y8"
   },
   {
@@ -12088,7 +12088,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Marines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_marines",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_marines/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385111/file/w180h135_webp-558d7ad3878a206ef5791bbabd92207c.webp",
     "source": "y8"
   },
   {
@@ -12097,7 +12097,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Match-3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_match-3",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_match-3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390671/file/w180h135_webp-a326f56335732266c5728107e6928ae7.webp",
     "source": "y8"
   },
   {
@@ -12106,7 +12106,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Parasites Annihilation free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_parasites_annihilation",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_parasites_annihilation/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388593/file/w180h135_webp-48896ebc43e9a4dfbdbe99e2e6ee14a2.webp",
     "source": "y8"
   },
   {
@@ -12115,7 +12115,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Purge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_purge",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_purge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392643/file/w180h135_webp-75f20301e63b5a381137406707474c1c.webp",
     "source": "y8"
   },
   {
@@ -12124,7 +12124,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Shoot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_shoot",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_shoot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392375/file/w180h135_webp-ddd49d8d0e516dfe8b38a92832effa18.webp",
     "source": "y8"
   },
   {
@@ -12133,7 +12133,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47239/file/w180h135_webp-a289914d6d951af919a3b343ce720fca.webp",
     "source": "y8"
   },
   {
@@ -12142,7 +12142,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Space Transport free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/space_transport",
-    "thumb": "https://cdn2.y8.com/cloudimage/space_transport/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387625/file/w180h135_webp-ecf438bb6e82cda65e0929456114be6d.webp",
     "source": "y8"
   },
   {
@@ -12151,7 +12151,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Spaceship Survival Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spaceship_survival_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/spaceship_survival_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393743/file/w180h135_webp-4bc7c50f48fc374cbc760bff4b9a318d.webp",
     "source": "y8"
   },
   {
@@ -12160,7 +12160,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Switch Color free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/switch_color",
-    "thumb": "https://cdn2.y8.com/cloudimage/switch_color/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393131/file/w180h135_webp-d79aec20e9d26a845cbe42903f3abcca.webp",
     "source": "y8"
   },
   {
@@ -12169,7 +12169,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Switch Dash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/switch_dash",
-    "thumb": "https://cdn2.y8.com/cloudimage/switch_dash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389789/file/w180h135_webp-f19cd6a224f677bda3bb3f192ce2fd6d.webp",
     "source": "y8"
   },
   {
@@ -12331,7 +12331,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Trendy Fashion Designer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/trendy_fashion_designer",
-    "thumb": "https://cdn2.y8.com/cloudimage/trendy_fashion_designer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16807/file/w180h135_webp-793694a03bb773604285979e14d9de97.webp",
     "source": "y8"
   },
   {
@@ -12357,7 +12357,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Trendy Fashion World Tour Part 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/trendy_fashion_world_tour_part_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/trendy_fashion_world_tour_part_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389193/file/w180h135_webp-dd90478aabc95721dec10f361d319854.webp",
     "source": "y8"
   },
   {
@@ -12366,7 +12366,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Witch Makeover By Hansel And Gretel free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/witch_makeover_by_hansel_and_gretel",
-    "thumb": "https://cdn2.y8.com/cloudimage/witch_makeover_by_hansel_and_gretel/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391287/file/w180h135_webp-194391c9417ab066c776775106762ee6.webp",
     "source": "y8"
   },
   {
@@ -12375,7 +12375,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Zig Zag Switch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zig_zag_switch",
-    "thumb": "https://cdn2.y8.com/cloudimage/zig_zag_switch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388833/file/w180h135_webp-b6765360b6f827b851fc295f75506596.webp",
     "source": "y8"
   },
   {
@@ -12384,7 +12384,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Hazel In Kitchen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_in_kitchen",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_in_kitchen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/138237/file/w180h135_webp-481e2da591dddaad8c84e327838ab756.webp",
     "source": "y8"
   },
   {
@@ -12393,7 +12393,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Anime Couple Avatar Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anime_couple_avatar_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/anime_couple_avatar_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/395213/file/w180h135_webp-61bee0885bdd616883772858e3ad9208.webp",
     "source": "y8"
   },
   {
@@ -12402,7 +12402,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Beauty Homeless free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_beauty_homeless",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_beauty_homeless/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23107/file/w180h135_webp-ce839c0da9c6891d87972b2817cab0fb.webp",
     "source": "y8"
   },
   {
@@ -12411,7 +12411,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Beauty Clinic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_beauty_clinic",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_beauty_clinic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404493/file/w180h135_webp-383eee6937baa426702c1491bafa1051.webp",
     "source": "y8"
   },
   {
@@ -12420,7 +12420,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Adventure Time Dress Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adventure_time_dress_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/adventure_time_dress_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/83551/file/w180h135_webp-4d08cfec4004f7d03f331872529c1300.webp",
     "source": "y8"
   },
   {
@@ -12429,7 +12429,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play 3d Acrylic Nail free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_acrylic_nail",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_acrylic_nail/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384527/file/w180h135_webp-6261d7c102744af5873e4303728e00ea.webp",
     "source": "y8"
   },
   {
@@ -12438,7 +12438,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Makeup And Makeover Studio free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_makeup_and_makeover_studio",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_makeup_and_makeover_studio/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386683/file/w180h135_webp-0887bbbf4bd52e50ba91d2ac793b040e.webp",
     "source": "y8"
   },
   {
@@ -12447,7 +12447,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Ayla World Avatar City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ayla_world_avatar_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/ayla_world_avatar_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398921/file/w180h135_webp-8a34d9a913bfcc65a001c0b61d41eab6.webp",
     "source": "y8"
   },
   {
@@ -12456,7 +12456,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Babs New Girl In School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/babs_new_girl_in_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/babs_new_girl_in_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383613/file/w180h135_webp-51929a3c45c9d52fffd6fbcf50645337.webp",
     "source": "y8"
   },
   {
@@ -12465,7 +12465,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play All Year Round Fashion Addict Belle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/all_year_round_fashion_addict_belle",
-    "thumb": "https://cdn2.y8.com/cloudimage/all_year_round_fashion_addict_belle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75321/file/w180h135_webp-aeba651d88c1386282a041f02dce03fa.webp",
     "source": "y8"
   },
   {
@@ -12474,7 +12474,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Beauty Superstar free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_beauty_superstar",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_beauty_superstar/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/463/file/w180h135_webp-498a9d18697ffd6a54998075e4f5a1df.webp",
     "source": "y8"
   },
   {
@@ -12483,7 +12483,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Anime Fashion World Met Gala Magic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anime_fashion_world_met_gala_magic",
-    "thumb": "https://cdn2.y8.com/cloudimage/anime_fashion_world_met_gala_magic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189961/file/w180h135_webp-0a20a515079d58bef3c2708781bbc70c.webp",
     "source": "y8"
   },
   {
@@ -12492,7 +12492,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play After The Rain Dressup free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/after_the_rain_dressup",
-    "thumb": "https://cdn2.y8.com/cloudimage/after_the_rain_dressup/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385255/file/w180h135_webp-e9b501b525252f824c322a04fb997650.webp",
     "source": "y8"
   },
   {
@@ -12501,7 +12501,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Bathing Time To Sleep free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_bathing_time_to_sleep",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_bathing_time_to_sleep/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/178557/file/w180h135_webp-afd7ad10042c532556b897f7527fcee3.webp",
     "source": "y8"
   },
   {
@@ -12510,7 +12510,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Babs Spring Wedding free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/babs_spring_wedding",
-    "thumb": "https://cdn2.y8.com/cloudimage/babs_spring_wedding/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11735/file/w180h135_webp-c8f87685269d48f19d5163ca9de16d92.webp",
     "source": "y8"
   },
   {
@@ -12519,7 +12519,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Autumn Glam Gala free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/autumn_glam_gala",
-    "thumb": "https://cdn2.y8.com/cloudimage/autumn_glam_gala/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384139/file/w180h135_webp-6fe9b988ff0c3637922ebb1f10c87454.webp",
     "source": "y8"
   },
   {
@@ -12528,7 +12528,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Back To School Uniforms Edition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/back_to_school_uniforms_edition",
-    "thumb": "https://cdn2.y8.com/cloudimage/back_to_school_uniforms_edition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342153/file/w180h135_webp-4a22dfd93cce3a825c2034d92bf80b46.webp",
     "source": "y8"
   },
   {
@@ -12537,7 +12537,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play A Brides First Kiss free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_brides_first_kiss",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_brides_first_kiss/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383537/file/w180h135_webp-61be239f35199c00d5872c21188b548f.webp",
     "source": "y8"
   },
   {
@@ -12546,7 +12546,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Autumn Love Story free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/autumn_love_story_",
-    "thumb": "https://cdn2.y8.com/cloudimage/autumn_love_story_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77813/file/w180h135_webp-ec67f91c7c0e54abbfa85addf6a05516.webp",
     "source": "y8"
   },
   {
@@ -12555,7 +12555,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Around The World Blonde Princess Fashionista free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/around_the_world_blonde_princess_fashionista",
-    "thumb": "https://cdn2.y8.com/cloudimage/around_the_world_blonde_princess_fashionista/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92355/file/w180h135_webp-99eead1e52952755177e5fee0a316dc4.webp",
     "source": "y8"
   },
   {
@@ -12564,7 +12564,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Girl Livestream Mukbang free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_girl_livestream_mukbang",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_girl_livestream_mukbang/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386399/file/w180h135_webp-87dff8c135f6cbcc3a324f94fdd723a9.webp",
     "source": "y8"
   },
   {
@@ -12573,7 +12573,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Anime Girl Lineart Generator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anime_girl_lineart_generator",
-    "thumb": "https://cdn2.y8.com/cloudimage/anime_girl_lineart_generator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42603/file/w180h135_webp-48b63d48fe3ae22e9fa3f0730c578e6e.webp",
     "source": "y8"
   },
   {
@@ -12582,7 +12582,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play African Princesses Style Island free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/african_princesses_style_island",
-    "thumb": "https://cdn2.y8.com/cloudimage/african_princesses_style_island/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407861/file/w180h135_webp-a93eb0c272273ee44f03892038548575.webp",
     "source": "y8"
   },
   {
@@ -12591,7 +12591,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Hazel Kitchen Time free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_kitchen_time_",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_kitchen_time_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19061/file/w180h135_webp-8c0c18030d8ed6c456741ebce4cc5cb4.webp",
     "source": "y8"
   },
   {
@@ -12618,7 +12618,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Hazel Learns Shapes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_learns_shapes",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_learns_shapes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/348307/file/w180h135_webp-cab390f564565aa2cc4eb8c0124af2e5.webp",
     "source": "y8"
   },
   {
@@ -12636,7 +12636,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Avatar World Dream City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avatar_world_dream_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/avatar_world_dream_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24521/file/w180h135_webp-f48c5d3c6a5261a99908923f077b73ab.webp",
     "source": "y8"
   },
   {
@@ -12645,7 +12645,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Back To School Fashionistas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/back_to_school_fashionistas",
-    "thumb": "https://cdn2.y8.com/cloudimage/back_to_school_fashionistas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/53077/file/w180h135_webp-3d2a6ff5c10004c63a65197d1a6cb77f.webp",
     "source": "y8"
   },
   {
@@ -12654,7 +12654,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Naughty Christmas free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_naughty_christmas",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_naughty_christmas/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408387/file/w180h135_webp-ea4e221db71fdf12eb69e641c9fe94f9.webp",
     "source": "y8"
   },
   {
@@ -12690,7 +12690,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Cleaning free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_cleaning",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_cleaning/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5571/file/w180h135_webp-6d892674b004f1cf65cfa59847327cb9.webp",
     "source": "y8"
   },
   {
@@ -12699,7 +12699,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play All Year Round Fashion Addict Island Princess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/all_year_round_fashion_addict_island_princess",
-    "thumb": "https://cdn2.y8.com/cloudimage/all_year_round_fashion_addict_island_princess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/84311/file/w180h135_webp-477e3016db2251f714c456f84103ba79.webp",
     "source": "y8"
   },
   {
@@ -12798,7 +12798,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Mary Goes Shopping free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_mary_goes_shopping",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_mary_goes_shopping/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407849/file/w180h135_webp-214c1882bd7267b3d158d5bc3780da99.webp",
     "source": "y8"
   },
   {
@@ -12816,7 +12816,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Baby Hazel Newborn Baby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_hazel_newborn_baby",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_hazel_newborn_baby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/100753/file/w180h135_webp-5e5c0837efc1f8a4f771906c168ab81f.webp",
     "source": "y8"
   },
   {
@@ -12852,7 +12852,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play Asmr Makeover Celebrity free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_makeover_celebrity",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_makeover_celebrity/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392411/file/w180h135_webp-4a95143e2f673254d8e47b914f11bdd4.webp",
     "source": "y8"
   },
   {
@@ -12897,7 +12897,7 @@ const GAMES = [
     "category": "Girls",
     "description": "Play All Year Round Fashion Addict Star free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/all_year_round_fashion_addict_star",
-    "thumb": "https://cdn2.y8.com/cloudimage/all_year_round_fashion_addict_star/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73081/file/w180h135_webp-92e87a8f75c65f2769e4158b6ff54e3d.webp",
     "source": "y8"
   },
   {
@@ -12958,7 +12958,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Crime Hunt 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crime_hunt_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/crime_hunt_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389379/file/w180h135_webp-051e326b2bb2bad78acb9e24d0c67b9b.webp",
     "source": "y8"
   },
   {
@@ -13001,7 +13001,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Black Hawk Down free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_hawk_down",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_hawk_down/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384549/file/w180h135_webp-845c286af7b24c6a27dccb519d40deaa.webp",
     "source": "y8"
   },
   {
@@ -13010,7 +13010,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Way Of Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/way_of_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/way_of_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383901/file/w180h135_webp-3aeff27e6e138680a7d92702310bd442.webp",
     "source": "y8"
   },
   {
@@ -13019,7 +13019,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Ttma Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ttma_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/ttma_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405489/file/w180h135_webp-6e7ca01c577c25209d46085cbb0de824.webp",
     "source": "y8"
   },
   {
@@ -13045,7 +13045,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Base Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/base_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/base_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384387/file/w180h135_webp-78778869b0b7035750c488f0e52411c1.webp",
     "source": "y8"
   },
   {
@@ -13054,7 +13054,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Duck Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/duck_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/duck_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385797/file/w180h135_webp-d00bf4e11104fdbd96a4bd775681d8ae.webp",
     "source": "y8"
   },
   {
@@ -13063,7 +13063,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Robots Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/robots_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/robots_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389501/file/w180h135_webp-a285f80a21778ffdd7d152bb2acc429d.webp",
     "source": "y8"
   },
   {
@@ -13106,7 +13106,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Mecha Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mecha_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/mecha_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385865/file/w180h135_webp-5b189ef3fbb2864c5c03e8a3b628b080.webp",
     "source": "y8"
   },
   {
@@ -13132,7 +13132,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Siege free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/siege",
-    "thumb": "https://cdn2.y8.com/cloudimage/siege/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387129/file/w180h135_webp-34d24855108f7189842f55e6a2edd048.webp",
     "source": "y8"
   },
   {
@@ -13141,7 +13141,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Hurdles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hurdles",
-    "thumb": "https://cdn2.y8.com/cloudimage/hurdles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343251/file/w180h135_webp-9885d00a396e13c7d7076ee6ce3cff4e.webp",
     "source": "y8"
   },
   {
@@ -13167,7 +13167,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Super Nanny Emma free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_nanny_emma",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_nanny_emma/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408077/file/w180h135_webp-66195ce43b54f3034e920ea3b21700cb.webp",
     "source": "y8"
   },
   {
@@ -13176,7 +13176,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Adopt Your Pet Kitty free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adopt_your_pet_kitty",
-    "thumb": "https://cdn2.y8.com/cloudimage/adopt_your_pet_kitty/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30263/file/w180h135_webp-c795e8a3a44439267b2ecdf49b18d927.webp",
     "source": "y8"
   },
   {
@@ -13185,7 +13185,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Yummy Taco free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/yummy_taco_",
-    "thumb": "https://cdn2.y8.com/cloudimage/yummy_taco_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36513/file/w180h135_webp-d73fce98897c8c55d78e5155caa590a2.webp",
     "source": "y8"
   },
   {
@@ -13211,7 +13211,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Code 12 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/code_12",
-    "thumb": "https://cdn2.y8.com/cloudimage/code_12/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384501/file/w180h135_webp-9fec926c134a913b1d3bfdbc47565676.webp",
     "source": "y8"
   },
   {
@@ -13220,7 +13220,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Er Plumber free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_plumber",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_plumber/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47277/file/w180h135_webp-b7addc1d117baeffd7b9d489cb17066a.webp",
     "source": "y8"
   },
   {
@@ -13229,7 +13229,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Error 54 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/error_54",
-    "thumb": "https://cdn2.y8.com/cloudimage/error_54/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406031/file/w180h135_webp-5c2436f5fba4694474b1cbe696b27357.webp",
     "source": "y8"
   },
   {
@@ -13238,7 +13238,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Slots Beach free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/slots_beach",
-    "thumb": "https://cdn2.y8.com/cloudimage/slots_beach/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387573/file/w180h135_webp-dd642aebbfff441a5ea9356b97892484.webp",
     "source": "y8"
   },
   {
@@ -13247,7 +13247,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Wasteland 2035 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/wasteland_2035",
-    "thumb": "https://cdn2.y8.com/cloudimage/wasteland_2035/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388567/file/w180h135_webp-d7d0b68d250c04d278b36a501eee998f.webp",
     "source": "y8"
   },
   {
@@ -13256,7 +13256,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Plague free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/plague",
-    "thumb": "https://cdn2.y8.com/cloudimage/plague/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392543/file/w180h135_webp-b4fbb2a369e0b743f5a69c8a22ca2d43.webp",
     "source": "y8"
   },
   {
@@ -13265,7 +13265,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Tiranobot Assembly 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tiranobot_assembly_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/tiranobot_assembly_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/74703/file/w180h135_webp-83498e84f304e5e3fbc644afec4ef037.webp",
     "source": "y8"
   },
   {
@@ -13274,7 +13274,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Brutal Lumberjack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brutal_lumberjack",
-    "thumb": "https://cdn2.y8.com/cloudimage/brutal_lumberjack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389461/file/w180h135_webp-d01777b8e22c2b6e1a84b08af07aaf96.webp",
     "source": "y8"
   },
   {
@@ -13283,7 +13283,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Kungfu Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kungfu_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/kungfu_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393855/file/w180h135_webp-c119475dd59ae15b609fc75bda3ee3a5.webp",
     "source": "y8"
   },
   {
@@ -13292,7 +13292,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Steel Fists free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/steel_fists",
-    "thumb": "https://cdn2.y8.com/cloudimage/steel_fists/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389135/file/w180h135_webp-cb5db7fa9b3d3750e294b28354afd6fc.webp",
     "source": "y8"
   },
   {
@@ -13369,7 +13369,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Rotare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rotare",
-    "thumb": "https://cdn2.y8.com/cloudimage/rotare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393541/file/w180h135_webp-a633ea89e378fd440acf6372f4f4f1b1.webp",
     "source": "y8"
   },
   {
@@ -13395,7 +13395,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Circle S free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/circle_s",
-    "thumb": "https://cdn2.y8.com/cloudimage/circle_s/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387401/file/w180h135_webp-f64878c8579a6a1953d237c89cdde54c.webp",
     "source": "y8"
   },
   {
@@ -13421,7 +13421,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Rise Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rise_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/rise_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406227/file/w180h135_webp-64291b0df8ca667ad1fc7a3ed312ab8c.webp",
     "source": "y8"
   },
   {
@@ -13447,7 +13447,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Mad Shark free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mad_shark",
-    "thumb": "https://cdn2.y8.com/cloudimage/mad_shark/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392895/file/w180h135_webp-bf6825cdd9810b10c056241107743a25.webp",
     "source": "y8"
   },
   {
@@ -13456,7 +13456,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play The Sorcerer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_sorcerer",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_sorcerer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385155/file/w180h135_webp-62d181a72fad15e1136f363a493949a1.webp",
     "source": "y8"
   },
   {
@@ -13465,7 +13465,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Amy Autopsy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amy_autopsy",
-    "thumb": "https://cdn2.y8.com/cloudimage/amy_autopsy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342843/file/w180h135_webp-68089e08535838a4ed963eb1c3f28b03.webp",
     "source": "y8"
   },
   {
@@ -13474,7 +13474,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Angrybirds Vs Zombies Ultimate War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angrybirds_vs_zombies_ultimate_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/angrybirds_vs_zombies_ultimate_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/99603/file/w180h135_webp-96e5713e1354467d89830cf8be363eb0.webp",
     "source": "y8"
   },
   {
@@ -13501,7 +13501,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Angry Rooster Run Subway free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_rooster_run_subway",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_rooster_run_subway/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77833/file/w180h135_webp-bdb386b0a42a7059e73ebe586c7fa8cc.webp",
     "source": "y8"
   },
   {
@@ -13510,7 +13510,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play 7 Second Haircuts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/7_second_haircuts",
-    "thumb": "https://cdn2.y8.com/cloudimage/7_second_haircuts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23043/file/w180h135_webp-0f8c4ae3af57f71f3cbd4c1e969fd8a6.webp",
     "source": "y8"
   },
   {
@@ -13519,7 +13519,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play A Taste Of The Past free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_taste_of_the_past",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_taste_of_the_past/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22435/file/w180h135_webp-54e80f3298e40263761199e0f82026df.webp",
     "source": "y8"
   },
   {
@@ -13528,7 +13528,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play 2 Player Pomni free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_pomni",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_pomni/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26357/file/w180h135_webp-c35ed6538ebf606bfaed105a7537bce9.webp",
     "source": "y8"
   },
   {
@@ -13537,7 +13537,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Animal Daycare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_daycare",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_daycare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34265/file/w180h135_webp-5d8c88efbafe7224034ea05f1998c632.webp",
     "source": "y8"
   },
   {
@@ -13546,7 +13546,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Acne free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/acne",
-    "thumb": "https://cdn2.y8.com/cloudimage/acne/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144751/file/w180h135_webp-3080ed40a1c9c0cf1348c36fab41026b.webp",
     "source": "y8"
   },
   {
@@ -13555,7 +13555,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Ani Ragdoll free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ani_ragdoll",
-    "thumb": "https://cdn2.y8.com/cloudimage/ani_ragdoll/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/68897/file/w180h135_webp-990a711891fbeefbfb0cf7af158dd784.webp",
     "source": "y8"
   },
   {
@@ -13564,7 +13564,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play 2 Player Skibidi Toilet 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_skibidi_toilet_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_skibidi_toilet_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7435/file/w180h135_webp-0aadfcec5fd28a467b417a5009967219.webp",
     "source": "y8"
   },
   {
@@ -13573,7 +13573,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Angry Daddy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_daddy",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_daddy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66799/file/w180h135_webp-dcfc7fe775c340f61c7be65feb2d4504.webp",
     "source": "y8"
   },
   {
@@ -13618,7 +13618,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Defense Of The Base free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defense_of_the_base",
-    "thumb": "https://cdn2.y8.com/cloudimage/defense_of_the_base/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389467/file/w180h135_webp-e8a2ef5b8070557eef76776a35cce0ef.webp",
     "source": "y8"
   },
   {
@@ -13627,7 +13627,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Y8 Ludo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/y8_ludo",
-    "thumb": "https://cdn2.y8.com/cloudimage/y8_ludo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385705/file/w180h135_webp-4bfab3264bba8fe7af39587a250e0737.webp",
     "source": "y8"
   },
   {
@@ -13670,7 +13670,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Blackjack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blackjack",
-    "thumb": "https://cdn2.y8.com/cloudimage/blackjack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389613/file/w180h135_webp-7ef4ea307e3bb810f3b570cc54c8c2bd.webp",
     "source": "y8"
   },
   {
@@ -13696,7 +13696,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Noughts And Crosses Girls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/noughts_and_crosses_girls",
-    "thumb": "https://cdn2.y8.com/cloudimage/noughts_and_crosses_girls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406229/file/w180h135_webp-21a5d9d2b9533bdc118673d96a81d03f.webp",
     "source": "y8"
   },
   {
@@ -13705,7 +13705,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Apples free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apples",
-    "thumb": "https://cdn2.y8.com/cloudimage/apples/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392787/file/w180h135_webp-116364ba4fa148b8dc05bb8e1c80cf40.webp",
     "source": "y8"
   },
   {
@@ -13731,7 +13731,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Asia Flags free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asia_flags",
-    "thumb": "https://cdn2.y8.com/cloudimage/asia_flags/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343071/file/w180h135_webp-be3f76c5e2c89ed1b5f9a8cb6e0a53e5.webp",
     "source": "y8"
   },
   {
@@ -13740,7 +13740,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play B-List Super Heroes Ep 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/b-list_super_heroes_ep_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/b-list_super_heroes_ep_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40501/file/w180h135_webp-1395fb9b4971380ba93270657d83b4d7.webp",
     "source": "y8"
   },
   {
@@ -13749,7 +13749,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Base Of Robots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/base_of_robots",
-    "thumb": "https://cdn2.y8.com/cloudimage/base_of_robots/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388845/file/w180h135_webp-81266c0d00f6bee01fe0390f59b1063e.webp",
     "source": "y8"
   },
   {
@@ -13758,7 +13758,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Bird Spikes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bird_spikes",
-    "thumb": "https://cdn2.y8.com/cloudimage/bird_spikes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388215/file/w180h135_webp-861bc2ce4b742e4a72c4f437ee748d02.webp",
     "source": "y8"
   },
   {
@@ -13784,7 +13784,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Brust Limit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brust_limit",
-    "thumb": "https://cdn2.y8.com/cloudimage/brust_limit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343237/file/w180h135_webp-1c2f0de1c24be2d68d13befda42ecaeb.webp",
     "source": "y8"
   },
   {
@@ -13793,7 +13793,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Budge Up free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/budge_up",
-    "thumb": "https://cdn2.y8.com/cloudimage/budge_up/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20749/file/w180h135_webp-879cb140be87c942bbc2d331590fe757.webp",
     "source": "y8"
   },
   {
@@ -13802,7 +13802,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Circle Clock free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/circle_clock",
-    "thumb": "https://cdn2.y8.com/cloudimage/circle_clock/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389769/file/w180h135_webp-df9efb7cc2ca3fc5042a360470bf5a84.webp",
     "source": "y8"
   },
   {
@@ -13828,7 +13828,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Crazy Circus free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_circus",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_circus/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42327/file/w180h135_webp-a0633f25ba17298364e29588d57c4f06.webp",
     "source": "y8"
   },
   {
@@ -13837,7 +13837,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Creepy Day free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creepy_day",
-    "thumb": "https://cdn2.y8.com/cloudimage/creepy_day/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387141/file/w180h135_webp-815b41b2a5aaac7a0eb0aec013e784a9.webp",
     "source": "y8"
   },
   {
@@ -13880,7 +13880,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Dd Ludo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_ludo",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_ludo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388487/file/w180h135_webp-f112ad9160baf4a0cbf62cb6f5a8abf5.webp",
     "source": "y8"
   },
   {
@@ -13889,7 +13889,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Dd Release free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_release",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_release/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387373/file/w180h135_webp-d02df690b909dcabaae4810d5ce3aa21.webp",
     "source": "y8"
   },
   {
@@ -13898,7 +13898,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Dd Squarea free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_squarea",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_squarea/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387403/file/w180h135_webp-aab1d473aec0834f54cb366d7d699d9e.webp",
     "source": "y8"
   },
   {
@@ -13907,7 +13907,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Dd Take Off free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_take_off",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_take_off/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387281/file/w180h135_webp-0a06b05f11a4bb8740aa95846438df9a.webp",
     "source": "y8"
   },
   {
@@ -13967,7 +13967,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Dots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dots",
-    "thumb": "https://cdn2.y8.com/cloudimage/dots/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387381/file/w180h135_webp-1197cce8d7c6e908e6791107bbbbe8e0.webp",
     "source": "y8"
   },
   {
@@ -13976,7 +13976,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Downhill Madness free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/downhill_madness",
-    "thumb": "https://cdn2.y8.com/cloudimage/downhill_madness/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385861/file/w180h135_webp-563e2d840201bc017333ed3524bd5983.webp",
     "source": "y8"
   },
   {
@@ -14002,7 +14002,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Electrio free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/electrio",
-    "thumb": "https://cdn2.y8.com/cloudimage/electrio/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393545/file/w180h135_webp-2cdc8a3a515be067ae170cd6a48d35f5.webp",
     "source": "y8"
   },
   {
@@ -14011,7 +14011,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Er Coast Guard free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_coast_guard",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_coast_guard/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50205/file/w180h135_webp-560cb466e71e7704d189bec39d6c8966.webp",
     "source": "y8"
   },
   {
@@ -14020,7 +14020,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Er Electrician free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_electrician",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_electrician/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78643/file/w180h135_webp-aa020476425f86679923cfb63a4c3bdb.webp",
     "source": "y8"
   },
   {
@@ -14029,7 +14029,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Er Mechanic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_mechanic",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_mechanic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78877/file/w180h135_webp-e91ed8ff5b51c659ff98de33630faf9b.webp",
     "source": "y8"
   },
   {
@@ -14072,7 +14072,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Florescene free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/florescene",
-    "thumb": "https://cdn2.y8.com/cloudimage/florescene/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389143/file/w180h135_webp-18add118c2eed2b36264080126ec1d15.webp",
     "source": "y8"
   },
   {
@@ -14081,7 +14081,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Gangster Man 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gangster_man_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/gangster_man_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343235/file/w180h135_webp-6d51b8ad852a026a3a590843e4ae4180.webp",
     "source": "y8"
   },
   {
@@ -14141,7 +14141,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Heist Crew free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/heist_crew",
-    "thumb": "https://cdn2.y8.com/cloudimage/heist_crew/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385631/file/w180h135_webp-fd18c67f9dba138a275884aafd265bcb.webp",
     "source": "y8"
   },
   {
@@ -14167,7 +14167,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Hungry Bob free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hungry_bob",
-    "thumb": "https://cdn2.y8.com/cloudimage/hungry_bob/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390661/file/w180h135_webp-37bf7028682e5becf7e27c59a7706e5e.webp",
     "source": "y8"
   },
   {
@@ -14210,7 +14210,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Jelly Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jelly_pop",
-    "thumb": "https://cdn2.y8.com/cloudimage/jelly_pop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391671/file/w180h135_webp-76cbd0b245238021ef5c558066a928fb.webp",
     "source": "y8"
   },
   {
@@ -14270,7 +14270,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Knots free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/knots",
-    "thumb": "https://cdn2.y8.com/cloudimage/knots/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387343/file/w180h135_webp-54ee0053c40da1793275922938b128e5.webp",
     "source": "y8"
   },
   {
@@ -14279,7 +14279,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Koala free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/koala",
-    "thumb": "https://cdn2.y8.com/cloudimage/koala/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387709/file/w180h135_webp-baef227799974a4a4e8aee7fd0b47395.webp",
     "source": "y8"
   },
   {
@@ -14339,7 +14339,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Mushroom Fall free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mushroom_fall",
-    "thumb": "https://cdn2.y8.com/cloudimage/mushroom_fall/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393627/file/w180h135_webp-c13fb7102c3093cfe279c310e0ecb152.webp",
     "source": "y8"
   },
   {
@@ -14348,7 +14348,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Node free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/node",
-    "thumb": "https://cdn2.y8.com/cloudimage/node/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387453/file/w180h135_webp-53b64579cd25aff6747222384736a2f7.webp",
     "source": "y8"
   },
   {
@@ -14357,7 +14357,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Park Master Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/park_master_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/park_master_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385687/file/w180h135_webp-5ef15e6d0f83668dd1e2c4686affb9fa.webp",
     "source": "y8"
   },
   {
@@ -14400,7 +14400,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Plumber Scramble free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/plumber_scramble",
-    "thumb": "https://cdn2.y8.com/cloudimage/plumber_scramble/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392143/file/w180h135_webp-e2014eb7677926bb38b7632e17a6b3ee.webp",
     "source": "y8"
   },
   {
@@ -14409,7 +14409,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Plumber Soda free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/plumber_soda",
-    "thumb": "https://cdn2.y8.com/cloudimage/plumber_soda/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393487/file/w180h135_webp-23b90bce8d2ae209026d175ec5618d40.webp",
     "source": "y8"
   },
   {
@@ -14435,7 +14435,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Pop It free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pop_it",
-    "thumb": "https://cdn2.y8.com/cloudimage/pop_it/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342661/file/w180h135_webp-688603736ecbe0d5a47edb753feefc2f.webp",
     "source": "y8"
   },
   {
@@ -14444,7 +14444,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Radical Assault free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/radical_assault",
-    "thumb": "https://cdn2.y8.com/cloudimage/radical_assault/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389499/file/w180h135_webp-8523ae6ecb5da8201041a1149ac0ae04.webp",
     "source": "y8"
   },
   {
@@ -14470,7 +14470,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Rumble Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rumble_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/rumble_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388753/file/w180h135_webp-1043055144728a209f2344f1ab470ee1.webp",
     "source": "y8"
   },
   {
@@ -14479,7 +14479,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Rummy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rummy",
-    "thumb": "https://cdn2.y8.com/cloudimage/rummy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66421/file/w180h135_webp-2eca1597da8da03c30f444c8460e46d8.webp",
     "source": "y8"
   },
   {
@@ -14539,7 +14539,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Shadow Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/shadow_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/shadow_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385691/file/w180h135_webp-03c81d0c1b07343adb81243acbf74c18.webp",
     "source": "y8"
   },
   {
@@ -14582,7 +14582,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Sokoban free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sokoban",
-    "thumb": "https://cdn2.y8.com/cloudimage/sokoban/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392011/file/w180h135_webp-ba6fdbe5da0144501dd5d0cf7d0e8181.webp",
     "source": "y8"
   },
   {
@@ -14591,7 +14591,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Spect free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spect",
-    "thumb": "https://cdn2.y8.com/cloudimage/spect/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392623/file/w180h135_webp-2533e27e9f42212fe526def8b34a0670.webp",
     "source": "y8"
   },
   {
@@ -14668,7 +14668,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Stan The Man free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stan_the_man",
-    "thumb": "https://cdn2.y8.com/cloudimage/stan_the_man/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387455/file/w180h135_webp-f12207f81ac0fe465f750d6d6fbc546a.webp",
     "source": "y8"
   },
   {
@@ -14677,7 +14677,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Stylish Boy Band free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stylish_boy_band",
-    "thumb": "https://cdn2.y8.com/cloudimage/stylish_boy_band/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82189/file/w180h135_webp-6a0860a55c5a21ebee598fa0d0f14cb6.webp",
     "source": "y8"
   },
   {
@@ -14686,7 +14686,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Super Nanny Jen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_nanny_jen",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_nanny_jen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383577/file/w180h135_webp-d9e203c2d8c4c03f38277a863fb061eb.webp",
     "source": "y8"
   },
   {
@@ -14695,7 +14695,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Sweet World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sweet_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/sweet_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388575/file/w180h135_webp-140e5145fc61059a1785b844ff079aca.webp",
     "source": "y8"
   },
   {
@@ -14721,7 +14721,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Tangram free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tangram",
-    "thumb": "https://cdn2.y8.com/cloudimage/tangram/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387457/file/w180h135_webp-925eb0db39f9b84108e84be4fd2569ef.webp",
     "source": "y8"
   },
   {
@@ -14747,7 +14747,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Tetroid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tetroid",
-    "thumb": "https://cdn2.y8.com/cloudimage/tetroid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388123/file/w180h135_webp-3df141ef8f3eb91167858891138375a7.webp",
     "source": "y8"
   },
   {
@@ -14756,7 +14756,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play The Bandit Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_bandit_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_bandit_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393139/file/w180h135_webp-32188e5049c29ef209303541765f98ea.webp",
     "source": "y8"
   },
   {
@@ -14765,7 +14765,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play The Blobber free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_blobber",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_blobber/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17373/file/w180h135_webp-e53dca0893af6aa351745e68862e77a0.webp",
     "source": "y8"
   },
   {
@@ -14774,7 +14774,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play The Mercenaries free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_mercenaries",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_mercenaries/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389365/file/w180h135_webp-9175a1dcf3cfb3d6a9c23e0fab5a9d4a.webp",
     "source": "y8"
   },
   {
@@ -14783,7 +14783,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play The Saboteur free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_saboteur",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_saboteur/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389465/file/w180h135_webp-b665b3637ef238971da4996a96419ae8.webp",
     "source": "y8"
   },
   {
@@ -14809,7 +14809,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Tnt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tnt",
-    "thumb": "https://cdn2.y8.com/cloudimage/tnt/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387629/file/w180h135_webp-779c64326eb69f3d5e0ecdfb789e2601.webp",
     "source": "y8"
   },
   {
@@ -14835,7 +14835,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Turbo Mayhem free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/turbo_mayhem",
-    "thumb": "https://cdn2.y8.com/cloudimage/turbo_mayhem/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386119/file/w180h135_webp-1807dd5a37179f536ebf8ff202846e94.webp",
     "source": "y8"
   },
   {
@@ -14861,7 +14861,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Two Squares free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/two_squares",
-    "thumb": "https://cdn2.y8.com/cloudimage/two_squares/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50567/file/w180h135_webp-8746e5af85758d6002a134c94758804c.webp",
     "source": "y8"
   },
   {
@@ -14904,7 +14904,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Whack Em All free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/whack_em_all",
-    "thumb": "https://cdn2.y8.com/cloudimage/whack_em_all/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390017/file/w180h135_webp-42cd369cbddc2c26779333131f75fb52.webp",
     "source": "y8"
   },
   {
@@ -14947,7 +14947,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Zap Aliens free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zap_aliens",
-    "thumb": "https://cdn2.y8.com/cloudimage/zap_aliens/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392949/file/w180h135_webp-e0774e4aecb616a2b60cfef0c0d5c7fb.webp",
     "source": "y8"
   },
   {
@@ -14973,7 +14973,7 @@ const GAMES = [
     "category": "Other",
     "description": "Play Zig Zig free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zig_zig",
-    "thumb": "https://cdn2.y8.com/cloudimage/zig_zig/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406811/file/w180h135_webp-3f145087b1b03f0e972e22c8fd2b0fb4.webp",
     "source": "y8"
   },
   {
@@ -14982,7 +14982,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403809/file/w180h135_webp-5ff2330e727564be478744ab56ffe191.webp",
     "source": "y8"
   },
   {
@@ -14991,7 +14991,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blocky Trials free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocky_trials",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocky_trials/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405013/file/w180h135_webp-494a2c57f41613eca61f80186bd95a4f.webp",
     "source": "y8"
   },
   {
@@ -15000,7 +15000,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital E-Gamer Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_e-gamer_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_e-gamer_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26443/file/w180h135_webp-b3b6ce84ed8147be50690429267dbdf7.webp",
     "source": "y8"
   },
   {
@@ -15009,7 +15009,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Escape Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_escape_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_escape_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400801/file/w180h135_webp-58992d03a31a8c6dd1832bc4e547c32f.webp",
     "source": "y8"
   },
   {
@@ -15018,7 +15018,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Maze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_maze_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_maze_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407361/file/w180h135_webp-99755a67527340576453ac6f6b85e74a.webp",
     "source": "y8"
   },
   {
@@ -15027,7 +15027,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 Classic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_classic",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_classic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33897/file/w180h135_webp-1a14bc8122e2feec5b3229c07363be7a.webp",
     "source": "y8"
   },
   {
@@ -15036,7 +15036,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Cat Rescue free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_rescue",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_rescue/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/200099/file/w180h135_webp-b62dd35f0c2cc4d2b706175ce667cee0.webp",
     "source": "y8"
   },
   {
@@ -15045,7 +15045,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bolt Sort free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bolt_sort",
-    "thumb": "https://cdn2.y8.com/cloudimage/bolt_sort/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408673/file/w180h135_webp-0ef80aa0042d589973f0fb1b3ce2b6c6.webp",
     "source": "y8"
   },
   {
@@ -15054,7 +15054,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 Merge Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_merge_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_merge_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399249/file/w180h135_webp-39b8cb7dd95f63a9b8589b25728b56fa.webp",
     "source": "y8"
   },
   {
@@ -15063,7 +15063,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrows - Puzzle Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrows_-_puzzle_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrows_-_puzzle_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394257/file/w180h135_webp-77a19a26e6907bf2956e8a8259b8592c.webp",
     "source": "y8"
   },
   {
@@ -15072,7 +15072,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Nest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_nest",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_nest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408669/file/w180h135_webp-0f470613f004f57a885a749da9f1521f.webp",
     "source": "y8"
   },
   {
@@ -15081,7 +15081,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Angry Birds Differences free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_birds_differences",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_birds_differences/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/87839/file/w180h135_webp-135bbf229c39736dfb559cf1d44c4708.webp",
     "source": "y8"
   },
   {
@@ -15090,7 +15090,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 10x10 Arabic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/10x10_arabic_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/10x10_arabic_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401559/file/w180h135_webp-808130ced74d04381c70b557d63771e9.webp",
     "source": "y8"
   },
   {
@@ -15099,7 +15099,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Tap Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_tap_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_tap_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/397317/file/w180h135_webp-6da84f40a4ed0e7f018840d598d6783d.webp",
     "source": "y8"
   },
   {
@@ -15108,7 +15108,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bolts Nuts Sorting Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bolts_nuts_sorting_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/bolts_nuts_sorting_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408239/file/w180h135_webp-ec8a7b2bb583faa033d7eae9edefe51c.webp",
     "source": "y8"
   },
   {
@@ -15117,7 +15117,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Adagio free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adagio",
-    "thumb": "https://cdn2.y8.com/cloudimage/adagio/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149139/file/w180h135_webp-091637f20b2d434f8c9cf33554cef52f.webp",
     "source": "y8"
   },
   {
@@ -15126,7 +15126,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Beijing Hidden Objects free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beijing_hidden_objects",
-    "thumb": "https://cdn2.y8.com/cloudimage/beijing_hidden_objects/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37575/file/w180h135_webp-1972ef291e6dc037494a70fc6bb0b508.webp",
     "source": "y8"
   },
   {
@@ -15144,7 +15144,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Back To Candyland 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/back_to_candyland_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/back_to_candyland_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/96923/file/w180h135_webp-ce3969ef34ce556e7cc88fe701e3dea3.webp",
     "source": "y8"
   },
   {
@@ -15153,7 +15153,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bubble Raiders The Sun Temple free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bubble_raiders_the_sun_temple",
-    "thumb": "https://cdn2.y8.com/cloudimage/bubble_raiders_the_sun_temple/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/111025/file/w180h135_webp-9e6c1980db44cb623c8aa17653546a57.webp",
     "source": "y8"
   },
   {
@@ -15162,7 +15162,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bob The Robber free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bob_the_robber",
-    "thumb": "https://cdn2.y8.com/cloudimage/bob_the_robber/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384811/file/w180h135_webp-9e92d5a36d5dfaf9b673a9fc53f77d8a.webp",
     "source": "y8"
   },
   {
@@ -15171,7 +15171,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Maze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/maze",
-    "thumb": "https://cdn2.y8.com/cloudimage/maze/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405949/file/w180h135_webp-564ce74c9211067db800acb4d9ec61ac.webp",
     "source": "y8"
   },
   {
@@ -15180,7 +15180,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bloxorz 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloxorz_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloxorz_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7423/file/w180h135_webp-2c836c09fa8470fc0c831415d3488bf7.webp",
     "source": "y8"
   },
   {
@@ -15189,7 +15189,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Box And Secret 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/box_and_secret_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/box_and_secret_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/232669/file/w180h135_webp-054251c6c2c1f4ff2cb3f3ea5c110907.webp",
     "source": "y8"
   },
   {
@@ -15198,7 +15198,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 10 Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/10_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/10_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/61077/file/w180h135_webp-473a79867904286376c4a9fe7f340565.webp",
     "source": "y8"
   },
   {
@@ -15207,7 +15207,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Amazing Anime Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_anime_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_anime_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13079/file/w180h135_webp-35f956893b2793fbda10f0c5a2bb66c6.webp",
     "source": "y8"
   },
   {
@@ -15216,7 +15216,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 X2 Merge Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_x2_merge_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_x2_merge_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/249445/file/w180h135_webp-8fcead33b5fb9db7405201d214e92880.webp",
     "source": "y8"
   },
   {
@@ -15225,7 +15225,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_puzzle_",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_puzzle_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398881/file/w180h135_webp-70a74763ca3c030b1cb19bf270b2f752.webp",
     "source": "y8"
   },
   {
@@ -15234,7 +15234,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Amazing Word Search free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_word_search",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_word_search/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/237813/file/w180h135_webp-2543595e4e41015525412a1d4bca9853.webp",
     "source": "y8"
   },
   {
@@ -15243,7 +15243,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Lollipops Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/lollipops_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/lollipops_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390399/file/w180h135_webp-64dfb6a352f88d8c84f70b6a2475af76.webp",
     "source": "y8"
   },
   {
@@ -15252,7 +15252,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Count Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_count_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_count_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29777/file/w180h135_webp-6038b8ed07f2e8bed83637e27906d934.webp",
     "source": "y8"
   },
   {
@@ -15261,7 +15261,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brainrot-A-Difference Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brainrot-a-difference_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/brainrot-a-difference_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342499/file/w180h135_webp-3d5f77ad00cd385961ab640851670c18.webp",
     "source": "y8"
   },
   {
@@ -15270,7 +15270,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Are You Human free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/are_you_human_",
-    "thumb": "https://cdn2.y8.com/cloudimage/are_you_human_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8607/file/w180h135_webp-c19d897458db4a24d88db0af39d27be0.webp",
     "source": "y8"
   },
   {
@@ -15279,7 +15279,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Black And White Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_and_white_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_and_white_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19951/file/w180h135_webp-70b7634142b13f6a47e557a29a2ddc8a.webp",
     "source": "y8"
   },
   {
@@ -15288,7 +15288,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Both Ways free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/both_ways",
-    "thumb": "https://cdn2.y8.com/cloudimage/both_ways/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407205/file/w180h135_webp-02cd3bc5c27ec954c40a4f9209b97ed6.webp",
     "source": "y8"
   },
   {
@@ -15297,7 +15297,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Butterfly Kyodai Mahjong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/butterfly_kyodai_mahjong",
-    "thumb": "https://cdn2.y8.com/cloudimage/butterfly_kyodai_mahjong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/57425/file/w180h135_webp-d760dfbe8bcf82e3c9a9710b097d591f.webp",
     "source": "y8"
   },
   {
@@ -15306,7 +15306,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Barcelona Hidden Objects free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barcelona_hidden_objects",
-    "thumb": "https://cdn2.y8.com/cloudimage/barcelona_hidden_objects/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14865/file/w180h135_webp-b488b7a9c279bc50f005e5d8d9ce0bd9.webp",
     "source": "y8"
   },
   {
@@ -15315,7 +15315,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Master Gem Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_master_gem_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_master_gem_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407525/file/w180h135_webp-e4cecfd594dde3b282afd742a71a7a9a.webp",
     "source": "y8"
   },
   {
@@ -15324,7 +15324,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bird Sort Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bird_sort_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/bird_sort_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9237/file/w180h135_webp-1be80f27e3a6e021f16e21947cbc876a.webp",
     "source": "y8"
   },
   {
@@ -15333,7 +15333,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Match Drop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/match_drop",
-    "thumb": "https://cdn2.y8.com/cloudimage/match_drop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388623/file/w180h135_webp-5f6984efec9ffceb37f097349ae323e1.webp",
     "source": "y8"
   },
   {
@@ -15342,7 +15342,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 1010 Treasures free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/1010_treasures",
-    "thumb": "https://cdn2.y8.com/cloudimage/1010_treasures/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91761/file/w180h135_webp-8fae7807754abbc6b778df1615bd404a.webp",
     "source": "y8"
   },
   {
@@ -15351,7 +15351,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bermuda Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bermuda_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/bermuda_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384795/file/w180h135_webp-4e757ce27f197285bdc32abc08b7f0cb.webp",
     "source": "y8"
   },
   {
@@ -15360,7 +15360,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Ball Sort Puzzle Casual free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_sort_puzzle_casual",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_sort_puzzle_casual/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392405/file/w180h135_webp-5e9394b06089a405845d0be97b22d2be.webp",
     "source": "y8"
   },
   {
@@ -15369,7 +15369,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blackout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blackout_",
-    "thumb": "https://cdn2.y8.com/cloudimage/blackout_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35865/file/w180h135_webp-fd3fe9a375d1b9b5a745fe6d51ab265f.webp",
     "source": "y8"
   },
   {
@@ -15378,7 +15378,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 3d Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/44597/file/w180h135_webp-481ba1329e2eaaa81f56a3de59683518.webp",
     "source": "y8"
   },
   {
@@ -15387,7 +15387,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bbq Sort free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bbq_sort",
-    "thumb": "https://cdn2.y8.com/cloudimage/bbq_sort/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399603/file/w180h135_webp-7c7444b0346b33483ee3b22a4e539636.webp",
     "source": "y8"
   },
   {
@@ -15396,7 +15396,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bloxchain free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloxchain",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloxchain/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406059/file/w180h135_webp-a8400800fdcd81a3fe9f72045155a53c.webp",
     "source": "y8"
   },
   {
@@ -15405,7 +15405,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bus Order 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bus_order_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bus_order_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7569/file/w180h135_webp-a0d8e9fae8cde0e543e20526cb86762b.webp",
     "source": "y8"
   },
   {
@@ -15431,7 +15431,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Blast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_blast",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_blast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11103/file/w180h135_webp-ffb8886e4da7fdc1a3fa469d33b12d89.webp",
     "source": "y8"
   },
   {
@@ -15440,7 +15440,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Cake Merge 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_merge_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_merge_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407967/file/w180h135_webp-1e9a558a3d0a44362dab7a8c0a80a32a.webp",
     "source": "y8"
   },
   {
@@ -15449,7 +15449,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Barbecue Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barbecue_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/barbecue_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34261/file/w180h135_webp-46f651c4d6356f454589ebbcfaaa7b4f.webp",
     "source": "y8"
   },
   {
@@ -15458,7 +15458,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Puzzle Ocean free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_puzzle_ocean",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_puzzle_ocean/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17611/file/w180h135_webp-7890df842c513e25f735f8812c73ac7e.webp",
     "source": "y8"
   },
   {
@@ -15467,7 +15467,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Car Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_match_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_match_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389949/file/w180h135_webp-d43f31aefb3e8f5e80bd58537eaf8af1.webp",
     "source": "y8"
   },
   {
@@ -15476,7 +15476,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Around The World In 80 Days free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/around_the_world_in_80_days",
-    "thumb": "https://cdn2.y8.com/cloudimage/around_the_world_in_80_days/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402111/file/w180h135_webp-ecd741192c20aac5a649a8ee2555667e.webp",
     "source": "y8"
   },
   {
@@ -15502,7 +15502,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brdg free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brdg",
-    "thumb": "https://cdn2.y8.com/cloudimage/brdg/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40687/file/w180h135_webp-56af2c2aeb83d54cad6bec0782ca91ba.webp",
     "source": "y8"
   },
   {
@@ -15511,7 +15511,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brain Teaser free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_teaser",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_teaser/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/225807/file/w180h135_webp-a1d75070f1ffe1366d1bb1091c14bb14.webp",
     "source": "y8"
   },
   {
@@ -15520,7 +15520,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Animal Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/292869/file/w180h135_webp-fb8c78615bba8f32e826ca9bb6142530.webp",
     "source": "y8"
   },
   {
@@ -15529,7 +15529,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 100 Doors Escape Room free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/100_doors_escape_room_",
-    "thumb": "https://cdn2.y8.com/cloudimage/100_doors_escape_room_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16209/file/w180h135_webp-2532d5244c9086380dacfd0fd6e45f69.webp",
     "source": "y8"
   },
   {
@@ -15538,7 +15538,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play A Dumb Chess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_dumb_chess",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_dumb_chess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12361/file/w180h135_webp-671f879ac1c33ed8318c2ce6389a27b2.webp",
     "source": "y8"
   },
   {
@@ -15547,7 +15547,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Amazing Color Flow free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amazing_color_flow",
-    "thumb": "https://cdn2.y8.com/cloudimage/amazing_color_flow/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20161/file/w180h135_webp-9d25ad4b3a64bf280ebd84274a6c1fd1.webp",
     "source": "y8"
   },
   {
@@ -15556,7 +15556,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Solve Math free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/solve_math",
-    "thumb": "https://cdn2.y8.com/cloudimage/solve_math/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406777/file/w180h135_webp-a15f663d7d46011b0752ae3d9a34c3b2.webp",
     "source": "y8"
   },
   {
@@ -15565,7 +15565,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Boxman free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxman_",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxman_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21975/file/w180h135_webp-3bd5f9012aaeff2d4efdac887f6b771f.webp",
     "source": "y8"
   },
   {
@@ -15574,7 +15574,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arithmetic Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arithmetic_game_",
-    "thumb": "https://cdn2.y8.com/cloudimage/arithmetic_game_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/88449/file/w180h135_webp-07dc8c10bb458e3bd2f2e0fa5f7c57c2.webp",
     "source": "y8"
   },
   {
@@ -15583,7 +15583,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brainy Love free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brainy_love",
-    "thumb": "https://cdn2.y8.com/cloudimage/brainy_love/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390803/file/w180h135_webp-28adb5e087ae6d65c49c355738e65c47.webp",
     "source": "y8"
   },
   {
@@ -15592,7 +15592,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bob The Robber 4 Season 3 Japan free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bob_the_robber_4_season_3_japan",
-    "thumb": "https://cdn2.y8.com/cloudimage/bob_the_robber_4_season_3_japan/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/97833/file/w180h135_webp-c99bb06385e372d025b2f0dd344d9b0a.webp",
     "source": "y8"
   },
   {
@@ -15618,7 +15618,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrows Move free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrows_move",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrows_move/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405697/file/w180h135_webp-ef846ee0524d0d9e626d0d2ee93b6a90.webp",
     "source": "y8"
   },
   {
@@ -15644,7 +15644,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bunnys Farm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunnys_farm",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunnys_farm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342869/file/w180h135_webp-00a34284eed610b9aaead8ed7606c19f.webp",
     "source": "y8"
   },
   {
@@ -15653,7 +15653,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Ballooner free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ballooner",
-    "thumb": "https://cdn2.y8.com/cloudimage/ballooner/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/124711/file/w180h135_webp-313b692d47cfb2750c205a5475b6ce21.webp",
     "source": "y8"
   },
   {
@@ -15662,7 +15662,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Abstractions Relaxing Round Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/abstractions_relaxing_round_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/abstractions_relaxing_round_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404827/file/w180h135_webp-24207d34733a2eaef3ad73395dae981f.webp",
     "source": "y8"
   },
   {
@@ -15671,7 +15671,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brain Puzzle Tricky Choices free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_puzzle_tricky_choices",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_puzzle_tricky_choices/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13941/file/w180h135_webp-9b183a51d12b6a6b27515837b1b4f7e1.webp",
     "source": "y8"
   },
   {
@@ -15680,7 +15680,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bloxors Flash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloxors_flash",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloxors_flash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/147253/file/w180h135_webp-3805e75b00ce8bc377bc1b84176c83db.webp",
     "source": "y8"
   },
   {
@@ -15689,7 +15689,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Cargo Ships Jigsaw free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cargo_ships_jigsaw",
-    "thumb": "https://cdn2.y8.com/cloudimage/cargo_ships_jigsaw/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73391/file/w180h135_webp-fb7a8fe18d8303c238ab749ec1118dc8.webp",
     "source": "y8"
   },
   {
@@ -15698,7 +15698,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Puzzle Cats free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_puzzle_cats",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_puzzle_cats/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14787/file/w180h135_webp-c737ed62acd1f38c21a69f72fbb16ce0.webp",
     "source": "y8"
   },
   {
@@ -15707,7 +15707,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Candy Slide free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_slide",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_slide/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/104129/file/w180h135_webp-30755264477e7a1f09b33eec82cb913d.webp",
     "source": "y8"
   },
   {
@@ -15716,7 +15716,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Box free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_box",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_box/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37919/file/w180h135_webp-bb9fddeb88eb732b0d889863fda6a16a.webp",
     "source": "y8"
   },
   {
@@ -15725,7 +15725,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Candy Monsters Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_monsters_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_monsters_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10051/file/w180h135_webp-07dafba13f981650965877a2aca09bf3.webp",
     "source": "y8"
   },
   {
@@ -15734,7 +15734,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Arrow Escape Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_escape_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_escape_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/396939/file/w180h135_webp-cb960f8ec1f1ad58589cb1c8962cdaea.webp",
     "source": "y8"
   },
   {
@@ -15743,7 +15743,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Billionaires free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billionaires",
-    "thumb": "https://cdn2.y8.com/cloudimage/billionaires/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30093/file/w180h135_webp-e8719d0b0296857731feef642c89478b.webp",
     "source": "y8"
   },
   {
@@ -15752,7 +15752,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Car Out Jam free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_out_jam",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_out_jam/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389429/file/w180h135_webp-b496d58f29b04326248d3b59ca8acbe9.webp",
     "source": "y8"
   },
   {
@@ -15761,7 +15761,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Match 8x8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_match_8x8",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_match_8x8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24591/file/w180h135_webp-57b0286a1a679b9a6a00eec6cc69d634.webp",
     "source": "y8"
   },
   {
@@ -15770,7 +15770,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Aztec Stones free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aztec_stones",
-    "thumb": "https://cdn2.y8.com/cloudimage/aztec_stones/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384369/file/w180h135_webp-5de6981a680222a85842151f45cdb2f3.webp",
     "source": "y8"
   },
   {
@@ -15796,7 +15796,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 10 Mahjong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/10_mahjong",
-    "thumb": "https://cdn2.y8.com/cloudimage/10_mahjong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48757/file/w180h135_webp-44b83bb40917831970fb076f59a464f8.webp",
     "source": "y8"
   },
   {
@@ -15805,7 +15805,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bike Racing Math Factors free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_racing_math_factors",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_racing_math_factors/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9261/file/w180h135_webp-b3d25cd5e309739daf8c4b63a3d6531c.webp",
     "source": "y8"
   },
   {
@@ -15823,7 +15823,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Miner Block free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/miner_block",
-    "thumb": "https://cdn2.y8.com/cloudimage/miner_block/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393521/file/w180h135_webp-d0d48a799593567bdcae7aa421bc70c2.webp",
     "source": "y8"
   },
   {
@@ -15832,7 +15832,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blockibo Color Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blockibo_color_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/blockibo_color_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/396361/file/w180h135_webp-9eabf0ce2367efe793590210f3dd545f.webp",
     "source": "y8"
   },
   {
@@ -15841,7 +15841,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Puzzle Animal Mania free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puzzle_animal_mania",
-    "thumb": "https://cdn2.y8.com/cloudimage/puzzle_animal_mania/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393453/file/w180h135_webp-6e8735f8110c5d1452af83946ac5030d.webp",
     "source": "y8"
   },
   {
@@ -15859,7 +15859,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 100 Doors Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/100_doors_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/100_doors_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25177/file/w180h135_webp-29ae7233f311c32b7e77723535eecfd8.webp",
     "source": "y8"
   },
   {
@@ -15877,7 +15877,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 4 Pics 1 Word free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4_pics_1_word",
-    "thumb": "https://cdn2.y8.com/cloudimage/4_pics_1_word/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/70483/file/w180h135_webp-98bb5e2f4813d3aa2972dc8a22b4b6df.webp",
     "source": "y8"
   },
   {
@@ -15886,7 +15886,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 1010 Deluxe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/1010_deluxe",
-    "thumb": "https://cdn2.y8.com/cloudimage/1010_deluxe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/52599/file/w180h135_webp-c5c31b556e52ae86ceb696e689c6fc3d.webp",
     "source": "y8"
   },
   {
@@ -15904,7 +15904,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bongo Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bongo_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/bongo_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/155257/file/w180h135_webp-ec05adc01b66909c6b2bb3e5e667176c.webp",
     "source": "y8"
   },
   {
@@ -15913,7 +15913,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Align 4 Big free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/align_4_big",
-    "thumb": "https://cdn2.y8.com/cloudimage/align_4_big/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23203/file/w180h135_webp-10f12cb61633d256d6a70a2d3e6d75a1.webp",
     "source": "y8"
   },
   {
@@ -15940,7 +15940,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Al Dente free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/al_dente",
-    "thumb": "https://cdn2.y8.com/cloudimage/al_dente/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16475/file/w180h135_webp-ad09fc2d901f79c1bed2ebffa3842bb9.webp",
     "source": "y8"
   },
   {
@@ -15958,7 +15958,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Play Maze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/play_maze",
-    "thumb": "https://cdn2.y8.com/cloudimage/play_maze/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403823/file/w180h135_webp-38312f5ae8d2e40b30376baf2536591b.webp",
     "source": "y8"
   },
   {
@@ -16039,7 +16039,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blox Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blox_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/blox_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31021/file/w180h135_webp-ec8b8aca1e967de492de001d89debedf.webp",
     "source": "y8"
   },
   {
@@ -16092,7 +16092,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 Legend free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_legend",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_legend/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/76115/file/w180h135_webp-ae1d77ec94f50f9b3c30c863186a0fc1.webp",
     "source": "y8"
   },
   {
@@ -16101,7 +16101,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Catching Piglets free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catching_piglets",
-    "thumb": "https://cdn2.y8.com/cloudimage/catching_piglets/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407685/file/w180h135_webp-31e8541666f451b4807130a4a168154b.webp",
     "source": "y8"
   },
   {
@@ -16119,7 +16119,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Add-N free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/add-n",
-    "thumb": "https://cdn2.y8.com/cloudimage/add-n/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/60791/file/w180h135_webp-90f2c0123dae05ac6df9a4e13214182a.webp",
     "source": "y8"
   },
   {
@@ -16146,7 +16146,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Block Blast Html free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_blast_html",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_blast_html/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402819/file/w180h135_webp-f7987453780dcf333ed11dc9dc962c79.webp",
     "source": "y8"
   },
   {
@@ -16164,7 +16164,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 100 Doors Escape Room free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/100_doors_escape_room",
-    "thumb": "https://cdn2.y8.com/cloudimage/100_doors_escape_room/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8503/file/w180h135_webp-d1b83337d7cebf73e33cfe6bd868444a.webp",
     "source": "y8"
   },
   {
@@ -16173,7 +16173,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Powerblocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/powerblocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/powerblocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388503/file/w180h135_webp-636ddd8639fc6b131614a224a21529bd.webp",
     "source": "y8"
   },
   {
@@ -16182,7 +16182,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Backgammon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backgammon_",
-    "thumb": "https://cdn2.y8.com/cloudimage/backgammon_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85379/file/w180h135_webp-f7c71d0d5e250c43cef01d50db65c782.webp",
     "source": "y8"
   },
   {
@@ -16245,7 +16245,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Wothan Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/wothan_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/wothan_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392651/file/w180h135_webp-32b0815343d5d8150ef96499b2048d9f.webp",
     "source": "y8"
   },
   {
@@ -16254,7 +16254,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Miss Mechanic S Brain Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/miss_mechanic_s_brain_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/miss_mechanic_s_brain_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406521/file/w180h135_webp-1ff7536995c3ad40421510cfc93a673b.webp",
     "source": "y8"
   },
   {
@@ -16263,7 +16263,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Emergency Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/emergency_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/emergency_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406935/file/w180h135_webp-0a02c2820b4c85d6dd4b1c7dabafc277.webp",
     "source": "y8"
   },
   {
@@ -16272,7 +16272,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Cute Dentist Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_dentist_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_dentist_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406917/file/w180h135_webp-ee0713a02a852817065c4ea0f2bfc412.webp",
     "source": "y8"
   },
   {
@@ -16281,7 +16281,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Escape From Prison free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/escape_from_prison",
-    "thumb": "https://cdn2.y8.com/cloudimage/escape_from_prison/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388591/file/w180h135_webp-b9a501d54a51afaa23918ee15c011da0.webp",
     "source": "y8"
   },
   {
@@ -16290,7 +16290,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brick Out free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brick_out",
-    "thumb": "https://cdn2.y8.com/cloudimage/brick_out/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392565/file/w180h135_webp-7ed4b8413177386abca85138891e9500.webp",
     "source": "y8"
   },
   {
@@ -16299,7 +16299,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play City Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392909/file/w180h135_webp-ab7fa69e8ba2e6e507caefcb3714fe20.webp",
     "source": "y8"
   },
   {
@@ -16308,7 +16308,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Break The Brick free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/break_the_brick",
-    "thumb": "https://cdn2.y8.com/cloudimage/break_the_brick/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387683/file/w180h135_webp-fa34e7aaac19c6bf718dbdb4e36abcee.webp",
     "source": "y8"
   },
   {
@@ -16317,7 +16317,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Maze Lover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/maze_lover",
-    "thumb": "https://cdn2.y8.com/cloudimage/maze_lover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393621/file/w180h135_webp-e27d44708dba985e22123079c4525284.webp",
     "source": "y8"
   },
   {
@@ -16326,7 +16326,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Snake And Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/snake_and_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/snake_and_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405183/file/w180h135_webp-2458f1d1d971d416190f4dd36e2fff1d.webp",
     "source": "y8"
   },
   {
@@ -16335,7 +16335,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Gummy Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gummy_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/gummy_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403963/file/w180h135_webp-311d36d00301eb995d36560d45ca8ba3.webp",
     "source": "y8"
   },
   {
@@ -16361,7 +16361,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Tripeaks Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tripeaks_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/tripeaks_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388513/file/w180h135_webp-25e2a39b1bd6d8020aad4df039030f3d.webp",
     "source": "y8"
   },
   {
@@ -16370,7 +16370,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Frog Super Bubbles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/frog_super_bubbles_",
-    "thumb": "https://cdn2.y8.com/cloudimage/frog_super_bubbles_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392365/file/w180h135_webp-a7d6883d7b8bedbc374494733264de84.webp",
     "source": "y8"
   },
   {
@@ -16396,7 +16396,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Mr Smith Pics And Words free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mr_smith_pics_and_words",
-    "thumb": "https://cdn2.y8.com/cloudimage/mr_smith_pics_and_words/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66461/file/w180h135_webp-946ddd0769c6a44032c56e5d030a583c.webp",
     "source": "y8"
   },
   {
@@ -16405,7 +16405,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Math Nerd free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/math_nerd",
-    "thumb": "https://cdn2.y8.com/cloudimage/math_nerd/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403937/file/w180h135_webp-7a74db2bcb3fa55ad66e33197536e659.webp",
     "source": "y8"
   },
   {
@@ -16414,7 +16414,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 Merge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_merge",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_merge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388339/file/w180h135_webp-b58ac5311ada770b11fb8f79057bc93d.webp",
     "source": "y8"
   },
   {
@@ -16423,7 +16423,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Wording free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_wording",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_wording/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403845/file/w180h135_webp-b4467712595d23aa97696c7332ea8c91.webp",
     "source": "y8"
   },
   {
@@ -16432,7 +16432,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play 2048 Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2048_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/2048_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388287/file/w180h135_webp-7cf282cb14730b4427d824ca604d515d.webp",
     "source": "y8"
   },
   {
@@ -16441,7 +16441,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Math Game For Kids 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/math_game_for_kids_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/math_game_for_kids_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393317/file/w180h135_webp-8d4a56c9eb0050f3a3e4b4382f808780.webp",
     "source": "y8"
   },
   {
@@ -16450,7 +16450,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Mathematic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mathematic",
-    "thumb": "https://cdn2.y8.com/cloudimage/mathematic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403957/file/w180h135_webp-505cf57019732639217baa6089d349b8.webp",
     "source": "y8"
   },
   {
@@ -16459,7 +16459,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Yummy Word free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/yummy_word",
-    "thumb": "https://cdn2.y8.com/cloudimage/yummy_word/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386731/file/w180h135_webp-78c341f4ef4b69d86f73c53c8fb7880d.webp",
     "source": "y8"
   },
   {
@@ -16468,7 +16468,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Animals Crush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_crush",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_crush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393169/file/w180h135_webp-bf4fd68142b2f6234a3b419d16e95413.webp",
     "source": "y8"
   },
   {
@@ -16494,7 +16494,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bff Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bff_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/bff_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/80029/file/w180h135_webp-3d97cc1f8ea9f856eec880dd24750734.webp",
     "source": "y8"
   },
   {
@@ -16529,7 +16529,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blocker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocker",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388217/file/w180h135_webp-34d480b3b02cd03d769811e5b67492e0.webp",
     "source": "y8"
   },
   {
@@ -16538,7 +16538,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blocks 8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocks_8",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocks_8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386633/file/w180h135_webp-c7f41f8c5d7b086a514c5dbbd529e826.webp",
     "source": "y8"
   },
   {
@@ -16547,7 +16547,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blocks Super Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocks_super_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocks_super_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392897/file/w180h135_webp-76b68ecf390d7be884b6580a6a048be9.webp",
     "source": "y8"
   },
   {
@@ -16556,7 +16556,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Blocky free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocky",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocky/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403839/file/w180h135_webp-d7678b95de2e0d86c04c3f06ef950d0c.webp",
     "source": "y8"
   },
   {
@@ -16565,7 +16565,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brain Adventures On The Beach free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brain_adventures_on_the_beach",
-    "thumb": "https://cdn2.y8.com/cloudimage/brain_adventures_on_the_beach/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387559/file/w180h135_webp-da9c2551ccf3feb918aabc39c3e36e9a.webp",
     "source": "y8"
   },
   {
@@ -16591,7 +16591,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brick Breaker Unicorn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brick_breaker_unicorn",
-    "thumb": "https://cdn2.y8.com/cloudimage/brick_breaker_unicorn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387165/file/w180h135_webp-e31e6745a8874c47575be463b5a7ed49.webp",
     "source": "y8"
   },
   {
@@ -16600,7 +16600,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Brick Out 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/brick_out_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/brick_out_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388133/file/w180h135_webp-49868aca08c953de8ff72285faa91408.webp",
     "source": "y8"
   },
   {
@@ -16609,7 +16609,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Bubble Touch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bubble_touch",
-    "thumb": "https://cdn2.y8.com/cloudimage/bubble_touch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390691/file/w180h135_webp-1167529c79e9778723c1f03af7ac573f.webp",
     "source": "y8"
   },
   {
@@ -16618,7 +16618,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Candy Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386375/file/w180h135_webp-da43f2f0c372eba5b4fb9ea99cc215c0.webp",
     "source": "y8"
   },
   {
@@ -16644,7 +16644,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Candy Super Match 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/candy_super_match_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/candy_super_match_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392761/file/w180h135_webp-4772d70d6ebea1f96996d33d4e73fb8b.webp",
     "source": "y8"
   },
   {
@@ -16687,7 +16687,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Connect Lines free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/connect_lines",
-    "thumb": "https://cdn2.y8.com/cloudimage/connect_lines/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387143/file/w180h135_webp-5531be84d789e01a227ae171d2eaa887.webp",
     "source": "y8"
   },
   {
@@ -16696,7 +16696,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Connect Merge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/connect_merge",
-    "thumb": "https://cdn2.y8.com/cloudimage/connect_merge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386919/file/w180h135_webp-fe0d0d0bf4ec561c3671243668a72462.webp",
     "source": "y8"
   },
   {
@@ -16705,7 +16705,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Crazy Match-3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_match-3",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_match-3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392661/file/w180h135_webp-39735eefdec77a92ab41e05e2caba972.webp",
     "source": "y8"
   },
   {
@@ -16714,7 +16714,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Crossword For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crossword_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/crossword_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393849/file/w180h135_webp-96ca40bb079eab562ead37de4dcba3e9.webp",
     "source": "y8"
   },
   {
@@ -16723,7 +16723,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Cute Girl Love Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_girl_love_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_girl_love_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407951/file/w180h135_webp-f032aedee81ee1d4f7e25adee29512c5.webp",
     "source": "y8"
   },
   {
@@ -16732,7 +16732,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dating Finder free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dating_finder",
-    "thumb": "https://cdn2.y8.com/cloudimage/dating_finder/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/104609/file/w180h135_webp-78fce93d20457d33fa2bec22e721b289.webp",
     "source": "y8"
   },
   {
@@ -16741,7 +16741,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Blue Block free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_blue_block",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_blue_block/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406925/file/w180h135_webp-d825bf751de69e16da65b492fac45538.webp",
     "source": "y8"
   },
   {
@@ -16750,7 +16750,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Connection free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_connection",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_connection/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387379/file/w180h135_webp-2f623be20189ad689d5b9e34cca9a204.webp",
     "source": "y8"
   },
   {
@@ -16759,7 +16759,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Pattern free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_pattern",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_pattern/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387375/file/w180h135_webp-542360dccae76abf5156e5c1386bdab1.webp",
     "source": "y8"
   },
   {
@@ -16768,7 +16768,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Pixel Slide free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_pixel_slide",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_pixel_slide/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386165/file/w180h135_webp-a0dc7a9658c6db7058eecf27a160170c.webp",
     "source": "y8"
   },
   {
@@ -16777,7 +16777,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Dd Words Family free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_words_family",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_words_family/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387443/file/w180h135_webp-409c0aaa73c2fefd3374e94c3dd2adfa.webp",
     "source": "y8"
   },
   {
@@ -16786,7 +16786,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Domino Block free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/domino_block",
-    "thumb": "https://cdn2.y8.com/cloudimage/domino_block/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388467/file/w180h135_webp-196806a7e4109da0239953d1dde3fb7e.webp",
     "source": "y8"
   },
   {
@@ -16812,7 +16812,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Eatable Numbers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/eatable_numbers",
-    "thumb": "https://cdn2.y8.com/cloudimage/eatable_numbers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387511/file/w180h135_webp-28b33dedcc4c2998c40d22f83b0be7f5.webp",
     "source": "y8"
   },
   {
@@ -16821,7 +16821,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Fast Numbers 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fast_numbers_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/fast_numbers_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393877/file/w180h135_webp-239a2e766d27e7332784e58e3b1b8f9e.webp",
     "source": "y8"
   },
   {
@@ -16830,7 +16830,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Fill free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fill",
-    "thumb": "https://cdn2.y8.com/cloudimage/fill/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387441/file/w180h135_webp-8cc553364f68370ca863fa59556a81bc.webp",
     "source": "y8"
   },
   {
@@ -16839,7 +16839,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Finding Tooney free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/finding_tooney",
-    "thumb": "https://cdn2.y8.com/cloudimage/finding_tooney/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392917/file/w180h135_webp-2a0297274d31ea3d4372620162dc49e6.webp",
     "source": "y8"
   },
   {
@@ -16848,7 +16848,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Floor Jumper Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/floor_jumper_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/floor_jumper_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393349/file/w180h135_webp-1561c4f68e44b4d5a9d44b85899d89bd.webp",
     "source": "y8"
   },
   {
@@ -16857,7 +16857,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Free Cell Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/free_cell_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/free_cell_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392595/file/w180h135_webp-c95e07aa1a580a97642d398dddebf0c8.webp",
     "source": "y8"
   },
   {
@@ -16866,7 +16866,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Fruit Matching free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fruit_matching",
-    "thumb": "https://cdn2.y8.com/cloudimage/fruit_matching/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405423/file/w180h135_webp-6b2ce073856bef46a793de32099535ea.webp",
     "source": "y8"
   },
   {
@@ -16875,7 +16875,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Funny Faces Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_faces_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_faces_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392631/file/w180h135_webp-6b866c313ea3e0d624a13b4f1f6693cb.webp",
     "source": "y8"
   },
   {
@@ -16884,7 +16884,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Galactic Maze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/galactic_maze",
-    "thumb": "https://cdn2.y8.com/cloudimage/galactic_maze/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393681/file/w180h135_webp-5eab8bd132b76c2b54b744de6f54d6ec.webp",
     "source": "y8"
   },
   {
@@ -16927,7 +16927,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Alien Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_alien_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_alien_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6911/file/w180h135_webp-8d0610b499daca5cb67101e3147dc992.webp",
     "source": "y8"
   },
   {
@@ -16936,7 +16936,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Chef Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_chef_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_chef_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35515/file/w180h135_webp-00fe185ba606cb3c93b288af701ccc95.webp",
     "source": "y8"
   },
   {
@@ -16945,7 +16945,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Dracula Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_dracula_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_dracula_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7421/file/w180h135_webp-79e52af2d065ca949c0583a36c214345.webp",
     "source": "y8"
   },
   {
@@ -16954,7 +16954,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Electrician Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_electrician_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_electrician_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18161/file/w180h135_webp-f2991814e06f84ceade012ed1ac84412.webp",
     "source": "y8"
   },
   {
@@ -16963,7 +16963,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Firefighter Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_firefighter_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_firefighter_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8935/file/w180h135_webp-06d9555811bb3910816260b40753d19c.webp",
     "source": "y8"
   },
   {
@@ -16972,7 +16972,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Fisherman Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_fisherman_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_fisherman_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2651/file/w180h135_webp-7ad5dbbc06d68266bf80414e2a9ebc5d.webp",
     "source": "y8"
   },
   {
@@ -16981,7 +16981,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Karate Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_karate_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_karate_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5131/file/w180h135_webp-517e9a6daeb5ed0b204b75e2a64d66f8.webp",
     "source": "y8"
   },
   {
@@ -16990,7 +16990,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Model Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_model_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_model_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26821/file/w180h135_webp-56e0f49db01ffd2198527a0ad09e7fa0.webp",
     "source": "y8"
   },
   {
@@ -16999,7 +16999,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Postman Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_postman_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_postman_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8919/file/w180h135_webp-cb377775519c9522eafe426ec86a215e.webp",
     "source": "y8"
   },
   {
@@ -17008,7 +17008,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Hospital Robber Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_robber_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_robber_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17043/file/w180h135_webp-4e6b83b58aba77acb688002ef01b9521.webp",
     "source": "y8"
   },
   {
@@ -17034,7 +17034,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Jelly Crush Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jelly_crush_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/jelly_crush_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390977/file/w180h135_webp-0c767f3571e14d1c6f689e7e0b0c1c42.webp",
     "source": "y8"
   },
   {
@@ -17043,7 +17043,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Jelly Match 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jelly_match_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/jelly_match_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393367/file/w180h135_webp-35d5ea916d623a929e125856cce3fb32.webp",
     "source": "y8"
   },
   {
@@ -17052,7 +17052,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Jelly Merger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jelly_merger",
-    "thumb": "https://cdn2.y8.com/cloudimage/jelly_merger/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387387/file/w180h135_webp-ad7f5884c5f33f1d903a7b39b137ab75.webp",
     "source": "y8"
   },
   {
@@ -17061,7 +17061,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Jewels Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jewels_match_",
-    "thumb": "https://cdn2.y8.com/cloudimage/jewels_match_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387057/file/w180h135_webp-8db05469f707d12bdda9a10cf6de24d7.webp",
     "source": "y8"
   },
   {
@@ -17070,7 +17070,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Little Brain Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/little_brain_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/little_brain_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69067/file/w180h135_webp-77614e3827dce8b687e1f3599457da1d.webp",
     "source": "y8"
   },
   {
@@ -17079,7 +17079,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Love Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/love_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/love_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42651/file/w180h135_webp-34028c246906b3be07393a5c5db90d3d.webp",
     "source": "y8"
   },
   {
@@ -17088,7 +17088,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Match 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/match_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/match_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387075/file/w180h135_webp-549679c4cce596526797a76a95317299.webp",
     "source": "y8"
   },
   {
@@ -17097,7 +17097,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Math Education For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/math_education_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/math_education_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392599/file/w180h135_webp-556c1bbeb5af38ebfc9c2b5b61103dbd.webp",
     "source": "y8"
   },
   {
@@ -17106,7 +17106,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Math Game For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/math_game_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/math_game_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393701/file/w180h135_webp-ca520a52f93b31dd51401a8c6ffef2a3.webp",
     "source": "y8"
   },
   {
@@ -17115,7 +17115,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Merge Push free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/merge_push",
-    "thumb": "https://cdn2.y8.com/cloudimage/merge_push/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386121/file/w180h135_webp-a01c64f023cf0e0227acb323cbf8472a.webp",
     "source": "y8"
   },
   {
@@ -17124,7 +17124,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Monster Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/monster_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/monster_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386367/file/w180h135_webp-ea224c860be5ceaa7c283c85cc7f7ba8.webp",
     "source": "y8"
   },
   {
@@ -17133,7 +17133,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play My First Crush Date free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/my_first_crush_date",
-    "thumb": "https://cdn2.y8.com/cloudimage/my_first_crush_date/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406939/file/w180h135_webp-e542802585f6b1aa60481891c756c1a5.webp",
     "source": "y8"
   },
   {
@@ -17176,7 +17176,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Pick Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pick_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/pick_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3885/file/w180h135_webp-2b4fe5ad0141e39f43b3c719b43af465.webp",
     "source": "y8"
   },
   {
@@ -17185,7 +17185,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Puzzle Blocks Ancient free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puzzle_blocks_ancient",
-    "thumb": "https://cdn2.y8.com/cloudimage/puzzle_blocks_ancient/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390673/file/w180h135_webp-8bab821fd4296363691735f0665eabd0.webp",
     "source": "y8"
   },
   {
@@ -17194,7 +17194,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Puzzle Deluxe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puzzle_deluxe",
-    "thumb": "https://cdn2.y8.com/cloudimage/puzzle_deluxe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406879/file/w180h135_webp-63182a550b400800e69d889d24d1caab.webp",
     "source": "y8"
   },
   {
@@ -17220,7 +17220,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Sliding Bricks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sliding_bricks",
-    "thumb": "https://cdn2.y8.com/cloudimage/sliding_bricks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391495/file/w180h135_webp-0d00378f45b62f2f7604d800a6e7a45a.webp",
     "source": "y8"
   },
   {
@@ -17229,7 +17229,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Smiles Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/smiles_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/smiles_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391003/file/w180h135_webp-e07de6242c27b0dceaa29493b9d55bc0.webp",
     "source": "y8"
   },
   {
@@ -17238,7 +17238,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Snow Crush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/snow_crush",
-    "thumb": "https://cdn2.y8.com/cloudimage/snow_crush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389481/file/w180h135_webp-fe5bd9af763d9620f69adc27a29d1100.webp",
     "source": "y8"
   },
   {
@@ -17247,7 +17247,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Spider Solitaire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spider_solitaire",
-    "thumb": "https://cdn2.y8.com/cloudimage/spider_solitaire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385113/file/w180h135_webp-c8d7fa3207b98aa43093bd063bc30d3c.webp",
     "source": "y8"
   },
   {
@@ -17256,7 +17256,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Square Crush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/square_crush",
-    "thumb": "https://cdn2.y8.com/cloudimage/square_crush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393477/file/w180h135_webp-81d2d5e116685728e699f525920bcbfe.webp",
     "source": "y8"
   },
   {
@@ -17282,7 +17282,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Stone Merge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stone_merge",
-    "thumb": "https://cdn2.y8.com/cloudimage/stone_merge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/52569/file/w180h135_webp-5c735ce0ea481104d23b44d848a28628.webp",
     "source": "y8"
   },
   {
@@ -17291,7 +17291,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Sweet Candy Saga free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sweet_candy_saga",
-    "thumb": "https://cdn2.y8.com/cloudimage/sweet_candy_saga/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387223/file/w180h135_webp-71084f2c6f13fa05850c872efedb88e8.webp",
     "source": "y8"
   },
   {
@@ -17300,7 +17300,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Sweet Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sweet_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/sweet_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392561/file/w180h135_webp-1bf8fb334181ed8f5bc2c2e49db1efda.webp",
     "source": "y8"
   },
   {
@@ -17309,7 +17309,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Sweety Mahjong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sweety_mahjong",
-    "thumb": "https://cdn2.y8.com/cloudimage/sweety_mahjong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388463/file/w180h135_webp-8cb0ea0fc56f3780046a4ca95c111f5a.webp",
     "source": "y8"
   },
   {
@@ -17318,7 +17318,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Swipe Match free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swipe_match",
-    "thumb": "https://cdn2.y8.com/cloudimage/swipe_match/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386643/file/w180h135_webp-58628a916a50208a4ee0042ce2d67fa1.webp",
     "source": "y8"
   },
   {
@@ -17327,7 +17327,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Temple Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/temple_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/temple_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387517/file/w180h135_webp-07eceaacd1df0cfa2767f6b4fb5faebc.webp",
     "source": "y8"
   },
   {
@@ -17336,7 +17336,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Tetris Cube free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tetris_cube",
-    "thumb": "https://cdn2.y8.com/cloudimage/tetris_cube/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405445/file/w180h135_webp-9bb7577a3dca9f9eabd2db8ba5e23b65.webp",
     "source": "y8"
   },
   {
@@ -17345,7 +17345,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Tomato Crush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tomato_crush",
-    "thumb": "https://cdn2.y8.com/cloudimage/tomato_crush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389999/file/w180h135_webp-39aa002321a42f1f0de6de7f008cec1b.webp",
     "source": "y8"
   },
   {
@@ -17371,7 +17371,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Valentines Match3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/valentines_match3",
-    "thumb": "https://cdn2.y8.com/cloudimage/valentines_match3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392141/file/w180h135_webp-6b0525a6cb3115be0abaca0ebe66ad81.webp",
     "source": "y8"
   },
   {
@@ -17380,7 +17380,7 @@ const GAMES = [
     "category": "Puzzle",
     "description": "Play Viking Escape free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/viking_escape",
-    "thumb": "https://cdn2.y8.com/cloudimage/viking_escape/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389305/file/w180h135_webp-c838f6e3fffe831c89b6857c8938a982.webp",
     "source": "y8"
   },
   {
@@ -17440,7 +17440,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Trials Winter 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_trials_winter_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_trials_winter_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404803/file/w180h135_webp-ff2456ae2a0dac0c264d24f615e93d16.webp",
     "source": "y8"
   },
   {
@@ -17449,7 +17449,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Coach Bus Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coach_bus_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/coach_bus_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407561/file/w180h135_webp-99d629ad5fe2e5f1b73fd3776851ec34.webp",
     "source": "y8"
   },
   {
@@ -17458,7 +17458,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Impossible Bike Stunt 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/impossible_bike_stunt_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/impossible_bike_stunt_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404157/file/w180h135_webp-b2b389799837ecb2fee5907b31e07d06.webp",
     "source": "y8"
   },
   {
@@ -17467,7 +17467,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pixel Road Taxi Depot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pixel_road_taxi_depot",
-    "thumb": "https://cdn2.y8.com/cloudimage/pixel_road_taxi_depot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383819/file/w180h135_webp-dc27c043b318c21b7b98365c634db5ec.webp",
     "source": "y8"
   },
   {
@@ -17476,7 +17476,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Slot Car Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/slot_car_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/slot_car_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403955/file/w180h135_webp-47edf36d5acd425ffa25fb2b1d5a3b97.webp",
     "source": "y8"
   },
   {
@@ -17485,7 +17485,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Stunt Racers Extreme free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stunt_racers_extreme",
-    "thumb": "https://cdn2.y8.com/cloudimage/stunt_racers_extreme/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405733/file/w180h135_webp-8708d8fc85943346d8e184f652f88f5f.webp",
     "source": "y8"
   },
   {
@@ -17494,7 +17494,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Super Rush Street Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_rush_street_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_rush_street_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403939/file/w180h135_webp-35eff330a73e54e3208d15354ef2b5da.webp",
     "source": "y8"
   },
   {
@@ -17503,7 +17503,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Extreme Raptor Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_raptor_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_raptor_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387503/file/w180h135_webp-7feadd89c147313266007ecf84879188.webp",
     "source": "y8"
   },
   {
@@ -17512,7 +17512,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Russian Offroad Pickup Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/russian_offroad_pickup_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/russian_offroad_pickup_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404885/file/w180h135_webp-63a3b5ff9b40b8552034f52ad0d89d64.webp",
     "source": "y8"
   },
   {
@@ -17521,7 +17521,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Army Tank Transporter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_tank_transporter",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_tank_transporter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406231/file/w180h135_webp-207bc6ee5499121bd6fd0b5eff928532.webp",
     "source": "y8"
   },
   {
@@ -17530,7 +17530,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play City Drifting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_drifting",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_drifting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405241/file/w180h135_webp-26342bfe8b43229181d1fb8319ebe7eb.webp",
     "source": "y8"
   },
   {
@@ -17539,7 +17539,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Grand Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/grand_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/grand_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/380155/file/w180h135_webp-c0b7d39a677917677b07a0dbe1886fbb.webp",
     "source": "y8"
   },
   {
@@ -17548,7 +17548,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Rally Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rally_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/rally_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385871/file/w180h135_webp-938c9e73c3ad568135ce7e7031115320.webp",
     "source": "y8"
   },
   {
@@ -17557,7 +17557,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 2 Player Moto Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_moto_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_moto_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24369/file/w180h135_webp-4d26a11d3c703a7cf2127ddbe45c5acf.webp",
     "source": "y8"
   },
   {
@@ -17566,7 +17566,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Traffic Road free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/traffic_road",
-    "thumb": "https://cdn2.y8.com/cloudimage/traffic_road/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408263/file/w180h135_webp-2703c524eedb337a8559eb2d5fd4ce3f.webp",
     "source": "y8"
   },
   {
@@ -17593,7 +17593,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Truck Driver Crazy Road 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/truck_driver_crazy_road_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/truck_driver_crazy_road_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404137/file/w180h135_webp-086b8f6576dffdb387a2db8bab51493b.webp",
     "source": "y8"
   },
   {
@@ -17602,7 +17602,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Real Car Simulator 3d 2018 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/real_car_simulator_3d_2018",
-    "thumb": "https://cdn2.y8.com/cloudimage/real_car_simulator_3d_2018/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403945/file/w180h135_webp-eac4ca42581a5223f327e37c1ca3a9e8.webp",
     "source": "y8"
   },
   {
@@ -17611,7 +17611,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Quad Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_quad_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_quad_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384405/file/w180h135_webp-c5e2ae2a7903e88b7cdced80c2d1c7ff.webp",
     "source": "y8"
   },
   {
@@ -17620,7 +17620,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 2 Player Police Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_police_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_police_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26619/file/w180h135_webp-bbf0bafbed661b564cfffa7c9dcd2463.webp",
     "source": "y8"
   },
   {
@@ -17629,7 +17629,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Arcade Racer 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcade_racer_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcade_racer_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90203/file/w180h135_webp-060ef5baccaf45e97af1e211ebd57c69.webp",
     "source": "y8"
   },
   {
@@ -17638,7 +17638,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 4x4 Drive Offroad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4x4_drive_offroad",
-    "thumb": "https://cdn2.y8.com/cloudimage/4x4_drive_offroad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/41699/file/w180h135_webp-8dd4ddaa491a0ca196d492ccac481698.webp",
     "source": "y8"
   },
   {
@@ -17647,7 +17647,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Beach Buggy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beach_buggy_webgl",
-    "thumb": "https://cdn2.y8.com/cloudimage/beach_buggy_webgl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13949/file/w180h135_webp-a8f9acc84326be962ed0bf7ad717a8b2.webp",
     "source": "y8"
   },
   {
@@ -17656,7 +17656,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Road Rage Takedown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/road_rage_takedown",
-    "thumb": "https://cdn2.y8.com/cloudimage/road_rage_takedown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385699/file/w180h135_webp-f3a24ed8ba6dcf5656978b5a635d7d30.webp",
     "source": "y8"
   },
   {
@@ -17665,7 +17665,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bus Master Parking 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bus_master_parking_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bus_master_parking_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386851/file/w180h135_webp-23dc93004cf09c8d0b4768742beb900b.webp",
     "source": "y8"
   },
   {
@@ -17674,7 +17674,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Russian Extreme Offroad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/russian_extreme_offroad",
-    "thumb": "https://cdn2.y8.com/cloudimage/russian_extreme_offroad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404731/file/w180h135_webp-ee31526f9a7c1dabdb5380cd1b0f3e74.webp",
     "source": "y8"
   },
   {
@@ -17683,7 +17683,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Extreme Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389567/file/w180h135_webp-b33221ff95560d7fd9831d1cc3edcc87.webp",
     "source": "y8"
   },
   {
@@ -17692,7 +17692,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 3d Rally Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_rally_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_rally_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146419/file/w180h135_webp-6ec7e799058c79c853a1328a39e5879c.webp",
     "source": "y8"
   },
   {
@@ -17701,7 +17701,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Asseto Corsa Traffic Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asseto_corsa_traffic_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/asseto_corsa_traffic_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399403/file/w180h135_webp-4ff1c0d668a6b572a12fcd1c8654038f.webp",
     "source": "y8"
   },
   {
@@ -17710,7 +17710,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 18 Wheeler Driving Sim free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/18_wheeler_driving_sim",
-    "thumb": "https://cdn2.y8.com/cloudimage/18_wheeler_driving_sim/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30661/file/w180h135_webp-aa5bd246b3df8fc3f0a66f09e7e1ae0a.webp",
     "source": "y8"
   },
   {
@@ -17719,7 +17719,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Russian Uaz Offroad Driving 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/russian_uaz_offroad_driving_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/russian_uaz_offroad_driving_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383923/file/w180h135_webp-fc73ca6c394964aa7f80653bb4a0a55e.webp",
     "source": "y8"
   },
   {
@@ -17728,7 +17728,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Arcade Gp free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcade_gp",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcade_gp/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404849/file/w180h135_webp-5cf9c1fe00f5ad3742eb8067f92ff1d5.webp",
     "source": "y8"
   },
   {
@@ -17737,7 +17737,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Mayhem Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mayhem_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/mayhem_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406131/file/w180h135_webp-7d8789d6a53b82ff246443b928b956a7.webp",
     "source": "y8"
   },
   {
@@ -17746,7 +17746,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Park Your Car free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/park_your_car",
-    "thumb": "https://cdn2.y8.com/cloudimage/park_your_car/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391879/file/w180h135_webp-bd3fe1464576a99cc33d640a3646aa39.webp",
     "source": "y8"
   },
   {
@@ -17755,7 +17755,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Hillside Bus Simulator 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hillside_bus_simulator_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/hillside_bus_simulator_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403817/file/w180h135_webp-ae9d7a846ea194198f777d78c3fd8b5b.webp",
     "source": "y8"
   },
   {
@@ -17764,7 +17764,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 18 Wheeler Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/18_wheeler_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/18_wheeler_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408699/file/w180h135_webp-1d4eb782d4286425a7969b5840d80c07.webp",
     "source": "y8"
   },
   {
@@ -17773,7 +17773,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 3d Mountain Bike free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_mountain_bike",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_mountain_bike/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/169611/file/w180h135_webp-79a0cbbdbd9270ef6244239620cb1d3e.webp",
     "source": "y8"
   },
   {
@@ -17782,7 +17782,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Mtb Pro Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mtb_pro_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/mtb_pro_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403953/file/w180h135_webp-e1aabd075a5dcc64baacff972bcf719b.webp",
     "source": "y8"
   },
   {
@@ -17791,7 +17791,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Renegade Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/renegade_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/renegade_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389459/file/w180h135_webp-87848b1e639e7386e175770bd6a67af2.webp",
     "source": "y8"
   },
   {
@@ -17800,7 +17800,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 4 Wheel Madness free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4_wheel_madness",
-    "thumb": "https://cdn2.y8.com/cloudimage/4_wheel_madness/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143169/file/w180h135_webp-d2c7d57a3a8c24f30bb36245fe40aff0.webp",
     "source": "y8"
   },
   {
@@ -17809,7 +17809,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 4x4 Monster Truck Driving 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4x4_monster_truck_driving_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/4x4_monster_truck_driving_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35689/file/w180h135_webp-30370b9ef0c9c27dd9176c7b87219ff9.webp",
     "source": "y8"
   },
   {
@@ -17818,7 +17818,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Angry Bull Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_bull_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_bull_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407627/file/w180h135_webp-d335da8b87e3c9e31b128d5e203b0add.webp",
     "source": "y8"
   },
   {
@@ -17827,7 +17827,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Moto City Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/moto_city_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/moto_city_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386231/file/w180h135_webp-215bc5247bc482e62ba396a8ae461814.webp",
     "source": "y8"
   },
   {
@@ -17836,7 +17836,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 2 Players Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_players_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_players_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/121247/file/w180h135_webp-8ad8ab7b5de73f977aba7a39f52b404a.webp",
     "source": "y8"
   },
   {
@@ -17845,7 +17845,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Heavy Truck Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/heavy_truck_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/heavy_truck_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383919/file/w180h135_webp-f059b355ded4aaac6217b23f1d20a885.webp",
     "source": "y8"
   },
   {
@@ -17854,7 +17854,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Superbike Gtx free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/superbike_gtx",
-    "thumb": "https://cdn2.y8.com/cloudimage/superbike_gtx/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403829/file/w180h135_webp-926297299509a282e45ab28ffe032189.webp",
     "source": "y8"
   },
   {
@@ -17863,7 +17863,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Offroad 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_offroad_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_offroad_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389583/file/w180h135_webp-d9f15e43a10d2dac957c36b54e576761.webp",
     "source": "y8"
   },
   {
@@ -17872,7 +17872,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ace Gangster Taxi free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ace_gangster_taxi",
-    "thumb": "https://cdn2.y8.com/cloudimage/ace_gangster_taxi/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/108895/file/w180h135_webp-39c4a523ebd140982e496274893b598c.webp",
     "source": "y8"
   },
   {
@@ -17881,7 +17881,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Offroad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_offroad",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_offroad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385835/file/w180h135_webp-3be4e47b5d5afaa88123039c4cfa8b04.webp",
     "source": "y8"
   },
   {
@@ -17890,7 +17890,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 2 Player Crazy Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_crazy_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_crazy_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/4265/file/w180h135_webp-d86b0e5cac7fcd866cc2110873bbca6d.webp",
     "source": "y8"
   },
   {
@@ -17899,7 +17899,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Army Truck Transport free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_truck_transport",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_truck_transport/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78045/file/w180h135_webp-b1b12dfde1a4632fb831b833d073c033.webp",
     "source": "y8"
   },
   {
@@ -17908,7 +17908,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Airplane Parking Academy 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airplane_parking_academy_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/airplane_parking_academy_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384543/file/w180h135_webp-fb9e4d9013c99715682de9aa7d527193.webp",
     "source": "y8"
   },
   {
@@ -17917,7 +17917,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Highway Patrol Showdown free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/highway_patrol_showdown",
-    "thumb": "https://cdn2.y8.com/cloudimage/highway_patrol_showdown/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385125/file/w180h135_webp-b37d40fd8f15ea240583b6689d97139d.webp",
     "source": "y8"
   },
   {
@@ -17926,7 +17926,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Super Yacht Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_yacht_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_yacht_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343057/file/w180h135_webp-de6e06269ea923149e866fc3a18facc8.webp",
     "source": "y8"
   },
   {
@@ -17935,7 +17935,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Back To The Future Train Scene free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/back_to_the_future_train_scene",
-    "thumb": "https://cdn2.y8.com/cloudimage/back_to_the_future_train_scene/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/176741/file/w180h135_webp-f7d5ada3fd0cc1c3e8cb01f0f45650b7.webp",
     "source": "y8"
   },
   {
@@ -17944,7 +17944,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Alex Trax free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alex_trax",
-    "thumb": "https://cdn2.y8.com/cloudimage/alex_trax/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384079/file/w180h135_webp-cb23a56941c16265ce48391bc81f2b2d.webp",
     "source": "y8"
   },
   {
@@ -17953,7 +17953,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Gtx Racing 2018 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gtx_racing_2018",
-    "thumb": "https://cdn2.y8.com/cloudimage/gtx_racing_2018/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389487/file/w180h135_webp-84797160f880bec634468e26da9a1969.webp",
     "source": "y8"
   },
   {
@@ -17962,7 +17962,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Paired Car Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/paired_car_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/paired_car_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392465/file/w180h135_webp-aa3d1189a65a74d19d5afded3cbe80c0.webp",
     "source": "y8"
   },
   {
@@ -17989,7 +17989,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Mad Taxi Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mad_taxi_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/mad_taxi_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387589/file/w180h135_webp-38e1e77290d0c2866afa79d54f8a397e.webp",
     "source": "y8"
   },
   {
@@ -17998,7 +17998,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 4wd Off-Road Driving Sim free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4wd_off-road_driving_sim",
-    "thumb": "https://cdn2.y8.com/cloudimage/4wd_off-road_driving_sim/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30279/file/w180h135_webp-da27779918df5a81841f76aecbfe0cd3.webp",
     "source": "y8"
   },
   {
@@ -18016,7 +18016,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Extreme Truck Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_truck_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_truck_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386861/file/w180h135_webp-b49b0d2545dd1c70b0915d44098f8505.webp",
     "source": "y8"
   },
   {
@@ -18025,7 +18025,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Retro Speed free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/retro_speed",
-    "thumb": "https://cdn2.y8.com/cloudimage/retro_speed/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389791/file/w180h135_webp-da0b6d56dd82f445354a36df44bf50aa.webp",
     "source": "y8"
   },
   {
@@ -18034,7 +18034,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Hill Riders Offroad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hill_riders_offroad",
-    "thumb": "https://cdn2.y8.com/cloudimage/hill_riders_offroad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389119/file/w180h135_webp-a12bf85a675e6de3ff98855f3817e356.webp",
     "source": "y8"
   },
   {
@@ -18052,7 +18052,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Trials Temple free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_trials_temple",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_trials_temple/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387089/file/w180h135_webp-614ac720033c564054bfa01fa522230f.webp",
     "source": "y8"
   },
   {
@@ -18079,7 +18079,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bike Rider 2 Armageddon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_rider_2_armageddon",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_rider_2_armageddon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383275/file/w180h135_webp-b812be78b2fb3946d51ccf54cf5a83c8.webp",
     "source": "y8"
   },
   {
@@ -18097,7 +18097,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Apocalypse Drive free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apocalypse_drive",
-    "thumb": "https://cdn2.y8.com/cloudimage/apocalypse_drive/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384975/file/w180h135_webp-3e73b0d9a0a9e3cf28241ed3a379675c.webp",
     "source": "y8"
   },
   {
@@ -18106,7 +18106,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Car Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405485/file/w180h135_webp-c261f57b78ddd71d2a3e0c92a7536509.webp",
     "source": "y8"
   },
   {
@@ -18115,7 +18115,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Lux Parking 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/lux_parking_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/lux_parking_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389291/file/w180h135_webp-63599aeee8385fe64326be614a590941.webp",
     "source": "y8"
   },
   {
@@ -18133,7 +18133,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Devrim Racing 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devrim_racing_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/devrim_racing_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383273/file/w180h135_webp-0192f1b90c50780dcdd095db7ade622d.webp",
     "source": "y8"
   },
   {
@@ -18142,7 +18142,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cruise Boat Depot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cruise_boat_depot",
-    "thumb": "https://cdn2.y8.com/cloudimage/cruise_boat_depot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385869/file/w180h135_webp-08caf06232c973754c7fcca2d9070d22.webp",
     "source": "y8"
   },
   {
@@ -18151,7 +18151,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Greyhound Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/greyhound_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/greyhound_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389609/file/w180h135_webp-d47160daef4fcbe84c9848efa2146908.webp",
     "source": "y8"
   },
   {
@@ -18169,7 +18169,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 3d Arena Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_arena_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_arena_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/218081/file/w180h135_webp-844380721668db20240b5df81f43716b.webp",
     "source": "y8"
   },
   {
@@ -18196,7 +18196,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Jazzy Car Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jazzy_car_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/jazzy_car_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393459/file/w180h135_webp-4177654e340d141b5fa4a4df3341c7a4.webp",
     "source": "y8"
   },
   {
@@ -18205,7 +18205,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Stunt Racers Extreme 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stunt_racers_extreme_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/stunt_racers_extreme_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384955/file/w180h135_webp-7856118aa622f86c1462822bda11f949.webp",
     "source": "y8"
   },
   {
@@ -18232,7 +18232,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play King Of Bikes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/king_of_bikes",
-    "thumb": "https://cdn2.y8.com/cloudimage/king_of_bikes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388611/file/w180h135_webp-26a4917920efae5e1e3567f14e22b7dd.webp",
     "source": "y8"
   },
   {
@@ -18277,7 +18277,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Traffic Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/traffic_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/traffic_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387817/file/w180h135_webp-e5af6817ad5a218a9fdf7eac95efc377.webp",
     "source": "y8"
   },
   {
@@ -18286,7 +18286,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pro Driver Academy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pro_driver_academy",
-    "thumb": "https://cdn2.y8.com/cloudimage/pro_driver_academy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385901/file/w180h135_webp-acf616c69573932e9abe4d864688b15e.webp",
     "source": "y8"
   },
   {
@@ -18322,7 +18322,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Rc Super Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rc_super_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/rc_super_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383909/file/w180h135_webp-2d36ce79c176747ea880c864b905159d.webp",
     "source": "y8"
   },
   {
@@ -18340,7 +18340,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Puppy Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puppy_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/puppy_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387055/file/w180h135_webp-da2d56fb0296bb6231f0eaadbb457cb3.webp",
     "source": "y8"
   },
   {
@@ -18349,7 +18349,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bike Riders 3 Road Rage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_riders_3_road_rage",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_riders_3_road_rage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385143/file/w180h135_webp-0e0b61632911f5819def4a7c7d842229.webp",
     "source": "y8"
   },
   {
@@ -18358,7 +18358,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Speed Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/speed_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/speed_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389589/file/w180h135_webp-f131f037139d0a87be2b7b3e4280e44d.webp",
     "source": "y8"
   },
   {
@@ -18394,7 +18394,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Speedy Boats free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/speedy_boats",
-    "thumb": "https://cdn2.y8.com/cloudimage/speedy_boats/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392491/file/w180h135_webp-fd713696ed99d5a76666e368349f90ec.webp",
     "source": "y8"
   },
   {
@@ -18412,7 +18412,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Sport Car Parking Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sport_car_parking_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/sport_car_parking_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384481/file/w180h135_webp-0c693a1969961d7ed05293cd9d558dcf.webp",
     "source": "y8"
   },
   {
@@ -18430,7 +18430,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Beam Car Crash Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beam_car_crash_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/beam_car_crash_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26365/file/w180h135_webp-f56917d2d4e428ec4690ee32f8625c9d.webp",
     "source": "y8"
   },
   {
@@ -18439,7 +18439,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 4x4 Off Roading free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/4x4_off_roading",
-    "thumb": "https://cdn2.y8.com/cloudimage/4x4_off_roading/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385127/file/w180h135_webp-334ceb5897a7ab6f982e374111e4ee3b.webp",
     "source": "y8"
   },
   {
@@ -18448,7 +18448,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Drive For Speed free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drive_for_speed",
-    "thumb": "https://cdn2.y8.com/cloudimage/drive_for_speed/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384383/file/w180h135_webp-7533e53fa4e8fc8b22d05c9da59f3726.webp",
     "source": "y8"
   },
   {
@@ -18457,7 +18457,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Jetpack Fighter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jetpack_fighter",
-    "thumb": "https://cdn2.y8.com/cloudimage/jetpack_fighter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383281/file/w180h135_webp-737d8904652056ce85dcb0b2b5dbfa16.webp",
     "source": "y8"
   },
   {
@@ -18475,7 +18475,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 100 Metres Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/100_metres_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/100_metres_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383225/file/w180h135_webp-31ab9a76175b5703737f7da06f0c00c7.webp",
     "source": "y8"
   },
   {
@@ -18484,7 +18484,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Horse Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/horse_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/horse_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405255/file/w180h135_webp-614ce707b260c34ea3849cbaae9d549a.webp",
     "source": "y8"
   },
   {
@@ -18493,7 +18493,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Monster Truck Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/monster_truck_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/monster_truck_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389611/file/w180h135_webp-f0c5ea9edcb7099139a8fb01bf0712ff.webp",
     "source": "y8"
   },
   {
@@ -18502,7 +18502,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cute Panda Dentist Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_panda_dentist_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_panda_dentist_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406505/file/w180h135_webp-7010375bf817e1d5ef7e5c3820c0ebdd.webp",
     "source": "y8"
   },
   {
@@ -18511,7 +18511,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play My Dreamy Car Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/my_dreamy_car_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/my_dreamy_car_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406525/file/w180h135_webp-ead44bcc9553dfccf69bdd924b111cc5.webp",
     "source": "y8"
   },
   {
@@ -18520,7 +18520,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Kitty Fun Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kitty_fun_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/kitty_fun_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408083/file/w180h135_webp-7fc83188bea8dd595305a794ba70fcc4.webp",
     "source": "y8"
   },
   {
@@ -18546,7 +18546,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ariana S Pregnant Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ariana_s_pregnant_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/ariana_s_pregnant_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407961/file/w180h135_webp-77e14ccc00d3ac991857b635609ec8bb.webp",
     "source": "y8"
   },
   {
@@ -18555,7 +18555,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Puppy Fun Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puppy_fun_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/puppy_fun_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408075/file/w180h135_webp-cf1a0736a95699133a2844b0f2976764.webp",
     "source": "y8"
   },
   {
@@ -18581,7 +18581,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Traffic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/traffic",
-    "thumb": "https://cdn2.y8.com/cloudimage/traffic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392537/file/w180h135_webp-d88a876c69d46fea4719bc16ae8b345d.webp",
     "source": "y8"
   },
   {
@@ -18590,7 +18590,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Swing Jet Pack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swing_jet_pack",
-    "thumb": "https://cdn2.y8.com/cloudimage/swing_jet_pack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393881/file/w180h135_webp-20ead377322369351fee64829dfa791c.webp",
     "source": "y8"
   },
   {
@@ -18599,7 +18599,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Helicopter Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/helicopter_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/helicopter_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390015/file/w180h135_webp-9bff2fe823c3e9400dbd775b31bf79c6.webp",
     "source": "y8"
   },
   {
@@ -18608,7 +18608,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Supercar Wash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/supercar_wash",
-    "thumb": "https://cdn2.y8.com/cloudimage/supercar_wash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406705/file/w180h135_webp-5013530a6de4d75c93c55dec95a7fa13.webp",
     "source": "y8"
   },
   {
@@ -18617,7 +18617,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Italian Pizza Truck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/italian_pizza_truck",
-    "thumb": "https://cdn2.y8.com/cloudimage/italian_pizza_truck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386017/file/w180h135_webp-22dc99cb27b9c2b23ca239eb0fca4c6f.webp",
     "source": "y8"
   },
   {
@@ -18626,7 +18626,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Among Cars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/among_cars",
-    "thumb": "https://cdn2.y8.com/cloudimage/among_cars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403813/file/w180h135_webp-648f1fded667a53b82302e267963624e.webp",
     "source": "y8"
   },
   {
@@ -18635,7 +18635,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Rolling Sky Trip free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rolling_sky_trip",
-    "thumb": "https://cdn2.y8.com/cloudimage/rolling_sky_trip/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406461/file/w180h135_webp-a8007f293bac4b4bab7e73dcf7e18825.webp",
     "source": "y8"
   },
   {
@@ -18644,7 +18644,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Fighter Aircraft Pilot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fighter_aircraft_pilot",
-    "thumb": "https://cdn2.y8.com/cloudimage/fighter_aircraft_pilot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384555/file/w180h135_webp-29d17453f9c0bb449519bff973749634.webp",
     "source": "y8"
   },
   {
@@ -18653,7 +18653,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cars Movement free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cars_movement",
-    "thumb": "https://cdn2.y8.com/cloudimage/cars_movement/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393733/file/w180h135_webp-7b7872ba04935bc8b8b89ead8464132a.webp",
     "source": "y8"
   },
   {
@@ -18662,7 +18662,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Iron Suit Assemble And Flight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/iron_suit_assemble_and_flight",
-    "thumb": "https://cdn2.y8.com/cloudimage/iron_suit_assemble_and_flight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404883/file/w180h135_webp-208b3132540865bd8d647125dca64e5b.webp",
     "source": "y8"
   },
   {
@@ -18671,7 +18671,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Homeless Puppy Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/homeless_puppy_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/homeless_puppy_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47307/file/w180h135_webp-94f1c1034738cccb04446a847edfcab0.webp",
     "source": "y8"
   },
   {
@@ -18680,7 +18680,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Carnival With Pop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carnival_with_pop",
-    "thumb": "https://cdn2.y8.com/cloudimage/carnival_with_pop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82163/file/w180h135_webp-d420da6992ba11a03c5ed9cff0da238b.webp",
     "source": "y8"
   },
   {
@@ -18689,7 +18689,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Rust Dust Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rust_dust_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/rust_dust_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393145/file/w180h135_webp-22cd7815552fb66e7f97037e1cb2f7a7.webp",
     "source": "y8"
   },
   {
@@ -18698,7 +18698,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play 3d Parking Bridge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_parking_bridge",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_parking_bridge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392759/file/w180h135_webp-1f8d89a5ad888317828c7fe7c91f5889.webp",
     "source": "y8"
   },
   {
@@ -18707,7 +18707,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ashley Face Care Treatment free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ashley_face_care_treatment",
-    "thumb": "https://cdn2.y8.com/cloudimage/ashley_face_care_treatment/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/70765/file/w180h135_webp-20f72488ae9039186af178ceef345cb4.webp",
     "source": "y8"
   },
   {
@@ -18716,7 +18716,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Astrobuster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/astrobuster",
-    "thumb": "https://cdn2.y8.com/cloudimage/astrobuster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392809/file/w180h135_webp-2b262c9a3f08e53d331147e73091dfee.webp",
     "source": "y8"
   },
   {
@@ -18725,7 +18725,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Atv Extreme Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atv_extreme_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/atv_extreme_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387319/file/w180h135_webp-396fc80bf6bc3ff94af861dc9b1fa669.webp",
     "source": "y8"
   },
   {
@@ -18734,7 +18734,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Baby Aliza S Daycare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_aliza_s_daycare",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_aliza_s_daycare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79215/file/w180h135_webp-91f7df8f89ea14839b38dcb75379bedf.webp",
     "source": "y8"
   },
   {
@@ -18743,7 +18743,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Baby Care New Year Look free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_care_new_year_look",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_care_new_year_look/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85127/file/w180h135_webp-900509f4228604894de4b4c326586198.webp",
     "source": "y8"
   },
   {
@@ -18752,7 +18752,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bad Baby Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bad_baby_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/bad_baby_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106807/file/w180h135_webp-0b25efe09e6a423ce8494b79100d81c1.webp",
     "source": "y8"
   },
   {
@@ -18761,7 +18761,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Beatriz Medical Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beatriz_medical_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/beatriz_medical_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1461/file/w180h135_webp-e8a415065fad9a5b280f2189d4cfa777.webp",
     "source": "y8"
   },
   {
@@ -18770,7 +18770,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bike Speed free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_speed",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_speed/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392397/file/w180h135_webp-9166332ab6f4977fbbaee8e9956f1d7a.webp",
     "source": "y8"
   },
   {
@@ -18779,7 +18779,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bike Trials Wasteland free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bike_trials_wasteland",
-    "thumb": "https://cdn2.y8.com/cloudimage/bike_trials_wasteland/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391499/file/w180h135_webp-5ad3d73eb3ee6a53741d1550c56ca980.webp",
     "source": "y8"
   },
   {
@@ -18788,7 +18788,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bionic Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bionic_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/bionic_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393663/file/w180h135_webp-e5b554a0be0c79c22f657de200c5eb04.webp",
     "source": "y8"
   },
   {
@@ -18831,7 +18831,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Boat Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boat_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/boat_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388211/file/w180h135_webp-a215308e91a368c1ce1dd123a5a7c2b5.webp",
     "source": "y8"
   },
   {
@@ -18840,7 +18840,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Bus Driver Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bus_driver_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/bus_driver_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386153/file/w180h135_webp-d87c85c631dee09115e14c9aaf788876.webp",
     "source": "y8"
   },
   {
@@ -18849,7 +18849,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Camilles Eye Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/camilles_eye_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/camilles_eye_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407965/file/w180h135_webp-dff7311a7676203df1184fda4833ca83.webp",
     "source": "y8"
   },
   {
@@ -18875,7 +18875,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Car Driving Test Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_driving_test_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_driving_test_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384531/file/w180h135_webp-819393ef45bf560bade2442ec77a3c3d.webp",
     "source": "y8"
   },
   {
@@ -18884,7 +18884,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Car Physics free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_physics",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_physics/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383207/file/w180h135_webp-e08349e0798c4e24d98e4171a46e3d08.webp",
     "source": "y8"
   },
   {
@@ -18910,7 +18910,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Car Speed Booster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_speed_booster",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_speed_booster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393691/file/w180h135_webp-bdfc05d7cd3d96134c0a0c024e7ea378.webp",
     "source": "y8"
   },
   {
@@ -18919,7 +18919,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Car Traffic Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_traffic_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_traffic_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102497/file/w180h135_webp-a17ca0022beb84e09a95f2f1388c3b5f.webp",
     "source": "y8"
   },
   {
@@ -18945,7 +18945,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cargo Carrier Low Poly free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cargo_carrier_low_poly",
-    "thumb": "https://cdn2.y8.com/cloudimage/cargo_carrier_low_poly/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389473/file/w180h135_webp-ed2158c0e14550b71bda2c76a03736fa.webp",
     "source": "y8"
   },
   {
@@ -18954,7 +18954,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Carnival Ducks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carnival_ducks",
-    "thumb": "https://cdn2.y8.com/cloudimage/carnival_ducks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392569/file/w180h135_webp-0034710e00e56c76a0b68330e329fd88.webp",
     "source": "y8"
   },
   {
@@ -18963,7 +18963,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Carrot Cake Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carrot_cake_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/carrot_cake_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71497/file/w180h135_webp-1657e31a1f65c18db8669c91eed02acd.webp",
     "source": "y8"
   },
   {
@@ -18972,7 +18972,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cars",
-    "thumb": "https://cdn2.y8.com/cloudimage/cars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386779/file/w180h135_webp-aad3c8e7d44f7545f3cad19b24fd4dd3.webp",
     "source": "y8"
   },
   {
@@ -18981,7 +18981,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cartoon Candy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cartoon_candy",
-    "thumb": "https://cdn2.y8.com/cloudimage/cartoon_candy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392919/file/w180h135_webp-be3e3c79e31660db207a01aea3b8e32b.webp",
     "source": "y8"
   },
   {
@@ -18990,7 +18990,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Circuit Drift free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/circuit_drift",
-    "thumb": "https://cdn2.y8.com/cloudimage/circuit_drift/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387347/file/w180h135_webp-0f9d2699608ebbe1af66c75f43ddec14.webp",
     "source": "y8"
   },
   {
@@ -18999,7 +18999,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play City Bus Parking Sim free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_bus_parking_sim",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_bus_parking_sim/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386301/file/w180h135_webp-1a482c2a38c6379f3d2f00a8a5761f02.webp",
     "source": "y8"
   },
   {
@@ -19008,7 +19008,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Color Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386475/file/w180h135_webp-bdb28990d0648f641803a07ea7ef3a74.webp",
     "source": "y8"
   },
   {
@@ -19017,7 +19017,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Color Road free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_road",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_road/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406805/file/w180h135_webp-ccc95c3a81dc5971dbf48221b43c523b.webp",
     "source": "y8"
   },
   {
@@ -19026,7 +19026,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Crazy Car free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_car",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_car/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392883/file/w180h135_webp-c93601496bf693b490620ab728ef78a4.webp",
     "source": "y8"
   },
   {
@@ -19035,7 +19035,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Crazy Jetpack Ride free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_jetpack_ride",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_jetpack_ride/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386361/file/w180h135_webp-4db0c1e0302d069f3abb8b4b24bb3f60.webp",
     "source": "y8"
   },
   {
@@ -19044,7 +19044,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Crazy Parking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_parking",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_parking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390979/file/w180h135_webp-2f0f770ef5e6ed53b08c2ace274a4b8c.webp",
     "source": "y8"
   },
   {
@@ -19053,7 +19053,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cross Track Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cross_track_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/cross_track_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385949/file/w180h135_webp-4a641d1ceb8dbb53a90413dff77d0d2f.webp",
     "source": "y8"
   },
   {
@@ -19062,7 +19062,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cute Car Repair free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_car_repair",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_car_repair/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/94233/file/w180h135_webp-454097036e1e8bb91cb435b755a144e3.webp",
     "source": "y8"
   },
   {
@@ -19071,7 +19071,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cute Pet Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_pet_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_pet_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64415/file/w180h135_webp-9b3b4653ab5ffa4975f20d8c72ec43f6.webp",
     "source": "y8"
   },
   {
@@ -19080,7 +19080,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Cute Twin Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_twin_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_twin_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36509/file/w180h135_webp-6f4d5cff8c91daebff7d76764fbda4af.webp",
     "source": "y8"
   },
   {
@@ -19089,7 +19089,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Decor Rainbow Car free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decor_rainbow_car",
-    "thumb": "https://cdn2.y8.com/cloudimage/decor_rainbow_car/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22661/file/w180h135_webp-2aeb45791faca05a36f6c94979acac4c.webp",
     "source": "y8"
   },
   {
@@ -19115,7 +19115,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Desert Storm Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desert_storm_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/desert_storm_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406041/file/w180h135_webp-5e233bd0d7e853951c75202b3f2d1f7f.webp",
     "source": "y8"
   },
   {
@@ -19124,7 +19124,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Dreamy Bike Makeover free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dreamy_bike_makeover",
-    "thumb": "https://cdn2.y8.com/cloudimage/dreamy_bike_makeover/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33587/file/w180h135_webp-94b12e1aca64dab323b0e3242ea7b6ac.webp",
     "source": "y8"
   },
   {
@@ -19133,7 +19133,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Drive For Speed 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drive_for_speed_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/drive_for_speed_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386021/file/w180h135_webp-15f2cb937cd9b1d1114bf522a1097190.webp",
     "source": "y8"
   },
   {
@@ -19142,7 +19142,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Drive Your Car free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drive_your_car",
-    "thumb": "https://cdn2.y8.com/cloudimage/drive_your_car/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392575/file/w180h135_webp-de7867c56ab466505bc55f5a89a7305a.webp",
     "source": "y8"
   },
   {
@@ -19151,7 +19151,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Driver Highway free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/driver_highway",
-    "thumb": "https://cdn2.y8.com/cloudimage/driver_highway/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386639/file/w180h135_webp-4ab8eb0f202834536375b1b3d1241a40.webp",
     "source": "y8"
   },
   {
@@ -19177,7 +19177,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Er Bus Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_bus_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_bus_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/72273/file/w180h135_webp-32790420ec3b56ae4d85aadc4f545ef2.webp",
     "source": "y8"
   },
   {
@@ -19186,7 +19186,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Express Truck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/express_truck_",
-    "thumb": "https://cdn2.y8.com/cloudimage/express_truck_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386115/file/w180h135_webp-a733f50817bbc692072ee91042faa5b7.webp",
     "source": "y8"
   },
   {
@@ -19195,7 +19195,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Extreme Bus Parking 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_bus_parking_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_bus_parking_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392483/file/w180h135_webp-a6d1886dcf56130426886bc1bd080c05.webp",
     "source": "y8"
   },
   {
@@ -19204,7 +19204,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Extreme Jumping Car free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_jumping_car",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_jumping_car/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391977/file/w180h135_webp-e43b4c312a20afaaad6e06534d438bdd.webp",
     "source": "y8"
   },
   {
@@ -19213,7 +19213,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Fast Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fast_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/fast_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47479/file/w180h135_webp-9daf8d685ddd9049bb3c98ca4dd92bd6.webp",
     "source": "y8"
   },
   {
@@ -19222,7 +19222,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Fast Driver Y8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fast_driver_y8",
-    "thumb": "https://cdn2.y8.com/cloudimage/fast_driver_y8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387565/file/w180h135_webp-5f780b0e1050c3a3770e135c5289b56b.webp",
     "source": "y8"
   },
   {
@@ -19231,7 +19231,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Fire Truck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fire_truck",
-    "thumb": "https://cdn2.y8.com/cloudimage/fire_truck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388231/file/w180h135_webp-f372e602513e586652286703ad3a5d3b.webp",
     "source": "y8"
   },
   {
@@ -19240,7 +19240,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Flight Color free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/flight_color",
-    "thumb": "https://cdn2.y8.com/cloudimage/flight_color/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387399/file/w180h135_webp-0cc26ec30d73939f540477ad50748270.webp",
     "source": "y8"
   },
   {
@@ -19266,7 +19266,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Formula Drag free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/formula_drag",
-    "thumb": "https://cdn2.y8.com/cloudimage/formula_drag/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386883/file/w180h135_webp-0642faee04ebe3d90a7af0ca84a8b00d.webp",
     "source": "y8"
   },
   {
@@ -19275,7 +19275,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Fun Lip Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fun_lip_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/fun_lip_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/71155/file/w180h135_webp-fec403fa11064ec0d0690a847e256675.webp",
     "source": "y8"
   },
   {
@@ -19284,7 +19284,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Furious Road free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/furious_road",
-    "thumb": "https://cdn2.y8.com/cloudimage/furious_road/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392531/file/w180h135_webp-9af0e0b31d2cf315b1b61925e3007e2d.webp",
     "source": "y8"
   },
   {
@@ -19293,7 +19293,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Go Kart Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/go_kart_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/go_kart_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389433/file/w180h135_webp-af03d2f3145b923eb625da0c99b56183.webp",
     "source": "y8"
   },
   {
@@ -19302,7 +19302,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Grand Prix Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/grand_prix_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/grand_prix_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383375/file/w180h135_webp-61ba041d2fa464fccf958d74a849b7de.webp",
     "source": "y8"
   },
   {
@@ -19311,7 +19311,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Hell Biker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hell_biker",
-    "thumb": "https://cdn2.y8.com/cloudimage/hell_biker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385573/file/w180h135_webp-b4b260e49ee66cb89dd42e00c54777eb.webp",
     "source": "y8"
   },
   {
@@ -19320,7 +19320,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Highway Cruiser free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/highway_cruiser",
-    "thumb": "https://cdn2.y8.com/cloudimage/highway_cruiser/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387519/file/w180h135_webp-ba1690b253a16e6d45e6ed50c686ccfa.webp",
     "source": "y8"
   },
   {
@@ -19329,7 +19329,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Highway Super Bike Sim free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/highway_super_bike_sim",
-    "thumb": "https://cdn2.y8.com/cloudimage/highway_super_bike_sim/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386285/file/w180h135_webp-b49187326db85b54721afa9dea0ce0a5.webp",
     "source": "y8"
   },
   {
@@ -19338,7 +19338,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Hospital Bus Driver Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_bus_driver_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_bus_driver_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11957/file/w180h135_webp-f385e781b223f3228c8af6f758daa53a.webp",
     "source": "y8"
   },
   {
@@ -19347,7 +19347,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Hybrids Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hybrids_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/hybrids_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386537/file/w180h135_webp-2751503885050f9087a75c302b8efe75.webp",
     "source": "y8"
   },
   {
@@ -19356,7 +19356,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ice Rider Racing Cars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ice_rider_racing_cars",
-    "thumb": "https://cdn2.y8.com/cloudimage/ice_rider_racing_cars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388735/file/w180h135_webp-2467786eb4b426701397caf8e328e520.webp",
     "source": "y8"
   },
   {
@@ -19365,7 +19365,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Karting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/karting",
-    "thumb": "https://cdn2.y8.com/cloudimage/karting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387561/file/w180h135_webp-ce21637e9d30a0c9373e646f32186b23.webp",
     "source": "y8"
   },
   {
@@ -19374,7 +19374,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Legend Motorbike free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/legend_motorbike",
-    "thumb": "https://cdn2.y8.com/cloudimage/legend_motorbike/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384373/file/w180h135_webp-927298e330d65f04d028c2ecd5de1055.webp",
     "source": "y8"
   },
   {
@@ -19383,7 +19383,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Lena S Foot Treatment Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/lena_s_foot_treatment_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/lena_s_foot_treatment_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407983/file/w180h135_webp-3262deb66cce6011488573ed4ffb55cb.webp",
     "source": "y8"
   },
   {
@@ -19392,7 +19392,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Make A Car Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/make_a_car_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/make_a_car_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383665/file/w180h135_webp-c517993b0ac82e54a7a1e3f05d128fee.webp",
     "source": "y8"
   },
   {
@@ -19401,7 +19401,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Mini Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mini_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/mini_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393467/file/w180h135_webp-74f611f571757609c9c7419b1e658395.webp",
     "source": "y8"
   },
   {
@@ -19410,7 +19410,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Monster Offroad Trials free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/monster_offroad_trials",
-    "thumb": "https://cdn2.y8.com/cloudimage/monster_offroad_trials/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387501/file/w180h135_webp-35a7a86a8f1d2891d585315e1800aee0.webp",
     "source": "y8"
   },
   {
@@ -19419,7 +19419,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Moto Taxi Sim free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/moto_taxi_sim",
-    "thumb": "https://cdn2.y8.com/cloudimage/moto_taxi_sim/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386313/file/w180h135_webp-a61874efc88b761ec63d9b4d0a2d23c7.webp",
     "source": "y8"
   },
   {
@@ -19428,7 +19428,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Motorbike Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/motorbike_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/motorbike_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386113/file/w180h135_webp-6de0771d09f09e3b256881bf58a20d38.webp",
     "source": "y8"
   },
   {
@@ -19437,7 +19437,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Neon Flight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/neon_flight",
-    "thumb": "https://cdn2.y8.com/cloudimage/neon_flight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387969/file/w180h135_webp-cecb005fd01371484cd63d63924d8e69.webp",
     "source": "y8"
   },
   {
@@ -19446,7 +19446,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Offroad Pickup Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/offroad_pickup_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/offroad_pickup_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385659/file/w180h135_webp-e469e6aaf2b2b6744b79f4941a875f0b.webp",
     "source": "y8"
   },
   {
@@ -19455,7 +19455,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play On The Road free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/on_the_road_",
-    "thumb": "https://cdn2.y8.com/cloudimage/on_the_road_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387065/file/w180h135_webp-ebd84b24672dec5a17458ff35fedbbec.webp",
     "source": "y8"
   },
   {
@@ -19464,7 +19464,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Paint Busters Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/paint_busters_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/paint_busters_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385933/file/w180h135_webp-c24c67671c372ea4fa8ac1bc5880f457.webp",
     "source": "y8"
   },
   {
@@ -19473,7 +19473,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Parking Block free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/parking_block",
-    "thumb": "https://cdn2.y8.com/cloudimage/parking_block/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/103147/file/w180h135_webp-28b4030abac9da83c85fddba9910d6de.webp",
     "source": "y8"
   },
   {
@@ -19482,7 +19482,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pinnacle Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pinnacle_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/pinnacle_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405715/file/w180h135_webp-28e5550a9fff108d31ad63ae59b624fb.webp",
     "source": "y8"
   },
   {
@@ -19491,7 +19491,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pixel Racing 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pixel_racing_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/pixel_racing_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389451/file/w180h135_webp-3e5b2f02b5a6c54eca7140f6593efee0.webp",
     "source": "y8"
   },
   {
@@ -19500,7 +19500,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pixel Rally 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pixel_rally_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/pixel_rally_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389155/file/w180h135_webp-0dacc39c3754c42874f4090b44b77b6b.webp",
     "source": "y8"
   },
   {
@@ -19509,7 +19509,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Pursuit Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pursuit_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/pursuit_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387067/file/w180h135_webp-2d024c39cc03ee52e7602e0c0c019a83.webp",
     "source": "y8"
   },
   {
@@ -19518,7 +19518,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Racing Game Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/racing_game_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/racing_game_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389781/file/w180h135_webp-a290c937d03651a052f12b53e97b3159.webp",
     "source": "y8"
   },
   {
@@ -19527,7 +19527,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Rc2 Super Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rc2_super_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/rc2_super_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388843/file/w180h135_webp-1754824605cac63afa73154a1d499f2c.webp",
     "source": "y8"
   },
   {
@@ -19536,7 +19536,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Retro Speed 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/retro_speed_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/retro_speed_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393523/file/w180h135_webp-da2f73670654a6ee6e9e89bdaa3d33b3.webp",
     "source": "y8"
   },
   {
@@ -19545,7 +19545,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ribbit Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ribbit_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/ribbit_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393835/file/w180h135_webp-06d65890a38e44b398b9205b0c6bc627.webp",
     "source": "y8"
   },
   {
@@ -19554,7 +19554,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Road Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/road_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/road_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392359/file/w180h135_webp-3994851ad84ef473a24aa17d50a5c0eb.webp",
     "source": "y8"
   },
   {
@@ -19580,7 +19580,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Russian Car Parking Hd Season 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/russian_car_parking_hd_season_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/russian_car_parking_hd_season_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389055/file/w180h135_webp-9bbe27dafb9eaf4a6746fc736401ae59.webp",
     "source": "y8"
   },
   {
@@ -19589,7 +19589,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Save The Pilot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/save_the_pilot",
-    "thumb": "https://cdn2.y8.com/cloudimage/save_the_pilot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387605/file/w180h135_webp-13294ec391e56bf2ed6fdaa3b6af692b.webp",
     "source": "y8"
   },
   {
@@ -19598,7 +19598,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Scary Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/scary_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/scary_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387217/file/w180h135_webp-a8fd02d49426039b9d6700a5055b0808.webp",
     "source": "y8"
   },
   {
@@ -19607,7 +19607,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Speed Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/speed_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/speed_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393649/file/w180h135_webp-aa713ab03dfb2aa87fb9da6564608bb3.webp",
     "source": "y8"
   },
   {
@@ -19616,7 +19616,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Speed Racer Y8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/speed_racer_y8",
-    "thumb": "https://cdn2.y8.com/cloudimage/speed_racer_y8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387721/file/w180h135_webp-f3a8f75402aefd5a95470d7c8afb1419.webp",
     "source": "y8"
   },
   {
@@ -19625,7 +19625,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Speedboat Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/speedboat_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/speedboat_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389117/file/w180h135_webp-af41ba5d25bd1f39e3304e13ba43d080.webp",
     "source": "y8"
   },
   {
@@ -19634,7 +19634,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Steam Trucker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/steam_trucker",
-    "thumb": "https://cdn2.y8.com/cloudimage/steam_trucker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387793/file/w180h135_webp-ebcd197158544f0b56b5ce5bf588eafc.webp",
     "source": "y8"
   },
   {
@@ -19643,7 +19643,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Stone Age Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stone_age_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/stone_age_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388353/file/w180h135_webp-014138c6f442b6280d05485fd11f142f.webp",
     "source": "y8"
   },
   {
@@ -19652,7 +19652,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Stray Dog Care free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stray_dog_care",
-    "thumb": "https://cdn2.y8.com/cloudimage/stray_dog_care/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/96107/file/w180h135_webp-79641affda5a3bd9ea5e91b2028494a8.webp",
     "source": "y8"
   },
   {
@@ -19661,7 +19661,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Stunt Plane Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stunt_plane_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/stunt_plane_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386915/file/w180h135_webp-270fb7467fed926065f2ad2e5528f624.webp",
     "source": "y8"
   },
   {
@@ -19670,7 +19670,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Super Speed Runner free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_speed_runner",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_speed_runner/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389777/file/w180h135_webp-23e98c1d0be6ecc3a5c579c3699d1088.webp",
     "source": "y8"
   },
   {
@@ -19679,7 +19679,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Supercars Puzzle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/supercars_puzzle",
-    "thumb": "https://cdn2.y8.com/cloudimage/supercars_puzzle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405649/file/w180h135_webp-b39c13ee0135d1cfb931671607536f0a.webp",
     "source": "y8"
   },
   {
@@ -19688,7 +19688,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Taxi Depot Master Exclusive free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/taxi_depot_master_exclusive",
-    "thumb": "https://cdn2.y8.com/cloudimage/taxi_depot_master_exclusive/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386319/file/w180h135_webp-cb9ae607d70f92b30ca05a4fb982b5e2.webp",
     "source": "y8"
   },
   {
@@ -19697,7 +19697,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Three Cards Monte free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/three_cards_monte",
-    "thumb": "https://cdn2.y8.com/cloudimage/three_cards_monte/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392601/file/w180h135_webp-5ea9000bb495f25cd1906f6b1c1c448d.webp",
     "source": "y8"
   },
   {
@@ -19706,7 +19706,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Track Racer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/track_racer",
-    "thumb": "https://cdn2.y8.com/cloudimage/track_racer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390695/file/w180h135_webp-68f40bd03cfb7a0fc5794eca9c521224.webp",
     "source": "y8"
   },
   {
@@ -19715,7 +19715,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Traffic Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/traffic_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/traffic_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78751/file/w180h135_webp-486200f01a5158b79c9ce59b193b8d20.webp",
     "source": "y8"
   },
   {
@@ -19724,7 +19724,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Truck Legends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/truck_legends",
-    "thumb": "https://cdn2.y8.com/cloudimage/truck_legends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391873/file/w180h135_webp-a39690926571b4edced7a4c5e03bee5d.webp",
     "source": "y8"
   },
   {
@@ -19733,7 +19733,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ufo Flight free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ufo_flight",
-    "thumb": "https://cdn2.y8.com/cloudimage/ufo_flight/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387823/file/w180h135_webp-fc72efcccefdfe636b19c8fc677218e4.webp",
     "source": "y8"
   },
   {
@@ -19742,7 +19742,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Ultimate Bus Racing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ultimate_bus_racing",
-    "thumb": "https://cdn2.y8.com/cloudimage/ultimate_bus_racing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385867/file/w180h135_webp-0bbd81209f5c386b65c2984f77dcb4fb.webp",
     "source": "y8"
   },
   {
@@ -19751,7 +19751,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play World Drift Tour free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/world_drift_tour",
-    "thumb": "https://cdn2.y8.com/cloudimage/world_drift_tour/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389061/file/w180h135_webp-3538c82dc018c82973a44730b4e25ea6.webp",
     "source": "y8"
   },
   {
@@ -19760,7 +19760,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Xtreme Offroad Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/xtreme_offroad_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/xtreme_offroad_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387651/file/w180h135_webp-e25f700b6fd9b6da2ee6168b97b268a6.webp",
     "source": "y8"
   },
   {
@@ -19769,7 +19769,7 @@ const GAMES = [
     "category": "Racing",
     "description": "Play Y8 Racing Thunder free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/y8_racing_thunder",
-    "thumb": "https://cdn2.y8.com/cloudimage/y8_racing_thunder/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383661/file/w180h135_webp-ea7593ceae085eb57ca88cd3a17dd63b.webp",
     "source": "y8"
   },
   {
@@ -19778,7 +19778,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tank Battle Blitz free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tank_battle_blitz",
-    "thumb": "https://cdn2.y8.com/cloudimage/tank_battle_blitz/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386013/file/w180h135_webp-d3682cdc0039ccc9e2cdfacd4238ed43.webp",
     "source": "y8"
   },
   {
@@ -19787,7 +19787,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Extreme War Trails free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/extreme_war_trails",
-    "thumb": "https://cdn2.y8.com/cloudimage/extreme_war_trails/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385627/file/w180h135_webp-b91a7efdb3b385d4c637dd32f9781774.webp",
     "source": "y8"
   },
   {
@@ -19796,7 +19796,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Chaos Roadkill free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chaos_roadkill",
-    "thumb": "https://cdn2.y8.com/cloudimage/chaos_roadkill/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386631/file/w180h135_webp-a4396d1c5736c3ef915f4bd447f5a7b9.webp",
     "source": "y8"
   },
   {
@@ -19805,7 +19805,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Archer Dungeon Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_dungeon_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_dungeon_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406625/file/w180h135_webp-5a10804fd8cf2d851e2f2e2edac4e810.webp",
     "source": "y8"
   },
   {
@@ -19814,7 +19814,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Battle Tank free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_tank",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_tank/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404719/file/w180h135_webp-bef46dc80c64607511cea59154eec631.webp",
     "source": "y8"
   },
   {
@@ -19823,7 +19823,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Airport Clash 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airport_clash_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/airport_clash_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383377/file/w180h135_webp-219b5f10cab6b2da62f4ff8b65ef376e.webp",
     "source": "y8"
   },
   {
@@ -19832,7 +19832,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Apple Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apple_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/apple_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/99611/file/w180h135_webp-00f1807970cba619e349727999a0cf0a.webp",
     "source": "y8"
   },
   {
@@ -19841,7 +19841,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sniper Clash 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sniper_clash_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/sniper_clash_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391001/file/w180h135_webp-20b08ab8639ecd813c89856bb65e1cd9.webp",
     "source": "y8"
   },
   {
@@ -19850,7 +19850,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Warzone Mercenaries free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/warzone_mercenaries",
-    "thumb": "https://cdn2.y8.com/cloudimage/warzone_mercenaries/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406443/file/w180h135_webp-26c26cdcd514c1ca7d0368c01a367e62.webp",
     "source": "y8"
   },
   {
@@ -19876,7 +19876,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sniper 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sniper_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/sniper_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406459/file/w180h135_webp-df3a0cf7609944afe63f4dd6536de813.webp",
     "source": "y8"
   },
   {
@@ -19885,7 +19885,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Attack Team 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_attack_team_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_attack_team_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/118113/file/w180h135_webp-0cd32c06b7cca3f42c0ba36536f771f3.webp",
     "source": "y8"
   },
   {
@@ -19894,7 +19894,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Robots Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/robots_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/robots_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405947/file/w180h135_webp-a85a29fa174090f077a74350f18b9a5c.webp",
     "source": "y8"
   },
   {
@@ -19903,7 +19903,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Aliens Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aliens_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/aliens_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385547/file/w180h135_webp-eeb48f47e7799c832bdf90baca962b34.webp",
     "source": "y8"
   },
   {
@@ -19912,7 +19912,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Reborn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_reborn",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_reborn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385147/file/w180h135_webp-53bb69033c3861694547059b00063db3.webp",
     "source": "y8"
   },
   {
@@ -19921,7 +19921,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Among Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/among_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/among_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383389/file/w180h135_webp-a098d77c233a6190bb5c4d95ac6584a4.webp",
     "source": "y8"
   },
   {
@@ -19930,7 +19930,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23045/file/w180h135_webp-e2e2bbddaa03a812332b2fe10095d641.webp",
     "source": "y8"
   },
   {
@@ -19939,7 +19939,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Exterminators Mp free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_exterminators_mp",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_exterminators_mp/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405709/file/w180h135_webp-8c86d20ddaec40274d5e47a05ca020e0.webp",
     "source": "y8"
   },
   {
@@ -19948,7 +19948,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Army Force War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_force_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_force_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14121/file/w180h135_webp-1b4c7da10dde25815ea91ec0cf6e185b.webp",
     "source": "y8"
   },
   {
@@ -19957,7 +19957,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Advanced Pixel Apocalypse 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/advanced_pixel_apocalypse_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/advanced_pixel_apocalypse_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106955/file/w180h135_webp-ae2aa5b1ebd10476ebeb21b00bb2f89e.webp",
     "source": "y8"
   },
   {
@@ -19966,7 +19966,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Warzones free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/warzones",
-    "thumb": "https://cdn2.y8.com/cloudimage/warzones/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403951/file/w180h135_webp-0b96fb8729dac293300128955ac70adc.webp",
     "source": "y8"
   },
   {
@@ -19975,7 +19975,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Advanced Air Combat Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/advanced_air_combat_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/advanced_air_combat_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6531/file/w180h135_webp-bc4eb07c0437c94cccf631588d09b31f.webp",
     "source": "y8"
   },
   {
@@ -19984,7 +19984,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Attack Team free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_attack_team",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_attack_team/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/136569/file/w180h135_webp-d6dcf682f091e5f105e6c86c056bd9c2.webp",
     "source": "y8"
   },
   {
@@ -19993,7 +19993,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Warzone free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/warzone",
-    "thumb": "https://cdn2.y8.com/cloudimage/warzone/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384961/file/w180h135_webp-9f827f9895baf2d9605fc9ac1d8ca6be.webp",
     "source": "y8"
   },
   {
@@ -20002,7 +20002,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Army Fps Shooting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_fps_shooting",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_fps_shooting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/59255/file/w180h135_webp-39207b224cb0660ee7814b62ca339014.webp",
     "source": "y8"
   },
   {
@@ -20011,7 +20011,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Bunker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_bunker",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_bunker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406017/file/w180h135_webp-93bb5045520514f3696cd0bc750abcca.webp",
     "source": "y8"
   },
   {
@@ -20020,7 +20020,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play 2112 Cooperation Chapter 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2112_cooperation_chapter_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/2112_cooperation_chapter_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407289/file/w180h135_webp-5cfd98711130d526d96ee5c5d105e44d.webp",
     "source": "y8"
   },
   {
@@ -20029,7 +20029,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alcohol And Ammo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alcohol_and_ammo",
-    "thumb": "https://cdn2.y8.com/cloudimage/alcohol_and_ammo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144513/file/w180h135_webp-b44ecad45a8e808580bc77c0b6821469.webp",
     "source": "y8"
   },
   {
@@ -20038,7 +20038,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play A L I A S 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_l_i_a_s_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_l_i_a_s_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/159797/file/w180h135_webp-8cf185ea758990430a7d0c3b020f0fc3.webp",
     "source": "y8"
   },
   {
@@ -20047,7 +20047,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play 3d Aim Trainer Multiplayer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_aim_trainer_multiplayer",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_aim_trainer_multiplayer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21885/file/w180h135_webp-89ca2f336df9ea866d9e4e2cc91bad91.webp",
     "source": "y8"
   },
   {
@@ -20056,7 +20056,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Airforce Combat 2021 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airforce_combat_2021",
-    "thumb": "https://cdn2.y8.com/cloudimage/airforce_combat_2021/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20409/file/w180h135_webp-8314f28a4c3798775fa652e62aa3fcf7.webp",
     "source": "y8"
   },
   {
@@ -20065,7 +20065,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Attack 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_attack_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_attack_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393333/file/w180h135_webp-abfc563528491fe79b3518b7dae9aba6.webp",
     "source": "y8"
   },
   {
@@ -20074,7 +20074,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play 13 Days In Hell free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/13_days_in_hell",
-    "thumb": "https://cdn2.y8.com/cloudimage/13_days_in_hell/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386329/file/w180h135_webp-e773efc06746d355970e1eb71115419d.webp",
     "source": "y8"
   },
   {
@@ -20083,7 +20083,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tanks Battlefield free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanks_battlefield",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanks_battlefield/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405707/file/w180h135_webp-39ba1a05acc40e2215e4185364cd3b5b.webp",
     "source": "y8"
   },
   {
@@ -20092,7 +20092,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ranger Vs Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ranger_vs_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/ranger_vs_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384981/file/w180h135_webp-d7870ebd8080e892aaebf62f43548cd7.webp",
     "source": "y8"
   },
   {
@@ -20101,7 +20101,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Call Of Zombies 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/call_of_zombies_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/call_of_zombies_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385129/file/w180h135_webp-8859615b5c505aab4e936de24592a0d5.webp",
     "source": "y8"
   },
   {
@@ -20110,7 +20110,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Hunter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_hunter",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_hunter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406779/file/w180h135_webp-7c64051c6437df1a5d62e928aa43c258.webp",
     "source": "y8"
   },
   {
@@ -20119,7 +20119,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Bloody Zombie Cup free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloody_zombie_cup",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloody_zombie_cup/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391497/file/w180h135_webp-a09081dd37b619b301559e00cbbe2b4c.webp",
     "source": "y8"
   },
   {
@@ -20128,7 +20128,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Hunter 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_hunter_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_hunter_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42895/file/w180h135_webp-1f9f6114158f551c102e4da9010eaa03.webp",
     "source": "y8"
   },
   {
@@ -20137,7 +20137,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Armored Warfare 1917 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armored_warfare_1917",
-    "thumb": "https://cdn2.y8.com/cloudimage/armored_warfare_1917/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384509/file/w180h135_webp-05af273b44fa9994dc22c9256bdf58d6.webp",
     "source": "y8"
   },
   {
@@ -20146,7 +20146,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play 10 Minutes Till Dawn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/10_minutes_till_dawn",
-    "thumb": "https://cdn2.y8.com/cloudimage/10_minutes_till_dawn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22389/file/w180h135_webp-05092159c71af76c3d1cc834b20d5d08.webp",
     "source": "y8"
   },
   {
@@ -20155,7 +20155,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Escape Zombie City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/escape_zombie_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/escape_zombie_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388579/file/w180h135_webp-7c4f62d7419e4831abf4a4625af96e29.webp",
     "source": "y8"
   },
   {
@@ -20164,7 +20164,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Angry Ice Girl And Fire Boy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_ice_girl_and_fire_boy",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_ice_girl_and_fire_boy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/124163/file/w180h135_webp-25a902485cfbd096dffdfff746044245.webp",
     "source": "y8"
   },
   {
@@ -20173,7 +20173,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Vs Janitor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_vs_janitor",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_vs_janitor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383517/file/w180h135_webp-3c148932c0b7b9a631d5bb311610162e.webp",
     "source": "y8"
   },
   {
@@ -20182,7 +20182,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cave War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cave_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/cave_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405103/file/w180h135_webp-25c07caa965505c39ee47283b2a77a0a.webp",
     "source": "y8"
   },
   {
@@ -20191,7 +20191,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sniper Assault Squad free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sniper_assault_squad",
-    "thumb": "https://cdn2.y8.com/cloudimage/sniper_assault_squad/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343061/file/w180h135_webp-5e4d46293d9f06a7c4e79224ab445f7b.webp",
     "source": "y8"
   },
   {
@@ -20200,7 +20200,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sky War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sky_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/sky_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383501/file/w180h135_webp-f4613b7cb723f00d17a9cfbac74b29a4.webp",
     "source": "y8"
   },
   {
@@ -20209,7 +20209,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Air Defence 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_defence_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_defence_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20725/file/w180h135_webp-587cbbd286c3b183909728dd4110398c.webp",
     "source": "y8"
   },
   {
@@ -20218,7 +20218,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Death Airport free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_airport",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_airport/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389575/file/w180h135_webp-86aef493b160bdfa8d8801dc0ae6884f.webp",
     "source": "y8"
   },
   {
@@ -20227,7 +20227,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Combat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_combat",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_combat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389495/file/w180h135_webp-682dfd8f78c2a78f7854257f06d8caf2.webp",
     "source": "y8"
   },
   {
@@ -20236,7 +20236,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sector Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sector_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/sector_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391007/file/w180h135_webp-6c8de896faebdfa8dd1dd0e8d79f3c8c.webp",
     "source": "y8"
   },
   {
@@ -20245,7 +20245,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Anti-Terror Strike free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anti-terror_strike",
-    "thumb": "https://cdn2.y8.com/cloudimage/anti-terror_strike/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406027/file/w180h135_webp-fefe3bf9c96e39ddd076fbddd8d2776f.webp",
     "source": "y8"
   },
   {
@@ -20254,7 +20254,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Armedforces Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/armedforces_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/armedforces_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27269/file/w180h135_webp-6cacb7f49c50ccef50c175374a98697d.webp",
     "source": "y8"
   },
   {
@@ -20263,7 +20263,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play First Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/first_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/first_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391577/file/w180h135_webp-8ccef0617ff78e91d5d2499931b42831.webp",
     "source": "y8"
   },
   {
@@ -20272,7 +20272,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ammo Only One free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ammo_only_one",
-    "thumb": "https://cdn2.y8.com/cloudimage/ammo_only_one/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69177/file/w180h135_webp-ddb8d4cdc794e2eb7879b501d41dc140.webp",
     "source": "y8"
   },
   {
@@ -20281,7 +20281,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Sniping free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_sniping",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_sniping/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383211/file/w180h135_webp-fb8c988f8250931fb8b7cdf5abd27491.webp",
     "source": "y8"
   },
   {
@@ -20290,7 +20290,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Anti Virus free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anti_virus",
-    "thumb": "https://cdn2.y8.com/cloudimage/anti_virus/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/54975/file/w180h135_webp-6bbfb293c62c9ab1c7552b16ad45276f.webp",
     "source": "y8"
   },
   {
@@ -20299,7 +20299,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play A Rifleman From Ireland free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/_a_rifleman_from_ireland",
-    "thumb": "https://cdn2.y8.com/cloudimage/_a_rifleman_from_ireland/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13563/file/w180h135_webp-1e26cf6985a0207e426d761836a2b4c8.webp",
     "source": "y8"
   },
   {
@@ -20308,7 +20308,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sniper Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sniper_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/sniper_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384533/file/w180h135_webp-085692404fed2392901347a9ee300295.webp",
     "source": "y8"
   },
   {
@@ -20317,7 +20317,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Assault free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_assault",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_assault/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385963/file/w180h135_webp-b532bd57a8ce82ab2f93d434663a0c78.webp",
     "source": "y8"
   },
   {
@@ -20326,7 +20326,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Air Force Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_force_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_force_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2141/file/w180h135_webp-1e12780ff5b6a6a0e65f0986cbaf0225.webp",
     "source": "y8"
   },
   {
@@ -20335,7 +20335,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Squid Game Sniper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/squid_game_sniper",
-    "thumb": "https://cdn2.y8.com/cloudimage/squid_game_sniper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385959/file/w180h135_webp-a949d75e17d5a8efd263d8322bf0e0e0.webp",
     "source": "y8"
   },
   {
@@ -20344,7 +20344,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Arena Zombie City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arena_zombie_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/arena_zombie_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389241/file/w180h135_webp-bdbc3c548e41e813d0f0c7fe8bf3fa67.webp",
     "source": "y8"
   },
   {
@@ -20353,7 +20353,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cargo Crime Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cargo_crime_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/cargo_crime_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391009/file/w180h135_webp-1252978660bbba50b555b6924081095d.webp",
     "source": "y8"
   },
   {
@@ -20380,7 +20380,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Death Squad 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_squad_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_squad_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386749/file/w180h135_webp-d31bb33c76b36d920aa6354021b6a97d.webp",
     "source": "y8"
   },
   {
@@ -20398,7 +20398,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Agent Pyxel free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/agent_pyxel",
-    "thumb": "https://cdn2.y8.com/cloudimage/agent_pyxel/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33773/file/w180h135_webp-c7e88855a9a3540d43c12cfc195661c2.webp",
     "source": "y8"
   },
   {
@@ -20407,7 +20407,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Rise Of The Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rise_of_the_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/rise_of_the_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406143/file/w180h135_webp-6467332b83aab766f6282fe24b059b82.webp",
     "source": "y8"
   },
   {
@@ -20416,7 +20416,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play 2112 Cooperation Chapter 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2112_cooperation_chapter_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/2112_cooperation_chapter_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384807/file/w180h135_webp-5111f028ace8508c6d48741fc6ce3704.webp",
     "source": "y8"
   },
   {
@@ -20425,7 +20425,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Mission free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_mission",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_mission/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389063/file/w180h135_webp-7e812fd0ed547df1a9503323bdbfb817.webp",
     "source": "y8"
   },
   {
@@ -20443,7 +20443,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Buster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_buster",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_buster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388625/file/w180h135_webp-ca648ac12359c871b3348e56850a6e67.webp",
     "source": "y8"
   },
   {
@@ -20452,7 +20452,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391231/file/w180h135_webp-f84e51c20a2ff6108b8e7e5b470a6ce7.webp",
     "source": "y8"
   },
   {
@@ -20461,7 +20461,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Submarine Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/submarine_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/submarine_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385689/file/w180h135_webp-98ecab5a935f549154d4818b61878a46.webp",
     "source": "y8"
   },
   {
@@ -20470,7 +20470,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Silent Assassin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/silent_assassin",
-    "thumb": "https://cdn2.y8.com/cloudimage/silent_assassin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385703/file/w180h135_webp-2aad8645eb5ffd0b4cc0a6ee795ac97d.webp",
     "source": "y8"
   },
   {
@@ -20479,7 +20479,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Terror Raze free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/terror_raze",
-    "thumb": "https://cdn2.y8.com/cloudimage/terror_raze/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386111/file/w180h135_webp-e9cf177055cfcee03de470012a43b6bd.webp",
     "source": "y8"
   },
   {
@@ -20515,7 +20515,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Defender Of The Base free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defender_of_the_base",
-    "thumb": "https://cdn2.y8.com/cloudimage/defender_of_the_base/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389479/file/w180h135_webp-421fa7d2088720e3d4f5bee852520948.webp",
     "source": "y8"
   },
   {
@@ -20524,7 +20524,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Agent Sniper City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/agent_sniper_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/agent_sniper_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385681/file/w180h135_webp-3659ea249d7299abd43941f6a1fe931a.webp",
     "source": "y8"
   },
   {
@@ -20533,7 +20533,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Rise Of The Zombies 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rise_of_the_zombies_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/rise_of_the_zombies_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389437/file/w180h135_webp-73bbaef5cf29c2ffa7d3b371cb991c25.webp",
     "source": "y8"
   },
   {
@@ -20560,7 +20560,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Roof Shootout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/roof_shootout",
-    "thumb": "https://cdn2.y8.com/cloudimage/roof_shootout/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392875/file/w180h135_webp-fbde2f0129c0118a365c290f1d9dccad.webp",
     "source": "y8"
   },
   {
@@ -20569,7 +20569,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Gangsta Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gangsta_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/gangsta_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389457/file/w180h135_webp-36c16769f6d79d02155bb08286b50665.webp",
     "source": "y8"
   },
   {
@@ -20587,7 +20587,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Archery Blast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_blast",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_blast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/56601/file/w180h135_webp-67a2a95e0f96088a8f5d04247faa3403.webp",
     "source": "y8"
   },
   {
@@ -20605,7 +20605,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383213/file/w180h135_webp-ddd409cd156bcb03f457f834dc8617fb.webp",
     "source": "y8"
   },
   {
@@ -20614,7 +20614,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Soviet Sniper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/soviet_sniper",
-    "thumb": "https://cdn2.y8.com/cloudimage/soviet_sniper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389439/file/w180h135_webp-5f218b7f800a3117aa717eb1dfd6fe00.webp",
     "source": "y8"
   },
   {
@@ -20623,7 +20623,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Attack On The Mothership free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_on_the_mothership",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_on_the_mothership/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408265/file/w180h135_webp-0bfaa05b50219e71d2fe53d5a5f8233e.webp",
     "source": "y8"
   },
   {
@@ -20632,7 +20632,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Galactic Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/galactic_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/galactic_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393335/file/w180h135_webp-5cc7aeb6f7601782005b07f78d2508a1.webp",
     "source": "y8"
   },
   {
@@ -20641,7 +20641,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Scary Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/scary_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/scary_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389505/file/w180h135_webp-f9dbf6e5463a6650a2d8543ce8b0c6bb.webp",
     "source": "y8"
   },
   {
@@ -20659,7 +20659,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Fps Agency Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fps_agency_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/fps_agency_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393929/file/w180h135_webp-37cda1ef5cdabc974b36e506b5b0d1c6.webp",
     "source": "y8"
   },
   {
@@ -20668,7 +20668,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Multigun Arena 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/multigun_arena_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/multigun_arena_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384917/file/w180h135_webp-db528ef0caaec78138dfbe046f2b6f75.webp",
     "source": "y8"
   },
   {
@@ -20677,7 +20677,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Attack 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_attack_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_attack_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389573/file/w180h135_webp-702f99c86f5acd7ac0a9b70827cf9f28.webp",
     "source": "y8"
   },
   {
@@ -20695,7 +20695,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Backstreet Sniper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backstreet_sniper",
-    "thumb": "https://cdn2.y8.com/cloudimage/backstreet_sniper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343147/file/w180h135_webp-ebec4aa4a6d68ac105f796e0154aa37a.webp",
     "source": "y8"
   },
   {
@@ -20704,7 +20704,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Kill Them All 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kill_them_all_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/kill_them_all_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389561/file/w180h135_webp-a59fb37d0e8ed7f9d277fd49071b4784.webp",
     "source": "y8"
   },
   {
@@ -20722,7 +20722,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Archery Bow Arrow free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_bow_arrow",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_bow_arrow/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/44727/file/w180h135_webp-73bf1a71776e16670728cf62a31eec75.webp",
     "source": "y8"
   },
   {
@@ -20740,7 +20740,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Death Squad The Last Mission free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_squad_the_last_mission",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_squad_the_last_mission/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384601/file/w180h135_webp-6473071209a9f3fef4c59982edf7a532.webp",
     "source": "y8"
   },
   {
@@ -20758,7 +20758,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tank Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tank_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/tank_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391267/file/w180h135_webp-5869b18065d2842799ff33a9c8edd863.webp",
     "source": "y8"
   },
   {
@@ -20767,7 +20767,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Waves 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_waves_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_waves_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389579/file/w180h135_webp-a11b4edcf6d82a7d90f898f580c4b00b.webp",
     "source": "y8"
   },
   {
@@ -20776,7 +20776,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Sacrifice free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_sacrifice",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_sacrifice/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388983/file/w180h135_webp-fab8cbb042ae1ab0c75552cbdebc4fed.webp",
     "source": "y8"
   },
   {
@@ -20785,7 +20785,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Army Combat 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_combat_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_combat_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386839/file/w180h135_webp-dab9e767b996aafcb0579f5f7336a8c4.webp",
     "source": "y8"
   },
   {
@@ -20803,7 +20803,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tanks Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanks_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanks_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389443/file/w180h135_webp-85d1781254c1d391aa04add8feee9626.webp",
     "source": "y8"
   },
   {
@@ -20812,7 +20812,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Run Into Death free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/run_into_death",
-    "thumb": "https://cdn2.y8.com/cloudimage/run_into_death/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391335/file/w180h135_webp-49a41ea5020954f5f5a8725ee2f402ec.webp",
     "source": "y8"
   },
   {
@@ -20838,7 +20838,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Circle Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/circle_shooter_",
-    "thumb": "https://cdn2.y8.com/cloudimage/circle_shooter_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393715/file/w180h135_webp-9471795d44583efd65ddbb056156fb05.webp",
     "source": "y8"
   },
   {
@@ -20847,7 +20847,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Exiled Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/exiled_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/exiled_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393909/file/w180h135_webp-e51c0d5267a75d8fb0715cc844d8e78e.webp",
     "source": "y8"
   },
   {
@@ -20865,7 +20865,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387991/file/w180h135_webp-8688c880e2995f151b5eac52f40528ed.webp",
     "source": "y8"
   },
   {
@@ -20874,7 +20874,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Hockey Shootout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hockey_shootout",
-    "thumb": "https://cdn2.y8.com/cloudimage/hockey_shootout/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389607/file/w180h135_webp-f03aac3f3acaa74faf433c299be996c7.webp",
     "source": "y8"
   },
   {
@@ -20883,7 +20883,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Stick Soldier free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/stick_soldier",
-    "thumb": "https://cdn2.y8.com/cloudimage/stick_soldier/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393641/file/w180h135_webp-fb542f2c1d28609d3ab7fcda09f57038.webp",
     "source": "y8"
   },
   {
@@ -20892,7 +20892,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Rooster Warrior free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rooster_warrior",
-    "thumb": "https://cdn2.y8.com/cloudimage/rooster_warrior/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383651/file/w180h135_webp-b353513198445e95ec48e831836d7ef0.webp",
     "source": "y8"
   },
   {
@@ -20918,7 +20918,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385121/file/w180h135_webp-6cafc9a85301c2ed5a533a781c6e64b1.webp",
     "source": "y8"
   },
   {
@@ -20927,7 +20927,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Y8 Rocket Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/y8_rocket_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/y8_rocket_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407571/file/w180h135_webp-54345ac4d36a18a1e39fb3410fe07cf0.webp",
     "source": "y8"
   },
   {
@@ -20936,7 +20936,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tanks 3d Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanks_3d_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanks_3d_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406465/file/w180h135_webp-100013fa1eb715db0e0fba3ff1687ba6.webp",
     "source": "y8"
   },
   {
@@ -20945,7 +20945,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombies Vs Berserk free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombies_vs_berserk",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombies_vs_berserk/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406037/file/w180h135_webp-230a6aebe8a8b96537e39c4f6492cbd0.webp",
     "source": "y8"
   },
   {
@@ -20954,7 +20954,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Skeletons Invasion 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/skeletons_invasion_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/skeletons_invasion_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389263/file/w180h135_webp-701d87b742b2689cee4cd3d5e1737339.webp",
     "source": "y8"
   },
   {
@@ -20963,7 +20963,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Land Adventure 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_land_adventure_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_land_adventure_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387563/file/w180h135_webp-d2b8d56d07495eafa7c55d5654b0bbf7.webp",
     "source": "y8"
   },
   {
@@ -20972,7 +20972,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Warrior Vs Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/warrior_vs_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/warrior_vs_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391575/file/w180h135_webp-b873e968145bfdee546a259dbb73dda5.webp",
     "source": "y8"
   },
   {
@@ -20981,7 +20981,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Knife Ninja free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/knife_ninja",
-    "thumb": "https://cdn2.y8.com/cloudimage/knife_ninja/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386701/file/w180h135_webp-38110121540ed26297ac638bb3e09c54.webp",
     "source": "y8"
   },
   {
@@ -21007,7 +21007,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ninja Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ninja_run_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/ninja_run_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392747/file/w180h135_webp-d8ce0c630db110b527c756c6fcbe1cbe.webp",
     "source": "y8"
   },
   {
@@ -21033,7 +21033,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Y8 Penalty Shootout 2018 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/y8_penalty_shootout_2018",
-    "thumb": "https://cdn2.y8.com/cloudimage/y8_penalty_shootout_2018/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384977/file/w180h135_webp-491243482d1a16aa39b1c2278577e4db.webp",
     "source": "y8"
   },
   {
@@ -21042,7 +21042,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cannoneer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cannoneer",
-    "thumb": "https://cdn2.y8.com/cloudimage/cannoneer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387707/file/w180h135_webp-27b7b74d42663a5a68c9de8026aadcda.webp",
     "source": "y8"
   },
   {
@@ -21051,7 +21051,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Murder To Kill Or Not To Kill free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/murder_to_kill_or_not_to_kill",
-    "thumb": "https://cdn2.y8.com/cloudimage/murder_to_kill_or_not_to_kill/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403929/file/w180h135_webp-ea97ab280227ecfe44532d591b5a5eb9.webp",
     "source": "y8"
   },
   {
@@ -21077,7 +21077,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Bumper Vs Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bumper_vs_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/bumper_vs_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389141/file/w180h135_webp-18f63d5ca179fc03721cd3ac7c2fa945.webp",
     "source": "y8"
   },
   {
@@ -21086,7 +21086,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Throne Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/throne_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/throne_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385811/file/w180h135_webp-541a0c1cf20c673eb680cb9b6d49fe14.webp",
     "source": "y8"
   },
   {
@@ -21095,7 +21095,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Battleship War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battleship_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/battleship_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385149/file/w180h135_webp-8d102b0109da2066028385bad5dd4b7a.webp",
     "source": "y8"
   },
   {
@@ -21104,7 +21104,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Uprising free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_uprising",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_uprising/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392639/file/w180h135_webp-723e54be35ea014b6da1da1de6f86136.webp",
     "source": "y8"
   },
   {
@@ -21113,7 +21113,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Wwii Warzone free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/wwii_warzone",
-    "thumb": "https://cdn2.y8.com/cloudimage/wwii_warzone/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388985/file/w180h135_webp-7fa69508fb367386a66c7b1f702ab5ed.webp",
     "source": "y8"
   },
   {
@@ -21122,7 +21122,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Egypt Stone War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/egypt_stone_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/egypt_stone_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388975/file/w180h135_webp-e18535a9e797d3628fe4fe1bc0fc30f1.webp",
     "source": "y8"
   },
   {
@@ -21131,7 +21131,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tank Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tank_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/tank_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389759/file/w180h135_webp-56d0adaae0c610a0d0a04e9e66d9520b.webp",
     "source": "y8"
   },
   {
@@ -21140,7 +21140,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zone Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zone_defender",
-    "thumb": "https://cdn2.y8.com/cloudimage/zone_defender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388249/file/w180h135_webp-908b567e02903ebb24fedfc55a08e0fe.webp",
     "source": "y8"
   },
   {
@@ -21158,7 +21158,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cute Fish Tank free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_fish_tank",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_fish_tank/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86523/file/w180h135_webp-5dc213169dfad4c8661dfc9a3db81215.webp",
     "source": "y8"
   },
   {
@@ -21167,7 +21167,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Air Warfare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_warfare",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_warfare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387279/file/w180h135_webp-f3d46165d619e4aeb68b975bf7a3dcc8.webp",
     "source": "y8"
   },
   {
@@ -21176,7 +21176,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alice Zombie Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alice_zombie_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/alice_zombie_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77037/file/w180h135_webp-a56e8e9e7640c40875f68fccc1175190.webp",
     "source": "y8"
   },
   {
@@ -21185,7 +21185,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Alien Warfare free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_warfare",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_warfare/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392573/file/w180h135_webp-fafb9dab9b10ce0d14fa3d612cdb050f.webp",
     "source": "y8"
   },
   {
@@ -21194,7 +21194,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Aliens Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aliens_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/aliens_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392527/file/w180h135_webp-174acbfd3aba67e9f10b49eb50e3fd12.webp",
     "source": "y8"
   },
   {
@@ -21203,7 +21203,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Arrow In Your Knee free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arrow_in_your_knee",
-    "thumb": "https://cdn2.y8.com/cloudimage/arrow_in_your_knee/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393735/file/w180h135_webp-aff76e7c6dc936d3f47bf51b803ef34f.webp",
     "source": "y8"
   },
   {
@@ -21212,7 +21212,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Attack Of Alien Mutants free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_of_alien_mutants",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_of_alien_mutants/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392159/file/w180h135_webp-fed9eabc90dad80c84251d32cc20d885.webp",
     "source": "y8"
   },
   {
@@ -21221,7 +21221,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Attack Of Alien Mutants 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/attack_of_alien_mutants_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/attack_of_alien_mutants_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393329/file/w180h135_webp-32073cbdc342ff34fc444e8cc5f3a5f8.webp",
     "source": "y8"
   },
   {
@@ -21247,7 +21247,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Blocky Zombie Highway free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blocky_zombie_highway",
-    "thumb": "https://cdn2.y8.com/cloudimage/blocky_zombie_highway/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385137/file/w180h135_webp-b39f068aacf2173f5cba9fb13108dbc9.webp",
     "source": "y8"
   },
   {
@@ -21290,7 +21290,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cannon Man free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cannon_man",
-    "thumb": "https://cdn2.y8.com/cloudimage/cannon_man/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388255/file/w180h135_webp-8cf2834a9900c1b69d9bbb5ab98cfa94.webp",
     "source": "y8"
   },
   {
@@ -21299,7 +21299,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cheesy Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cheesy_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/cheesy_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387329/file/w180h135_webp-84b66c331f529d324947bbbbb4fdd7ea.webp",
     "source": "y8"
   },
   {
@@ -21308,7 +21308,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Combat Guns 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/combat_guns_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/combat_guns_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383915/file/w180h135_webp-63db1d66427d98c9c1155a516cc77d97.webp",
     "source": "y8"
   },
   {
@@ -21317,7 +21317,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Copter Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/copter_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/copter_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388447/file/w180h135_webp-e469f953f3bd1e4e0f73a76d7d5b800e.webp",
     "source": "y8"
   },
   {
@@ -21326,7 +21326,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Crazy Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389489/file/w180h135_webp-d7251e0912c8bec541f1f526626d682b.webp",
     "source": "y8"
   },
   {
@@ -21335,7 +21335,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cube Of Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cube_of_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/cube_of_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388189/file/w180h135_webp-f37331b3a9b7b7711cec6cd4ab9fc4ac.webp",
     "source": "y8"
   },
   {
@@ -21344,7 +21344,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Cyber Tank free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cyber_tank",
-    "thumb": "https://cdn2.y8.com/cloudimage/cyber_tank/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392013/file/w180h135_webp-ce7f9501562e4e9ae0a50df58bcc2856.webp",
     "source": "y8"
   },
   {
@@ -21353,7 +21353,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dark Ninja Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_ninja_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_ninja_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387169/file/w180h135_webp-8d19dcf2f258847a22f7611577d84aa8.webp",
     "source": "y8"
   },
   {
@@ -21362,7 +21362,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dd Flappy Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dd_flappy_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/dd_flappy_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387409/file/w180h135_webp-7aea1e95c920f6622193179478acf986.webp",
     "source": "y8"
   },
   {
@@ -21371,7 +21371,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Dungeon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_dungeon",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_dungeon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389469/file/w180h135_webp-00dadd628f14dbbc0d7cc39f4aaece9c.webp",
     "source": "y8"
   },
   {
@@ -21380,7 +21380,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Lab 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_lab_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_lab_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389375/file/w180h135_webp-b2392c7fb18faba71b8b62128f2bc235.webp",
     "source": "y8"
   },
   {
@@ -21389,7 +21389,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dead Void 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dead_void_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/dead_void_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389237/file/w180h135_webp-3a2953c8f8afdc59fd8102f0e83c115f.webp",
     "source": "y8"
   },
   {
@@ -21398,7 +21398,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Deadly Stasis free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deadly_stasis",
-    "thumb": "https://cdn2.y8.com/cloudimage/deadly_stasis/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392139/file/w180h135_webp-2160a9e2953adc006809cf79e2075b77.webp",
     "source": "y8"
   },
   {
@@ -21407,7 +21407,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Death Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/death_race_",
-    "thumb": "https://cdn2.y8.com/cloudimage/death_race_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387167/file/w180h135_webp-c9c2133338b8f9c6b18e2959e28b4d24.webp",
     "source": "y8"
   },
   {
@@ -21416,7 +21416,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Dogi Bubble Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dogi_bubble_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/dogi_bubble_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388571/file/w180h135_webp-92247da948b7dc7d61328eb3d0b59d97.webp",
     "source": "y8"
   },
   {
@@ -21425,7 +21425,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Duck Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/duck_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/duck_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392577/file/w180h135_webp-09feacda9f15411e1d25b56419d63505.webp",
     "source": "y8"
   },
   {
@@ -21434,7 +21434,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Duck Shooter 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/duck_shooter_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/duck_shooter_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393535/file/w180h135_webp-8fcea8877999b481ca76f53ef431ef95.webp",
     "source": "y8"
   },
   {
@@ -21443,7 +21443,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Earth Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/earth_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/earth_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393463/file/w180h135_webp-2dea4a76f2121b1b6c72f7ebd212c020.webp",
     "source": "y8"
   },
   {
@@ -21452,7 +21452,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Face Ninja free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/face_ninja",
-    "thumb": "https://cdn2.y8.com/cloudimage/face_ninja/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406887/file/w180h135_webp-ff0eefa97c45f48d56d82c249f354cec.webp",
     "source": "y8"
   },
   {
@@ -21478,7 +21478,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Fish Bubble Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fish_bubble_shooter_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/fish_bubble_shooter_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393321/file/w180h135_webp-e95231aab91b1eb3efbef475603db7d4.webp",
     "source": "y8"
   },
   {
@@ -21489,7 +21489,7 @@ const GAMES = [
     "tags": [
       "shooting"
     ],
-    "thumb": "https://cdn2.y8.com/cloudimage/401413/file/w180h135_webp-a5e91c6f8fddbb441ffa158e647e2a81.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401411/file/w180h135_webp-9892eb3a6659e5259adc0ba643ecd9a2.webp",
     "embedUrl": "https://www.y8.com/embed/flappy_shooter_webgl",
     "source": "y8",
     "videoUrl": "",
@@ -21504,7 +21504,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Flip The Gun free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/flip_the_gun",
-    "thumb": "https://cdn2.y8.com/cloudimage/flip_the_gun/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387389/file/w180h135_webp-c4052af320de438b3db3272179d03c51.webp",
     "source": "y8"
   },
   {
@@ -21513,7 +21513,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Forest Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/forest_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/forest_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384911/file/w180h135_webp-3baa2cc1749b8b859850633833cb0e6e.webp",
     "source": "y8"
   },
   {
@@ -21522,7 +21522,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Galactic War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/galactic_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/galactic_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392603/file/w180h135_webp-fbd5088de5f139f147b1a21a473df52c.webp",
     "source": "y8"
   },
   {
@@ -21548,7 +21548,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Gunmach free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gunmach",
-    "thumb": "https://cdn2.y8.com/cloudimage/gunmach/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391563/file/w180h135_webp-55cb86d3c1402810ffaf946dc8379234.webp",
     "source": "y8"
   },
   {
@@ -21557,7 +21557,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Gunner Escape Shootout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gunner_escape_shootout",
-    "thumb": "https://cdn2.y8.com/cloudimage/gunner_escape_shootout/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386239/file/w180h135_webp-6d7a17eecfb0b2d3c5033ce28c58318e.webp",
     "source": "y8"
   },
   {
@@ -21566,7 +21566,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Guns Bottles free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/guns_bottles",
-    "thumb": "https://cdn2.y8.com/cloudimage/guns_bottles/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386887/file/w180h135_webp-7d0def1e773421a77ea485fc165b2a70.webp",
     "source": "y8"
   },
   {
@@ -21575,7 +21575,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Happy Chef Bubble Shooter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/happy_chef_bubble_shooter",
-    "thumb": "https://cdn2.y8.com/cloudimage/happy_chef_bubble_shooter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392377/file/w180h135_webp-1c9905d0b281e8718e621afb9d2bd592.webp",
     "source": "y8"
   },
   {
@@ -21584,7 +21584,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Hard Rock Zombie Truck free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hard_rock_zombie_truck",
-    "thumb": "https://cdn2.y8.com/cloudimage/hard_rock_zombie_truck/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392879/file/w180h135_webp-8a2f0ade5bc5c2c9cabe092ce47b6cec.webp",
     "source": "y8"
   },
   {
@@ -21593,7 +21593,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Jump Ninja Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/jump_ninja_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/jump_ninja_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389993/file/w180h135_webp-41616a3ff2de16aa33e17926b44d93ad.webp",
     "source": "y8"
   },
   {
@@ -21602,7 +21602,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Kill Monsters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kill_monsters",
-    "thumb": "https://cdn2.y8.com/cloudimage/kill_monsters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392023/file/w180h135_webp-90e64f070ea21c0a73da7049a53de128.webp",
     "source": "y8"
   },
   {
@@ -21611,7 +21611,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Kill Them All 5 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kill_them_all_5",
-    "thumb": "https://cdn2.y8.com/cloudimage/kill_them_all_5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391843/file/w180h135_webp-8ce9c2ba4300909cd2cd1f4e196be306.webp",
     "source": "y8"
   },
   {
@@ -21620,7 +21620,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Mars Defence 2 Aliens Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mars_defence_2_aliens_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/mars_defence_2_aliens_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391845/file/w180h135_webp-83c393a344abb2b7023fcbc3a15ac605.webp",
     "source": "y8"
   },
   {
@@ -21629,7 +21629,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Mechwar Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mechwar_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/mechwar_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388755/file/w180h135_webp-9a2034745329bb89d467d965d0a28a12.webp",
     "source": "y8"
   },
   {
@@ -21638,7 +21638,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Monster Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/monster_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/monster_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392795/file/w180h135_webp-4a7f1a468f0514f2fa0589c8c3f84370.webp",
     "source": "y8"
   },
   {
@@ -21647,7 +21647,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Monsters Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/monsters_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/monsters_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392493/file/w180h135_webp-8f397346141d21e980ac1d34297dc005.webp",
     "source": "y8"
   },
   {
@@ -21656,7 +21656,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Mountain Sniper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mountain_sniper",
-    "thumb": "https://cdn2.y8.com/cloudimage/mountain_sniper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343149/file/w180h135_webp-cb58b86fbd231cabe4d04acc337facf0.webp",
     "source": "y8"
   },
   {
@@ -21665,7 +21665,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Mr Gun Y8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mr_gun_y8",
-    "thumb": "https://cdn2.y8.com/cloudimage/mr_gun_y8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386127/file/w180h135_webp-1496b7df9cbf87ee8319ecbc96fb73c1.webp",
     "source": "y8"
   },
   {
@@ -21674,7 +21674,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Mutant War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mutant_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/mutant_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392629/file/w180h135_webp-d2ccb324c7bca55905a988baee7717c8.webp",
     "source": "y8"
   },
   {
@@ -21683,7 +21683,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play My Zombie Classmates free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/my_zombie_classmates",
-    "thumb": "https://cdn2.y8.com/cloudimage/my_zombie_classmates/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393871/file/w180h135_webp-74ebffa4da8ad2fd8cb1c026aaf3ee0d.webp",
     "source": "y8"
   },
   {
@@ -21692,7 +21692,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Nazi Zombie Army free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/nazi_zombie_army",
-    "thumb": "https://cdn2.y8.com/cloudimage/nazi_zombie_army/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389445/file/w180h135_webp-752263a686c3df01cd43c8cc3f775bd3.webp",
     "source": "y8"
   },
   {
@@ -21701,7 +21701,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ninja Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ninja_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/ninja_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387385/file/w180h135_webp-265c3e48e55ca687517cc7f16937a91a.webp",
     "source": "y8"
   },
   {
@@ -21710,7 +21710,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ninja Blade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ninja_blade",
-    "thumb": "https://cdn2.y8.com/cloudimage/ninja_blade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388971/file/w180h135_webp-da9bd5169f6693d3e5b8b1443e0b0858.webp",
     "source": "y8"
   },
   {
@@ -21719,7 +21719,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ninja Run free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ninja_run",
-    "thumb": "https://cdn2.y8.com/cloudimage/ninja_run/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393695/file/w180h135_webp-80f23154507711203b1fd6da035ce376.webp",
     "source": "y8"
   },
   {
@@ -21728,7 +21728,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ninja Run 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ninja_run_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/ninja_run_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393319/file/w180h135_webp-2b480cfb28d1d2fcbe5e4ec639e85779.webp",
     "source": "y8"
   },
   {
@@ -21771,7 +21771,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Pistol Training free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pistol_training",
-    "thumb": "https://cdn2.y8.com/cloudimage/pistol_training/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384363/file/w180h135_webp-d7941fafcb38ba083e391dddc8ea4410.webp",
     "source": "y8"
   },
   {
@@ -21780,7 +21780,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Rage Rocket free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/rage_rocket",
-    "thumb": "https://cdn2.y8.com/cloudimage/rage_rocket/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408129/file/w180h135_webp-9898bafdb448e4a21ff9dcc248f2e128.webp",
     "source": "y8"
   },
   {
@@ -21789,7 +21789,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Save Rocket free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/save_rocket",
-    "thumb": "https://cdn2.y8.com/cloudimage/save_rocket/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389793/file/w180h135_webp-fd47c5b05c0fc419bc2db68163b140ea.webp",
     "source": "y8"
   },
   {
@@ -21798,7 +21798,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Shoot N Scroll 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/shoot_n_scroll_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/shoot_n_scroll_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389463/file/w180h135_webp-966abd2cb201b6532be0ece00271a966.webp",
     "source": "y8"
   },
   {
@@ -21807,7 +21807,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Shoot Robbers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/shoot_robbers",
-    "thumb": "https://cdn2.y8.com/cloudimage/shoot_robbers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392941/file/w180h135_webp-a15c27c94620985d764084bd25979201.webp",
     "source": "y8"
   },
   {
@@ -21816,7 +21816,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Shoot The Balloons free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/shoot_the_balloons",
-    "thumb": "https://cdn2.y8.com/cloudimage/shoot_the_balloons/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390013/file/w180h135_webp-aeb5f6908f94381b3db04ba8bf9191a7.webp",
     "source": "y8"
   },
   {
@@ -21825,7 +21825,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Silent Sniper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/silent_sniper",
-    "thumb": "https://cdn2.y8.com/cloudimage/silent_sniper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406019/file/w180h135_webp-2614b9d1996b13495cf59ca3aebc6e38.webp",
     "source": "y8"
   },
   {
@@ -21834,7 +21834,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Snake Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/snake_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/snake_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385107/file/w180h135_webp-4d37db32de14c79689079359f67e77a1.webp",
     "source": "y8"
   },
   {
@@ -21843,7 +21843,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Sniper Mission free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sniper_mission",
-    "thumb": "https://cdn2.y8.com/cloudimage/sniper_mission/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406145/file/w180h135_webp-94a4557f698c0d6ea653163f072d749d.webp",
     "source": "y8"
   },
   {
@@ -21886,7 +21886,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Soldier Z free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/soldier_z",
-    "thumb": "https://cdn2.y8.com/cloudimage/soldier_z/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404889/file/w180h135_webp-6ab3b9dc6e0125a85a71bdce4e4e9645.webp",
     "source": "y8"
   },
   {
@@ -21895,7 +21895,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Spinshoot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/spinshoot",
-    "thumb": "https://cdn2.y8.com/cloudimage/spinshoot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387275/file/w180h135_webp-220e39f719c7f1d54fe33497815774f2.webp",
     "source": "y8"
   },
   {
@@ -21904,7 +21904,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Super Rocket Rescue Astronauts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_rocket_rescue_astronauts",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_rocket_rescue_astronauts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387085/file/w180h135_webp-d021b182edaaf61d88f1a4f565cc2c11.webp",
     "source": "y8"
   },
   {
@@ -21913,7 +21913,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Survival In Zombies Desert free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/survival_in_zombies_desert",
-    "thumb": "https://cdn2.y8.com/cloudimage/survival_in_zombies_desert/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388583/file/w180h135_webp-e2024901cb5c5f52e9add0b11cc34335.webp",
     "source": "y8"
   },
   {
@@ -21922,7 +21922,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Survive The Night free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/survive_the_night",
-    "thumb": "https://cdn2.y8.com/cloudimage/survive_the_night/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389571/file/w180h135_webp-0b54e70988b310cefea0853a6429809d.webp",
     "source": "y8"
   },
   {
@@ -21931,7 +21931,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Swat Vs Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swat_vs_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/swat_vs_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389307/file/w180h135_webp-0d1d1d528e400165c1343c69333ce36f.webp",
     "source": "y8"
   },
   {
@@ -21940,7 +21940,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tanks Battleground free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanks_battleground",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanks_battleground/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384943/file/w180h135_webp-139b68c888a904e043f6e931ecb3cb6d.webp",
     "source": "y8"
   },
   {
@@ -21949,7 +21949,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tanque 3d Tank Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanque_3d_tank_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanque_3d_tank_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387999/file/w180h135_webp-de839d92e1676ac2a4f1517c081adad3.webp",
     "source": "y8"
   },
   {
@@ -21958,7 +21958,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Tap Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tap_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/tap_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388237/file/w180h135_webp-df0f0b4850c1e12f3c98b684a06963b7.webp",
     "source": "y8"
   },
   {
@@ -21967,7 +21967,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play The Running Ninja free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_running_ninja",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_running_ninja/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/102503/file/w180h135_webp-310bfc77da9d180a8f91439805b01289.webp",
     "source": "y8"
   },
   {
@@ -21976,7 +21976,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Thieves Assassin free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/thieves_assassin",
-    "thumb": "https://cdn2.y8.com/cloudimage/thieves_assassin/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391889/file/w180h135_webp-f1666c11f281ca2152b80016661c3bdb.webp",
     "source": "y8"
   },
   {
@@ -21985,7 +21985,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Toy Tank Blast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/toy_tank_blast",
-    "thumb": "https://cdn2.y8.com/cloudimage/toy_tank_blast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386169/file/w180h135_webp-0d3fda30061e9e1379240290229c89d2.webp",
     "source": "y8"
   },
   {
@@ -21994,7 +21994,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ufo Raider free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ufo_raider",
-    "thumb": "https://cdn2.y8.com/cloudimage/ufo_raider/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387491/file/w180h135_webp-4e1d736896b6f5118598ad744057d45b.webp",
     "source": "y8"
   },
   {
@@ -22003,7 +22003,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Virus Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/virus_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/virus_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388511/file/w180h135_webp-e94e082a6b5143186e0b1e02065f9f34.webp",
     "source": "y8"
   },
   {
@@ -22012,7 +22012,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play War Master Infiltrator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/war_master_infiltrator",
-    "thumb": "https://cdn2.y8.com/cloudimage/war_master_infiltrator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385649/file/w180h135_webp-13a4f665cb1a8dfe655f1bc782aae63b.webp",
     "source": "y8"
   },
   {
@@ -22021,7 +22021,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Warzone Online Mp free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/warzone_online_mp",
-    "thumb": "https://cdn2.y8.com/cloudimage/warzone_online_mp/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383221/file/w180h135_webp-3cc3cb0b3b0c7e9f1a620d40f32c4af4.webp",
     "source": "y8"
   },
   {
@@ -22030,7 +22030,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Western Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/western_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/western_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406135/file/w180h135_webp-655d3dcd24b38394ba45a2c92d856b3f.webp",
     "source": "y8"
   },
   {
@@ -22039,7 +22039,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Ww2 Modern War Tanks 1942 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ww2_modern_war_tanks_1942",
-    "thumb": "https://cdn2.y8.com/cloudimage/ww2_modern_war_tanks_1942/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77777/file/w180h135_webp-975e02c9a01d7f495d90c6f0213a8aa7.webp",
     "source": "y8"
   },
   {
@@ -22048,7 +22048,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Day free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_day",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_day/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389367/file/w180h135_webp-8c3991c141a89124f3a6f71d599a11ad.webp",
     "source": "y8"
   },
   {
@@ -22057,7 +22057,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Drive free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_drive",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_drive/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388251/file/w180h135_webp-1d7ceeb238f3aaaa1e5fd5e4c216d3cc.webp",
     "source": "y8"
   },
   {
@@ -22066,7 +22066,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Farsh free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_farsh",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_farsh/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389085/file/w180h135_webp-eb2257af47d88ddc8020bf0a9255f392.webp",
     "source": "y8"
   },
   {
@@ -22075,7 +22075,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Fun Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_fun_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_fun_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/60725/file/w180h135_webp-fc1bcc6814a478b14eb975d11d1aac48.webp",
     "source": "y8"
   },
   {
@@ -22084,7 +22084,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_invasion",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_invasion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392923/file/w180h135_webp-c584f00c0133fbcc195f05f74eba904d.webp",
     "source": "y8"
   },
   {
@@ -22093,7 +22093,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Slasher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_slasher",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_slasher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389243/file/w180h135_webp-9491b2006b8326e857aa7113ae8dd4d3.webp",
     "source": "y8"
   },
   {
@@ -22102,7 +22102,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Smash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_smash",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_smash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390991/file/w180h135_webp-67951cf3542e38e867968b3709d41ca4.webp",
     "source": "y8"
   },
   {
@@ -22111,7 +22111,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Smash Drive free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_smash_drive",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_smash_drive/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385697/file/w180h135_webp-2b254392a53a2e9c06dac2936d616a14.webp",
     "source": "y8"
   },
   {
@@ -22120,7 +22120,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Sniper Hunt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_sniper_hunt",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_sniper_hunt/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385951/file/w180h135_webp-b1d7469b7bb7bde5bb1272d528d92b4d.webp",
     "source": "y8"
   },
   {
@@ -22129,7 +22129,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombie Threat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombie_threat",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombie_threat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392463/file/w180h135_webp-bde2898cbbd86b39566931e7ae2b0aed.webp",
     "source": "y8"
   },
   {
@@ -22138,7 +22138,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombies Buster free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombies_buster",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombies_buster/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385899/file/w180h135_webp-4e266edffe09f37391e12bbc11c7066b.webp",
     "source": "y8"
   },
   {
@@ -22147,7 +22147,7 @@ const GAMES = [
     "category": "Shooting",
     "description": "Play Zombies Vs Berserk 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/zombies_vs_berserk_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/zombies_vs_berserk_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389509/file/w180h135_webp-3a15d74088c9f91d362373e7bf956d10.webp",
     "source": "y8"
   },
   {
@@ -22173,7 +22173,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Yummy Cupcake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/yummy_cupcake",
-    "thumb": "https://cdn2.y8.com/cloudimage/yummy_cupcake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10013/file/w180h135_webp-b3a81ddc5fe5eebb3c4343c04e72fb58.webp",
     "source": "y8"
   },
   {
@@ -22182,7 +22182,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Restaurant Kitchen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_restaurant_kitchen",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_restaurant_kitchen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385941/file/w180h135_webp-9af679aa821584ef6fd364fb936e2ca3.webp",
     "source": "y8"
   },
   {
@@ -22200,7 +22200,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Diner City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diner_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/diner_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398753/file/w180h135_webp-089ec11fdb0c2b0c14c530e083641729.webp",
     "source": "y8"
   },
   {
@@ -22218,7 +22218,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Crowd Lumberjacks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crowd_lumberjacks",
-    "thumb": "https://cdn2.y8.com/cloudimage/crowd_lumberjacks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30509/file/w180h135_webp-8bdb2ab6639b27e64ab3bc0ccbf9904e.webp",
     "source": "y8"
   },
   {
@@ -22227,7 +22227,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Festival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_festival",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_festival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3875/file/w180h135_webp-c37c63592177cdc23bccda77e9720cc5.webp",
     "source": "y8"
   },
   {
@@ -22236,7 +22236,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Rage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_rage",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_rage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404043/file/w180h135_webp-e160a92c14d855bf4d88f5bf47af6780.webp",
     "source": "y8"
   },
   {
@@ -22245,7 +22245,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Beach Club free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beach_club",
-    "thumb": "https://cdn2.y8.com/cloudimage/beach_club/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390145/file/w180h135_webp-f367fccbfe2b16019a06f0131643bc2c.webp",
     "source": "y8"
   },
   {
@@ -22254,7 +22254,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Asmr Washing Fixing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asmr_washing_fixing",
-    "thumb": "https://cdn2.y8.com/cloudimage/asmr_washing_fixing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10005/file/w180h135_webp-6a4e0d752c18ef875202ae21015989b4.webp",
     "source": "y8"
   },
   {
@@ -22263,7 +22263,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Dark Cut free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dark_cut",
-    "thumb": "https://cdn2.y8.com/cloudimage/dark_cut/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342471/file/w180h135_webp-6fc09949953c91a2ec3f357d175abe90.webp",
     "source": "y8"
   },
   {
@@ -22272,7 +22272,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Empire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_empire",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_empire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387339/file/w180h135_webp-f383ae64afd93ed63e0ad22fb6ded77b.webp",
     "source": "y8"
   },
   {
@@ -22281,7 +22281,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Chef Tycoon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chef_tycoon",
-    "thumb": "https://cdn2.y8.com/cloudimage/chef_tycoon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399913/file/w180h135_webp-2a75a7b69356ff7a81a8bb45ae464d97.webp",
     "source": "y8"
   },
   {
@@ -22299,7 +22299,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bunny Cakes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bunny_cakes",
-    "thumb": "https://cdn2.y8.com/cloudimage/bunny_cakes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33275/file/w180h135_webp-0add2b7ec42c617e3e60ac5b28d8af4b.webp",
     "source": "y8"
   },
   {
@@ -22308,7 +22308,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Big Restaurant Chef free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_restaurant_chef",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_restaurant_chef/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402643/file/w180h135_webp-14bdb1327d65a9b1667fbbbe4f954534.webp",
     "source": "y8"
   },
   {
@@ -22317,7 +22317,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Casual Trading free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/casual_trading",
-    "thumb": "https://cdn2.y8.com/cloudimage/casual_trading/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12331/file/w180h135_webp-324115553cd4c5b36dc888ab4975fe20.webp",
     "source": "y8"
   },
   {
@@ -22326,7 +22326,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Airplane Manager free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airplane_manager",
-    "thumb": "https://cdn2.y8.com/cloudimage/airplane_manager/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398713/file/w180h135_webp-2c75a5544eb4bf0a2a02e1b15e65900d.webp",
     "source": "y8"
   },
   {
@@ -22344,7 +22344,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Alchemy Idle Clicker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alchemy_idle_clicker",
-    "thumb": "https://cdn2.y8.com/cloudimage/alchemy_idle_clicker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/58285/file/w180h135_webp-6843467475382c5b44bf93be81968c4a.webp",
     "source": "y8"
   },
   {
@@ -22353,7 +22353,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bartender The Right Mix free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bartender_the_right_mix",
-    "thumb": "https://cdn2.y8.com/cloudimage/bartender_the_right_mix/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384881/file/w180h135_webp-fac6600478e2f1e28cbd81809754d88e.webp",
     "source": "y8"
   },
   {
@@ -22362,7 +22362,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Dog Simulator 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dog_simulator_3d_",
-    "thumb": "https://cdn2.y8.com/cloudimage/dog_simulator_3d_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16655/file/w180h135_webp-34c738693d94b00657d7c8fcc7f6b44e.webp",
     "source": "y8"
   },
   {
@@ -22371,7 +22371,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Creepy Cooking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creepy_cooking",
-    "thumb": "https://cdn2.y8.com/cloudimage/creepy_cooking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384089/file/w180h135_webp-507b6f5a7b5429d076be34c1251201e7.webp",
     "source": "y8"
   },
   {
@@ -22380,7 +22380,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cake Factory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_factory",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_factory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403341/file/w180h135_webp-08428819eb53cf04a5e7fc146b5b8915.webp",
     "source": "y8"
   },
   {
@@ -22389,7 +22389,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cashier free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cashier_",
-    "thumb": "https://cdn2.y8.com/cloudimage/cashier_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23309/file/w180h135_webp-655d58c6db1e5f4581a257beab02d98a.webp",
     "source": "y8"
   },
   {
@@ -22398,7 +22398,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cake Creations free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_creations",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_creations/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/167519/file/w180h135_webp-1f7fdda1a666321ef87daa6f95f0bedf.webp",
     "source": "y8"
   },
   {
@@ -22407,7 +22407,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Sushi Rolls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_sushi_rolls",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_sushi_rolls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384057/file/w180h135_webp-a051d2c8495a8966c3e67908a907c71e.webp",
     "source": "y8"
   },
   {
@@ -22416,7 +22416,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Aquapark Fun Loop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aquapark_fun_loop",
-    "thumb": "https://cdn2.y8.com/cloudimage/aquapark_fun_loop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2069/file/w180h135_webp-b692c25d0725536d3f5ed5b3e3ec2d96.webp",
     "source": "y8"
   },
   {
@@ -22425,7 +22425,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Fever Happy Chef free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_fever_happy_chef",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_fever_happy_chef/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25225/file/w180h135_webp-9d77cfdd2f702d135e985db2d6fab3b4.webp",
     "source": "y8"
   },
   {
@@ -22434,7 +22434,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play American Boat Rescue Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/american_boat_rescue_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/american_boat_rescue_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22149/file/w180h135_webp-a5942b99a36751ab331c2c35eb089044.webp",
     "source": "y8"
   },
   {
@@ -22443,7 +22443,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Dirty Money The Rich Get Rich free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dirty_money_the_rich_get_rich",
-    "thumb": "https://cdn2.y8.com/cloudimage/dirty_money_the_rich_get_rich/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15545/file/w180h135_webp-612bb58de41505caf3e59b3cccb29198.webp",
     "source": "y8"
   },
   {
@@ -22452,7 +22452,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cool Ice Cream Maker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cool_ice_cream_maker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cool_ice_cream_maker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384021/file/w180h135_webp-092d2247351feba18f9b0f38bae9b0d4.webp",
     "source": "y8"
   },
   {
@@ -22461,7 +22461,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Cafe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_cafe",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_cafe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30123/file/w180h135_webp-43f6aed0ac3ca3ac245c75c544c180be.webp",
     "source": "y8"
   },
   {
@@ -22470,7 +22470,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Dig Out Of Prison free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dig_out_of_prison",
-    "thumb": "https://cdn2.y8.com/cloudimage/dig_out_of_prison/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390837/file/w180h135_webp-aaee91a58301d6cfc1dd55867e971427.webp",
     "source": "y8"
   },
   {
@@ -22479,7 +22479,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Design Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/design_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/design_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35703/file/w180h135_webp-1d9bd0c9ab4c97729885f89b89cd028f.webp",
     "source": "y8"
   },
   {
@@ -22488,7 +22488,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Ant Mine Tycoon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ant_mine_tycoon",
-    "thumb": "https://cdn2.y8.com/cloudimage/ant_mine_tycoon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405891/file/w180h135_webp-4ff56f5f01713d0f2548d6569baa2906.webp",
     "source": "y8"
   },
   {
@@ -22497,7 +22497,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Wash Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_wash_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_wash_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408079/file/w180h135_webp-ecfefdc55d28311aa7ecb411ada25787.webp",
     "source": "y8"
   },
   {
@@ -22506,7 +22506,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Adventure Capitalist free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/adventure_capitalist",
-    "thumb": "https://cdn2.y8.com/cloudimage/adventure_capitalist/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407699/file/w180h135_webp-1a8e4b36b43035060ff6a99227cd2b26.webp",
     "source": "y8"
   },
   {
@@ -22515,7 +22515,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking City Tycoon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_city_tycoon",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_city_tycoon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401643/file/w180h135_webp-ac02a9dc68106da3be525a3f183a5338.webp",
     "source": "y8"
   },
   {
@@ -22524,7 +22524,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Deal Or No Deal 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/deal_or_no_deal_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/deal_or_no_deal_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/157515/file/w180h135_webp-b2c3f81d6bb307e68f203d2a90740592.webp",
     "source": "y8"
   },
   {
@@ -22533,7 +22533,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Pizza free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_pizza",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_pizza/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384007/file/w180h135_webp-c017205c7a92ed73aae080c90520a029.webp",
     "source": "y8"
   },
   {
@@ -22542,7 +22542,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Mania free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_mania_",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_mania_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14615/file/w180h135_webp-830cc4875ff0c7941842f6898167a333.webp",
     "source": "y8"
   },
   {
@@ -22551,7 +22551,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bar B Que free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bar_b_que",
-    "thumb": "https://cdn2.y8.com/cloudimage/bar_b_que/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/161497/file/w180h135_webp-5519ef99908d6ad54afef2b68a78f46e.webp",
     "source": "y8"
   },
   {
@@ -22560,7 +22560,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Here free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_here",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_here/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405217/file/w180h135_webp-73ce2dc049b00a23634fd4d9f0248e18.webp",
     "source": "y8"
   },
   {
@@ -22569,7 +22569,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Become A Mechanic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/become_a_mechanic",
-    "thumb": "https://cdn2.y8.com/cloudimage/become_a_mechanic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/78647/file/w180h135_webp-d39ea934f555e47478af137ca285431a.webp",
     "source": "y8"
   },
   {
@@ -22578,7 +22578,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Building Rush 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/building_rush_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/building_rush_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16707/file/w180h135_webp-51f35518866380f755efd5c5f8f90790.webp",
     "source": "y8"
   },
   {
@@ -22587,7 +22587,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Airport Master Plane Tycoon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airport_master_plane_tycoon",
-    "thumb": "https://cdn2.y8.com/cloudimage/airport_master_plane_tycoon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19075/file/w180h135_webp-ba8c0fd2f9b0d3626a54b1e5df59708f.webp",
     "source": "y8"
   },
   {
@@ -22596,7 +22596,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Big Bobs Burger Joint free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_bobs_burger_joint",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_bobs_burger_joint/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/157111/file/w180h135_webp-88073892a32c6b4566608877a798c896.webp",
     "source": "y8"
   },
   {
@@ -22605,7 +22605,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Animal Shelter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_shelter",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_shelter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385731/file/w180h135_webp-61a90d81c9800e0821c178dface15178.webp",
     "source": "y8"
   },
   {
@@ -22614,7 +22614,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Build A Rollercoaster Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/build_a_rollercoaster_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/build_a_rollercoaster_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394669/file/w180h135_webp-eafef25bec3b219693293ffb8f83473b.webp",
     "source": "y8"
   },
   {
@@ -22623,7 +22623,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Conveyor Sushi free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/conveyor_sushi",
-    "thumb": "https://cdn2.y8.com/cloudimage/conveyor_sushi/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30939/file/w180h135_webp-7311349c0b6e188c2765ebb350782752.webp",
     "source": "y8"
   },
   {
@@ -22632,7 +22632,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Didi-Ice-Cream free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/didi-ice-cream",
-    "thumb": "https://cdn2.y8.com/cloudimage/didi-ice-cream/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/176083/file/w180h135_webp-f7baf77e5eb255697c37d16e4ccf3379.webp",
     "source": "y8"
   },
   {
@@ -22641,7 +22641,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Chef free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_chef",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_chef/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25833/file/w180h135_webp-90ec88136571f668e9146df8e2e6560e.webp",
     "source": "y8"
   },
   {
@@ -22650,7 +22650,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Container Auction free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/container_auction",
-    "thumb": "https://cdn2.y8.com/cloudimage/container_auction/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401689/file/w180h135_webp-5ef34435ee9bc08f39b5ab82c9fdf4c5.webp",
     "source": "y8"
   },
   {
@@ -22659,7 +22659,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Big Farm Land free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_farm_land",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_farm_land/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13733/file/w180h135_webp-e701a3e2e0bd7d97ff36b0a99af997ef.webp",
     "source": "y8"
   },
   {
@@ -22668,7 +22668,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Desolate Isle Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/desolate_isle_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/desolate_isle_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/157/file/w180h135_webp-eba5b0fb60da8cb562dd02721baacd14.webp",
     "source": "y8"
   },
   {
@@ -22677,7 +22677,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Street free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_street",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_street/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6011/file/w180h135_webp-bd386bf99d023c4572acd11fed0efcdf.webp",
     "source": "y8"
   },
   {
@@ -22686,7 +22686,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Delicious Emily S New Beginning Valentine S Edition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/delicious_emily_s_new_beginning_valentine_s_edition",
-    "thumb": "https://cdn2.y8.com/cloudimage/delicious_emily_s_new_beginning_valentine_s_edition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5407/file/w180h135_webp-53299bb9f434d8d3e3a847a362e3d0ea.webp",
     "source": "y8"
   },
   {
@@ -22695,7 +22695,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Amuse Park free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amuse_park",
-    "thumb": "https://cdn2.y8.com/cloudimage/amuse_park/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407327/file/w180h135_webp-611f4cf130a668364bef9c8f85eba31e.webp",
     "source": "y8"
   },
   {
@@ -22704,7 +22704,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cleaning Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cleaning_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/cleaning_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14027/file/w180h135_webp-63574fd626fda376f8d23d26378019e5.webp",
     "source": "y8"
   },
   {
@@ -22713,7 +22713,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cure The Bunny free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cure_the_bunny",
-    "thumb": "https://cdn2.y8.com/cloudimage/cure_the_bunny/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/152057/file/w180h135_webp-f1fbd71abb169ff13fcee6c95b725209.webp",
     "source": "y8"
   },
   {
@@ -22722,7 +22722,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cinema Business free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cinema_business",
-    "thumb": "https://cdn2.y8.com/cloudimage/cinema_business/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389813/file/w180h135_webp-b484568b8847f0def2424b8dda6d8f7d.webp",
     "source": "y8"
   },
   {
@@ -22731,7 +22731,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Blox Pressure Wash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blox_pressure_wash",
-    "thumb": "https://cdn2.y8.com/cloudimage/blox_pressure_wash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402393/file/w180h135_webp-f6ca2d4aa33f0698571925e273dd3cbe.webp",
     "source": "y8"
   },
   {
@@ -22757,7 +22757,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cake House Bakery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_house_bakery",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_house_bakery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42539/file/w180h135_webp-7e7819b856060678f1b38583b865ed12.webp",
     "source": "y8"
   },
   {
@@ -22766,7 +22766,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Beauty Resort 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beauty_resort_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/beauty_resort_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/165627/file/w180h135_webp-9fd70fbdc938538278b20c009caca9b3.webp",
     "source": "y8"
   },
   {
@@ -22775,7 +22775,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Diy Phone Case Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diy_phone_case_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/diy_phone_case_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189821/file/w180h135_webp-1fa48e11103dd98eae00a62525b97cf3.webp",
     "source": "y8"
   },
   {
@@ -22784,7 +22784,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Doctor Hero free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/doctor_hero",
-    "thumb": "https://cdn2.y8.com/cloudimage/doctor_hero/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17623/file/w180h135_webp-f31e5faffb143104d1222b9e4806c54b.webp",
     "source": "y8"
   },
   {
@@ -22793,7 +22793,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Construction Truck Building Games For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/construction_truck_building_games_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/construction_truck_building_games_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29545/file/w180h135_webp-1809cfce47c982c7f4195b22429df9fa.webp",
     "source": "y8"
   },
   {
@@ -22802,7 +22802,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Dealer Idle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_dealer_idle",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_dealer_idle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/373/file/w180h135_webp-ee96fd49da1bc415a92ccaf54ddb873a.webp",
     "source": "y8"
   },
   {
@@ -22811,7 +22811,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cat Coffee Shop 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_coffee_shop_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_coffee_shop_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386163/file/w180h135_webp-caf4d8c8422572aa95a8a86161f6f710.webp",
     "source": "y8"
   },
   {
@@ -22820,7 +22820,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Building Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/building_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/building_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/116055/file/w180h135_webp-2d5bca7ac36a95ee0ece7fa27fd4ca83.webp",
     "source": "y8"
   },
   {
@@ -22829,7 +22829,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Girl Garage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_girl_garage",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_girl_garage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/89427/file/w180h135_webp-0defd9f6c5357c21b82afa0de9793f07.webp",
     "source": "y8"
   },
   {
@@ -22838,7 +22838,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Conduct This free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/conduct_this_",
-    "thumb": "https://cdn2.y8.com/cloudimage/conduct_this_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15655/file/w180h135_webp-b413a593239d48023ba7bf8ae9dc9e67.webp",
     "source": "y8"
   },
   {
@@ -22847,7 +22847,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bread Making free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bread_making",
-    "thumb": "https://cdn2.y8.com/cloudimage/bread_making/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/156099/file/w180h135_webp-17b8d645820583ec35fa3ea89b6f7204.webp",
     "source": "y8"
   },
   {
@@ -22856,7 +22856,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Wash For Kids free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_wash_for_kids",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_wash_for_kids/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6253/file/w180h135_webp-b65277289c3ba65808a99392af4c24fb.webp",
     "source": "y8"
   },
   {
@@ -22865,7 +22865,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Celebrity Pedigree free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/celebrity_pedigree",
-    "thumb": "https://cdn2.y8.com/cloudimage/celebrity_pedigree/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/162079/file/w180h135_webp-3d5216a2ed1784f5694d9b1963082f62.webp",
     "source": "y8"
   },
   {
@@ -22874,7 +22874,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play City Builder Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_builder_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_builder_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10255/file/w180h135_webp-4a52a39cd317accc19b0f18aeed5e4cf.webp",
     "source": "y8"
   },
   {
@@ -22883,7 +22883,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Creamy Ice free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creamy_ice",
-    "thumb": "https://cdn2.y8.com/cloudimage/creamy_ice/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48473/file/w180h135_webp-f0bda04efa08e1e571f9408f9efaf220.webp",
     "source": "y8"
   },
   {
@@ -22892,7 +22892,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cat Pancake Diner free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_pancake_diner",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_pancake_diner/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406791/file/w180h135_webp-8109a1c6b6f3f5d3d7c9f14b087a4c19.webp",
     "source": "y8"
   },
   {
@@ -22901,7 +22901,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Amusement Idle Park free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amusement_idle_park",
-    "thumb": "https://cdn2.y8.com/cloudimage/amusement_idle_park/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403589/file/w180h135_webp-f7b3466bb4a5ccef1f92b0a09c2c25fc.webp",
     "source": "y8"
   },
   {
@@ -22910,7 +22910,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cake Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cake_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/cake_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385023/file/w180h135_webp-14fa30790bfa1e7edc0d71a43f8f8a9b.webp",
     "source": "y8"
   },
   {
@@ -22919,7 +22919,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Couscous Cooking free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/couscous_cooking",
-    "thumb": "https://cdn2.y8.com/cloudimage/couscous_cooking/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342999/file/w180h135_webp-b31e5f92bb43d5f00b943574f20c0583.webp",
     "source": "y8"
   },
   {
@@ -22928,7 +22928,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Anaconda At The Prison free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/anaconda_at_the_prison",
-    "thumb": "https://cdn2.y8.com/cloudimage/anaconda_at_the_prison/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389727/file/w180h135_webp-166db332eb497d619edf3eb117fa34bf.webp",
     "source": "y8"
   },
   {
@@ -22937,7 +22937,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Truck Frenzy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_truck_frenzy",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_truck_frenzy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/70349/file/w180h135_webp-9b2dd66cc78692441b241659d1eff0d2.webp",
     "source": "y8"
   },
   {
@@ -22946,7 +22946,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Crazy Dentist Wojak free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_dentist_wojak",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_dentist_wojak/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18851/file/w180h135_webp-b069fe05a1ac435a2a3289c9f924fef0.webp",
     "source": "y8"
   },
   {
@@ -22955,7 +22955,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Doctor Teeth 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/doctor_teeth_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/doctor_teeth_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86779/file/w180h135_webp-089d4df75d838c157b1d7ead0cc7d478.webp",
     "source": "y8"
   },
   {
@@ -22964,7 +22964,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Cheese Omelette free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_cheese_omelette",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_cheese_omelette/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384019/file/w180h135_webp-b02515dc0d1d363cfe333d5911e5d413.webp",
     "source": "y8"
   },
   {
@@ -22973,7 +22973,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Diy Slime Simulator Asmr free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/diy_slime_simulator_asmr",
-    "thumb": "https://cdn2.y8.com/cloudimage/diy_slime_simulator_asmr/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14383/file/w180h135_webp-fbbc00decde82baed5789dc755043437.webp",
     "source": "y8"
   },
   {
@@ -22982,7 +22982,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cat Life Simulator Devil Cat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_life_simulator_devil_cat",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_life_simulator_devil_cat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385783/file/w180h135_webp-56c44173eb802a3d98eab832c3e8d8a7.webp",
     "source": "y8"
   },
   {
@@ -22991,7 +22991,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Now free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_now",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_now/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/45389/file/w180h135_webp-01444286b760cc3b9cb81dced445db78.webp",
     "source": "y8"
   },
   {
@@ -23000,7 +23000,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cute Animal World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_animal_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_animal_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404781/file/w180h135_webp-01d36f67e50c2b839b555d6f9260e301.webp",
     "source": "y8"
   },
   {
@@ -23009,7 +23009,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Chocolate Shop free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chocolate_shop",
-    "thumb": "https://cdn2.y8.com/cloudimage/chocolate_shop/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/98637/file/w180h135_webp-affc23588b0c79b89e87a4a36408d495.webp",
     "source": "y8"
   },
   {
@@ -23018,7 +23018,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Korean Lesson free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_korean_lesson",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_korean_lesson/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/49183/file/w180h135_webp-dff6a0f9f3825f44dc889ad6d7965359.webp",
     "source": "y8"
   },
   {
@@ -23027,7 +23027,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Civilization free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/civilization",
-    "thumb": "https://cdn2.y8.com/cloudimage/civilization/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31307/file/w180h135_webp-bf38e00fb8f5465948389eda4058d464.webp",
     "source": "y8"
   },
   {
@@ -23036,7 +23036,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Breadrolls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_breadrolls",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_breadrolls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/161149/file/w180h135_webp-b3d1f4fee0853f8666d7d9b1bfa2fcd8.webp",
     "source": "y8"
   },
   {
@@ -23045,7 +23045,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Care Repair Dudu Mechanic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_care_repair_dudu_mechanic",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_care_repair_dudu_mechanic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/289/file/w180h135_webp-f555499f0b0fd719333514761e244fdd.webp",
     "source": "y8"
   },
   {
@@ -23054,7 +23054,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Banana Pancakes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_banana_pancakes",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_banana_pancakes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384039/file/w180h135_webp-531b16f172e4a0a3bfac7520fac8489a.webp",
     "source": "y8"
   },
   {
@@ -23063,7 +23063,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Masters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_masters",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_masters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/161635/file/w180h135_webp-9d1e784ecdbead1f0ca832e730ab9e93.webp",
     "source": "y8"
   },
   {
@@ -23072,7 +23072,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Barbershop Inc Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barbershop_inc_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/barbershop_inc_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28543/file/w180h135_webp-b46b5dedc50d1965771f6a6f4d7edf97.webp",
     "source": "y8"
   },
   {
@@ -23081,7 +23081,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Around The Worlds Pizza free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/around_the_worlds_pizza",
-    "thumb": "https://cdn2.y8.com/cloudimage/around_the_worlds_pizza/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26083/file/w180h135_webp-38d348971741ddced24d131bbd33e052.webp",
     "source": "y8"
   },
   {
@@ -23090,7 +23090,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Madness free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_madness_",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_madness_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/24743/file/w180h135_webp-c63c6d43fd5ed870edbe3738f90d0cb9.webp",
     "source": "y8"
   },
   {
@@ -23099,7 +23099,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Stories Fun Cafe Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_stories_fun_cafe_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_stories_fun_cafe_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189943/file/w180h135_webp-1ad11f18fb9acfddce7f5488ff3db1bc.webp",
     "source": "y8"
   },
   {
@@ -23108,7 +23108,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Mania Express free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_mania_express",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_mania_express/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15041/file/w180h135_webp-8e608fcacd510fad26c309367e12a5b7.webp",
     "source": "y8"
   },
   {
@@ -23117,7 +23117,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Ball Physics Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_physics_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_physics_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/855/file/w180h135_webp-e3c9a682630532b05081bf2de2ea9a08.webp",
     "source": "y8"
   },
   {
@@ -23126,7 +23126,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Coocing World Reboot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coocing_world_reboot",
-    "thumb": "https://cdn2.y8.com/cloudimage/coocing_world_reboot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5787/file/w180h135_webp-80b44c7d0b6c940f0f94e8e69bbf5cb0.webp",
     "source": "y8"
   },
   {
@@ -23135,7 +23135,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Day free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_day",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_day/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387917/file/w180h135_webp-4d1868822c0fac3abbf467b5407f9aa1.webp",
     "source": "y8"
   },
   {
@@ -23144,7 +23144,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play City Construction free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_construction",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_construction/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13957/file/w180h135_webp-fd89d2cbd471bcb32eb26be299fcfe64.webp",
     "source": "y8"
   },
   {
@@ -23153,7 +23153,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Christmas Factory free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_factory",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_factory/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77011/file/w180h135_webp-3a8fb0fb34275d26334c41f6f42d37fa.webp",
     "source": "y8"
   },
   {
@@ -23162,7 +23162,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Craftsman Land free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/craftsman_land",
-    "thumb": "https://cdn2.y8.com/cloudimage/craftsman_land/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383409/file/w180h135_webp-7f324dc430e9d66750aefbc3f2df898c.webp",
     "source": "y8"
   },
   {
@@ -23171,7 +23171,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bonnie S Bakery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bonnie_s_bakery",
-    "thumb": "https://cdn2.y8.com/cloudimage/bonnie_s_bakery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26437/file/w180h135_webp-9ec94dd74a16bcabe5b6416f6074d073.webp",
     "source": "y8"
   },
   {
@@ -23180,7 +23180,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Barry Has A Secret free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barry_has_a_secret",
-    "thumb": "https://cdn2.y8.com/cloudimage/barry_has_a_secret/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86021/file/w180h135_webp-5c22c15a38c089c1bd77b24ba70d1eda.webp",
     "source": "y8"
   },
   {
@@ -23189,7 +23189,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Business Clicker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/business_clicker",
-    "thumb": "https://cdn2.y8.com/cloudimage/business_clicker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77579/file/w180h135_webp-a1cb77e7039c853c36a29379663e148b.webp",
     "source": "y8"
   },
   {
@@ -23198,7 +23198,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Business Go free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/business_go",
-    "thumb": "https://cdn2.y8.com/cloudimage/business_go/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/299/file/w180h135_webp-c3c33479d2ba170c3d4b15e5d7a13f32.webp",
     "source": "y8"
   },
   {
@@ -23207,7 +23207,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Belle S Bakery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/belle_s_bakery",
-    "thumb": "https://cdn2.y8.com/cloudimage/belle_s_bakery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/168397/file/w180h135_webp-844c58435e9a1c554b9eb016da3f365c.webp",
     "source": "y8"
   },
   {
@@ -23216,7 +23216,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Battle Pirates free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_pirates_",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_pirates_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79187/file/w180h135_webp-14cc2e01367f99b759ef94dd0f0d5d7b.webp",
     "source": "y8"
   },
   {
@@ -23225,7 +23225,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Christmas Cookies Decoration free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/christmas_cookies_decoration",
-    "thumb": "https://cdn2.y8.com/cloudimage/christmas_cookies_decoration/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408405/file/w180h135_webp-6b19f1320d1931485c17a0a771a365ea.webp",
     "source": "y8"
   },
   {
@@ -23234,7 +23234,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Baby Blimp free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_blimp",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_blimp/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/155041/file/w180h135_webp-938909581a0f5417a41e41afbbe19d71.webp",
     "source": "y8"
   },
   {
@@ -23243,7 +23243,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play 2 Player Games Kids Kitchen free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_games_kids_kitchen",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_games_kids_kitchen/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394687/file/w180h135_webp-bfc4a8c30faaf77ab0fad768d9004357.webp",
     "source": "y8"
   },
   {
@@ -23252,7 +23252,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Merger free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_merger_webgl",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_merger_webgl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/397283/file/w180h135_webp-bc1ed2e78b87994b34e8fe786e4f3ca9.webp",
     "source": "y8"
   },
   {
@@ -23261,7 +23261,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Fast Halloween free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_fast_halloween",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_fast_halloween/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35595/file/w180h135_webp-28c83213f68aaab59ebcefaf84b7034d.webp",
     "source": "y8"
   },
   {
@@ -23270,7 +23270,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Amigurumi Cozy Stitches free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/amigurumi_cozy_stitches",
-    "thumb": "https://cdn2.y8.com/cloudimage/amigurumi_cozy_stitches/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401675/file/w180h135_webp-20108a2a21826af67c0e271c47920c25.webp",
     "source": "y8"
   },
   {
@@ -23279,7 +23279,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cheese Clicker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cheese_clicker",
-    "thumb": "https://cdn2.y8.com/cloudimage/cheese_clicker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402365/file/w180h135_webp-44a1f1f217110d96b591d472db7e0369.webp",
     "source": "y8"
   },
   {
@@ -23288,7 +23288,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play City Constructor Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_constructor_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_constructor_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10077/file/w180h135_webp-5c27ea9eb2f2831ab3e8db143c0c67c3.webp",
     "source": "y8"
   },
   {
@@ -23297,7 +23297,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play City Truck Driver free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_truck_driver",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_truck_driver/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35647/file/w180h135_webp-a133915abe24d1e9a0a52d32c8ad8c3d.webp",
     "source": "y8"
   },
   {
@@ -23306,7 +23306,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Birdie Bartender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/birdie_bartender",
-    "thumb": "https://cdn2.y8.com/cloudimage/birdie_bartender/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27213/file/w180h135_webp-ddec74a0059b19bd402aac113d3a51ad.webp",
     "source": "y8"
   },
   {
@@ -23315,7 +23315,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Bridge Builder 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bridge_builder_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/bridge_builder_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386555/file/w180h135_webp-6c369a7749152820ad6ecc4efcaca268.webp",
     "source": "y8"
   },
   {
@@ -23324,7 +23324,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Animal Transport free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animal_transport",
-    "thumb": "https://cdn2.y8.com/cloudimage/animal_transport/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401569/file/w180h135_webp-9c07f391f25691dd6ab8c985ad2a9a1b.webp",
     "source": "y8"
   },
   {
@@ -23333,7 +23333,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Airport Manager free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airport_manager",
-    "thumb": "https://cdn2.y8.com/cloudimage/airport_manager/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79505/file/w180h135_webp-24933093364e3c74bb5697f6f18320a9.webp",
     "source": "y8"
   },
   {
@@ -23342,7 +23342,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Show Chicken Fried Rice free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_show_chicken_fried_rice",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_show_chicken_fried_rice/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384041/file/w180h135_webp-3f61a83e958261f08375627501a65624.webp",
     "source": "y8"
   },
   {
@@ -23351,7 +23351,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Ants Party free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ants_party",
-    "thumb": "https://cdn2.y8.com/cloudimage/ants_party/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385061/file/w180h135_webp-0dbdcaf1b6117831be1ecbfbec359fb2.webp",
     "source": "y8"
   },
   {
@@ -23360,7 +23360,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cute Panda Super Market free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cute_panda_super_market",
-    "thumb": "https://cdn2.y8.com/cloudimage/cute_panda_super_market/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7895/file/w180h135_webp-57810e134aa9fff70f7e5185132c7620.webp",
     "source": "y8"
   },
   {
@@ -23369,7 +23369,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cashier Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cashier_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/cashier_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/18581/file/w180h135_webp-a269308a730bf1efe6a84f7787b2b284.webp",
     "source": "y8"
   },
   {
@@ -23378,7 +23378,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Dino Idle Park free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dino_idle_park",
-    "thumb": "https://cdn2.y8.com/cloudimage/dino_idle_park/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393761/file/w180h135_webp-9fe8c5b2c41e5c40f9fecbc993e608d3.webp",
     "source": "y8"
   },
   {
@@ -23387,7 +23387,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Car Mechanic Simulator 2025 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/car_mechanic_simulator_2025",
-    "thumb": "https://cdn2.y8.com/cloudimage/car_mechanic_simulator_2025/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385827/file/w180h135_webp-0b752b27f498805cdcbd0cf0c9fb30e0.webp",
     "source": "y8"
   },
   {
@@ -23396,7 +23396,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Baby Baby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_baby",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_baby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/159811/file/w180h135_webp-b888e9b1c8dfa44c6bfbaad166677634.webp",
     "source": "y8"
   },
   {
@@ -23405,7 +23405,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Create Your Beach free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/create_your_beach",
-    "thumb": "https://cdn2.y8.com/cloudimage/create_your_beach/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5209/file/w180h135_webp-98b2369a7c070d314883b5b01130160a.webp",
     "source": "y8"
   },
   {
@@ -23414,7 +23414,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Chop And Crush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chop_and_crush",
-    "thumb": "https://cdn2.y8.com/cloudimage/chop_and_crush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1835/file/w180h135_webp-b0f57fe6cd8b6de77a2d4f6986efc4fb.webp",
     "source": "y8"
   },
   {
@@ -23423,7 +23423,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Airplane Factory Tycoon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airplane_factory_tycoon",
-    "thumb": "https://cdn2.y8.com/cloudimage/airplane_factory_tycoon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189963/file/w180h135_webp-e62e196e91ec2b7d594d7e8d131fd467.webp",
     "source": "y8"
   },
   {
@@ -23432,7 +23432,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Empire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_empire",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_empire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389399/file/w180h135_webp-fcf964f0569c57d1259e0796a0b9d3b5.webp",
     "source": "y8"
   },
   {
@@ -23441,7 +23441,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Chinese Popcycle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chinese_popcycle",
-    "thumb": "https://cdn2.y8.com/cloudimage/chinese_popcycle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/155201/file/w180h135_webp-1159ad36e4e6bf4c9bf64506bfe92b7b.webp",
     "source": "y8"
   },
   {
@@ -23450,7 +23450,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Crime Scene Cleaner Mobile 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crime_scene_cleaner_mobile_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/crime_scene_cleaner_mobile_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403243/file/w180h135_webp-61342389f6108060be32eda32c04cfa9.webp",
     "source": "y8"
   },
   {
@@ -23459,7 +23459,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Burger Zang free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/burger_zang",
-    "thumb": "https://cdn2.y8.com/cloudimage/burger_zang/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146685/file/w180h135_webp-adb74ef8c44d37753d7b63f08705057e.webp",
     "source": "y8"
   },
   {
@@ -23468,7 +23468,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Fast Donuts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_fast_donuts",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_fast_donuts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36343/file/w180h135_webp-f06f0ffe9aabcb38e046ca4ef59807fd.webp",
     "source": "y8"
   },
   {
@@ -23477,7 +23477,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Ant War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ant_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/ant_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143573/file/w180h135_webp-6d267f20594cca2dcc79618ea4fd6423.webp",
     "source": "y8"
   },
   {
@@ -23486,7 +23486,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cube Craft Survival free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cube_craft_survival",
-    "thumb": "https://cdn2.y8.com/cloudimage/cube_craft_survival/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15899/file/w180h135_webp-a06d0f030e2c83dc3e30d67c4a4a3644.webp",
     "source": "y8"
   },
   {
@@ -23495,7 +23495,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Air Traffic Controller free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_traffic_controller_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_traffic_controller_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64259/file/w180h135_webp-7d380a7c06ae69ee97a3103658e32902.webp",
     "source": "y8"
   },
   {
@@ -23504,7 +23504,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Coffee Master Idle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coffee_master_idle",
-    "thumb": "https://cdn2.y8.com/cloudimage/coffee_master_idle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15929/file/w180h135_webp-75e863a62176d727e119e5c22a696036.webp",
     "source": "y8"
   },
   {
@@ -23513,7 +23513,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Shawarma Idle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_shawarma_idle",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_shawarma_idle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400603/file/w180h135_webp-a8d7bd988a57204ea04d354567d8ebc6.webp",
     "source": "y8"
   },
   {
@@ -23522,7 +23522,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Catch A Fish Obby free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catch_a_fish_obby",
-    "thumb": "https://cdn2.y8.com/cloudimage/catch_a_fish_obby/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392353/file/w180h135_webp-7236984e2e999acdfd2450eb8e0a2d3d.webp",
     "source": "y8"
   },
   {
@@ -23531,7 +23531,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Annie S Enchanted Lemonade Stand free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/annie_s_enchanted_lemonade_stand",
-    "thumb": "https://cdn2.y8.com/cloudimage/annie_s_enchanted_lemonade_stand/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73407/file/w180h135_webp-72a19e68c36a4ab4bf134b72f4b149fc.webp",
     "source": "y8"
   },
   {
@@ -23540,7 +23540,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Baby Rescue Team free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baby_rescue_team",
-    "thumb": "https://cdn2.y8.com/cloudimage/baby_rescue_team/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19247/file/w180h135_webp-db12241b1598f503afb5d52f0fb2e18d.webp",
     "source": "y8"
   },
   {
@@ -23549,7 +23549,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Air Traffic Controller free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_traffic_controller",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_traffic_controller/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27911/file/w180h135_webp-2281b2373b66937a5c0c53864cade7c5.webp",
     "source": "y8"
   },
   {
@@ -23558,7 +23558,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Clean The Floor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clean_the_floor",
-    "thumb": "https://cdn2.y8.com/cloudimage/clean_the_floor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8899/file/w180h135_webp-fab89f61114e3c88adba447525a97c14.webp",
     "source": "y8"
   },
   {
@@ -23567,7 +23567,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking Live free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_live",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_live/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/1695/file/w180h135_webp-3add189f28de7347fbf636f43c4c7c53.webp",
     "source": "y8"
   },
   {
@@ -23576,7 +23576,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cat Simulator Kitty Craft free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_simulator_kitty_craft",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_simulator_kitty_craft/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/43137/file/w180h135_webp-87012ddf7e22f746f5694177f7177a93.webp",
     "source": "y8"
   },
   {
@@ -23585,7 +23585,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Clonewards Operation Ouch free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clonewards_operation_ouch",
-    "thumb": "https://cdn2.y8.com/cloudimage/clonewards_operation_ouch/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/75577/file/w180h135_webp-51e6e474fd9c0cee53887cd48845e3f3.webp",
     "source": "y8"
   },
   {
@@ -23594,7 +23594,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Carpet Cleaner free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carpet_cleaner",
-    "thumb": "https://cdn2.y8.com/cloudimage/carpet_cleaner/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26209/file/w180h135_webp-10ca86881b4103f62113fa1ec23d05dc.webp",
     "source": "y8"
   },
   {
@@ -23603,7 +23603,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Devs Simulator free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devs_simulator",
-    "thumb": "https://cdn2.y8.com/cloudimage/devs_simulator/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20713/file/w180h135_webp-aca1ebb5aa89b26e930957139fc3b797.webp",
     "source": "y8"
   },
   {
@@ -23612,7 +23612,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Butcher Warehouse free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/butcher_warehouse",
-    "thumb": "https://cdn2.y8.com/cloudimage/butcher_warehouse/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/11167/file/w180h135_webp-8a6d5224aff416a8d35459404ade68c8.webp",
     "source": "y8"
   },
   {
@@ -23621,7 +23621,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Cooking In The City Of Winds free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cooking_in_the_city_of_winds",
-    "thumb": "https://cdn2.y8.com/cloudimage/cooking_in_the_city_of_winds/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26483/file/w180h135_webp-99382c3aabaadd2027777cea28a4e0c1.webp",
     "source": "y8"
   },
   {
@@ -23954,7 +23954,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Build Your Aquarium free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/build_your_aquarium",
-    "thumb": "https://cdn2.y8.com/cloudimage/build_your_aquarium/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/4311/file/w180h135_webp-35c4807e2d0bacaaee673e9b004aedc9.webp",
     "source": "y8"
   },
   {
@@ -23972,7 +23972,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Caillou Chef free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/caillou_chef",
-    "thumb": "https://cdn2.y8.com/cloudimage/caillou_chef/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19719/file/w180h135_webp-170627e141ea4427ed8fbfabeb881ab1.webp",
     "source": "y8"
   },
   {
@@ -24035,7 +24035,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Barbarian Clash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/barbarian_clash",
-    "thumb": "https://cdn2.y8.com/cloudimage/barbarian_clash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2473/file/w180h135_webp-378200e7d3e04d1095eb4b192f5d949e.webp",
     "source": "y8"
   },
   {
@@ -24044,7 +24044,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Build A Road free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/build_a_road",
-    "thumb": "https://cdn2.y8.com/cloudimage/build_a_road/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/395629/file/w180h135_webp-fe836a4006246fbb96b03ae02d76fc08.webp",
     "source": "y8"
   },
   {
@@ -24062,7 +24062,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Beer Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beer_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/beer_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389623/file/w180h135_webp-c71e047f584169b5c14710b39af639e3.webp",
     "source": "y8"
   },
   {
@@ -24152,7 +24152,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Comfy Farm free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/comfy_farm",
-    "thumb": "https://cdn2.y8.com/cloudimage/comfy_farm/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33373/file/w180h135_webp-a238d12b7f0753f07f1231e35c666bc8.webp",
     "source": "y8"
   },
   {
@@ -24179,7 +24179,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play 3d City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/395605/file/w180h135_webp-de2fea9f22ef129bc6b843d5ffeabb3b.webp",
     "source": "y8"
   },
   {
@@ -24305,7 +24305,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Ant Colony free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ant_colony",
-    "thumb": "https://cdn2.y8.com/cloudimage/ant_colony/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3653/file/w180h135_webp-a6d4b94a79a0e5ae16ea2633b7318170.webp",
     "source": "y8"
   },
   {
@@ -24332,7 +24332,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Coin Clicker free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coin_clicker",
-    "thumb": "https://cdn2.y8.com/cloudimage/coin_clicker/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9617/file/w180h135_webp-719af7206cdf2db9985ba8a43a38a70f.webp",
     "source": "y8"
   },
   {
@@ -24350,7 +24350,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Crusher Block free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crusher_block",
-    "thumb": "https://cdn2.y8.com/cloudimage/crusher_block/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/395013/file/w180h135_webp-bfddbeab8d7e160be03a3e549243dfee.webp",
     "source": "y8"
   },
   {
@@ -24368,7 +24368,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Airport Management 3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/airport_management_3",
-    "thumb": "https://cdn2.y8.com/cloudimage/airport_management_3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51477/file/w180h135_webp-8b14012a36026e66ed31022a99aab59e.webp",
     "source": "y8"
   },
   {
@@ -24420,7 +24420,7 @@ const GAMES = [
     "category": "Simulation",
     "description": "Play Puppy Cupcake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/puppy_cupcake",
-    "thumb": "https://cdn2.y8.com/cloudimage/puppy_cupcake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407655/file/w180h135_webp-bba016064b012ffb1f6d28562213e2e4.webp",
     "source": "y8"
   },
   {
@@ -24446,7 +24446,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Super Hunting free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/super_hunting",
-    "thumb": "https://cdn2.y8.com/cloudimage/super_hunting/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392567/file/w180h135_webp-b6ecd014d0012fc43355f7fd380ea29a.webp",
     "source": "y8"
   },
   {
@@ -24472,7 +24472,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Skibidi Hunt free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/skibidi_hunt",
-    "thumb": "https://cdn2.y8.com/cloudimage/skibidi_hunt/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385643/file/w180h135_webp-8ca440026ba83c4dd289235a362b6ee6.webp",
     "source": "y8"
   },
   {
@@ -24481,7 +24481,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pool_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pool_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31671/file/w180h135_webp-5cc8949d4dbc72bb5b85458e65f23003.webp",
     "source": "y8"
   },
   {
@@ -24490,7 +24490,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiards Master Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiards_master_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiards_master_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/179147/file/w180h135_webp-085d1fa9c3a14187cfaeecaadee13c3e.webp",
     "source": "y8"
   },
   {
@@ -24499,7 +24499,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 9 Ball Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/9_ball_pool",
-    "thumb": "https://cdn2.y8.com/cloudimage/9_ball_pool/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/104123/file/w180h135_webp-23c55e06766dd79221800d1223ebb83c.webp",
     "source": "y8"
   },
   {
@@ -24508,7 +24508,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bmx Extreme free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bmx_extreme",
-    "thumb": "https://cdn2.y8.com/cloudimage/bmx_extreme/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144201/file/w180h135_webp-61b4e9f8443d7fd52d83952b5355143d.webp",
     "source": "y8"
   },
   {
@@ -24517,7 +24517,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Billiard 8 Ball Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_billiard_8_ball_pool",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_billiard_8_ball_pool/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/77151/file/w180h135_webp-f603576aee06104a588c905f96d00419.webp",
     "source": "y8"
   },
   {
@@ -24526,7 +24526,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Blitz 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_blitz_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_blitz_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403179/file/w180h135_webp-8b30256dcea35653695c72b77b8ea22d.webp",
     "source": "y8"
   },
   {
@@ -24535,7 +24535,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Apex Football Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apex_football_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/apex_football_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25531/file/w180h135_webp-840d7d229a3547d49cacef785cb54b1d.webp",
     "source": "y8"
   },
   {
@@ -24544,7 +24544,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_master_",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_master_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/261855/file/w180h135_webp-4604955db0ac849ec7780affa41dac14.webp",
     "source": "y8"
   },
   {
@@ -24553,7 +24553,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Air Hockey Fog free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_hockey_fog",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_hockey_fog/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/85737/file/w180h135_webp-e8f57d12a63e1a07e7176152cfe3a078.webp",
     "source": "y8"
   },
   {
@@ -24562,7 +24562,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Arcade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_arcade",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_arcade/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/190173/file/w180h135_webp-d008efaceee6d156b16bbff3def2adcd.webp",
     "source": "y8"
   },
   {
@@ -24571,7 +24571,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiards free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiards_",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiards_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/143185/file/w180h135_webp-d8f6e44d7a6760de3fd0ad728645a3ec.webp",
     "source": "y8"
   },
   {
@@ -24580,7 +24580,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Blitz Snooker Star free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_blitz_snooker_star",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_blitz_snooker_star/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384631/file/w180h135_webp-a2eaf0acff628e91ecae744cfd4788e6.webp",
     "source": "y8"
   },
   {
@@ -24589,7 +24589,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343077/file/w180h135_webp-de0b5362634be8ab3c7b7ac4900cd9d3.webp",
     "source": "y8"
   },
   {
@@ -24598,7 +24598,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Around The World Darts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/around_the_world_darts",
-    "thumb": "https://cdn2.y8.com/cloudimage/around_the_world_darts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73871/file/w180h135_webp-6133c49446f9e04aa76590cb066d8fe8.webp",
     "source": "y8"
   },
   {
@@ -24607,7 +24607,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Street Football Online 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/street_football_online_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/street_football_online_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384323/file/w180h135_webp-a21b5b8ae77b40f4f7ba8a2a4565ae4e.webp",
     "source": "y8"
   },
   {
@@ -24616,7 +24616,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery King free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_king",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_king/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37765/file/w180h135_webp-e91b0db9bb26903ed8f9a588b2e97c5c.webp",
     "source": "y8"
   },
   {
@@ -24625,7 +24625,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Billiard Pyramid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_billiard_pyramid",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_billiard_pyramid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8341/file/w180h135_webp-a10c2384b2741c45e19a1853dd23a78f.webp",
     "source": "y8"
   },
   {
@@ -24634,7 +24634,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play American Football Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/american_football_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/american_football_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392571/file/w180h135_webp-5cca5e063822dfe0804d18249e3693d2.webp",
     "source": "y8"
   },
   {
@@ -24643,7 +24643,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Football Legends 2019 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/football_legends_2019",
-    "thumb": "https://cdn2.y8.com/cloudimage/football_legends_2019/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403791/file/w180h135_webp-0986a208cc2fd8ae7855db44476b4f90.webp",
     "source": "y8"
   },
   {
@@ -24652,7 +24652,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Downhill Ski free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/downhill_ski",
-    "thumb": "https://cdn2.y8.com/cloudimage/downhill_ski/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343145/file/w180h135_webp-bd46c4af9b29b59f935278f90eae4307.webp",
     "source": "y8"
   },
   {
@@ -24661,7 +24661,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Asian Cup Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asian_cup_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/asian_cup_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5181/file/w180h135_webp-997a73176bdd001a3752f632057c51ad.webp",
     "source": "y8"
   },
   {
@@ -24670,7 +24670,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Beach Volleyball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/beach_volleyball",
-    "thumb": "https://cdn2.y8.com/cloudimage/beach_volleyball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401137/file/w180h135_webp-0caca2bebb10c9dc09c9c143494dced1.webp",
     "source": "y8"
   },
   {
@@ -24679,7 +24679,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384503/file/w180h135_webp-194cad084af4a8e51b801ea236a2adc7.webp",
     "source": "y8"
   },
   {
@@ -24688,7 +24688,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball School free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_school",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_school/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/58139/file/w180h135_webp-1655cdea4e1ea543246053d4cc1d67d2.webp",
     "source": "y8"
   },
   {
@@ -24697,7 +24697,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66327/file/w180h135_webp-1692fca176aa1a68b660485aaa7f8a1c.webp",
     "source": "y8"
   },
   {
@@ -24706,7 +24706,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Legends 2020 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_legends_2020",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_legends_2020/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/83569/file/w180h135_webp-a0e75170bde31282cb05dd5bd080dce5.webp",
     "source": "y8"
   },
   {
@@ -24733,7 +24733,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery - World Tour free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_-_world_tour",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_-_world_tour/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47397/file/w180h135_webp-0b01f00b8b3b4fe4080adf9d1fa5e604.webp",
     "source": "y8"
   },
   {
@@ -24742,7 +24742,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Badminton Brawl free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/badminton_brawl",
-    "thumb": "https://cdn2.y8.com/cloudimage/badminton_brawl/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13569/file/w180h135_webp-07170b84e81b72815e79d7c8d41b43b6.webp",
     "source": "y8"
   },
   {
@@ -24751,7 +24751,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Billiards Classic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_billiards_classic",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_billiards_classic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40077/file/w180h135_webp-dce3004e017b1b366eaf1d90aa34768e.webp",
     "source": "y8"
   },
   {
@@ -24760,7 +24760,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowling free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowling",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowling/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343123/file/w180h135_webp-40d6039f883582bd1759c1109410683f.webp",
     "source": "y8"
   },
   {
@@ -24769,7 +24769,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiards free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiards",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiards/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343127/file/w180h135_webp-141933b467ff34291aff717c1864bc30.webp",
     "source": "y8"
   },
   {
@@ -24778,7 +24778,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball Star free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_star",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_star/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3943/file/w180h135_webp-14800582c99e3697bd04d0d235a8ad06.webp",
     "source": "y8"
   },
   {
@@ -24787,7 +24787,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowman free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowman_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowman_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/240831/file/w180h135_webp-9fe04590c4900bf502f42c8ca472df47.webp",
     "source": "y8"
   },
   {
@@ -24796,7 +24796,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Classic Bowling free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_bowling",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_bowling/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383361/file/w180h135_webp-0f87d2e376eee8b0e8a7585851037a70.webp",
     "source": "y8"
   },
   {
@@ -24805,7 +24805,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Nexgen Tennis free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/nexgen_tennis",
-    "thumb": "https://cdn2.y8.com/cloudimage/nexgen_tennis/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384921/file/w180h135_webp-7364f514bba94dc1d1c47bd7a596b93f.webp",
     "source": "y8"
   },
   {
@@ -24814,7 +24814,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baggio Magic Kicks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baggio_magic_kicks",
-    "thumb": "https://cdn2.y8.com/cloudimage/baggio_magic_kicks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/159793/file/w180h135_webp-daae3f4a9c30a7312665f2bea9836c5c.webp",
     "source": "y8"
   },
   {
@@ -24823,7 +24823,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pool Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pool_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pool_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/222307/file/w180h135_webp-2bd1cf37d59ef9c7b2e8ab1fc51306b0.webp",
     "source": "y8"
   },
   {
@@ -24832,7 +24832,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowling Game free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowling_game",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowling_game/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65743/file/w180h135_webp-ecda27c4ea55803836cf66908298e501.webp",
     "source": "y8"
   },
   {
@@ -24841,7 +24841,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bone Throwing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bone_throwing",
-    "thumb": "https://cdn2.y8.com/cloudimage/bone_throwing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/170103/file/w180h135_webp-47d9e4ad09c124dd5b2fed339ad4116d.webp",
     "source": "y8"
   },
   {
@@ -24850,7 +24850,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowlerama free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowlerama",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowlerama/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31335/file/w180h135_webp-a3f028c867ea38205c54dfdc4ddf4151.webp",
     "source": "y8"
   },
   {
@@ -24859,7 +24859,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bicycle Kick Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bicycle_kick_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/bicycle_kick_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23439/file/w180h135_webp-4b03164168375a574d8491015121d9da.webp",
     "source": "y8"
   },
   {
@@ -24868,7 +24868,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Balls free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_balls",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_balls/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/142169/file/w180h135_webp-88b4f05f0b471be0f21b7cf761d59052.webp",
     "source": "y8"
   },
   {
@@ -24877,7 +24877,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiards 8 Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiards_8_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiards_8_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/63023/file/w180h135_webp-76e1770c54640c18ada20cc3106b2dde.webp",
     "source": "y8"
   },
   {
@@ -24886,7 +24886,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Alpine Ski Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alpine_ski_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/alpine_ski_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389249/file/w180h135_webp-2537a662154a53fb81ac1f1afaa7259b.webp",
     "source": "y8"
   },
   {
@@ -24895,7 +24895,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball Stadium free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_stadium",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_stadium/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149073/file/w180h135_webp-490db57342cde5295310a987bb00f929.webp",
     "source": "y8"
   },
   {
@@ -24904,7 +24904,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Free Kick free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_free_kick",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_free_kick/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/219523/file/w180h135_webp-7ade1eefa57575501288e88873c48833.webp",
     "source": "y8"
   },
   {
@@ -24913,7 +24913,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery Training free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_training",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_training/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386699/file/w180h135_webp-599f7286714e54e151fee5219917c435.webp",
     "source": "y8"
   },
   {
@@ -24922,7 +24922,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Big Head Football free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_head_football",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_head_football/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/122415/file/w180h135_webp-57d1f325c4be0e6565580dd6aafa1cac.webp",
     "source": "y8"
   },
   {
@@ -24931,7 +24931,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 2d Knock Out free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2d_knock_out",
-    "thumb": "https://cdn2.y8.com/cloudimage/2d_knock_out/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402433/file/w180h135_webp-e0e613dc08d0b09add6aefd25c29d8f0.webp",
     "source": "y8"
   },
   {
@@ -24940,7 +24940,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 9 Ball Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/9_ball_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/9_ball_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21315/file/w180h135_webp-eba1193a3d7f4547f87a63f2cc1ac95c.webp",
     "source": "y8"
   },
   {
@@ -24949,7 +24949,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Air Hockey Cup free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_hockey_cup",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_hockey_cup/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28361/file/w180h135_webp-d93357b92196f0c671f527f9c69d3e2f.webp",
     "source": "y8"
   },
   {
@@ -24958,7 +24958,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Blitz Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_blitz_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_blitz_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/55971/file/w180h135_webp-a2e3b99d212e5b25399a1af5f204f460.webp",
     "source": "y8"
   },
   {
@@ -24967,7 +24967,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bball Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bball_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/bball_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407883/file/w180h135_webp-cb6766c84a5102066cc6a32b946f281c.webp",
     "source": "y8"
   },
   {
@@ -24976,7 +24976,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Base Jump Wing Suit Flying free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/base_jump_wing_suit_flying",
-    "thumb": "https://cdn2.y8.com/cloudimage/base_jump_wing_suit_flying/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9701/file/w180h135_webp-335618e2e7c9400fd9f69f4e072c0023.webp",
     "source": "y8"
   },
   {
@@ -24985,7 +24985,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Blaze Kick free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blaze_kick",
-    "thumb": "https://cdn2.y8.com/cloudimage/blaze_kick/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/108427/file/w180h135_webp-dd462b4655d5578e888940797cafb44f.webp",
     "source": "y8"
   },
   {
@@ -24994,7 +24994,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play A Small World Cup free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_small_world_cup",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_small_world_cup/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64687/file/w180h135_webp-f0c48b1792b1e139ae0ee7e1faf71e29.webp",
     "source": "y8"
   },
   {
@@ -25003,7 +25003,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball-Jam free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball-jam",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball-jam/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/129505/file/w180h135_webp-8f74b9a4c65d8c6f1ede29665d22fafc.webp",
     "source": "y8"
   },
   {
@@ -25012,7 +25012,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pro free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pro",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pro/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34901/file/w180h135_webp-495bc5fefc1d1e54ba2ddbef82272bcd.webp",
     "source": "y8"
   },
   {
@@ -25021,7 +25021,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Air Hockey free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_hockey",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_hockey/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406253/file/w180h135_webp-6ab1cee93ccf1c50cb57bae308af5974.webp",
     "source": "y8"
   },
   {
@@ -25030,7 +25030,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_battle_",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_battle_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3511/file/w180h135_webp-aa9d82076e0334e1a4422f84e9212ce6.webp",
     "source": "y8"
   },
   {
@@ -25039,7 +25039,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Kwiki Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/kwiki_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/kwiki_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383215/file/w180h135_webp-d571937917426dc753a7579c97a8b147.webp",
     "source": "y8"
   },
   {
@@ -25048,7 +25048,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball King free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_king",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_king/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30883/file/w180h135_webp-9cbda3b2fb406d6e2faceb18407a598f.webp",
     "source": "y8"
   },
   {
@@ -25057,7 +25057,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 100 M Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/100_m_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/100_m_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106623/file/w180h135_webp-fd5a09e33ee365ee9706f4b3e3fea272.webp",
     "source": "y8"
   },
   {
@@ -25066,7 +25066,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiards 3d Russian Pyramid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiards_3d_russian_pyramid",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiards_3d_russian_pyramid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3763/file/w180h135_webp-23664d23a55e61ac9466b62366071206.webp",
     "source": "y8"
   },
   {
@@ -25075,7 +25075,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowling Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowling_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowling_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22333/file/w180h135_webp-df0be2d7b46fceaf82e2df88c7fe9a52.webp",
     "source": "y8"
   },
   {
@@ -25084,7 +25084,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Boom Boom Volleyball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boom_boom_volleyball",
-    "thumb": "https://cdn2.y8.com/cloudimage/boom_boom_volleyball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144405/file/w180h135_webp-b993b068c94c67f0a9438a9734af99e0.webp",
     "source": "y8"
   },
   {
@@ -25093,7 +25093,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37999/file/w180h135_webp-e40592a4465ce4548b6e0831534f6e96.webp",
     "source": "y8"
   },
   {
@@ -25102,7 +25102,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Arcade free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_arcade_",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_arcade_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16315/file/w180h135_webp-3d45a29e886a2933d4987d0c3ff0e155.webp",
     "source": "y8"
   },
   {
@@ -25111,7 +25111,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bend It Like Bendham free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bend_it_like_bendham",
-    "thumb": "https://cdn2.y8.com/cloudimage/bend_it_like_bendham/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/160023/file/w180h135_webp-d21c26ca55e163ea358379605efffacf.webp",
     "source": "y8"
   },
   {
@@ -25120,7 +25120,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bench Press The Barbarian free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bench_press_the_barbarian",
-    "thumb": "https://cdn2.y8.com/cloudimage/bench_press_the_barbarian/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50499/file/w180h135_webp-3deaf3a9dea3893319bdf795690f27ac.webp",
     "source": "y8"
   },
   {
@@ -25129,7 +25129,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Knockout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_knockout",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_knockout/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401879/file/w180h135_webp-4a0c79a9757fbf2105499ce8c63ea0e3.webp",
     "source": "y8"
   },
   {
@@ -25138,7 +25138,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Autoliiga free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/autoliiga",
-    "thumb": "https://cdn2.y8.com/cloudimage/autoliiga/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/329211/file/w180h135_webp-5c67ae914dc04519d97b35fb5add9514.webp",
     "source": "y8"
   },
   {
@@ -25147,7 +25147,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 9 Ball Knockout free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/9_ball_knockout",
-    "thumb": "https://cdn2.y8.com/cloudimage/9_ball_knockout/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405105/file/w180h135_webp-00645cb78768eadc7f8725a3f91e7c9a.webp",
     "source": "y8"
   },
   {
@@ -25156,7 +25156,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Battle Soccer Arena free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_soccer_arena",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_soccer_arena/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36071/file/w180h135_webp-73ebcb7e36445a6a8d355305a84a6d74.webp",
     "source": "y8"
   },
   {
@@ -25165,7 +25165,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Hit free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_hit",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_hit/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25783/file/w180h135_webp-7aad4ef3d1e99448fd36875b48878dd0.webp",
     "source": "y8"
   },
   {
@@ -25174,7 +25174,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73273/file/w180h135_webp-bafc68afe2b07221d4bc80c17ecbf210.webp",
     "source": "y8"
   },
   {
@@ -25183,7 +25183,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Io free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_io",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_io/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69287/file/w180h135_webp-c9acc74fef9900ea2e3abe57b5c7d186.webp",
     "source": "y8"
   },
   {
@@ -25192,7 +25192,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Badminton Legends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/badminton_legends",
-    "thumb": "https://cdn2.y8.com/cloudimage/badminton_legends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383815/file/w180h135_webp-75e2703adc28e858199f2e9313c26ece.webp",
     "source": "y8"
   },
   {
@@ -25201,7 +25201,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Hustlers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_hustlers",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_hustlers/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402521/file/w180h135_webp-9011726fc8c708007898ed5f977bf3eb.webp",
     "source": "y8"
   },
   {
@@ -25210,7 +25210,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball League free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_league",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_league/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/137667/file/w180h135_webp-1e41a8f4a15e1c1f50d7f7c73dac5e87.webp",
     "source": "y8"
   },
   {
@@ -25219,7 +25219,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Backwater Fishing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backwater_fishing",
-    "thumb": "https://cdn2.y8.com/cloudimage/backwater_fishing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/40661/file/w180h135_webp-7e0ba0c611218485155eb7da6588e75f.webp",
     "source": "y8"
   },
   {
@@ -25228,7 +25228,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Backgammon Deluxe Edition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backgammon_deluxe_edition",
-    "thumb": "https://cdn2.y8.com/cloudimage/backgammon_deluxe_edition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6603/file/w180h135_webp-11cdd3573c09b0d3a5ed20bda4f58274.webp",
     "source": "y8"
   },
   {
@@ -25237,7 +25237,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Beans free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_beans",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_beans/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29887/file/w180h135_webp-3f0d076f00175e048b94aaf42024aaa3.webp",
     "source": "y8"
   },
   {
@@ -25246,7 +25246,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Battle Chess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_chess",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_chess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/343261/file/w180h135_webp-79412eae936059ff615e6a0b8dd4a770.webp",
     "source": "y8"
   },
   {
@@ -25255,7 +25255,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_master_",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_master_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/45187/file/w180h135_webp-f3ef0ed439499b4602c62c2352352f4c.webp",
     "source": "y8"
   },
   {
@@ -25264,7 +25264,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bowling Hero Multiplayer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bowling_hero_multiplayer",
-    "thumb": "https://cdn2.y8.com/cloudimage/bowling_hero_multiplayer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35229/file/w180h135_webp-deaad975abf9c112c340c96466e94029.webp",
     "source": "y8"
   },
   {
@@ -25273,7 +25273,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Slam free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_slam",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_slam/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36671/file/w180h135_webp-bfee975625193337cdb670d21b8ad681.webp",
     "source": "y8"
   },
   {
@@ -25282,7 +25282,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Aim At The Mark free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aim_at_the_mark",
-    "thumb": "https://cdn2.y8.com/cloudimage/aim_at_the_mark/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8195/file/w180h135_webp-e38227b1419e2dc276513f9a7ca324a6.webp",
     "source": "y8"
   },
   {
@@ -25291,7 +25291,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8ball Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8ball_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/8ball_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/222747/file/w180h135_webp-49fd8111392c2a4afbdb07af9e3eb7bd.webp",
     "source": "y8"
   },
   {
@@ -25300,7 +25300,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery Legends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_legends",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_legends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/189825/file/w180h135_webp-305e133b80166dbbc99c1f22a238e1ae.webp",
     "source": "y8"
   },
   {
@@ -25309,7 +25309,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3075/file/w180h135_webp-b0cf689070bbe5482575c15dea74da5e.webp",
     "source": "y8"
   },
   {
@@ -25318,7 +25318,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Shot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_shot",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_shot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27649/file/w180h135_webp-e4dda885016781b5c4b2e16542420ff7.webp",
     "source": "y8"
   },
   {
@@ -25327,7 +25327,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Bounce Dunk Frvr free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bounce_dunk_frvr",
-    "thumb": "https://cdn2.y8.com/cloudimage/bounce_dunk_frvr/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17479/file/w180h135_webp-0f1032f9b908aca4bf732a74e7184db8.webp",
     "source": "y8"
   },
   {
@@ -25336,7 +25336,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Backyard Hoops free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backyard_hoops",
-    "thumb": "https://cdn2.y8.com/cloudimage/backyard_hoops/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36151/file/w180h135_webp-9ab24210b0e6352d7205b5ebcce326aa.webp",
     "source": "y8"
   },
   {
@@ -25345,7 +25345,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Scorer 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_scorer_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_scorer_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19715/file/w180h135_webp-2cf3fe1d14179f22fb40ea3ecd1afd0e.webp",
     "source": "y8"
   },
   {
@@ -25354,7 +25354,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Challenge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_challenge",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_challenge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408223/file/w180h135_webp-66db8090fe663ece4933fd3f8105200e.webp",
     "source": "y8"
   },
   {
@@ -25363,7 +25363,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Real Tennis free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/real_tennis",
-    "thumb": "https://cdn2.y8.com/cloudimage/real_tennis/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384985/file/w180h135_webp-bb792f3e1b3ad20d3e666c51f3eb8d60.webp",
     "source": "y8"
   },
   {
@@ -25372,7 +25372,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Swooshes Plus free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_swooshes_plus",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_swooshes_plus/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36477/file/w180h135_webp-1a544cbfa18da4e39f01af95ea580733.webp",
     "source": "y8"
   },
   {
@@ -25381,7 +25381,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Star free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_star",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_star/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/72785/file/w180h135_webp-6553ab0b31fc811ae71494054025f94d.webp",
     "source": "y8"
   },
   {
@@ -25390,7 +25390,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Legend free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_legend",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_legend/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51013/file/w180h135_webp-c50dbc77369a65f3dd15d37a1eb23032.webp",
     "source": "y8"
   },
   {
@@ -25399,7 +25399,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play A Small World Cup 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_small_world_cup_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_small_world_cup_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404065/file/w180h135_webp-06ed0eb012d70bf4575efb99469b1853.webp",
     "source": "y8"
   },
   {
@@ -25408,7 +25408,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Ping Pong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_ping_pong",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_ping_pong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8387/file/w180h135_webp-44b330027657f424fcf1083383bd2cca.webp",
     "source": "y8"
   },
   {
@@ -25417,7 +25417,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Block Vs Pirate free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/block_vs_pirate",
-    "thumb": "https://cdn2.y8.com/cloudimage/block_vs_pirate/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14421/file/w180h135_webp-b4d2990dcd28f7a76162fb0fe2c9d766.webp",
     "source": "y8"
   },
   {
@@ -25426,7 +25426,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pool",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pool/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384915/file/w180h135_webp-7af70f791a1491cc62ec6d8db578b6f8.webp",
     "source": "y8"
   },
   {
@@ -25435,7 +25435,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Robotic Sports Tennis free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/robotic_sports_tennis",
-    "thumb": "https://cdn2.y8.com/cloudimage/robotic_sports_tennis/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403941/file/w180h135_webp-22395b519d522c993421d2fd5ca3d709.webp",
     "source": "y8"
   },
   {
@@ -25444,7 +25444,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Free Kick World Cup 18 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_free_kick_world_cup_18",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_free_kick_world_cup_18/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/219525/file/w180h135_webp-8d2cb21c062b07069c1bf8f4b84ff9b2.webp",
     "source": "y8"
   },
   {
@@ -25453,7 +25453,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Blackball Billiard free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blackball_billiard",
-    "thumb": "https://cdn2.y8.com/cloudimage/blackball_billiard/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29377/file/w180h135_webp-0fdd3d99968a3d0d2bbbb8409ac3fa2c.webp",
     "source": "y8"
   },
   {
@@ -25462,7 +25462,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Axis Football League free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/axis_football_league",
-    "thumb": "https://cdn2.y8.com/cloudimage/axis_football_league/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/180029/file/w180h135_webp-5179398860a7d2cd3e90ea824733a6e4.webp",
     "source": "y8"
   },
   {
@@ -25471,7 +25471,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Swipe Basketball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swipe_basketball",
-    "thumb": "https://cdn2.y8.com/cloudimage/swipe_basketball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406255/file/w180h135_webp-a1f7fe14a6e85421b3e2dde1953b7f91.webp",
     "source": "y8"
   },
   {
@@ -25480,7 +25480,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball Bat free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_bat",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_bat/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17465/file/w180h135_webp-61b8057e7c631a5aa77377d54c76b87a.webp",
     "source": "y8"
   },
   {
@@ -25489,7 +25489,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Smash free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_smash",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_smash/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/67589/file/w180h135_webp-4d19663c4137f0a3b89f387fb1d531ea.webp",
     "source": "y8"
   },
   {
@@ -25498,7 +25498,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Mini Golf World free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mini_golf_world",
-    "thumb": "https://cdn2.y8.com/cloudimage/mini_golf_world/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389621/file/w180h135_webp-2c562fe75fabf06bfe6fe74b649fb747.webp",
     "source": "y8"
   },
   {
@@ -25507,7 +25507,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Air Hockey free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_air_hockey",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_air_hockey/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/219531/file/w180h135_webp-52c0e066147c1c5aefeea220222fde27.webp",
     "source": "y8"
   },
   {
@@ -25516,7 +25516,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Batting Champ free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/batting_champ",
-    "thumb": "https://cdn2.y8.com/cloudimage/batting_champ/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144341/file/w180h135_webp-33328393fba743207a8ec5340931ff85.webp",
     "source": "y8"
   },
   {
@@ -25525,7 +25525,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Berzerk Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/berzerk_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/berzerk_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/178229/file/w180h135_webp-877be69baa7e0c6c3fabeb2df6019f9a.webp",
     "source": "y8"
   },
   {
@@ -25534,7 +25534,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Boxing Gang Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxing_gang_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxing_gang_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/3785/file/w180h135_webp-6b1f865c31b33e14305fe72864a8c80b.webp",
     "source": "y8"
   },
   {
@@ -25543,7 +25543,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 1 On 1 Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/1_on_1_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/1_on_1_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/170711/file/w180h135_webp-1a3e15901dedb8e21ba69e91e423678a.webp",
     "source": "y8"
   },
   {
@@ -25552,7 +25552,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Physics free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_physics",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_physics/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86857/file/w180h135_webp-712885350f8a43f1dac090dcfd306a03.webp",
     "source": "y8"
   },
   {
@@ -25561,7 +25561,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Damage free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_damage",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_damage/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13861/file/w180h135_webp-9c950e28ea6e60f5512c403e16ea0b0f.webp",
     "source": "y8"
   },
   {
@@ -25570,7 +25570,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Pool 8 Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pool_8_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/pool_8_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384371/file/w180h135_webp-4bcce3af84ba7aba854f2f52ee97edbe.webp",
     "source": "y8"
   },
   {
@@ -25579,7 +25579,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Tap free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_tap",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_tap/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385467/file/w180h135_webp-b39483a4524dc1c45be12020a1e8f861.webp",
     "source": "y8"
   },
   {
@@ -25588,7 +25588,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Basketball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_basketball",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_basketball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/108415/file/w180h135_webp-ecb252be472334499ec17ae9c6ae60cb.webp",
     "source": "y8"
   },
   {
@@ -25597,7 +25597,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Neon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_neon",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_neon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22737/file/w180h135_webp-b335f91e4edd304b57e166830db265ec.webp",
     "source": "y8"
   },
   {
@@ -25606,7 +25606,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Ball Challenge Flick The Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_ball_challenge_flick_the_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_ball_challenge_flick_the_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64159/file/w180h135_webp-014885bc6a598ebc6322b6f3cdaeb136.webp",
     "source": "y8"
   },
   {
@@ -25615,7 +25615,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Ball-1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_ball-1",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_ball-1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399953/file/w180h135_webp-f8e64389fe219173d669f14b8cafa761.webp",
     "source": "y8"
   },
   {
@@ -25624,7 +25624,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Soccer Champions free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_soccer_champions",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_soccer_champions/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66779/file/w180h135_webp-c0c9c8676dc1d0945be9fffea1b4fbb9.webp",
     "source": "y8"
   },
   {
@@ -25633,7 +25633,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 2 Billiards 2 Play free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_billiards_2_play",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_billiards_2_play/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/169903/file/w180h135_webp-1b95aea5b9fdc9e1f7ee03cac1038317.webp",
     "source": "y8"
   },
   {
@@ -25642,7 +25642,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 9 Ball Pool free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/9_ball_pool_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/9_ball_pool_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401867/file/w180h135_webp-31e04ca03a7e295361bc94a634c2c50b.webp",
     "source": "y8"
   },
   {
@@ -25651,7 +25651,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Arcade Basketball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcade_basketball",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcade_basketball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/49227/file/w180h135_webp-5eb4ec6e74fe4020abe680ed3a5fff18.webp",
     "source": "y8"
   },
   {
@@ -25660,7 +25660,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Arcade Billiards free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcade_billiards",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcade_billiards/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404893/file/w180h135_webp-cb6f4f2c72bf2165d8f3c3c1674c9738.webp",
     "source": "y8"
   },
   {
@@ -25669,7 +25669,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Billiard Blitz 3 Nine Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/billiard_blitz_3_nine_ball",
-    "thumb": "https://cdn2.y8.com/cloudimage/billiard_blitz_3_nine_ball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/174765/file/w180h135_webp-c09d5c6f6a6d811901d58c860dfdcfa7.webp",
     "source": "y8"
   },
   {
@@ -25678,7 +25678,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Rpg free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_rpg",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_rpg/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/36443/file/w180h135_webp-eaa986153853fff8340a5a33b1bb4966.webp",
     "source": "y8"
   },
   {
@@ -25687,7 +25687,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pool 1 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pool_1",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pool_1/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12399/file/w180h135_webp-05bd18c672b3299568e86fc80264b365.webp",
     "source": "y8"
   },
   {
@@ -25696,7 +25696,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Golf Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_golf_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_golf_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27469/file/w180h135_webp-8998148a07c174efc570f6ee71002f45.webp",
     "source": "y8"
   },
   {
@@ -25705,7 +25705,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Baseball Mania free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/baseball_mania",
-    "thumb": "https://cdn2.y8.com/cloudimage/baseball_mania/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/32703/file/w180h135_webp-03d60f28c6832535913e6c036af7663d.webp",
     "source": "y8"
   },
   {
@@ -25714,7 +25714,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Shot Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_shot_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_shot_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6745/file/w180h135_webp-2560208fe2a3e282c11f4c0e7936f97b.webp",
     "source": "y8"
   },
   {
@@ -25723,7 +25723,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Ball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_ball_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_ball_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8057/file/w180h135_webp-2d85e0f554d3fa2914537b2407530587.webp",
     "source": "y8"
   },
   {
@@ -25732,7 +25732,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Hoops free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_hoops",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_hoops/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385279/file/w180h135_webp-d9fbc8dc5c7e63f1e2243265e674614b.webp",
     "source": "y8"
   },
   {
@@ -25741,7 +25741,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 3d Darts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_darts",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_darts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/108407/file/w180h135_webp-e2fe68f148e8d74d4f5da2b8e2076ec0.webp",
     "source": "y8"
   },
   {
@@ -25750,7 +25750,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Sport Stars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_sport_stars",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_sport_stars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30461/file/w180h135_webp-c740a3031ed05e9b0aa96ef7b9b7d5cc.webp",
     "source": "y8"
   },
   {
@@ -25759,7 +25759,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Ball Unity free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_ball_unity",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_ball_unity/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23503/file/w180h135_webp-31fe35565af586d50630ce917b57e534.webp",
     "source": "y8"
   },
   {
@@ -25768,7 +25768,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Mini Golf free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mini_golf",
-    "thumb": "https://cdn2.y8.com/cloudimage/mini_golf/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388091/file/w180h135_webp-979a78f9bbff373f256459b5936ef87f.webp",
     "source": "y8"
   },
   {
@@ -25777,7 +25777,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball 2d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_2d",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_2d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6359/file/w180h135_webp-326951a0599b8e0ff4d035cb2b56b59a.webp",
     "source": "y8"
   },
   {
@@ -25786,7 +25786,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play 8 Ball Pool With Friends free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/8_ball_pool_with_friends",
-    "thumb": "https://cdn2.y8.com/cloudimage/8_ball_pool_with_friends/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/221113/file/w180h135_webp-a5a7aea9f2b082c23dad7925a5c1f4a0.webp",
     "source": "y8"
   },
   {
@@ -25795,7 +25795,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Pops Billiards free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/pops_billiards",
-    "thumb": "https://cdn2.y8.com/cloudimage/pops_billiards/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387015/file/w180h135_webp-3cd97d6c78e13fb4404cd4bee9df9a7f.webp",
     "source": "y8"
   },
   {
@@ -25849,7 +25849,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Body Race free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/body_race",
-    "thumb": "https://cdn2.y8.com/cloudimage/body_race/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/12121/file/w180h135_webp-c25e4609086debd9d9846bc76990a0f9.webp",
     "source": "y8"
   },
   {
@@ -25867,7 +25867,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery With Buddies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_with_buddies",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_with_buddies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/14013/file/w180h135_webp-0c836f48d5c82552386593cfaf3af7ef.webp",
     "source": "y8"
   },
   {
@@ -25894,7 +25894,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Sportsman Boxing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/sportsman_boxing",
-    "thumb": "https://cdn2.y8.com/cloudimage/sportsman_boxing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392653/file/w180h135_webp-0bb95f7f4ec917e630eec2d2e9e46ac5.webp",
     "source": "y8"
   },
   {
@@ -25984,7 +25984,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play The Running Champion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/the_running_champion",
-    "thumb": "https://cdn2.y8.com/cloudimage/the_running_champion/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393197/file/w180h135_webp-dd665e96af621b1406a5b873aa383450.webp",
     "source": "y8"
   },
   {
@@ -26038,7 +26038,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basket Goal free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basket_goal_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/basket_goal_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394099/file/w180h135_webp-7cb26f7206914be7b217b0a9e479daf8.webp",
     "source": "y8"
   },
   {
@@ -26092,7 +26092,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Flicking Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/flicking_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/flicking_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383223/file/w180h135_webp-61c1dc89eaafe072fe57d2ee9e0fa1ea.webp",
     "source": "y8"
   },
   {
@@ -26164,7 +26164,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Nutmeg Football free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/nutmeg_football",
-    "thumb": "https://cdn2.y8.com/cloudimage/nutmeg_football/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387553/file/w180h135_webp-58e81f9757dd76c1c1532e5cc1e86f7b.webp",
     "source": "y8"
   },
   {
@@ -26191,7 +26191,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Funny Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/funny_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/funny_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383277/file/w180h135_webp-b0103bf55bdab1044404f9da4db2ebaa.webp",
     "source": "y8"
   },
   {
@@ -26218,7 +26218,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Tanque 3d Sports free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/tanque_3d_sports",
-    "thumb": "https://cdn2.y8.com/cloudimage/tanque_3d_sports/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406147/file/w180h135_webp-4c397d09243a73a2055bf176654f1939.webp",
     "source": "y8"
   },
   {
@@ -26290,7 +26290,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Fever free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_fever_",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_fever_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9201/file/w180h135_webp-a27bd1e6804b2a4dacf3c3b4d28ace1c.webp",
     "source": "y8"
   },
   {
@@ -26407,7 +26407,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Big Bird S Basketball free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/big_bird_s_basketball",
-    "thumb": "https://cdn2.y8.com/cloudimage/big_bird_s_basketball/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/63313/file/w180h135_webp-415b271bf1c9c59b56b6f1cee5169bd5.webp",
     "source": "y8"
   },
   {
@@ -26425,7 +26425,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play American Football Kicks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/american_football_kicks",
-    "thumb": "https://cdn2.y8.com/cloudimage/american_football_kicks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391591/file/w180h135_webp-8ef560eb825b7f404c1c239787667ae3.webp",
     "source": "y8"
   },
   {
@@ -26452,7 +26452,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Footgolf Evolution free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/footgolf_evolution",
-    "thumb": "https://cdn2.y8.com/cloudimage/footgolf_evolution/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/393519/file/w180h135_webp-4612bf1ed22302a2f48523c0e443ccab.webp",
     "source": "y8"
   },
   {
@@ -26470,7 +26470,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Parkour Edge Cursed Treasure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/parkour_edge_cursed_treasure",
-    "thumb": "https://cdn2.y8.com/cloudimage/parkour_edge_cursed_treasure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385629/file/w180h135_webp-7b2d85f2e9cd9737aa897ee128603a25.webp",
     "source": "y8"
   },
   {
@@ -26479,7 +26479,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Er Soccer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/er_soccer",
-    "thumb": "https://cdn2.y8.com/cloudimage/er_soccer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/47287/file/w180h135_webp-26571aa70988500d2ca7a1bb09408ed6.webp",
     "source": "y8"
   },
   {
@@ -26488,7 +26488,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Parkour Go 2 Urban free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/parkour_go_2_urban",
-    "thumb": "https://cdn2.y8.com/cloudimage/parkour_go_2_urban/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/381225/file/w180h135_webp-70440e612e57fa17b6259978f5e1b39d.webp",
     "source": "y8"
   },
   {
@@ -26497,7 +26497,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Fishing Frenzy free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fishing_frenzy",
-    "thumb": "https://cdn2.y8.com/cloudimage/fishing_frenzy/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392591/file/w180h135_webp-faa2f12270ab7dfbdd740a6d1d47fa99.webp",
     "source": "y8"
   },
   {
@@ -26506,7 +26506,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Free Running free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/free_running",
-    "thumb": "https://cdn2.y8.com/cloudimage/free_running/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404897/file/w180h135_webp-2a05ddabf74cc1c1f40724416bcd8177.webp",
     "source": "y8"
   },
   {
@@ -26515,7 +26515,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Parkour Go free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/parkour_go",
-    "thumb": "https://cdn2.y8.com/cloudimage/parkour_go/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384385/file/w180h135_webp-4576d8986ec09a326b59b6910d911875.webp",
     "source": "y8"
   },
   {
@@ -26524,7 +26524,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Swimming Pool Romance free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/swimming_pool_romance",
-    "thumb": "https://cdn2.y8.com/cloudimage/swimming_pool_romance/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407589/file/w180h135_webp-404615a9ef857bed19961064729ea70a.webp",
     "source": "y8"
   },
   {
@@ -26533,7 +26533,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Arcade Golf free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcade_golf",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcade_golf/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392859/file/w180h135_webp-d4f5aef59ae36ae1d54e31ce2179d618.webp",
     "source": "y8"
   },
   {
@@ -26542,7 +26542,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Archery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403943/file/w180h135_webp-9c3b4594dd8e765a12a3964a8757f10f.webp",
     "source": "y8"
   },
   {
@@ -26551,7 +26551,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Basketball Blocks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/basketball_blocks",
-    "thumb": "https://cdn2.y8.com/cloudimage/basketball_blocks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387819/file/w180h135_webp-421227aaa6ecd7b3ac9a9a1e6c6bb1f7.webp",
     "source": "y8"
   },
   {
@@ -26560,7 +26560,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Crazy Fishing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_fishing",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_fishing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388451/file/w180h135_webp-5e1c563327f6f52bb41cc697a1969756.webp",
     "source": "y8"
   },
   {
@@ -26569,7 +26569,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Fishing Y8 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/fishing_y8",
-    "thumb": "https://cdn2.y8.com/cloudimage/fishing_y8/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384375/file/w180h135_webp-0a3ffbd8ce483dd5e752511e40f06222.webp",
     "source": "y8"
   },
   {
@@ -26578,7 +26578,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Football Headbutts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/football_headbutts",
-    "thumb": "https://cdn2.y8.com/cloudimage/football_headbutts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388219/file/w180h135_webp-e0983be9f5b475cdd46c7f94424006c6.webp",
     "source": "y8"
   },
   {
@@ -26587,7 +26587,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Gravity Running Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/gravity_running_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/gravity_running_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387405/file/w180h135_webp-f8f984d54a13e83353a460edd4a9d9e2.webp",
     "source": "y8"
   },
   {
@@ -26596,7 +26596,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Hospital Baseballer Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_baseballer_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_baseballer_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22223/file/w180h135_webp-e9736651b540e5a27f5eb1931d6887b8.webp",
     "source": "y8"
   },
   {
@@ -26605,7 +26605,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Hospital Gymnast Emergency free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_gymnast_emergency",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_gymnast_emergency/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20313/file/w180h135_webp-563b9e434b1e90a2b0c757f70deb3b31.webp",
     "source": "y8"
   },
   {
@@ -26614,7 +26614,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Hospital Soccer Surgery free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/hospital_soccer_surgery",
-    "thumb": "https://cdn2.y8.com/cloudimage/hospital_soccer_surgery/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2547/file/w180h135_webp-3ebe61024bed50820c7e487156e46b08.webp",
     "source": "y8"
   },
   {
@@ -26640,7 +26640,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Let S Go Fishing Mobile free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/let_s_go_fishing_mobile",
-    "thumb": "https://cdn2.y8.com/cloudimage/let_s_go_fishing_mobile/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392911/file/w180h135_webp-880d47f558d13949afba8d41b9520aa9.webp",
     "source": "y8"
   },
   {
@@ -26649,7 +26649,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Mini Golf 3D free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/mini_golf_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/mini_golf_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/389497/file/w180h135_webp-27db3ad72e2f5729137031072397dbbe.webp",
     "source": "y8"
   },
   {
@@ -26658,7 +26658,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Ping Pong free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ping_pong",
-    "thumb": "https://cdn2.y8.com/cloudimage/ping_pong/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387079/file/w180h135_webp-fae3b7479bd63b4ea94e4eb8fd9ced3b.webp",
     "source": "y8"
   },
   {
@@ -26667,7 +26667,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Running Santa free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/running_santa",
-    "thumb": "https://cdn2.y8.com/cloudimage/running_santa/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/390397/file/w180h135_webp-8183432153dacc78d67134c0584631d6.webp",
     "source": "y8"
   },
   {
@@ -26676,7 +26676,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Santa Ski free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/santa_ski",
-    "thumb": "https://cdn2.y8.com/cloudimage/santa_ski/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388855/file/w180h135_webp-358040e9cdbc502f5fdd58596ffb417a.webp",
     "source": "y8"
   },
   {
@@ -26685,7 +26685,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Ski Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ski_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/ski_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392943/file/w180h135_webp-b0ef3a22e7a648832535138e4a4a003f.webp",
     "source": "y8"
   },
   {
@@ -26694,7 +26694,7 @@ const GAMES = [
     "category": "Sports",
     "description": "Play Soccer Kid Doctor free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/soccer_kid_doctor",
-    "thumb": "https://cdn2.y8.com/cloudimage/soccer_kid_doctor/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408093/file/w180h135_webp-dce0b0fd8866762d12df85229d5c7dac.webp",
     "source": "y8"
   },
   {
@@ -26737,7 +26737,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Ancient Planet free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ancient_planet",
-    "thumb": "https://cdn2.y8.com/cloudimage/ancient_planet/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/117477/file/w180h135_webp-e4a4ca316ae84ebd4e51d74507d8f336.webp",
     "source": "y8"
   },
   {
@@ -26746,7 +26746,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Backgammon Online 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backgammon_online_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/backgammon_online_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/406475/file/w180h135_webp-a4c43e11aec0fcb36acf340dff8bc6b1.webp",
     "source": "y8"
   },
   {
@@ -26755,7 +26755,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Master Chess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/master_chess",
-    "thumb": "https://cdn2.y8.com/cloudimage/master_chess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387013/file/w180h135_webp-520dbb2b483325a9915b5d4ea66df7b5.webp",
     "source": "y8"
   },
   {
@@ -26764,7 +26764,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Simulator Sandbox free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_simulator_sandbox",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_simulator_sandbox/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/387371/file/w180h135_webp-966a92b98f4d9fcb5858a056dc237f0a.webp",
     "source": "y8"
   },
   {
@@ -26773,7 +26773,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Ants Warriors free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ants_warriors",
-    "thumb": "https://cdn2.y8.com/cloudimage/ants_warriors/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405665/file/w180h135_webp-3f618074e2bab91cbfabc8934df2303c.webp",
     "source": "y8"
   },
   {
@@ -26782,7 +26782,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battleship free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battleship_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/battleship_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/61973/file/w180h135_webp-628ac6bd0f8003d3f73e76c66aadbec5.webp",
     "source": "y8"
   },
   {
@@ -26791,7 +26791,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Day D Tower Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/day_d_tower_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/day_d_tower_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403961/file/w180h135_webp-36445fce0527749553025b3128115706.webp",
     "source": "y8"
   },
   {
@@ -26800,7 +26800,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Demon Raid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/demon_raid",
-    "thumb": "https://cdn2.y8.com/cloudimage/demon_raid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26577/file/w180h135_webp-cbae90a645ca7bb2de6c0ec2dfc69e01.webp",
     "source": "y8"
   },
   {
@@ -26809,7 +26809,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Draw Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draw_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/draw_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23505/file/w180h135_webp-fac39d5748da5cf9b05fec47d9dbdbd4.webp",
     "source": "y8"
   },
   {
@@ -26818,7 +26818,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Build Your Zombie Horde free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/build_your_zombie_horde",
-    "thumb": "https://cdn2.y8.com/cloudimage/build_your_zombie_horde/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386145/file/w180h135_webp-0ef677af4bc260554c944338a2efc1c2.webp",
     "source": "y8"
   },
   {
@@ -26827,7 +26827,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Drago Warrior Tower Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/drago_warrior_tower_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/drago_warrior_tower_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400005/file/w180h135_webp-d170fa09802fb5180dbe2f85777da815.webp",
     "source": "y8"
   },
   {
@@ -26836,7 +26836,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Classic Checkers free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_checkers_",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_checkers_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405955/file/w180h135_webp-565a903727d5814b8958baf7149c4d27.webp",
     "source": "y8"
   },
   {
@@ -26845,7 +26845,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play City Defense 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_defense_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_defense_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26279/file/w180h135_webp-f6c02de9bca2beef4a53732b87111bb6.webp",
     "source": "y8"
   },
   {
@@ -26854,7 +26854,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Ships free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_ships_",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_ships_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/84037/file/w180h135_webp-3ff53eaf0e545a5dc9181e8b63c36282.webp",
     "source": "y8"
   },
   {
@@ -26863,7 +26863,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Age Of Heroes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/age_of_heroes",
-    "thumb": "https://cdn2.y8.com/cloudimage/age_of_heroes/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401997/file/w180h135_webp-bd3f7b0b9364aa3f960ef8d70d95ea89.webp",
     "source": "y8"
   },
   {
@@ -26872,7 +26872,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Devil Room free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/devil_room",
-    "thumb": "https://cdn2.y8.com/cloudimage/devil_room/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26147/file/w180h135_webp-b5463095c9542d35acd586524c09d694.webp",
     "source": "y8"
   },
   {
@@ -26881,7 +26881,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Black Navy War 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/black_navy_war_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/black_navy_war_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/173831/file/w180h135_webp-fccdd00e6813a5ba097c83ba7b8e5cd2.webp",
     "source": "y8"
   },
   {
@@ -26890,7 +26890,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Count Escape Rush free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/count_escape_rush",
-    "thumb": "https://cdn2.y8.com/cloudimage/count_escape_rush/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/13765/file/w180h135_webp-6162422e35606fe419df5bfd22a116a4.webp",
     "source": "y8"
   },
   {
@@ -26899,7 +26899,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bricks Crusher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bricks_crusher",
-    "thumb": "https://cdn2.y8.com/cloudimage/bricks_crusher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/45635/file/w180h135_webp-b7efa4365d227b39dd6ce801d5d6c791.webp",
     "source": "y8"
   },
   {
@@ -26908,7 +26908,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Coup Ahoo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/coup_ahoo",
-    "thumb": "https://cdn2.y8.com/cloudimage/coup_ahoo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22489/file/w180h135_webp-d5ab280c46a2a5eba9d729cfefd7fede.webp",
     "source": "y8"
   },
   {
@@ -26917,7 +26917,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Age Of War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/age_of_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/age_of_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386345/file/w180h135_webp-f3c444ad2499afd206c12167ded3afd9.webp",
     "source": "y8"
   },
   {
@@ -26926,7 +26926,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Archery Bastions Castle War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archery_bastions_castle_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/archery_bastions_castle_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21889/file/w180h135_webp-881ae879ada89bbd71cdfc0a4281b2b9.webp",
     "source": "y8"
   },
   {
@@ -26935,7 +26935,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cursed Treasure One-And-A-Half free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cursed_treasure_one-and-a-half",
-    "thumb": "https://cdn2.y8.com/cloudimage/cursed_treasure_one-and-a-half/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/32487/file/w180h135_webp-da1137be93c89b1d13a48b7818471ce8.webp",
     "source": "y8"
   },
   {
@@ -26944,7 +26944,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bloons Td 6 Scratch Remake free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloons_td_6_scratch_remake",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloons_td_6_scratch_remake/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/30291/file/w180h135_webp-8434414ed4d7ccfffc079ed84cd01c29.webp",
     "source": "y8"
   },
   {
@@ -26953,7 +26953,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battleships 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battleships_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/battleships_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383703/file/w180h135_webp-4e1e7f6d97273b8615160b3d300af1ec.webp",
     "source": "y8"
   },
   {
@@ -26962,7 +26962,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play City War 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_war_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_war_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37671/file/w180h135_webp-afd389ec2d6706116f3717ae52d91b78.webp",
     "source": "y8"
   },
   {
@@ -26971,7 +26971,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Avenger Guard free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/avenger_guard",
-    "thumb": "https://cdn2.y8.com/cloudimage/avenger_guard/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/396517/file/w180h135_webp-a51a71df21af7a75cbb1493412a5ea81.webp",
     "source": "y8"
   },
   {
@@ -26980,7 +26980,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Castle Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/146135/file/w180h135_webp-6f3b517d473bdd3167c1f03aa9bd3ae3.webp",
     "source": "y8"
   },
   {
@@ -26989,7 +26989,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Draughts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/draughts_",
-    "thumb": "https://cdn2.y8.com/cloudimage/draughts_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79357/file/w180h135_webp-650d5a0f66b7bb8f203b22e05f8182fc.webp",
     "source": "y8"
   },
   {
@@ -26998,7 +26998,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Army Run Merge free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_run_merge",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_run_merge/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/8949/file/w180h135_webp-295a02fa639710dbacf5edfd168d0a5d.webp",
     "source": "y8"
   },
   {
@@ -27007,7 +27007,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bloons Tower Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloons_tower_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloons_tower_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149679/file/w180h135_webp-73d628e1b853068434d8d5bdde05b7f2.webp",
     "source": "y8"
   },
   {
@@ -27016,7 +27016,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Asgard Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asgard_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/asgard_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408155/file/w180h135_webp-3e32c9f833e059aff02c056eca19a11d.webp",
     "source": "y8"
   },
   {
@@ -27025,7 +27025,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cursed Treasure 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cursed_treasure_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/cursed_treasure_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/140861/file/w180h135_webp-0bf5e2e03afca1786867648871f24566.webp",
     "source": "y8"
   },
   {
@@ -27034,7 +27034,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Gear free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_gear",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_gear/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/42433/file/w180h135_webp-108ce36df28bd726fe69166b3ec11688.webp",
     "source": "y8"
   },
   {
@@ -27043,7 +27043,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cursed Treasure Level Pack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cursed_treasure_level_pack_",
-    "thumb": "https://cdn2.y8.com/cloudimage/cursed_treasure_level_pack_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/110461/file/w180h135_webp-638a1f0bb39353190103995fee494769.webp",
     "source": "y8"
   },
   {
@@ -27052,7 +27052,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Army Defence Dino Shoot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_defence_dino_shoot",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_defence_dino_shoot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26977/file/w180h135_webp-9135f80360b545f4268e2d680103cc4d.webp",
     "source": "y8"
   },
   {
@@ -27061,7 +27061,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Heroes 2012 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_heroes_2012",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_heroes_2012/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/185261/file/w180h135_webp-e2cf43998760c9d23708dd32aa0e09df.webp",
     "source": "y8"
   },
   {
@@ -27070,7 +27070,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Compact Conflict free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/compact_conflict",
-    "thumb": "https://cdn2.y8.com/cloudimage/compact_conflict/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/116411/file/w180h135_webp-fb0ac3a190af5bc78228770a1a482134.webp",
     "source": "y8"
   },
   {
@@ -27079,7 +27079,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cat Survivors free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_survivors",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_survivors/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391057/file/w180h135_webp-5133a28174cf513c0c947051bf210035.webp",
     "source": "y8"
   },
   {
@@ -27088,7 +27088,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Color Conquest Territory War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_conquest_territory_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_conquest_territory_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398647/file/w180h135_webp-bf290e7fb780b42c39a6cb24bf442f19.webp",
     "source": "y8"
   },
   {
@@ -27097,7 +27097,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Gear 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_gear_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_gear_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/398759/file/w180h135_webp-159564ed4e7157133ca426981d7a210f.webp",
     "source": "y8"
   },
   {
@@ -27106,7 +27106,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Castle Defense Isometric free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_defense_isometric",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_defense_isometric/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/63729/file/w180h135_webp-d9d1dde21c8a0fd4006dfadb99041cea.webp",
     "source": "y8"
   },
   {
@@ -27115,7 +27115,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bloons Tower Defense 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloons_tower_defense_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloons_tower_defense_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/149681/file/w180h135_webp-8ae96caf75c7336bfeba83b5bf8071f4.webp",
     "source": "y8"
   },
   {
@@ -27124,7 +27124,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle City free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_city",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_city/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/144913/file/w180h135_webp-13a62803c22dcedb0dcf0cdb828b843b.webp",
     "source": "y8"
   },
   {
@@ -27133,7 +27133,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Chicken Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chicken_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/chicken_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342789/file/w180h135_webp-f079812b0868b395ea752d7d9edb5bd2.webp",
     "source": "y8"
   },
   {
@@ -27142,7 +27142,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Destruction Of Stickman Zombie free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/destruction_of_stickman_zombie",
-    "thumb": "https://cdn2.y8.com/cloudimage/destruction_of_stickman_zombie/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6513/file/w180h135_webp-956b0f350163ce647a8d79871ce2e24b.webp",
     "source": "y8"
   },
   {
@@ -27151,7 +27151,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Mechs free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_mechs",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_mechs/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/155861/file/w180h135_webp-21c78b9d6d358478fddca778d624b81e.webp",
     "source": "y8"
   },
   {
@@ -27160,7 +27160,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Apocalipseed free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apocalipseed",
-    "thumb": "https://cdn2.y8.com/cloudimage/apocalipseed/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/73579/file/w180h135_webp-c689d9e438f3dd91bd65003cb15a05e3.webp",
     "source": "y8"
   },
   {
@@ -27169,7 +27169,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Checkers With Trump free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/checkers_with_trump",
-    "thumb": "https://cdn2.y8.com/cloudimage/checkers_with_trump/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408315/file/w180h135_webp-0d0fc56e5b6ee47204a5b715b593d597.webp",
     "source": "y8"
   },
   {
@@ -27178,7 +27178,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Capybara Go free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/capybara_go_",
-    "thumb": "https://cdn2.y8.com/cloudimage/capybara_go_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5165/file/w180h135_webp-1000bd2de3aae539c39e844439e04758.webp",
     "source": "y8"
   },
   {
@@ -27187,7 +27187,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Backyard Buzzing free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backyard_buzzing",
-    "thumb": "https://cdn2.y8.com/cloudimage/backyard_buzzing/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/148975/file/w180h135_webp-bfe84d67102f341cec6f312caaadf68b.webp",
     "source": "y8"
   },
   {
@@ -27196,7 +27196,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Defense Of The Kingdom free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defense_of_the_kingdom",
-    "thumb": "https://cdn2.y8.com/cloudimage/defense_of_the_kingdom/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/35449/file/w180h135_webp-70e4f97ca1e26ac5f6c755a4c2e49d26.webp",
     "source": "y8"
   },
   {
@@ -27205,7 +27205,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bloons Tower Defense 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bloons_tower_defense_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/bloons_tower_defense_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/167833/file/w180h135_webp-1d17d84b8687e24666c2899d43666181.webp",
     "source": "y8"
   },
   {
@@ -27214,7 +27214,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play A Second Chance free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/a_second_chance",
-    "thumb": "https://cdn2.y8.com/cloudimage/a_second_chance/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/141979/file/w180h135_webp-cecb1b8abd0cb04ef622ad63840b078d.webp",
     "source": "y8"
   },
   {
@@ -27223,7 +27223,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Castle Woodwarf 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_woodwarf_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_woodwarf_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38693/file/w180h135_webp-04625c96b3892b2e913e94c2a7ac5e50.webp",
     "source": "y8"
   },
   {
@@ -27232,7 +27232,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Auto Necrochess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/auto_necrochess",
-    "thumb": "https://cdn2.y8.com/cloudimage/auto_necrochess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7883/file/w180h135_webp-d9172bcab02c511f5be865b34e8a9e14.webp",
     "source": "y8"
   },
   {
@@ -27241,7 +27241,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cursed Treasure-Dont Touch My Gems free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cursed_treasure-dont_touch_my_gems",
-    "thumb": "https://cdn2.y8.com/cloudimage/cursed_treasure-dont_touch_my_gems/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/384867/file/w180h135_webp-87ae958974c7f1b530bd7fcffe2d83c9.webp",
     "source": "y8"
   },
   {
@@ -27250,7 +27250,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Civilizations Wars Master Edition free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/civilizations_wars_master_edition",
-    "thumb": "https://cdn2.y8.com/cloudimage/civilizations_wars_master_edition/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/62491/file/w180h135_webp-8b896e45ccd58bd9c6476a5f908d58f9.webp",
     "source": "y8"
   },
   {
@@ -27259,7 +27259,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dots And Boxes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dots_and_boxes_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/dots_and_boxes_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21255/file/w180h135_webp-dfca138fdbeaa9fe58237ae23b128a68.webp",
     "source": "y8"
   },
   {
@@ -27268,7 +27268,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play 2 Player Online Chess free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/2_player_online_chess",
-    "thumb": "https://cdn2.y8.com/cloudimage/2_player_online_chess/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31833/file/w180h135_webp-9ae6244dfd52814822e3a81ef729dbd9.webp",
     "source": "y8"
   },
   {
@@ -27277,7 +27277,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Archer Castle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_castle",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_castle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29775/file/w180h135_webp-d8525b9f0f24bb228549e3796d6afdf3.webp",
     "source": "y8"
   },
   {
@@ -27286,7 +27286,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Connect 4 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/connect_4",
-    "thumb": "https://cdn2.y8.com/cloudimage/connect_4/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/348341/file/w180h135_webp-5fb3143f49443f675a2efc2e5871faa9.webp",
     "source": "y8"
   },
   {
@@ -27295,7 +27295,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Defender free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defender_",
-    "thumb": "https://cdn2.y8.com/cloudimage/defender_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/65527/file/w180h135_webp-5e517493f7a117d02a540a8ce04b9acc.webp",
     "source": "y8"
   },
   {
@@ -27304,7 +27304,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Call Of Tanks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/call_of_tanks",
-    "thumb": "https://cdn2.y8.com/cloudimage/call_of_tanks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/27933/file/w180h135_webp-a25f7d75ecdf02378bc0c7bef2aabdfc.webp",
     "source": "y8"
   },
   {
@@ -27313,7 +27313,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Assault Fury free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/assault_fury",
-    "thumb": "https://cdn2.y8.com/cloudimage/assault_fury/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48279/file/w180h135_webp-ce0e8211f9d697686f8dc6b4a1a8fa23.webp",
     "source": "y8"
   },
   {
@@ -27322,7 +27322,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Ant Smasher free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ant_smasher",
-    "thumb": "https://cdn2.y8.com/cloudimage/ant_smasher/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/25995/file/w180h135_webp-9ff90752c861448f3c92080ba9b06a15.webp",
     "source": "y8"
   },
   {
@@ -27331,7 +27331,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Angry Plants free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_plants",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_plants/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28111/file/w180h135_webp-a185aa4ccea29a5a21cd572b53dcd070.webp",
     "source": "y8"
   },
   {
@@ -27340,7 +27340,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Classic Tic Tac Toe free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_tic_tac_toe",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_tic_tac_toe/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/28043/file/w180h135_webp-188052a7fad7bad37aaec3486256ca9b.webp",
     "source": "y8"
   },
   {
@@ -27349,7 +27349,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Checkers 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/checkers_3d_",
-    "thumb": "https://cdn2.y8.com/cloudimage/checkers_3d_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29967/file/w180h135_webp-e6d989f5ab8783e047a4e5e40e109a4b.webp",
     "source": "y8"
   },
   {
@@ -27358,7 +27358,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Autobot Stronghold free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/autobot_stronghold",
-    "thumb": "https://cdn2.y8.com/cloudimage/autobot_stronghold/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/164041/file/w180h135_webp-66b34bf414157b7abd80f26047077c51.webp",
     "source": "y8"
   },
   {
@@ -27367,7 +27367,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Classic Checkers Forest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_checkers_forest",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_checkers_forest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/405267/file/w180h135_webp-e93affacf316597eac7d884ea332ad53.webp",
     "source": "y8"
   },
   {
@@ -27376,7 +27376,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle City Tank free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_city_tank",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_city_tank/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/184917/file/w180h135_webp-6224512a7ec6d7236a18197a9e24e8d2.webp",
     "source": "y8"
   },
   {
@@ -27385,7 +27385,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bridge Wars free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bridge_wars",
-    "thumb": "https://cdn2.y8.com/cloudimage/bridge_wars/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19519/file/w180h135_webp-060c6a7884f31edfe110a7a00749c1c4.webp",
     "source": "y8"
   },
   {
@@ -27394,7 +27394,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Chess For Free free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chess_for_free",
-    "thumb": "https://cdn2.y8.com/cloudimage/chess_for_free/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/7921/file/w180h135_webp-8fafd85975d62de4bebf83369918f8e9.webp",
     "source": "y8"
   },
   {
@@ -27403,7 +27403,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Ancient Wars Caesar free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ancient_wars_caesar",
-    "thumb": "https://cdn2.y8.com/cloudimage/ancient_wars_caesar/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386543/file/w180h135_webp-911390852389e8b9cba090493457d2a4.webp",
     "source": "y8"
   },
   {
@@ -27412,7 +27412,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Air Traffic Control free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_traffic_control_",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_traffic_control_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37941/file/w180h135_webp-d8c4a45b155b8afbb457cc0434af4580.webp",
     "source": "y8"
   },
   {
@@ -27421,7 +27421,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Decadungeon free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/decadungeon",
-    "thumb": "https://cdn2.y8.com/cloudimage/decadungeon/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/17883/file/w180h135_webp-38b1a36087929286de07fdd2a7e1586e.webp",
     "source": "y8"
   },
   {
@@ -27430,7 +27430,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Cards free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_cards",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_cards/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/4197/file/w180h135_webp-7ec0ee483996804a208fd0129fe9db16.webp",
     "source": "y8"
   },
   {
@@ -27439,7 +27439,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Elemental Fortress free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/elemental_fortress",
-    "thumb": "https://cdn2.y8.com/cloudimage/elemental_fortress/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/117787/file/w180h135_webp-96b5e63ff2dc928e94b272e7b2644d3d.webp",
     "source": "y8"
   },
   {
@@ -27448,7 +27448,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cow Vs Vikings free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cow_vs_vikings",
-    "thumb": "https://cdn2.y8.com/cloudimage/cow_vs_vikings/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/69019/file/w180h135_webp-9ba3d8a4e3c3040e91b946f8e992de86.webp",
     "source": "y8"
   },
   {
@@ -27457,7 +27457,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Aegis One free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aegis_one",
-    "thumb": "https://cdn2.y8.com/cloudimage/aegis_one/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91835/file/w180h135_webp-6feeb55cbb5c464e5b0c32760ae8011e.webp",
     "source": "y8"
   },
   {
@@ -27466,7 +27466,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bug War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bug_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/bug_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/385511/file/w180h135_webp-088e97c290c6632b3e0e8ed787a98399.webp",
     "source": "y8"
   },
   {
@@ -27475,7 +27475,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Animals Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/animals_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/animals_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/399861/file/w180h135_webp-2ea309e9e5bce49f23c8fa059eca4b20.webp",
     "source": "y8"
   },
   {
@@ -27484,7 +27484,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dragon Fire And Fury free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dragon_fire_and_fury",
-    "thumb": "https://cdn2.y8.com/cloudimage/dragon_fire_and_fury/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/106523/file/w180h135_webp-721cfb5ad9f5f03b34c7a0b7688d9e32.webp",
     "source": "y8"
   },
   {
@@ -27493,7 +27493,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dots And Boxes free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dots_and_boxes_",
-    "thumb": "https://cdn2.y8.com/cloudimage/dots_and_boxes_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/79347/file/w180h135_webp-2eba79c9c9155b9f08dc771e4eab0a74.webp",
     "source": "y8"
   },
   {
@@ -27502,7 +27502,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Arcalona free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/arcalona",
-    "thumb": "https://cdn2.y8.com/cloudimage/arcalona/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91747/file/w180h135_webp-1ae35a86175301c5e9e9446f0c4ccaf9.webp",
     "source": "y8"
   },
   {
@@ -27511,7 +27511,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dry Fire free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dry_fire",
-    "thumb": "https://cdn2.y8.com/cloudimage/dry_fire/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/145567/file/w180h135_webp-0016571241552803bed4e46ed86cc885.webp",
     "source": "y8"
   },
   {
@@ -27520,7 +27520,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cat Vs Unicorn free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cat_vs_unicorn",
-    "thumb": "https://cdn2.y8.com/cloudimage/cat_vs_unicorn/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/51289/file/w180h135_webp-a20f423716bb33bdbcbb2b5866022575.webp",
     "source": "y8"
   },
   {
@@ -27529,7 +27529,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Castle Defense Html free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_defense_html",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_defense_html/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33267/file/w180h135_webp-f38d4122d21413cd1594446fe7ee131f.webp",
     "source": "y8"
   },
   {
@@ -27538,7 +27538,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Color Roller 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/color_roller_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/color_roller_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/82963/file/w180h135_webp-8269266ee3cbd41b4000dea9431cc143.webp",
     "source": "y8"
   },
   {
@@ -27547,7 +27547,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Backgammon Duel free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backgammon_duel",
-    "thumb": "https://cdn2.y8.com/cloudimage/backgammon_duel/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391515/file/w180h135_webp-25f80788fd6b7cbefd967b53b3f46559.webp",
     "source": "y8"
   },
   {
@@ -27556,7 +27556,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Blons free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/blons",
-    "thumb": "https://cdn2.y8.com/cloudimage/blons/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/22941/file/w180h135_webp-86d868a22d4588bfe2756f065cec3dd2.webp",
     "source": "y8"
   },
   {
@@ -27565,7 +27565,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bubble Fish free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bubble_fish_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/bubble_fish_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20439/file/w180h135_webp-6151b81cf7f8dc256b4f91bd6dd75388.webp",
     "source": "y8"
   },
   {
@@ -27574,7 +27574,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Ball Stack 3d free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/ball_stack_3d",
-    "thumb": "https://cdn2.y8.com/cloudimage/ball_stack_3d/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21021/file/w180h135_webp-165233951746acfcfc2a76728cc904df.webp",
     "source": "y8"
   },
   {
@@ -27583,7 +27583,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bomb It 2 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bomb_it_2",
-    "thumb": "https://cdn2.y8.com/cloudimage/bomb_it_2/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/157371/file/w180h135_webp-995e71827df5654dd079c6985b2c9687.webp",
     "source": "y8"
   },
   {
@@ -27592,7 +27592,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Domino Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/domino_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/domino_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/20627/file/w180h135_webp-6e842fa8d148c62f4852c6788bc631c6.webp",
     "source": "y8"
   },
   {
@@ -27601,7 +27601,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dualforce Idle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dualforce_idle",
-    "thumb": "https://cdn2.y8.com/cloudimage/dualforce_idle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/92501/file/w180h135_webp-2abde79bf63ddc44bf868704703e85ab.webp",
     "source": "y8"
   },
   {
@@ -27610,7 +27610,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Castle Defender Saga free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/castle_defender_saga",
-    "thumb": "https://cdn2.y8.com/cloudimage/castle_defender_saga/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/34609/file/w180h135_webp-f7811200724a450937efa52bb88eafc1.webp",
     "source": "y8"
   },
   {
@@ -27619,7 +27619,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Classic Mancala free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_mancala",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_mancala/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5995/file/w180h135_webp-962a64640f03ad257af0d02b00f72ec8.webp",
     "source": "y8"
   },
   {
@@ -27628,7 +27628,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Doodle Halloween Momo Cat Sea Magic free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/doodle_halloween_momo_cat_sea_magic",
-    "thumb": "https://cdn2.y8.com/cloudimage/doodle_halloween_momo_cat_sea_magic/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/394339/file/w180h135_webp-83f544f7faacef747bcd5182b4ea7930.webp",
     "source": "y8"
   },
   {
@@ -27637,7 +27637,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Awesome Conquest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/awesome_conquest",
-    "thumb": "https://cdn2.y8.com/cloudimage/awesome_conquest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388307/file/w180h135_webp-39134b204422f4f2b6a4245c24bd7b1a.webp",
     "source": "y8"
   },
   {
@@ -27646,7 +27646,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Catch Thief free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/catch_thief",
-    "thumb": "https://cdn2.y8.com/cloudimage/catch_thief/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/383329/file/w180h135_webp-ccec28b00853554344e1a29abc140a6f.webp",
     "source": "y8"
   },
   {
@@ -27655,7 +27655,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Classic Backgammon Multiplayer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/classic_backgammon_multiplayer",
-    "thumb": "https://cdn2.y8.com/cloudimage/classic_backgammon_multiplayer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/105801/file/w180h135_webp-8a43111780955075f45efd8e4cfab58c.webp",
     "source": "y8"
   },
   {
@@ -27664,7 +27664,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cards Keeper free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cards_keeper",
-    "thumb": "https://cdn2.y8.com/cloudimage/cards_keeper/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/100567/file/w180h135_webp-5452a263a9778544ab049babc2c6b1f9.webp",
     "source": "y8"
   },
   {
@@ -27673,7 +27673,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Angry Plants Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/angry_plants_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/angry_plants_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/400811/file/w180h135_webp-9d4e0a5e683fb4b57295583954a12a00.webp",
     "source": "y8"
   },
   {
@@ -27682,7 +27682,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Chinese Checkers Master free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chinese_checkers_master",
-    "thumb": "https://cdn2.y8.com/cloudimage/chinese_checkers_master/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/10641/file/w180h135_webp-9563c43dbdcd0ff55a904849abcb2f15.webp",
     "source": "y8"
   },
   {
@@ -27691,7 +27691,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battling Zombies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battling_zombies",
-    "thumb": "https://cdn2.y8.com/cloudimage/battling_zombies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/23527/file/w180h135_webp-e95e0654566ac46cb60254d9cc40a2f8.webp",
     "source": "y8"
   },
   {
@@ -27700,7 +27700,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Call Of War World War Ii free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/call_of_war_world_war_ii",
-    "thumb": "https://cdn2.y8.com/cloudimage/call_of_war_world_war_ii/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29097/file/w180h135_webp-717262dad7865ee49345a4503684d359.webp",
     "source": "y8"
   },
   {
@@ -27709,7 +27709,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Archer Defense Advanced free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/archer_defense_advanced",
-    "thumb": "https://cdn2.y8.com/cloudimage/archer_defense_advanced/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/6271/file/w180h135_webp-59d1a37e6e10b478d2bd4599043454b7.webp",
     "source": "y8"
   },
   {
@@ -27718,7 +27718,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Click Battle Madness free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/click_battle_madness",
-    "thumb": "https://cdn2.y8.com/cloudimage/click_battle_madness/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/142863/file/w180h135_webp-b193de27246d0e067944e9e933042f0e.webp",
     "source": "y8"
   },
   {
@@ -27727,7 +27727,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Crusader Defence Level Pack Ii free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crusader_defence_level_pack_ii",
-    "thumb": "https://cdn2.y8.com/cloudimage/crusader_defence_level_pack_ii/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/50955/file/w180h135_webp-8121dd53ef1ca8a19a4a6bad213ead3e.webp",
     "source": "y8"
   },
   {
@@ -27736,7 +27736,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Asteroid Shield Tile Matching Space Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/asteroid_shield_tile_matching_space_defense",
-    "thumb": "https://cdn2.y8.com/cloudimage/asteroid_shield_tile_matching_space_defense/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26599/file/w180h135_webp-ad3a6b16a1bdb33fe71ebc905fa77439.webp",
     "source": "y8"
   },
   {
@@ -27745,7 +27745,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Creeper World 3 Abraxis free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/creeper_world_3_abraxis",
-    "thumb": "https://cdn2.y8.com/cloudimage/creeper_world_3_abraxis/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/110233/file/w180h135_webp-8a52512ea8c3624f068ff8bb6d96b900.webp",
     "source": "y8"
   },
   {
@@ -27754,7 +27754,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Aglobo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/aglobo",
-    "thumb": "https://cdn2.y8.com/cloudimage/aglobo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19551/file/w180h135_webp-410806a56b7523147ee7a529cc06a6a6.webp",
     "source": "y8"
   },
   {
@@ -27763,7 +27763,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Card Quest 10 Minute Adventure free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/card_quest_10_minute_adventure",
-    "thumb": "https://cdn2.y8.com/cloudimage/card_quest_10_minute_adventure/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/386179/file/w180h135_webp-4656697c3c38afc2e8b93d22fac4750f.webp",
     "source": "y8"
   },
   {
@@ -27772,7 +27772,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Backgammon Narde Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/backgammon_narde_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/backgammon_narde_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/15433/file/w180h135_webp-9e04447e316ea480acc45874d648b243.webp",
     "source": "y8"
   },
   {
@@ -27781,7 +27781,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Card Hearts free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/card_hearts",
-    "thumb": "https://cdn2.y8.com/cloudimage/card_hearts/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/16529/file/w180h135_webp-58e2c8f11fb9ca8a1dbef33f6d6c570b.webp",
     "source": "y8"
   },
   {
@@ -27790,7 +27790,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Clash Of Navies free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clash_of_navies",
-    "thumb": "https://cdn2.y8.com/cloudimage/clash_of_navies/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/31157/file/w180h135_webp-f784e9a47b0e9d6fa6cbe49839c06a07.webp",
     "source": "y8"
   },
   {
@@ -27799,7 +27799,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play 3d Chess Room free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/3d_chess_room",
-    "thumb": "https://cdn2.y8.com/cloudimage/3d_chess_room/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/408163/file/w180h135_webp-33a34234c0d883a92cf46a2df1ed8c4c.webp",
     "source": "y8"
   },
   {
@@ -27808,7 +27808,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bullet Escape 3d Sniper Shoot free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bullet_escape_3d_sniper_shoot",
-    "thumb": "https://cdn2.y8.com/cloudimage/bullet_escape_3d_sniper_shoot/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/342579/file/w180h135_webp-c1105a2d411871e086d4965bd5aac9c3.webp",
     "source": "y8"
   },
   {
@@ -27817,7 +27817,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Of Banners free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_of_banners",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_of_banners/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/396471/file/w180h135_webp-e4915fcc63bac3ce0e859e9af6904860.webp",
     "source": "y8"
   },
   {
@@ -27826,7 +27826,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cosmo Pirates Demo free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cosmo_pirates_demo",
-    "thumb": "https://cdn2.y8.com/cloudimage/cosmo_pirates_demo/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/29907/file/w180h135_webp-a9d54b2caa922baacd850012602dab96.webp",
     "source": "y8"
   },
   {
@@ -27835,7 +27835,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Crowded Dungeon Crawler free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crowded_dungeon_crawler",
-    "thumb": "https://cdn2.y8.com/cloudimage/crowded_dungeon_crawler/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86215/file/w180h135_webp-cef0f8f2cce29b1ae5d43c9196c3c620.webp",
     "source": "y8"
   },
   {
@@ -27844,7 +27844,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Clash Of Vikings free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clash_of_vikings",
-    "thumb": "https://cdn2.y8.com/cloudimage/clash_of_vikings/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/38381/file/w180h135_webp-8d1e16e529b17ca15724aff3e977c8c7.webp",
     "source": "y8"
   },
   {
@@ -27853,7 +27853,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Crusader Defence free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crusader_defence",
-    "thumb": "https://cdn2.y8.com/cloudimage/crusader_defence/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/101653/file/w180h135_webp-57457dcd927e6042470405880a3f4912.webp",
     "source": "y8"
   },
   {
@@ -27862,7 +27862,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Dynasty War free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/dynasty_war",
-    "thumb": "https://cdn2.y8.com/cloudimage/dynasty_war/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/178067/file/w180h135_webp-b91fcf4782bd893e1e462873410c60db.webp",
     "source": "y8"
   },
   {
@@ -27871,7 +27871,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Carcassonne free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/carcassonne",
-    "thumb": "https://cdn2.y8.com/cloudimage/carcassonne/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/407127/file/w180h135_webp-a6308c479fd2f1f7c14a78a0fc7d4f82.webp",
     "source": "y8"
   },
   {
@@ -27880,7 +27880,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Darkness Survivors free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/darkness_survivors",
-    "thumb": "https://cdn2.y8.com/cloudimage/darkness_survivors/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/9565/file/w180h135_webp-1bcf5c4b18ce87997dfa13f848d3dbea.webp",
     "source": "y8"
   },
   {
@@ -27889,7 +27889,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Boxzilla free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/boxzilla",
-    "thumb": "https://cdn2.y8.com/cloudimage/boxzilla/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/391173/file/w180h135_webp-537accef208c0f8c5527767e37051d4b.webp",
     "source": "y8"
   },
   {
@@ -27898,7 +27898,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Army Raid free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/army_raid",
-    "thumb": "https://cdn2.y8.com/cloudimage/army_raid/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/26971/file/w180h135_webp-f4b5d29142486f6f6e0b765cbed47b99.webp",
     "source": "y8"
   },
   {
@@ -27907,7 +27907,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Domino Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/domino_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/domino_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/33129/file/w180h135_webp-61e6d5008be3028b93ba7c4a7a7371fb.webp",
     "source": "y8"
   },
   {
@@ -27916,7 +27916,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Hamsters free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_hamsters",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_hamsters/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/5171/file/w180h135_webp-88384900c627b76fbecde84811be5cac.webp",
     "source": "y8"
   },
   {
@@ -27925,7 +27925,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bow Master Online free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bow_master_online",
-    "thumb": "https://cdn2.y8.com/cloudimage/bow_master_online/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/49933/file/w180h135_webp-0c20d434ca8ecbc8ec79711f67151201.webp",
     "source": "y8"
   },
   {
@@ -27934,7 +27934,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battlecoast free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battlecoast",
-    "thumb": "https://cdn2.y8.com/cloudimage/battlecoast/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388489/file/w180h135_webp-d2ba9900c5517f3efa5b9519e312d116.webp",
     "source": "y8"
   },
   {
@@ -27943,7 +27943,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Corona Virus Attack free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/corona_virus_attack",
-    "thumb": "https://cdn2.y8.com/cloudimage/corona_virus_attack/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/56939/file/w180h135_webp-05258d4cd8a6205ac8020c0eba62e28c.webp",
     "source": "y8"
   },
   {
@@ -27952,7 +27952,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defense_",
-    "thumb": "https://cdn2.y8.com/cloudimage/defense_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/86771/file/w180h135_webp-9ad53c9d2291397ef1d2450eff2986ed.webp",
     "source": "y8"
   },
   {
@@ -27961,7 +27961,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Awesome Seaquest free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/awesome_seaquest",
-    "thumb": "https://cdn2.y8.com/cloudimage/awesome_seaquest/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/105119/file/w180h135_webp-3852e5161d70addf149e3cc2b526427a.webp",
     "source": "y8"
   },
   {
@@ -27970,7 +27970,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Captain Rogers Defense Of Karmax-3 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/captain_rogers_defense_of_karmax-3",
-    "thumb": "https://cdn2.y8.com/cloudimage/captain_rogers_defense_of_karmax-3/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/115237/file/w180h135_webp-80ad14c02ba327a2e4de3f55f645e550.webp",
     "source": "y8"
   },
   {
@@ -27979,7 +27979,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Atari Missile Command free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/atari_missile_command",
-    "thumb": "https://cdn2.y8.com/cloudimage/atari_missile_command/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/91655/file/w180h135_webp-2d8fbfc406d14e2e6a368b7c8073e0eb.webp",
     "source": "y8"
   },
   {
@@ -27988,7 +27988,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Alien Defense free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_defense_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_defense_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/58899/file/w180h135_webp-bb846aa80b6dd325dfb4bb1cd2432bac.webp",
     "source": "y8"
   },
   {
@@ -27997,7 +27997,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play City Idle Counter Terrorists free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/city_idle_counter_terrorists",
-    "thumb": "https://cdn2.y8.com/cloudimage/city_idle_counter_terrorists/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/2467/file/w180h135_webp-7c773392905d1dedffa406c25d4172ac.webp",
     "source": "y8"
   },
   {
@@ -28006,7 +28006,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cleaning The Islands free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cleaning_the_islands",
-    "thumb": "https://cdn2.y8.com/cloudimage/cleaning_the_islands/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21377/file/w180h135_webp-d3f38c5cf2f5faf7e4e3a6c539849faa.webp",
     "source": "y8"
   },
   {
@@ -28015,7 +28015,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Crazy War Merge Battle free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/crazy_war_merge_battle",
-    "thumb": "https://cdn2.y8.com/cloudimage/crazy_war_merge_battle/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/21073/file/w180h135_webp-a8b051813339f4419589185aa30952c0.webp",
     "source": "y8"
   },
   {
@@ -28024,7 +28024,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Defender Of The Village free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/defender_of_the_village",
-    "thumb": "https://cdn2.y8.com/cloudimage/defender_of_the_village/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/388607/file/w180h135_webp-afd161695a68eff1b891876f9aa45757.webp",
     "source": "y8"
   },
   {
@@ -28033,7 +28033,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Air Lift free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/air_lift",
-    "thumb": "https://cdn2.y8.com/cloudimage/air_lift/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/37673/file/w180h135_webp-1e6784ecc08450329b121cd1bd9b4752.webp",
     "source": "y8"
   },
   {
@@ -28042,7 +28042,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Balloon Ride free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/balloon_ride_html5",
-    "thumb": "https://cdn2.y8.com/cloudimage/balloon_ride_html5/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/64345/file/w180h135_webp-5c5910e0d3d1d56370cda3b4de8e1d09.webp",
     "source": "y8"
   },
   {
@@ -28051,7 +28051,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle City 2020 free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_city_2020",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_city_2020/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/48465/file/w180h135_webp-cc96ea4491d0313511815371857d7fe9.webp",
     "source": "y8"
   },
   {
@@ -28060,7 +28060,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bubble Invasion free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bubble_invasion_",
-    "thumb": "https://cdn2.y8.com/cloudimage/bubble_invasion_/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/19961/file/w180h135_webp-f6d9d21eec059685210fdff102301d6b.webp",
     "source": "y8"
   },
   {
@@ -28069,7 +28069,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Chess Bosses free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/chess_bosses",
-    "thumb": "https://cdn2.y8.com/cloudimage/chess_bosses/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/403883/file/w180h135_webp-048fd63bf641a376cf56b1d88aa9b5bb.webp",
     "source": "y8"
   },
   {
@@ -28078,7 +28078,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Apocalypse Shelter free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/apocalypse_shelter",
-    "thumb": "https://cdn2.y8.com/cloudimage/apocalypse_shelter/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/401771/file/w180h135_webp-f1b5b3606e5bfa71ce8a32f20964cd06.webp",
     "source": "y8"
   },
   {
@@ -28087,7 +28087,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Battle Of Tanks free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/battle_of_tanks",
-    "thumb": "https://cdn2.y8.com/cloudimage/battle_of_tanks/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/66749/file/w180h135_webp-a6c95643241881a5bf70d7b4a37ca6c0.webp",
     "source": "y8"
   },
   {
@@ -28096,7 +28096,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Command Ant Conquer free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/command_ant_conquer",
-    "thumb": "https://cdn2.y8.com/cloudimage/command_ant_conquer/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/99281/file/w180h135_webp-4e04b5d6becdc4f64728e4bb78f61a3b.webp",
     "source": "y8"
   },
   {
@@ -28366,7 +28366,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Bounce Td free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/bounce_td",
-    "thumb": "https://cdn2.y8.com/cloudimage/bounce_td/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/402875/file/w180h135_webp-8ad963833b1a905ae9886c7939e2da01.webp",
     "source": "y8"
   },
   {
@@ -28384,7 +28384,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Cave Sokoban free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/cave_sokoban",
-    "thumb": "https://cdn2.y8.com/cloudimage/cave_sokoban/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/90991/file/w180h135_webp-e10620a8a48caca7ae1e5882e236393a.webp",
     "source": "y8"
   },
   {
@@ -28843,7 +28843,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Clicker Troops free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/clicker_troops",
-    "thumb": "https://cdn2.y8.com/cloudimage/clicker_troops/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/404023/file/w180h135_webp-fbbbceed2c88ebe54ab568289d5ee6d8.webp",
     "source": "y8"
   },
   {
@@ -28960,7 +28960,7 @@ const GAMES = [
     "category": "Strategy",
     "description": "Play Alien Planet free on EggerMath. No download required.",
     "embedUrl": "https://www.y8.com/embed/alien_planet",
-    "thumb": "https://cdn2.y8.com/cloudimage/alien_planet/thumb200.webp",
+    "thumb": "https://cdn2.y8.com/cloudimage/392789/file/w180h135_webp-2bf0d45da1914bc5c44bfc4474d00a7b.webp",
     "source": "y8"
   },
   {
