@@ -530,7 +530,11 @@
             _setupInfiniteScroll();
           });
       } else {
-        const filtered = [...GAMES].sort((a, b) => (b.trending ? 1 : 0) - (a.trending ? 1 : 0));
+        const filtered = [...GAMES].sort(function(a, b) {
+          if (a.source === 'gamepix' && b.source !== 'gamepix') return -1;
+          if (a.source !== 'gamepix' && b.source === 'gamepix') return 1;
+          return (b.trending ? 1 : 0) - (a.trending ? 1 : 0);
+        });
         gridTitle.innerHTML = `<span>🎮</span> ALL GAMES (${filtered.length})`;
         _renderedList = filtered;
         _renderBatch(Math.min(BATCH_SIZE, filtered.length));
@@ -668,7 +672,11 @@
       container.innerHTML = '';
       HSECTIONS.forEach(function(sec) {
         var games = GAMES.filter(sec.filter);
-        if (sec.label === 'Most Popular') games = games.sort(function(a,b){ return (b.plays||0)-(a.plays||0); });
+        if (sec.label === 'Most Popular') games = games.sort(function(a,b){
+          if (a.source === 'gamepix' && b.source !== 'gamepix') return -1;
+          if (a.source !== 'gamepix' && b.source === 'gamepix') return 1;
+          return (b.plays||0)-(a.plays||0);
+        });
         var totalCount = games.length;
         games = games.slice(0, sec.limit);
         if (games.length === 0) return;
@@ -746,7 +754,12 @@
     // ═══════════════════════════════════════════════════════════════
     (async function init() {
       await loadFavorites();
-      GAMES.sort(function(a,b){ return (b.plays||0)-(a.plays||0); });
+      GAMES.sort(function(a,b){
+        if (a.source === 'gamepix' && b.source !== 'gamepix') return -1;
+        if (a.source !== 'gamepix' && b.source === 'gamepix') return 1;
+        if (a.category === b.category) return (b.plays||0) - (a.plays||0);
+        return 0;
+      });
       renderHSections();
       renderCatBar();
       renderMainGrid();
