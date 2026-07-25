@@ -943,6 +943,18 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabase } = require('./supabase-config');
 
+        // Ensure game exists in games table (FK constraint on votes)
+        const { data: existingGame } = await supabase.from('games').select('id').eq('id', gameId).single();
+        if (!existingGame) {
+          await supabase.from('games').upsert({
+            id: gameId,
+            title: gameId.replace(/^(gp-|y8-|gm-)/, '').replace(/-/g, ' '),
+            category: 'Other',
+            likes: 0,
+            dislikes: 0
+          }, { onConflict: 'id' });
+        }
+
         const { data: existingRows } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = existingRows && existingRows.length > 0 ? existingRows[0].vote : null;
