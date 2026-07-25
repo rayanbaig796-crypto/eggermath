@@ -690,15 +690,6 @@
 
         var scrollWrap = document.createElement('div');
         scrollWrap.className = 'hscroll-scroll-wrap';
-        var arrowL = document.createElement('button');
-        arrowL.className = 'hscroll-arrow hscroll-arrow-left';
-        arrowL.innerHTML = '‹';
-        arrowL.setAttribute('aria-label', 'Scroll left');
-        var arrowR = document.createElement('button');
-        arrowR.className = 'hscroll-arrow hscroll-arrow-right';
-        arrowR.innerHTML = '›';
-        arrowR.setAttribute('aria-label', 'Scroll right');
-        scrollWrap.appendChild(arrowL);
 
         var row = document.createElement('div');
         row.className = 'hscroll-row';
@@ -715,11 +706,7 @@
           row.appendChild(card);
         });
         scrollWrap.appendChild(row);
-        scrollWrap.appendChild(arrowR);
         section.appendChild(scrollWrap);
-
-        arrowL.addEventListener('click', function() { row.scrollBy({ left: -400, behavior: 'smooth' }); });
-        arrowR.addEventListener('click', function() { row.scrollBy({ left: 400, behavior: 'smooth' }); });
 
         // Mouse drag-to-scroll (blocks click if dragged)
         (function(r) {
@@ -744,14 +731,6 @@
             if (didDrag) { e.preventDefault(); e.stopPropagation(); didDrag = false; }
           }, true);
         })(row);
-        row.addEventListener('scroll', function() {
-          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
-          arrowR.style.opacity = row.scrollLeft >= row.scrollWidth - row.clientWidth - 5 ? '0.3' : '1';
-        });
-        setTimeout(function() {
-          arrowL.style.opacity = row.scrollLeft <= 5 ? '0.3' : '1';
-          arrowR.style.opacity = row.scrollWidth <= row.clientWidth ? '0.3' : '1';
-        }, 200);
         container.appendChild(section);
       });
 
