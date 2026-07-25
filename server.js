@@ -908,15 +908,17 @@ const server = http.createServer(async (req, res) => {
     const gameId = votesMatch[1];
     const fingerprint = parsedUrl.query.fingerprint || '';
     try {
-      const { supabase, supabaseAdmin } = require('./supabase-config');
-      const { data: game } = await supabase.from('games').select('likes, dislikes').eq('id', gameId).single();
+      const { supabase } = require('./supabase-config');
+      const [{ data: allVotes }, { data: userRows }] = await Promise.all([
+        supabase.from('votes').select('vote').eq('game_id', gameId),
+        fingerprint ? supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint) : { data: [] }
+      ]);
+      let likes = 0, dislikes = 0;
+      (allVotes || []).forEach(function(r) { if (r.vote === 'like') likes++; else if (r.vote === 'dislike') dislikes++; });
       let userVote = null;
-      if (fingerprint) {
-        const { data: voteRows } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
-        if (voteRows && voteRows.length > 0) userVote = voteRows[0].vote;
-      }
+      if (userRows && userRows.length > 0) userVote = userRows[0].vote;
       res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-      res.end(JSON.stringify({ likes: game?.likes || 0, dislikes: game?.dislikes || 0, userVote }));
+      res.end(JSON.stringify({ likes: likes, dislikes: dislikes, userVote: userVote }));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: err.message }));
@@ -941,10 +943,7 @@ const server = http.createServer(async (req, res) => {
         }
         const { supabase } = require('./supabase-config');
 
-        const [{ data: existingRows }, { data: game }] = await Promise.all([
-          supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint),
-          supabase.from('games').select('likes,dislikes').eq('id', gameId).single()
-        ]);
+        const { data: existingRows } = await supabase.from('votes').select('vote').eq('game_id', gameId).eq('fingerprint', fingerprint);
 
         let oldVote = existingRows && existingRows.length > 0 ? existingRows[0].vote : null;
         let finalVote = null;
@@ -971,24 +970,14 @@ const server = http.createServer(async (req, res) => {
           finalVote = vote;
         }
 
-        let likes = game?.likes || 0;
-        let dislikes = game?.dislikes || 0;
+        const { data: allVotes } = await supabase.from('votes').select('vote').eq('game_id', gameId);
+        let likes = 0, dislikes = 0;
+        (allVotes || []).forEach(function(r) { if (r.vote === 'like') likes++; else if (r.vote === 'dislike') dislikes++; });
 
-        if (oldVote === 'like') likes--;
-        else if (oldVote === 'dislike') dislikes--;
-
-        if (vote !== oldVote) {
-          if (vote === 'like') likes++;
-          else if (vote === 'dislike') dislikes++;
-        }
-
-        if (likes < 0) likes = 0;
-        if (dislikes < 0) dislikes = 0;
-
-        await supabase.from('games').update({ likes, dislikes }).eq('id', gameId);
+        await supabase.from('games').update({ likes: likes, dislikes: dislikes }).eq('id', gameId);
 
         res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-        res.end(JSON.stringify({ likes, dislikes, userVote: finalVote }));
+        res.end(JSON.stringify({ likes: likes, dislikes: dislikes, userVote: finalVote }));
       } catch (err) {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
@@ -1001,15 +990,30 @@ const server = http.createServer(async (req, res) => {
     try {
       const { supabase } = require('./supabase-config');
       const limit = parseInt(parsedUrl.query.limit) || 20;
-      const { data, error } = await supabase.from('games')
-        .select('id, title, category, likes, dislikes')
-        .order('likes', { ascending: false })
-        .limit(limit);
+      const { data: allVotes, error } = await supabase.from('votes').select('game_id, vote');
       if (error) throw error;
-      // Sort by net votes (likes - dislikes) client-side since Supabase can't do computed column ordering easily
-      const sorted = (data || []).sort((a, b) => (b.likes - b.dislikes) - (a.likes - a.dislikes));
+      const counts = {};
+      (allVotes || []).forEach(function(r) {
+        if (!counts[r.game_id]) counts[r.game_id] = { id: r.game_id, likes: 0, dislikes: 0 };
+        if (r.vote === 'like') counts[r.game_id].likes++;
+        else if (r.vote === 'dislike') counts[r.game_id].dislikes++;
+      });
+      const sorted = Object.values(counts)
+        .map(function(g) { g.net = g.likes - g.dislikes; return g; })
+        .sort(function(a, b) { return b.net - a.net; })
+        .slice(0, limit);
+      const gameIds = sorted.map(function(g) { return g.id; });
+      let gameMeta = {};
+      if (gameIds.length > 0) {
+        const { data: games } = await supabase.from('games').select('id, title, category').in('id', gameIds);
+        (games || []).forEach(function(g) { gameMeta[g.id] = g; });
+      }
+      const result = sorted.map(function(g) {
+        const meta = gameMeta[g.id] || {};
+        return { id: g.id, title: meta.title || g.id, category: meta.category || 'Other', likes: g.likes, dislikes: g.dislikes };
+      });
       res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
-      res.end(JSON.stringify(sorted));
+      res.end(JSON.stringify(result));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: err.message }));
