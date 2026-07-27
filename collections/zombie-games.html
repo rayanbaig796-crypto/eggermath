@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Best Free Zombie Games Online | EggerMath</title>
+<meta name="description" content="Play the best free zombie games online! Shoot, survive, and fight the undead — all free in your browser. No download needed!">
+<link rel="canonical" href="https://www.eggermath.com/collections/zombie-games">
+<meta property="og:title" content="Best Free Zombie Games Online | EggerMath">
+<meta property="og:description" content="Survive the apocalypse! Play the best zombie browser games for free.">
+<link rel="stylesheet" href="/home.css">
+<style>
+body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-serif;margin:0;}
+.hero{padding:80px 20px 40px;text-align:center;max-width:800px;margin:0 auto;}
+.hero h1{font-size:clamp(28px,5vw,48px);margin:0 0 12px;}
+.hero p{font-size:16px;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto 20px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:0 20px 80px;}
+.game-card{display:block;background:rgba(255,255,255,0.04);border-radius:12px;overflow:hidden;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,0.06);transition:transform 0.2s,box-shadow 0.2s;}
+.game-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.4);}
+.game-card img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.game-card .placeholder{width:100%;aspect-ratio:16/9;background:rgba(76,175,80,0.1);display:flex;align-items:center;justify-content:center;font-size:40px;}
+.game-card .info{padding:10px 12px;}
+.game-card .info h3{font-size:13px;font-weight:700;margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.game-card .info span{font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;display:block;}
+.back-link{color:#ff4136;text-decoration:none;font-size:13px;font-weight:700;}
+@media(max-width:600px){.grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 12px 60px;}}
+</style>
+</head>
+<body>
+<div style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
+<a href="/" style="color:#ff4136;font-weight:900;font-size:20px;text-decoration:none;">EggerMath</a>
+<a href="/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;">All Games</a>
+</div>
+<div class="hero">
+<h1>🧟 Best Free Zombie Games Online</h1>
+<p>Survive the apocalypse! Shoot, fight, and survive the undead — all free in your browser. No download needed.</p>
+<a href="/" class="back-link">← Browse All Games</a>
+</div>
+<div class="grid" id="games-grid"></div>
+<script>
+fetch('/games.js').then(function(r){return r.text();}).then(function(t){
+  var match = t.match(/const GAMES\s*=\s*(\[[\s\S]*?\]);/);
+  var GAMES = match ? JSON.parse(match[1]) : [];
+  var zombies = GAMES.filter(function(g){
+    var t2 = ((g.title||'') + ' ' + (g.tags||[]).join(' ') + ' ' + (g.description||'')).toLowerCase();
+    return t2.indexOf('zombie')!==-1 || t2.indexOf('undead')!==-1 || t2.indexOf('apocalypse')!==-1;
+  }).slice(0, 30);
+  var grid = document.getElementById('games-grid');
+  zombies.forEach(function(g){
+    var img = g.thumb || g.thumbnail || '';
+    var card = document.createElement('a');
+    card.className = 'game-card';
+    card.href = '/game.html?id=' + encodeURIComponent(g.id);
+    card.innerHTML = (img ? '<img src="'+img+'" alt="'+g.title+'" loading="lazy">' : '<div class="placeholder">🧟</div>') +
+      '<div class="info"><h3>'+g.title+'</h3><span>'+g.category+'</span></div>';
+    grid.appendChild(card);
+  });
+});
+</script>
+</body>
+</html>

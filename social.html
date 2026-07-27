@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Social Media Content Generator — EggerMath</title>
+<link rel="stylesheet" href="/home.css">
+<style>
+body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-serif;margin:0;padding:20px;}
+.container{max-width:800px;margin:0 auto;}
+h1{font-size:28px;margin-bottom:4px;}
+.sub{color:rgba(255,255,255,0.5);margin-bottom:30px;}
+.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px;}
+.card h2{font-size:16px;margin:0 0 12px;color:#ff4136;}
+.tweet-box{background:#1a1a2e;border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:16px;font-size:14px;line-height:1.6;white-space:pre-wrap;margin-bottom:12px;min-height:80px;}
+.btn{background:#ff4136;color:#fff;border:none;padding:10px 20px;border-radius:8px;font-weight:700;cursor:pointer;font-size:13px;margin-right:8px;transition:opacity 0.15s;}
+.btn:hover{opacity:0.85;}
+.btn.secondary{background:rgba(255,255,255,0.08);}
+.copied{color:#4caf50;font-weight:700;margin-left:8px;display:none;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px;}
+.stat{font-size:12px;color:rgba(255,255,255,0.4);margin-top:8px;}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Social Media Content Generator</h1>
+<p class="sub">Generate ready-to-post tweets and social content for your games</p>
+
+<div class="card">
+<h2>Random Game Tweet</h2>
+<div class="tweet-box" id="tweet1"></div>
+<button class="btn" onclick="copyTweet('tweet1')">Copy Tweet</button>
+<button class="btn secondary" onclick="generate('tweet1')">Generate New</button>
+<span class="copied" id="tweet1-copied">Copied!</span>
+</div>
+
+<div class="card">
+<h2>Category Spotlight</h2>
+<div class="tweet-box" id="tweet2"></div>
+<button class="btn" onclick="copyTweet('tweet2')">Copy Tweet</button>
+<button class="btn secondary" onclick="generateCat('tweet2')">Generate New</button>
+<span class="copied" id="tweet2-copied">Copied!</span>
+</div>
+
+<div class="card">
+<h2>Trending / Stats Tweet</h2>
+<div class="tweet-box" id="tweet3"></div>
+<button class="btn" onclick="copyTweet('tweet3')">Copy Tweet</button>
+<button class="btn secondary" onclick="generateStats('tweet3')">Generate New</button>
+<span class="copied" id="tweet3-copied">Copied!</span>
+</div>
+
+<div class="card">
+<h2>Batch Generator (5 tweets)</h2>
+<div id="batch-box" style="margin-bottom:12px;"></div>
+<button class="btn" onclick="generateBatch()">Generate 5 Tweets</button>
+<button class="btn secondary" onclick="copyBatch()">Copy All</button>
+<span class="copied" id="batch-copied">Copied!</span>
+</div>
+</div>
+
+<script>
+var GAMES = [];
+var categories = ['Puzzle','Arcade','Shooting','Racing','Educational','Action','Adventure','Simulation','Sports','Girls','Strategy','Creative','Card','Other'];
+var catEmojis = {'Puzzle':'🧠','Arcade':'🎮','Shooting':'🎯','Racing':'🏎️','Educational':'📚','Action':'💥','Adventure':'🧠','Simulation':'⚙️','Sports':'⚽','Girls':'💄','Strategy':'♟️','Creative':'🎨','Card':'🃏','Other':'⭐'};
+
+fetch('/games.js').then(function(r){return r.text();}).then(function(t){
+  var match = t.match(/const GAMES\s*=\s*(\[[\s\S]*?\]);/);
+  if(match) GAMES = JSON.parse(match[1]);
+  generate('tweet1'); generateCat('tweet2'); generateStats('tweet3');
+});
+
+function pick(arr) { return arr[Math.floor(Math.random()*arr.length)]; }
+
+function generate(id) {
+  var g = pick(GAMES);
+  var img = g.thumb || g.thumbnail || '';
+  var lines = [
+    '🎮 Play "' + g.title + '" free online!',
+    '',
+    catEmojis[g.category] + ' ' + g.category + ' game',
+    '',
+    'Play now 👉 eggermath.com/game.html?id=' + g.id,
+    '',
+    '#FreeGames #HTML5Games #BrowserGames #' + g.category.replace(/\s/g,'')
+  ];
+  document.getElementById(id).textContent = lines.join('\n');
+}
+
+function generateCat(id) {
+  var cat = pick(categories);
+  var games = GAMES.filter(function(g){return g.category===cat;});
+  var sample = [];
+  for(var i=0;i<Math.min(3,games.length);i++) sample.push(pick(games.filter(function(g){return sample.indexOf(g)===-1;})));
+  var titles = sample.map(function(g){return g.title;}).join(', ');
+  var lines = [
+    catEmojis[cat] + ' Top ' + cat + ' Games to Play Right Now:',
+    '',
+    titles,
+    '',
+    'Play all free at 👉 eggermath.com/play/' + cat.toLowerCase().replace(/\s+/g,'-') + '-games',
+    '',
+    '#FreeGames #'+cat.replace(/\s/g,'')+' #BrowserGames'
+  ];
+  document.getElementById(id).textContent = lines.join('\n');
+}
+
+function generateStats(id) {
+  var total = GAMES.length;
+  var cats = {};
+  GAMES.forEach(function(g){cats[g.category]=(cats[g.category]||0)+1;});
+  var topCat = Object.keys(cats).sort(function(a,b){return cats[b]-cats[a];})[0];
+  var lines = [
+    '🔥 EggerMath now has ' + total + '+ free browser games!',
+    '',
+    '📊 Top category: ' + topCat + ' with ' + cats[topCat] + ' games',
+    '',
+    'All games are FREE, no download needed 👉 eggermath.com',
+    '',
+    '#FreeGames #HTML5Games #BrowserGames'
+  ];
+  document.getElementById(id).textContent = lines.join('\n');
+}
+
+function generateBatch() {
+  var box = document.getElementById('batch-box');
+  box.innerHTML = '';
+  for(var i=0;i<5;i++){
+    var g = pick(GAMES);
+    var tweet = '🎮 Play "' + g.title + '" free online!\n\n' + catEmojis[g.category] + ' ' + g.category + '\n\nPlay now 👉 eggermath.com/game.html?id=' + g.id + '\n\n#FreeGames #HTML5Games';
+    var div = document.createElement('div');
+    div.className = 'tweet-box';
+    div.style.marginBottom = '10px';
+    div.style.fontSize = '13px';
+    div.textContent = tweet;
+    box.appendChild(div);
+  }
+}
+
+function copyTweet(id) {
+  var text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(function(){
+    var el = document.getElementById(id+'-copied');
+    el.style.display='inline';
+    setTimeout(function(){el.style.display='none';},2000);
+  });
+}
+
+function copyBatch() {
+  var boxes = document.getElementById('batch-box').querySelectorAll('.tweet-box');
+  var all = [];
+  boxes.forEach(function(b,i){all.push('--- Tweet '+(i+1)+' ---\n'+b.textContent);});
+  navigator.clipboard.writeText(all.join('\n\n')).then(function(){
+    var el = document.getElementById('batch-copied');
+    el.style.display='inline';
+    setTimeout(function(){el.style.display='none';},2000);
+  });
+}
+</script>
+</body>
+</html>

@@ -902,6 +902,35 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /collections/:slug — Themed collection pages ────────────
+  const collMatch = parsedUrl.pathname.match(/^\/collections\/([a-z0-9-]+)$/);
+  if (collMatch && req.method === 'GET') {
+    const collFile = path.join(ROOT, 'collections', collMatch[1] + '.html');
+    if (fs.existsSync(collFile)) {
+      const html = fs.readFileSync(collFile, 'utf-8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' });
+      res.end(html);
+    } else {
+      res.writeHead(302, { 'Location': '/' });
+      res.end();
+    }
+    return;
+  }
+
+  // ── /social — Social media content generator ────────────────
+  if (parsedUrl.pathname === '/social' && req.method === 'GET') {
+    const socialFile = path.join(ROOT, 'social.html');
+    if (fs.existsSync(socialFile)) {
+      const html = fs.readFileSync(socialFile, 'utf-8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+      res.end(html);
+    } else {
+      res.writeHead(302, { 'Location': '/' });
+      res.end();
+    }
+    return;
+  }
+
   // ── /play/:slug — SEO category landing pages ────────────────
   const playMatch = parsedUrl.pathname.match(/^\/play\/([a-z0-9-]+)$/);
   if (playMatch && req.method === 'GET') {
