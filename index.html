@@ -685,7 +685,8 @@
         var header = document.createElement('div');
         header.className = 'hscroll-header';
         var catName = sec.label;
-        header.innerHTML = '<span class="hscroll-icon">' + sec.icon + '</span><span class="hscroll-label">' + catName + '</span><span class="hscroll-count">' + totalCount + ' games</span><a href="javascript:void(0)" class="hscroll-viewall" data-cat="' + catName + '">View All →</a>';
+        var catSlug = catName.toLowerCase().replace(/\s+/g, '-') + '-games';
+        header.innerHTML = '<span class="hscroll-icon">' + sec.icon + '</span><span class="hscroll-label">' + catName + '</span><span class="hscroll-count">' + totalCount + ' games</span><a href="/play/' + catSlug + '" class="hscroll-viewall">View All →</a>';
         section.appendChild(header);
 
         var scrollWrap = document.createElement('div');
@@ -732,23 +733,6 @@
           }, true);
         })(row);
         container.appendChild(section);
-      });
-
-      // View All click handler — set category and scroll to grid
-      container.querySelectorAll('.hscroll-viewall').forEach(function(btn) {
-        btn.addEventListener('click', function() {
-          var cat = this.getAttribute('data-cat');
-          // Find matching category
-          var matchCat = categories.find(function(c) { return c.toLowerCase() === cat.toLowerCase(); });
-          if (!matchCat && cat === 'Most Popular') matchCat = 'all';
-          if (!matchCat && cat === 'Card Games') matchCat = 'Card';
-          if (matchCat) {
-            activeCategory = matchCat;
-            renderCatBar();
-            renderMainGrid();
-            document.getElementById('grid-title').scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
       });
     }
 

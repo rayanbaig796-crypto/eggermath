@@ -184,6 +184,30 @@
           Favorite
         </button>
 
+        <button class="action-btn" id="share-btn">
+          <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+
+        <div id="share-dropdown" style="display:none;position:absolute;top:100%;right:0;margin-top:6px;background:#1a1a2e;border:1px solid rgba(255,255,255,0.12);border-radius:10px;padding:8px 0;z-index:200;min-width:180px;box-shadow:0 8px 32px rgba(0,0,0,0.5);">
+          <a id="share-twitter" href="#" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;padding:8px 16px;color:#fff;text-decoration:none;font-size:13px;transition:background 0.15s;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#1DA1F2;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Post on X
+          </a>
+          <a id="share-facebook" href="#" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;padding:8px 16px;color:#fff;text-decoration:none;font-size:13px;transition:background 0.15s;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#1877F2;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Share on Facebook
+          </a>
+          <a id="share-tiktok" href="#" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:8px;padding:8px 16px;color:#fff;text-decoration:none;font-size:13px;transition:background 0.15s;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;fill:#ff004f;"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.87a8.21 8.21 0 0 0 3.76.92V6.34a4.83 4.83 0 0 1-3.76.35z"/></svg>
+            Share on TikTok
+          </a>
+          <button id="share-copy" style="display:flex;align-items:center;gap:8px;padding:8px 16px;color:#fff;background:none;border:none;cursor:pointer;font-size:13px;width:100%;text-align:left;transition:background 0.15s;">
+            <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            <span id="share-copy-text">Copy Link</span>
+          </button>
+        </div>
+
         <button class="action-btn" id="video-btn" style="display:none;">
           <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           How to Play
@@ -597,6 +621,30 @@
       favBtn.addEventListener('click', function() {
         toggleFavorite(game.id);
         refreshFavUI();
+      });
+
+      // ─── SHARE ─────────────────────────────────────────────────
+      var shareBtn = document.getElementById('share-btn');
+      var shareDropdown = document.getElementById('share-dropdown');
+      var shareUrl = encodeURIComponent(location.href);
+      var shareText = encodeURIComponent('Play ' + game.title + ' free on EggerMath!');
+
+      document.getElementById('share-twitter').href = 'https://twitter.com/intent/tweet?url=' + shareUrl + '&text=' + shareText;
+      document.getElementById('share-facebook').href = 'https://www.facebook.com/sharer/sharer.php?u=' + shareUrl;
+      document.getElementById('share-tiktok').href = 'https://www.tiktok.com/share?url=' + shareUrl;
+
+      shareBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        shareDropdown.style.display = shareDropdown.style.display === 'none' ? 'block' : 'none';
+      });
+      document.addEventListener('click', function() { shareDropdown.style.display = 'none'; });
+      shareDropdown.addEventListener('click', function(e) { e.stopPropagation(); });
+
+      document.getElementById('share-copy').addEventListener('click', function() {
+        navigator.clipboard.writeText(location.href).then(function() {
+          document.getElementById('share-copy-text').textContent = 'Copied!';
+          setTimeout(function() { document.getElementById('share-copy-text').textContent = 'Copy Link'; }, 2000);
+        });
       });
 
       // ─── FULLSCREEN ────────────────────────────────────────────

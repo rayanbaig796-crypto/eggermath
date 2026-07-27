@@ -135,7 +135,7 @@ img { display: block; max-width: 100%; }
 .game-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; max-width: 600px; }
 
 .game-actions {
-  display: flex; align-items: center; gap: 12px;
+  display: flex; align-items: center; gap: 12px; position: relative;
 }
 .action-btn {
   display: flex; align-items: center; gap: 8px;
@@ -154,6 +154,9 @@ img { display: block; max-width: 100%; }
 .action-btn.active.like { background: rgba(92,184,92,0.15); color: var(--green); border-color: var(--green); }
 .action-btn.active.dislike { background: rgba(229,57,53,0.15); color: #e53935; border-color: #e53935; }
 .action-btn.active.fav { background: rgba(255,193,7,0.15); color: #ffc107; border-color: #ffc107; }
+
+#share-dropdown a, #share-dropdown button { transition: background 0.15s; }
+#share-dropdown a:hover, #share-dropdown button:hover { background: rgba(255,255,255,0.08); }
 
 /* ================================================================
    RELATED GAMES

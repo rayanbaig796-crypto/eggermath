@@ -902,6 +902,89 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /play/:slug — SEO category landing pages ────────────────
+  const playMatch = parsedUrl.pathname.match(/^\/play\/([a-z0-9-]+)$/);
+  if (playMatch && req.method === 'GET') {
+    try {
+      const slug = playMatch[1];
+      const categories = {
+        'puzzle-games': { cat: 'Puzzle', emoji: '\uD83E\uDD14', desc: 'Challenge your brain with the best free puzzle games online. Play Sudoku, Mahjong, match-3, jigsaw puzzles and more — all free in your browser!' },
+        'arcade-games': { cat: 'Arcade', emoji: '\uD83C\uDFAE', desc: 'Play free arcade games online! From retro classics to modern action — platformers, runners, and more. No download needed!' },
+        'shooting-games': { cat: 'Shooting', emoji: '\uD83C\uDFAF', desc: 'Play free shooting games online! FPS, sniper, zombie shooters and more — all browser-based, no download required!' },
+        'racing-games': { cat: 'Racing', emoji: '\uD83C\uDFCE\uFE0F', desc: 'Play free racing games online! Drive cars, motorcycles, trucks and more. No download — play instantly in your browser!' },
+        'educational-games': { cat: 'Educational', emoji: '\uD83D\uDCDA', desc: 'Learn while you play! Free educational games for kids and adults — math, typing, science, and more.' },
+        'action-games': { cat: 'Action', emoji: '\uD83D\uDCA5', desc: 'Play free action games online! Fighting, adventure, survival and more — all free in your browser!' },
+        'adventure-games': { cat: 'Adventure', emoji: '\uD83E\uDDE0', desc: 'Play free adventure games online! Explore worlds, solve quests, and discover stories — all browser-based!' },
+        'simulation-games': { cat: 'Simulation', emoji: '\u2699\uFE0F', desc: 'Play free simulation games online! Build cities, fly planes, manage businesses — realistic simulators in your browser!' },
+        'sports-games': { cat: 'Sports', emoji: '\u26BD', desc: 'Play free sports games online! Soccer, basketball, football, tennis and more — all free, no download!' },
+        'girls-games': { cat: 'Girls', emoji: '\uD83D\uDC84', desc: 'Play free games for girls online! Fashion, makeup, cooking, and dress-up games — all browser-based!' },
+        'strategy-games': { cat: 'Strategy', emoji: '\uD83C\uDCC6', desc: 'Play free strategy games online! Tower defense, card games, turn-based tactics and more — free in your browser!' },
+        'creative-games': { cat: 'Creative', emoji: '\uD83C\uDFA8', desc: 'Play free creative games online! Drawing, building, music, and art games — unleash your creativity!' },
+        'card-games': { cat: 'Card', emoji: '\uD83C\uDCCF', desc: 'Play free card games online! Solitaire, poker, blackjack, Uno and more — all free in your browser!' },
+        'other-games': { cat: 'Other', emoji: '\u2B50', desc: 'Play the best free games online! Browse our collection of 8000+ browser games — no download needed!' }
+      };
+      const info = categories[slug];
+      if (!info) {
+        res.writeHead(302, { 'Location': '/' });
+        res.end();
+        return;
+      }
+      const canonical = 'https://www.eggermath.com/play/' + slug;
+      const gamesCode = fs.readFileSync(path.join(ROOT, 'games.js'), 'utf-8').replace('const GAMES =', 'GAMES =');
+      let GAMES = [];
+      eval(gamesCode);
+      const catGames = GAMES.filter(function(g) { return g.category === info.cat; }).slice(0, 50);
+      const gameCards = catGames.map(function(g) {
+        var img = g.thumb || g.thumbnail || '';
+        if (img && !img.startsWith('http')) img = '';
+        return '<a href="/game.html?id=' + encodeURIComponent(g.id) + '" class="seo-game-card" style="display:block;background:rgba(255,255,255,0.04);border-radius:10px;overflow:hidden;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,0.06);transition:transform 0.2s,box-shadow 0.2s;">' +
+          (img ? '<img src="' + img + '" alt="' + g.title + '" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;">' : '<div style="width:100%;aspect-ratio:16/9;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-size:40px;">' + info.emoji + '</div>') +
+          '<div style="padding:10px 12px;"><div style="font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + g.title + '</div>' +
+          '<div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;">' + g.category + '</div></div></a>';
+      }).join('\n');
+      const html = '<!DOCTYPE html><html lang="en"><head>' +
+        '<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<title>Free ' + info.cat + ' Online — Play ' + catGames.length + '+ Games | EggerMath</title>' +
+        '<meta name="description" content="' + info.desc + '">' +
+        '<link rel="canonical" href="' + canonical + '">' +
+        '<meta property="og:title" content="Free ' + info.cat + ' Games Online | EggerMath">' +
+        '<meta property="og:description" content="' + info.desc + '">' +
+        '<meta property="og:url" content="' + canonical + '">' +
+        '<meta property="og:type" content="website">' +
+        '<meta name="twitter:card" content="summary_large_image">' +
+        '<link rel="stylesheet" href="/home.css">' +
+        '<style>body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-serif;margin:0;}' +
+        '.seo-hero{padding:80px 20px 40px;text-align:center;max-width:800px;margin:0 auto;}' +
+        '.seo-hero h1{font-size:clamp(28px,5vw,48px);margin:0 0 12px;}' +
+        '.seo-hero p{font-size:16px;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto;}' +
+        '.seo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:0 20px 80px;}' +
+        '.seo-game-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.4);}' +
+        '@media(max-width:600px){.seo-grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 12px 60px;}}</style>' +
+        '<script type="application/ld+json">' + JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          'name': 'Free ' + info.cat + ' Games Online',
+          'description': info.desc,
+          'url': canonical,
+          'mainEntity': { '@type': 'ItemList', 'numberOfItems': catGames.length }
+        }) + '</script>' +
+        '</head><body>' +
+        '<div style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">' +
+        '<a href="/" style="color:#ff4136;font-weight:900;font-size:20px;text-decoration:none;">EggerMath</a>' +
+        '<a href="/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;">Browse All Games</a></div>' +
+        '<div class="seo-hero"><h1>' + info.emoji + ' Free ' + info.cat + ' Games Online</h1>' +
+        '<p>' + info.desc + '</p></div>' +
+        '<div class="seo-grid">' + gameCards + '</div>' +
+        '</body></html>';
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' });
+      res.end(html);
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('Server error');
+    }
+    return;
+  }
+
   // ── /api/votes/:gameId — Get vote counts + user's vote ──────
   const votesMatch = parsedUrl.pathname.match(/^\/api\/votes\/(.+)$/);
   if (votesMatch && req.method === 'GET') {
