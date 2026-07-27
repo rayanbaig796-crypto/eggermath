@@ -616,6 +616,26 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /api/post-tweet — Auto-post a tweet (cron or manual) ────
+  if (parsedUrl.pathname === '/api/post-tweet' && req.method === 'GET') {
+    const secret = parsedUrl.query.secret;
+    if (secret !== process.env.TWEET_SECRET) {
+      res.writeHead(403, { 'Content-Type': 'text/plain' });
+      res.end('Forbidden');
+      return;
+    }
+    try {
+      const { postTweet } = require('./tweet-bot');
+      const result = await postTweet();
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify(result));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
   // ── /proxy?url=<url> — Simple proxy (cached) ────────────────
   if (parsedUrl.pathname === '/proxy') {
     const targetUrl = parsedUrl.query.url;
