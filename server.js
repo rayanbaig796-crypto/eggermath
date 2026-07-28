@@ -1034,6 +1034,96 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
+  // ── /franchise/:slug — Franchise landing pages ────────────────
+  const franchiseMatch = parsedUrl.pathname.match(/^\/franchise\/([a-z0-9-]+)$/);
+  if (franchiseMatch && req.method === 'GET') {
+    try {
+      const slug = franchiseMatch[1];
+      const franchises = {
+        'dynamons': { name: 'Dynamons', emoji: '\uD83D\uDC3E', desc: 'Play all Dynamons games free online! Catch, train and battle with cute creatures across 14+ adventures. No download needed!' },
+        'adam-and-eve': { name: 'Adam And Eve', emoji: '\uD83D\uDC6F', desc: 'Play all Adam And Eve games free online! Solve puzzles and guide Adam through fun prehistoric adventures. No download needed!' },
+        'vex': { name: 'Vex', emoji: '\uD83E\uDD77', desc: 'Play all Vex games free online! Run, jump and survive challenging platformer levels. No download needed!' },
+        'zombie-mission': { name: 'Zombie Mission', emoji: '\uD83E\uDDDF', desc: 'Play all Zombie Mission games free online! Fight zombies in epic 2-player co-op missions. No download needed!' },
+        'fireboy-and-watergirl': { name: 'Fireboy And Watergirl', emoji: '\uD83D\uDD25', desc: 'Play all Fireboy and Watergirl games free online! Team up in this classic 2-player puzzle adventure. No download needed!' },
+        'zombie-last-castle': { name: 'Zombie Last Castle', emoji: '\uD83C\uDFF0', desc: 'Play all Zombie Last Castle games free online! Defend your castle against waves of zombies. No download needed!' },
+        'dino-squad-adventure': { name: 'Dino Squad Adventure', emoji: '\uD83E\uDD96', desc: 'Play all Dino Squad Adventure games free online! Explore with your dino team in exciting adventures. No download needed!' },
+        'basketball-kings': { name: 'Basketball Kings', emoji: '\uD83C\uDFC0', desc: 'Play all Basketball Kings games free online! Show off your shooting skills on the court. No download needed!' },
+        'jewels-blitz': { name: 'Jewels Blitz', emoji: '\uD83D\uDC8E', desc: 'Play all Jewels Blitz games free online! Match gems in this addictive puzzle series. No download needed!' },
+        'basketball-legends': { name: 'Basketball Legends', emoji: '\uD83C\uDFC6', desc: 'Play all Basketball Legends games free online! Compete as legendary players on the court. No download needed!' },
+        'poppy-strike': { name: 'Poppy Strike', emoji: '\uD83D\uDD2B', desc: 'Play all Poppy Strike games free online! Shoot your way through intense action levels. No download needed!' },
+        'garden-tales': { name: 'Garden Tales', emoji: '\uD83C\uDF3F', desc: 'Play all Garden Tales games free online! Match and explore in this charming garden adventure. No download needed!' },
+        'snail-bob': { name: 'Snail Bob', emoji: '\uD83D\uDC0C', desc: 'Play all Snail Bob games free online! Help Bob the snail solve puzzles and reach the exit. No download needed!' },
+        'ultimate-motocross': { name: 'Ultimate Motocross', emoji: '\uD83C\uDFCD\uFE0F', desc: 'Play all Ultimate Motocross games free online! Perform stunts and race through extreme tracks. No download needed!' },
+        'solitaire-story-tripeaks': { name: 'Solitaire Story Tripeaks', emoji: '\uD83C\uDCCF', desc: 'Play all Solitaire Story Tripeaks games free online! Clear cards in this classic solitaire adventure. No download needed!' },
+        'bloons-tower-defense': { name: 'Bloons Tower Defense', emoji: '\uD83C\uDFF3\uFE0F', desc: 'Play all Bloons Tower Defense games free online! Pop balloons with strategic tower placement. No download needed!' },
+        'red-ball': { name: 'Red Ball', emoji: '\u26BD', desc: 'Play all Red Ball games free online! Roll through platforms and defeat enemies. No download needed!' },
+        '8-ball-pool': { name: '8 Ball Pool', emoji: '\uD83E\uDD11', desc: 'Play all 8 Ball Pool games free online! Sink balls and win matches in this classic billiards game. No download needed!' },
+        '2112-cooperation-chapter': { name: '2112 Cooperation Chapter', emoji: '\uD83D\uDD25', desc: 'Play all 2112 Cooperation Chapter games free online! Team up in this sci-fi shooter series. No download needed!' },
+        'money-movers': { name: 'Money Movers', emoji: '\uD83D\uDCB0', desc: 'Play all Money Movers games free online! Team up to pull off heists and escape. No download needed!' },
+        'counter-craft': { name: 'Counter Craft', emoji: '\uD83C\uDFAF', desc: 'Play all Counter Craft games free online! Blocky FPS action in your browser. No download needed!' },
+        'pixel-gun-apocalypse': { name: 'Pixel Gun Apocalypse', emoji: '\uD83D\uDD2B', desc: 'Play all Pixel Gun Apocalypse games free online! Pixelated shooting action. No download needed!' }
+      };
+      const info = franchises[slug];
+      if (!info) { res.writeHead(302, { 'Location': '/' }); res.end(); return; }
+      const canonical = 'https://www.eggermath.com/franchise/' + slug;
+      const gamesCode = fs.readFileSync(path.join(ROOT, 'games.js'), 'utf-8').replace('const GAMES =', 'GAMES =');
+      let GAMES = [];
+      eval(gamesCode);
+      const franchiseName = info.name.toLowerCase();
+      const franchiseGames = GAMES.filter(function(g) {
+        return g.title.toLowerCase().indexOf(franchiseName) !== -1;
+      }).slice(0, 50);
+      const gameCards = franchiseGames.map(function(g) {
+        var img = g.thumb || g.thumbnail || '';
+        if (img && !img.startsWith('http')) img = '';
+        return '<a href="/game.html?id=' + encodeURIComponent(g.id) + '" class="seo-game-card" style="display:block;background:rgba(255,255,255,0.04);border-radius:10px;overflow:hidden;text-decoration:none;color:#fff;border:1px solid rgba(255,255,255,0.06);transition:transform 0.2s,box-shadow 0.2s;">' +
+          (img ? '<img src="' + img + '" alt="' + g.title + '" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;">' : '<div style="width:100%;aspect-ratio:16/9;background:rgba(255,255,255,0.03);display:flex;align-items:center;justify-content:center;font-size:40px;">' + info.emoji + '</div>') +
+          '<div style="padding:10px 12px;"><div style="font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">' + g.title + '</div>' +
+          '<div style="font-size:11px;color:rgba(255,255,255,0.5);margin-top:2px;">' + g.category + '</div></div></a>';
+      }).join('\n');
+      const html = '<!DOCTYPE html><html lang="en"><head>' +
+        '<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+        '<title>Free ' + info.name + ' Games Online — Play ' + franchiseGames.length + '+ Games | EggerMath</title>' +
+        '<meta name="description" content="' + info.desc + '">' +
+        '<link rel="canonical" href="' + canonical + '">' +
+        '<meta property="og:title" content="Free ' + info.name + ' Games Online | EggerMath">' +
+        '<meta property="og:description" content="' + info.desc + '">' +
+        '<meta property="og:url" content="' + canonical + '">' +
+        '<meta property="og:type" content="website">' +
+        '<meta name="twitter:card" content="summary_large_image">' +
+        '<link rel="stylesheet" href="/home.css">' +
+        '<style>body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-serif;margin:0;}' +
+        '.seo-hero{padding:80px 20px 40px;text-align:center;max-width:800px;margin:0 auto;}' +
+        '.seo-hero h1{font-size:clamp(28px,5vw,48px);margin:0 0 12px;}' +
+        '.seo-hero p{font-size:16px;color:rgba(255,255,255,0.6);max-width:600px;margin:0 auto;}' +
+        '.seo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px;max-width:1200px;margin:0 auto;padding:0 20px 80px;}' +
+        '.seo-game-card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(0,0,0,0.4);}' +
+        '@media(max-width:600px){.seo-grid{grid-template-columns:repeat(2,1fr);gap:10px;padding:0 12px 60px;}}</style>' +
+        '<script type="application/ld+json">' + JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          'name': 'Free ' + info.name + ' Games Online',
+          'description': info.desc,
+          'url': canonical,
+          'mainEntity': { '@type': 'ItemList', 'numberOfItems': franchiseGames.length }
+        }) + '</script>' +
+        '</head><body>' +
+        '<div style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">' +
+        '<a href="/" style="color:#ff4136;font-weight:900;font-size:20px;text-decoration:none;">EggerMath</a>' +
+        '<a href="/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;">Browse All Games</a></div>' +
+        '<div class="seo-hero"><h1>' + info.emoji + ' Free ' + info.name + ' Games Online</h1>' +
+        '<p>' + info.desc + '</p></div>' +
+        '<div class="seo-grid">' + gameCards + '</div>' +
+        '</body></html>';
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' });
+      res.end(html);
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'text/plain' });
+      res.end('Server error');
+    }
+    return;
+  }
+
   // ── /api/votes/:gameId — Get vote counts + user's vote ──────
   const votesMatch = parsedUrl.pathname.match(/^\/api\/votes\/(.+)$/);
   if (votesMatch && req.method === 'GET') {
