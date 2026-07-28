@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Played Games — EggerMath</title>
+  <meta name="description" content="Play the most played free browser games on EggerMath. Thousands of players can't be wrong!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.eggermath.com/most-played">
+  <meta property="og:title" content="Most Played Games — EggerMath">
+  <meta property="og:description" content="Play the most played free browser games on EggerMath.">
+  <meta property="og:url" content="https://www.eggermath.com/most-played">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
+  <link rel="stylesheet" href="./home.css?v=21">
+  <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
+  <style>
+    body { background: #0f0f1a; color: #fff; font-family: 'Inter', system-ui, -apple-system, sans-serif; margin: 0; }
+    .page-header { padding: 60px 20px 30px; text-align: center; }
+    .page-header h1 { font-size: clamp(28px, 5vw, 42px); margin: 0 0 8px; }
+    .page-header p { font-size: 16px; color: rgba(255,255,255,0.5); max-width: 500px; margin: 0 auto; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 13px; margin-bottom: 20px; transition: color 0.2s; }
+    .back-link:hover { color: #fff; }
+    .back-link svg { width: 16px; height: 16px; stroke: currentColor; fill: none; stroke-width: 2; }
+    .games-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; max-width: 1200px; margin: 0 auto; padding: 0 20px 80px; }
+    .game-card { display: block; background: rgba(255,255,255,0.04); border-radius: 10px; overflow: hidden; text-decoration: none; color: #fff; border: 1px solid rgba(255,255,255,0.06); transition: transform 0.2s, box-shadow 0.2s; }
+    .game-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.4); }
+    .game-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+    .game-card .card-body { padding: 10px 12px; }
+    .game-card .card-title { font-size: 13px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .game-card .card-meta { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 2px; display: flex; align-items: center; gap: 8px; }
+    .game-card .card-plays { color: #4caf50; }
+    .rank-badge { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,0.7); color: #4caf50; font-size: 11px; font-weight: 800; padding: 2px 8px; border-radius: 6px; backdrop-filter: blur(4px); }
+    .card-img-wrap { position: relative; }
+    .loading { text-align: center; padding: 60px 20px; color: rgba(255,255,255,0.4); font-size: 14px; }
+    .error-msg { text-align: center; padding: 60px 20px; color: rgba(255,255,255,0.4); font-size: 14px; }
+    @media(max-width:600px) { .games-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0 12px 60px; } }
+  </style>
+</head>
+<body>
+  <header style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
+    <a href="/" style="color:#ff4136;font-weight:900;font-size:20px;text-decoration:none;">EggerMath</a>
+    <a href="/" style="color:rgba(255,255,255,0.5);text-decoration:none;font-size:13px;">Browse All Games</a>
+  </header>
+
+  <div class="page-header">
+    <a href="/" class="back-link">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      Back to Home
+    </a>
+    <h1>🕹️ Most Played Games</h1>
+    <p>The games with the most plays across the entire EggerMath community.</p>
+  </div>
+
+  <div id="loading" class="loading">Loading most played games...</div>
+  <div id="error" class="error-msg" style="display:none;"></div>
+  <div id="games-grid" class="games-grid" style="display:none;"></div>
+
+  <script>
+    var placeholderSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
+
+    function getGameImg(game) {
+      var raw = game.thumb || game.thumbnail || '';
+      if (raw && (raw.startsWith('http://') || raw.startsWith('https://'))) return raw;
+      return placeholderSvg;
+    }
+
+    function formatCount(n) {
+      if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+      if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+      return String(n);
+    }
+
+    function renderGames(games) {
+      var grid = document.getElementById('games-grid');
+      var loading = document.getElementById('loading');
+      loading.style.display = 'none';
+      grid.style.display = 'grid';
+      grid.innerHTML = games.map(function(g, i) {
+        var img = getGameImg(g);
+        return '<a href="/game.html?id=' + encodeURIComponent(g.id) + '" class="game-card">' +
+          '<div class="card-img-wrap">' +
+            '<img src="' + placeholderSvg + '" data-src="' + img + '" alt="' + (g.title || '') + '" loading="lazy" style="opacity:0.6">' +
+            '<span class="rank-badge">#' + (i + 1) + '</span>' +
+          '</div>' +
+          '<div class="card-body">' +
+            '<div class="card-title">' + (g.title || g.id) + '</div>' +
+            '<div class="card-meta">' +
+              '<span>' + (g.category || 'Other') + '</span>' +
+              '<span class="card-plays">▶ ' + formatCount(g.plays || 0) + ' plays</span>' +
+            '</div>' +
+          '</div>' +
+        '</a>';
+      }).join('');
+
+      grid.querySelectorAll('img[data-src]').forEach(function(img) {
+        var src = img.getAttribute('data-src');
+        var preload = new Image();
+        preload.onload = function() { img.src = src; img.style.opacity = '1'; };
+        preload.onerror = function() { img.style.opacity = '0.4'; };
+        preload.src = src;
+      });
+    }
+
+    (async function() {
+      try {
+        var res = await fetch('/api/most-played?limit=50');
+        if (!res.ok) throw new Error('Failed to load');
+        var games = await res.json();
+        if (games.length === 0) {
+          document.getElementById('loading').textContent = 'No play data yet. Be the first to play!';
+          return;
+        }
+        renderGames(games);
+      } catch(e) {
+        document.getElementById('loading').style.display = 'none';
+        var errEl = document.getElementById('error');
+        errEl.style.display = 'block';
+        errEl.textContent = 'Failed to load games. Please try again later.';
+      }
+    })();
+  </script>
+</body>
+</html>

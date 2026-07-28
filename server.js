@@ -48,6 +48,11 @@ function securityHeaders() {
 }
 
 // ═══════════════════════════════════════════════════════════════
+//  IN-MEMORY PLAY COUNTS — fallback when Supabase tables don't exist
+// ═══════════════════════════════════════════════════════════════
+const playCounts = {};
+
+// ═══════════════════════════════════════════════════════════════
 //  SIMPLE LRU CACHE — speeds up repeated proxy requests
 // ═══════════════════════════════════════════════════════════════
 const proxyCache = new Map();
@@ -1221,35 +1226,317 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // ── /api/trending — Top games by net votes ───────────────────
+  // ── /api/play — Track a play ────────────────────────────────
+  if (parsedUrl.pathname === '/api/play' && req.method === 'POST') {
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, fingerprint } = JSON.parse(body);
+      if (!gameId) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Missing gameId' }));
+        return;
+      }
+      const { supabase } = require('./supabase-config');
+
+      // Insert into plays table
+      try {
+        const { error } = await supabase.from('plays').insert({ game_id: gameId });
+        if (error) throw error;
+      } catch (e) {
+        playCounts[gameId] = (playCounts[gameId] || 0) + 1;
+      }
+
+      // Track in recently_played
+      if (fingerprint) {
+        try {
+          await supabase.from('recently_played').insert({
+            game_id: gameId,
+            fingerprint,
+            played_at: new Date().toISOString()
+          });
+        } catch (e) { /* ignore */ }
+      }
+
+      // Get total play count for this game
+      let plays = playCounts[gameId] || 0;
+      try {
+        const { count, error } = await supabase.from('plays')
+          .select('*', { count: 'exact', head: true })
+          .eq('game_id', gameId);
+        if (!error) plays = count;
+      } catch (e) { /* use in-memory fallback */ }
+
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ plays }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/plays/:gameId — Get play count for a game ──────────
+  const playsMatch = parsedUrl.pathname.match(/^\/api\/plays\/(.+)$/);
+  if (playsMatch && req.method === 'GET') {
+    const gameId = playsMatch[1];
+    try {
+      const { supabase } = require('./supabase-config');
+      let plays = playCounts[gameId] || 0;
+      try {
+        const { count, error } = await supabase.from('plays')
+          .select('*', { count: 'exact', head: true })
+          .eq('game_id', gameId);
+        if (!error) plays = count;
+      } catch (e) { /* use in-memory */ }
+
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ plays }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/stats — Global stats ───────────────────────────────
+  if (parsedUrl.pathname === '/api/stats' && req.method === 'GET') {
+    try {
+      const { supabase } = require('./supabase-config');
+      let totalPlays = 0, totalVotes = 0, totalGames = 0;
+
+      try {
+        const { count, error } = await supabase.from('plays')
+          .select('*', { count: 'exact', head: true });
+        if (!error) totalPlays = count;
+      } catch (e) { totalPlays = Object.values(playCounts).reduce(function(a, b) { return a + b; }, 0); }
+
+      try {
+        const { count, error } = await supabase.from('votes')
+          .select('*', { count: 'exact', head: true });
+        if (!error) totalVotes = count;
+      } catch (e) { totalVotes = 0; }
+
+      try {
+        const { count, error } = await supabase.from('games')
+          .select('*', { count: 'exact', head: true });
+        if (!error) totalGames = count;
+      } catch (e) { totalGames = 0; }
+
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ totalPlays, totalVotes, totalGames }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/trending — Top 50 games by recent play activity ────
   if (parsedUrl.pathname === '/api/trending' && req.method === 'GET') {
     try {
       const { supabase } = require('./supabase-config');
-      const limit = parseInt(parsedUrl.query.limit) || 20;
-      const { data: allVotes, error } = await supabase.from('votes').select('game_id, vote');
-      if (error) throw error;
+      let recentPlays = [];
+
+      try {
+        const { data, error } = await supabase.from('recently_played')
+          .select('game_id, played_at')
+          .order('played_at', { ascending: false })
+          .limit(1000);
+        if (!error) recentPlays = data || [];
+      } catch (e) { /* table may not exist */ }
+
       const counts = {};
-      (allVotes || []).forEach(function(r) {
-        if (!counts[r.game_id]) counts[r.game_id] = { id: r.game_id, likes: 0, dislikes: 0 };
-        if (r.vote === 'like') counts[r.game_id].likes++;
-        else if (r.vote === 'dislike') counts[r.game_id].dislikes++;
+      recentPlays.forEach(function(r) {
+        if (!counts[r.game_id]) counts[r.game_id] = { id: r.game_id, recentPlays: 0 };
+        counts[r.game_id].recentPlays++;
       });
+
       const sorted = Object.values(counts)
-        .map(function(g) { g.net = g.likes - g.dislikes; return g; })
-        .sort(function(a, b) { return b.net - a.net; })
-        .slice(0, limit);
+        .sort(function(a, b) { return b.recentPlays - a.recentPlays; })
+        .slice(0, 50);
+
       const gameIds = sorted.map(function(g) { return g.id; });
       let gameMeta = {};
       if (gameIds.length > 0) {
-        const { data: games } = await supabase.from('games').select('id, title, category').in('id', gameIds);
-        (games || []).forEach(function(g) { gameMeta[g.id] = g; });
+        try {
+          const { data: games } = await supabase.from('games').select('id, title, category, thumb').in('id', gameIds);
+          (games || []).forEach(function(g) { gameMeta[g.id] = g; });
+        } catch (e) { /* ignore */ }
       }
+
       const result = sorted.map(function(g) {
         const meta = gameMeta[g.id] || {};
-        return { id: g.id, title: meta.title || g.id, category: meta.category || 'Other', likes: g.likes, dislikes: g.dislikes };
+        return { id: g.id, title: meta.title || g.id, category: meta.category || 'Other', thumb: meta.thumb || '', plays: g.recentPlays };
       });
+
       res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
       res.end(JSON.stringify(result));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/most-played — Top 100 games by all-time play count ─
+  if (parsedUrl.pathname === '/api/most-played' && req.method === 'GET') {
+    try {
+      const { supabase } = require('./supabase-config');
+      let allPlays = [];
+
+      try {
+        const { data, error } = await supabase.from('plays').select('game_id');
+        if (!error) allPlays = data || [];
+      } catch (e) { /* table may not exist */ }
+
+      const counts = {};
+      allPlays.forEach(function(r) {
+        if (!counts[r.game_id]) counts[r.game_id] = 0;
+        counts[r.game_id]++;
+      });
+
+      Object.keys(playCounts).forEach(function(id) {
+        counts[id] = (counts[id] || 0) + playCounts[id];
+      });
+
+      const sorted = Object.keys(counts)
+        .map(function(id) { return { id: id, plays: counts[id] }; })
+        .sort(function(a, b) { return b.plays - a.plays; })
+        .slice(0, 100);
+
+      const gameIds = sorted.map(function(g) { return g.id; });
+      let gameMeta = {};
+      if (gameIds.length > 0) {
+        try {
+          const { data: games } = await supabase.from('games').select('id, title, category, thumb').in('id', gameIds);
+          (games || []).forEach(function(g) { gameMeta[g.id] = g; });
+        } catch (e) { /* ignore */ }
+      }
+
+      const result = sorted.map(function(g) {
+        const meta = gameMeta[g.id] || {};
+        return { id: g.id, title: meta.title || g.id, category: meta.category || 'Other', thumb: meta.thumb || '', plays: g.plays };
+      });
+
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify(result));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/recently-played?fingerprint=xxx — User's recently played ──
+  if (parsedUrl.pathname === '/api/recently-played' && req.method === 'GET') {
+    const fingerprint = parsedUrl.query.fingerprint || '';
+    try {
+      const { supabase } = require('./supabase-config');
+      let games = [];
+      if (fingerprint) {
+        try {
+          const { data, error } = await supabase.from('recently_played')
+            .select('game_id')
+            .eq('fingerprint', fingerprint)
+            .order('played_at', { ascending: false })
+            .limit(50);
+          if (!error) games = (data || []).map(function(r) { return r.game_id; });
+        } catch (e) { /* table may not exist */ }
+      }
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify(games));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/comments/:gameId — Get comments for a game ─────────
+  const commentsGetMatch = parsedUrl.pathname.match(/^\/api\/comments\/(.+)$/);
+  if (commentsGetMatch && req.method === 'GET') {
+    const gameId = commentsGetMatch[1];
+    try {
+      const { supabase } = require('./supabase-config');
+      let comments = [];
+      try {
+        const { data, error } = await supabase.from('comments')
+          .select('id, text, fingerprint, created_at')
+          .eq('game_id', gameId)
+          .order('created_at', { ascending: false });
+        if (!error) comments = data || [];
+      } catch (e) { /* table may not exist */ }
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify(comments));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/comments — Post a comment ──────────────────────────
+  if (parsedUrl.pathname === '/api/comments' && req.method === 'POST') {
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, fingerprint, text } = JSON.parse(body);
+      if (!gameId || !fingerprint || !text) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Missing gameId, fingerprint, or text' }));
+        return;
+      }
+      const { supabase } = require('./supabase-config');
+      const { error } = await supabase.from('comments').insert({
+        game_id: gameId,
+        fingerprint,
+        text,
+        created_at: new Date().toISOString()
+      });
+      if (error) throw error;
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ ok: true }));
+    } catch (err) {
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
+  // ── /api/report — Report a game ─────────────────────────────
+  if (parsedUrl.pathname === '/api/report' && req.method === 'POST') {
+    let body;
+    try { body = await readBodyLimited(req); } catch (e) {
+      res.writeHead(413, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Request body too large' }));
+      return;
+    }
+    try {
+      const { gameId, reason, fingerprint } = JSON.parse(body);
+      if (!gameId || !reason || !fingerprint) {
+        res.writeHead(400, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: 'Missing gameId, reason, or fingerprint' }));
+        return;
+      }
+      const { supabase } = require('./supabase-config');
+      const { error } = await supabase.from('reports').insert({
+        game_id: gameId,
+        reason,
+        fingerprint,
+        created_at: new Date().toISOString()
+      });
+      if (error) throw error;
+      res.writeHead(200, { 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*' });
+      res.end(JSON.stringify({ ok: true }));
     } catch (err) {
       res.writeHead(500, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: err.message }));
@@ -1336,6 +1623,34 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
+    return;
+  }
+
+  // ── /trending — Trending games page ──────────────────────────
+  if (parsedUrl.pathname === '/trending' && req.method === 'GET') {
+    const trendingFile = path.join(ROOT, 'trending.html');
+    if (fs.existsSync(trendingFile)) {
+      const html = fs.readFileSync(trendingFile, 'utf-8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' });
+      res.end(html);
+    } else {
+      res.writeHead(302, { 'Location': '/' });
+      res.end();
+    }
+    return;
+  }
+
+  // ── /most-played — Most played games page ────────────────────
+  if (parsedUrl.pathname === '/most-played' && req.method === 'GET') {
+    const mostPlayedFile = path.join(ROOT, 'most-played.html');
+    if (fs.existsSync(mostPlayedFile)) {
+      const html = fs.readFileSync(mostPlayedFile, 'utf-8');
+      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' });
+      res.end(html);
+    } else {
+      res.writeHead(302, { 'Location': '/' });
+      res.end();
+    }
     return;
   }
 

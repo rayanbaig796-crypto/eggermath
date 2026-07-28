@@ -666,6 +666,55 @@
       { label: 'Card Games', icon: '🃏', filter: function(g){ return g.category==='Card'; }, limit: 24 },
     ];
 
+    // ─── RECENTLY PLAYED SECTION ─────────────────────────────
+    async function renderRecentlyPlayed() {
+      try {
+        var fp = '';
+        try { fp = document.cookie.match(/eggermath_fp=([^;]+)/)?.[1] || ''; } catch(e) {}
+        if (!fp) return;
+        var res = await fetch('/api/recently-played?fingerprint=' + encodeURIComponent(fp));
+        var ids = await res.json();
+        if (!ids || ids.length === 0) return;
+        var container = document.getElementById('hscroll-sections');
+        if (!container) return;
+        var games = ids.map(function(id) { return GAMES.find(function(g) { return g.id === id; }); }).filter(Boolean).slice(0, 20);
+        if (games.length === 0) return;
+        var section = document.createElement('div');
+        section.className = 'hscroll-section';
+        var header = document.createElement('div');
+        header.className = 'hscroll-header';
+        header.innerHTML = '<span class="hscroll-icon">🕐</span><span class="hscroll-label">Recently Played</span><span class="hscroll-count">' + games.length + ' games</span>';
+        section.appendChild(header);
+        var scrollWrap = document.createElement('div');
+        scrollWrap.className = 'hscroll-scroll-wrap';
+        var row = document.createElement('div');
+        row.className = 'hscroll-row';
+        var placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150'%3E%3Crect width='200' height='150' fill='%23222'/%3E%3C/svg%3E";
+        games.forEach(function(game) {
+          var card = document.createElement('a');
+          card.href = 'game.html?id=' + game.id;
+          card.className = 'hscroll-card';
+          card.title = game.title;
+          var imgSrc = getGameImg(game);
+          card.innerHTML = '<img src="' + placeholder + '" data-src="' + imgSrc + '" alt="' + game.title + '" loading="lazy" class="hscroll-thumb"><div class="hscroll-card-title">' + game.title + '</div>';
+          var img = card.querySelector('img');
+          if (img) { img.dataset.realSrc = img.dataset.src; img.removeAttribute('data-src'); if (_imgObserver) _imgObserver.observe(img); }
+          row.appendChild(card);
+        });
+        scrollWrap.appendChild(row);
+        section.appendChild(scrollWrap);
+        (function(r) {
+          var isDown = false, startX, scrollLeft, didDrag = false;
+          r.addEventListener('mousedown', function(e) { isDown = true; didDrag = false; r.style.cursor = 'grabbing'; startX = e.pageX - r.offsetLeft; scrollLeft = r.scrollLeft; e.preventDefault(); });
+          r.addEventListener('mouseleave', function() { isDown = false; r.style.cursor = ''; });
+          r.addEventListener('mouseup', function() { isDown = false; r.style.cursor = ''; });
+          r.addEventListener('mousemove', function(e) { if (!isDown) return; e.preventDefault(); var x = e.pageX - r.offsetLeft; var dx = x - startX; if (Math.abs(dx) > 5) didDrag = true; r.scrollLeft = scrollLeft - dx * 1.5; });
+          r.addEventListener('click', function(e) { if (didDrag) { e.preventDefault(); e.stopPropagation(); didDrag = false; } }, true);
+        })(row);
+        container.insertBefore(section, container.firstChild);
+      } catch(e) {}
+    }
+
     function renderHSections() {
       var container = document.getElementById('hscroll-sections');
       if (!container) return;
@@ -748,6 +797,7 @@
         return 0;
       });
       renderHSections();
+      renderRecentlyPlayed();
       renderCatBar();
       renderMainGrid();
       renderSidebarMinis();

@@ -19,6 +19,36 @@
   <url><loc>https://www.eggermath.com/collections/zombie-games</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/collections/chess-board-games</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/social</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/trending</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/most-played</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/about</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/contact</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/advertise</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/takedown</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/onboarding</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/dynamons</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/adam-and-eve</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/vex</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/zombie-mission</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/fireboy-and-watergirl</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/zombie-last-castle</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/dino-squad-adventure</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/basketball-kings</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/jewels-blitz</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/basketball-legends</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/poppy-strike</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/garden-tales</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/snail-bob</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/ultimate-motocross</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/solitaire-story-tripeaks</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/bloons-tower-defense</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/red-ball</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/8-ball-pool</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/2112-cooperation-chapter</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/money-movers</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/counter-craft</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/franchise/pixel-gun-apocalypse</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-basketball-stars</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-ultimate-flying-car</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-racing-ball-3d</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -477,7 +507,6 @@
   <url><loc>https://www.eggermath.com/game.html?id=gp-devil-cry</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-robot-fighting-adventure</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-funny-shooter-2</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.eggermath.com/game.html?id=gp-fortzone-battle-royale</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-crazy-shooters</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-shell-shockers</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=gp-warfare-1942-online-shooter</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -7543,7 +7572,6 @@
   <url><loc>https://www.eggermath.com/game.html?id=y8-basketball_school</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=y8-basketball_io</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=y8-basketball_dare</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.eggermath.com/game.html?id=y8-basketball_legends_2019</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=y8-archery_-_world_tour</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=y8-badminton_brawl</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/game.html?id=y8-8_ball_billiards_classic</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>

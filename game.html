@@ -83,7 +83,8 @@
       });
     })();
   </script>
-</head>
+  <script type="application/ld+json" id="faq-schema"></script>
+  </head>
 <body>
 
   <!-- ============================================================
@@ -100,6 +101,14 @@
       EGGERMATH
     </a>
   </header>
+
+  <nav id="breadcrumbs" style="max-width:1200px;margin:0 auto;padding:10px 20px;font-size:12px;color:rgba(255,255,255,0.4);">
+    <a href="/" style="color:rgba(255,255,255,0.5);text-decoration:none;">Home</a>
+    <span style="margin:0 6px;">›</span>
+    <a href="/play/GAMESLUG" id="bc-category" style="color:rgba(255,255,255,0.5);text-decoration:none;">Category</a>
+    <span style="margin:0 6px;">›</span>
+    <span id="bc-game" style="color:rgba(255,255,255,0.3);">Game</span>
+  </nav>
 
   <!-- ============================================================
        THEATER
@@ -165,6 +174,19 @@
           <div class="game-dev" id="game-category">EggerMath</div>
           <div class="game-credit" id="game-credit" style="display:none; color: rgba(255,255,255,0.45); font-size: 11px; margin-top: 2px;"></div>
           <p class="game-desc" id="game-desc"></p>
+          <div style="display:flex;gap:16px;align-items:center;margin-top:8px;flex-wrap:wrap;">
+            <div id="game-rating" style="display:none;align-items:center;gap:4px;font-size:13px;color:rgba(255,255,255,0.6);">
+              <svg viewBox="0 0 24 24" style="width:14px;height:14px;fill:#ffc107;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span id="rating-score">0.0</span>
+              <span style="color:rgba(255,255,255,0.3);">/10</span>
+              <span style="color:rgba(255,255,255,0.3);margin-left:4px;">(<span id="rating-count">0</span> votes)</span>
+            </div>
+            <div id="game-plays" style="display:none;align-items:center;gap:4px;font-size:13px;color:rgba(255,255,255,0.6);">
+              <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:rgba(255,255,255,0.4);fill:none;stroke-width:2;"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <span id="play-count">0</span> plays
+            </div>
+            <div id="game-added" style="font-size:12px;color:rgba(255,255,255,0.3);"></div>
+          </div>
         </div>
       </div>
 
@@ -212,11 +234,45 @@
           <svg viewBox="0 0 24 24" style="width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><polygon points="5 3 19 12 5 21 5 3"/></svg>
           How to Play
         </button>
+
+        <button class="action-btn" id="report-btn" style="color:rgba(255,255,255,0.35);font-size:12px;">
+          <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+          Report
+        </button>
       </div>
     </div>
 
     <!-- TAGS -->
     <div id="game-tags" style="display:flex; gap:6px; flex-wrap:wrap; padding: 0 0 8px;"></div>
+
+    <!-- GAME INFO SECTIONS -->
+    <div id="game-info-sections" style="max-width:1200px;margin:12px auto;padding:0 20px;">
+      <!-- Description -->
+      <div id="section-about" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.06);">
+        <h3 style="color:#fff;font-size:16px;margin:0 0 8px;">About This Game</h3>
+        <p id="section-about-text" style="color:rgba(255,255,255,0.6);font-size:14px;line-height:1.7;margin:0;"></p>
+      </div>
+      <!-- Controls -->
+      <div id="section-controls" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.06);display:none;">
+        <h3 style="color:#fff;font-size:16px;margin:0 0 8px;">Controls</h3>
+        <div id="section-controls-content" style="color:rgba(255,255,255,0.6);font-size:14px;line-height:1.7;"></div>
+      </div>
+      <!-- FAQ -->
+      <div id="section-faq" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.06);display:none;">
+        <h3 style="color:#fff;font-size:16px;margin:0 0 12px;">Frequently Asked Questions</h3>
+        <div id="section-faq-content"></div>
+      </div>
+      <!-- Comments -->
+      <div id="section-comments" style="background:rgba(255,255,255,0.03);border-radius:12px;padding:20px;margin-bottom:12px;border:1px solid rgba(255,255,255,0.06);">
+        <h3 style="color:#fff;font-size:16px;margin:0 0 12px;">Comments</h3>
+        <div id="comment-input-wrap" style="display:flex;gap:8px;margin-bottom:16px;">
+          <input id="comment-input" placeholder="Write a comment..." style="flex:1;padding:10px 14px;border-radius:8px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.06);color:#fff;font-size:13px;outline:none;">
+          <button id="comment-submit" style="padding:10px 20px;border-radius:8px;background:#e53935;color:white;border:none;font-weight:700;cursor:pointer;font-size:13px;">Post</button>
+        </div>
+        <div id="comments-list" style="display:flex;flex-direction:column;gap:10px;"></div>
+        <div id="no-comments" style="color:rgba(255,255,255,0.3);font-size:13px;text-align:center;padding:20px 0;">No comments yet. Be the first!</div>
+      </div>
+    </div>
 
     <!-- RELATED GAMES -->
     <div class="related-section">
@@ -736,6 +792,182 @@
       initVotes();
       refreshFavUI();
       renderRelated();
+
+      // ─── BREADCRUMBS ─────────────────────────────────────────
+      (function() {
+        var bcCategory = document.getElementById('bc-category');
+        var bcGame = document.getElementById('bc-game');
+        if (bcCategory && bcGame) {
+          var catSlug = (game.category || '').toLowerCase().replace(/\s+/g, '-') + '-games';
+          bcCategory.href = '/play/' + catSlug;
+          bcCategory.textContent = game.category + ' Games';
+          bcGame.textContent = game.title;
+        }
+      })();
+
+      // ─── PLAY COUNT TRACKING ─────────────────────────────────
+      (async function() {
+        try {
+          var res = await fetch('/api/play', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({gameId: game.id})
+          });
+          var data = await res.json();
+          if (data.plays !== undefined) {
+            var playsEl = document.getElementById('game-plays');
+            var playsCount = document.getElementById('play-count');
+            if (playsEl && playsCount) {
+              playsEl.style.display = 'flex';
+              playsCount.textContent = formatCount(data.plays);
+            }
+          }
+        } catch(e) {}
+      })();
+
+      // ─── STAR RATING ─────────────────────────────────────────
+      (async function() {
+        try {
+          var res = await fetch('/api/votes/' + encodeURIComponent(game.id));
+          var data = await res.json();
+          var total = data.likes + data.dislikes;
+          if (total > 0) {
+            var score = Math.round((data.likes / total) * 10 * 10) / 10;
+            var ratingEl = document.getElementById('game-rating');
+            var scoreEl = document.getElementById('rating-score');
+            var countEl = document.getElementById('rating-count');
+            if (ratingEl) ratingEl.style.display = 'flex';
+            if (scoreEl) scoreEl.textContent = score.toFixed(1);
+            if (countEl) countEl.textContent = total;
+          }
+        } catch(e) {}
+      })();
+
+      // ─── GAME INFO SECTIONS ──────────────────────────────────
+      (function() {
+        var aboutText = document.getElementById('section-about-text');
+        if (aboutText) {
+          aboutText.textContent = game.description || 'Play ' + game.title + ' free on EggerMath. No downloads, no sign-up required!';
+        }
+
+        var controlsSection = document.getElementById('section-controls');
+        var controlsContent = document.getElementById('section-controls-content');
+        if (controlsSection && controlsContent) {
+          controlsSection.style.display = 'block';
+          controlsContent.innerHTML = '<p>Use your mouse and keyboard to play. Click the game area to activate controls.</p><p style="margin-top:8px;"><strong>Tip:</strong> Click the Fullscreen button for the best experience!</p>';
+        }
+
+        var faqSection = document.getElementById('section-faq');
+        var faqContent = document.getElementById('section-faq-content');
+        if (faqSection && faqContent) {
+          faqSection.style.display = 'block';
+          var faqs = [
+            {q: 'Is ' + game.title + ' free to play?', a: 'Yes! ' + game.title + ' is completely free to play on EggerMath. No downloads or sign-up required.'},
+            {q: 'Do I need to download anything?', a: 'No. ' + game.title + ' runs directly in your browser. Just click Play and enjoy!'},
+            {q: 'Can I play on mobile?', a: 'Yes! ' + game.title + ' works on both desktop and mobile browsers.'},
+            {q: 'How do I report a bug?', a: 'If you encounter any issues, please use the report button below the game.'}
+          ];
+          faqContent.innerHTML = faqs.map(function(faq) {
+            return '<details style="margin-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.06);padding-bottom:8px;"><summary style="color:rgba(255,255,255,0.8);font-size:14px;cursor:pointer;padding:8px 0;font-weight:600;">' + faq.q + '</summary><p style="color:rgba(255,255,255,0.5);font-size:13px;line-height:1.6;margin:8px 0 0;">' + faq.a + '</p></details>';
+          }).join('');
+        }
+
+        var faqSchema = document.getElementById('faq-schema');
+        if (faqSchema) {
+          faqSchema.textContent = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "Is " + game.title + " free to play?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes! Completely free on EggerMath."}
+            }]
+          });
+        }
+      })();
+
+      // ─── COMMENTS ────────────────────────────────────────────
+      (async function() {
+        var commentsList = document.getElementById('comments-list');
+        var noComments = document.getElementById('no-comments');
+        var commentInput = document.getElementById('comment-input');
+        var commentSubmit = document.getElementById('comment-submit');
+        
+        async function loadComments() {
+          try {
+            var res = await fetch('/api/comments/' + encodeURIComponent(game.id));
+            var comments = await res.json();
+            if (comments.length === 0) {
+              if (noComments) noComments.style.display = 'block';
+              return;
+            }
+            if (noComments) noComments.style.display = 'none';
+            commentsList.innerHTML = comments.map(function(c) {
+              var timeAgo = getTimeAgo(c.created_at);
+              return '<div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:12px;"><div style="display:flex;justify-content:space-between;margin-bottom:6px;"><span style="color:rgba(255,255,255,0.5);font-size:12px;">Anonymous</span><span style="color:rgba(255,255,255,0.3);font-size:11px;">' + timeAgo + '</span></div><p style="color:rgba(255,255,255,0.7);font-size:13px;margin:0;line-height:1.5;">' + escapeHtml(c.text) + '</p></div>';
+            }).join('');
+          } catch(e) {}
+        }
+        
+        function getTimeAgo(dateStr) {
+          var diff = Date.now() - new Date(dateStr).getTime();
+          var mins = Math.floor(diff / 60000);
+          if (mins < 1) return 'just now';
+          if (mins < 60) return mins + 'm ago';
+          var hrs = Math.floor(mins / 60);
+          if (hrs < 24) return hrs + 'h ago';
+          var days = Math.floor(hrs / 24);
+          return days + 'd ago';
+        }
+        
+        function escapeHtml(text) {
+          var div = document.createElement('div');
+          div.textContent = text;
+          return div.innerHTML;
+        }
+        
+        if (commentSubmit) {
+          commentSubmit.addEventListener('click', async function() {
+            var text = commentInput.value.trim();
+            if (!text) return;
+            commentSubmit.disabled = true;
+            try {
+              await fetch('/api/comments', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({gameId: game.id, fingerprint: getFingerprint(), text: text})
+              });
+              commentInput.value = '';
+              loadComments();
+            } catch(e) {}
+            commentSubmit.disabled = false;
+          });
+        }
+        
+        loadComments();
+      })();
+
+      // ─── REPORT BUTTON ─────────────────────────────────────
+      var reportBtn = document.getElementById('report-btn');
+      if (reportBtn) {
+        reportBtn.addEventListener('click', async function() {
+          if (reportBtn.dataset.reported === '1') return;
+          var reasons = ['Broken / Does not load', 'Inappropriate content', 'Wrong category', 'Copyright infringement', 'Other'];
+          var reason = prompt('Report this game. Reason:\n1. ' + reasons.join('\n2. ') + '\n\nEnter number (1-5) or type your reason:');
+          if (!reason) return;
+          if (/^[1-5]$/.test(reason.trim())) reason = reasons[parseInt(reason.trim()) - 1];
+          try {
+            await fetch('/api/report', {
+              method: 'POST',
+              headers: {'Content-Type': 'application/json'},
+              body: JSON.stringify({gameId: game.id, reason: reason.trim(), fingerprint: getFingerprint()})
+            });
+            reportBtn.dataset.reported = '1';
+            reportBtn.textContent = 'Reported';
+            reportBtn.style.color = '#4caf50';
+          } catch(e) {}
+        });
+      }
     }
 
     // ─── FIND GAME ────────────────────────────────────────────

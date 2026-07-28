@@ -8,6 +8,16 @@ seoPages.forEach(s => urls.push('https://www.eggermath.com/play/' + s));
 const collPages = ['2-player-games','zombie-games','chess-board-games'];
 collPages.forEach(c => urls.push('https://www.eggermath.com/collections/' + c));
 urls.push('https://www.eggermath.com/social');
+urls.push('https://www.eggermath.com/trending');
+urls.push('https://www.eggermath.com/most-played');
+urls.push('https://www.eggermath.com/blog');
+urls.push('https://www.eggermath.com/about');
+urls.push('https://www.eggermath.com/contact');
+urls.push('https://www.eggermath.com/advertise');
+urls.push('https://www.eggermath.com/takedown');
+urls.push('https://www.eggermath.com/onboarding');
+const franchiseSlugs = ['dynamons','adam-and-eve','vex','zombie-mission','fireboy-and-watergirl','zombie-last-castle','dino-squad-adventure','basketball-kings','jewels-blitz','basketball-legends','poppy-strike','garden-tales','snail-bob','ultimate-motocross','solitaire-story-tripeaks','bloons-tower-defense','red-ball','8-ball-pool','2112-cooperation-chapter','money-movers','counter-craft','pixel-gun-apocalypse'];
+franchiseSlugs.forEach(f => urls.push('https://www.eggermath.com/franchise/' + f));
 GAMES.forEach(g => urls.push('https://www.eggermath.com/game.html?id=' + encodeURIComponent(g.id)));
 const lines = ['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
 urls.forEach(u => {
