@@ -1729,6 +1729,10 @@ const server = http.createServer(async (req, res) => {
     headers['Cross-Origin-Opener-Policy'] = 'same-origin';
     headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
     headers['Cross-Origin-Resource-Policy'] = 'cross-origin';
+  } else if (isHtml) {
+    // Parent pages also need COEP so file inputs work inside the PSP emulator iframe
+    headers['Cross-Origin-Opener-Policy'] = 'same-origin';
+    headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
   }
 
   res.writeHead(200, headers);
