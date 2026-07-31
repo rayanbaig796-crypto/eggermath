@@ -4,6 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const url = require('url');
 const crypto = require('crypto');
+const zlib = require('zlib');
 
 const PORT = process.env.PORT || 8080;
 const ROOT = __dirname;
@@ -1710,11 +1711,17 @@ const server = http.createServer(async (req, res) => {
   const isHtml = ext === '.html' || ext === '.htm';
   const isPspEmulator = filePath.includes('psp-emulator-web') || filePath.includes('ppsspp-web');
 
+  const compressible = ['.wasm', '.data', '.js', '.css', '.json', '.svg', '.html', '.htm', '.txt', '.ini', '.xml'];
+  const shouldCompress = compressible.includes(ext) && fs.statSync(filePath).size > 1024;
+  const acceptEncoding = req.headers['accept-encoding'] || '';
+  const useGzip = shouldCompress && acceptEncoding.includes('gzip');
+
   const headers = Object.assign(securityHeaders(), {
     'Content-Type': mime,
     'Access-Control-Allow-Origin': '*',
     'Cache-Control': cacheControl,
     ...(isHtml ? { 'X-Frame-Options': 'SAMEORIGIN' } : {}),
+    ...(useGzip ? { 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding' } : {}),
   });
 
   // PPSSPP WASM requires COOP/COEP for SharedArrayBuffer support
@@ -1725,7 +1732,11 @@ const server = http.createServer(async (req, res) => {
   }
 
   res.writeHead(200, headers);
-  fs.createReadStream(filePath).pipe(res);
+  if (useGzip) {
+    fs.createReadStream(filePath).pipe(zlib.createGzip({ level: 6 })).pipe(res);
+  } else {
+    fs.createReadStream(filePath).pipe(res);
+  }
 });
 
 server.listen(PORT, '0.0.0.0', () => {
