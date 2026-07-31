@@ -975,7 +975,7 @@ const server = http.createServer(async (req, res) => {
         'strategy-games': { cat: 'Strategy', emoji: '\uD83C\uDCC6', desc: 'Play free strategy games online! Tower defense, card games, turn-based tactics and more — free in your browser!' },
         'creative-games': { cat: 'Creative', emoji: '\uD83C\uDFA8', desc: 'Play free creative games online! Drawing, building, music, and art games — unleash your creativity!' },
         'card-games': { cat: 'Card', emoji: '\uD83C\uDCCF', desc: 'Play free card games online! Solitaire, poker, blackjack, Uno and more — all free in your browser!' },
-        'other-games': { cat: 'Other', emoji: '\u2B50', desc: 'Play the best free games online! Browse our collection of 8000+ browser games — no download needed!' }
+        'other-games': { cat: 'Other', emoji: '\u2B50', desc: 'Play the best free games online! Browse our collection of 18000+ browser games — no download needed!' }
       };
       const info = categories[slug];
       if (!info) {
@@ -1708,12 +1708,23 @@ const server = http.createServer(async (req, res) => {
   else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
 
   const isHtml = ext === '.html' || ext === '.htm';
-  res.writeHead(200, Object.assign(securityHeaders(), {
+  const isPspEmulator = filePath.includes('psp-emulator-web') || filePath.includes('ppsspp-web');
+
+  const headers = Object.assign(securityHeaders(), {
     'Content-Type': mime,
     'Access-Control-Allow-Origin': '*',
     'Cache-Control': cacheControl,
     ...(isHtml ? { 'X-Frame-Options': 'SAMEORIGIN' } : {}),
-  }));
+  });
+
+  // PPSSPP WASM requires COOP/COEP for SharedArrayBuffer support
+  if (isPspEmulator) {
+    headers['Cross-Origin-Opener-Policy'] = 'same-origin';
+    headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
+    headers['Cross-Origin-Resource-Policy'] = 'cross-origin';
+  }
+
+  res.writeHead(200, headers);
   fs.createReadStream(filePath).pipe(res);
 });
 

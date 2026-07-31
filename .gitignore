@@ -24,23 +24,24 @@ Thumbs.db
 # Test artifacts
 .playwright-mcp/
 
-# Dev configs (in game subfolders)
-games/**/tsconfig.json
-games/**/vite.config.ts
-games/**/webpack.config.js
-games/**/webpack.prod.config.js
-games/**/.babelrc
-games/**/.editorconfig
-games/**/.eslintrc.json
-games/**/eslint.config.mjs
-games/**/.stylelintrc.json
-games/**/.parcelrc
-games/**/.tool-versions
-games/**/package.json
-games/**/package-lock.json
-games/**/yarn.lock
-games/**/.gitignore
-games/**/.gitattributes
+# Dev scripts
+check-*.js
+fix-*.js
+test-*.js
+import_*.js
+remove-game.js
+api-body*.json
+broken-*.json
+
+# PSP Emulator — exclude local dev files and large ROMs
+psp-emulator-web/*.iso
+psp-emulator-web/*.zip
+psp-emulator-web/server_err.log
+psp-emulator-web/server.log
+psp-emulator-web/start.bat
+psp-emulator-web/tab-system.html
+psp-emulator-web/serve.py
+psp-emulator-web/ppsspp-runtime.js
 
 # Firebase configs
 .firebase/

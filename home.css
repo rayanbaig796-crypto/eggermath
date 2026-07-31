@@ -1406,3 +1406,112 @@ footer {
   .hscroll-scroll-wrap::before,
   .hscroll-scroll-wrap::after { width: 20px; }
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   SIDEBAR TABS — Online Games / PSP Emulator
+   ═══════════════════════════════════════════════════════════════ */
+.sidebar-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.sidebar-tab {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.5);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: left;
+  width: 100%;
+  font-family: inherit;
+}
+.sidebar-tab:hover {
+  color: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.05);
+}
+.sidebar-tab.active {
+  color: #fff;
+  background: rgba(229,115,115,0.15);
+}
+.sidebar-tab.active svg {
+  color: var(--green);
+}
+.sidebar-tab svg {
+  flex-shrink: 0;
+}
+.tab-badge {
+  margin-left: auto;
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--green);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   VIEW SECTIONS — Toggle between Games and Emulator
+   ═══════════════════════════════════════════════════════════════ */
+.view-section {
+  display: block;
+}
+.view-section.hidden {
+  display: none !important;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   EMULATOR VIEW — full-bleed dark background
+   ═══════════════════════════════════════════════════════════════ */
+body.emulator-active .main-content {
+  background: #111 !important;
+}
+body.emulator-active {
+  background: #111 !important;
+  background-image: none !important;
+}
+.emulator-view {
+  padding: 0;
+}
+.emu-iframe-wrap {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: #111;
+}
+.emu-iframe-wrap iframe {
+  width: 100%;
+  height: calc(100vh - 60px);
+  min-height: 600px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .emu-iframe-wrap iframe {
+    height: 70vh;
+    min-height: 400px;
+  }
+  .sidebar-tabs {
+    flex-direction: row;
+    padding: 6px 8px;
+  }
+  .sidebar-tab {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+  .tab-badge {
+    display: none;
+  }
+}
