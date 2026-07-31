@@ -1705,6 +1705,7 @@ const server = http.createServer(async (req, res) => {
 
   let cacheControl = 'public, max-age=300';
   if (ext === '.html' || ext === '.htm') cacheControl = 'no-store, must-revalidate';
+  else if (ext === '.wasm' || ext === '.data') cacheControl = 'public, max-age=604800, immutable';
   else if (ext === '.js' || ext === '.css') cacheControl = 'public, max-age=86400, immutable';
   else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
 

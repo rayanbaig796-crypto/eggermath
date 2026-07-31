@@ -1164,7 +1164,7 @@
                 locateFile(path) {
                     let url = 'build-wasm/' + path;
                     if (path.endsWith('.wasm') || path.endsWith('.data')) {
-                        url += '?v=' + Date.now();
+                        url += '?v=1';
                     }
                     return url;
                 },
