@@ -1151,9 +1151,6 @@
         });
 
         function loadPPSSPP() {
-            canvas.width = 480;
-            canvas.height = 272;
-
                 window.Module = {
                 canvas: canvas,
                 webglContextAttributes: {
@@ -1163,11 +1160,13 @@
                     failIfMajorPerformanceCaveat: false,
                 },
                 SDL2: {},
-                get arguments() {
-                    return window._selectedGamePath ? [window._selectedGamePath] : [];
-                },
+                arguments: window._selectedGamePath ? [window._selectedGamePath] : [],
                 locateFile(path) {
-                    return 'build-wasm/' + path;
+                    let url = 'build-wasm/' + path;
+                    if (path.endsWith('.wasm') || path.endsWith('.data')) {
+                        url += '?v=' + Date.now();
+                    }
+                    return url;
                 },
                 print(text)    { console.log('PPSSPP:', text); },
                 printErr(text) { console.error('PPSSPP:', text); },
@@ -1183,35 +1182,27 @@
                     }
                 },
                 monitorRunDependencies(left) {
-                    loadingText.textContent = 'Loading dependencies: ' + left;
+                    console.log('Run dependencies remaining:', left);
                     if (left > 0) {
+                        loadingText.textContent = 'Loading dependencies: ' + left;
                         progressFill.style.width = Math.min(90, 70 + (10 - left) * 2) + '%';
-                    }
-                    if (left === 0) {
-                        progressFill.style.width = '100%';
-                        loading.classList.remove('visible');
-                        progressFill.style.width = '0%';
-                        status.textContent = 'Emulator running!';
-                        status.className = 'success';
-                        emuContainer.classList.add('visible');
-                        canvas.focus();
                     }
                 },
                 preRun: [function() {
                     const FS = window.FS || Module.FS;
 
+                    // Prevent runtime from starting until async ops complete
+                    addRunDependency('ppsspp-setup');
+                    (async () => {
                     // Restore saves/config from OPFS (sync walk)
                     try {
                         const memstick = detectMemstickDir(FS);
-                        const opfsFiles = [];
-                        (async () => {
-                            const entries = await opfsWalk();
-                            for (const { path, data } of entries) {
-                                try { fsMkdirP(FS, path.substring(0, path.lastIndexOf('/'))); FS.writeFile(path, data); } catch(e) {}
-                            }
-                            const initStats = fsStatDir(FS, memstick);
-                            for (const [path, { size, mtime }] of initStats) _persistedFileState.set(path, size + ':' + mtime);
-                        })();
+                        const entries = await opfsWalk();
+                        for (const { path, data } of entries) {
+                            try { fsMkdirP(FS, path.substring(0, path.lastIndexOf('/'))); FS.writeFile(path, data); } catch(e) {}
+                        }
+                        const initStats = fsStatDir(FS, memstick);
+                        for (const [path, { size, mtime }] of initStats) _persistedFileState.set(path, size + ':' + mtime);
                     } catch(e) {}
 
                     // Apply network config for multiplayer
@@ -1264,7 +1255,8 @@ Pause = 1-111
                     } catch(e) {
                         console.warn('Could not write controls.ini:', e);
                     }
-                }],
+                    removeRunDependency('ppsspp-setup');
+                    })();
                 onRuntimeInitialized() {
                     console.log('PPSSPP runtime initialized!');
                     loading.classList.remove('visible');
