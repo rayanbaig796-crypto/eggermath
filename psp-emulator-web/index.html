@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="build-wasm/PPSSPPSDL.wasm" as="fetch" type="application/wasm" crossorigin>
+    <link rel="preload" href="build-wasm/PPSSPPSDL.js" as="script" crossorigin>
+    <link rel="preload" href="build-wasm/PPSSPPSDL.data" as="fetch" type="application/octet-stream" crossorigin>
     <title>PSP Browser Emulator</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -116,6 +119,22 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
             margin: 0 auto 10px;
+        }
+        .progress-bar {
+            width: 80%;
+            max-width: 400px;
+            height: 6px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 3px;
+            margin: 12px auto;
+            overflow: hidden;
+        }
+        .progress-fill {
+            width: 0%;
+            height: 100%;
+            background: linear-gradient(90deg, #c62828, #e57373);
+            border-radius: 3px;
+            transition: width 0.3s ease;
         }
         @keyframes spin { to { transform: rotate(360deg); } }
         .footer {
@@ -260,6 +279,9 @@
 
         <div class="loading" id="loading">
             <div class="spinner"></div>
+            <div class="progress-bar" id="progressBar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
             <p id="loadingText">Loading emulator...</p>
         </div>
 
@@ -1016,8 +1038,22 @@
         const startBtn = document.getElementById('startBtn');
         const fullscreenBtn = document.getElementById('fullscreenBtn');
         const status = document.getElementById('status');
+        const progressBar = document.getElementById('progressBar');
+        const progressFill = document.getElementById('progressFill');
 
         initNetworkUI();
+
+        // Pre-warm cache on page load
+        if ('caches' in window) {
+            caches.open('eggermath-v6').then(cache => {
+                cache.match('/psp-emulator-web/build-wasm/PPSSPPSDL.wasm').then(r => {
+                    if (r) {
+                        status.textContent = 'Emulator core pre-cached. Select a game to begin.';
+                        status.className = 'success';
+                    }
+                });
+            }).catch(() => {});
+        }
 
         let selectedFile = null;
         let selectedFileObj = null;
@@ -1064,6 +1100,7 @@
             emulatorStarted = true;
             startBtn.disabled = true;
             loading.classList.add('visible');
+            progressFill.style.width = '10%';
             loadingText.textContent = 'Reading game file (this may take a moment for large ISOs)...';
 
             try {
@@ -1071,6 +1108,7 @@
                 window._selectedGameData = new Uint8Array(arrayBuffer);
                 const safeName = selectedFileObj.name.replace(/[^a-zA-Z0-9._-]/g, '_');
                 window._selectedGamePath = '/games/' + safeName;
+                progressFill.style.width = '30%';
 
                 loadingText.textContent = 'Loading emulator core...';
                 status.textContent = 'Initializing PPSSPP...';
@@ -1080,6 +1118,7 @@
 
             } catch (err) {
                 loading.classList.remove('visible');
+                progressFill.style.width = '0%';
                 status.textContent = 'Error: ' + err.message;
                 status.className = 'error';
                 emulatorStarted = false;
@@ -1139,12 +1178,24 @@
                     if (text) {
                         loadingText.textContent = text;
                         status.textContent = text;
+                        if (text.includes('Downloading') || text.includes('downloading')) {
+                            progressFill.style.width = '50%';
+                        } else if (text.includes('preparing') || text.includes('Preparing')) {
+                            progressFill.style.width = '70%';
+                        }
                     }
                 },
                 monitorRunDependencies(left) {
                     loadingText.textContent = 'Loading dependencies: ' + left;
+                    if (left > 0) {
+                        progressFill.style.width = Math.min(90, 70 + (10 - left) * 2) + '%';
+                    }
                     if (left === 0) {
-                        loading.classList.remove('visible');
+                        progressFill.style.width = '100%';
+                        setTimeout(() => {
+                            loading.classList.remove('visible');
+                            progressFill.style.width = '0%';
+                        }, 300);
                         status.textContent = 'Emulator running!';
                         status.className = 'success';
                         emuContainer.classList.add('visible');

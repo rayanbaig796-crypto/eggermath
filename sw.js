@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eggermath-v5';
+const CACHE_NAME = 'eggermath-v6';
 const STATIC_ASSETS = [
   '/home.css',
   '/game-page.css',
@@ -6,9 +6,21 @@ const STATIC_ASSETS = [
   '/images/eggermath-logo.png'
 ];
 
+const EMULATOR_ASSETS = [
+  '/psp-emulator-web/build-wasm/PPSSPPSDL.js',
+  '/psp-emulator-web/build-wasm/PPSSPPSDL.wasm',
+  '/psp-emulator-web/build-wasm/PPSSPPSDL.data'
+];
+
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.addAll(STATIC_ASSETS).then(() => {
+        return Promise.allSettled(
+          EMULATOR_ASSETS.map(url => cache.add(url))
+        );
+      });
+    })
   );
   self.skipWaiting();
 });
@@ -17,7 +29,11 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
-    )
+    ).then(() => caches.open(CACHE_NAME)).then(cache => {
+      return Promise.allSettled(
+        EMULATOR_ASSETS.map(url => cache.add(url).catch(() => {}))
+      );
+    })
   );
   self.clients.claim();
 });
