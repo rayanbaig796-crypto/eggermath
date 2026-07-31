@@ -52,12 +52,14 @@
         .emulator-container.visible { display: block; }
         .emulator-container:fullscreen {
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             border-radius: 0;
             border: none;
             width: 100vw;
             height: 100vh;
+            touch-action: none;
         }
         canvas {
             display: block;
@@ -472,17 +474,17 @@
                     <div class="tc-analog-stick" id="tcStick"></div>
                 </div>
                 <div class="tc-dpad" id="tcDpad">
-                    <div class="tc-dpad-btn tc-dpad-up" data-btn="up"></div>
-                    <div class="tc-dpad-btn tc-dpad-down" data-btn="down"></div>
-                    <div class="tc-dpad-btn tc-dpad-left" data-btn="left"></div>
-                    <div class="tc-dpad-btn tc-dpad-right" data-btn="right"></div>
+                    <div class="tc-dpad-btn tc-dpad-up" data-btn="up"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 5l-7 8h14z" fill="rgba(255,255,255,0.6)"/></svg></div>
+                    <div class="tc-dpad-btn tc-dpad-down" data-btn="down"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19l-7-8h14z" fill="rgba(255,255,255,0.6)"/></svg></div>
+                    <div class="tc-dpad-btn tc-dpad-left" data-btn="left"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l8-7v14z" fill="rgba(255,255,255,0.6)"/></svg></div>
+                    <div class="tc-dpad-btn tc-dpad-right" data-btn="right"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M19 12l-8-7v14z" fill="rgba(255,255,255,0.6)"/></svg></div>
                     <div class="tc-dpad-center"></div>
                 </div>
                 <div class="tc-face">
-                    <div class="tc-face-btn tc-face-t" data-btn="triangle"></div>
-                    <div class="tc-face-btn tc-face-s" data-btn="square"></div>
-                    <div class="tc-face-btn tc-face-x" data-btn="cross"></div>
-                    <div class="tc-face-btn tc-face-o" data-btn="circle"></div>
+                    <div class="tc-face-btn tc-face-t" data-btn="triangle"><svg viewBox="0 0 100 100" width="22" height="22"><polygon points="50,15 85,80 15,80" fill="none" stroke="#4ecb71" stroke-width="10" stroke-linejoin="round"/></svg></div>
+                    <div class="tc-face-btn tc-face-s" data-btn="square"><svg viewBox="0 0 100 100" width="22" height="22"><rect x="15" y="15" width="70" height="70" rx="6" fill="none" stroke="#cb6ce6" stroke-width="10"/></svg></div>
+                    <div class="tc-face-btn tc-face-x" data-btn="cross"><svg viewBox="0 0 100 100" width="22" height="22"><line x1="20" y1="20" x2="80" y2="80" stroke="#00b4d8" stroke-width="10" stroke-linecap="round"/><line x1="80" y1="20" x2="20" y2="80" stroke="#00b4d8" stroke-width="10" stroke-linecap="round"/></svg></div>
+                    <div class="tc-face-btn tc-face-o" data-btn="circle"><svg viewBox="0 0 100 100" width="22" height="22"><circle cx="50" cy="50" r="35" fill="none" stroke="#e94560" stroke-width="10"/></svg></div>
                 </div>
                 <div class="tc-center">
                     <div class="tc-center-btn" data-btn="select">SELECT</div>
