@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="build-wasm/PPSSPPSDL.wasm" as="fetch" type="application/wasm" crossorigin>
-    <link rel="preload" href="build-wasm/PPSSPPSDL.js" as="script" crossorigin>
-    <link rel="preload" href="build-wasm/PPSSPPSDL.data" as="fetch" type="application/octet-stream" crossorigin>
     <title>PSP Browser Emulator</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -1192,10 +1189,8 @@
                     }
                     if (left === 0) {
                         progressFill.style.width = '100%';
-                        setTimeout(() => {
-                            loading.classList.remove('visible');
-                            progressFill.style.width = '0%';
-                        }, 300);
+                        loading.classList.remove('visible');
+                        progressFill.style.width = '0%';
                         status.textContent = 'Emulator running!';
                         status.className = 'success';
                         emuContainer.classList.add('visible');
