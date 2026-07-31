@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eggermath-v6';
+const CACHE_NAME = 'eggermath-v7';
 const STATIC_ASSETS = [
   '/home.css',
   '/game-page.css',
@@ -6,21 +6,9 @@ const STATIC_ASSETS = [
   '/images/eggermath-logo.png'
 ];
 
-const EMULATOR_ASSETS = [
-  '/psp-emulator-web/build-wasm/PPSSPPSDL.js',
-  '/psp-emulator-web/build-wasm/PPSSPPSDL.wasm',
-  '/psp-emulator-web/build-wasm/PPSSPPSDL.data'
-];
-
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.addAll(STATIC_ASSETS).then(() => {
-        return Promise.allSettled(
-          EMULATOR_ASSETS.map(url => cache.add(url))
-        );
-      });
-    })
+    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS))
   );
   self.skipWaiting();
 });
@@ -29,11 +17,7 @@ self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys().then(keys =>
       Promise.all(keys.filter(k => k !== CACHE_NAME).map(k => caches.delete(k)))
-    ).then(() => caches.open(CACHE_NAME)).then(cache => {
-      return Promise.allSettled(
-        EMULATOR_ASSETS.map(url => cache.add(url).catch(() => {}))
-      );
-    })
+    )
   );
   self.clients.claim();
 });
@@ -52,6 +36,12 @@ self.addEventListener('fetch', event => {
 
   // Don't touch cross-origin
   if (url.origin !== self.location.origin) return;
+
+  // Skip PSP emulator files — let them load directly to avoid
+  // SW caching issues with WASM/gzip/COEP headers
+  if (url.pathname.includes('psp-emulator-web') || url.pathname.includes('ppsspp-web')) {
+    return;
+  }
 
   // HTML navigation: network-first with fast timeout + cache fallback
   if (request.headers.get('accept') && request.headers.get('accept').includes('text/html')) {
