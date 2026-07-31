@@ -259,6 +259,8 @@
             outline: none;
         }
     </style>
+    <link rel="preload" href="build-wasm/PPSSPPSDL.wasm?v=1" as="fetch" type="application/wasm" crossorigin>
+    <link rel="preload" href="build-wasm/PPSSPPSDL.data?v=1" as="fetch" type="application/octet-stream" crossorigin>
 </head>
 <body>
     <div class="main">
@@ -1040,17 +1042,18 @@
 
         initNetworkUI();
 
-        // Pre-warm cache on page load
-        if ('caches' in window) {
-            caches.open('eggermath-v6').then(cache => {
-                cache.match('/psp-emulator-web/build-wasm/PPSSPPSDL.wasm').then(r => {
-                    if (r) {
-                        status.textContent = 'Emulator core pre-cached. Select a game to begin.';
-                        status.className = 'success';
-                    }
-                });
-            }).catch(() => {});
-        }
+        // Pre-fetch WASM + data in background so they're cached before user clicks Start
+        const WASM_URL = 'build-wasm/PPSSPPSDL.wasm?v=1';
+        const DATA_URL = 'build-wasm/PPSSPPSDL.data?v=1';
+        Promise.allSettled([
+            fetch(WASM_URL, { cache: 'force-cache' }).then(r => r.ok ? r.blob() : null).catch(() => null),
+            fetch(DATA_URL, { cache: 'force-cache' }).then(r => r.ok ? r.blob() : null).catch(() => null)
+        ]).then(([wasmRes, dataRes]) => {
+            if (wasmRes.status === 'fulfilled' && wasmRes.value) {
+                status.textContent = 'Emulator core ready. Select a game to begin.';
+                status.className = 'success';
+            }
+        });
 
         let selectedFile = null;
         let selectedFileObj = null;
