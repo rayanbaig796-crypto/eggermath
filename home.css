@@ -121,6 +121,58 @@ img { display: block; max-width: 100%; }
 }
 
 /* ================================================================
+   MOBILE TABS — Games / Emulator switcher (hidden on desktop)
+   ================================================================ */
+.mobile-tabs {
+  display: none;
+  position: fixed;
+  top: var(--mobile-header-h);
+  left: 0; right: 0;
+  background: var(--sidebar-bg);
+  z-index: 150;
+  padding: 0 12px;
+  gap: 4px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.mobile-tab {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 8px;
+  border: none;
+  background: none;
+  color: rgba(255,255,255,0.45);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  border-bottom: 2px solid transparent;
+}
+.mobile-tab:hover {
+  color: rgba(255,255,255,0.7);
+}
+.mobile-tab.active {
+  color: #fff;
+  border-bottom-color: var(--green);
+}
+.mobile-tab.active svg { color: var(--green); }
+.mobile-tab-badge {
+  font-size: 9px;
+  font-weight: 800;
+  padding: 2px 5px;
+  border-radius: 4px;
+  background: var(--green);
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 1024px) {
+  .mobile-tabs { display: flex; }
+}
+
+/* ================================================================
    MOBILE MENU DRAWER (hidden on desktop)
    ================================================================ */
 .mobile-menu-overlay {
@@ -943,14 +995,14 @@ footer {
    RESPONSIVE — TABLET (≤1024px)
    ================================================================ */
 @media (max-width: 1024px) {
-  :root { --sidebar-w: 0px; }
+  :root { --sidebar-w: 0px; --mobile-tabs-h: 44px; }
   .sidebar { display: none; }
   .mobile-header { display: flex; }
-  .main-content { margin-left: 0; margin-top: var(--mobile-header-h); }
+  .main-content { margin-left: 0; margin-top: calc(var(--mobile-header-h) + var(--mobile-tabs-h)); }
   footer { margin-left: 0; }
   .cat-bar {
     position: sticky;
-    top: var(--mobile-header-h);
+    top: calc(var(--mobile-header-h) + var(--mobile-tabs-h));
     z-index: 160;
   }
   .game-grid {
@@ -979,12 +1031,13 @@ footer {
   :root {
     --sidebar-w: 0px;
     --mobile-header-h: 48px;
+    --mobile-tabs-h: 44px;
   }
   .sidebar { display: none; }
   .mobile-header { display: flex; }
   .main-content {
     margin-left: 0;
-    margin-top: var(--mobile-header-h);
+    margin-top: calc(var(--mobile-header-h) + var(--mobile-tabs-h));
     padding-bottom: 20px;
   }
   .main-content h1 {
@@ -997,7 +1050,7 @@ footer {
     gap: 4px;
     padding: 6px 6px;
     position: sticky;
-    top: var(--mobile-header-h);
+    top: calc(var(--mobile-header-h) + var(--mobile-tabs-h));
     z-index: 160;
   }
   .cat-btn {
@@ -1499,9 +1552,14 @@ body.emulator-active {
 }
 
 @media (max-width: 768px) {
+  .emu-iframe-wrap {
+    border-radius: 0;
+    border: none;
+  }
   .emu-iframe-wrap iframe {
-    height: 70vh;
-    min-height: 400px;
+    height: calc(100vh - 50px);
+    min-height: 0;
+    height: 100dvh;
   }
   .sidebar-tabs {
     flex-direction: row;
@@ -1513,5 +1571,10 @@ body.emulator-active {
   }
   .tab-badge {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .emu-iframe-wrap iframe {
+    height: 100dvh;
   }
 }
