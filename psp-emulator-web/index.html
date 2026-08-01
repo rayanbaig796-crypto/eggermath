@@ -1491,6 +1491,40 @@ Pause = 1-111
                             console.log('Desktop: native touch controls disabled');
                         } catch(e) {}
                     }
+
+                    try {
+                        const iniPath = '/home/web_user/.config/ppsspp/PSP/SYSTEM/ppsspp.ini';
+                        let ini = '';
+                        try { ini = new TextDecoder().decode(FS.readFile(iniPath)); } catch(e) {}
+                        ini = patchIniValue(ini, 'Graphics', 'RenderingMode', '1');
+                        ini = patchIniValue(ini, 'Graphics', 'SoftwareSkinning', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'TextureDecodingLevel', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'ShowFPSCounter', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'BufferFilter', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'InternalResolution', '1');
+                        ini = patchIniValue(ini, 'Graphics', 'FrameSkip', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'AutoFrameSkip', 'False');
+                        ini = patchIniValue(ini, 'Graphics', 'FrameRate', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'FrameRate2', '-1');
+                        ini = patchIniValue(ini, 'Graphics', 'ForceLagSync2', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'VSync', 'True');
+                        ini = patchIniValue(ini, 'Sound', 'Enable', 'True');
+                        ini = patchIniValue(ini, 'Sound', 'AudioBufferSize', '1024');
+                        ini = patchIniValue(ini, 'System', 'IOTimingMethod', '1');
+                        ini = patchIniValue(ini, 'System', 'FastMemory', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'VideoBackends', '0');
+                        ini = patchIniValue(ini, 'Graphics', 'MemBlockTransferGPU', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'DisableSlowEffects', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'PartialStretch', 'True');
+                        ini = patchIniValue(ini, 'Debugger', 'SkipDeadbeefFilling', 'True');
+                        ini = patchIniValue(ini, 'SystemParam', 'Language', '1');
+                        ini = patchIniValue(ini, 'General', 'IgnoreBadMemAccess', 'True');
+                        FS.writeFile(iniPath, new TextEncoder().encode(ini));
+                        console.log('Graphics config applied for game compatibility');
+                    } catch(e) {
+                        console.warn('Could not write graphics config:', e);
+                    }
+
                     removeRunDependency('ppsspp-setup');
                     })();
                 }],
