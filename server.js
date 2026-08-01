@@ -1711,6 +1711,8 @@ const server = http.createServer(async (req, res) => {
 
   const isHtml = ext === '.html' || ext === '.htm';
   const isPspEmulator = filePath.includes('psp-emulator-web') || filePath.includes('ppsspp-web');
+  const isGbaEmulator = filePath.includes('gba-emulator-web');
+  const isEmulator = isPspEmulator || isGbaEmulator;
 
   const compressible = ['.wasm', '.data', '.js', '.css', '.json', '.svg', '.html', '.htm', '.txt', '.ini', '.xml'];
   const shouldCompress = compressible.includes(ext) && fs.statSync(filePath).size > 1024;
@@ -1725,13 +1727,13 @@ const server = http.createServer(async (req, res) => {
     ...(useGzip ? { 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding' } : {}),
   });
 
-  // PPSSPP WASM requires COOP/COEP for SharedArrayBuffer support
-  if (isPspEmulator) {
+  // PPSSPP/mGBA WASM require COOP/COEP for SharedArrayBuffer support
+  if (isEmulator) {
     headers['Cross-Origin-Opener-Policy'] = 'same-origin';
     headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
     headers['Cross-Origin-Resource-Policy'] = 'cross-origin';
   } else if (isHtml) {
-    // Parent pages also need COEP so file inputs work inside the PSP emulator iframe
+    // Parent pages also need COEP so file inputs work inside emulator iframes
     headers['Cross-Origin-Opener-Policy'] = 'same-origin';
     headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
   }
