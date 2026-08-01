@@ -361,6 +361,10 @@
             <div class="icon">&#127918;</div>
             <p>Click or drag & drop your PSP game here</p>
             <div class="formats">Supports: .iso, .cso, .chd, .pbp, .elf, .prx</div>
+            <div style="margin-top:10px;font-size:11px;color:#666;line-height:1.5">
+                Tested: Dragon Ball Z Tenkaichi Tag Team, God of War Ghost of Sparta, and more.
+                <br>Some FMV-heavy games may show a brief black screen during pre-rendered cutscenes.
+            </div>
             <input type="file" id="gameFile" accept=".iso,.cso,.chd,.pbp,.elf,.prx" hidden>
         </div>
 
@@ -1511,8 +1515,13 @@ Pause = 1-111
                         ini = patchIniValue(ini, 'Sound', 'FillAudioGaps', 'True');
                         ini = patchIniValue(ini, 'Sound', 'AudioSyncMode', '0');
                         ini = patchIniValue(ini, 'CPU', 'FastMemoryAccess', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'BufferedRendering', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'ForceMaxEmulatedFPS', '60');
+                        ini = patchIniValue(ini, 'Graphics', 'SoftwareSkinning', 'True');
+                        ini = patchIniValue(ini, 'System', 'IOTimingMethod', '0');
+                        ini = patchIniValue(ini, 'System', 'CPUTicks', '0');
                         FS.writeFile(iniPath, new TextEncoder().encode(ini));
-                        console.log('Web timing + sound config applied');
+                        console.log('Web timing + sound + GoW compat config applied');
                     } catch(e) {
                         console.warn('Could not write config:', e);
                     }
