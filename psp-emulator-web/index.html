@@ -351,168 +351,6 @@
             .controls { gap: 6px; }
             .controls button { padding: 8px 14px; font-size: 13px; }
         }
-        .touch-controls {
-            display: none;
-            position: absolute;
-            inset: 0;
-            z-index: 20;
-            pointer-events: none;
-            user-select: none;
-            -webkit-user-select: none;
-            touch-action: none;
-        }
-        .touch-controls.active { display: block; pointer-events: auto; }
-        .touch-controls .tc-dpad {
-            position: absolute;
-            bottom: 60px;
-            left: 20px;
-            width: 120px;
-            height: 120px;
-        }
-        .tc-dpad-btn {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.15);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            color: rgba(255,255,255,0.6);
-            pointer-events: auto;
-            touch-action: none;
-            transition: background 0.05s;
-        }
-        .tc-dpad-btn:active, .tc-dpad-btn.pressed { background: rgba(255,255,255,0.35); }
-        .tc-dpad-up { top: 0; left: 40px; }
-        .tc-dpad-down { bottom: 0; left: 40px; }
-        .tc-dpad-left { top: 40px; left: 0; }
-        .tc-dpad-right { top: 40px; right: 0; }
-        .tc-dpad-center {
-            position: absolute;
-            top: 40px;
-            left: 40px;
-            width: 40px;
-            height: 40px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-        }
-        .touch-controls .tc-face {
-            position: absolute;
-            bottom: 60px;
-            right: 20px;
-            width: 120px;
-            height: 120px;
-        }
-        .tc-face-btn {
-            position: absolute;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 16px;
-            font-weight: bold;
-            pointer-events: auto;
-            touch-action: none;
-            transition: opacity 0.05s;
-        }
-        .tc-face-btn:active, .tc-face-btn.pressed { opacity: 0.5; }
-        .tc-face-x { bottom: 0; left: 38px; background: rgba(0,180,216,0.4); border: 2px solid rgba(0,180,216,0.7); color: #00b4d8; }
-        .tc-face-o { bottom: 38px; right: 0; background: rgba(233,69,96,0.4); border: 2px solid rgba(233,69,96,0.7); color: #e94560; }
-        .tc-face-t { top: 0; left: 38px; background: rgba(78,203,113,0.4); border: 2px solid rgba(78,203,113,0.7); color: #4ecb71; }
-        .tc-face-s { top: 38px; right: 0; background: rgba(203,108,230,0.4); border: 2px solid rgba(203,108,230,0.7); color: #cb6ce6; }
-        .touch-controls .tc-shoulder {
-            position: absolute;
-            top: 10px;
-            width: 70px;
-            height: 40px;
-            background: rgba(255,255,255,0.12);
-            border: 2px solid rgba(255,255,255,0.25);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 13px;
-            font-weight: bold;
-            color: rgba(255,255,255,0.6);
-            pointer-events: auto;
-            touch-action: none;
-        }
-        .tc-shoulder:active, .tc-shoulder.pressed { background: rgba(255,255,255,0.3); }
-        .tc-l { left: 15px; }
-        .tc-r { right: 15px; }
-        .touch-controls .tc-center {
-            position: absolute;
-            bottom: 15px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 12px;
-            align-items: center;
-        }
-        .tc-center-btn {
-            padding: 6px 16px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 14px;
-            font-size: 11px;
-            font-weight: 600;
-            color: rgba(255,255,255,0.5);
-            pointer-events: auto;
-            touch-action: none;
-        }
-        .tc-center-btn:active, .tc-center-btn.pressed { background: rgba(255,255,255,0.25); }
-        .touch-controls .tc-analog {
-            position: absolute;
-            bottom: 180px;
-            left: 25px;
-            width: 100px;
-            height: 100px;
-            pointer-events: auto;
-            touch-action: none;
-        }
-        .tc-analog-base {
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.08);
-            border: 2px solid rgba(255,255,255,0.2);
-        }
-        .tc-analog-stick {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(233,69,96,0.5);
-            border: 2px solid rgba(233,69,96,0.7);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-        }
-        .touch-controls .tc-menu {
-            position: absolute;
-            top: 10px;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 5px 14px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 12px;
-            font-size: 11px;
-            color: rgba(255,255,255,0.5);
-            pointer-events: auto;
-            touch-action: none;
-        }
-        @media (min-width: 601px) {
-            .touch-controls.active .tc-dpad { bottom: 80px; left: 30px; width: 140px; height: 140px; }
-            .touch-controls.active .tc-face { bottom: 80px; right: 30px; width: 140px; height: 140px; }
-            .touch-controls.active .tc-analog { bottom: 220px; left: 35px; width: 120px; height: 120px; }
-        }
     </style>
     <link rel="preload" href="build-wasm/PPSSPPSDL.wasm?v=1" as="fetch" type="application/wasm" crossorigin>
     <link rel="preload" href="build-wasm/PPSSPPSDL.data?v=1" as="fetch" type="application/octet-stream" crossorigin>
@@ -541,10 +379,6 @@
 
         <div class="emulator-container" id="emuContainer">
             <div class="emu-toolbar" id="emuToolbar">
-                <button class="emu-tb-btn" id="emuToggleControls" title="Show/Hide Controls">
-                    <svg viewBox="0 0 24 24" width="18" height="18"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/></svg>
-                    <span>Controls</span>
-                </button>
                 <button class="emu-tb-btn" id="emuFullscreenBtn" title="Fullscreen">
                     <svg viewBox="0 0 24 24" width="18" height="18"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z" fill="currentColor"/></svg>
                     <span>Fullscreen</span>
@@ -558,32 +392,6 @@
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
             </div>
             <canvas id="canvas" tabindex="1"></canvas>
-            <div class="touch-controls" id="touchControls">
-                <div class="tc-shoulder tc-l" data-btn="l">L</div>
-                <div class="tc-shoulder tc-r" data-btn="r">R</div>
-                <div class="tc-menu" data-btn="esc">MENU</div>
-                <div class="tc-analog" id="tcAnalog">
-                    <div class="tc-analog-base"></div>
-                    <div class="tc-analog-stick" id="tcStick"></div>
-                </div>
-                <div class="tc-dpad" id="tcDpad">
-                    <div class="tc-dpad-btn tc-dpad-up" data-btn="up"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 5l-7 8h14z" fill="rgba(255,255,255,0.6)"/></svg></div>
-                    <div class="tc-dpad-btn tc-dpad-down" data-btn="down"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19l-7-8h14z" fill="rgba(255,255,255,0.6)"/></svg></div>
-                    <div class="tc-dpad-btn tc-dpad-left" data-btn="left"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M5 12l8-7v14z" fill="rgba(255,255,255,0.6)"/></svg></div>
-                    <div class="tc-dpad-btn tc-dpad-right" data-btn="right"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M19 12l-8-7v14z" fill="rgba(255,255,255,0.6)"/></svg></div>
-                    <div class="tc-dpad-center"></div>
-                </div>
-                <div class="tc-face">
-                    <div class="tc-face-btn tc-face-t" data-btn="triangle"><svg viewBox="0 0 100 100" width="22" height="22"><polygon points="50,15 85,80 15,80" fill="none" stroke="#4ecb71" stroke-width="10" stroke-linejoin="round"/></svg></div>
-                    <div class="tc-face-btn tc-face-s" data-btn="square"><svg viewBox="0 0 100 100" width="22" height="22"><rect x="15" y="15" width="70" height="70" rx="6" fill="none" stroke="#cb6ce6" stroke-width="10"/></svg></div>
-                    <div class="tc-face-btn tc-face-x" data-btn="cross"><svg viewBox="0 0 100 100" width="22" height="22"><line x1="20" y1="20" x2="80" y2="80" stroke="#00b4d8" stroke-width="10" stroke-linecap="round"/><line x1="80" y1="20" x2="20" y2="80" stroke="#00b4d8" stroke-width="10" stroke-linecap="round"/></svg></div>
-                    <div class="tc-face-btn tc-face-o" data-btn="circle"><svg viewBox="0 0 100 100" width="22" height="22"><circle cx="50" cy="50" r="35" fill="none" stroke="#e94560" stroke-width="10"/></svg></div>
-                </div>
-                <div class="tc-center">
-                    <div class="tc-center-btn" data-btn="select">SELECT</div>
-                    <div class="tc-center-btn" data-btn="start">START</div>
-                </div>
-            </div>
         </div>
 
         <div class="controls hidden" id="controls">
@@ -1603,6 +1411,76 @@ Pause = 1-111
                     } catch(e) {
                         console.warn('Could not write controls.ini:', e);
                     }
+
+                    const isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+                    if (isTouchDevice) {
+                        try {
+                            const iniPath = '/home/web_user/.config/ppsspp/PSP/SYSTEM/ppsspp.ini';
+                            let ini = '';
+                            try { ini = new TextDecoder().decode(FS.readFile(iniPath)); } catch(e) {}
+                            const patchKV = (sec, k, v) => {
+                                const re = new RegExp(`(^|\\n)\\s*${k}\\s*=\\s*.*`, 'i');
+                                const line = `${k} = ${v}`;
+                                if (re.test(ini)) { ini = ini.replace(re, '$1' + line); }
+                                else {
+                                    const secRe = new RegExp(`\\[${sec}\\]`, 'i');
+                                    if (secRe.test(ini)) { ini = ini.replace(secRe, `[$1]\n${line}`); }
+                                    else { ini += `\n[${sec}]\n${line}\n`; }
+                                }
+                            };
+                            patchKV('Control', 'ShowTouchControls', 'True');
+                            patchKV('Control', 'TouchButtonStyle', '1');
+                            patchKV('Control', 'TouchButtonOpacity', '78');
+                            patchKV('Control', 'TouchButtonHideSeconds', '0');
+                            patchKV('Control', 'TouchGliding', 'True');
+                            patchKV('Control', 'UIScaleFactor', '3');
+                            const landscapeKV = [
+                                ['ShowTouchCross', 'True'], ['ShowTouchCircle', 'True'],
+                                ['ShowTouchSquare', 'True'], ['ShowTouchTriangle', 'True'],
+                                ['ShowTouchDpad', 'True'], ['ShowAnalogStick', 'True'],
+                                ['ShowTouchStart', 'True'], ['ShowTouchSelect', 'True'],
+                                ['ShowTouchLTrigger', 'True'], ['ShowTouchRTrigger', 'True'],
+                                ['ShowTouchPause', 'True'], ['ActionButtonScale', '1.58'],
+                                ['DPadScale', '1.58'], ['AnalogStickScale', '1.48'],
+                                ['StartKeyScale', '1.28'], ['SelectKeyScale', '1.28'],
+                                ['UnthrottleKeyScale', '1.20'], ['LKeyScale', '1.35'],
+                                ['RKeyScale', '1.35'], ['PauseKeyScale', '1.12'],
+                                ['ActionButtonSpacing2', '1.08'], ['DPadSpacing', '1.06'],
+                                ['LeftStickHeadScale', '1.12'],
+                            ];
+                            const portraitKV = [
+                                ['ShowTouchCross', 'True'], ['ShowTouchCircle', 'True'],
+                                ['ShowTouchSquare', 'True'], ['ShowTouchTriangle', 'True'],
+                                ['ShowTouchDpad', 'True'], ['ShowAnalogStick', 'True'],
+                                ['ShowTouchStart', 'True'], ['ShowTouchSelect', 'True'],
+                                ['ShowTouchLTrigger', 'True'], ['ShowTouchRTrigger', 'True'],
+                                ['ShowTouchPause', 'True'], ['ActionButtonScale', '1.42'],
+                                ['DPadScale', '1.42'], ['AnalogStickScale', '1.34'],
+                                ['StartKeyScale', '1.18'], ['SelectKeyScale', '1.18'],
+                                ['UnthrottleKeyScale', '1.12'], ['LKeyScale', '1.24'],
+                                ['RKeyScale', '1.24'], ['PauseKeyScale', '1.08'],
+                                ['ActionButtonSpacing2', '1.05'], ['DPadSpacing', '1.04'],
+                                ['LeftStickHeadScale', '1.10'],
+                            ];
+                            for (const [k, v] of landscapeKV) patchKV('TouchControls.Landscape', k, v);
+                            for (const [k, v] of portraitKV) patchKV('TouchControls.Portrait', k, v);
+                            FS.writeFile(iniPath, new TextEncoder().encode(ini));
+                            console.log('Mobile: PPSSPP native touch controls enabled');
+                        } catch(e) {
+                            console.warn('Could not enable native touch controls:', e);
+                        }
+                    } else {
+                        try {
+                            const iniPath = '/home/web_user/.config/ppsspp/PSP/SYSTEM/ppsspp.ini';
+                            let ini = '';
+                            try { ini = new TextDecoder().decode(FS.readFile(iniPath)); } catch(e) {}
+                            const re = /ShowTouchControls\s*=\s*.*/i;
+                            if (re.test(ini)) ini = ini.replace(re, 'ShowTouchControls = False');
+                            else ini += '\n[Control]\nShowTouchControls = False\n';
+                            FS.writeFile(iniPath, new TextEncoder().encode(ini));
+                            console.log('Desktop: native touch controls disabled');
+                        } catch(e) {}
+                    }
                     removeRunDependency('ppsspp-setup');
                     })();
                 }],
@@ -1772,152 +1650,6 @@ Pause = 1-111
                             window.dispatchEvent(new GamepadEvent('gamepadconnected', { gamepad }));
                             console.log('Virtual WASD+Mouse analog gamepad connected');
                         }, 500);
-                    })();
-
-                    (function setupTouchControls() {
-                        const tc = document.getElementById('touchControls');
-                        const isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-
-                        const btnMap = {
-                            up: 'ArrowUp', down: 'ArrowDown', left: 'ArrowLeft', right: 'ArrowRight',
-                            cross: 'k', circle: 'l', triangle: 'i', square: 'j',
-                            l: 'u', r: 'o', start: 'Enter', select: 'Shift', esc: 'Escape',
-                        };
-
-                        function showTC() { tc.classList.add('active'); }
-                        function hideTC() { tc.classList.remove('active'); }
-
-                        let controlsUserToggled = false;
-
-                        function updateTCVisibility() {
-                            if (isTouchDevice) { showTC(); return; }
-                            if (controlsUserToggled) { showTC(); return; }
-                            hideTC();
-                        }
-
-                        document.addEventListener('fullscreenchange', () => {
-                            if (isTouchDevice) return;
-                            if (document.fullscreenElement && !controlsUserToggled) {
-                                showTC();
-                            } else if (!document.fullscreenElement && !controlsUserToggled) {
-                                hideTC();
-                            }
-                        });
-
-                        if (isTouchDevice) showTC();
-
-                        const toggleBtn = document.getElementById('emuToggleControls');
-                        if (toggleBtn) {
-                            toggleBtn.addEventListener('click', () => {
-                                controlsUserToggled = !controlsUserToggled;
-                                toggleBtn.classList.toggle('active', controlsUserToggled);
-                                if (controlsUserToggled) showTC(); else hideTC();
-                            });
-                        }
-
-                        tc.querySelectorAll('[data-btn]').forEach(el => {
-                            const key = btnMap[el.dataset.btn];
-                            if (!key) return;
-
-                            el.addEventListener('touchstart', (e) => {
-                                e.preventDefault();
-                                el.classList.add('pressed');
-                                window.dispatchEvent(new KeyboardEvent('keydown', { key, code: key, bubbles: true }));
-                            }, { passive: false });
-
-                            el.addEventListener('touchend', (e) => {
-                                e.preventDefault();
-                                el.classList.remove('pressed');
-                                window.dispatchEvent(new KeyboardEvent('keyup', { key, code: key, bubbles: true }));
-                            }, { passive: false });
-
-                            el.addEventListener('touchcancel', (e) => {
-                                e.preventDefault();
-                                el.classList.remove('pressed');
-                                window.dispatchEvent(new KeyboardEvent('keyup', { key, code: key, bubbles: true }));
-                            }, { passive: false });
-                        });
-
-                        const analogEl = document.getElementById('tcAnalog');
-                        const stickEl = document.getElementById('tcStick');
-                        const ANALOG_R = 40;
-                        const DEADZONE = 0.15;
-
-                        if (analogEl) {
-                            let analogTouch = null;
-                            const center = { x: 0, y: 0 };
-
-                            function handleAnalogMove(cx, cy) {
-                                const rect = analogEl.getBoundingClientRect();
-                                center.x = rect.left + rect.width / 2;
-                                center.y = rect.top + rect.height / 2;
-                                let dx = cx - center.x;
-                                let dy = cy - center.y;
-                                const dist = Math.sqrt(dx * dx + dy * dy);
-                                if (dist > ANALOG_R) { dx = dx / dist * ANALOG_R; dy = dy / dist * ANALOG_R; }
-                                const nx = dist < DEADZONE * ANALOG_R ? 0 : dx / ANALOG_R;
-                                const ny = dist < DEADZONE * ANALOG_R ? 0 : dy / ANALOG_R;
-                                stickEl.style.transform = 'translate(calc(-50% + ' + dx + 'px), calc(-50% + ' + dy + 'px))';
-
-                                const keyMap = { KeyW: [0,-1], KeyS: [0,1], KeyA: [-1,0], KeyD: [1,0] };
-                                const codes = [];
-                                if (ny < -0.1) codes.push('KeyW');
-                                if (ny > 0.1) codes.push('KeyS');
-                                if (nx < -0.1) codes.push('KeyA');
-                                if (nx > 0.1) codes.push('KeyD');
-
-                                Object.entries(keyMap).forEach(([code, [kx, ky]]) => {
-                                    const shouldPress = (code === 'KeyW' && ny < -0.1) || (code === 'KeyS' && ny > 0.1) || (code === 'KeyA' && nx < -0.1) || (code === 'KeyD' && nx > 0.1);
-                                    if (shouldPress && !analogEl._keys?.[code]) {
-                                        window.dispatchEvent(new KeyboardEvent('keydown', { key: code.replace('Key','').toLowerCase(), code, bubbles: true }));
-                                        if (!analogEl._keys) analogEl._keys = {};
-                                        analogEl._keys[code] = true;
-                                    } else if (!shouldPress && analogEl._keys?.[code]) {
-                                        window.dispatchEvent(new KeyboardEvent('keyup', { key: code.replace('Key','').toLowerCase(), code, bubbles: true }));
-                                        delete analogEl._keys[code];
-                                    }
-                                });
-                            }
-
-                            function resetAnalog() {
-                                stickEl.style.transform = 'translate(-50%, -50%)';
-                                if (analogEl._keys) {
-                                    Object.keys(analogEl._keys).forEach(code => {
-                                        window.dispatchEvent(new KeyboardEvent('keyup', { key: code.replace('Key','').toLowerCase(), code, bubbles: true }));
-                                    });
-                                    analogEl._keys = {};
-                                }
-                            }
-
-                            analogEl.addEventListener('touchstart', (e) => {
-                                e.preventDefault();
-                                e.stopPropagation();
-                                analogTouch = e.changedTouches[0].identifier;
-                                handleAnalogMove(e.changedTouches[0].clientX, e.changedTouches[0].clientY);
-                            }, { passive: false });
-
-                            analogEl.addEventListener('touchmove', (e) => {
-                                e.preventDefault();
-                                for (const t of e.changedTouches) {
-                                    if (t.identifier === analogTouch) {
-                                        handleAnalogMove(t.clientX, t.clientY);
-                                    }
-                                }
-                            }, { passive: false });
-
-                            const endAnalog = (e) => {
-                                for (const t of e.changedTouches) {
-                                    if (t.identifier === analogTouch) {
-                                        analogTouch = null;
-                                        resetAnalog();
-                                    }
-                                }
-                            };
-                            analogEl.addEventListener('touchend', endAnalog, { passive: false });
-                            analogEl.addEventListener('touchcancel', endAnalog, { passive: false });
-                        }
-
-                        console.log('Touch controls initialized, touch device:', isTouchDevice);
                     })();
 
                     startAutoPersist();
