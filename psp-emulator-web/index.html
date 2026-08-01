@@ -1515,11 +1515,9 @@ Pause = 1-111
                         ini = patchIniValue(ini, 'Sound', 'FillAudioGaps', 'True');
                         ini = patchIniValue(ini, 'Sound', 'AudioSyncMode', '0');
                         ini = patchIniValue(ini, 'CPU', 'FastMemoryAccess', 'True');
-                        ini = patchIniValue(ini, 'Graphics', 'BufferedRendering', 'True');
+                        ini = patchIniValue(ini, 'Graphics', 'BufferedRendering', 'False');
                         ini = patchIniValue(ini, 'Graphics', 'ForceMaxEmulatedFPS', '60');
                         ini = patchIniValue(ini, 'Graphics', 'SoftwareSkinning', 'True');
-                        ini = patchIniValue(ini, 'System', 'IOTimingMethod', '0');
-                        ini = patchIniValue(ini, 'System', 'CPUTicks', '0');
                         FS.writeFile(iniPath, new TextEncoder().encode(ini));
                         console.log('Web timing + sound + GoW compat config applied');
                     } catch(e) {
