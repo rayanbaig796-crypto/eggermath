@@ -51,7 +51,6 @@
         }
         .emulator-container.visible { display: block; }
         .emu-toolbar {
-            display: none;
             position: absolute;
             top: 0; left: 0; right: 0;
             z-index: 30;
@@ -63,8 +62,37 @@
             justify-content: center;
             align-items: center;
             border-bottom: 1px solid rgba(255,255,255,0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
         }
-        .emulator-container.visible .emu-toolbar { display: flex; }
+        .emu-toolbar.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .emu-toolbar-hint {
+            position: absolute;
+            top: 4px;
+            right: 8px;
+            z-index: 29;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .emu-toolbar-hint.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        .emu-toolbar-hint svg { width: 16px; height: 16px; fill: rgba(255,255,255,0.6); }
         .emu-tb-btn {
             display: flex;
             align-items: center;
@@ -104,6 +132,10 @@
             position: fixed;
             top: 0; left: 0; right: 0;
             z-index: 999;
+        }
+        .emulator-container:fullscreen .emu-toolbar-hint {
+            position: fixed;
+            z-index: 998;
         }
         .emulator-container:fullscreen canvas {
             width: 100vw;
@@ -521,6 +553,9 @@
                     <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="12" cy="5" r="2" fill="currentColor"/><circle cx="12" cy="12" r="2" fill="currentColor"/><circle cx="12" cy="19" r="2" fill="currentColor"/></svg>
                     <span>Menu</span>
                 </button>
+            </div>
+            <div class="emu-toolbar-hint" id="emuToolbarHint">
+                <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
             </div>
             <canvas id="canvas" tabindex="1"></canvas>
             <div class="touch-controls" id="touchControls">
@@ -1402,6 +1437,34 @@
 
         const emuFullscreenBtn = document.getElementById('emuFullscreenBtn');
         const emuMenuBtn = document.getElementById('emuMenuBtn');
+        const emuToolbar = document.getElementById('emuToolbar');
+        const emuToolbarHint = document.getElementById('emuToolbarHint');
+        let toolbarTimeout = null;
+
+        function showToolbar() {
+            if (!emuToolbar) return;
+            emuToolbar.classList.add('visible');
+            if (emuToolbarHint) emuToolbarHint.classList.remove('visible');
+            clearTimeout(toolbarTimeout);
+            toolbarTimeout = setTimeout(() => {
+                emuToolbar.classList.remove('visible');
+                if (emuToolbarHint) emuToolbarHint.classList.add('visible');
+            }, 3000);
+        }
+
+        if (emuToolbarHint) {
+            emuToolbarHint.addEventListener('click', (e) => {
+                e.stopPropagation();
+                showToolbar();
+            });
+        }
+
+        if (emuToolbar) {
+            emuToolbar.addEventListener('click', (e) => e.stopPropagation());
+        }
+
+        emuContainer.addEventListener('click', () => showToolbar());
+
         if (emuFullscreenBtn) {
             emuFullscreenBtn.addEventListener('click', () => {
                 if (document.fullscreenElement) {
