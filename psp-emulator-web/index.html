@@ -1204,6 +1204,7 @@
         startBtn.addEventListener('click', async () => {
             if (!selectedFile || emulatorStarted) return;
             emulatorStarted = true;
+            window._isMobileDevice = window.matchMedia?.('(pointer: coarse)')?.matches || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
             startBtn.disabled = true;
             loading.classList.add('visible');
             progressFill.style.width = '10%';
@@ -1316,7 +1317,7 @@
                     failIfMajorPerformanceCaveat: false,
                 },
                 SDL2: {},
-                arguments: window._selectedGamePath ? [window._selectedGamePath] : [],
+                arguments: window._selectedGamePath ? [...(window._isMobileDevice ? ['--dpi', '1', '--xres', '1280', '--yres', '720'] : []), window._selectedGamePath] : [],
                 locateFile(path) {
                     let url = 'build-wasm/' + path;
                     if (path.endsWith('.wasm') || path.endsWith('.data')) {
@@ -1412,58 +1413,69 @@ Pause = 1-111
                         console.warn('Could not write controls.ini:', e);
                     }
 
-                    const isTouchDevice = ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
-                    if (isTouchDevice) {
+                    const isMobileDevice = window.matchMedia?.('(pointer: coarse)')?.matches || ('ontouchstart' in window) || navigator.maxTouchPoints > 0;
+                    if (isMobileDevice) {
                         try {
                             const iniPath = '/home/web_user/.config/ppsspp/PSP/SYSTEM/ppsspp.ini';
                             let ini = '';
                             try { ini = new TextDecoder().decode(FS.readFile(iniPath)); } catch(e) {}
-                            const patchKV = (sec, k, v) => {
-                                const re = new RegExp(`(^|\\n)\\s*${k}\\s*=\\s*.*`, 'i');
-                                const line = `${k} = ${v}`;
-                                if (re.test(ini)) { ini = ini.replace(re, '$1' + line); }
-                                else {
-                                    const secRe = new RegExp(`\\[${sec}\\]`, 'i');
-                                    if (secRe.test(ini)) { ini = ini.replace(secRe, `[$1]\n${line}`); }
-                                    else { ini += `\n[${sec}]\n${line}\n`; }
-                                }
-                            };
-                            patchKV('Control', 'ShowTouchControls', 'True');
-                            patchKV('Control', 'TouchButtonStyle', '1');
-                            patchKV('Control', 'TouchButtonOpacity', '78');
-                            patchKV('Control', 'TouchButtonHideSeconds', '0');
-                            patchKV('Control', 'TouchGliding', 'True');
-                            patchKV('Control', 'UIScaleFactor', '3');
-                            const landscapeKV = [
-                                ['ShowTouchCross', 'True'], ['ShowTouchCircle', 'True'],
-                                ['ShowTouchSquare', 'True'], ['ShowTouchTriangle', 'True'],
-                                ['ShowTouchDpad', 'True'], ['ShowAnalogStick', 'True'],
-                                ['ShowTouchStart', 'True'], ['ShowTouchSelect', 'True'],
-                                ['ShowTouchLTrigger', 'True'], ['ShowTouchRTrigger', 'True'],
-                                ['ShowTouchPause', 'True'], ['ActionButtonScale', '1.58'],
-                                ['DPadScale', '1.58'], ['AnalogStickScale', '1.48'],
-                                ['StartKeyScale', '1.28'], ['SelectKeyScale', '1.28'],
-                                ['UnthrottleKeyScale', '1.20'], ['LKeyScale', '1.35'],
-                                ['RKeyScale', '1.35'], ['PauseKeyScale', '1.12'],
-                                ['ActionButtonSpacing2', '1.08'], ['DPadSpacing', '1.06'],
-                                ['LeftStickHeadScale', '1.12'],
+                            const MOBILE_TOUCH_CONFIG = [
+                                ['Control', 'ShowTouchControls', 'True'],
+                                ['Control', 'TouchButtonStyle', '1'],
+                                ['Control', 'TouchButtonOpacity', '78'],
+                                ['Control', 'TouchButtonHideSeconds', '0'],
+                                ['Control', 'TouchGliding', 'True'],
+                                ['Control', 'UIScaleFactor', '3'],
+                                ['TouchControls.Landscape', 'ShowTouchCross', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchCircle', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchSquare', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchTriangle', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchDpad', 'True'],
+                                ['TouchControls.Landscape', 'ShowAnalogStick', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchStart', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchSelect', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchLTrigger', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchRTrigger', 'True'],
+                                ['TouchControls.Landscape', 'ShowTouchPause', 'True'],
+                                ['TouchControls.Landscape', 'ActionButtonScale', '1.58'],
+                                ['TouchControls.Landscape', 'DPadScale', '1.58'],
+                                ['TouchControls.Landscape', 'AnalogStickScale', '1.48'],
+                                ['TouchControls.Landscape', 'StartKeyScale', '1.28'],
+                                ['TouchControls.Landscape', 'SelectKeyScale', '1.28'],
+                                ['TouchControls.Landscape', 'UnthrottleKeyScale', '1.20'],
+                                ['TouchControls.Landscape', 'LKeyScale', '1.35'],
+                                ['TouchControls.Landscape', 'RKeyScale', '1.35'],
+                                ['TouchControls.Landscape', 'PauseKeyScale', '1.12'],
+                                ['TouchControls.Landscape', 'ActionButtonSpacing2', '1.08'],
+                                ['TouchControls.Landscape', 'DPadSpacing', '1.06'],
+                                ['TouchControls.Landscape', 'LeftStickHeadScale', '1.12'],
+                                ['TouchControls.Portrait', 'ShowTouchCross', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchCircle', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchSquare', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchTriangle', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchDpad', 'True'],
+                                ['TouchControls.Portrait', 'ShowAnalogStick', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchStart', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchSelect', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchLTrigger', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchRTrigger', 'True'],
+                                ['TouchControls.Portrait', 'ShowTouchPause', 'True'],
+                                ['TouchControls.Portrait', 'ActionButtonScale', '1.42'],
+                                ['TouchControls.Portrait', 'DPadScale', '1.42'],
+                                ['TouchControls.Portrait', 'AnalogStickScale', '1.34'],
+                                ['TouchControls.Portrait', 'StartKeyScale', '1.18'],
+                                ['TouchControls.Portrait', 'SelectKeyScale', '1.18'],
+                                ['TouchControls.Portrait', 'UnthrottleKeyScale', '1.12'],
+                                ['TouchControls.Portrait', 'LKeyScale', '1.24'],
+                                ['TouchControls.Portrait', 'RKeyScale', '1.24'],
+                                ['TouchControls.Portrait', 'PauseKeyScale', '1.08'],
+                                ['TouchControls.Portrait', 'ActionButtonSpacing2', '1.05'],
+                                ['TouchControls.Portrait', 'DPadSpacing', '1.04'],
+                                ['TouchControls.Portrait', 'LeftStickHeadScale', '1.10'],
                             ];
-                            const portraitKV = [
-                                ['ShowTouchCross', 'True'], ['ShowTouchCircle', 'True'],
-                                ['ShowTouchSquare', 'True'], ['ShowTouchTriangle', 'True'],
-                                ['ShowTouchDpad', 'True'], ['ShowAnalogStick', 'True'],
-                                ['ShowTouchStart', 'True'], ['ShowTouchSelect', 'True'],
-                                ['ShowTouchLTrigger', 'True'], ['ShowTouchRTrigger', 'True'],
-                                ['ShowTouchPause', 'True'], ['ActionButtonScale', '1.42'],
-                                ['DPadScale', '1.42'], ['AnalogStickScale', '1.34'],
-                                ['StartKeyScale', '1.18'], ['SelectKeyScale', '1.18'],
-                                ['UnthrottleKeyScale', '1.12'], ['LKeyScale', '1.24'],
-                                ['RKeyScale', '1.24'], ['PauseKeyScale', '1.08'],
-                                ['ActionButtonSpacing2', '1.05'], ['DPadSpacing', '1.04'],
-                                ['LeftStickHeadScale', '1.10'],
-                            ];
-                            for (const [k, v] of landscapeKV) patchKV('TouchControls.Landscape', k, v);
-                            for (const [k, v] of portraitKV) patchKV('TouchControls.Portrait', k, v);
+                            for (const [section, key, value] of MOBILE_TOUCH_CONFIG) {
+                                ini = patchIniValue(ini, section, key, value);
+                            }
                             FS.writeFile(iniPath, new TextEncoder().encode(ini));
                             console.log('Mobile: PPSSPP native touch controls enabled');
                         } catch(e) {
@@ -1474,9 +1486,7 @@ Pause = 1-111
                             const iniPath = '/home/web_user/.config/ppsspp/PSP/SYSTEM/ppsspp.ini';
                             let ini = '';
                             try { ini = new TextDecoder().decode(FS.readFile(iniPath)); } catch(e) {}
-                            const re = /ShowTouchControls\s*=\s*.*/i;
-                            if (re.test(ini)) ini = ini.replace(re, 'ShowTouchControls = False');
-                            else ini += '\n[Control]\nShowTouchControls = False\n';
+                            ini = patchIniValue(ini, 'Control', 'ShowTouchControls', 'False');
                             FS.writeFile(iniPath, new TextEncoder().encode(ini));
                             console.log('Desktop: native touch controls disabled');
                         } catch(e) {}
