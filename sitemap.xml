@@ -8038,4 +8038,10 @@
   <url><loc>https://www.eggermath.com/terms.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.eggermath.com/psp-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.eggermath.com/gba-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/nes-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/snes-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/nds-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/n64-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/genesis-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/ps1-emulator-web/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
 </urlset>

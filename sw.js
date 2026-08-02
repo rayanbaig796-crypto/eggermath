@@ -37,9 +37,9 @@ self.addEventListener('fetch', event => {
   // Don't touch cross-origin
   if (url.origin !== self.location.origin) return;
 
-  // Skip PSP/GBA emulator files — let them load directly to avoid
+  // Skip emulator files — let them load directly to avoid
   // SW caching issues with WASM/gzip/COEP headers
-  if (url.pathname.includes('psp-emulator-web') || url.pathname.includes('ppsspp-web') || url.pathname.includes('gba-emulator-web')) {
+  if (url.pathname.includes('psp-emulator-web') || url.pathname.includes('ppsspp-web') || url.pathname.includes('gba-emulator-web') || url.pathname.includes('nes-emulator-web') || url.pathname.includes('snes-emulator-web') || url.pathname.includes('nds-emulator-web') || url.pathname.includes('n64-emulator-web') || url.pathname.includes('genesis-emulator-web') || url.pathname.includes('ps1-emulator-web')) {
     return;
   }
 

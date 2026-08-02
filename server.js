@@ -1712,7 +1712,8 @@ const server = http.createServer(async (req, res) => {
   const isHtml = ext === '.html' || ext === '.htm';
   const isPspEmulator = filePath.includes('psp-emulator-web') || filePath.includes('ppsspp-web');
   const isGbaEmulator = filePath.includes('gba-emulator-web');
-  const isEmulator = isPspEmulator || isGbaEmulator;
+  const isNewEmulator = filePath.includes('nes-emulator-web') || filePath.includes('snes-emulator-web') || filePath.includes('nds-emulator-web') || filePath.includes('n64-emulator-web') || filePath.includes('genesis-emulator-web') || filePath.includes('ps1-emulator-web');
+  const isEmulator = isPspEmulator || isGbaEmulator || isNewEmulator;
 
   const compressible = ['.wasm', '.data', '.js', '.css', '.json', '.svg', '.html', '.htm', '.txt', '.ini', '.xml'];
   const shouldCompress = compressible.includes(ext) && fs.statSync(filePath).size > 1024;

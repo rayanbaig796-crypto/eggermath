@@ -133,9 +133,13 @@ img { display: block; max-width: 100%; }
   padding: 0 12px;
   gap: 4px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 }
+.mobile-tabs::-webkit-scrollbar { display: none; }
 .mobile-tab {
-  flex: 1;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
