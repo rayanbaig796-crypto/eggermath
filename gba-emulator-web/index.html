@@ -84,11 +84,6 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-        .emu-toolbar-hint.visible {
             opacity: 1;
             pointer-events: auto;
         }
@@ -393,30 +388,22 @@
 
         function setupToolbar() {
             let hideTimer;
-            let lastMove = 0;
             function showToolbar() {
                 emuToolbar.classList.add('visible');
-                toolbarHint.classList.add('visible');
+                toolbarHint.classList.remove('visible');
                 clearTimeout(hideTimer);
                 hideTimer = setTimeout(() => {
                     emuToolbar.classList.remove('visible');
-                    toolbarHint.classList.remove('visible');
-                }, 1500);
+                    toolbarHint.classList.add('visible');
+                }, 3000);
             }
 
-            emulatorContainer.addEventListener('mousemove', e => {
-                const now = Date.now();
-                if (now - lastMove < 300) return;
-                lastMove = now;
-                showToolbar();
-            });
-            emulatorContainer.addEventListener('mouseleave', () => {
+            toolbarHint.addEventListener('click', showToolbar);
+            emuToolbar.addEventListener('mouseleave', () => {
                 emuToolbar.classList.remove('visible');
-                toolbarHint.classList.remove('visible');
+                toolbarHint.classList.add('visible');
                 clearTimeout(hideTimer);
             });
-            toolbarHint.addEventListener('click', showToolbar);
-            showToolbar();
         }
 
         function setupKeyboard() {
