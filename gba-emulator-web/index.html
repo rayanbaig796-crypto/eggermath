@@ -200,120 +200,145 @@
         }
         .touch-controls {
             display: none;
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 50%;
-            z-index: 20;
-            pointer-events: none;
+            margin-top: 10px;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.04);
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            justify-items: center;
+            gap: 10px;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
         }
         .touch-controls .tc-btn {
-            position: absolute;
             border-radius: 50%;
-            background: rgba(255,255,255,0.12);
-            border: 2px solid rgba(255,255,255,0.2);
-            pointer-events: auto;
-            touch-action: none;
+            background: rgba(255,255,255,0.14);
+            border: 1px solid rgba(255,255,255,0.22);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 11px;
             font-weight: 700;
-            color: rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.6);
             font-family: 'Inter', Arial, sans-serif;
             user-select: none;
             -webkit-user-select: none;
-            transition: background 0.08s;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            cursor: pointer;
+            transition: background 0.08s, transform 0.08s, border-color 0.08s;
         }
         .touch-controls .tc-btn:active,
         .touch-controls .tc-btn.pressed {
-            background: rgba(255,255,255,0.3);
-            border-color: rgba(255,255,255,0.5);
+            background: rgba(132,209,196,0.4);
+            border-color: rgba(132,209,196,0.7);
+            transform: scale(0.93);
+            box-shadow: 0 0 12px rgba(132,209,196,0.5);
         }
-        .tc-dpad {
-            width: 130px; height: 130px;
-            left: 10px; bottom: 10px;
+        .tc-dpad-group {
+            display: grid;
+            grid-template-columns: repeat(3, 44px);
+            grid-template-rows: repeat(3, 44px);
+            gap: 4px;
+        }
+        .tc-dpad-up    { grid-column: 2; grid-row: 1; border-radius: 12px 12px 6px 6px; }
+        .tc-dpad-left  { grid-column: 1; grid-row: 2; border-radius: 12px 6px 6px 12px; }
+        .tc-dpad-center {
+            grid-column: 2; grid-row: 2;
             background: rgba(255,255,255,0.04);
-            border: none;
+            border-radius: 4px;
+            pointer-events: none;
         }
-        .tc-dpad-up, .tc-dpad-down, .tc-dpad-left, .tc-dpad-right {
-            width: 42px; height: 42px;
-            font-size: 14px;
+        .tc-dpad-right { grid-column: 3; grid-row: 2; border-radius: 6px 12px 12px 6px; }
+        .tc-dpad-down  { grid-column: 2; grid-row: 3; border-radius: 6px 6px 12px 12px; }
+        .tc-center-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
         }
-        .tc-dpad-up    { left: 44px; bottom: 88px; }
-        .tc-dpad-down  { left: 44px; bottom: 0; }
-        .tc-dpad-left  { left: 0;    bottom: 44px; }
-        .tc-dpad-right { left: 88px; bottom: 44px; }
+        .tc-l, .tc-r {
+            width: 56px;
+            height: 30px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+        .tc-start-select {
+            display: flex;
+            gap: 8px;
+        }
+        .tc-select, .tc-start {
+            min-width: 64px;
+            height: 28px;
+            border-radius: 999px;
+            font-size: 9px;
+            letter-spacing: 0.06em;
+            font-weight: 700;
+        }
+        .tc-action-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            position: relative;
+            width: 120px;
+            height: 110px;
+        }
         .tc-a {
-            width: 50px; height: 50px;
-            right: 12px; bottom: 36px;
+            width: 52px;
+            height: 52px;
+            font-size: 15px;
+            position: absolute;
+            top: 0;
+            right: 0;
             background: rgba(229,115,115,0.15);
-            border-color: rgba(229,115,115,0.35);
-            font-size: 14px;
+            border-color: rgba(229,115,115,0.3);
         }
         .tc-a:active, .tc-a.pressed {
-            background: rgba(229,115,115,0.4);
-            border-color: rgba(229,115,115,0.6);
+            background: rgba(229,115,115,0.5);
+            border-color: rgba(229,115,115,0.7);
+            box-shadow: 0 0 12px rgba(229,115,115,0.5);
         }
         .tc-b {
-            width: 50px; height: 50px;
-            right: 72px; bottom: 0;
+            width: 52px;
+            height: 52px;
+            font-size: 15px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
             background: rgba(100,149,237,0.15);
-            border-color: rgba(100,149,237,0.35);
-            font-size: 14px;
+            border-color: rgba(100,149,237,0.3);
         }
         .tc-b:active, .tc-b.pressed {
-            background: rgba(100,149,237,0.4);
-            border-color: rgba(100,149,237,0.6);
+            background: rgba(100,149,237,0.5);
+            border-color: rgba(100,149,237,0.7);
+            box-shadow: 0 0 12px rgba(100,149,237,0.5);
         }
-        .tc-l {
-            width: 60px; height: 28px;
-            left: 6px; top: 6px;
-            border-radius: 8px;
-            font-size: 11px;
-        }
-        .tc-r {
-            width: 60px; height: 28px;
-            right: 6px; top: 6px;
-            border-radius: 8px;
-            font-size: 11px;
-        }
-        .tc-start {
-            width: 44px; height: 20px;
-            bottom: 8px; left: 50%;
-            transform: translateX(-70%);
-            border-radius: 10px;
-            font-size: 8px;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-        }
-        .tc-select {
-            width: 44px; height: 20px;
-            bottom: 8px; left: 50%;
-            transform: translateX(-30%);
-            border-radius: 10px;
-            font-size: 8px;
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.15);
-        }
-        .emulator-container:fullscreen .touch-controls {
-            height: 45%;
+        .emulator-container:fullscreen ~ .touch-controls {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 999;
+            border-radius: 12px 12px 0 0;
+            margin-top: 0;
         }
         @media (pointer: coarse) {
-            .touch-controls.active { display: block; }
+            .touch-controls.active { display: grid; }
             .mobile-note { display: block; }
             .controls-help { display: none; }
         }
-        @media (pointer: coarse) and (orientation: portrait) {
-            .touch-controls { height: 35%; }
-            .tc-dpad { width: 110px; height: 110px; }
-            .tc-dpad-up, .tc-dpad-down, .tc-dpad-left, .tc-dpad-right { width: 36px; height: 36px; font-size: 12px; }
-            .tc-dpad-up    { left: 37px; bottom: 74px; }
-            .tc-dpad-down  { left: 37px; bottom: 0; }
-            .tc-dpad-left  { left: 0;    bottom: 37px; }
-            .tc-dpad-right { left: 74px; bottom: 37px; }
-            .tc-a, .tc-b { width: 44px; height: 44px; }
-            .tc-a { right: 10px; bottom: 30px; }
-            .tc-b { right: 62px; bottom: 0; }
+        @media (pointer: coarse) and (max-width: 480px) {
+            .touch-controls { padding: 8px; gap: 6px; }
+            .tc-dpad-group {
+                grid-template-columns: repeat(3, 38px);
+                grid-template-rows: repeat(3, 38px);
+            }
+            .tc-a, .tc-b { width: 46px; height: 46px; font-size: 13px; }
+            .tc-action-group { width: 105px; height: 95px; }
+            .tc-l, .tc-r { width: 48px; height: 26px; font-size: 11px; }
+            .tc-select, .tc-start { min-width: 56px; height: 24px; font-size: 8px; }
         }
         @media (max-width: 600px) {
             .main { padding: 0; max-width: 100%; }
@@ -373,18 +398,26 @@
                 </button>
             </div>
             <canvas id="emulator-canvas"></canvas>
-            <div class="touch-controls" id="touch-controls">
-                <div class="tc-btn tc-dpad" data-btn=""></div>
-                <div class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</div>
-                <div class="tc-btn tc-dpad-down" data-btn="Down">&#9660;</div>
-                <div class="tc-btn tc-dpad-left" data-btn="Left">&#9664;</div>
-                <div class="tc-btn tc-dpad-right" data-btn="Right">&#9654;</div>
-                <div class="tc-btn tc-a" data-btn="A">A</div>
-                <div class="tc-btn tc-b" data-btn="B">B</div>
-                <div class="tc-btn tc-l" data-btn="L">L</div>
-                <div class="tc-btn tc-r" data-btn="R">R</div>
-                <div class="tc-btn tc-start" data-btn="Start">START</div>
-                <div class="tc-btn tc-select" data-btn="Select">SEL</div>
+        </div>
+        <div class="touch-controls" id="touch-controls">
+            <div class="tc-dpad-group">
+                <button class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</button>
+                <button class="tc-btn tc-dpad-left" data-btn="Left">&#9664;</button>
+                <div class="tc-dpad-center"></div>
+                <button class="tc-btn tc-dpad-right" data-btn="Right">&#9654;</button>
+                <button class="tc-btn tc-dpad-down" data-btn="Down">&#9660;</button>
+            </div>
+            <div class="tc-center-group">
+                <button class="tc-btn tc-l" data-btn="L">L</button>
+                <div class="tc-start-select">
+                    <button class="tc-btn tc-select" data-btn="Select">SELECT</button>
+                    <button class="tc-btn tc-start" data-btn="Start">START</button>
+                </div>
+                <button class="tc-btn tc-r" data-btn="R">R</button>
+            </div>
+            <div class="tc-action-group">
+                <button class="tc-btn tc-a" data-btn="A">A</button>
+                <button class="tc-btn tc-b" data-btn="B">B</button>
             </div>
         </div>
         <div class="controls-help" id="controls-help">
