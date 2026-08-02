@@ -202,6 +202,15 @@
             .mobile-note { display: block; }
             .controls-help { display: none; }
         }
+        @media (max-width: 600px) {
+            .main { padding: 0; max-width: 100%; }
+            #upload-area { border-radius: 0; margin: 0; border-left: none; border-right: none; }
+            .emulator-container { border-radius: 0; border: none; }
+            canvas { width: 100vw; }
+            .emulator-container:fullscreen canvas { width: 100vw; height: 100dvh; }
+            .emulator-container { aspect-ratio: auto; }
+            #file-info { border-radius: 0; margin: 0; }
+        }
     </style>
 </head>
 <body>

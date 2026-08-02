@@ -84,11 +84,6 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.3s ease;
-        }
-        .emu-toolbar-hint.visible {
             opacity: 1;
             pointer-events: auto;
         }
@@ -337,8 +332,8 @@
             outline: none;
         }
         @media (max-width: 600px) {
-            .main { padding: 12px 10px; }
-            #upload-area { padding: 40px 15px; }
+            .main { padding: 0; }
+            #upload-area { padding: 40px 15px; border-radius: 0; border-left: none; border-right: none; }
             #upload-area .icon { font-size: 36px; }
             #upload-area p { font-size: 14px; }
             .controls-info { padding: 10px; }
@@ -347,9 +342,11 @@
             .net-row { flex-direction: column; align-items: flex-start; gap: 4px; }
             .net-row label { min-width: auto; }
             .net-row input[type="text"], .net-row select, .net-row textarea { width: 100%; }
-            .emulator-container { border-radius: 6px; }
+            .emulator-container { border-radius: 0; border: none; }
             .controls { gap: 6px; }
             .controls button { padding: 8px 14px; font-size: 13px; }
+            #file-info { border-radius: 0; }
+            .emulator-container:fullscreen canvas { width: 100vw; height: 100dvh; }
         }
     </style>
     <link rel="preload" href="build-wasm/PPSSPPSDL.wasm?v=1" as="fetch" type="application/wasm" crossorigin>
@@ -1274,9 +1271,11 @@
 
         if (emuToolbar) {
             emuToolbar.addEventListener('click', (e) => e.stopPropagation());
+            emuToolbar.addEventListener('mouseleave', () => {
+                emuToolbar.classList.remove('visible');
+                clearTimeout(toolbarTimeout);
+            });
         }
-
-        emuContainer.addEventListener('click', () => showToolbar());
 
         if (emuFullscreenBtn) {
             emuFullscreenBtn.addEventListener('click', () => {
@@ -1426,10 +1425,10 @@ Pause = 1-111
                             const MOBILE_TOUCH_CONFIG = [
                                 ['Control', 'ShowTouchControls', 'True'],
                                 ['Control', 'TouchButtonStyle', '1'],
-                                ['Control', 'TouchButtonOpacity', '78'],
+                                ['Control', 'TouchButtonOpacity', '65'],
                                 ['Control', 'TouchButtonHideSeconds', '0'],
                                 ['Control', 'TouchGliding', 'True'],
-                                ['Control', 'UIScaleFactor', '3'],
+                                ['Control', 'UIScaleFactor', '2.5'],
                                 ['TouchControls.Landscape', 'ShowTouchCross', 'True'],
                                 ['TouchControls.Landscape', 'ShowTouchCircle', 'True'],
                                 ['TouchControls.Landscape', 'ShowTouchSquare', 'True'],
@@ -1441,18 +1440,14 @@ Pause = 1-111
                                 ['TouchControls.Landscape', 'ShowTouchLTrigger', 'True'],
                                 ['TouchControls.Landscape', 'ShowTouchRTrigger', 'True'],
                                 ['TouchControls.Landscape', 'ShowTouchPause', 'True'],
-                                ['TouchControls.Landscape', 'ActionButtonScale', '1.58'],
-                                ['TouchControls.Landscape', 'DPadScale', '1.58'],
-                                ['TouchControls.Landscape', 'AnalogStickScale', '1.48'],
-                                ['TouchControls.Landscape', 'StartKeyScale', '1.28'],
-                                ['TouchControls.Landscape', 'SelectKeyScale', '1.28'],
-                                ['TouchControls.Landscape', 'UnthrottleKeyScale', '1.20'],
-                                ['TouchControls.Landscape', 'LKeyScale', '1.35'],
-                                ['TouchControls.Landscape', 'RKeyScale', '1.35'],
-                                ['TouchControls.Landscape', 'PauseKeyScale', '1.12'],
-                                ['TouchControls.Landscape', 'ActionButtonSpacing2', '1.08'],
-                                ['TouchControls.Landscape', 'DPadSpacing', '1.06'],
-                                ['TouchControls.Landscape', 'LeftStickHeadScale', '1.12'],
+                                ['TouchControls.Landscape', 'ActionButtonScale', '1.2'],
+                                ['TouchControls.Landscape', 'DPadScale', '1.2'],
+                                ['TouchControls.Landscape', 'AnalogStickScale', '1.15'],
+                                ['TouchControls.Landscape', 'StartKeyScale', '1.0'],
+                                ['TouchControls.Landscape', 'SelectKeyScale', '1.0'],
+                                ['TouchControls.Landscape', 'LKeyScale', '1.1'],
+                                ['TouchControls.Landscape', 'RKeyScale', '1.1'],
+                                ['TouchControls.Landscape', 'PauseKeyScale', '1.0'],
                                 ['TouchControls.Portrait', 'ShowTouchCross', 'True'],
                                 ['TouchControls.Portrait', 'ShowTouchCircle', 'True'],
                                 ['TouchControls.Portrait', 'ShowTouchSquare', 'True'],
@@ -1464,18 +1459,14 @@ Pause = 1-111
                                 ['TouchControls.Portrait', 'ShowTouchLTrigger', 'True'],
                                 ['TouchControls.Portrait', 'ShowTouchRTrigger', 'True'],
                                 ['TouchControls.Portrait', 'ShowTouchPause', 'True'],
-                                ['TouchControls.Portrait', 'ActionButtonScale', '1.42'],
-                                ['TouchControls.Portrait', 'DPadScale', '1.42'],
-                                ['TouchControls.Portrait', 'AnalogStickScale', '1.34'],
-                                ['TouchControls.Portrait', 'StartKeyScale', '1.18'],
-                                ['TouchControls.Portrait', 'SelectKeyScale', '1.18'],
-                                ['TouchControls.Portrait', 'UnthrottleKeyScale', '1.12'],
-                                ['TouchControls.Portrait', 'LKeyScale', '1.24'],
-                                ['TouchControls.Portrait', 'RKeyScale', '1.24'],
-                                ['TouchControls.Portrait', 'PauseKeyScale', '1.08'],
-                                ['TouchControls.Portrait', 'ActionButtonSpacing2', '1.05'],
-                                ['TouchControls.Portrait', 'DPadSpacing', '1.04'],
-                                ['TouchControls.Portrait', 'LeftStickHeadScale', '1.10'],
+                                ['TouchControls.Portrait', 'ActionButtonScale', '1.15'],
+                                ['TouchControls.Portrait', 'DPadScale', '1.15'],
+                                ['TouchControls.Portrait', 'AnalogStickScale', '1.1'],
+                                ['TouchControls.Portrait', 'StartKeyScale', '0.95'],
+                                ['TouchControls.Portrait', 'SelectKeyScale', '0.95'],
+                                ['TouchControls.Portrait', 'LKeyScale', '1.05'],
+                                ['TouchControls.Portrait', 'RKeyScale', '1.05'],
+                                ['TouchControls.Portrait', 'PauseKeyScale', '0.95'],
                             ];
                             for (const [section, key, value] of MOBILE_TOUCH_CONFIG) {
                                 ini = patchIniValue(ini, section, key, value);
