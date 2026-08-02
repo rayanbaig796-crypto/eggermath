@@ -242,6 +242,18 @@
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
                     <span>Mute</span>
                 </button>
+                <button class="emu-tb-btn" id="btn-save-state" title="Save State (F5)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                    <span>Save</span>
+                </button>
+                <button class="emu-tb-btn" id="btn-load-state" title="Load State (F9)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                    <span>Load</span>
+                </button>
+                <button class="emu-tb-btn" id="btn-fast-forward" title="Fast Forward (FF)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+                    <span>FF</span>
+                </button>
             </div>
             <canvas id="emulator-canvas"></canvas>
         </div>
@@ -254,6 +266,9 @@
             <div class="row"><span>R</span><span>E</span></div>
             <div class="row"><span>Start</span><span>Enter</span></div>
             <div class="row"><span>Select</span><span>Right Shift</span></div>
+            <div class="row"><span>Save State</span><span>F5</span></div>
+            <div class="row"><span>Load State</span><span>F9</span></div>
+            <div class="row"><span>Switch Slot</span><span>F7</span></div>
             <div class="row"><span>Fullscreen</span><span>Double-click canvas</span></div>
         </div>
         <div class="mobile-note">Use a keyboard for controls, or connect a USB/Bluetooth controller.</div>
@@ -278,6 +293,8 @@
         let emulator = null;
         let toolbarTimeout = null;
         let isMuted = false;
+        let syncInterval = null;
+        let activeSlot = 0;
 
         function setStatus(msg) { statusText.textContent = msg; }
         function setProgress(pct) { progressFill.style.width = pct + '%'; }
@@ -286,6 +303,11 @@
             if (bytes < 1024) return bytes + ' B';
             if (bytes < 1048576) return (bytes / 1024).toFixed(1) + ' KB';
             return (bytes / 1048576).toFixed(1) + ' MB';
+        }
+
+        async function syncSaves() {
+            if (!emulator) return;
+            try { await emulator.FSSync(); } catch (e) { console.warn('FSSync failed:', e); }
         }
 
         uploadArea.addEventListener('click', () => fileInput.click());
@@ -321,6 +343,16 @@
                     setStatus('Setting up filesystem...');
                     await emulator.FSInit();
                     setProgress(60);
+
+                    emulator.setCoreSettings({
+                        autoSaveStateEnable: true,
+                        autoSaveStateTimerIntervalSeconds: 30,
+                        restoreAutoSaveStateOnLoad: true,
+                    });
+
+                    emulator.addCoreCallbacks({
+                        saveDataUpdatedCallback: () => syncSaves(),
+                    });
                 }
 
                 setProgress(70);
@@ -347,6 +379,7 @@
                     setupToolbar();
                     setupKeyboard();
                     setupFullscreen();
+                    setupSavePersistence();
                 } else {
                     setStatus('Failed to load ROM. The file may be corrupted.');
                     progressBar.classList.remove('visible');
@@ -391,6 +424,23 @@
             };
 
             document.addEventListener('keydown', e => {
+                if (e.key === 'F5') {
+                    e.preventDefault();
+                    if (emulator) { emulator.saveState(activeSlot); syncSaves(); setStatus('State saved'); setTimeout(() => setStatus(''), 1500); }
+                    return;
+                }
+                if (e.key === 'F9') {
+                    e.preventDefault();
+                    if (emulator) { emulator.loadState(activeSlot); setStatus('State loaded'); setTimeout(() => setStatus(''), 1500); }
+                    return;
+                }
+                if (e.key === 'F7') {
+                    e.preventDefault();
+                    activeSlot = (activeSlot + 1) % 10;
+                    setStatus('Save slot: ' + activeSlot);
+                    setTimeout(() => setStatus(''), 1500);
+                    return;
+                }
                 const btn = keyMap[e.code];
                 if (btn && emulator) {
                     e.preventDefault();
@@ -425,7 +475,10 @@
             });
 
             document.getElementById('btn-reset').addEventListener('click', () => {
-                if (emulator) emulator.quickReload();
+                if (emulator) {
+                    emulator.quickReload();
+                    syncSaves();
+                }
             });
 
             document.getElementById('btn-mute').addEventListener('click', () => {
@@ -438,6 +491,43 @@
                     emulator.resumeAudio();
                     document.getElementById('btn-mute').classList.remove('active');
                 }
+            });
+
+            document.getElementById('btn-save-state').addEventListener('click', () => {
+                if (!emulator) return;
+                const ok = emulator.saveState(activeSlot);
+                setStatus(ok ? 'State saved (slot ' + activeSlot + ')' : 'Save failed');
+                syncSaves();
+                setTimeout(() => setStatus(''), 2000);
+            });
+
+            document.getElementById('btn-load-state').addEventListener('click', () => {
+                if (!emulator) return;
+                const ok = emulator.loadState(activeSlot);
+                setStatus(ok ? 'State loaded (slot ' + activeSlot + ')' : 'Load failed — no save in slot ' + activeSlot);
+                setTimeout(() => setStatus(''), 2000);
+            });
+
+            document.getElementById('btn-fast-forward').addEventListener('click', () => {
+                if (!emulator) return;
+                const cur = emulator.getFastForwardMultiplier();
+                const next = cur > 1 ? 1 : 4;
+                emulator.setFastForwardMultiplier(next);
+                const btn = document.getElementById('btn-fast-forward');
+                btn.classList.toggle('active', next > 1);
+                setStatus(next > 1 ? 'Fast Forward: x' + next : 'Normal speed');
+                setTimeout(() => setStatus(''), 1500);
+            });
+        }
+
+        function setupSavePersistence() {
+            if (syncInterval) clearInterval(syncInterval);
+            syncInterval = setInterval(syncSaves, 15000);
+
+            window.addEventListener('beforeunload', syncSaves);
+            window.addEventListener('pagehide', syncSaves);
+            document.addEventListener('visibilitychange', () => {
+                if (document.visibilityState === 'hidden') syncSaves();
             });
         }
     </script>
