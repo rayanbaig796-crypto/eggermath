@@ -393,6 +393,7 @@
 
         function setupToolbar() {
             let hideTimer;
+            let lastMove = 0;
             function showToolbar() {
                 emuToolbar.classList.add('visible');
                 toolbarHint.classList.add('visible');
@@ -400,11 +401,20 @@
                 hideTimer = setTimeout(() => {
                     emuToolbar.classList.remove('visible');
                     toolbarHint.classList.remove('visible');
-                }, 3000);
+                }, 1500);
             }
 
-            emulatorContainer.addEventListener('mousemove', showToolbar);
-            emulatorContainer.addEventListener('touchstart', showToolbar, { passive: true });
+            emulatorContainer.addEventListener('mousemove', e => {
+                const now = Date.now();
+                if (now - lastMove < 300) return;
+                lastMove = now;
+                showToolbar();
+            });
+            emulatorContainer.addEventListener('mouseleave', () => {
+                emuToolbar.classList.remove('visible');
+                toolbarHint.classList.remove('visible');
+                clearTimeout(hideTimer);
+            });
             toolbarHint.addEventListener('click', showToolbar);
             showToolbar();
         }
