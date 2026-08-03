@@ -617,26 +617,6 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // ── /api/post-tweet — Auto-post a tweet (cron or manual) ────
-  if (parsedUrl.pathname === '/api/post-tweet' && req.method === 'GET') {
-    const secret = parsedUrl.query.secret;
-    if (secret !== process.env.TWEET_SECRET) {
-      res.writeHead(403, { 'Content-Type': 'text/plain' });
-      res.end('Forbidden');
-      return;
-    }
-    try {
-      const { postTweet } = require('./tweet-bot');
-      const result = await postTweet();
-      res.writeHead(200, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify(result));
-    } catch (err) {
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: err.message }));
-    }
-    return;
-  }
-
   // ── /proxy?url=<url> — Simple proxy (cached) ────────────────
   if (parsedUrl.pathname === '/proxy') {
     const targetUrl = parsedUrl.query.url;
@@ -694,315 +674,10 @@ const server = http.createServer(async (req, res) => {
     return;
   }
 
-  // ── /play/<hash>/<path> — Path-based proxy (same-origin for ES modules) ─
-  const playPathMatch = parsedUrl.pathname.match(/^\/play\/([a-zA-Z0-9_-]+)(\/.*)?$/);
-  if (playPathMatch) {
-    const hash = playPathMatch[1];
-    const subPath = playPathMatch[2] || '/';
-    const cdnBase = 'https://html5.gamemonetize.co/' + hash + '/';
-    const targetUrl = cdnBase + (subPath === '/' ? '' : subPath.substring(1));
-
-    const cacheKey = 'playpath:v18:' + targetUrl;
-    const cached = cacheGet(cacheKey);
-    if (cached) {
-      const ifNoneMatch = req.headers['if-none-match'];
-      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
-        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
-        res.end();
-        return;
-      }
-      const headers = stripFrameBlocking(cached.headers);
-      headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=86400';
-      headers['ETag'] = cached.etag;
-      res.writeHead(cached.statusCode, headers);
-      res.end(cached.body);
-      return;
-    }
-
-    try {
-      const result = await fetchUrl(targetUrl);
-      const contentType = (result.headers['content-type'] || '').toLowerCase();
-      const proxyBase = 'https://' + req.headers.host + '/play/' + hash + '/';
-
-      if (contentType.includes('text/html')) {
-        let html = result.body.toString('utf-8');
-        html = rewriteHtml(html, targetUrl, req.headers.host, proxyBase);
-        const headers = stripFrameBlocking(result.headers);
-        headers['content-type'] = 'text/html; charset=utf-8';
-        delete headers['content-length'];
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
-        res.writeHead(result.statusCode, headers);
-        res.end(html);
-      } else if (contentType.includes('text/css')) {
-        let css = result.body.toString('utf-8');
-        css = rewriteCss(css, targetUrl, req.headers.host);
-        const headers = stripFrameBlocking(result.headers);
-        headers['content-type'] = 'text/css; charset=utf-8';
-        delete headers['content-length'];
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
-        res.writeHead(result.statusCode, headers);
-        res.end(css);
-      } else {
-        const headers = stripFrameBlocking(result.headers);
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, result.body);
-        res.writeHead(result.statusCode, headers);
-        res.end(result.body);
-      }
-    } catch (err) {
-      res.writeHead(502, { 'Content-Type': 'text/plain' });
-      res.end('Proxy error: ' + err.message);
-    }
-    return;
-  }
-
-  // ── /y8/<slug> — Responsive Y8 game wrapper (cached) ────────────
-  const y8PathMatch = parsedUrl.pathname.match(/^\/y8\/([a-zA-Z0-9_-]+)$/);
-  if (y8PathMatch) {
-    const slug = y8PathMatch[1];
-    const cacheKey = 'y8:v1:' + slug;
-    const cached = cacheGet(cacheKey);
-    if (cached) {
-      const ifNoneMatch = req.headers['if-none-match'];
-      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
-        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
-        res.end();
-        return;
-      }
-      const headers = Object.assign({}, cached.headers);
-      headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=86400';
-      headers['ETag'] = cached.etag;
-      res.writeHead(cached.statusCode, headers);
-      res.end(cached.body);
-      return;
-    }
-
-    const y8EmbedUrl = 'https://www.y8.com/embed/' + slug;
-    try {
-      const result = await fetchUrl(y8EmbedUrl);
-      const html = result.body.toString('utf-8');
-      const storageMatch = html.match(/src="(https:\/\/storage\.y8\.com\/[^"]+)"/);
-      if (storageMatch) {
-        const storageUrl = storageMatch[1];
-        const wrapper = '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;overflow:hidden;background:#000}iframe{width:100%;height:100%;border:none;display:block}</style></head><body><iframe src="' + storageUrl + '" allowfullscreen allow="autoplay; fullscreen; pointer-lock; clipboard-write"></iframe></body></html>';
-        const buf = Buffer.from(wrapper, 'utf-8');
-        cacheSet(cacheKey, 200, { 'content-type': 'text/html; charset=utf-8' }, buf);
-        const headers = securityHeaders();
-        headers['Content-Type'] = 'text/html; charset=utf-8';
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        headers['ETag'] = genETag(buf);
-        res.writeHead(200, headers);
-        res.end(buf);
-      } else {
-        res.writeHead(302, { 'Location': y8EmbedUrl });
-        res.end();
-      }
-    } catch (e) {
-      res.writeHead(302, { 'Location': y8EmbedUrl });
-      res.end();
-    }
-    return;
-  }
-
-  // ── /gamepix/<slug> — Responsive GamePix game wrapper (cached) ──
-  const gpPathMatch = parsedUrl.pathname.match(/^\/gamepix\/([a-zA-Z0-9_-]+)$/);
-  if (gpPathMatch) {
-    const slug = gpPathMatch[1];
-    const cacheKey = 'gp:v1:' + slug;
-    const cached = cacheGet(cacheKey);
-    if (cached) {
-      const ifNoneMatch = req.headers['if-none-match'];
-      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
-        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
-        res.end();
-        return;
-      }
-      const headers = Object.assign({}, cached.headers);
-      headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=86400';
-      headers['ETag'] = cached.etag;
-      res.writeHead(cached.statusCode, headers);
-      res.end(cached.body);
-      return;
-    }
-
-    const gpEmbedUrl = 'https://play.gamepix.com/' + slug + '/embed';
-    const wrapper = '<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;height:100%;overflow:hidden;background:#000}iframe{width:100%;height:100%;border:none;display:block}</style></head><body><iframe src="' + gpEmbedUrl + '" allowfullscreen allow="autoplay; fullscreen; pointer-lock; clipboard-write"></iframe></body></html>';
-    const buf = Buffer.from(wrapper, 'utf-8');
-    cacheSet(cacheKey, 200, { 'content-type': 'text/html; charset=utf-8' }, buf);
-    const gpHeaders = securityHeaders();
-    gpHeaders['Content-Type'] = 'text/html; charset=utf-8';
-    gpHeaders['X-Cache'] = 'MISS';
-    gpHeaders['Cache-Control'] = 'public, max-age=86400';
-    gpHeaders['ETag'] = genETag(buf);
-    res.writeHead(200, gpHeaders);
-    res.end(buf);
-    return;
-  }
-
-  // ── /play?url=<url> — Smart proxy with URL rewriting (cached) ─
-  if (parsedUrl.pathname === '/play') {
-    const targetUrl = parsedUrl.query.url;
-    if (!targetUrl) {
-      res.writeHead(400, { 'Content-Type': 'text/plain' });
-      res.end('Missing url parameter');
-      return;
-    }
-
-    // ── SSRF protection — block internal/private IPs ──
-    if (isSSRFBlocked(targetUrl)) {
-      res.writeHead(403, { 'Content-Type': 'application/json' });
-      res.end(JSON.stringify({ error: 'Blocked: internal/private URL not allowed' }));
-      return;
-    }
-
-    const cacheKey = 'play:v18:' + targetUrl;
-    const cached = cacheGet(cacheKey);
-    if (cached) {
-      const ifNoneMatch = req.headers['if-none-match'];
-      if (ifNoneMatch && cached.etag && ifNoneMatch === cached.etag) {
-        res.writeHead(304, { 'Cache-Control': 'public, max-age=86400', 'ETag': cached.etag });
-        res.end();
-        return;
-      }
-      const headers = stripFrameBlocking(cached.headers);
-      headers['X-Cache'] = 'HIT';
-      headers['Cache-Control'] = 'public, max-age=86400';
-      headers['ETag'] = cached.etag;
-      res.writeHead(cached.statusCode, headers);
-      res.end(cached.body);
-      return;
-    }
-
-    try {
-      const result = await fetchUrl(targetUrl);
-      const contentType = (result.headers['content-type'] || '').toLowerCase();
-
-      if (contentType.includes('text/html')) {
-        let html = result.body.toString('utf-8');
-        html = rewriteHtml(html, targetUrl, req.headers.host);
-        const headers = stripFrameBlocking(result.headers);
-        headers['content-type'] = 'text/html; charset=utf-8';
-        delete headers['content-length'];
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(html, 'utf-8'));
-        res.writeHead(result.statusCode, headers);
-        res.end(html);
-      } else if (contentType.includes('text/css')) {
-        let css = result.body.toString('utf-8');
-        css = rewriteCss(css, targetUrl, req.headers.host);
-        const headers = stripFrameBlocking(result.headers);
-        headers['content-type'] = 'text/css; charset=utf-8';
-        delete headers['content-length'];
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, Buffer.from(css, 'utf-8'));
-        res.writeHead(result.statusCode, headers);
-        res.end(css);
-      } else {
-        const headers = stripFrameBlocking(result.headers);
-        headers['X-Cache'] = 'MISS';
-        headers['Cache-Control'] = 'public, max-age=86400';
-        cacheSet(cacheKey, result.statusCode, result.headers, result.body);
-        res.writeHead(result.statusCode, headers);
-        res.end(result.body);
-      }
-    } catch (err) {
-      res.writeHead(502, { 'Content-Type': 'text/plain' });
-      res.end('Proxy error: ' + err.message);
-    }
-    return;
-  }
-
-  // ── /collections/:slug — Themed collection pages ────────────
-  const collMatch = parsedUrl.pathname.match(/^\/collections\/([a-z0-9-]+)$/);
-  if (collMatch && req.method === 'GET') {
-    const collFile = path.join(ROOT, 'collections', collMatch[1] + '.html');
-    if (fs.existsSync(collFile)) {
-      const html = fs.readFileSync(collFile, 'utf-8');
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=3600' });
-      res.end(html);
-    } else {
-      res.writeHead(302, { 'Location': '/' });
-      res.end();
-    }
-    return;
-  }
-
-  // ── /social — Social media content generator ────────────────
-  if (parsedUrl.pathname === '/social' && req.method === 'GET') {
-    const socialFile = path.join(ROOT, 'social.html');
-    if (fs.existsSync(socialFile)) {
-      const html = fs.readFileSync(socialFile, 'utf-8');
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-      res.end(html);
-    } else {
-      res.writeHead(302, { 'Location': '/' });
-      res.end();
-    }
-    return;
-  }
-
-  // ── /trending — Trending games page ──────────────────────────
-  if (parsedUrl.pathname === '/trending' && req.method === 'GET') {
-    const trendingFile = path.join(ROOT, 'trending.html');
-    if (fs.existsSync(trendingFile)) {
-      const html = fs.readFileSync(trendingFile, 'utf-8');
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' });
-      res.end(html);
-    } else {
-      res.writeHead(302, { 'Location': '/' });
-      res.end();
-    }
-    return;
-  }
-
-  // ── /most-played — Most played games page ────────────────────
-  if (parsedUrl.pathname === '/most-played' && req.method === 'GET') {
-    const mostPlayedFile = path.join(ROOT, 'most-played.html');
-    if (fs.existsSync(mostPlayedFile)) {
-      const html = fs.readFileSync(mostPlayedFile, 'utf-8');
-      res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'public, max-age=300' });
-      res.end(html);
-    } else {
-      res.writeHead(302, { 'Location': '/' });
-      res.end();
-    }
-    return;
-  }
-
   // ── Redirect /index.html to / ──────────────────────────────────
   if (parsedUrl.pathname === '/index.html') {
     res.writeHead(301, { 'Location': '/' });
     res.end();
-    return;
-  }
-
-  // ── /blog/:slug — Individual blog post pages ──────────────────
-  const blogMatch = parsedUrl.pathname.match(/^\/blog\/([a-zA-Z0-9-]+)$/);
-  if (blogMatch && req.method === 'GET') {
-    const slug = blogMatch[1];
-    const blogFile = path.join(ROOT, 'blog', slug + '.html');
-    if (fs.existsSync(blogFile)) {
-      const html = fs.readFileSync(blogFile, 'utf-8');
-      const headers = securityHeaders();
-      headers['Content-Type'] = 'text/html; charset=utf-8';
-      headers['Cache-Control'] = 'public, max-age=3600';
-      res.writeHead(200, headers);
-      res.end(html);
-    } else {
-      res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
-      res.end('<!DOCTYPE html><html><head><title>404</title></head><body><h1>Blog post not found</h1><p><a href="/blog.html">Back to blog</a></p></body></html>');
-    }
     return;
   }
 
@@ -1042,10 +717,7 @@ const server = http.createServer(async (req, res) => {
   else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
 
   const isHtml = ext === '.html' || ext === '.htm';
-  const isPspEmulator = filePath.includes('psp-emulator-web') || filePath.includes('ppsspp-web');
-  const isGbaEmulator = filePath.includes('gba-emulator-web');
-  const isNewEmulator = filePath.includes('nes-emulator-web') || filePath.includes('snes-emulator-web') || filePath.includes('nds-emulator-web') || filePath.includes('n64-emulator-web') || filePath.includes('genesis-emulator-web') || filePath.includes('ps1-emulator-web');
-  const isEmulator = isPspEmulator || isGbaEmulator || isNewEmulator;
+  const isEmulator = filePath.includes('gba-emulator-web');
 
   const compressible = ['.wasm', '.data', '.js', '.css', '.json', '.svg', '.html', '.htm', '.txt', '.ini', '.xml'];
   const shouldCompress = compressible.includes(ext) && fs.statSync(filePath).size > 1024;
@@ -1060,7 +732,7 @@ const server = http.createServer(async (req, res) => {
     ...(useGzip ? { 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding' } : {}),
   });
 
-  // PPSSPP/mGBA WASM require COOP/COEP for SharedArrayBuffer support
+  // mGBA WASM requires COOP/COEP for SharedArrayBuffer support
   if (isEmulator) {
     headers['Cross-Origin-Opener-Policy'] = 'same-origin';
     headers['Cross-Origin-Embedder-Policy'] = 'credentialless';
@@ -1081,8 +753,5 @@ const server = http.createServer(async (req, res) => {
 
 server.listen(PORT, '0.0.0.0', () => {
   console.log(`EggerMath server running at http://localhost:${PORT}`);
-  console.log(`  Proxy:    /proxy?url=<encoded-url>  (cached)`);
-  console.log(`  Player:   /play?url=<encoded-url>   (cached + rewritten)`);
-  console.log(`  Y8 Game:  /y8/<slug>                (cached + responsive)`);
-  console.log(`  GP Game:  /gamepix/<slug>            (cached + responsive)`);
+  console.log(`  Proxy: /proxy?url=<encoded-url>`);
 });

@@ -3,269 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
-  <link rel="dns-prefetch" href="https://img.gamemonetize.co">
-  <title>EggerMath — Play 18000+ Free Browser Games Online | No Download Required</title>
-  <meta name="description" content="Play 18000+ free online browser games instantly. Arcade, racing, puzzle, action games — no download, no install. Play now on EggerMath!">
-  <meta name="keywords" content="free online games, browser games, play games online, no download games, arcade games, racing games, puzzle games">
+  <title>EggerMath — Free GBA Emulator | Play GBA Games in Browser</title>
+  <meta name="description" content="Play GBA games in your browser. Free GBA emulator — no download required. Drag and drop your ROM and play instantly.">
+  <meta name="keywords" content="GBA emulator, Game Boy Advance emulator, play GBA online, free emulator, browser emulator">
   <meta name="robots" content="index, follow">
   <meta name="author" content="EggerMath">
   <link rel="canonical" href="https://www.eggermath.com">
   <meta name="google-site-verification" content="google92af5e866d81ac03">
 
-  <!-- Open Graph (Facebook / Discord / WhatsApp previews) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="EggerMath">
-  <meta property="og:title" content="EggerMath — Play 18000+ Free Browser Games">
-  <meta property="og:description" content="Play 18000+ free online browser games instantly. No download required.">
+  <meta property="og:title" content="EggerMath — Free GBA Emulator">
+  <meta property="og:description" content="Play GBA games in your browser. No download required.">
   <meta property="og:url" content="https://www.eggermath.com">
   <meta property="og:image" content="https://www.eggermath.com/images/eggermath-logo.png">
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="EggerMath — Play 18000+ Free Browser Games Instantly">
-  <meta name="twitter:description" content="Play 18000+ free unblocked browser games instantly. No downloads, no sign-up!">
+  <meta name="twitter:title" content="EggerMath — Free GBA Emulator">
+  <meta name="twitter:description" content="Play GBA games in your browser. No download required.">
   <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png">
 
-  <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "EggerMath",
     "url": "https://www.eggermath.com",
-    "description": "Play 18000+ free unblocked browser games instantly. No downloads or sign-up required.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.eggermath.com/?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "EggerMath",
-    "url": "https://www.eggermath.com",
-    "logo": "https://www.eggermath.com/images/eggermath-logo.png",
-    "description": "Play 18000+ free browser games online. Arcade, racing, puzzle, action games — no download required.",
-    "sameAs": [],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "customer support",
-      "url": "https://www.eggermath.com/contact.html"
-    }
+    "description": "Play GBA games in your browser. Free GBA emulator — no download required."
   }
   </script>
 
-  <link rel="preconnect" href="https://img.gamemonetize.co" crossorigin>
-  <link rel="preconnect" href="https://html5.gamemonetize.co" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300..900;1,14..32,300..900&display=swap"></noscript>
-  <link rel="stylesheet" href="./home.css?v=23">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="./home.css?v=24">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
 </head>
-<body>
+<body class="emulator-active">
 
-  <!-- ============================================================
-       MOBILE HEADER (hidden on desktop)
-  ============================================================ -->
-  <header class="mobile-header">
-    <a href="/" class="mobile-logo">
-      <img src="images/eggermath-logo.png" alt="Logo" fetchpriority="high" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
-      <span class="mobile-logo-name">EGGERMATH</span>
-    </a>
-  </header>
-
-  <div class="mobile-tabs">
-      <button class="mobile-tab active" data-view="emulator-psp">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="currentColor"/></svg>
-        PSP
-      </button>
-      <button class="mobile-tab" data-view="emulator-gba">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" fill="currentColor"/></svg>
-        GBA
-      </button>
-      <button class="mobile-tab" data-view="emulator-nes">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        NES
-      </button>
-      <button class="mobile-tab" data-view="emulator-snes">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        SNES
-      </button>
-      <button class="mobile-tab" data-view="emulator-nds">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" fill="currentColor"/></svg>
-        DS
-      </button>
-      <button class="mobile-tab" data-view="emulator-n64">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
-        N64
-      </button>
-      <button class="mobile-tab" data-view="emulator-genesis">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        Genesis
-      </button>
-      <button class="mobile-tab" data-view="emulator-ps1">
-        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        PS1
-      </button>
-  </div>
-
-  <!-- ============================================================
-       LEFT SIDEBAR (desktop only)
-  ============================================================ -->
-  <aside class="sidebar">
-    <a href="/" class="sidebar-logo">
-      <img src="images/eggermath-logo.png" alt="Logo" onerror="this.src='https://duckmath.org/imgs/duck.webp'">
-      <span class="sidebar-logo-name">EGGERMATH</span>
-    </a>
-    
-    <div class="sidebar-tabs">
-      <button class="sidebar-tab active" data-view="emulator-psp">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2zm4.5 2c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4-3c-.83 0-1.5-.67-1.5-1.5S18.67 9 19.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" fill="currentColor"/></svg>
-        PSP
-      </button>
-      <button class="sidebar-tab" data-view="emulator-gba">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z" fill="currentColor"/></svg>
-        GBA
-      </button>
-      <button class="sidebar-tab" data-view="emulator-nes">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        NES
-      </button>
-      <button class="sidebar-tab" data-view="emulator-snes">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        SNES
-      </button>
-      <button class="sidebar-tab" data-view="emulator-nds">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z" fill="currentColor"/></svg>
-        DS
-      </button>
-      <button class="sidebar-tab" data-view="emulator-n64">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/></svg>
-        N64
-      </button>
-      <button class="sidebar-tab" data-view="emulator-genesis">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        Genesis
-      </button>
-      <button class="sidebar-tab" data-view="emulator-ps1">
-        <svg viewBox="0 0 24 24" width="16" height="16"><path d="M21 6H3c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm-10 7H8v3H6v-3H3v-2h3V8h2v3h3v2z" fill="currentColor"/></svg>
-        PS1
-      </button>
-    </div>
-
-    <div class="sidebar-minis" id="sidebar-minis">
-      <!-- Injected via JS -->
-    </div>
-    <div class="sidebar-links" style="margin-top:auto; padding:12px 0; border-top:1px solid rgba(255,255,255,0.08);">
-      <a href="onboarding.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Getting Started</a>
-      <a href="blog.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Blog</a>
-      <a href="advertise.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">Advertise</a>
-      <a href="takedown.html" style="display:block; padding:6px 16px; color:rgba(255,255,255,0.45); font-size:11px; text-decoration:none;">DMCA</a>
-    </div>
-  </aside>
-
-  <!-- ============================================================
-       DRAWER OVERLAY & SEARCH DRAWER
-  ============================================================ -->
-  <!-- ============================================================
-       MAIN CONTENT
-  ============================================================ -->
   <main class="main-content">
-    
-    <!-- ═══ PSP EMULATOR VIEW ═══ -->
-    <div class="view-section" id="view-emulator-psp">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-psp" src="/psp-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ GBA EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-gba">
+    <div class="view-section" id="view-emulator-gba">
       <div class="emulator-view">
         <div class="emu-iframe-wrap">
           <iframe id="emu-iframe-gba" src="/gba-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
         </div>
       </div>
     </div>
-
-    <!-- ═══ NES EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-nes">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-nes" src="/nes-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ SNES EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-snes">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-snes" src="/snes-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ NDS EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-nds">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-nds" src="/nds-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ N64 EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-n64">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-n64" src="/n64-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ GENESIS EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-genesis">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-genesis" src="/genesis-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- ═══ PS1 EMULATOR VIEW ═══ -->
-    <div class="view-section hidden" id="view-emulator-ps1">
-      <div class="emulator-view">
-        <div class="emu-iframe-wrap">
-          <iframe id="emu-iframe-ps1" src="/ps1-emulator-web/" allowfullscreen loading="lazy" allow="file-access-from-files; gamepad"></iframe>
-        </div>
-      </div>
-    </div>
-
   </main>
 
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
   <footer>
     <span class="footer-brand">© 2026 EggerMath</span>
     <div class="footer-links">
-      <a href="onboarding.html">Getting Started</a>
       <a href="about.html">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="advertise.html">Advertise</a>
       <a href="takedown.html">DMCA</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
@@ -273,13 +64,10 @@
     </div>
   </footer>
 
-  <!-- ============================================================
-       COOKIE CONSENT BANNER (GDPR / AdSense required)
-  ============================================================ -->
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
     <div class="cookie-content">
       <span class="cookie-icon">🍪</span>
-      <p>We use cookies to remember your favorites and show relevant ads. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+      <p>We use cookies to remember your preferences. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
       <div class="cookie-actions">
         <button class="cookie-btn cookie-decline" id="cookie-decline">Decline</button>
         <button class="cookie-btn cookie-accept" id="cookie-accept">Accept All</button>
@@ -287,77 +75,27 @@
     </div>
   </div>
 
-  <!-- ============================================================
-       JAVASCRIPT
-  ============================================================ -->
   <script>
-    // ═══════════════════════════════════════════════════════════════
-    //  TAB SWITCHING — All Emulators
-    // ═══════════════════════════════════════════════════════════════
-    const sidebarTabs = document.querySelectorAll('.sidebar-tab');
-    const mobileTabs = document.querySelectorAll('.mobile-tab');
-    const allTabs = document.querySelectorAll('.sidebar-tab, .mobile-tab');
-    const allViews = document.querySelectorAll('.view-section');
-    const emulatorMap = {
-      'emulator-psp': { dir: 'psp-emulator-web', id: 'emu-iframe-psp' },
-      'emulator-gba': { dir: 'gba-emulator-web', id: 'emu-iframe-gba' },
-      'emulator-nes': { dir: 'nes-emulator-web', id: 'emu-iframe-nes' },
-      'emulator-snes': { dir: 'snes-emulator-web', id: 'emu-iframe-snes' },
-      'emulator-nds': { dir: 'nds-emulator-web', id: 'emu-iframe-nds' },
-      'emulator-n64': { dir: 'n64-emulator-web', id: 'emu-iframe-n64' },
-      'emulator-genesis': { dir: 'genesis-emulator-web', id: 'emu-iframe-genesis' },
-      'emulator-ps1': { dir: 'ps1-emulator-web', id: 'emu-iframe-ps1' },
-    };
-
-    function switchToView(view) {
-      allTabs.forEach(t => t.classList.toggle('active', t.dataset.view === view));
-      allViews.forEach(v => v.classList.toggle('hidden', v.id !== 'view-' + view));
-      document.body.classList.add('emulator-active');
-      const emu = emulatorMap[view];
-      if (emu) {
-        const iframe = document.getElementById(emu.id);
-        if (iframe && !iframe.src.includes(emu.dir)) {
-          iframe.src = '/' + emu.dir + '/';
-        }
-      }
-    }
-
-    allTabs.forEach(tab => {
-      tab.addEventListener('click', () => switchToView(tab.dataset.view));
-    });
-
-    // Start on PSP tab
-    switchToView('emulator-psp');
-
-    // ═══════════════════════════════════════════════════════════════
-    //  COOKIE CONSENT
-    // ═══════════════════════════════════════════════════════════════
     (function cookieConsent() {
-      const banner = document.getElementById('cookie-banner');
+      var banner = document.getElementById('cookie-banner');
       if (!banner) return;
-      const consent = localStorage.getItem('eggermath_cookie_consent');
-      if (!consent) {
-        setTimeout(() => banner.classList.add('visible'), 1200);
-      }
-      document.getElementById('cookie-accept').addEventListener('click', () => {
+      var consent = localStorage.getItem('eggermath_cookie_consent');
+      if (!consent) setTimeout(function(){ banner.classList.add('visible'); }, 1200);
+      document.getElementById('cookie-accept').addEventListener('click', function() {
         localStorage.setItem('eggermath_cookie_consent', 'accepted');
         banner.classList.remove('visible');
-        setTimeout(() => banner.style.display = 'none', 400);
+        setTimeout(function(){ banner.style.display = 'none'; }, 400);
       });
-      document.getElementById('cookie-decline').addEventListener('click', () => {
+      document.getElementById('cookie-decline').addEventListener('click', function() {
         localStorage.setItem('eggermath_cookie_consent', 'declined');
         banner.classList.remove('visible');
-        setTimeout(() => banner.style.display = 'none', 400);
+        setTimeout(function(){ banner.style.display = 'none'; }, 400);
       });
     })();
 
-    // ═══════════════════════════════════════════════════════════════
-    //  SERVICE WORKER
-    // ═══════════════════════════════════════════════════════════════
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(function(){});
     }
-
   </script>
 </body>
 </html>

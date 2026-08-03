@@ -1,4 +1,4 @@
-const CACHE_NAME = 'eggermath-v7';
+const CACHE_NAME = 'eggermath-v8';
 const STATIC_ASSETS = [
   '/home.css',
   '/images/eggermath-logo.png'
@@ -24,24 +24,18 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  // Never touch API, proxy, or play routes
   if (url.pathname.startsWith('/api/') ||
       url.pathname === '/proxy' ||
-      url.pathname.startsWith('/play/') ||
       url.pathname === '/clear-cache') {
     return;
   }
 
-  // Don't touch cross-origin
   if (url.origin !== self.location.origin) return;
 
-  // Skip emulator files — let them load directly to avoid
-  // SW caching issues with WASM/gzip/COEP headers
-  if (url.pathname.includes('psp-emulator-web') || url.pathname.includes('ppsspp-web') || url.pathname.includes('gba-emulator-web') || url.pathname.includes('nes-emulator-web') || url.pathname.includes('snes-emulator-web') || url.pathname.includes('nds-emulator-web') || url.pathname.includes('n64-emulator-web') || url.pathname.includes('genesis-emulator-web') || url.pathname.includes('ps1-emulator-web')) {
+  if (url.pathname.includes('gba-emulator-web')) {
     return;
   }
 
-  // HTML navigation: network-first with fast timeout + cache fallback
   if (request.headers.get('accept') && request.headers.get('accept').includes('text/html')) {
     event.respondWith(
       Promise.race([
@@ -58,7 +52,6 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Static assets: stale-while-revalidate (fast + fresh)
   event.respondWith(
     caches.match(request).then(cached => {
       const fetchPromise = fetch(request).then(response => {
