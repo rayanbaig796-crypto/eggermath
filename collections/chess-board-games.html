@@ -45,27 +45,13 @@ body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-seri
 <a href="/" class="back-link">← Browse All Games</a>
 </div>
 <div class="grid" id="games-grid"></div>
+
+<div style="text-align:center;padding:60px 20px;color:rgba(255,255,255,0.5);font-size:16px;max-width:800px;margin:0 auto;">
+  Game listings are being reworked. Check back soon!
+</div>
+
 <script>
-fetch('/games.js').then(function(r){return r.text();}).then(function(t){
-  var match = t.match(/const GAMES\s*=\s*(\[[\s\S]*?\]);/);
-  var GAMES = match ? JSON.parse(match[1]) : [];
-  var board = GAMES.filter(function(g){
-    var t2 = ((g.title||'') + ' ' + (g.tags||[]).join(' ')).toLowerCase();
-    return t2.indexOf('chess')!==-1 || t2.indexOf('checkers')!==-1 || t2.indexOf('backgammon')!==-1 ||
-           t2.indexOf('ludo')!==-1 || t2.indexOf('domino')!==-1 || t2.indexOf('board')!==-1 ||
-           t2.indexOf('scopa')!==-1 || t2.indexOf('shogi')!==-1 || t2.indexOf('mahjong')!==-1;
-  }).slice(0, 30);
-  var grid = document.getElementById('games-grid');
-  board.forEach(function(g){
-    var img = g.thumb || g.thumbnail || '';
-    var card = document.createElement('a');
-    card.className = 'game-card';
-    card.href = '/game.html?id=' + encodeURIComponent(g.id);
-    card.innerHTML = (img ? '<img src="'+img+'" alt="'+g.title+'" loading="lazy">' : '<div class="placeholder">♟️</div>') +
-      '<div class="info"><h3>'+g.title+'</h3><span>'+g.category+'</span></div>';
-    grid.appendChild(card);
-  });
-});
+// Games.js has been removed — game listings are temporarily unavailable.
 </script>
 </body>
 </html>

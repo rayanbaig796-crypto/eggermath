@@ -44,6 +44,17 @@
     .error-msg { text-align: center; padding: 60px 20px; color: rgba(255,255,255,0.4); font-size: 14px; }
     @media(max-width:600px) { .games-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; padding: 0 12px 60px; } }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Trending Games — EggerMath",
+    "description": "Discover the most popular free browser games right now. Updated in real-time based on community votes.",
+    "url": "https://www.eggermath.com/trending",
+    "publisher": { "@type": "Organization", "name": "EggerMath", "url": "https://www.eggermath.com" }
+  }
+  </script>
 </head>
 <body>
   <header style="padding:12px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
@@ -60,75 +71,12 @@
     <p>The most popular games right now, ranked by community votes.</p>
   </div>
 
-  <div id="loading" class="loading">Loading trending games...</div>
+  <div id="loading" class="loading" style="display:none;">Loading trending games...</div>
   <div id="error" class="error-msg" style="display:none;"></div>
   <div id="games-grid" class="games-grid" style="display:none;"></div>
 
-  <script>
-    var GAMES_DATA = [];
-    var placeholderSvg = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%23c62828'/%3E%3Ctext x='100' y='105' font-family='system-ui' font-size='48' text-anchor='middle' fill='rgba(255,255,255,0.3)'%3E🎮%3C/text%3E%3C/svg%3E";
-
-    function getGameImg(game) {
-      var raw = game.thumb || game.thumbnail || '';
-      if (raw && (raw.startsWith('http://') || raw.startsWith('https://'))) return raw;
-      return placeholderSvg;
-    }
-
-    function formatCount(n) {
-      if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
-      if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
-      return String(n);
-    }
-
-    function renderGames(games) {
-      var grid = document.getElementById('games-grid');
-      var loading = document.getElementById('loading');
-      loading.style.display = 'none';
-      grid.style.display = 'grid';
-      grid.innerHTML = games.map(function(g, i) {
-        var img = getGameImg(g);
-        var net = (g.likes || 0) - (g.dislikes || 0);
-        return '<a href="/game.html?id=' + encodeURIComponent(g.id) + '" class="game-card">' +
-          '<div class="card-img-wrap">' +
-            '<img src="' + placeholderSvg + '" data-src="' + img + '" alt="' + (g.title || '') + '" loading="lazy" style="opacity:0.6">' +
-            '<span class="rank-badge">#' + (i + 1) + '</span>' +
-          '</div>' +
-          '<div class="card-body">' +
-            '<div class="card-title">' + (g.title || g.id) + '</div>' +
-            '<div class="card-meta">' +
-              '<span>' + (g.category || 'Other') + '</span>' +
-              '<span class="card-likes">♥ ' + formatCount(net) + '</span>' +
-            '</div>' +
-          '</div>' +
-        '</a>';
-      }).join('');
-
-      grid.querySelectorAll('img[data-src]').forEach(function(img) {
-        var src = img.getAttribute('data-src');
-        var preload = new Image();
-        preload.onload = function() { img.src = src; img.style.opacity = '1'; };
-        preload.onerror = function() { img.style.opacity = '0.4'; };
-        preload.src = src;
-      });
-    }
-
-    (async function() {
-      try {
-        var res = await fetch('/api/trending?limit=50');
-        if (!res.ok) throw new Error('Failed to load');
-        var games = await res.json();
-        if (games.length === 0) {
-          document.getElementById('loading').textContent = 'No trending games yet. Be the first to vote!';
-          return;
-        }
-        renderGames(games);
-      } catch(e) {
-        document.getElementById('loading').style.display = 'none';
-        var errEl = document.getElementById('error');
-        errEl.style.display = 'block';
-        errEl.textContent = 'Failed to load trending games. Please try again later.';
-      }
-    })();
-  </script>
+  <div style="text-align:center;padding:60px 20px;color:rgba(255,255,255,0.5);font-size:16px;">
+    Trending content is being reworked. Check back soon!
+  </div>
 </body>
 </html>

@@ -1,8 +1,6 @@
 const CACHE_NAME = 'eggermath-v7';
 const STATIC_ASSETS = [
   '/home.css',
-  '/game-page.css',
-  '/games.js',
   '/images/eggermath-logo.png'
 ];
 

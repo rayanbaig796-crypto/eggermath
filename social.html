@@ -82,77 +82,28 @@ var GAMES = [];
 var categories = ['Puzzle','Arcade','Shooting','Racing','Educational','Action','Adventure','Simulation','Sports','Girls','Strategy','Creative','Card','Other'];
 var catEmojis = {'Puzzle':'🧠','Arcade':'🎮','Shooting':'🎯','Racing':'🏎️','Educational':'📚','Action':'💥','Adventure':'🧠','Simulation':'⚙️','Sports':'⚽','Girls':'💄','Strategy':'♟️','Creative':'🎨','Card':'🃏','Other':'⭐'};
 
-fetch('/games.js').then(function(r){return r.text();}).then(function(t){
-  var match = t.match(/const GAMES\s*=\s*(\[[\s\S]*?\]);/);
-  if(match) GAMES = JSON.parse(match[1]);
-  generate('tweet1'); generateCat('tweet2'); generateStats('tweet3');
-});
+// Games.js has been removed — social media content generation is disabled.
+document.getElementById('tweet1').textContent = 'Game content generation is currently disabled.';
+document.getElementById('tweet2').textContent = 'Category content generation is currently disabled.';
+document.getElementById('tweet3').textContent = 'Stats content generation is currently disabled.';
 
 function pick(arr) { return arr[Math.floor(Math.random()*arr.length)]; }
 
 function generate(id) {
-  var g = pick(GAMES);
-  var img = g.thumb || g.thumbnail || '';
-  var lines = [
-    '🎮 Play "' + g.title + '" free online!',
-    '',
-    catEmojis[g.category] + ' ' + g.category + ' game',
-    '',
-    'Play now 👉 eggermath.com/game.html?id=' + g.id,
-    '',
-    '#FreeGames #HTML5Games #BrowserGames #' + g.category.replace(/\s/g,'')
-  ];
-  document.getElementById(id).textContent = lines.join('\n');
+  document.getElementById(id).textContent = 'Game content generation is currently disabled.';
 }
 
 function generateCat(id) {
-  var cat = pick(categories);
-  var games = GAMES.filter(function(g){return g.category===cat;});
-  var sample = [];
-  for(var i=0;i<Math.min(3,games.length);i++) sample.push(pick(games.filter(function(g){return sample.indexOf(g)===-1;})));
-  var titles = sample.map(function(g){return g.title;}).join(', ');
-  var lines = [
-    catEmojis[cat] + ' Top ' + cat + ' Games to Play Right Now:',
-    '',
-    titles,
-    '',
-    'Play all free at 👉 eggermath.com/play/' + cat.toLowerCase().replace(/\s+/g,'-') + '-games',
-    '',
-    '#FreeGames #'+cat.replace(/\s/g,'')+' #BrowserGames'
-  ];
-  document.getElementById(id).textContent = lines.join('\n');
+  document.getElementById(id).textContent = 'Category content generation is currently disabled.';
 }
 
 function generateStats(id) {
-  var total = GAMES.length;
-  var cats = {};
-  GAMES.forEach(function(g){cats[g.category]=(cats[g.category]||0)+1;});
-  var topCat = Object.keys(cats).sort(function(a,b){return cats[b]-cats[a];})[0];
-  var lines = [
-    '🔥 EggerMath now has ' + total + '+ free browser games!',
-    '',
-    '📊 Top category: ' + topCat + ' with ' + cats[topCat] + ' games',
-    '',
-    'All games are FREE, no download needed 👉 eggermath.com',
-    '',
-    '#FreeGames #HTML5Games #BrowserGames'
-  ];
-  document.getElementById(id).textContent = lines.join('\n');
+  document.getElementById(id).textContent = 'Stats content generation is currently disabled.';
 }
 
 function generateBatch() {
   var box = document.getElementById('batch-box');
-  box.innerHTML = '';
-  for(var i=0;i<5;i++){
-    var g = pick(GAMES);
-    var tweet = '🎮 Play "' + g.title + '" free online!\n\n' + catEmojis[g.category] + ' ' + g.category + '\n\nPlay now 👉 eggermath.com/game.html?id=' + g.id + '\n\n#FreeGames #HTML5Games';
-    var div = document.createElement('div');
-    div.className = 'tweet-box';
-    div.style.marginBottom = '10px';
-    div.style.fontSize = '13px';
-    div.textContent = tweet;
-    box.appendChild(div);
-  }
+  box.innerHTML = '<div style="color:rgba(255,255,255,0.4);font-size:13px;padding:12px 0;">Batch generation is currently disabled.</div>';
 }
 
 function copyTweet(id) {

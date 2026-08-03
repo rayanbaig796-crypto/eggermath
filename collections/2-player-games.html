@@ -48,30 +48,12 @@ body{background:#0f0f1a;color:#fff;font-family:system-ui,-apple-system,sans-seri
 
 <div class="grid" id="games-grid"></div>
 
+<div style="text-align:center;padding:60px 20px;color:rgba(255,255,255,0.5);font-size:16px;max-width:800px;margin:0 auto;">
+  Game listings are being reworked. Check back soon!
+</div>
+
 <script>
-fetch('/games.js').then(function(r){return r.text();}).then(function(t){
-  var match = t.match(/const GAMES\s*=\s*(\[[\s\S]*?\]);/);
-  var GAMES = match ? JSON.parse(match[1]) : [];
-  var twoPlayer = GAMES.filter(function(g){
-    var title = (g.title||'').toLowerCase();
-    var tags = (g.tags||[]).join(' ').toLowerCase();
-    var cat = (g.category||'').toLowerCase();
-    return title.indexOf('2 player')!==-1 || title.indexOf('two player')!==-1 || title.indexOf('multiplayer')!==-1 ||
-           tags.indexOf('2 player')!==-1 || tags.indexOf('multiplayer')!==-1 ||
-           title.indexOf(' versus')!==-1 || title.indexOf(' duel')!==-1;
-  }).slice(0, 40);
-  if (twoPlayer.length === 0) twoPlayer = GAMES.filter(function(g){return g.category==='Arcade';}).slice(0,20);
-  var grid = document.getElementById('games-grid');
-  twoPlayer.forEach(function(g){
-    var img = g.thumb || g.thumbnail || '';
-    var card = document.createElement('a');
-    card.className = 'game-card';
-    card.href = '/game.html?id=' + encodeURIComponent(g.id);
-    card.innerHTML = (img ? '<img src="'+img+'" alt="'+g.title+'" loading="lazy">' : '<div class="placeholder">👥</div>') +
-      '<div class="info"><h3>'+g.title+'</h3><span>'+g.category+'</span></div>';
-    grid.appendChild(card);
-  });
-});
+// Games.js has been removed — game listings are temporarily unavailable.
 </script>
 </body>
 </html>

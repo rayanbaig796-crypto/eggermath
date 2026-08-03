@@ -1,6 +1,4 @@
 const { TwitterApi } = require('twitter-api-v2');
-const fs = require('fs');
-const path = require('path');
 
 const client = new TwitterApi({
   appKey: process.env.TWITTER_API_KEY,
@@ -11,10 +9,8 @@ const client = new TwitterApi({
 
 const readOnlyClient = client.readWrite;
 
-// Load games
-const gamesCode = fs.readFileSync(path.join(__dirname, 'games.js'), 'utf-8').replace('const GAMES =', 'GAMES =');
-let GAMES = [];
-eval(gamesCode);
+// NOTE: games.js has been removed. Tweet generation needs to be rewritten
+// to use a different data source (e.g. Supabase, hardcoded list, etc.)
 
 const categories = {
   'Puzzle': '🧠', 'Arcade': '🎮', 'Shooting': '🎯', 'Racing': '🏎️',
@@ -25,34 +21,14 @@ const categories = {
 
 function pick(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
 
-function generateGameTweet() {
-  const g = pick(GAMES);
-  const emoji = categories[g.category] || '🎮';
-  return `${emoji} Play "${g.title}" free online!\n\n${g.category} game — no download needed\n\nPlay now 👉 eggermath.com/game.html?id=${g.id}\n\n#FreeGames #HTML5Games #BrowserGames #${g.category.replace(/\s/g, '')}`;
-}
+const tweetTypes = [generateEmulatorTweet];
 
-function generateCategoryTweet() {
-  const cat = Object.keys(categories);
-  const chosen = pick(cat);
-  const emoji = categories[chosen];
-  const catGames = GAMES.filter(g => g.category === chosen);
-  const samples = [];
-  for (let i = 0; i < Math.min(3, catGames.length); i++) {
-    const g = pick(catGames.filter(x => !samples.includes(x.title)));
-    if (g) samples.push(g.title);
-  }
-  return `${emoji} Top ${chosen} Games:\n\n${samples.join(', ')}\n\nPlay all free 👉 eggermath.com/play/${chosen.toLowerCase().replace(/\s+/g, '-')}-games\n\n#FreeGames #${chosen.replace(/\s/g, '')} #BrowserGames`;
+function generateEmulatorTweet() {
+  const emulators = ['PSP', 'GBA', 'NES', 'SNES', 'NDS', 'N64', 'Genesis', 'PS1'];
+  const emoji = pick(['🕹️', '🎮', '👾', '🖥️']);
+  const emu = pick(emulators);
+  return `${emoji} Play ${emu} ROMs free in your browser!\n\nNo downloads needed — just pick a ROM and play instantly.\n\nPlay now 👉 eggermath.com\n\n#RetroGaming #${emu} #Emulator #FreeGames`;
 }
-
-function generateStatsTweet() {
-  const total = GAMES.length;
-  const cats = {};
-  GAMES.forEach(g => { cats[g.category] = (cats[g.category] || 0) + 1; });
-  const topCat = Object.keys(cats).sort((a, b) => cats[b] - cats[a])[0];
-  return `🔥 EggerMath now has ${total}+ free browser games!\n\n📊 Top category: ${topCat} with ${cats[topCat]} games\n\nAll FREE, no download 👉 eggermath.com\n\n#FreeGames #HTML5Games #BrowserGames`;
-}
-
-const tweetTypes = [generateGameTweet, generateCategoryTweet, generateStatsTweet];
 
 async function postTweet() {
   try {
