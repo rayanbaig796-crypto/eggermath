@@ -349,6 +349,159 @@
             .emulator-container { aspect-ratio: auto; }
             #file-info { border-radius: 0; margin: 0; }
         }
+        /* ── Popular Games Section ── */
+        .browse-section { margin-top: 32px; }
+        .browse-header {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 6px;
+        }
+        .browse-header h2 {
+            font-size: 18px; font-weight: 800; color: #fff;
+            letter-spacing: -0.02em;
+        }
+        .browse-header .badge {
+            font-size: 10px; font-weight: 800; padding: 3px 8px;
+            border-radius: 99px; background: rgba(229,115,115,0.15);
+            color: #e57373; text-transform: uppercase; letter-spacing: 0.06em;
+        }
+        .browse-sub {
+            font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 16px;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 12px;
+        }
+        .game-pill {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
+        }
+        .game-pill:hover {
+            transform: translateY(-4px) scale(1.03);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+            z-index: 5;
+        }
+        .game-pill-bg {
+            width: 100%; aspect-ratio: 3/4;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 48px;
+            position: relative;
+        }
+        .game-pill-bg::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.85) 100%);
+        }
+        .game-pill-info {
+            position: absolute; bottom: 0; left: 0; right: 0;
+            padding: 12px 10px; z-index: 2;
+        }
+        .game-pill-title {
+            font-size: 12px; font-weight: 700; color: #fff;
+            line-height: 1.3; margin-bottom: 4px;
+            display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .game-pill-genre {
+            font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.5);
+            text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
+        }
+        .game-pill-dl {
+            display: inline-flex; align-items: center; gap: 4px;
+            padding: 5px 10px; border-radius: 6px;
+            background: rgba(229,115,115,0.2); border: 1px solid rgba(229,115,115,0.3);
+            color: #e57373; font-size: 10px; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            opacity: 0; transform: translateY(6px);
+            transition: all 0.25s ease;
+        }
+        .game-pill:hover .game-pill-dl {
+            opacity: 1; transform: translateY(0);
+        }
+        .game-pill-dl svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+        /* ── How-To Guide ── */
+        .guide-section { margin-top: 36px; }
+        .guide-section h2 {
+            font-size: 18px; font-weight: 800; color: #fff;
+            letter-spacing: -0.02em; margin-bottom: 6px;
+        }
+        .guide-sub {
+            font-size: 13px; color: rgba(255,255,255,0.45); margin-bottom: 20px;
+        }
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+        .guide-step {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 14px;
+            padding: 24px 20px;
+            position: relative;
+            overflow: hidden;
+            transition: border-color 0.3s, background 0.3s;
+        }
+        .guide-step:hover {
+            border-color: rgba(229,115,115,0.2);
+            background: rgba(255,255,255,0.05);
+        }
+        .step-num {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 32px; height: 32px; border-radius: 8px;
+            background: rgba(229,115,115,0.15); color: #e57373;
+            font-size: 14px; font-weight: 800; margin-bottom: 14px;
+        }
+        .step-icon { font-size: 28px; margin-bottom: 10px; }
+        .step-title {
+            font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 8px;
+        }
+        .step-desc {
+            font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.6;
+        }
+        .step-desc a {
+            color: #e57373; text-decoration: underline;
+            text-decoration-color: rgba(229,115,115,0.3);
+            text-underline-offset: 2px;
+            transition: text-decoration-color 0.2s;
+        }
+        .step-desc a:hover { text-decoration-color: #e57373; }
+        .step-link-btn {
+            display: inline-flex; align-items: center; gap: 6px;
+            margin-top: 12px; padding: 8px 16px;
+            border-radius: 8px; background: #e57373; color: #fff;
+            font-size: 12px; font-weight: 700; text-decoration: none;
+            text-transform: uppercase; letter-spacing: 0.04em;
+            transition: all 0.2s;
+        }
+        .step-link-btn:hover { background: #d32f2f; transform: translateY(-1px); }
+        .step-link-btn svg { width: 14px; height: 14px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+
+        .guide-note {
+            margin-top: 20px; padding: 14px 18px;
+            background: rgba(229,115,115,0.06);
+            border: 1px solid rgba(229,115,115,0.12);
+            border-radius: 10px;
+            font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.6;
+        }
+        .guide-note strong { color: rgba(255,255,255,0.7); }
+
+        /* Hide sections when ROM loaded */
+        .pre-game-content.hidden { display: none; }
+
+        @media (max-width: 600px) {
+            .games-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+            .game-pill-bg { font-size: 36px; }
+            .game-pill-dl { opacity: 1; transform: translateY(0); padding: 4px 8px; font-size: 9px; }
+            .guide-steps { grid-template-columns: 1fr; }
+            .browse-header h2, .guide-section h2 { font-size: 16px; }
+        }
     </style>
 </head>
 <body>
@@ -359,6 +512,56 @@
             <div class="formats">Supports .gba, .zip files</div>
         </div>
         <input type="file" id="file-input" accept=".gba,.zip" style="display:none">
+
+        <div class="pre-game-content" id="pre-game-content">
+            <div class="browse-section">
+                <div class="browse-header">
+                    <h2>Popular GBA Games</h2>
+                    <span class="badge">Download & Play</span>
+                </div>
+                <p class="browse-sub">Hover a game and click <strong>Download ROM</strong> to get started</p>
+                <div class="games-grid" id="games-grid"></div>
+            </div>
+
+            <div class="guide-section">
+                <h2>How to Play</h2>
+                <p class="guide-sub">Get your favorite GBA games running in 3 easy steps</p>
+                <div class="guide-steps">
+                    <div class="guide-step">
+                        <div class="step-num">1</div>
+                        <div class="step-icon">🔍</div>
+                        <div class="step-title">Download a GBA ROM</div>
+                        <div class="step-desc">
+                            Find and download a GBA ROM file (.gba or .zip) from the internet. ROMs are game files backed up from cartridges.
+                        </div>
+                        <a href="https://romsmania.cc/roms/game-boy-advance" target="_blank" rel="noopener noreferrer" class="step-link-btn">
+                            Browse ROMs
+                            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                        </a>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-num">2</div>
+                        <div class="step-icon">📂</div>
+                        <div class="step-title">Upload Your ROM</div>
+                        <div class="step-desc">
+                            Drag and drop your .gba or .zip file into the upload area above, or click the area to browse your files.
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-num">3</div>
+                        <div class="step-icon">🎮</div>
+                        <div class="step-title">Start Playing</div>
+                        <div class="step-desc">
+                            The emulator loads instantly. Use your keyboard or touch controls to play. Save states, fast forward, and fullscreen included.
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-note">
+                    <strong>Tip:</strong> We support <strong>.gba</strong> and <strong>.zip</strong> files. Your saves are stored locally in your browser — no account needed. Works best on Chrome and Edge.
+                </div>
+            </div>
+        </div>
+
         <div id="file-info">
             <div class="name" id="file-name"></div>
             <div class="size" id="file-size"></div>
@@ -492,6 +695,8 @@
             }
 
             uploadArea.style.display = 'none';
+            var preGame = document.getElementById('pre-game-content');
+            if (preGame) preGame.classList.add('hidden');
             fileInfo.classList.add('visible');
             fileName.textContent = file.name;
             fileSize.textContent = formatSize(file.size);
@@ -754,6 +959,49 @@
             });
             window.addEventListener('blur', unpressAll);
         }
+
+        /* ── Popular Games Grid ── */
+        (function initGamesGrid() {
+            var grid = document.getElementById('games-grid');
+            if (!grid) return;
+            var ROM_BASE = 'https://romsmania.cc/roms/game-boy-advance';
+            var games = [
+                { title: 'Pokemon Emerald', genre: 'RPG', emoji: '💎', gradient: 'linear-gradient(145deg, #1b5e20, #2e7d32, #004d40)', query: 'pokemon-emerald' },
+                { title: 'Pokemon FireRed', genre: 'RPG', emoji: '🔥', gradient: 'linear-gradient(145deg, #b71c1c, #d32f2f, #e65100)', query: 'pokemon-firered' },
+                { title: 'Pokemon LeafGreen', genre: 'RPG', emoji: '🍃', gradient: 'linear-gradient(145deg, #1b5e20, #388e3c, #2e7d32)', query: 'pokemon-leafgreen' },
+                { title: 'Zelda: Minish Cap', genre: 'Adventure', emoji: '🗡️', gradient: 'linear-gradient(145deg, #1a237e, #283593, #0d47a1)', query: 'zelda-minish-cap' },
+                { title: 'Mario Kart Super Circuit', genre: 'Racing', emoji: '🏎️', gradient: 'linear-gradient(145deg, #c62828, #e53935, #ff6f00)', query: 'mario-kart-super-circuit' },
+                { title: 'Super Mario Advance', genre: 'Platformer', emoji: '🍄', gradient: 'linear-gradient(145deg, #b71c1c, #d32f2f, #f57f17)', query: 'super-mario-advance' },
+                { title: 'Metroid Fusion', genre: 'Action', emoji: '🚀', gradient: 'linear-gradient(145deg, #0d47a1, #1565c0, #006064)', query: 'metroid-fusion' },
+                { title: 'Kirby & Amazing Mirror', genre: 'Platformer', emoji: '🩷', gradient: 'linear-gradient(145deg, #ad1457, #d81b60, #f06292)', query: 'kirby-amazing-mirror' },
+                { title: 'Final Fantasy Tactics', genre: 'Strategy', emoji: '⚔️', gradient: 'linear-gradient(145deg, #4a148c, #6a1b9a, #283593)', query: 'final-fantasy-tactics-advance' },
+                { title: 'Sonic Advance', genre: 'Platformer', emoji: '💙', gradient: 'linear-gradient(145deg, #0277bd, #0288d1, #00acc1)', query: 'sonic-advance' },
+                { title: 'Castlevania: Aria of Sorrow', genre: 'Action', emoji: '🧛', gradient: 'linear-gradient(145deg, #212121, #424242, #6a1b9a)', query: 'castlevania-aria-of-sorrow' },
+                { title: 'Advance Wars 2', genre: 'Strategy', emoji: '🎖️', gradient: 'linear-gradient(145deg, #33691e, #558b2f, #827717)', query: 'advance-wars-2' },
+                { title: 'Dragon Ball Z', genre: 'Fighting', emoji: '🐉', gradient: 'linear-gradient(145deg, #e65100, #f57c00, #ffa000)', query: 'dragon-ball-z-supersonic-warriors' },
+                { title: 'Golden Sun', genre: 'RPG', emoji: '☀️', gradient: 'linear-gradient(145deg, #f9a825, #fbc02d, #ff8f00)', query: 'golden-sun' },
+                { title: 'Mega Man Battle Network', genre: 'RPG', emoji: '🤖', gradient: 'linear-gradient(145deg, #0d47a1, #1976d2, #00bcd4)', query: 'mega-man-battle-network' },
+                { title: 'Harvest Moon', genre: 'Simulation', emoji: '🌻', gradient: 'linear-gradient(145deg, #33691e, #689f38, #8bc34a)', query: 'harvest-moon' },
+                { title: 'Tony Hawk Pro Skater', genre: 'Sports', emoji: '🛹', gradient: 'linear-gradient(145deg, #263238, #37474f, #455a64)', query: 'tony-hawk-pro-skater' },
+                { title: 'Yu-Gi-Oh! GX', genre: 'Card Game', emoji: '🃏', gradient: 'linear-gradient(145deg, #4a148c, #7b1fa2, #c62828)', query: 'yu-gi-oh-gx' },
+            ];
+            var svgDl = '<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
+            games.forEach(function(g) {
+                var a = document.createElement('a');
+                a.className = 'game-pill';
+                a.href = ROM_BASE;
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+                a.innerHTML =
+                    '<div class="game-pill-bg" style="background:' + g.gradient + '">' + g.emoji +
+                    '<div class="game-pill-info">' +
+                    '<div class="game-pill-title">' + g.title + '</div>' +
+                    '<div class="game-pill-genre">' + g.genre + '</div>' +
+                    '<div class="game-pill-dl">' + svgDl + ' Download ROM</div>' +
+                    '</div></div>';
+                grid.appendChild(a);
+            });
+        })();
     </script>
 </body>
 </html>
