@@ -377,33 +377,34 @@
             border-radius: 12px;
             overflow: hidden;
             cursor: pointer;
-            text-decoration: none;
             display: block;
             transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
+            aspect-ratio: 3/4;
+            background: #1a1a2e;
         }
         .game-pill:hover {
             transform: translateY(-4px) scale(1.03);
             box-shadow: 0 12px 36px rgba(0,0,0,0.5);
             z-index: 5;
         }
-        .game-pill-bg {
-            width: 100%; aspect-ratio: 3/4;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 48px;
-            position: relative;
+        .game-pill-img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s, filter 0.3s;
         }
-        .game-pill-bg::after {
-            content: '';
-            position: absolute; inset: 0;
-            background: linear-gradient(180deg, rgba(0,0,0,0) 30%, rgba(0,0,0,0.85) 100%);
+        .game-pill:hover .game-pill-img {
+            transform: scale(1.08);
+            filter: brightness(1.1);
         }
-        .game-pill-info {
+        .game-pill-overlay {
             position: absolute; bottom: 0; left: 0; right: 0;
-            padding: 12px 10px; z-index: 2;
+            padding: 40px 10px 12px;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.88) 100%);
         }
         .game-pill-title {
             font-size: 12px; font-weight: 700; color: #fff;
-            line-height: 1.3; margin-bottom: 4px;
+            line-height: 1.3; margin-bottom: 3px;
             display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
             overflow: hidden;
         }
@@ -411,19 +412,19 @@
             font-size: 9px; font-weight: 700; color: rgba(255,255,255,0.5);
             text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 8px;
         }
-        .game-pill-dl {
-            display: inline-flex; align-items: center; gap: 4px;
+        .game-pill-play {
+            display: inline-flex; align-items: center; gap: 5px;
             padding: 5px 10px; border-radius: 6px;
-            background: rgba(229,115,115,0.2); border: 1px solid rgba(229,115,115,0.3);
-            color: #e57373; font-size: 10px; font-weight: 700;
+            background: rgba(229,115,115,0.85);
+            color: #fff; font-size: 10px; font-weight: 700;
             text-transform: uppercase; letter-spacing: 0.04em;
             opacity: 0; transform: translateY(6px);
             transition: all 0.25s ease;
         }
-        .game-pill:hover .game-pill-dl {
+        .game-pill:hover .game-pill-play {
             opacity: 1; transform: translateY(0);
         }
-        .game-pill-dl svg { width: 12px; height: 12px; stroke: currentColor; fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+        .game-pill-play svg { width: 12px; height: 12px; }
 
         /* ── How-To Guide ── */
         .guide-section { margin-top: 36px; }
@@ -497,8 +498,7 @@
 
         @media (max-width: 600px) {
             .games-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-            .game-pill-bg { font-size: 36px; }
-            .game-pill-dl { opacity: 1; transform: translateY(0); padding: 4px 8px; font-size: 9px; }
+            .game-pill-play { opacity: 1; transform: translateY(0); padding: 4px 8px; font-size: 9px; }
             .guide-steps { grid-template-columns: 1fr; }
             .browse-header h2, .guide-section h2 { font-size: 16px; }
         }
@@ -517,9 +517,9 @@
             <div class="browse-section">
                 <div class="browse-header">
                     <h2>Popular GBA Games</h2>
-                    <span class="badge">Download & Play</span>
+                    <span class="badge">Click to Play</span>
                 </div>
-                <p class="browse-sub">Hover a game and click <strong>Download ROM</strong> to get started</p>
+                <p class="browse-sub">Click any game to play instantly — no download needed</p>
                 <div class="games-grid" id="games-grid"></div>
             </div>
 
@@ -529,35 +529,31 @@
                 <div class="guide-steps">
                     <div class="guide-step">
                         <div class="step-num">1</div>
-                        <div class="step-icon">🔍</div>
-                        <div class="step-title">Download a GBA ROM</div>
+                        <div class="step-icon">🎮</div>
+                        <div class="step-title">Pick a Game</div>
                         <div class="step-desc">
-                            Find and download a GBA ROM file (.gba or .zip) from the internet. ROMs are game files backed up from cartridges.
+                            Browse our library of 25 popular GBA games above. Click on any game to start playing instantly.
                         </div>
-                        <a href="https://romsmania.cc/roms/game-boy-advance" target="_blank" rel="noopener noreferrer" class="step-link-btn">
-                            Browse ROMs
-                            <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                        </a>
                     </div>
                     <div class="guide-step">
                         <div class="step-num">2</div>
-                        <div class="step-icon">📂</div>
-                        <div class="step-title">Upload Your ROM</div>
+                        <div class="step-icon">⏳</div>
+                        <div class="step-title">Wait for Loading</div>
                         <div class="step-desc">
-                            Drag and drop your .gba or .zip file into the upload area above, or click the area to browse your files.
+                            The game loads directly in your browser from our secure library. Usually takes 5-15 seconds depending on your connection.
                         </div>
                     </div>
                     <div class="guide-step">
                         <div class="step-num">3</div>
-                        <div class="step-icon">🎮</div>
+                        <div class="step-icon">🕹️</div>
                         <div class="step-title">Start Playing</div>
                         <div class="step-desc">
-                            The emulator loads instantly. Use your keyboard or touch controls to play. Save states, fast forward, and fullscreen included.
+                            Use your keyboard or touch controls to play. Save states, fast forward, and fullscreen are built in. Your progress is saved automatically.
                         </div>
                     </div>
                 </div>
                 <div class="guide-note">
-                    <strong>Tip:</strong> We support <strong>.gba</strong> and <strong>.zip</strong> files. Your saves are stored locally in your browser — no account needed. Works best on Chrome and Edge.
+                    <strong>Tip:</strong> You can also drag & drop your own .gba or .zip files into the upload area. Your saves are stored locally in your browser — no account needed. Works best on Chrome and Edge.
                 </div>
             </div>
         </div>
@@ -640,6 +636,7 @@
         <div class="mobile-note">Touch controls active. Connect a keyboard or controller for better experience.</div>
     </div>
 
+    <script src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
     <script type="module">
         import mGBA from './mgba.js';
 
@@ -960,46 +957,113 @@
             window.addEventListener('blur', unpressAll);
         }
 
-        /* ── Popular Games Grid ── */
+        /* ── Popular Games Grid + MEGA Integration ── */
         (function initGamesGrid() {
             var grid = document.getElementById('games-grid');
             if (!grid) return;
-            var ROM_BASE = 'https://romsmania.cc/roms/game-boy-advance';
+            var ROM_BASE = 'https://www.romsgames.net';
+
             var games = [
-                { title: 'Pokemon Emerald', genre: 'RPG', emoji: '💎', gradient: 'linear-gradient(145deg, #1b5e20, #2e7d32, #004d40)', query: 'pokemon-emerald' },
-                { title: 'Pokemon FireRed', genre: 'RPG', emoji: '🔥', gradient: 'linear-gradient(145deg, #b71c1c, #d32f2f, #e65100)', query: 'pokemon-firered' },
-                { title: 'Pokemon LeafGreen', genre: 'RPG', emoji: '🍃', gradient: 'linear-gradient(145deg, #1b5e20, #388e3c, #2e7d32)', query: 'pokemon-leafgreen' },
-                { title: 'Zelda: Minish Cap', genre: 'Adventure', emoji: '🗡️', gradient: 'linear-gradient(145deg, #1a237e, #283593, #0d47a1)', query: 'zelda-minish-cap' },
-                { title: 'Mario Kart Super Circuit', genre: 'Racing', emoji: '🏎️', gradient: 'linear-gradient(145deg, #c62828, #e53935, #ff6f00)', query: 'mario-kart-super-circuit' },
-                { title: 'Super Mario Advance', genre: 'Platformer', emoji: '🍄', gradient: 'linear-gradient(145deg, #b71c1c, #d32f2f, #f57f17)', query: 'super-mario-advance' },
-                { title: 'Metroid Fusion', genre: 'Action', emoji: '🚀', gradient: 'linear-gradient(145deg, #0d47a1, #1565c0, #006064)', query: 'metroid-fusion' },
-                { title: 'Kirby & Amazing Mirror', genre: 'Platformer', emoji: '🩷', gradient: 'linear-gradient(145deg, #ad1457, #d81b60, #f06292)', query: 'kirby-amazing-mirror' },
-                { title: 'Final Fantasy Tactics', genre: 'Strategy', emoji: '⚔️', gradient: 'linear-gradient(145deg, #4a148c, #6a1b9a, #283593)', query: 'final-fantasy-tactics-advance' },
-                { title: 'Sonic Advance', genre: 'Platformer', emoji: '💙', gradient: 'linear-gradient(145deg, #0277bd, #0288d1, #00acc1)', query: 'sonic-advance' },
-                { title: 'Castlevania: Aria of Sorrow', genre: 'Action', emoji: '🧛', gradient: 'linear-gradient(145deg, #212121, #424242, #6a1b9a)', query: 'castlevania-aria-of-sorrow' },
-                { title: 'Advance Wars 2', genre: 'Strategy', emoji: '🎖️', gradient: 'linear-gradient(145deg, #33691e, #558b2f, #827717)', query: 'advance-wars-2' },
-                { title: 'Dragon Ball Z', genre: 'Fighting', emoji: '🐉', gradient: 'linear-gradient(145deg, #e65100, #f57c00, #ffa000)', query: 'dragon-ball-z-supersonic-warriors' },
-                { title: 'Golden Sun', genre: 'RPG', emoji: '☀️', gradient: 'linear-gradient(145deg, #f9a825, #fbc02d, #ff8f00)', query: 'golden-sun' },
-                { title: 'Mega Man Battle Network', genre: 'RPG', emoji: '🤖', gradient: 'linear-gradient(145deg, #0d47a1, #1976d2, #00bcd4)', query: 'mega-man-battle-network' },
-                { title: 'Harvest Moon', genre: 'Simulation', emoji: '🌻', gradient: 'linear-gradient(145deg, #33691e, #689f38, #8bc34a)', query: 'harvest-moon' },
-                { title: 'Tony Hawk Pro Skater', genre: 'Sports', emoji: '🛹', gradient: 'linear-gradient(145deg, #263238, #37474f, #455a64)', query: 'tony-hawk-pro-skater' },
-                { title: 'Yu-Gi-Oh! GX', genre: 'Card Game', emoji: '🃏', gradient: 'linear-gradient(145deg, #4a148c, #7b1fa2, #c62828)', query: 'yu-gi-oh-gx' },
+                { title: 'Pokemon Emerald', genre: 'RPG', mega: 'Pokemon - Emerald Version (USA, Europe).zip', img: 'https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg', slug: '/gameboy-advance-rom-pokemon-emerald-version/' },
+                { title: 'Pokemon FireRed', genre: 'RPG', mega: 'Pokemon_ FireRed Version.zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: '/gameboy-advance-rom-pokemon-firered-version/' },
+                { title: 'Pokemon LeafGreen', genre: 'RPG', mega: 'Pokemon - Leaf Green Version (U) (V1.1).zip', img: 'https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg', slug: '/gameboy-advance-rom-pokemon---leaf-green-version-v11/' },
+                { title: 'Pokemon Ruby', genre: 'RPG', mega: 'Pokemon_ Ruby Version.zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: '/gameboy-advance-rom-pokemon-ruby-version/' },
+                { title: 'Pokemon Sapphire', genre: 'RPG', mega: 'Pokemon_ Sapphire Version.zip', img: 'https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg', slug: '/gameboy-advance-rom-pokemon-sapphire-version/' },
+                { title: 'Pokemon Ultra Violet', genre: 'RPG', mega: 'Pokemon Ultra Violet (1.22) LSA (Fire Red Hack).zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: '/gameboy-advance-rom-pokemon-ultra-violet-122-lsa-fire-red-hack/' },
+                { title: 'Pokemon Jupiter', genre: 'RPG', mega: 'Pokemon Jupiter - 6.04 (Ruby Hack).zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: '/gameboy-advance-rom-pokemon-jupiter---604-ruby-hack/' },
+                { title: 'Zelda: Minish Cap', genre: 'Adventure', mega: 'Legend of Zelda, The_ The Minish Cap.zip', img: 'https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg', slug: '/gameboy-advance-rom-legend-of-zelda-the-the-minish-cap/' },
+                { title: 'Zelda: A Link to the Past', genre: 'Adventure', mega: 'Legend of Zelda, The - A Link to the Past & Four Swords (USA).zip', img: 'https://cache.downloadroms.io/static/5e103c326eaeeec1bf39d72f0842cd32a1f69e00/image.jpeg', slug: '/gameboy-advance-rom-legend-of-zelda-the-a-link-to-the-past-four-swords/' },
+                { title: 'Mario Kart Super Circuit', genre: 'Racing', mega: 'Mario Kart_ Super Circuit.zip', img: 'https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg', slug: '/gameboy-advance-rom-mario-kart-super-circuit/' },
+                { title: 'Super Mario World', genre: 'Platformer', mega: 'Super Mario Advance 2_ Super Mario World.zip', img: 'https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg', slug: '/gameboy-advance-rom-super-mario-advance-2-super-mario-world/' },
+                { title: 'Mario & Luigi: Superstar Saga', genre: 'RPG', mega: 'Mario & Luigi_ Superstar Saga.zip', img: 'https://cache.downloadroms.io/static/e2ba65e8c9fc44f24e306f20a6bbdc650a6f28e6/image.jpeg', slug: '/gameboy-advance-rom-mario-luigi-superstar-saga/' },
+                { title: 'Classic NES: Super Mario Bros', genre: 'Platformer', mega: 'Classic NES Series_ Super Mario Bros..zip', img: 'https://cache.downloadroms.io/static/4892e138d49d06903582ca7a63ff5ec61316aa01/image.jpeg', slug: '/gameboy-advance-rom-classic-nes-series-super-mario-bros/' },
+                { title: 'Metroid Fusion', genre: 'Action', mega: 'Metroid Fusion.zip', img: 'https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg', slug: '/gameboy-advance-rom-metroid-fusion-1/' },
+                { title: 'Metroid: Zero Mission', genre: 'Action', mega: 'Metroid_ Zero Mission.zip', img: 'https://cache.downloadroms.io/static/6e17ed38093925abed2b35680a2213463dc51246/image.jpeg', slug: '/gameboy-advance-rom-metroid-zero-mission/' },
+                { title: 'Kirby: Nightmare in Dream Land', genre: 'Platformer', mega: 'Kirby_ Nightmare in Dream Land.zip', img: 'https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg', slug: '/gameboy-advance-rom-kirby-nightmare-in-dream-land/' },
+                { title: 'Kirby & the Amazing Mirror', genre: 'Platformer', mega: 'Kirby & the Amazing Mirror.zip', img: 'https://cache.downloadroms.io/static/f59132ffa23f14bcd4d5e9694cf57afb8a8dd02d/image.jpeg', slug: '/gameboy-advance-rom-kirby-the-amazing-mirror/' },
+                { title: 'Castlevania: Aria of Sorrow', genre: 'Action', mega: 'Castlevania_ Aria of Sorrow.zip', img: 'https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg', slug: '/gameboy-advance-rom-castlevania-aria-of-sorrow/' },
+                { title: 'Donkey Kong Country', genre: 'Platformer', mega: 'Donkey Kong Country.zip', img: 'https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg', slug: '/gameboy-advance-rom-donkey-kong-country/' },
+                { title: 'Fire Emblem: Sacred Stones', genre: 'Strategy', mega: 'Fire Emblem_ The Sacred Stones.zip', img: 'https://cache.downloadroms.io/static/526f9e2e1b09b6c40bf9a4c276ee232666f34442/image.jpeg', slug: '/gameboy-advance-rom-fire-emblem-the-sacred-stones/' },
+                { title: 'Sonic Advance 3', genre: 'Platformer', mega: 'Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip', img: 'https://cache.downloadroms.io/static/3113ce42ab3471f38d8de19649e3eca6edd997ad/image.jpeg', slug: '/gameboy-advance-rom-sonic-advance-3/' },
+                { title: 'Dragon Ball: Advanced Adventure', genre: 'Fighting', mega: 'Dragon Ball - Advanced Adventure (USA).zip', img: 'https://cache.downloadroms.io/static/3d31e5d0d96ce4e60bb45987b42f2c9750ec5197/image.jpeg', slug: '/gameboy-advance-rom-dragon-ball-advanced-adventure/' },
+                { title: 'Harvest Moon', genre: 'Simulation', mega: 'Harvest Moon - Friends of Mineral Town (U) [!].zip', img: 'https://cache.downloadroms.io/static/3da1858039ac4d6e9b64d4f6be716b300d58a109/image.jpg', slug: '/gameboy-advance-rom-harvest-moon---friends-of-mineral-town/' },
+                { title: 'Crash Bandicoot', genre: 'Platformer', mega: 'Crash Bandicoot_ The Huge Adventure.zip', img: 'https://cache.downloadroms.io/static/dccc383ed757660b06f608b1040bb2c8f364ff73/image.jpeg', slug: '/gameboy-advance-rom-crash-bandicoot-the-huge-adventure/' },
+                { title: 'GTA Advance', genre: 'Action', mega: 'Grand Theft Auto Advance.zip', img: 'https://cache.downloadroms.io/static/bb1b6675a61175d35c748ac283089af2c0241d6b/image.jpeg', slug: '/gameboy-advance-rom-grand-theft-auto-advance/' },
             ];
-            var svgDl = '<svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>';
+
+            var MEGA_FOLDER = 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA';
+            var megaFiles = null;
+
+            window.mega.File.fromURL(MEGA_FOLDER).loadAttributes(function(err, folder) {
+                if (err) { console.warn('MEGA folder load failed:', err); return; }
+                megaFiles = {};
+                folder.children.forEach(function(f) { megaFiles[f.name] = f; });
+                console.log('MEGA folder loaded:', Object.keys(megaFiles).length, 'files');
+            });
+
+            var svgPlay = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+
             games.forEach(function(g) {
-                var a = document.createElement('a');
-                a.className = 'game-pill';
-                a.href = ROM_BASE;
-                a.target = '_blank';
-                a.rel = 'noopener noreferrer';
-                a.innerHTML =
-                    '<div class="game-pill-bg" style="background:' + g.gradient + '">' + g.emoji +
-                    '<div class="game-pill-info">' +
+                var card = document.createElement('div');
+                card.className = 'game-pill';
+                card.dataset.mega = g.mega;
+                card.innerHTML =
+                    '<img class="game-pill-img" src="' + g.img + '" alt="' + g.title + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+                    '<div class="game-pill-overlay">' +
                     '<div class="game-pill-title">' + g.title + '</div>' +
                     '<div class="game-pill-genre">' + g.genre + '</div>' +
-                    '<div class="game-pill-dl">' + svgDl + ' Download ROM</div>' +
-                    '</div></div>';
-                grid.appendChild(a);
+                    '<div class="game-pill-play">' + svgPlay + ' Play Now</div>' +
+                    '</div>';
+                card.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    if (!megaFiles) {
+                        setStatus('Connecting to game library...');
+                        setTimeout(function() { card.click(); }, 2000);
+                        return;
+                    }
+                    var megaFile = megaFiles[g.mega];
+                    if (!megaFile) {
+                        setStatus('Game not found in library: ' + g.mega);
+                        setTimeout(function() { setStatus(''); }, 3000);
+                        return;
+                    }
+                    setStatus('Downloading ' + g.title + '...');
+                    setProgress(0);
+                    progressBar.classList.add('visible');
+                    uploadArea.style.display = 'none';
+                    var preGame = document.getElementById('pre-game-content');
+                    if (preGame) preGame.classList.add('hidden');
+                    fileInfo.classList.add('visible');
+                    fileName.textContent = g.title + '.zip';
+
+                    var lastLoaded = 0;
+                    var progressInterval = setInterval(function() {
+                        var current = parseInt(progressFill.style.width) || 0;
+                        if (current < 85) {
+                            setProgress(current + 1);
+                        }
+                    }, 200);
+
+                    megaFile.downloadBuffer(function(err, data) {
+                        clearInterval(progressInterval);
+                        if (err) {
+                            console.error('Download error:', err);
+                            setStatus('Download failed. Try again.');
+                            progressBar.classList.remove('visible');
+                            uploadArea.style.display = '';
+                            if (preGame) preGame.classList.remove('hidden');
+                            fileInfo.classList.remove('visible');
+                            return;
+                        }
+                        setProgress(90);
+                        setStatus('Loading ROM...');
+                        var blob = new Blob([data], { type: 'application/zip' });
+                        var file = new File([blob], g.mega, { type: 'application/zip' });
+                        fileSize.textContent = formatSize(file.size);
+                        loadFile(file);
+                    });
+                });
+                grid.appendChild(card);
             });
         })();
     </script>
