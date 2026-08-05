@@ -73,7 +73,6 @@
         }
         #file-info.visible { display: block; animation: fadeSlideIn 0.3s ease; }
         #file-info .name { color: #e57373; font-weight: 700; font-size: 14px; }
-        #file-info .size { color: #888; font-size: 12px; margin-top: 2px; }
 
         @keyframes fadeSlideIn {
             from { opacity: 0; transform: translateY(10px); }
@@ -773,7 +772,6 @@
 
         <div id="file-info">
             <div class="name" id="file-name"></div>
-            <div class="size" id="file-size"></div>
         </div>
         <div class="progress-bar" id="progress-bar">
             <div class="progress-fill" id="progress-fill"></div>
@@ -867,7 +865,6 @@
         const fileInput = document.getElementById('file-input');
         const fileInfo = document.getElementById('file-info');
         const fileName = document.getElementById('file-name');
-        const fileSize = document.getElementById('file-size');
         const progressBar = document.getElementById('progress-bar');
         const progressFill = document.getElementById('progress-fill');
         const statusText = document.getElementById('status-text');
@@ -919,8 +916,7 @@
             if (preGame) preGame.classList.add('hidden');
             document.getElementById('continue-bar').classList.remove('visible');
             fileInfo.classList.add('visible');
-            fileName.textContent = file.name;
-            fileSize.textContent = formatSize(file.size);
+            fileName.textContent = file.name.replace(/\.zip$/i, '').replace(/\.gba$/i, '');
             progressBar.classList.add('visible');
             setStatus('Initializing emulator...');
 
@@ -1337,14 +1333,13 @@
             var preGame = document.getElementById('pre-game-content');
             if (preGame) preGame.classList.add('hidden');
             fileInfo.classList.add('visible');
-            fileName.textContent = data.title + '.zip';
+            fileName.textContent = data.title;
 
             downloadOrCache(data.mega, data.title).then(function(downloadData) {
                 setProgress(90);
                 setStatus('Starting game...');
                 var blob = new Blob([downloadData], { type: 'application/zip' });
                 var file = new File([blob], data.mega, { type: 'application/zip' });
-                fileSize.textContent = formatSize(file.size);
                 loadFile(file);
             }).catch(function(err) {
                 console.error('Resume download error:', err);
@@ -1444,7 +1439,7 @@
                     var preGame = document.getElementById('pre-game-content');
                     if (preGame) preGame.classList.add('hidden');
                     fileInfo.classList.add('visible');
-                    fileName.textContent = g.title + '.zip';
+                    fileName.textContent = g.title;
 
                     downloadOrCache(g.mega, g.title).then(function(data) {
                         setProgress(90);
@@ -1452,7 +1447,6 @@
                         saveLastPlayed(g.title, g.mega);
                         var blob = new Blob([data], { type: 'application/zip' });
                         var file = new File([blob], g.mega, { type: 'application/zip' });
-                        fileSize.textContent = formatSize(file.size);
                         loadFile(file);
                     }).catch(function(err) {
                         console.error('Download error:', err);
