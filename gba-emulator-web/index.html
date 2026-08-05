@@ -8,7 +8,11 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
             font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
-            background: #111111;
+            background: #0a0a12;
+            background-image: 
+                radial-gradient(ellipse at 20% 50%, rgba(16,185,129,0.06) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(229,115,115,0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(99,102,241,0.04) 0%, transparent 50%);
             color: #e0e0e0;
             min-height: 100vh;
             height: 100%;
@@ -16,15 +20,21 @@
         .main { width: 100%; max-width: 900px; padding: 24px 20px; margin: 0 auto; }
         #upload-area {
             border: 2px dashed rgba(229,115,115,0.3);
-            border-radius: 12px;
+            border-radius: 16px;
             padding: 60px 20px;
             text-align: center;
             cursor: pointer;
             transition: all 0.3s;
             margin-bottom: 20px;
-            background: rgba(255,255,255,0.02);
+            background: rgba(255,255,255,0.03);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
         }
-        #upload-area:hover { border-color: #e57373; background: rgba(229,115,115,0.05); }
+        #upload-area:hover { 
+            border-color: #e57373; 
+            background: rgba(229,115,115,0.06);
+            box-shadow: 0 0 30px rgba(229,115,115,0.1);
+        }
         #upload-area.dragover { border-color: #e57373; background: rgba(229,115,115,0.08); }
         #upload-area .icon { font-size: 48px; margin-bottom: 10px; }
         #upload-area p { color: #aaa; font-size: 15px; }
@@ -84,14 +94,20 @@
             padding: 10px 24px;
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 8px;
+            border-radius: 10px;
             color: rgba(255,255,255,0.8);
             font-size: 14px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
         }
-        .game-back-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
+        .game-back-btn:hover { 
+            background: rgba(255,255,255,0.15); 
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+        }
         .game-back-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
         .emu-toolbar-hint {
             position: absolute;
@@ -228,7 +244,6 @@
             border-radius: 10px;
             border: 1px solid rgba(255,255,255,0.1);
             background: rgba(255,255,255,0.04);
-            grid-template-columns: auto 1fr auto;
             align-items: center;
             justify-items: center;
             gap: 10px;
@@ -260,6 +275,18 @@
             border-color: rgba(132,209,196,0.7);
             transform: scale(0.93);
             box-shadow: 0 0 12px rgba(132,209,196,0.5);
+        }
+        .tc-top-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .tc-main-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
         }
         .tc-dpad-group {
             display: grid;
@@ -348,20 +375,25 @@
             margin-top: 0;
         }
         @media (pointer: coarse) {
-            .touch-controls.active { display: grid; }
+            .touch-controls.active { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
             .mobile-note { display: block; }
             .controls-help { display: none; }
+            .game-back-bar { margin-top: 8px; }
+            .game-back-bar.visible { display: flex; }
+            .game-back-btn { padding: 8px 18px; font-size: 13px; }
         }
         @media (pointer: coarse) and (max-width: 480px) {
-            .touch-controls { padding: 8px; gap: 6px; }
+            .touch-controls { padding: 10px 8px; gap: 6px; }
             .tc-dpad-group {
-                grid-template-columns: repeat(3, 38px);
-                grid-template-rows: repeat(3, 38px);
+                grid-template-columns: repeat(3, 40px);
+                grid-template-rows: repeat(3, 40px);
+                gap: 3px;
             }
-            .tc-a, .tc-b { width: 46px; height: 46px; font-size: 13px; }
-            .tc-action-group { width: 105px; height: 95px; }
-            .tc-l, .tc-r { width: 48px; height: 26px; font-size: 11px; }
-            .tc-select, .tc-start { min-width: 56px; height: 24px; font-size: 8px; }
+            .tc-center-group { gap: 6px; }
+            .tc-a, .tc-b { width: 48px; height: 48px; font-size: 14px; }
+            .tc-action-group { width: 110px; height: 100px; }
+            .tc-l, .tc-r { width: 50px; height: 28px; font-size: 11px; }
+            .tc-select, .tc-start { min-width: 58px; height: 26px; font-size: 8px; }
         }
         @media (max-width: 600px) {
             .main { padding: 0; max-width: 100%; }
@@ -370,7 +402,10 @@
             canvas { width: 100vw; }
             .emulator-container:fullscreen canvas { width: 100vw; height: 100dvh; }
             .emulator-container { aspect-ratio: auto; }
-            #file-info { border-radius: 0; margin: 0; }
+            #file-info { border-radius: 0; margin: 0; padding: 10px; }
+            #file-info .name { font-size: 13px; word-break: break-all; }
+            .game-back-bar { margin: 8px 0; }
+            .game-back-btn { padding: 10px 20px; font-size: 14px; }
         }
         /* ── Popular Games Section ── */
         .browse-section { margin-top: 32px; }
@@ -404,10 +439,12 @@
             transition: transform 0.25s cubic-bezier(0.4,0,0.2,1), box-shadow 0.25s;
             aspect-ratio: 3/4;
             background: #1a1a2e;
+            transform-style: preserve-3d;
+            perspective: 600px;
         }
         .game-pill:hover {
-            transform: translateY(-4px) scale(1.03);
-            box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+            transform: translateY(-6px) scale(1.04) rotateX(2deg) rotateY(-2deg);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.5), 0 0 20px rgba(229,115,115,0.15);
             z-index: 5;
         }
         .game-pill-img {
@@ -519,15 +556,13 @@
         /* Continue Playing bar */
         .continue-bar {
             display: none;
-            align-items: center;
-            gap: 14px;
+            flex-direction: column;
+            gap: 10px;
             background: linear-gradient(135deg, #065f46 0%, #047857 100%);
             border: 1px solid rgba(16,185,129,0.3);
             border-radius: 14px;
-            padding: 14px 20px;
+            padding: 14px 16px;
             margin-bottom: 16px;
-            cursor: pointer;
-            transition: all 0.25s ease;
             position: relative;
             overflow: hidden;
         }
@@ -540,40 +575,69 @@
             animation: cShimmer 3s ease-in-out infinite;
         }
         @keyframes cShimmer { 0%,100%{transform:translateX(-100%)} 50%{transform:translateX(100%)} }
-        .continue-bar:hover {
-            border-color: #10b981;
-            box-shadow: 0 0 20px rgba(16,185,129,0.2);
-            transform: translateY(-1px);
-        }
         .continue-bar.visible { display: flex; }
+        .cbar-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
         .cbar-icon {
-            width: 44px; height: 44px; border-radius: 10px;
+            width: 40px; height: 40px; border-radius: 10px;
             background: rgba(16,185,129,0.15);
             display: flex; align-items: center; justify-content: center;
-            font-size: 22px; flex-shrink: 0;
+            font-size: 20px; flex-shrink: 0;
         }
-        .cbar-info { flex: 1; min-width: 0; }
+        .cbar-info { flex: 1; }
         .cbar-label {
-            font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
-            color: rgba(255,255,255,0.5); margin-bottom: 2px;
+            font-size: 14px; font-weight: 700; color: #fff;
         }
-        .cbar-title {
-            font-size: 15px; font-weight: 700; color: #fff;
-            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        .cbar-sub {
+            font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 1px;
         }
-        .cbar-resume {
-            display: flex; align-items: center; gap: 6px;
-            background: #10b981; color: #fff; border: none; border-radius: 8px;
-            padding: 8px 16px; font-size: 13px; font-weight: 600;
-            cursor: pointer; flex-shrink: 0; transition: background 0.2s;
-        }
-        .cbar-resume:hover { background: #059669; }
         .cbar-clear {
             background: none; border: none; color: rgba(255,255,255,0.4);
             cursor: pointer; font-size: 18px; padding: 4px 8px;
             border-radius: 6px; flex-shrink: 0; transition: all 0.2s;
         }
         .cbar-clear:hover { color: #fff; background: rgba(255,255,255,0.1); }
+        .continue-games-list {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 4px;
+            -webkit-overflow-scrolling: touch;
+        }
+        .continue-games-list::-webkit-scrollbar { height: 3px; }
+        .continue-games-list::-webkit-scrollbar-track { background: transparent; }
+        .continue-games-list::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 2px; }
+        .continue-game-card {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 8px 12px;
+            flex-shrink: 0;
+            min-width: 0;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+        .continue-game-card:hover {
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.25);
+        }
+        .cgc-title {
+            font-size: 13px; font-weight: 600; color: #fff;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+            max-width: 140px;
+        }
+        .cgc-play {
+            background: #10b981; color: #fff; border: none; border-radius: 6px;
+            padding: 5px 10px; font-size: 11px; font-weight: 600;
+            cursor: pointer; white-space: nowrap; transition: background 0.2s;
+        }
+        .cgc-play:hover { background: #059669; }
 
         /* Hide sections when ROM loaded */
         .pre-game-content.hidden { display: none; }
@@ -583,6 +647,13 @@
             .game-pill-play { opacity: 1; transform: translateY(0); padding: 4px 8px; font-size: 9px; }
             .guide-steps { grid-template-columns: 1fr; }
             .browse-header h2, .guide-section h2 { font-size: 16px; }
+            .continue-games-list { gap: 6px; }
+            .continue-game-card { padding: 6px 10px; }
+            .cgc-title { font-size: 12px; max-width: 110px; }
+            .cgc-play { padding: 4px 8px; font-size: 10px; }
+        }
+        @media (max-width: 380px) {
+            .games-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
         }
     </style>
 </head>
@@ -596,13 +667,15 @@
         <input type="file" id="file-input" accept=".gba,.zip" style="display:none">
 
         <div class="continue-bar" id="continue-bar">
-            <div class="cbar-icon">🕹️</div>
-            <div class="cbar-info">
-                <div class="cbar-label">Continue Playing</div>
-                <div class="cbar-title" id="continue-title"></div>
+            <div class="cbar-header">
+                <div class="cbar-icon">🕹️</div>
+                <div class="cbar-info">
+                    <div class="cbar-label">Continue Playing</div>
+                    <div class="cbar-sub">Pick up where you left off</div>
+                </div>
+                <button class="cbar-clear" id="continue-clear" title="Clear all">✕</button>
             </div>
-            <button class="cbar-resume" id="continue-resume">▶ Resume</button>
-            <button class="cbar-clear" id="continue-clear" title="Clear">✕</button>
+            <div class="continue-games-list" id="continue-games-list"></div>
         </div>
 
         <div class="pre-game-content" id="pre-game-content">
@@ -697,24 +770,28 @@
             </button>
         </div>
         <div class="touch-controls" id="touch-controls">
-            <div class="tc-dpad-group">
-                <button class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</button>
-                <button class="tc-btn tc-dpad-left" data-btn="Left">&#9664;</button>
-                <div class="tc-dpad-center"></div>
-                <button class="tc-btn tc-dpad-right" data-btn="Right">&#9654;</button>
-                <button class="tc-btn tc-dpad-down" data-btn="Down">&#9660;</button>
-            </div>
-            <div class="tc-center-group">
+            <div class="tc-top-row">
                 <button class="tc-btn tc-l" data-btn="L">L</button>
-                <div class="tc-start-select">
-                    <button class="tc-btn tc-select" data-btn="Select">SELECT</button>
-                    <button class="tc-btn tc-start" data-btn="Start">START</button>
-                </div>
                 <button class="tc-btn tc-r" data-btn="R">R</button>
             </div>
-            <div class="tc-action-group">
-                <button class="tc-btn tc-a" data-btn="A">A</button>
-                <button class="tc-btn tc-b" data-btn="B">B</button>
+            <div class="tc-main-row">
+                <div class="tc-dpad-group">
+                    <button class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</button>
+                    <button class="tc-btn tc-dpad-left" data-btn="Left">&#9664;</button>
+                    <div class="tc-dpad-center"></div>
+                    <button class="tc-btn tc-dpad-right" data-btn="Right">&#9654;</button>
+                    <button class="tc-btn tc-dpad-down" data-btn="Down">&#9660;</button>
+                </div>
+                <div class="tc-center-group">
+                    <div class="tc-start-select">
+                        <button class="tc-btn tc-select" data-btn="Select">SELECT</button>
+                        <button class="tc-btn tc-start" data-btn="Start">START</button>
+                    </div>
+                </div>
+                <div class="tc-action-group">
+                    <button class="tc-btn tc-a" data-btn="A">A</button>
+                    <button class="tc-btn tc-b" data-btn="B">B</button>
+                </div>
             </div>
         </div>
         <div class="controls-help" id="controls-help">
@@ -1074,36 +1151,49 @@
             window.addEventListener('blur', unpressAll);
         }
 
-        /* ── Continue Playing ── */
-        var CONTINUE_KEY = 'gba_last_played';
+        /* ── Continue Playing (multi-game) ── */
+        var CONTINUE_KEY = 'gba_continue_games';
+        var MAX_CONTINUE = 6;
         var megaFiles = null;
+
         function saveLastPlayed(title, megaKey) {
-            try { localStorage.setItem(CONTINUE_KEY, JSON.stringify({ title: title, mega: megaKey, ts: Date.now() })); } catch(e) {}
-        }
-        function loadContinueBar() {
             try {
-                var data = JSON.parse(localStorage.getItem(CONTINUE_KEY));
-                if (data && data.title && data.mega) {
-                    document.getElementById('continue-title').textContent = data.title;
-                    document.getElementById('continue-bar').classList.add('visible');
-                }
+                var list = JSON.parse(localStorage.getItem(CONTINUE_KEY)) || [];
+                list = list.filter(function(g) { return g.mega !== megaKey; });
+                list.unshift({ title: title, mega: megaKey, ts: Date.now() });
+                if (list.length > MAX_CONTINUE) list = list.slice(0, MAX_CONTINUE);
+                localStorage.setItem(CONTINUE_KEY, JSON.stringify(list));
             } catch(e) {}
         }
-        function clearContinue() {
-            try { localStorage.removeItem(CONTINUE_KEY); } catch(e) {}
-            document.getElementById('continue-bar').classList.remove('visible');
+
+        function loadContinueBar() {
+            try {
+                var list = JSON.parse(localStorage.getItem(CONTINUE_KEY));
+                if (!list || !list.length) {
+                    document.getElementById('continue-bar').classList.remove('visible');
+                    return;
+                }
+                var container = document.getElementById('continue-games-list');
+                container.innerHTML = '';
+                list.forEach(function(g) {
+                    var card = document.createElement('div');
+                    card.className = 'continue-game-card';
+                    card.innerHTML = '<div class="cgc-title">' + g.title + '</div><button class="cgc-play">▶ Play</button>';
+                    card.querySelector('.cgc-play').addEventListener('click', function(e) {
+                        e.stopPropagation();
+                        resumeGame(g);
+                    });
+                    container.appendChild(card);
+                });
+                document.getElementById('continue-bar').classList.add('visible');
+            } catch(e) {}
         }
-        document.getElementById('continue-clear').addEventListener('click', function(e) {
-            e.stopPropagation(); clearContinue();
-        });
-        document.getElementById('continue-resume').addEventListener('click', function(e) {
-            e.stopPropagation();
-            var data;
-            try { data = JSON.parse(localStorage.getItem(CONTINUE_KEY)); } catch(e) {}
-            if (!data || !data.mega) { clearContinue(); return; }
+
+        function resumeGame(data) {
+            if (!data || !data.mega) return;
             if (!megaFiles) {
                 setStatus('Connecting to game library...');
-                setTimeout(function() { document.getElementById('continue-resume').click(); }, 2000);
+                setTimeout(function() { resumeGame(data); }, 2000);
                 return;
             }
             var megaFile = megaFiles[data.mega];
@@ -1138,7 +1228,17 @@
                 fileSize.textContent = formatSize(file.size);
                 loadFile(file);
             });
+        }
+
+        function clearContinue() {
+            try { localStorage.removeItem(CONTINUE_KEY); } catch(e) {}
+            document.getElementById('continue-bar').classList.remove('visible');
+        }
+
+        document.getElementById('continue-clear').addEventListener('click', function(e) {
+            e.stopPropagation(); clearContinue();
         });
+
         loadContinueBar();
 
         /* ── Popular Games Grid + MEGA Integration ── */
