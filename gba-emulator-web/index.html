@@ -1078,6 +1078,7 @@
 
             function goBack() {
                 if (emulator) {
+                    try { emulator.pauseAudio(); } catch(e) {}
                     try { emulator.pause(); } catch(e) {}
                 }
                 syncSaves();
