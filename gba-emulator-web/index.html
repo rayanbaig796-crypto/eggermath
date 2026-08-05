@@ -1064,6 +1064,73 @@
             window.addEventListener('blur', unpressAll);
         }
 
+        /* ── Continue Playing ── */
+        var CONTINUE_KEY = 'gba_last_played';
+        var megaFiles = null;
+        function saveLastPlayed(title, megaKey) {
+            try { localStorage.setItem(CONTINUE_KEY, JSON.stringify({ title: title, mega: megaKey, ts: Date.now() })); } catch(e) {}
+        }
+        function loadContinueBar() {
+            try {
+                var data = JSON.parse(localStorage.getItem(CONTINUE_KEY));
+                if (data && data.title && data.mega) {
+                    document.getElementById('continue-title').textContent = data.title;
+                    document.getElementById('continue-bar').classList.add('visible');
+                }
+            } catch(e) {}
+        }
+        function clearContinue() {
+            try { localStorage.removeItem(CONTINUE_KEY); } catch(e) {}
+            document.getElementById('continue-bar').classList.remove('visible');
+        }
+        document.getElementById('continue-clear').addEventListener('click', function(e) {
+            e.stopPropagation(); clearContinue();
+        });
+        document.getElementById('continue-resume').addEventListener('click', function(e) {
+            e.stopPropagation();
+            var data;
+            try { data = JSON.parse(localStorage.getItem(CONTINUE_KEY)); } catch(e) {}
+            if (!data || !data.mega) { clearContinue(); return; }
+            if (!megaFiles) {
+                setStatus('Connecting to game library...');
+                setTimeout(function() { document.getElementById('continue-resume').click(); }, 2000);
+                return;
+            }
+            var megaFile = megaFiles[data.mega];
+            if (!megaFile) { setStatus('Game not found in library'); setTimeout(function() { setStatus(''); }, 3000); return; }
+            setStatus('Downloading ' + data.title + '...');
+            setProgress(0);
+            progressBar.classList.add('visible');
+            uploadArea.style.display = 'none';
+            var preGame = document.getElementById('pre-game-content');
+            if (preGame) preGame.classList.add('hidden');
+            fileInfo.classList.add('visible');
+            fileName.textContent = data.title + '.zip';
+            var progressInterval = setInterval(function() {
+                var current = parseInt(progressFill.style.width) || 0;
+                if (current < 85) setProgress(current + 1);
+            }, 200);
+            megaFile.downloadBuffer(function(err, downloadData) {
+                clearInterval(progressInterval);
+                if (err) {
+                    console.error('Resume download error:', err);
+                    setStatus('Download failed. Try again.');
+                    progressBar.classList.remove('visible');
+                    uploadArea.style.display = '';
+                    if (preGame) preGame.classList.remove('hidden');
+                    fileInfo.classList.remove('visible');
+                    return;
+                }
+                setProgress(90);
+                setStatus('Loading ROM...');
+                var blob = new Blob([downloadData], { type: 'application/zip' });
+                var file = new File([blob], data.mega, { type: 'application/zip' });
+                fileSize.textContent = formatSize(file.size);
+                loadFile(file);
+            });
+        });
+        loadContinueBar();
+
         /* ── Popular Games Grid + MEGA Integration ── */
         (function initGamesGrid() {
             var grid = document.getElementById('games-grid');
@@ -1098,91 +1165,7 @@
                 { title: 'GTA Advance', genre: 'Action', mega: 'Grand Theft Auto Advance.zip', img: 'https://cache.downloadroms.io/static/bb1b6675a61175d35c748ac283089af2c0241d6b/image.jpeg', slug: '/gameboy-advance-rom-grand-theft-auto-advance/' },
             ];
 
-            // --- Continue Playing ---
-            var CONTINUE_KEY = 'gba_last_played';
-            var continueBar = document.getElementById('continue-bar');
-            var continueTitle = document.getElementById('continue-title');
-            var continueResume = document.getElementById('continue-resume');
-            var continueClear = document.getElementById('continue-clear');
-
-            function saveLastPlayed(title, megaKey) {
-                try {
-                    localStorage.setItem(CONTINUE_KEY, JSON.stringify({ title: title, mega: megaKey, ts: Date.now() }));
-                } catch(e) {}
-            }
-
-            function loadContinueBar() {
-                try {
-                    var data = JSON.parse(localStorage.getItem(CONTINUE_KEY));
-                    if (data && data.title && data.mega) {
-                        continueTitle.textContent = data.title;
-                        continueBar.classList.add('visible');
-                    }
-                } catch(e) {}
-            }
-
-            function clearContinue() {
-                try { localStorage.removeItem(CONTINUE_KEY); } catch(e) {}
-                continueBar.classList.remove('visible');
-            }
-
-            continueClear.addEventListener('click', function(e) {
-                e.stopPropagation();
-                clearContinue();
-            });
-
-            continueResume.addEventListener('click', function(e) {
-                e.stopPropagation();
-                var data;
-                try { data = JSON.parse(localStorage.getItem(CONTINUE_KEY)); } catch(e) {}
-                if (!data || !data.mega) { clearContinue(); return; }
-                if (!megaFiles) {
-                    setStatus('Connecting to game library...');
-                    setTimeout(function() { continueResume.click(); }, 2000);
-                    return;
-                }
-                var megaFile = megaFiles[data.mega];
-                if (!megaFile) {
-                    setStatus('Game not found in library');
-                    setTimeout(function() { setStatus(''); }, 3000);
-                    return;
-                }
-                setStatus('Downloading ' + data.title + '...');
-                setProgress(0);
-                progressBar.classList.add('visible');
-                uploadArea.style.display = 'none';
-                var preGame = document.getElementById('pre-game-content');
-                if (preGame) preGame.classList.add('hidden');
-                fileInfo.classList.add('visible');
-                fileName.textContent = data.title + '.zip';
-                var progressInterval = setInterval(function() {
-                    var current = parseInt(progressFill.style.width) || 0;
-                    if (current < 85) setProgress(current + 1);
-                }, 200);
-                megaFile.downloadBuffer(function(err, downloadData) {
-                    clearInterval(progressInterval);
-                    if (err) {
-                        console.error('Resume download error:', err);
-                        setStatus('Download failed. Try again.');
-                        progressBar.classList.remove('visible');
-                        uploadArea.style.display = '';
-                        if (preGame) preGame.classList.remove('hidden');
-                        fileInfo.classList.remove('visible');
-                        return;
-                    }
-                    setProgress(90);
-                    setStatus('Loading ROM...');
-                    var blob = new Blob([downloadData], { type: 'application/zip' });
-                    var file = new File([blob], data.mega, { type: 'application/zip' });
-                    fileSize.textContent = formatSize(file.size);
-                    loadFile(file);
-                });
-            });
-
-            loadContinueBar();
-
             var MEGA_FOLDER = 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA';
-            var megaFiles = null;
 
             window.mega.File.fromURL(MEGA_FOLDER).loadAttributes(function(err, folder) {
                 if (err) { console.warn('MEGA folder load failed:', err); return; }
