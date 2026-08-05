@@ -89,6 +89,29 @@
         }
         .emu-tb-back:hover { background: rgba(255,255,255,0.2); color: #fff; }
         .emu-tb-back svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+        .game-back-bar {
+            display: none;
+            justify-content: center;
+            margin-top: 12px;
+        }
+        .game-back-bar.visible { display: flex; }
+        .game-back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 24px;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 8px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .game-back-btn:hover { background: rgba(255,255,255,0.15); color: #fff; }
+        .game-back-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
         .emu-toolbar-hint {
             position: absolute;
             top: 4px;
@@ -690,6 +713,12 @@
             </div>
             <canvas id="emulator-canvas"></canvas>
         </div>
+        <div class="game-back-bar" id="game-back-bar">
+            <button class="game-back-btn" id="game-back-btn">
+                <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                Back to Games
+            </button>
+        </div>
         <div class="touch-controls" id="touch-controls">
             <div class="tc-dpad-group">
                 <button class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</button>
@@ -834,6 +863,7 @@
                     setStatus('');
                     progressBar.classList.remove('visible');
                     emulatorContainer.classList.add('visible');
+                    document.getElementById('game-back-bar').classList.add('visible');
                     setupToolbar();
                     setupKeyboard();
                     setupFullscreen();
@@ -942,19 +972,23 @@
                 }
             });
 
-            document.getElementById('btn-back').addEventListener('click', () => {
+            document.getElementById('btn-back').addEventListener('click', goBack);
+            document.getElementById('game-back-btn').addEventListener('click', goBack);
+
+            function goBack() {
                 if (emulator) {
                     try { emulator.pause(); } catch(e) {}
                 }
                 syncSaves();
                 emulatorContainer.classList.remove('visible');
+                document.getElementById('game-back-bar').classList.remove('visible');
                 uploadArea.style.display = '';
                 fileInfo.classList.remove('visible');
                 progressBar.classList.remove('visible');
                 var preGame = document.getElementById('pre-game-content');
                 if (preGame) preGame.classList.remove('hidden');
                 loadContinueBar();
-            });
+            }
 
             document.getElementById('btn-mute').addEventListener('click', () => {
                 if (!emulator) return;
