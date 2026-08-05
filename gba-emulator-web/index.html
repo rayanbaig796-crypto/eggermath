@@ -786,7 +786,7 @@
             uploadArea.style.display = 'none';
             var preGame = document.getElementById('pre-game-content');
             if (preGame) preGame.classList.add('hidden');
-            continueBar.classList.remove('visible');
+            document.getElementById('continue-bar').classList.remove('visible');
             fileInfo.classList.add('visible');
             fileName.textContent = file.name;
             fileSize.textContent = formatSize(file.size);
