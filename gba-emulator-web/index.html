@@ -70,6 +70,25 @@
             opacity: 1;
             pointer-events: auto;
         }
+        .emu-tb-back {
+            position: absolute;
+            top: 4px; left: 8px;
+            z-index: 31;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 6px 12px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .emu-tb-back:hover { background: rgba(255,255,255,0.2); color: #fff; }
+        .emu-tb-back svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
         .emu-toolbar-hint {
             position: absolute;
             top: 4px;
@@ -493,6 +512,65 @@
         }
         .guide-note strong { color: rgba(255,255,255,0.7); }
 
+        /* Continue Playing bar */
+        .continue-bar {
+            display: none;
+            align-items: center;
+            gap: 14px;
+            background: linear-gradient(135deg, #065f46 0%, #047857 100%);
+            border: 1px solid rgba(16,185,129,0.3);
+            border-radius: 14px;
+            padding: 14px 20px;
+            margin-bottom: 16px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .continue-bar::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transform: translateX(-100%);
+            animation: cShimmer 3s ease-in-out infinite;
+        }
+        @keyframes cShimmer { 0%,100%{transform:translateX(-100%)} 50%{transform:translateX(100%)} }
+        .continue-bar:hover {
+            border-color: #10b981;
+            box-shadow: 0 0 20px rgba(16,185,129,0.2);
+            transform: translateY(-1px);
+        }
+        .continue-bar.visible { display: flex; }
+        .cbar-icon {
+            width: 44px; height: 44px; border-radius: 10px;
+            background: rgba(16,185,129,0.15);
+            display: flex; align-items: center; justify-content: center;
+            font-size: 22px; flex-shrink: 0;
+        }
+        .cbar-info { flex: 1; min-width: 0; }
+        .cbar-label {
+            font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px;
+            color: rgba(255,255,255,0.5); margin-bottom: 2px;
+        }
+        .cbar-title {
+            font-size: 15px; font-weight: 700; color: #fff;
+            white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        }
+        .cbar-resume {
+            display: flex; align-items: center; gap: 6px;
+            background: #10b981; color: #fff; border: none; border-radius: 8px;
+            padding: 8px 16px; font-size: 13px; font-weight: 600;
+            cursor: pointer; flex-shrink: 0; transition: background 0.2s;
+        }
+        .cbar-resume:hover { background: #059669; }
+        .cbar-clear {
+            background: none; border: none; color: rgba(255,255,255,0.4);
+            cursor: pointer; font-size: 18px; padding: 4px 8px;
+            border-radius: 6px; flex-shrink: 0; transition: all 0.2s;
+        }
+        .cbar-clear:hover { color: #fff; background: rgba(255,255,255,0.1); }
+
         /* Hide sections when ROM loaded */
         .pre-game-content.hidden { display: none; }
 
@@ -512,6 +590,16 @@
             <div class="formats">Supports .gba, .zip files</div>
         </div>
         <input type="file" id="file-input" accept=".gba,.zip" style="display:none">
+
+        <div class="continue-bar" id="continue-bar">
+            <div class="cbar-icon">🕹️</div>
+            <div class="cbar-info">
+                <div class="cbar-label">Continue Playing</div>
+                <div class="cbar-title" id="continue-title"></div>
+            </div>
+            <button class="cbar-resume" id="continue-resume">▶ Resume</button>
+            <button class="cbar-clear" id="continue-clear" title="Clear">✕</button>
+        </div>
 
         <div class="pre-game-content" id="pre-game-content">
             <div class="browse-section">
@@ -567,6 +655,10 @@
         </div>
         <div class="status-text" id="status-text"></div>
         <div class="emulator-container" id="emulator-container">
+            <button class="emu-tb-back" id="btn-back" title="Back to Games">
+                <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                <span>Back</span>
+            </button>
             <div class="emu-toolbar-hint" id="toolbar-hint">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
             </div>
@@ -694,6 +786,7 @@
             uploadArea.style.display = 'none';
             var preGame = document.getElementById('pre-game-content');
             if (preGame) preGame.classList.add('hidden');
+            continueBar.classList.remove('visible');
             fileInfo.classList.add('visible');
             fileName.textContent = file.name;
             fileSize.textContent = formatSize(file.size);
@@ -849,6 +942,20 @@
                 }
             });
 
+            document.getElementById('btn-back').addEventListener('click', () => {
+                if (emulator) {
+                    try { emulator.pause(); } catch(e) {}
+                }
+                syncSaves();
+                emulatorContainer.classList.remove('visible');
+                uploadArea.style.display = '';
+                fileInfo.classList.remove('visible');
+                progressBar.classList.remove('visible');
+                var preGame = document.getElementById('pre-game-content');
+                if (preGame) preGame.classList.remove('hidden');
+                loadContinueBar();
+            });
+
             document.getElementById('btn-mute').addEventListener('click', () => {
                 if (!emulator) return;
                 isMuted = !isMuted;
@@ -991,6 +1098,89 @@
                 { title: 'GTA Advance', genre: 'Action', mega: 'Grand Theft Auto Advance.zip', img: 'https://cache.downloadroms.io/static/bb1b6675a61175d35c748ac283089af2c0241d6b/image.jpeg', slug: '/gameboy-advance-rom-grand-theft-auto-advance/' },
             ];
 
+            // --- Continue Playing ---
+            var CONTINUE_KEY = 'gba_last_played';
+            var continueBar = document.getElementById('continue-bar');
+            var continueTitle = document.getElementById('continue-title');
+            var continueResume = document.getElementById('continue-resume');
+            var continueClear = document.getElementById('continue-clear');
+
+            function saveLastPlayed(title, megaKey) {
+                try {
+                    localStorage.setItem(CONTINUE_KEY, JSON.stringify({ title: title, mega: megaKey, ts: Date.now() }));
+                } catch(e) {}
+            }
+
+            function loadContinueBar() {
+                try {
+                    var data = JSON.parse(localStorage.getItem(CONTINUE_KEY));
+                    if (data && data.title && data.mega) {
+                        continueTitle.textContent = data.title;
+                        continueBar.classList.add('visible');
+                    }
+                } catch(e) {}
+            }
+
+            function clearContinue() {
+                try { localStorage.removeItem(CONTINUE_KEY); } catch(e) {}
+                continueBar.classList.remove('visible');
+            }
+
+            continueClear.addEventListener('click', function(e) {
+                e.stopPropagation();
+                clearContinue();
+            });
+
+            continueResume.addEventListener('click', function(e) {
+                e.stopPropagation();
+                var data;
+                try { data = JSON.parse(localStorage.getItem(CONTINUE_KEY)); } catch(e) {}
+                if (!data || !data.mega) { clearContinue(); return; }
+                if (!megaFiles) {
+                    setStatus('Connecting to game library...');
+                    setTimeout(function() { continueResume.click(); }, 2000);
+                    return;
+                }
+                var megaFile = megaFiles[data.mega];
+                if (!megaFile) {
+                    setStatus('Game not found in library');
+                    setTimeout(function() { setStatus(''); }, 3000);
+                    return;
+                }
+                setStatus('Downloading ' + data.title + '...');
+                setProgress(0);
+                progressBar.classList.add('visible');
+                uploadArea.style.display = 'none';
+                var preGame = document.getElementById('pre-game-content');
+                if (preGame) preGame.classList.add('hidden');
+                fileInfo.classList.add('visible');
+                fileName.textContent = data.title + '.zip';
+                var progressInterval = setInterval(function() {
+                    var current = parseInt(progressFill.style.width) || 0;
+                    if (current < 85) setProgress(current + 1);
+                }, 200);
+                megaFile.downloadBuffer(function(err, downloadData) {
+                    clearInterval(progressInterval);
+                    if (err) {
+                        console.error('Resume download error:', err);
+                        setStatus('Download failed. Try again.');
+                        progressBar.classList.remove('visible');
+                        uploadArea.style.display = '';
+                        if (preGame) preGame.classList.remove('hidden');
+                        fileInfo.classList.remove('visible');
+                        return;
+                    }
+                    setProgress(90);
+                    setStatus('Loading ROM...');
+                    var blob = new Blob([downloadData], { type: 'application/zip' });
+                    var file = new File([blob], data.mega, { type: 'application/zip' });
+                    fileSize.textContent = formatSize(file.size);
+                    loadFile(file);
+                });
+            });
+
+            loadContinueBar();
+
             var MEGA_FOLDER = 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA';
             var megaFiles = null;
 
@@ -1055,6 +1245,7 @@
                             fileInfo.classList.remove('visible');
                             return;
                         }
+                        saveLastPlayed(g.title, g.mega);
                         setProgress(90);
                         setStatus('Loading ROM...');
                         var blob = new Blob([data], { type: 'application/zip' });
