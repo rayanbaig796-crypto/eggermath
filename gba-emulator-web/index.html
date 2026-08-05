@@ -70,25 +70,6 @@
             opacity: 1;
             pointer-events: auto;
         }
-        .emu-tb-back {
-            position: absolute;
-            top: 4px; left: 8px;
-            z-index: 31;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            padding: 6px 12px;
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            border-radius: 6px;
-            color: rgba(255,255,255,0.8);
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-        .emu-tb-back:hover { background: rgba(255,255,255,0.2); color: #fff; }
-        .emu-tb-back svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
         .game-back-bar {
             display: none;
@@ -678,10 +659,6 @@
         </div>
         <div class="status-text" id="status-text"></div>
         <div class="emulator-container" id="emulator-container">
-            <button class="emu-tb-back" id="btn-back" title="Back to Games">
-                <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-                <span>Back</span>
-            </button>
             <div class="emu-toolbar-hint" id="toolbar-hint">
                 <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
             </div>
@@ -972,7 +949,6 @@
                 }
             });
 
-            document.getElementById('btn-back').addEventListener('click', goBack);
             document.getElementById('game-back-btn').addEventListener('click', goBack);
 
             function goBack() {
