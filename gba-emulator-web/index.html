@@ -488,15 +488,13 @@
             .emu-toolbar { gap: 2px; padding: 4px 4px; }
         }
         .emulator-container:fullscreen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 0;
-            border: none;
-            width: 100vw;
-            height: 100vh;
-            touch-action: none;
+            position: fixed !important;
+            inset: 0;
+            width: 100vw !important;
+            height: 100vh !important;
+            opacity: 1 !important;
+            left: auto !important;
+            overflow: visible;
         }
         .emulator-container:fullscreen .emu-toolbar {
             position: fixed;
@@ -512,6 +510,22 @@
             height: 100vh;
             object-fit: fill;
         }
+        .gba-shell-wrap:fullscreen {
+            background: #111;
+            align-items: center;
+            justify-content: center;
+        }
+        .gba-shell-wrap:fullscreen .gba-shell {
+            width: auto;
+            height: 90vh;
+            border-radius: 20px;
+            transform: none;
+        }
+        .gba-shell-wrap:fullscreen .gba-controls-area { display: none; }
+        .gba-shell-wrap:fullscreen .gba-shoulder-l,
+        .gba-shell-wrap:fullscreen .gba-shoulder-r { display: none; }
+        .gba-shell-wrap:fullscreen .gba-screen-area { width: 420px; }
+        .gba-shell-wrap:fullscreen .gba-power-led { display: none; }
         canvas {
             display: block;
             width: 100%;
@@ -710,7 +724,8 @@
             border-color: rgba(100,149,237,0.7);
             box-shadow: 0 0 12px rgba(100,149,237,0.5);
         }
-        .emulator-container:fullscreen ~ .touch-controls {
+        .emulator-container:fullscreen ~ .touch-controls,
+        .gba-shell-wrap:fullscreen ~ .touch-controls {
             position: fixed;
             bottom: 0; left: 0; right: 0;
             z-index: 999;
@@ -1352,6 +1367,7 @@
                     setStatus('');
                     progressBar.classList.remove('visible');
                     emulatorContainer.classList.add('visible');
+                    emulatorContainer.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;';
                     gbaShellWrap.classList.add('visible');
                     gbaScreen.appendChild(canvas);
                     gbaPowerLed.classList.add('on');
@@ -1446,7 +1462,7 @@
                 if (document.fullscreenElement) {
                     document.exitFullscreen();
                 } else {
-                    emulatorContainer.requestFullscreen();
+                    gbaShellWrap.requestFullscreen();
                 }
             });
 
@@ -1454,7 +1470,7 @@
                 if (document.fullscreenElement) {
                     document.exitFullscreen();
                 } else {
-                    emulatorContainer.requestFullscreen();
+                    gbaShellWrap.requestFullscreen();
                 }
             });
 
@@ -1474,9 +1490,10 @@
                 }
                 syncSaves();
                 emulatorContainer.classList.remove('visible');
+                emulatorContainer.style.cssText = '';
                 gbaShellWrap.classList.remove('visible');
                 gbaPowerLed.classList.remove('on');
-                emulatorContainer.querySelector('.emu-container-inner')?.appendChild(canvas);
+                emulatorContainer.appendChild(canvas);
                 document.getElementById('game-back-bar').classList.remove('visible');
                 uploadArea.style.display = '';
                 fileInfo.classList.remove('visible');
