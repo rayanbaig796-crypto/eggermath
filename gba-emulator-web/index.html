@@ -93,7 +93,7 @@
             margin: 0 auto 16px;
             perspective: 1200px;
         }
-        @media (pointer: coarse) {
+        @media (max-width: 768px) {
             .gba-shell-wrap.visible { display: flex; }
         }
         .gba-shell {
@@ -1280,7 +1280,7 @@
         const gbaPowerLed = document.getElementById('gba-power-led');
         const toolbarHint = document.getElementById('toolbar-hint');
         const emuToolbar = document.getElementById('emu-toolbar');
-        const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        const isMobile = window.innerWidth <= 768;
 
         let emulator = null;
         let toolbarTimeout = null;
@@ -1300,6 +1300,47 @@
         async function syncSaves() {
             if (!emulator) return;
             try { await emulator.FSSync(); } catch (e) { console.warn('FSSync failed:', e); }
+        }
+
+        function setupShellButtons() {
+            const shellBtns = document.querySelectorAll('.gba-shell [data-btn]');
+            shellBtns.forEach(btn => {
+                const gbaBtn = btn.dataset.btn;
+                btn.addEventListener('mousedown', (e) => {
+                    e.preventDefault();
+                    if (emulator) {
+                        try { emulator.keyDown(gbaBtn); } catch(ex) {}
+                    }
+                    btn.classList.add('pressed');
+                });
+                btn.addEventListener('mouseup', (e) => {
+                    e.preventDefault();
+                    if (emulator) {
+                        try { emulator.keyUp(gbaBtn); } catch(ex) {}
+                    }
+                    btn.classList.remove('pressed');
+                });
+                btn.addEventListener('mouseleave', (e) => {
+                    if (emulator) {
+                        try { emulator.keyUp(gbaBtn); } catch(ex) {}
+                    }
+                    btn.classList.remove('pressed');
+                });
+                btn.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    if (emulator) {
+                        try { emulator.keyDown(gbaBtn); } catch(ex) {}
+                    }
+                    btn.classList.add('pressed');
+                }, { passive: false });
+                btn.addEventListener('touchend', (e) => {
+                    e.preventDefault();
+                    if (emulator) {
+                        try { emulator.keyUp(gbaBtn); } catch(ex) {}
+                    }
+                    btn.classList.remove('pressed');
+                });
+            });
         }
 
         uploadArea.addEventListener('click', () => fileInput.click());
@@ -1508,47 +1549,6 @@
                 var preGame = document.getElementById('pre-game-content');
                 if (preGame) preGame.classList.remove('hidden');
                 loadContinueBar();
-            }
-
-            function setupShellButtons() {
-                const shellBtns = document.querySelectorAll('.gba-shell [data-btn]');
-                shellBtns.forEach(btn => {
-                    const gbaBtn = btn.dataset.btn;
-                    btn.addEventListener('mousedown', (e) => {
-                        e.preventDefault();
-                        if (emulator) {
-                            try { emulator.keyDown(gbaBtn); } catch(ex) {}
-                        }
-                        btn.classList.add('pressed');
-                    });
-                    btn.addEventListener('mouseup', (e) => {
-                        e.preventDefault();
-                        if (emulator) {
-                            try { emulator.keyUp(gbaBtn); } catch(ex) {}
-                        }
-                        btn.classList.remove('pressed');
-                    });
-                    btn.addEventListener('mouseleave', (e) => {
-                        if (emulator) {
-                            try { emulator.keyUp(gbaBtn); } catch(ex) {}
-                        }
-                        btn.classList.remove('pressed');
-                    });
-                    btn.addEventListener('touchstart', (e) => {
-                        e.preventDefault();
-                        if (emulator) {
-                            try { emulator.keyDown(gbaBtn); } catch(ex) {}
-                        }
-                        btn.classList.add('pressed');
-                    }, { passive: false });
-                    btn.addEventListener('touchend', (e) => {
-                        e.preventDefault();
-                        if (emulator) {
-                            try { emulator.keyUp(gbaBtn); } catch(ex) {}
-                        }
-                        btn.classList.remove('pressed');
-                    });
-                });
             }
 
             document.getElementById('btn-mute').addEventListener('click', () => {
