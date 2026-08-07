@@ -86,14 +86,16 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        /* ── GBA Shell ── */
+        /* ── GBA Shell (mobile only) ── */
         .gba-shell-wrap {
             display: none;
             justify-content: center;
             margin: 0 auto 16px;
             perspective: 1200px;
         }
-        .gba-shell-wrap.visible { display: flex; }
+        @media (pointer: coarse) {
+            .gba-shell-wrap.visible { display: flex; }
+        }
         .gba-shell {
             position: relative;
             width: 580px;
@@ -1278,6 +1280,7 @@
         const gbaPowerLed = document.getElementById('gba-power-led');
         const toolbarHint = document.getElementById('toolbar-hint');
         const emuToolbar = document.getElementById('emu-toolbar');
+        const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
         let emulator = null;
         let toolbarTimeout = null;
@@ -1367,17 +1370,19 @@
                     setStatus('');
                     progressBar.classList.remove('visible');
                     emulatorContainer.classList.add('visible');
-                    emulatorContainer.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;';
-                    gbaShellWrap.classList.add('visible');
-                    gbaScreen.appendChild(canvas);
-                    gbaPowerLed.classList.add('on');
+                    if (isMobile) {
+                        emulatorContainer.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;';
+                        gbaShellWrap.classList.add('visible');
+                        gbaScreen.appendChild(canvas);
+                        gbaPowerLed.classList.add('on');
+                    }
                     document.getElementById('game-back-bar').classList.add('visible');
                     setupToolbar();
                     setupKeyboard();
                     setupFullscreen();
                     setupSavePersistence();
                     setupTouchControls();
-                    setupShellButtons();
+                    if (isMobile) setupShellButtons();
                 } else {
                     setStatus('Failed to load ROM. The file may be corrupted.');
                     progressBar.classList.remove('visible');
@@ -1462,7 +1467,7 @@
                 if (document.fullscreenElement) {
                     document.exitFullscreen();
                 } else {
-                    gbaShellWrap.requestFullscreen();
+                    (isMobile ? gbaShellWrap : emulatorContainer).requestFullscreen();
                 }
             });
 
@@ -1470,7 +1475,7 @@
                 if (document.fullscreenElement) {
                     document.exitFullscreen();
                 } else {
-                    gbaShellWrap.requestFullscreen();
+                    (isMobile ? gbaShellWrap : emulatorContainer).requestFullscreen();
                 }
             });
 
@@ -1491,9 +1496,11 @@
                 syncSaves();
                 emulatorContainer.classList.remove('visible');
                 emulatorContainer.style.cssText = '';
-                gbaShellWrap.classList.remove('visible');
-                gbaPowerLed.classList.remove('on');
-                emulatorContainer.appendChild(canvas);
+                if (isMobile) {
+                    gbaShellWrap.classList.remove('visible');
+                    gbaPowerLed.classList.remove('on');
+                    emulatorContainer.appendChild(canvas);
+                }
                 document.getElementById('game-back-bar').classList.remove('visible');
                 uploadArea.style.display = '';
                 fileInfo.classList.remove('visible');
