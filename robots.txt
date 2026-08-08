@@ -1,3 +1,40 @@
 User-agent: *
 Allow: /
 Sitemap: https://www.eggermath.com/sitemap.xml
+
+# AI crawlers
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /
+Allow: /llms.txt
+
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Anthropic-ai
+Allow: /
+Allow: /llms.txt
+
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: YouBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: FacebookBot
+Allow: /
+Allow: /llms.txt
+
+User-agent: Bytespider
+Allow: /
+Allow: /llms.txt

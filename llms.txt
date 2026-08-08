@@ -1,0 +1,61 @@
+# EggerMath — Free GBA Emulator
+
+> Play Game Boy Advance games in your browser. Free, no downloads required.
+
+## About
+EggerMath is a free, browser-based Game Boy Advance emulator powered by mGBA WebAssembly. Play GBA games directly in Chrome, Firefox, Edge, or Safari on any device — phone, tablet, or desktop.
+
+## Key Features
+- Runs entirely in the browser via WebAssembly (mGBA engine)
+- No software installation required
+- Save states with 10 slots (F5/F9/F7)
+- Auto-save every 30 seconds via IndexedDB
+- Fast forward (2x/4x speed)
+- Mobile touch controls
+- Custom keyboard controls
+- Drag-and-drop ROM upload (.gba, .zip)
+- 25+ popular GBA games available for one-click play
+- ROM caching for instant repeat plays
+
+## How to Play
+1. Open https://www.eggermath.com/gba-emulator-web/
+2. Click a game from the library, or drag-and-drop your own .gba/.zip ROM file
+3. Use keyboard or touch controls to play
+
+## Keyboard Controls
+- D-Pad: WASD or Arrow Keys
+- A Button: K
+- B Button: J
+- L Shoulder: Q
+- R Shoulder: E
+- Start: Enter
+- Select: Right Shift
+- Save State: F5
+- Load State: F9
+- Switch Save Slot: F7
+
+## Blog
+Guides and tips about GBA emulation:
+- /blog/how-to-play-gba-games-in-browser.html
+- /blog/best-gba-rom-hacks-2026.html
+- /blog/top-25-best-gba-games.html
+- /blog/play-pokemon-fire-red-in-browser.html
+- /blog/gba-emulator-no-download.html
+- /blog/play-gba-games-on-pc-free.html
+- /blog/gba-emulator-save-states-explained.html
+- /blog/best-gba-games-speedrunning.html
+- /blog/gba-vs-gbc-difference.html
+- /blog/play-multiplayer-gba-online.html
+
+## Technical Details
+- Emulator engine: mGBA (compiled to WebAssembly)
+- License: MPL 2.0 (emulator engine)
+- Saves stored locally via IndexedDB (never uploaded)
+- Service worker for offline caching
+- Google Analytics: G-44ZYW1XML3
+- Hosted on Render
+
+## Contact
+Email: htcprom@gmail.com
+Website: https://www.eggermath.com
+GitHub: https://github.com/rayanbaig796-crypto/eggermath

@@ -34,10 +34,82 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "EggerMath",
-    "url": "https://www.eggermath.com",
-    "description": "Play GBA games in your browser. Free GBA emulator — no download required."
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "EggerMath",
+        "url": "https://www.eggermath.com",
+        "description": "Play GBA games in your browser. Free GBA emulator — no download required.",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.eggermath.com/gba-emulator-web/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "name": "EggerMath GBA Emulator",
+        "applicationCategory": "GameEmulator",
+        "operatingSystem": "Any (Web Browser)",
+        "url": "https://www.eggermath.com/gba-emulator-web/",
+        "description": "Free browser-based Game Boy Advance emulator. Play GBA games instantly in Chrome, Firefox, Edge, or Safari.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "featureList": "Save states, Fast forward, Mobile touch controls, Drag-and-drop ROM upload, Auto-save"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I play GBA games in my browser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Go to eggermath.com/gba-emulator-web/, click a game from the library or drag-and-drop your own .gba/.zip ROM file, and start playing instantly. No downloads or installation required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the GBA emulator free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, EggerMath is completely free. There are no fees, subscriptions, or hidden costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it work on mobile phones?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, EggerMath works on any device with a modern web browser — phones, tablets, laptops, and desktops. Mobile devices get on-screen touch controls automatically."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I save my progress?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Press F5 to save a state, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What ROM formats are supported?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "EggerMath supports .gba and .zip ROM files. You can upload your own files or play from the built-in library of 25+ popular games."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".main-content", "h1", ".guide-steps"]
+      }
+    ]
   }
   </script>
 
