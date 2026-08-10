@@ -61,6 +61,105 @@ a { text-decoration: none; color: inherit; }
   }
 }
 
+/* ── Site About / SEO Content Sections ── */
+.site-about {
+  background: #161616;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 56px 20px;
+}
+.site-about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.site-about h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.site-about p {
+  color: rgba(255,255,255,0.72);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+.site-about a {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+.site-about a:hover {
+  color: #ef5350;
+}
+
+/* ── Game List Section ── */
+.game-list {
+  background: #1a1a1a;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 56px 20px;
+}
+.game-list-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.game-list h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.game-list p {
+  color: rgba(255,255,255,0.72);
+  font-size: 15px;
+  margin-bottom: 24px;
+}
+.game-list-items {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 10px;
+}
+.game-list-items li {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: background 0.2s, border-color 0.2s;
+}
+.game-list-items li:hover {
+  background: rgba(255,255,255,0.09);
+  border-color: rgba(255,255,255,0.18);
+}
+.game-list-items a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.game-list-items a:hover {
+  color: #ef5350;
+}
+.game-genre {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(255,255,255,0.45);
+  background: rgba(255,255,255,0.07);
+  padding: 4px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .site-about, .game-list { padding: 36px 16px; }
+  .site-about h2, .game-list h2 { font-size: 20px; }
+  .game-list-items { grid-template-columns: 1fr; }
+}
+
 /* ── Footer ── */
 footer {
   padding: 16px 12px;
