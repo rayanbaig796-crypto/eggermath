@@ -123,6 +123,8 @@
 </head>
 <body class="emulator-active">
 
+  <h1 style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">EggerMath — Free GBA Emulator: Play Game Boy Advance Games in Browser</h1>
+
   <main class="main-content">
     <div class="view-section" id="view-emulator-gba">
       <div class="emulator-view">
@@ -144,33 +146,57 @@
     <div class="game-list-inner">
       <h2>Popular GBA Games Playable on EggerMath</h2>
       <p>Choose from 25+ popular Game Boy Advance titles and play them free in your browser:</p>
-      <ul class="game-list-items">
-        <li><a href="/gba-emulator-web/">Pokemon Emerald</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon FireRed</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon LeafGreen</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon Ruby</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon Sapphire</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon Ultra Violet</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Pokemon Jupiter</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Zelda: The Minish Cap</a> <span class="game-genre">Adventure</span></li>
-        <li><a href="/gba-emulator-web/">Zelda: A Link to the Past &amp; Four Swords</a> <span class="game-genre">Adventure</span></li>
-        <li><a href="/gba-emulator-web/">Mario Kart Super Circuit</a> <span class="game-genre">Racing</span></li>
-        <li><a href="/gba-emulator-web/">Super Mario World (Advance 2)</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Mario &amp; Luigi: Superstar Saga</a> <span class="game-genre">RPG</span></li>
-        <li><a href="/gba-emulator-web/">Classic NES: Super Mario Bros.</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Metroid Fusion</a> <span class="game-genre">Action</span></li>
-        <li><a href="/gba-emulator-web/">Metroid: Zero Mission</a> <span class="game-genre">Action</span></li>
-        <li><a href="/gba-emulator-web/">Kirby: Nightmare in Dream Land</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Kirby &amp; the Amazing Mirror</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Castlevania: Aria of Sorrow</a> <span class="game-genre">Action</span></li>
-        <li><a href="/gba-emulator-web/">Donkey Kong Country</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Fire Emblem: The Sacred Stones</a> <span class="game-genre">Strategy</span></li>
-        <li><a href="/gba-emulator-web/">Sonic Advance 3</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">Dragon Ball: Advanced Adventure</a> <span class="game-genre">Fighting</span></li>
-        <li><a href="/gba-emulator-web/">Harvest Moon: Friends of Mineral Town</a> <span class="game-genre">Simulation</span></li>
-        <li><a href="/gba-emulator-web/">Crash Bandicoot: The Huge Adventure</a> <span class="game-genre">Platformer</span></li>
-        <li><a href="/gba-emulator-web/">GTA Advance</a> <span class="game-genre">Action</span></li>
-      </ul>
+      <div class="game-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:20px;">
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Pokemon Emerald GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Pokemon Emerald</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Pokemon FireRed GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Pokemon FireRed</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg" alt="Pokemon LeafGreen GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Pokemon LeafGreen</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg" alt="Pokemon Ruby GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Pokemon Ruby</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg" alt="Pokemon Sapphire GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Pokemon Sapphire</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg" alt="Zelda The Minish Cap GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Zelda: Minish Cap</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg" alt="Mario Kart Super Circuit GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Mario Kart Super Circuit</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg" alt="Super Mario World GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Super Mario World</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg" alt="Metroid Fusion GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Metroid Fusion</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg" alt="Kirby Nightmare in Dream Land GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Kirby: Nightmare in Dream Land</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg" alt="Castlevania Aria of Sorrow GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Castlevania: Aria of Sorrow</div>
+        </a>
+        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
+          <img src="https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg" alt="Donkey Kong Country GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
+          <div style="margin-top:6px;font-size:14px;">Donkey Kong Country</div>
+        </a>
+      </div>
+      <p style="margin-top:16px;"><a href="/gba-emulator-web/" style="color:#ff6b35;">See all 25+ games →</a></p>
     </div>
   </section>
 
