@@ -25,10 +25,27 @@
       "@graph": [
         {
           "@type": "WebPage",
-          "name": "GBA Browser Emulator — Play Game Boy Advance Games Free",
-          "description": "Free browser-based GBA emulator powered by mGBA WebAssembly. Play GBA games on any device.",
+          "name": "GBA & GBC Browser Emulator — Play Games Free",
+          "description": "Free browser-based GBA and GBC emulator powered by mGBA WebAssembly. Play GBA and GBC games on any device.",
           "url": "https://www.eggermath.com/gba-emulator-web/",
           "isPartOf": { "@type": "WebSite", "name": "EggerMath", "url": "https://www.eggermath.com" }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.eggermath.com"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "GBA & GBC Emulator",
+              "item": "https://www.eggermath.com/gba-emulator-web/"
+            }
+          ]
         },
         {
           "@type": "FAQPage",
@@ -52,6 +69,11 @@
               "@type": "Question",
               "name": "How do save states work?",
               "acceptedAnswer": { "@type": "Answer", "text": "Press F5 to save, F9 to load, F7 to switch between 10 slots. Auto-save runs every 30 seconds. Saves persist in your browser via IndexedDB." }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I play Game Boy Color games?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Yes! The emulator supports both GBA and GBC ROMs. Play Pokemon Crystal, Gold, Silver, Zelda: Link's Awakening DX, and more, or upload your own .gb/.gbc files." }
             }
           ]
         }

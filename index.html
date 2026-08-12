@@ -39,7 +39,7 @@
         "@type": "WebSite",
         "name": "EggerMath",
         "url": "https://www.eggermath.com",
-        "description": "Play GBA games in your browser. Free GBA emulator — no download required.",
+        "description": "Play GBA and GBC games in your browser. Free emulator — no download required.",
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://www.eggermath.com/gba-emulator-web/?q={search_term_string}",
@@ -48,17 +48,34 @@
       },
       {
         "@type": "SoftwareApplication",
-        "name": "EggerMath GBA Emulator",
+        "name": "EggerMath GBA & GBC Emulator",
         "applicationCategory": "GameEmulator",
         "operatingSystem": "Any (Web Browser)",
         "url": "https://www.eggermath.com/gba-emulator-web/",
-        "description": "Free browser-based Game Boy Advance emulator. Play GBA games instantly in Chrome, Firefox, Edge, or Safari.",
+        "description": "Free browser-based Game Boy Advance and Game Boy Color emulator. Play GBA and GBC games instantly in Chrome, Firefox, Edge, or Safari.",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "USD"
         },
-        "featureList": "Save states, Fast forward, Mobile touch controls, Drag-and-drop ROM upload, Auto-save"
+        "featureList": "Save states, Fast forward, Mobile touch controls, Drag-and-drop ROM upload, Auto-save, GBA and GBC support"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.eggermath.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "GBA & GBC Emulator",
+            "item": "https://www.eggermath.com/gba-emulator-web/"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -68,7 +85,7 @@
             "name": "How do I play GBA games in my browser?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Go to eggermath.com/gba-emulator-web/, click a game from the library or drag-and-drop your own .gba/.zip ROM file, and start playing instantly. No downloads or installation required."
+              "text": "Go to eggermath.com/gba-emulator-web/, click a game from the library or drag-and-drop your own .gba, .zip, .gb, or .gbc ROM file, and start playing instantly. No downloads or installation required."
             }
           },
           {
@@ -101,6 +118,14 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "EggerMath supports .gba, .zip, .gb, and .gbc ROM files. You can upload your own files or play from the built-in library of 25+ popular games."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I play Game Boy Color games?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! EggerMath supports both GBA and GBC games. Play Pokemon Crystal, Gold, Silver, Zelda: Link's Awakening DX, and more from the built-in library, or upload your own .gb/.gbc ROM files."
             }
           }
         ]
