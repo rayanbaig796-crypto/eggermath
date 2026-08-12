@@ -115,23 +115,46 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
-  <link rel="stylesheet" href="./home.css?v=24">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Press+Start+2P&display=swap"></noscript>
+  <link rel="stylesheet" href="./home.css?v=25">
   <link rel="icon" type="image/x-icon" href="images/eggermath-logo.png">
+  <script defer src="https://unpkg.com/lucide@latest"></script>
   <script defer src="https://ai-analytics-production-15e0.up.railway.app/tracker.js"></script>
 </head>
 <body class="emulator-active">
 
   <h1 style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">EggerMath — Free GBA Emulator: Play Game Boy Advance Games in Browser</h1>
 
-  <section class="answer-block" style="max-width:800px;margin:0 auto;padding:20px 24px 0;text-align:center;">
-    <p style="font-size:16px;line-height:1.6;color:#aab3c5;">EggerMath is a free browser-based Game Boy Advance emulator that lets you play classic GBA games instantly — no downloads, no installation. Powered by mGBA WebAssembly, it runs directly in Chrome, Firefox, Edge, or Safari on any device. Play Pokemon, Zelda, Mario, Metroid, and 25+ more titles with save states, fast forward, and mobile touch controls.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="/" aria-label="EggerMath home">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg>
+        <span>EggerMath</span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="/" class="active">Home</a>
+        <a href="/gba-emulator-web/">Emulator</a>
+        <a href="#games">Games</a>
+        <a href="/blog/">Blog</a>
+        <a href="#faq">FAQ</a>
+        <a href="/gba-emulator-web/" class="nav-cta">Play Now</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <section class="answer-block">
+    <p>EggerMath is a free browser-based Game Boy Advance emulator that lets you play classic GBA games instantly — no downloads, no installation. Powered by mGBA WebAssembly, it runs directly in Chrome, Firefox, Edge, or Safari on any device. Play Pokemon, Zelda, Mario, Metroid, and 25+ more titles with save states, fast forward, and mobile touch controls.</p>
   </section>
 
-  <nav class="breadcrumbs" aria-label="Breadcrumb" style="max-width:1100px;margin:0 auto;padding:12px 24px;font-size:13px;color:#7d8799;">
-    <a href="/" style="color:#ff6b35;text-decoration:none;">Home</a> <span style="margin:0 6px;">›</span> <span>GBA Emulator</span>
+  <nav class="breadcrumbs" aria-label="Breadcrumb">
+    <a href="/"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Home</a>
+    <span class="sep">›</span>
+    <span>GBA Emulator</span>
   </nav>
 
   <main class="main-content">
@@ -144,140 +167,180 @@
     </div>
   </main>
 
-  <section class="site-about" aria-label="About EggerMath">
-    <div class="site-about-inner">
+  <section class="section site-about" aria-label="About EggerMath">
+    <div class="section-inner">
+      <div class="kicker">What is EggerMath?</div>
       <h2>About EggerMath GBA Emulator</h2>
       <p>EggerMath is a free browser-based <strong>Game Boy Advance (GBA) emulator</strong> powered by mGBA WebAssembly. Play GBA games instantly in Chrome, Firefox, Edge, or Safari — no downloads, no installation. The emulator runs entirely in your browser and supports save states, fast forward, mobile touch controls, and drag-and-drop ROM uploads (.gba and .zip formats).</p>
+      <div class="feature-chips">
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> 100% Free</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> Save States</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg> Fast Forward</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Mobile Touch Controls</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> Drag &amp; Drop ROMs</span>
+      </div>
     </div>
   </section>
 
-  <section class="game-list" aria-label="Game library">
-    <div class="game-list-inner">
+  <section class="section game-list" id="games" aria-label="Game library">
+    <div class="section-inner">
+      <div class="kicker">Game Library</div>
       <h2>Popular GBA Games Playable on EggerMath</h2>
-      <p>Choose from 25+ popular Game Boy Advance titles and play them free in your browser:</p>
-      <div class="game-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:16px;margin-top:20px;">
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Pokemon Emerald GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Pokemon Emerald</div>
+      <p class="lead">Choose from 25+ popular Game Boy Advance titles and play them free in your browser:</p>
+      <div class="game-grid">
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Pokemon Emerald GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Pokemon Emerald</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Pokemon FireRed GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Pokemon FireRed</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Pokemon FireRed GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Pokemon FireRed</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg" alt="Pokemon LeafGreen GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Pokemon LeafGreen</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg" alt="Pokemon LeafGreen GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Pokemon LeafGreen</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg" alt="Pokemon Ruby GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Pokemon Ruby</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg" alt="Pokemon Ruby GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Pokemon Ruby</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg" alt="Pokemon Sapphire GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Pokemon Sapphire</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg" alt="Pokemon Sapphire GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Pokemon Sapphire</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg" alt="Zelda The Minish Cap GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Zelda: Minish Cap</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg" alt="Zelda The Minish Cap GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Zelda: Minish Cap</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg" alt="Mario Kart Super Circuit GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Mario Kart Super Circuit</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg" alt="Mario Kart Super Circuit GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Mario Kart Super Circuit</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg" alt="Super Mario World GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Super Mario World</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg" alt="Super Mario World GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Super Mario World</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg" alt="Metroid Fusion GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Metroid Fusion</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg" alt="Metroid Fusion GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Metroid Fusion</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg" alt="Kirby Nightmare in Dream Land GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Kirby: Nightmare in Dream Land</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg" alt="Kirby Nightmare in Dream Land GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Kirby: Nightmare in Dream Land</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg" alt="Castlevania Aria of Sorrow GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Castlevania: Aria of Sorrow</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg" alt="Castlevania Aria of Sorrow GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Castlevania: Aria of Sorrow</span>
+          <span class="game-tag">Play Now →</span>
         </a>
-        <a href="/gba-emulator-web/" class="game-card" style="text-decoration:none;color:inherit;text-align:center;">
-          <img src="https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg" alt="Donkey Kong Country GBA ROM cover art" width="120" height="170" loading="lazy" style="width:100%;border-radius:8px;">
-          <div style="margin-top:6px;font-size:14px;">Donkey Kong Country</div>
+        <a href="/gba-emulator-web/" class="game-card">
+          <span class="cover"><img src="https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg" alt="Donkey Kong Country GBA ROM cover art" width="120" height="170" loading="lazy"></span>
+          <span class="game-name">Donkey Kong Country</span>
+          <span class="game-tag">Play Now →</span>
         </a>
       </div>
-      <p style="margin-top:16px;"><a href="/gba-emulator-web/" style="color:#ff6b35;">See all 25+ games →</a></p>
+      <a href="/gba-emulator-web/" class="see-all">See all 25+ games <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
     </div>
   </section>
 
-  <section class="site-about" aria-label="How to play">
-    <div class="site-about-inner">
+  <section class="section site-about" aria-label="How to play">
+    <div class="section-inner">
+      <div class="kicker">Getting Started</div>
       <h2>How to Play GBA Games Online</h2>
       <p><strong>Step 1:</strong> Go to <a href="/gba-emulator-web/">the GBA emulator</a>. <strong>Step 2:</strong> Click any game from the library (Pokemon, Zelda, Mario, Metroid, Kirby, and more) or drag-and-drop your own .gba / .zip ROM file. <strong>Step 3:</strong> Play instantly with keyboard controls (WASD/Arrows for the D-Pad, K = A button, J = B button, Enter = Start) or touch controls on mobile.</p>
       <p>Save progress with F5 (save), F9 (load), and F7 (switch between 10 slots). Progress also auto-saves every 30 seconds. Use the fast-forward button for 4x speed, or go fullscreen for the best experience.</p>
+      <div class="feature-chips">
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg> F5 Save · F9 Load · F7 Slots</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 19 22 12 13 5 13 19"/><polygon points="2 19 11 12 2 5 2 19"/></svg> 4x Fast Forward</span>
+        <span class="chip"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/></svg> Fullscreen Mode</span>
+      </div>
     </div>
   </section>
 
-  <section class="faq-section" style="max-width:800px;margin:0 auto;padding:40px 24px;">
-    <h2 style="font-size:22px;margin-bottom:20px;color:#fff;">Frequently Asked Questions</h2>
+  <section class="section faq-section" id="faq" aria-label="Frequently asked questions">
+    <div class="section-inner">
+      <div class="kicker">FAQ</div>
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">How do I play GBA games in my browser?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">Go to <a href="/gba-emulator-web/" style="color:#ff6b35;">eggermath.com/gba-emulator-web/</a>, click a game from the library or drag-and-drop your own .gba/.zip ROM file, and start playing instantly. No downloads or installation required.</div>
+    <details class="faq-item">
+      <summary>How do I play GBA games in my browser? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">Go to <a href="/gba-emulator-web/">eggermath.com/gba-emulator-web/</a>, click a game from the library or drag-and-drop your own .gba/.zip ROM file, and start playing instantly. No downloads or installation required.</div>
     </details>
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">Is the GBA emulator free?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">Yes, EggerMath is completely free. There are no fees, subscriptions, or hidden costs. Play unlimited games with full features.</div>
+    <details class="faq-item">
+      <summary>Is the GBA emulator free? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">Yes, EggerMath is completely free. There are no fees, subscriptions, or hidden costs. Play unlimited games with full features.</div>
     </details>
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">Does it work on mobile phones?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">Yes, EggerMath works on any device with a modern web browser — phones, tablets, laptops, and desktops. Mobile devices get on-screen touch controls automatically.</div>
+    <details class="faq-item">
+      <summary>Does it work on mobile phones? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">Yes, EggerMath works on any device with a modern web browser — phones, tablets, laptops, and desktops. Mobile devices get on-screen touch controls automatically.</div>
     </details>
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">How do I save my progress?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">Press F5 to save a state, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds to your browser's local storage.</div>
+    <details class="faq-item">
+      <summary>How do I save my progress? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">Press F5 to save a state, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds to your browser's local storage.</div>
     </details>
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">What ROM formats are supported?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">EggerMath supports .gba and .zip ROM files. You can upload your own files or play from the built-in library of 25+ popular games including Pokemon, Zelda, Mario, and more.</div>
+    <details class="faq-item">
+      <summary>What ROM formats are supported? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">EggerMath supports .gba and .zip ROM files. You can upload your own files or play from the built-in library of 25+ popular games including Pokemon, Zelda, Mario, and more.</div>
     </details>
 
-    <details style="margin-bottom:12px;border:1px solid #232838;border-radius:8px;overflow:hidden;">
-      <summary style="padding:14px 16px;cursor:pointer;font-weight:600;background:#171a23;color:#e4e6eb;">Is GBA emulation legal?</summary>
-      <div style="padding:14px 16px;color:#aab3c5;line-height:1.6;">Emulation itself is legal. EggerMath is a free emulator that you can use with ROMs you own. We do not distribute ROMs. The mGBA emulator engine is open source under the MPL 2.0 license.</div>
+    <details class="faq-item">
+      <summary>Is GBA emulation legal? <svg class="faq-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></summary>
+      <div class="faq-body">Emulation itself is legal. EggerMath is a free emulator that you can use with ROMs you own. We do not distribute ROMs. The mGBA emulator engine is open source under the MPL 2.0 license.</div>
     </details>
+
+      </div>
+    </div>
   </section>
 
-  <section class="related-links" style="max-width:800px;margin:0 auto;padding:0 24px 40px;">
-    <h2 style="font-size:18px;margin-bottom:16px;color:#fff;">Learn More</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;">
-      <a href="/blog/how-to-play-gba-games-in-browser.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">How to Play GBA Games in Browser →</a>
-      <a href="/blog/top-25-best-gba-games.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">Top 25 Best GBA Games →</a>
-      <a href="/blog/best-gba-rom-hacks-2026.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">Best GBA ROM Hacks 2026 →</a>
-      <a href="/blog/play-pokemon-fire-red-in-browser.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">Play Pokemon FireRed in Browser →</a>
-      <a href="/blog/gba-emulator-no-download.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">GBA Emulator No Download →</a>
-      <a href="/blog/gba-vs-gbc-difference.html" style="display:block;padding:14px;background:#171a23;border:1px solid #232838;border-radius:8px;text-decoration:none;color:#e4e6eb;font-size:14px;">GBA vs GBC: What's the Difference? →</a>
+  <section class="section related-links">
+    <div class="section-inner">
+      <div class="kicker">Guides &amp; Articles</div>
+      <h2>Learn More</h2>
+      <div class="learn-grid">
+      <a href="/blog/how-to-play-gba-games-in-browser.html" class="learn-card">How to Play GBA Games in Browser <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="/blog/top-25-best-gba-games.html" class="learn-card">Top 25 Best GBA Games <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="/blog/best-gba-rom-hacks-2026.html" class="learn-card">Best GBA ROM Hacks 2026 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="/blog/play-pokemon-fire-red-in-browser.html" class="learn-card">Play Pokemon FireRed in Browser <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="/blog/gba-emulator-no-download.html" class="learn-card">GBA Emulator No Download <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      <a href="/blog/gba-vs-gbc-difference.html" class="learn-card">GBA vs GBC: What's the Difference? <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <span class="footer-brand">© 2026 EggerMath</span>
-    <div class="footer-links">
-      <a href="/blog/">Blog</a>
-      <a href="about.html">About</a>
-      <a href="takedown.html">DMCA</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="contact.html">Contact</a>
+    <div class="footer-inner">
+      <span class="footer-brand"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg> © 2026 EggerMath</span>
+      <div class="footer-links">
+        <a href="/blog/">Blog</a>
+        <a href="about.html">About</a>
+        <a href="takedown.html">DMCA</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </footer>
 
   <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Cookie consent">
     <div class="cookie-content">
-      <span class="cookie-icon">🍪</span>
+      <span class="cookie-icon">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M8.5 8.5v.01"/><path d="M16 15.5v.01"/><path d="M12 12v.01"/><path d="M11 17v.01"/><path d="M7 14v.01"/></svg>
+      </span>
       <p>We use cookies to remember your preferences. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
       <div class="cookie-actions">
         <button class="cookie-btn cookie-decline" id="cookie-decline">Decline</button>
@@ -307,6 +370,23 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js').catch(function(){});
     }
+
+    // Mobile nav toggle
+    (function() {
+      var toggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function() {
+        var open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+      nav.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() { nav.classList.remove('open'); });
+      });
+    })();
+
+    // Lucide icons
+    if (window.lucide) lucide.createIcons();
   </script>
 </body>
 </html>
