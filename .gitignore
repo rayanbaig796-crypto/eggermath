@@ -47,3 +47,17 @@ psp-emulator-web/ppsspp-runtime.js
 .firebase/
 .firebaserc
 firebase.json
+
+# Sensitive files — NEVER commit
+config.json
+comment-gen.js
+reddit-monitor.js
+reddit-post.js
+replyagent/
+noob/
+ai-analytics/
+claude-seo/
+chatbot.html
+replyagent.html
+data/
+*.png
