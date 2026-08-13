@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Play Action GBA Games Online Free — No Download, No Install</title>
-  <meta name="description" content="Play Action GBA games online free in your browser. No download, no install. Save states, fast forward, mobile touch controls.">
+  <link rel="preconnect" href="https://cache.downloadroms.io" crossorigin>
+  <link rel="dns-prefetch" href="https://cache.downloadroms.io">
   <meta name="robots" content="index, follow">
+  <title>Play Action GBA Games Online Free — No Download, No Install</title>
+  <meta name="description" content="Play GBA action games online free. Metroid, Castlevania, GTA, and more classic action games in your browser. No download required. Play instantly in your...">
   <link rel="canonical" href="https://www.eggermath.com/genre/action/">
   <meta property="og:title" content="Play Action GBA Games Online Free">
   <meta property="og:description" content="Play GBA action games online free. Metroid, Castlevania, GTA, and more classic action games in your browser.">
@@ -21,53 +23,62 @@
     "isPartOf": {"@type": "WebSite", "name": "EggerMath", "url": "https://www.eggermath.com"}
   }
   </script>
-  <style>
+      <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; background: #161a13; color: #f0ebe0; min-height: 100vh; }
-    .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 20px; }
+    body { font-family: 'DM Sans', 'Inter', sans-serif; background: #161a13; color: #f0ebe0; min-height: 100vh; }
+    .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); position: sticky; top: 0; z-index: 100; }
+    .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 18px; }
     .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
-    .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); }
+    .nav a.active { color: #c4a35a; }
+    .nav-links { display: flex; align-items: center; }
+    @media (max-width: 700px) { .nav-links { display: none; } }
+    .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); max-width: 1200px; margin: 0 auto; }
     .breadcrumbs a { color: rgba(240,235,224,0.5); text-decoration: none; }
-    .container { max-width: 900px; margin: 0 auto; padding: 40px 24px; }
-    h1 { font-size: 1.6rem; color: #f0ebe0; margin-bottom: 8px; }
-    .desc { color: rgba(240,235,224,0.5); font-size: 0.9rem; margin-bottom: 30px; }
+    .breadcrumbs .sep { margin: 0 6px; }
+    .breadcrumbs .current { color: #c4a35a; }
+    .container { max-width: 1000px; margin: 0 auto; padding: 30px 24px 60px; }
+    h1 { font-size: 1.8rem; color: #f0ebe0; margin-bottom: 12px; }
+    .meta { color: rgba(240,235,224,0.5); font-size: 0.9rem; margin-bottom: 20px; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-  </style>
+    .card { padding: 16px; background: rgba(18,18,31,0.8); border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); }
+    .card h3 { font-size: 1rem; color: #c4a35a; margin-bottom: 6px; }
+    .card h3 a { color: #c4a35a; text-decoration: none; }
+    .card p { font-size: 0.82rem; color: rgba(240,235,224,0.55); line-height: 1.5; }
+    .card .sub { font-size: 0.75rem; color: rgba(240,235,224,0.3); }
+    .stars { color: #c4a35a; letter-spacing: 2px; }
+    .rating-num { color: rgba(240,235,224,0.4); font-size: 0.8rem; }
+    .footer { margin-top: 40px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
+    .footer a { color: rgba(240,235,224,0.4); text-decoration: none; margin: 0 8px; }
+    .history { font-size: 0.95rem; line-height: 1.8; color: rgba(240,235,224,0.75); margin: 16px 0; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0; }
+    .chip { background: rgba(196,163,90,0.12); color: #c4a35a; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; text-decoration: none; border: 1px solid rgba(196,163,90,0.3); }
+    </style>
 </head>
 <body>
   <nav class="nav">
     <a href="/" class="brand">EggerMath</a>
-    <div><a href="/">Home</a><a href="/gba-emulator-web/">GBA Emulator</a><a href="/blog/">Blog</a></div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/gameboy-advance/">Game Boy Advance</a>
+      <a href="/gameboy-color/">Game Boy Color</a>
+      <a href="/genre/" class="active">Genres</a>
+      <a href="/series/">Series</a>
+      <a href="/tags/">Tags</a>
+      <a href="/blog/">Blog</a>
+    </div>
   </nav>
-  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/gba-emulator-web/">GBA Emulator</a> › <span style="color:#c4a35a;">Action Games</span></nav>
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span class="sep">›</span><a href="/genre/">Genres</a><span class="sep">›</span><span class="current">Action</span></nav>
   <div class="container">
     <h1>Play Action GBA Games Online Free</h1>
-    <p class="desc">Play GBA action games online free. Metroid, Castlevania, GTA, and more classic action games in your browser.</p>
-    <div class="grid">
-    <div style="padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h3 style="font-size:1rem;color:#c4a35a;margin-bottom:6px;"><a href="/games/metroid-fusion.html" style="color:#c4a35a;text-decoration:none;">Metroid Fusion</a></h3>
-      <p style="font-size:0.82rem;color:rgba(240,235,224,0.55);line-height:1.5;">Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites and confront the SA-X.</p>
-      <span style="font-size:0.75rem;color:rgba(240,235,224,0.3);">Metroid · 2002</span>
-    </div>
-
-    <div style="padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h3 style="font-size:1rem;color:#c4a35a;margin-bottom:6px;"><a href="/games/metroid-zero-mission.html" style="color:#c4a35a;text-decoration:none;">Metroid: Zero Mission</a></h3>
-      <p style="font-size:0.82rem;color:rgba(240,235,224,0.55);line-height:1.5;">Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes and defeat Mother Brain.</p>
-      <span style="font-size:0.75rem;color:rgba(240,235,224,0.3);">Metroid · 2004</span>
-    </div>
-
-    <div style="padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h3 style="font-size:1rem;color:#c4a35a;margin-bottom:6px;"><a href="/games/castlevania-aria-of-sorrow.html" style="color:#c4a35a;text-decoration:none;">Castlevania: Aria of Sorrow</a></h3>
-      <p style="font-size:0.82rem;color:rgba(240,235,224,0.55);line-height:1.5;">Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities.</p>
-      <span style="font-size:0.75rem;color:rgba(240,235,224,0.3);">Castlevania · 2003</span>
-    </div>
-
-    <div style="padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h3 style="font-size:1rem;color:#c4a35a;margin-bottom:6px;"><a href="/games/gta-advance.html" style="color:#c4a35a;text-decoration:none;">GTA Advance</a></h3>
-      <p style="font-size:0.82rem;color:rgba(240,235,224,0.55);line-height:1.5;">Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob.</p>
-      <span style="font-size:0.75rem;color:rgba(240,235,224,0.3);">GTA · 2004</span>
-    </div></div>
+    <p class="meta">4 games</p>
+    <div class="grid"><div class="card"><h3><a href="/games/metroid-fusion.html">Metroid Fusion</a></h3><p>Play Metroid Fusion online in your browser.</p><div class="sub"><span class="stars">★★★★☆</span> 9.1 · Metroid · 2002</div></div>
+<div class="card"><h3><a href="/games/metroid-zero-mission.html">Metroid: Zero Mission</a></h3><p>Play Metroid Zero Mission online.</p><div class="sub"><span class="stars">★★★★☆</span> 8.9 · Metroid · 2004</div></div>
+<div class="card"><h3><a href="/games/castlevania-aria-of-sorrow.html">Castlevania: Aria of Sorrow</a></h3><p>Play Castlevania Aria of Sorrow online.</p><div class="sub"><span class="stars">★★★★☆</span> 9.0 · Castlevania · 2003</div></div>
+<div class="card"><h3><a href="/games/gta-advance.html">GTA Advance</a></h3><p>Play GTA Advance online in your browser.</p><div class="sub"><span class="stars">★★★★☆</span> 8.0 · GTA · 2004</div></div></div>
   </div>
+  <footer class="footer">
+    <p>&copy; 2026 EggerMath — Free GBA & Gameboy Emulator</p>
+    <p><a href="/">Home</a>|<a href="/gameboy-advance/">Game Boy Advance</a>|<a href="/gameboy-color/">Game Boy Color</a>|<a href="/genre/">Genres</a>|<a href="/series/">Series</a>|<a href="/tags/">Tags</a>|<a href="/blog/">Blog</a>|<a href="privacy.html">Privacy</a>|<a href="terms.html">Terms</a>|<a href="takedown.html">DMCA</a></p>
+  </footer>
 </body>
 </html>
