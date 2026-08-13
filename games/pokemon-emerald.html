@@ -19,22 +19,61 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "Pokemon Emerald",
-    "description": "Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities. One of the best GBA RPGs ever made.",
-    "gameEmulator": "Game Boy Advance",
-    "applicationCategory": "Game",
-    "operatingSystem": "Web Browser",
-    "datePublished": "2004",
-    "genre": ["RPG"],
-    "gamePlatform": "Game Boy Advance",
-    "isAccessibleForFree": true,
-    "inLanguage": "en",
-    "keywords": "Pokemon Emerald, GBA, Game Boy Advance, play Pokemon Emerald online, Pokemon Emerald emulator, Pokemon Emerald free",
-    "author": {"@type": "Organization", "name": "EggerMath"},
-    "gameSeries": "Pokemon",
-    "additionalProperty": [
-      {"@type": "PropertyValue", "name": "longDescription", "value": "Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities. One of the best GBA RPGs ever made."}
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "Pokemon Emerald",
+        "description": "Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities. One of the best GBA RPGs ever made.",
+        "gameEmulator": "Game Boy Advance",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "datePublished": "2004",
+        "genre": ["RPG"],
+        "gamePlatform": "Game Boy Advance",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": "Pokemon Emerald, GBA, Game Boy Advance, play Pokemon Emerald online, Pokemon Emerald emulator, Pokemon Emerald free",
+        "author": {"@type": "Organization", "name": "EggerMath"},
+        "gameSeries": "Pokemon",
+        "url": "https://www.eggermath.com/games/pokemon-emerald.html"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.eggermath.com/"},
+          {"@type": "ListItem", "position": 2, "name": "GBA Emulator", "item": "https://www.eggermath.com/gba-emulator-web/"},
+          {"@type": "ListItem", "position": 3, "name": "Pokemon Emerald", "item": "https://www.eggermath.com/games/pokemon-emerald.html"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I play Pokemon Emerald online?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Click the Play button above to start Pokemon Emerald instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I save my progress in Pokemon Emerald?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Pokemon Emerald free to play?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Pokemon Emerald is completely free to play on EggerMath. No account, no fees, no hidden costs."
+            }
+          }
+        ]
+      }
     ]
   }
   </script>
@@ -63,6 +102,12 @@
     .section li { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
     .section a { color: #f0ebe0; text-decoration: none; }
     .section a:hover { color: #c4a35a; }
+    .faq-item { border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .faq-item summary { padding: 14px 0; cursor: pointer; font-weight: 600; color: #f0ebe0; list-style: none; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::before { content: '+ '; color: #c4a35a; font-weight: 700; }
+    .faq-item[open] summary::before { content: '- '; }
+    .faq-item p { padding: 0 0 14px 0; color: rgba(240,235,224,0.6); font-size: 0.9rem; line-height: 1.6; }
     .footer { margin-top: 60px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
   </style>
 </head>
@@ -115,6 +160,22 @@
     <div class="section">
       <h2>How to Play Pokemon Emerald</h2>
       <p class="desc">Click the "Play" button above to start Pokemon Emerald instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly — the same engine used by standalone emulators. Use your keyboard or touch controls to play. Save states, fast forward, and fullscreen are built in.</p>
+    </div>
+
+    <div class="section faq">
+      <h2>Frequently Asked Questions</h2>
+      <details class="faq-item">
+        <summary>How do I play Pokemon Emerald online?</summary>
+        <p>Click the Play button above to start Pokemon Emerald instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can I save my progress in Pokemon Emerald?</summary>
+        <p>Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is Pokemon Emerald free to play?</summary>
+        <p>Yes, Pokemon Emerald is completely free to play on EggerMath. No account, no fees, no hidden costs.</p>
+      </details>
     </div>
   </div>
   <footer class="footer">
