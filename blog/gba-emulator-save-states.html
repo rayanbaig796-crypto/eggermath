@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GBA Emulator Save States Explained — How to Save Anywhere</title>
-  <meta name="description" content="Learn how GBA emulator save states work. Save anywhere, load anytime. F5 to save, F9 to load, F7 to switch slots. Works on all devices.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.eggermath.com/blog/gba-emulator-save-states.html">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; background: #161a13; color: #f0ebe0; line-height: 1.7; }
-    .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 20px; }
-    .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
-    .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); }
-    .breadcrumbs a { color: rgba(240,235,224,0.5); text-decoration: none; }
-    .article { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
-    h1 { font-size: 2rem; color: #f0ebe0; margin-bottom: 16px; }
-    .meta { color: rgba(240,235,224,0.4); font-size: 0.85rem; margin-bottom: 30px; }
-    h2 { font-size: 1.4rem; color: #c4a35a; margin: 30px 0 12px; }
-    p { margin-bottom: 16px; color: rgba(240,235,224,0.75); }
-    a { color: #c4a35a; }
-    .cta { display: inline-block; background: #c4a35a; color: #161a13; padding: 14px 32px; border-radius: 10px; font-weight: 700; margin: 20px 0; }
-    .code { background: rgba(18,18,31,0.8); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-family: monospace; font-size: 0.9rem; color: #c4a35a; }
-    ul { margin: 0 0 16px 20px; color: rgba(240,235,224,0.7); }
-    li { margin-bottom: 8px; }
-    .footer { margin-top: 60px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>GBA Emulator Save States Explained — How to Save Anywhere</title>
+ <meta name="description" content="Learn how GBA emulator save states work. Save anywhere, load anytime. F5 to save, F9 to load, F7 to switch slots. Works on all devices.">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://www.eggermath.com/blog/gba-emulator-save-states.html">
+ <style>
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'DM Sans', sans-serif; background: #161a13; color: #f0ebe0; line-height: 1.7; }
+ .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); }
+ .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 20px; }
+ .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
+ .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); }
+ .breadcrumbs a { color: rgba(240,235,224,0.5); text-decoration: none; }
+ .article { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
+ h1 { font-size: 2rem; color: #f0ebe0; margin-bottom: 16px; }
+ .meta { color: rgba(240,235,224,0.4); font-size: 0.85rem; margin-bottom: 30px; }
+ h2 { font-size: 1.4rem; color: #c4a35a; margin: 30px 0 12px; }
+ p { margin-bottom: 16px; color: rgba(240,235,224,0.75); }
+ a { color: #c4a35a; }
+ .cta { display: inline-block; background: #c4a35a; color: #161a13; padding: 14px 32px; border-radius: 10px; font-weight: 700; margin: 20px 0; }
+ .code { background: rgba(18,18,31,0.8); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-family: monospace; font-size: 0.9rem; color: #c4a35a; }
+ ul { margin: 0 0 16px 20px; color: rgba(240,235,224,0.7); }
+ li { margin-bottom: 8px; }
+ .footer { margin-top: 60px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
+ </style>
 </head>
 <body>
-  <nav class="nav"><a href="/" class="brand">EggerMath</a><div><a href="/">Home</a><a href="/gba-emulator-web/">GBA Emulator</a><a href="/blog/">Blog</a></div></nav>
-  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/blog/">Blog</a> › <span style="color:#c4a35a;">GBA Emulator Save States Explained — How to Save Anywhere</span></nav>
-  <article class="article">
-    <h1>GBA Emulator Save States Explained — How to Save Anywhere</h1>
-    <div class="meta">Published August 12, 2026 · 5 min read</div>
-    
-    <p>Save states are one of the best features of GBA emulators. They let you save your game at <strong>any point</strong> — not just at save points. Here's how they work and how to use them.</p>
-    <a href="/gba-emulator-web/" class="cta">Try Save States Now →</a>
-    <h2>What Are Save States?</h2>
-    <p>Save states capture the exact state of the emulator at any moment. Unlike in-game saves (which only work at save points), save states work anywhere — even mid-battle.</p>
-    <h2>How to Use Save States</h2>
-    <ul>
-      <li><strong>F5</strong> — Save current state</li>
-      <li><strong>F9</strong> — Load saved state</li>
-      <li><strong>F7</strong> — Switch between 10 save slots</li>
-    </ul>
-    <p>EggerMath also auto-saves every 30 seconds, so even if you close the browser, your progress is saved.</p>
-    <h2>Why Save States Are Useful</h2>
-    <ul>
-      <li>Save before difficult boss fights</li>
-      <li>Try different strategies without risk</li>
-      <li>Save before legendary Pokemon encounters</li>
-      <li>Quick save and load during speedruns</li>
-    </ul>
-    <a href="/gba-emulator-web/" class="cta">Start Playing →</a>
-  </article>
-  <footer class="footer"><p>&copy; 2026 EggerMath — Free GBA Emulator</p></footer>
+ <nav class="nav"><a href="/" class="brand">EggerMath</a><div><a href="/">Home</a><a href="/gba-emulator-web/">GBA Emulator</a><a href="/blog/">Blog</a></div></nav>
+ <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/blog/">Blog</a> › <span style="color:#c4a35a;">GBA Emulator Save States Explained — How to Save Anywhere</span></nav>
+ <article class="article">
+ <h1>GBA Emulator Save States Explained — How to Save Anywhere</h1>
+ <div class="meta">Published August 12, 2026 · 5 min read</div>
+
+ <p>Save states are one of the best features of GBA emulators. They let you save your game at <strong>any point</strong> — not just at save points. Here's how they work and how to use them.</p>
+ <a href="/gba-emulator-web/" class="cta">Try Save States Now →</a>
+ <h2>What Are Save States?</h2>
+ <p>Save states capture the exact state of the emulator at any moment. Unlike in-game saves (which only work at save points), save states work anywhere — even mid-battle.</p>
+ <h2>How to Use Save States</h2>
+ <ul>
+ <li><strong>F5</strong> — Save current state</li>
+ <li><strong>F9</strong> — Load saved state</li>
+ <li><strong>F7</strong> — Switch between 10 save slots</li>
+ </ul>
+ <p>EggerMath also auto-saves every 30 seconds, so even if you close the browser, your progress is saved.</p>
+ <h2>Why Save States Are Useful</h2>
+ <ul>
+ <li>Save before difficult boss fights</li>
+ <li>Try different strategies without risk</li>
+ <li>Save before legendary Pokemon encounters</li>
+ <li>Quick save and load during speedruns</li>
+ </ul>
+ <a href="/gba-emulator-web/" class="cta">Start Playing →</a>
+ </article>
+ <footer class="footer"><p>&copy; 2026 EggerMath — Free GBA Emulator</p></footer>
 </body>
 </html>

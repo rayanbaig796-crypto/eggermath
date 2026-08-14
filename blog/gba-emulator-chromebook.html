@@ -1,66 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GBA Emulator for Chromebook — Free, No Download, No Linux</title>
-  <meta name="description" content="Play GBA games on your Chromebook for free. No download, no Linux needed. Works in Chrome browser. Play Pokemon, Zelda, Mario, and more.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.eggermath.com/blog/gba-emulator-chromebook.html">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'DM Sans', sans-serif; background: #161a13; color: #f0ebe0; line-height: 1.7; }
-    .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); }
-    .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 20px; }
-    .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
-    .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); }
-    .breadcrumbs a { color: rgba(240,235,224,0.5); text-decoration: none; }
-    .article { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
-    h1 { font-size: 2rem; color: #f0ebe0; margin-bottom: 16px; }
-    .meta { color: rgba(240,235,224,0.4); font-size: 0.85rem; margin-bottom: 30px; }
-    h2 { font-size: 1.4rem; color: #c4a35a; margin: 30px 0 12px; }
-    p { margin-bottom: 16px; color: rgba(240,235,224,0.75); }
-    a { color: #c4a35a; }
-    .cta { display: inline-block; background: #c4a35a; color: #161a13; padding: 14px 32px; border-radius: 10px; font-weight: 700; margin: 20px 0; }
-    .code { background: rgba(18,18,31,0.8); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-family: monospace; font-size: 0.9rem; color: #c4a35a; }
-    ul { margin: 0 0 16px 20px; color: rgba(240,235,224,0.7); }
-    li { margin-bottom: 8px; }
-    .footer { margin-top: 60px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>GBA Emulator for Chromebook — Free, No Download, No Linux</title>
+ <meta name="description" content="Play GBA games on your Chromebook for free. No download, no Linux needed. Works in Chrome browser. Play Pokemon, Zelda, Mario, and more.">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://www.eggermath.com/blog/gba-emulator-chromebook.html">
+ <style>
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'DM Sans', sans-serif; background: #161a13; color: #f0ebe0; line-height: 1.7; }
+ .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); }
+ .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 20px; }
+ .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
+ .breadcrumbs { padding: 10px 24px; font-size: 0.8rem; color: rgba(240,235,224,0.4); }
+ .breadcrumbs a { color: rgba(240,235,224,0.5); text-decoration: none; }
+ .article { max-width: 780px; margin: 0 auto; padding: 40px 24px; }
+ h1 { font-size: 2rem; color: #f0ebe0; margin-bottom: 16px; }
+ .meta { color: rgba(240,235,224,0.4); font-size: 0.85rem; margin-bottom: 30px; }
+ h2 { font-size: 1.4rem; color: #c4a35a; margin: 30px 0 12px; }
+ p { margin-bottom: 16px; color: rgba(240,235,224,0.75); }
+ a { color: #c4a35a; }
+ .cta { display: inline-block; background: #c4a35a; color: #161a13; padding: 14px 32px; border-radius: 10px; font-weight: 700; margin: 20px 0; }
+ .code { background: rgba(18,18,31,0.8); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px; margin: 12px 0; font-family: monospace; font-size: 0.9rem; color: #c4a35a; }
+ ul { margin: 0 0 16px 20px; color: rgba(240,235,224,0.7); }
+ li { margin-bottom: 8px; }
+ .footer { margin-top: 60px; padding: 30px 24px; border-top: 1px solid rgba(255,255,255,0.06); text-align: center; color: rgba(240,235,224,0.3); font-size: 0.8rem; }
+ </style>
 </head>
 <body>
-  <nav class="nav"><a href="/" class="brand">EggerMath</a><div><a href="/">Home</a><a href="/gba-emulator-web/">GBA Emulator</a><a href="/blog/">Blog</a></div></nav>
-  <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/blog/">Blog</a> › <span style="color:#c4a35a;">GBA Emulator for Chromebook — Free, No Download, No Linux</span></nav>
-  <article class="article">
-    <h1>GBA Emulator for Chromebook — Free, No Download, No Linux</h1>
-    <div class="meta">Published August 12, 2026 · 5 min read</div>
-    
-    <p>Want to play GBA games on your Chromebook? You don't need to enable Linux or download anything. Browser-based GBA emulators work perfectly in Chrome — just open and play.</p>
-    <a href="/gba-emulator-web/" class="cta">Play GBA Games on Chromebook →</a>
-    <h2>Why Chromebook Is Great for GBA</h2>
-    <ul>
-      <li><strong>Chrome browser</strong> — the best browser for WebAssembly emulation</li>
-      <li><strong>No download needed</strong> — everything runs in the browser</li>
-      <li><strong>Works offline</strong> — games cache after first load</li>
-      <li><strong>Keyboard controls</strong> — full keyboard support for desktop mode</li>
-    </ul>
-    <h2>How to Play on Chromebook</h2>
-    <ul>
-      <li><strong>Step 1:</strong> Open Chrome browser on your Chromebook</li>
-      <li><strong>Step 2:</strong> Go to eggermath.com/gba-emulator-web/</li>
-      <li><strong>Step 3:</strong> Click any game from the library</li>
-      <li><strong>Step 4:</strong> Use keyboard or touch controls to play</li>
-    </ul>
-    <p><strong>Keyboard Controls:</strong> Arrow keys = D-Pad, K = A Button, J = B Button, Enter = Start</p>
-    <h2>Best Games for Chromebook</h2>
-    <ul>
-      <li><a href="/games/pokemon-emerald.html">Pokemon Emerald</a></li>
-      <li><a href="/games/zelda-minish-cap.html">Zelda: Minish Cap</a></li>
-      <li><a href="/games/metroid-fusion.html">Metroid Fusion</a></li>
-      <li><a href="/games/super-mario-world.html">Super Mario World</a></li>
-    </ul>
-    <a href="/gba-emulator-web/" class="cta">Start Playing →</a>
-  </article>
-  <footer class="footer"><p>&copy; 2026 EggerMath — Free GBA Emulator</p></footer>
+ <nav class="nav"><a href="/" class="brand">EggerMath</a><div><a href="/">Home</a><a href="/gba-emulator-web/">GBA Emulator</a><a href="/blog/">Blog</a></div></nav>
+ <nav class="breadcrumbs"><a href="/">Home</a> › <a href="/blog/">Blog</a> › <span style="color:#c4a35a;">GBA Emulator for Chromebook — Free, No Download, No Linux</span></nav>
+ <article class="article">
+ <h1>GBA Emulator for Chromebook — Free, No Download, No Linux</h1>
+ <div class="meta">Published August 12, 2026 · 5 min read</div>
+
+ <p>Want to play GBA games on your Chromebook? You don't need to enable Linux or download anything. Browser-based GBA emulators work perfectly in Chrome — just open and play.</p>
+ <a href="/gba-emulator-web/" class="cta">Play GBA Games on Chromebook →</a>
+ <h2>Why Chromebook Is Great for GBA</h2>
+ <ul>
+ <li><strong>Chrome browser</strong> — the best browser for WebAssembly emulation</li>
+ <li><strong>No download needed</strong> — everything runs in the browser</li>
+ <li><strong>Works offline</strong> — games cache after first load</li>
+ <li><strong>Keyboard controls</strong> — full keyboard support for desktop mode</li>
+ </ul>
+ <h2>How to Play on Chromebook</h2>
+ <ul>
+ <li><strong>Step 1:</strong> Open Chrome browser on your Chromebook</li>
+ <li><strong>Step 2:</strong> Go to eggermath.com/gba-emulator-web/</li>
+ <li><strong>Step 3:</strong> Click any game from the library</li>
+ <li><strong>Step 4:</strong> Use keyboard or touch controls to play</li>
+ </ul>
+ <p><strong>Keyboard Controls:</strong> Arrow keys = D-Pad, K = A Button, J = B Button, Enter = Start</p>
+ <h2>Best Games for Chromebook</h2>
+ <ul>
+ <li><a href="/games/pokemon-emerald.html">Pokemon Emerald</a></li>
+ <li><a href="/games/zelda-minish-cap.html">Zelda: Minish Cap</a></li>
+ <li><a href="/games/metroid-fusion.html">Metroid Fusion</a></li>
+ <li><a href="/games/super-mario-world.html">Super Mario World</a></li>
+ </ul>
+ <a href="/gba-emulator-web/" class="cta">Start Playing →</a>
+ </article>
+ <footer class="footer"><p>&copy; 2026 EggerMath — Free GBA Emulator</p></footer>
 </body>
 </html>

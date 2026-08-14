@@ -4,7 +4,6 @@ Play thousands of classic retro games online in your browser. No downloads neede
 
 ## Supported Consoles
 - Game Boy Advance (80+ games)
-- Game Boy Color (coming soon)
 
 ## Game Genres
 - RPG, Platformer, Action, Racing, Strategy, Fighting, Simulation, Puzzle, Horror, Sports, Adventure
@@ -12,22 +11,16 @@ Play thousands of classic retro games online in your browser. No downloads neede
 ## Game Series
 - Pokemon, Zelda, Mario, Kirby, Castlevania, Sonic, Metroid, Fire Emblem, Dragon Ball, Mega Man, Final Fantasy, Donkey Kong, Advance Wars, WarioWare, Golden Sun, Harvest Moon, Crash Bandicoot, GTA, Breath of Fire, Tales, Mana, Shining, Mega Man Battle Network, Bomberman, Star Fox, Smash Bros, Kid Icarus, Pac-Man, Rayman, Tony Hawk, Need for Speed, TMNT, LEGO Star Wars, SpongeBob, Shrek, Harry Potter, Resident Evil, Doom, Alone in the Dark, Simpsons
 
-## Game Developers
-- Game Freak, Nintendo, Capcom, Konami, Intelligent Systems, HAL Laboratory, Sonic Team, AlphaDream, Rare, Vicarious Visions, Camelot, Square Enix, Bandai, Hudson Soft, Now Production, Ubisoft, Rockstar Games, Marvelous, Namco, Pocketeers, Monster Games, CPS-II, Griptonite Games, Heavy Iron Studios, KnowWonder, Radical Entertainment, TOYS FOR BOB, Infogrames, id Software, Next Entertainment, LSA, ROM Hack
-
 ## Features
 - Play instantly in browser - no registration required
 - Mobile-friendly retro gaming experience
 - Detailed game descriptions and controls
-- Browse by console, genre, series, developer, or tag
+- Browse by console
 
 ## URL Structure
 - Games: https://www.eggermath.com/games/{slug}
-- Console: https://www.eggermath.com/game-consoles/{id}
-- Genres: https://www.eggermath.com/game-genres/{slug}
-- Series: https://www.eggermath.com/game-series/{slug}
-- Developers: https://www.eggermath.com/game-developer/{slug}
-- Tags: https://www.eggermath.com/game-tags/{slug}
-- Yearly: https://www.eggermath.com/yearly-games/{year}
+- GBA Games List: https://www.eggermath.com/gba-games/
+- GBA Console: https://www.eggermath.com/gameboy-advance/
+- GBA Emulator: https://www.eggermath.com/gba-emulator-web/
 
 Start playing now at https://www.eggermath.com
