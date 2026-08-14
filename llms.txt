@@ -1,62 +1,33 @@
-# EggerMath — Free GBA & GBC Emulator
+# EggerMath.com - Free Online Retro Gaming
 
-> Play Game Boy Advance and Game Boy Color games in your browser. Free, no downloads required.
+Play thousands of classic retro games online in your browser. No downloads needed.
 
-## About
-EggerMath is a free, browser-based Game Boy Advance and Game Boy Color emulator powered by mGBA WebAssembly. Play GBA and GBC games directly in Chrome, Firefox, Edge, or Safari on any device — phone, tablet, or desktop.
+## Supported Consoles
+- Game Boy Advance (80+ games)
+- Game Boy Color (coming soon)
 
-## Key Features
-- Runs entirely in the browser via WebAssembly (mGBA engine)
-- Supports both GBA and GBC ROMs (.gba, .zip, .gb, .gbc)
-- No software installation required
-- Save states with 10 slots (F5/F9/F7)
-- Auto-save every 30 seconds via IndexedDB
-- Fast forward (2x/4x speed)
-- Mobile touch controls
-- Custom keyboard controls
-- Drag-and-drop ROM upload
-- 25+ popular GBA and GBC games available for one-click play
-- ROM caching for instant repeat plays
+## Game Genres
+- RPG, Platformer, Action, Racing, Strategy, Fighting, Simulation, Puzzle, Horror, Sports, Adventure
 
-## How to Play
-1. Open https://www.eggermath.com/gba-emulator-web/
-2. Click a game from the library, or drag-and-drop your own .gba, .zip, .gb, or .gbc ROM file
-3. Use keyboard or touch controls to play
+## Game Series
+- Pokemon, Zelda, Mario, Kirby, Castlevania, Sonic, Metroid, Fire Emblem, Dragon Ball, Mega Man, Final Fantasy, Donkey Kong, Advance Wars, WarioWare, Golden Sun, Harvest Moon, Crash Bandicoot, GTA, Breath of Fire, Tales, Mana, Shining, Mega Man Battle Network, Bomberman, Star Fox, Smash Bros, Kid Icarus, Pac-Man, Rayman, Tony Hawk, Need for Speed, TMNT, LEGO Star Wars, SpongeBob, Shrek, Harry Potter, Resident Evil, Doom, Alone in the Dark, Simpsons
 
-## Keyboard Controls
-- D-Pad: WASD or Arrow Keys
-- A Button: K
-- B Button: J
-- L Shoulder: Q
-- R Shoulder: E
-- Start: Enter
-- Select: Right Shift
-- Save State: F5
-- Load State: F9
-- Switch Save Slot: F7
+## Game Developers
+- Game Freak, Nintendo, Capcom, Konami, Intelligent Systems, HAL Laboratory, Sonic Team, AlphaDream, Rare, Vicarious Visions, Camelot, Square Enix, Bandai, Hudson Soft, Now Production, Ubisoft, Rockstar Games, Marvelous, Namco, Pocketeers, Monster Games, CPS-II, Griptonite Games, Heavy Iron Studios, KnowWonder, Radical Entertainment, TOYS FOR BOB, Infogrames, id Software, Next Entertainment, LSA, ROM Hack
 
-## Blog
-Guides and tips about GBA emulation:
-- /blog/how-to-play-gba-games-in-browser.html
-- /blog/best-gba-rom-hacks-2026.html
-- /blog/top-25-best-gba-games.html
-- /blog/play-pokemon-fire-red-in-browser.html
-- /blog/gba-emulator-no-download.html
-- /blog/play-gba-games-on-pc-free.html
-- /blog/gba-emulator-save-states-explained.html
-- /blog/best-gba-games-speedrunning.html
-- /blog/gba-vs-gbc-difference.html
-- /blog/play-multiplayer-gba-online.html
+## Features
+- Play instantly in browser - no registration required
+- Mobile-friendly retro gaming experience
+- Detailed game descriptions and controls
+- Browse by console, genre, series, developer, or tag
 
-## Technical Details
-- Emulator engine: mGBA (compiled to WebAssembly)
-- License: MPL 2.0 (emulator engine)
-- Saves stored locally via IndexedDB (never uploaded)
-- Service worker for offline caching
-- Google Analytics: G-44ZYW1XML3
-- Hosted on Render
+## URL Structure
+- Games: https://www.eggermath.com/games/{slug}
+- Console: https://www.eggermath.com/game-consoles/{id}
+- Genres: https://www.eggermath.com/game-genres/{slug}
+- Series: https://www.eggermath.com/game-series/{slug}
+- Developers: https://www.eggermath.com/game-developer/{slug}
+- Tags: https://www.eggermath.com/game-tags/{slug}
+- Yearly: https://www.eggermath.com/yearly-games/{year}
 
-## Contact
-Email: htcprom@gmail.com
-Website: https://www.eggermath.com
-GitHub: https://github.com/rayanbaig796-crypto/eggermath
+Start playing now at https://www.eggermath.com

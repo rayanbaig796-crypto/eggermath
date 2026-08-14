@@ -3,7 +3,13 @@
   <url><loc>https://www.eggermath.com/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.eggermath.com/gba-emulator-web/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.eggermath.com/gameboy-advance/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/gba-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/gba-games/page-2.html</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/gba-games/page-3.html</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/gba-games/page-4.html</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/gba-games/page-5.html</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/gameboy-color/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.eggermath.com/gbc-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/pokemon-emerald.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/pokemon-firered.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/pokemon-leafgreen.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -18,9 +24,7 @@
   <url><loc>https://www.eggermath.com/games/mario-luigi-superstar-saga.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/classic-nes-super-mario-bros.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/metroid-fusion.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.eggermath.com/games/metroid-zero-mission.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/kirby-nightmare-in-dream-land.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.eggermath.com/games/kirby-amazing-mirror.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/castlevania-aria-of-sorrow.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/donkey-kong-country.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/fire-emblem-sacred-stones.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -29,6 +33,63 @@
   <url><loc>https://www.eggermath.com/games/harvest-moon-friends-of-mineral-town.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/crash-bandicoot-huge-adventure.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/games/gta-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/advance-wars.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/advance-wars-2-black-hole-rising.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/sonic-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/sonic-advance-2.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mega-man-zero.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mega-man-zero-2.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mega-man-zero-3.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/castlevania-harmony-of-dissonance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/castlevania-circle-of-the-moon.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/golden-sun.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/golden-sun-the-lost-age.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/final-fantasy-tactics-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/final-fantasy-1-2-dawn-of-souls.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/final-fantasy-iv-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/final-fantasy-v-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/final-fantasy-vi-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/warioware-mega-microgames.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/warioware-twisted.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/fire-emblem.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/kirby-amazing-mirror.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/yoshis-island.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/super-mario-advance-4.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/tony-hawks-pro-skater-2.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/tony-hawks-pro-skater-3.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/need-for-speed-underground.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mario-tennis-power-tour.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/pilotwings-resort.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/kid-icarus-uprising.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/star-fox-assault.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/super-smash-bros.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/metroid-zero-mission.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/sword-of-mana.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/shining-soul-ii.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/tales-of-phantasia.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/breath-of-fire.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/breath-of-fire-ii.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mario-vs-donkey-kong.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/lemmets.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/bomberman-tournament.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mega-man-battle-network-3.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/mega-man-battle-network-6.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/sonic-heroes.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/pac-man-world.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/rayman-advance.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/rayman-3.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/alone-in-the-dark.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/shrek-superslam.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/harry-potter-prisoner-of-azkaban.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/spongebob-battle-for-bikini-bottom.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/tmnt.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/lego-star-wars.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/simpsons-road-rage.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/pac-man-collection.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/harvest-moon-a-wonderful-life.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/dragon-ball-z-supersonic-warriors.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/resident-evil.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.eggermath.com/games/doom.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/genre/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/genre/rpg/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/genre/platformer/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
@@ -52,6 +113,35 @@
   <url><loc>https://www.eggermath.com/series/donkey-kong/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/series/crash-bandicoot/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/series/gta/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/advance-wars/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/alone-in-the-dark/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/bomberman/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/breath-of-fire/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/doom/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/final-fantasy/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/golden-sun/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/harry-potter/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/kid-icarus/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/lego-star-wars/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/lemmets/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/mana/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/mega-man-battle-network/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/mega-man-zero/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/need-for-speed/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/pac-man/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/pilotwings/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/rayman/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/resident-evil/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/shining/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/shrek/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/simpsons/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/smash-bros/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/spongebob/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/star-fox/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/tmnt/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/tales/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/tony-hawk/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/series/warioware/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/tags/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/tags/turn-based/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/exploration/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -82,7 +172,6 @@
   <url><loc>https://www.eggermath.com/tags/8-bit/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/atmospheric/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/metroidvania/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.eggermath.com/tags/speedrun/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/copy-abilities/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/soul-collection/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/gothic/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -104,6 +193,79 @@
   <url><loc>https://www.eggermath.com/tags/crime/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/missions/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/tags/action/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/military/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/single-player/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/boost/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/hard-difficulty/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/cyberpunk/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/card-system/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/djinn-system/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/epic-story/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/class-system/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/dungeon-crawling/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/retro/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/story-driven/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/job-system/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/microgames/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/party/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/crazy/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/fast-paced/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/tilt-controls/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/baby-mario/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/art-style/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/power-ups/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/skating/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/tricks/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/combo-system/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/sports/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/extreme-sports/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/customization/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/street-racing/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/nightlife/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/tennis/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/story-mode/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/power-shots/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/flight/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/simulation/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/shooter/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/platform-fighter/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/nintendo-characters/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/speedrun/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/co-op/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/fantasy/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/loot/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/real-time-combat/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/time-travel/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/dragon-transformation/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/base-building/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/puzzle/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/platforming/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/logic/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/cute/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/bombs/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/rpg-elements/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/net-battling/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/beast-out/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/team-play/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/adventure/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/collecting/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/beautiful/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/3D/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/horror/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/survival/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/mystery/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/movie-tie-in/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/magic/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/underwater/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/ninjas/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/lego/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/star-wars/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/maze/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/aerial-combat/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/survival-horror/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/zombies/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/first-person-shooter/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/tags/demons/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/developers/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/developers/game-freak/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/developers/nintendo/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -120,12 +282,34 @@
   <url><loc>https://www.eggermath.com/developers/alphadream/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/developers/lsa/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/developers/rom-hack/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/cps-ii/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/camelot/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/griptonite-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/heavy-iron-studios/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/hudson-soft/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/infogrames/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/knowwonder/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/monster-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/namco/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/next-entertainment/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/now-production/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/pocketeers/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/radical-entertainment/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/square-enix/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/toys-for-bob/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/ubisoft/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/developers/id-software/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/2004/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/2002/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/2023/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/2001/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/yearly-games/2003/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/yearly-games/2005/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/yearly-games/2006/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/yearly-games/2007/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/yearly-games/2011/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.eggermath.com/yearly-games/2012/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.eggermath.com/about.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.eggermath.com/contact.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.eggermath.com/privacy.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -155,4 +339,8 @@
   <url><loc>https://www.eggermath.com/blog/play-zelda-minish-cap-in-browser.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/blog/pokemon-fire-red-cheats.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.eggermath.com/blog/top-25-best-gba-games.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.eggermath.com/llms.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.eggermath.com/llms-full.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.eggermath.com/robots.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.eggermath.com/search-index.json</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>

@@ -1,40 +1,45 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.eggermath.com/sitemap.xml
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /games/roms/
+Disallow: /games/bios/
 
-# AI crawlers
-User-agent: GPTBot
-Allow: /
+User-Agent: GPTBot
 Allow: /llms.txt
+Disallow: /
 
-User-agent: ChatGPT-User
-Allow: /
+User-Agent: anthropic-ai
 Allow: /llms.txt
+Disallow: /
 
-User-agent: Google-Extended
-Allow: /
+User-Agent: Amazonbot
 Allow: /llms.txt
+Disallow: /
 
-User-agent: ClaudeBot
-Allow: /
+User-Agent: Bytespider
 Allow: /llms.txt
+Disallow: /
 
-User-agent: Anthropic-ai
-Allow: /
+User-Agent: CCBot
 Allow: /llms.txt
+Disallow: /
 
-User-agent: PerplexityBot
-Allow: /
+User-Agent: ChatGPT-User
 Allow: /llms.txt
+Disallow: /
 
-User-agent: YouBot
-Allow: /
+User-Agent: OAI-SearchBot
 Allow: /llms.txt
+Disallow: /
 
-User-agent: FacebookBot
-Allow: /
+User-Agent: Applebot
 Allow: /llms.txt
+Disallow: /
 
-User-agent: Bytespider
-Allow: /
+User-Agent: PerplexityBot
 Allow: /llms.txt
+Disallow: /
+
+LLM-Content: https://www.eggermath.com/llms.txt
+LLM-Full-Content: https://www.eggermath.com/llms-full.txt

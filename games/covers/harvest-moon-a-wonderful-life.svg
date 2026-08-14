@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="280" viewBox="0 0 200 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8ec9e8"/>
+      <stop offset="100%" stop-color="#f5fafd"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect x="1" y="1" width="198" height="278" rx="10" ry="10" fill="url(#bg)" stroke="#1a1a2e" stroke-width="2"/>
+  <rect x="10" y="8" width="180" height="20" rx="4" ry="4" fill="rgba(0,0,0,0.5)" filter="url(#shadow)"/>
+  <text x="100" y="21" text-anchor="middle" dominant-baseline="central" fill="#f0ebe0" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" letter-spacing="1">GAME BOY ADVANCE</text>
+    <text x="100" y="111" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" stroke="#000" stroke-width="0.5" paint-order="stroke">Harvest Moon: A</text>
+    <text x="100" y="133" text-anchor="middle" dominant-baseline="central" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" stroke="#000" stroke-width="0.5" paint-order="stroke">Wonderful Life</text>
+  <text x="100" y="161" text-anchor="middle" dominant-baseline="central" fill="rgba(255,255,255,0.85)" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" letter-spacing="0.5">2005  ·  Simulation</text>
+  <rect x="10" y="252" width="180" height="20" rx="4" ry="4" fill="rgba(196,163,90,0.85)" filter="url(#shadow)"/>
+  <text x="100" y="265" text-anchor="middle" dominant-baseline="central" fill="#161a13" font-family="Arial, Helvetica, sans-serif" font-size="9" font-weight="bold" letter-spacing="0.5">FREE TO PLAY</text>
+</svg>

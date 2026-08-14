@@ -1,0 +1,1287 @@
+# EggerMath.com - Free Online Retro Gaming - Full Catalog
+
+Play 80+ classic Game Boy Advance and Game Boy Color games online in your browser at https://www.eggermath.com
+
+## Supported Consoles
+- Game Boy Advance (72+ games)
+- Game Boy Color (8 games)
+
+## Game Genres
+- Action
+- Adventure
+- Fighting
+- Horror
+- Platformer
+- Puzzle
+- RPG
+- Racing
+- Simulation
+- Sports
+- Strategy
+
+## Game Series
+- Advance Wars
+- Alone in the Dark
+- Bomberman
+- Breath of Fire
+- Castlevania
+- Crash Bandicoot
+- Donkey Kong
+- Doom
+- Dragon Ball
+- Final Fantasy
+- Fire Emblem
+- GTA
+- Golden Sun
+- Harry Potter
+- Harvest Moon
+- Kid Icarus
+- Kirby
+- LEGO Star Wars
+- Lemmets
+- Mana
+- Mario
+- Mega Man Battle Network
+- Mega Man Zero
+- Metroid
+- Need for Speed
+- Pac-Man
+- Pilotwings
+- Pokemon
+- Rayman
+- Resident Evil
+- Shining
+- Shrek
+- Simpsons
+- Smash Bros
+- Sonic
+- SpongeBob
+- Star Fox
+- TMNT
+- Tales
+- Tony Hawk
+- WarioWare
+- Zelda
+
+## Game Developers
+- AlphaDream
+- Bandai
+- CPS-II
+- Camelot
+- Capcom
+- Game Freak
+- Griptonite Games
+- HAL Laboratory
+- Heavy Iron Studios
+- Hudson Soft
+- Infogrames
+- Intelligent Systems
+- KnowWonder
+- Konami
+- LSA
+- Marvelous
+- Monster Games
+- Namco
+- Next Entertainment
+- Nintendo
+- Now Production
+- Pocketeers
+- ROM Hack
+- Radical Entertainment
+- Rare
+- Rockstar Games
+- Sonic Team
+- Square Enix
+- TOYS FOR BOB
+- Ubisoft
+- Vicarious Visions
+- id Software
+
+## Game Tags
+- 3D
+- 8-bit
+- action
+- action RPG
+- action-adventure
+- adventure
+- aerial combat
+- all pokemon
+- anime
+- art style
+- atmospheric
+- baby mario
+- base building
+- beast out
+- beat em up
+- beautiful
+- bombs
+- boost
+- boss fights
+- card system
+- cartoonish
+- casual play
+- chaos emeralds
+- class system
+- classic
+- co-op
+- collecting
+- collection
+- combo attacks
+- combo system
+- copy abilities
+- crazy
+- crime
+- customization
+- cute
+- cyberpunk
+- dark story
+- demons
+- djinn system
+- dragon transformation
+- dungeon crawling
+- dungeons
+- epic story
+- exploration
+- extreme sports
+- fakemon
+- fantasy
+- farming
+- fast-paced
+- fighting
+- first-person shooter
+- flight
+- gothic
+- hard difficulty
+- horror
+- humor
+- job system
+- lego
+- life sim
+- logic
+- loot
+- magic
+- martial arts
+- maze
+- medieval
+- metroidvania
+- microgames
+- military
+- mine carts
+- missions
+- movie tie-in
+- multiplayer
+- mystery
+- net battling
+- nightlife
+- ninjas
+- nintendo characters
+- open world
+- party
+- permadeath
+- platform fighter
+- platforming
+- platforming precision
+- power shots
+- power-ups
+- puzzle
+- puzzle-solving
+- racing
+- real-time combat
+- relaxing
+- retro
+- retro 3D
+- rom hack
+- romance
+- rpg elements
+- secret exits
+- shooter
+- side-scrolling
+- simulation
+- single player
+- skating
+- soul collection
+- speed
+- speedrun
+- sports
+- star wars
+- story mode
+- story-driven
+- strategy
+- street racing
+- survival
+- survival horror
+- tactical RPG
+- team play
+- tennis
+- tilt controls
+- time travel
+- tricks
+- turn-based
+- underwater
+- vehicles
+- vibrant colors
+- zombies
+
+## All Games
+
+### Action Games
+
+## Metroid Fusion
+- URL: https://www.eggermath.com/games/metroid-fusion.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2002
+- Developer: Nintendo
+- Series: Metroid
+- Rating: 9.1/10 (129 ratings)
+- Official: yes
+- Description: Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites and confront the SA-X.
+- Controls: ↑↓←→ Move | A Jump | B Shoot | L Aim | R Missile
+- Tags: exploration, atmospheric, boss fights, metroidvania, side-scrolling
+
+## Castlevania: Aria of Sorrow
+- URL: https://www.eggermath.com/games/castlevania-aria-of-sorrow.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2003
+- Developer: Konami
+- Series: Castlevania
+- Rating: 9.0/10 (103 ratings)
+- Official: yes
+- Description: Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Backdash | R Soul Use
+- Tags: metroidvania, exploration, boss fights, soul collection, gothic
+
+## GTA Advance
+- URL: https://www.eggermath.com/games/gta-advance.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2004
+- Developer: Rockstar Games
+- Series: GTA
+- Rating: 8.0/10 (71 ratings)
+- Official: yes
+- Description: Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob.
+- Controls: ↑↓←→ Move | A Action | B Jump | Start Menu
+- Tags: open world, crime, vehicles, missions, action
+
+## Mega Man Zero
+- URL: https://www.eggermath.com/games/mega-man-zero.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2002
+- Developer: Capcom
+- Series: Mega Man Zero
+- Rating: 8.8/10 (87 ratings)
+- Official: yes
+- Description: Play Mega Man Zero online. Lead the resistance as Zero in this challenging action platformer. Features Z-Saber, Buster Shot, and shield mechanics.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Dash | R Guard
+- Tags: action, side-scrolling, boss fights, hard difficulty, cyberpunk
+
+## Mega Man Zero 2
+- URL: https://www.eggermath.com/games/mega-man-zero-2.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2003
+- Developer: Capcom
+- Series: Mega Man Zero
+- Rating: 8.9/10 (74 ratings)
+- Official: yes
+- Description: Play Mega Man Zero 2 online. Continue Zero's journey against the Copy X regime. Features new forms, EX Skills, and enhanced combo system.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Dash | R Guard
+- Tags: action, side-scrolling, boss fights, hard difficulty, cyberpunk
+
+## Mega Man Zero 3
+- URL: https://www.eggermath.com/games/mega-man-zero-3.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2004
+- Developer: Capcom
+- Series: Mega Man Zero
+- Rating: 9.0/10 (68 ratings)
+- Official: yes
+- Description: Play Mega Man Zero 3 online. Face the Einherjar warriors in this third installment. Features Cyber-elf system, Avida EX Skill, and multiple endings.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Dash | R Guard
+- Tags: action, side-scrolling, boss fights, hard difficulty, cyberpunk
+
+## Castlevania: Harmony of Dissonance
+- URL: https://www.eggermath.com/games/castlevania-harmony-of-dissonance.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2002
+- Developer: Konami
+- Series: Castlevania
+- Rating: 8.5/10 (82 ratings)
+- Official: yes
+- Description: Play Castlevania Harmony of Dissonance online. Explore Dracula's castle as Juste Belmont. Features two castles, spell system, and magic-driven combat.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Backdash | R Magic
+- Tags: metroidvania, exploration, boss fights, gothic, side-scrolling
+
+## Castlevania: Circle of the Moon
+- URL: https://www.eggermath.com/games/castlevania-circle-of-the-moon.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2001
+- Developer: Konami
+- Series: Castlevania
+- Rating: 8.3/10 (71 ratings)
+- Official: yes
+- Description: Play Castlevania Circle of the Moon online. Fight through Dracula's castle as Nathan Graves. Features Dual Set-up System combining Action and Magic cards.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Backdash | R Card Combo
+- Tags: metroidvania, exploration, boss fights, gothic, card system
+
+## WarioWare, Inc.: Mega Microgame$!
+- URL: https://www.eggermath.com/games/warioware-mega-microgames.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2003
+- Developer: Nintendo
+- Series: WarioWare
+- Rating: 8.4/10 (67 ratings)
+- Official: yes
+- Description: Play WarioWare Mega Microgames online. Experience over 200 microgames that last just seconds each. Features Wario and friends in absurd rapid-fire challenges.
+- Controls: ↑↓←→ A Various | B Various | L/R Various | Start Pause
+- Tags: microgames, party, humor, crazy, fast-paced
+
+## WarioWare Twisted!
+- URL: https://www.eggermath.com/games/warioware-twisted.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2004
+- Developer: Nintendo
+- Series: WarioWare
+- Rating: 8.7/10 (54 ratings)
+- Official: yes
+- Description: Play WarioWare Twisted online. Features motion-controlled microgames using the GBA-012 rumble pak accelerometer. Over 200 microgames with tilt mechanics.
+- Controls: Tilt controls | A Confirm | B Cancel | Start Pause
+- Tags: microgames, party, tilt controls, humor, crazy
+
+## Kid Icarus: Uprising
+- URL: https://www.eggermath.com/games/kid-icarus-uprising.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2012
+- Developer: Nintendo
+- Series: Kid Icarus
+- Rating: 8.5/10 (78 ratings)
+- Official: yes
+- Description: Play Kid Icarus Uprising online. Pit returns in this vertical shooter/action hybrid. Features air and ground combat, weapons system, and multiplayer.
+- Controls: ↑↓←→ Aim | A Shoot | B Dodge | L Shield | R Special
+- Tags: shooter, flight, action, humor, boss fights
+
+## Star Fox: Assault
+- URL: https://www.eggermath.com/games/star-fox-assault.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2005
+- Developer: Namco
+- Series: Star Fox
+- Rating: 7.8/10 (45 ratings)
+- Official: yes
+- Description: Play Star Fox Assault online. Join Fox McCloud against the Anglar Empire. Features on-rails Arwing sections and on-foot combat segments.
+- Controls: ↑↓←→ Steer | A Fire | B Bomb | L Barrel Roll | R Boost
+- Tags: shooter, flight, vehicles, boss fights, multiplayer
+
+## Metroid: Zero Mission
+- URL: https://www.eggermath.com/games/metroid-zero-mission.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2004
+- Developer: Nintendo
+- Series: Metroid
+- Rating: 8.9/10 (88 ratings)
+- Official: yes
+- Description: Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes and defeat Mother Brain.
+- Controls: ↑↓←→ Move | A Jump | B Shoot | L Aim | R Missile
+- Tags: exploration, metroidvania, boss fights, side-scrolling, speedrun
+
+## Bomberman Tournament
+- URL: https://www.eggermath.com/games/bomberman-tournament.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2001
+- Developer: Hudson Soft
+- Series: Bomberman
+- Rating: 8.0/10 (56 ratings)
+- Official: yes
+- Description: Play Bomberman Tournament online. Features RPG elements with over 30 worlds to explore, new bomb types, and online multiplayer battles.
+- Controls: ↑↓←→ Move | A Bomb | B Kick | L Remote Detonate | R Shield
+- Tags: action, strategy, bombs, multiplayer, rpg elements
+
+## Teenage Mutant Ninja Turtles
+- URL: https://www.eggermath.com/games/tmnt.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2003
+- Developer: Konami
+- Series: TMNT
+- Rating: 7.5/10 (38 ratings)
+- Official: yes
+- Description: Play TMNT online. Fight as the four turtles through New York City. Features unique moves for each turtle and co-op play.
+- Controls: ↑↓←→ Move | A Attack | B Jump | L Special | R Switch Turtle
+- Tags: beat em up, fighting, multiplayer, ninjas, action
+
+## LEGO Star Wars: The Video Game
+- URL: https://www.eggermath.com/games/lego-star-wars.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2005
+- Developer: Griptonite Games
+- Series: LEGO Star Wars
+- Rating: 7.8/10 (67 ratings)
+- Official: yes
+- Description: Play LEGO Star Wars online. Relive the prequel trilogy in LEGO form. Features 12 playable characters, stud collecting, and lightsaber combat.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Force Power | R Switch Character
+- Tags: action, platforming, collecting, lego, star wars
+
+## Doom
+- URL: https://www.eggermath.com/games/doom.html
+- Platform: Game Boy Advance
+- Genre: Action
+- Year: 2001
+- Developer: id Software
+- Series: Doom
+- Rating: 7.8/10 (78 ratings)
+- Official: yes
+- Description: Play Doom online. The GBA port of the classic FPS. Features 22 levels, multiple weapons, and endless demon-slaying action.
+- Controls: ↑↓←→ Move | A Shoot | B Strafe | L Alt Fire | R Map
+- Tags: first-person shooter, horror, demons, retro, hard difficulty
+
+### Adventure Games
+
+## Zelda: Minish Cap
+- URL: https://www.eggermath.com/games/zelda-minish-cap.html
+- Platform: Game Boy Advance
+- Genre: Adventure
+- Year: 2004
+- Developer: Capcom
+- Series: Zelda
+- Rating: 9.1/10 (134 ratings)
+- Official: yes
+- Description: Play Zelda Minish Cap online in your browser. Help Link shrink to Minish size and explore Hyrule from a new perspective. Features the Gust Jar, Mole Mitts, and the ability to fuse Kinstones with NPCs.
+- Controls: ↑↓←→ Move | A Sword | B Item | L/R Assign Items | Start Pause
+- Tags: action-adventure, puzzle-solving, exploration, boss fights, cartoonish
+
+## Zelda: A Link to the Past
+- URL: https://www.eggermath.com/games/zelda-link-to-the-past.html
+- Platform: Game Boy Advance
+- Genre: Adventure
+- Year: 2002
+- Developer: Nintendo
+- Series: Zelda
+- Rating: 9.0/10 (112 ratings)
+- Official: yes
+- Description: Play Zelda A Link to the Past online. The GBA port of the SNES classic featuring both the original Light/Dark World adventure and the new Four Swords multiplayer mode.
+- Controls: ↑↓←→ Move | A Attack | B Item | Start Map | Select Item Switch
+- Tags: action-adventure, puzzle-solving, exploration, boss fights, dungeons
+
+## Alone in the Dark
+- URL: https://www.eggermath.com/games/alone-in-the-dark.html
+- Platform: Game Boy Advance
+- Genre: Adventure
+- Year: 2001
+- Developer: Infogrames
+- Series: Alone in the Dark
+- Rating: 7.2/10 (28 ratings)
+- Official: yes
+- Description: Play Alone in the Dark online. A prequel to the PS2 game. Investigate a haunted mansion with puzzles and limited resources.
+- Controls: ↑↓←→ Move | A Interact | B Run | L Inventory | R Flashlight
+- Tags: horror, survival, puzzle-solving, mystery, atmospheric
+
+## Harry Potter and the Prisoner of Azkaban
+- URL: https://www.eggermath.com/games/harry-potter-prisoner-of-azkaban.html
+- Platform: Game Boy Advance
+- Genre: Adventure
+- Year: 2004
+- Developer: KnowWonder
+- Series: Harry Potter
+- Rating: 7.5/10 (45 ratings)
+- Official: yes
+- Description: Play Harry Potter Prisoner of Azkaban online. Play as Harry, Ron, and Hermione through Hogwarts and the Forbidden Forest. Features spell-casting and Quidditch.
+- Controls: ↑↓←→ Move | A Interact | B Cast Spell | L Map | R Menu
+- Tags: adventure, magic, exploration, story-driven, movie tie-in
+
+### Fighting Games
+
+## Dragon Ball: Advanced Adventure
+- URL: https://www.eggermath.com/games/dragon-ball-advanced-adventure.html
+- Platform: Game Boy Advance
+- Genre: Fighting
+- Year: 2004
+- Developer: Bandai
+- Series: Dragon Ball
+- Rating: 8.2/10 (67 ratings)
+- Official: yes
+- Description: Play Dragon Ball Advanced Adventure online. Relive the original Dragon Ball saga as young Goku. Fight through 100+ missions.
+- Controls: ↑↓←→ Move | A Attack | B Jump | L Ki | R Special
+- Tags: fighting, beat em up, boss fights, anime, martial arts
+
+## Super Smash Bros.
+- URL: https://www.eggermath.com/games/super-smash-bros.html
+- Platform: Game Boy Advance
+- Genre: Fighting
+- Year: 2001
+- Developer: Nintendo
+- Series: Smash Bros
+- Rating: 9.0/10 (167 ratings)
+- Official: yes
+- Description: Play Super Smash Bros online. The GBA entry in the legendary crossover fighting series. Features 12 Nintendo characters, 14 stages, and multiplayer.
+- Controls: ↑↓←→ Move | A Attack | B Special | L Shield | R Grab
+- Tags: fighting, platform fighter, multiplayer, nintendo characters, party
+
+## Shrek SuperSlam
+- URL: https://www.eggermath.com/games/shrek-superslam.html
+- Platform: Game Boy Advance
+- Genre: Fighting
+- Year: 2004
+- Developer: TOYS FOR BOB
+- Series: Shrek
+- Rating: 7.0/10 (32 ratings)
+- Official: yes
+- Description: Play Shrek SuperSlam online. Fight as Shrek characters in this wrestling-style fighter. Features 10 characters and story mode.
+- Controls: ↑↓←→ Move | A Attack | B Grab | L Special | R Ultimate
+- Tags: fighting, multiplayer, movie tie-in, casual play, party
+
+## Dragon Ball Z: Supersonic Warriors
+- URL: https://www.eggermath.com/games/dragon-ball-z-supersonic-warriors.html
+- Platform: Game Boy Advance
+- Genre: Fighting
+- Year: 2004
+- Developer: CPS-II
+- Series: Dragon Ball
+- Rating: 7.8/10 (56 ratings)
+- Official: yes
+- Description: Play Dragon Ball Z Supersonic Warriors online. Fight through the Saiyan Saga to Buu Saga. Features aerial combat, transformations, and team battles.
+- Controls: ↑↓←→ Move | A Attack | B Ki Blast | L Special | R Transform
+- Tags: fighting, anime, story mode, aerial combat, martial arts
+
+### Horror Games
+
+## Resident Evil
+- URL: https://www.eggermath.com/games/resident-evil.html
+- Platform: Game Boy Advance
+- Genre: Horror
+- Year: 2002
+- Developer: Capcom
+- Series: Resident Evil
+- Rating: 8.2/10 (67 ratings)
+- Official: yes
+- Description: Play Resident Evil online. The GBA port of the PS1 classic. Fight zombies in the Spencer Mansion with limited resources and tense atmosphere.
+- Controls: ↑↓←→ Move | A Shoot | B Run | L Inventory | R Map
+- Tags: survival horror, puzzle-solving, atmospheric, exploration, zombies
+
+### Platformer Games
+
+## Super Mario World
+- URL: https://www.eggermath.com/games/super-mario-world.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: Nintendo
+- Series: Mario
+- Rating: 9.0/10 (143 ratings)
+- Official: yes
+- Description: Play Super Mario World online. The GBA port of the SNES classic featuring Yoshi, secret exits, and 96 levels. Explore Dinosaur Land and rescue Princess Peach from Bowser.
+- Controls: ↑↓←→ Move | A Jump | B Run | L/Y Spin Jump
+- Tags: platforming precision, side-scrolling, boss fights, secret exits, cartoonish
+
+## Classic NES: Super Mario Bros
+- URL: https://www.eggermath.com/games/classic-nes-super-mario-bros.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2004
+- Developer: Nintendo
+- Series: Mario
+- Rating: 8.2/10 (56 ratings)
+- Official: yes
+- Description: Play Classic NES Super Mario Bros online. The original 1985 platformer ported to GBA. Run, jump, and stomp through 32 levels across 8 worlds.
+- Controls: ↑↓←→ Move | A Jump | B Run
+- Tags: platforming precision, side-scrolling, classic, 8-bit, cartoonish
+
+## Kirby: Nightmare in Dream Land
+- URL: https://www.eggermath.com/games/kirby-nightmare-in-dream-land.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: HAL Laboratory
+- Series: Kirby
+- Rating: 8.7/10 (84 ratings)
+- Official: yes
+- Description: Play Kirby Nightmare in Dream Land online. Help Kirby reclaim the Dream Rod from King Dedede. Copy enemy abilities and float through colorful levels.
+- Controls: ↑↓←→ Move | A Jump | B Inhale/Copy | Start Pause
+- Tags: platforming precision, copy abilities, boss fights, casual play, cartoonish
+
+## Donkey Kong Country
+- URL: https://www.eggermath.com/games/donkey-kong-country.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2003
+- Developer: Rare
+- Series: Donkey Kong
+- Rating: 8.8/10 (92 ratings)
+- Official: yes
+- Description: Play Donkey Kong Country online. The GBA port of the SNES classic. Swing on vines, ride mine carts, and defeat King K. Rool.
+- Controls: ↑↓←→ Move | A Jump | B Roll | L/Y Switch Character
+- Tags: platforming precision, side-scrolling, mine carts, boss fights, vibrant colors
+
+## Sonic Advance 3
+- URL: https://www.eggermath.com/games/sonic-advance-3.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2004
+- Developer: Sonic Team
+- Series: Sonic
+- Rating: 8.1/10 (58 ratings)
+- Official: yes
+- Description: Play Sonic Advance 3 online in your browser. Race through 7 zones as Sonic, Tails, Knuckles, or Amy.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L/Y Switch Character
+- Tags: platforming precision, speed, side-scrolling, boss fights, chaos emeralds
+
+## Crash Bandicoot
+- URL: https://www.eggermath.com/games/crash-bandicoot-huge-adventure.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: Vicarious Visions
+- Series: Crash Bandicoot
+- Rating: 8.0/10 (49 ratings)
+- Official: yes
+- Description: Play Crash Bandicoot online. Help Crash shrink down to micro-size and battle the mutant insects of Cortex.
+- Controls: ↑↓←→ Move | A Jump | B Spin | Start Pause
+- Tags: platforming precision, side-scrolling, boss fights, cartoonish, casual play
+
+## Sonic Advance
+- URL: https://www.eggermath.com/games/sonic-advance.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2001
+- Developer: Sonic Team
+- Series: Sonic
+- Rating: 8.5/10 (78 ratings)
+- Official: yes
+- Description: Play Sonic Advance online. Race through 7 zones as Sonic, Tails, Knuckles, or Amy. Features spin dash, homing attack, and Chao garden.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L/Y Special
+- Tags: platforming precision, speed, side-scrolling, boss fights, chaos emeralds
+
+## Sonic Advance 2
+- URL: https://www.eggermath.com/games/sonic-advance-2.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: Sonic Team
+- Series: Sonic
+- Rating: 8.3/10 (65 ratings)
+- Official: yes
+- Description: Play Sonic Advance 2 online. Blaze through 7 zones at high speed. Features boost mechanic, trick actions, and Cream the Rabbit as a playable character.
+- Controls: ↑↓←→ Move | A Jump | B Boost | Start Pause
+- Tags: platforming precision, speed, side-scrolling, boost, boss fights
+
+## Kirby & the Amazing Mirror
+- URL: https://www.eggermath.com/games/kirby-amazing-mirror.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2004
+- Developer: HAL Laboratory
+- Series: Kirby
+- Rating: 8.4/10 (61 ratings)
+- Official: yes
+- Description: Play Kirby and the Amazing Mirror online. Explore the mirror world with 4 Kirbys, copy 12 abilities, and collect 900 stars.
+- Controls: ↑↓←→ Move | A Jump | B Inhale/Copy | Start Map
+- Tags: metroidvania, copy abilities, multiplayer, exploration, cartoonish
+
+## Yoshi's Island: Super Mario Advance 3
+- URL: https://www.eggermath.com/games/yoshis-island.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: Nintendo
+- Series: Mario
+- Rating: 9.1/10 (112 ratings)
+- Official: yes
+- Description: Play Yoshi's Island online. The GBA port of the SNES classic. Carry Baby Mario through 6 worlds of hand-drawn levels.
+- Controls: ↑↓←→ Move | A Jump | B Throw | L Flutter Kick | R Aim
+- Tags: platforming precision, side-scrolling, baby mario, art style, boss fights
+
+## Super Mario Advance 4: Super Mario Bros 3
+- URL: https://www.eggermath.com/games/super-mario-advance-4.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2003
+- Developer: Nintendo
+- Series: Mario
+- Rating: 8.8/10 (95 ratings)
+- Official: yes
+- Description: Play Super Mario Advance 4 online. The GBA remake of Super Mario Bros 3 with new levels, power-ups, and e-Reader support.
+- Controls: ↑↓←→ Move | A Jump | B Run | L/Y Raccoon Suit
+- Tags: platforming precision, side-scrolling, power-ups, secret exits, cartoonish
+
+## Sonic Heroes
+- URL: https://www.eggermath.com/games/sonic-heroes.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2004
+- Developer: Sonic Team
+- Series: Sonic
+- Rating: 7.8/10 (56 ratings)
+- Official: yes
+- Description: Play Sonic Heroes online. Switch between 3 team members on the fly through 14 zones. Features Team Sonic, Team Dark, Team Rose, and Team Chaotix.
+- Controls: ↑↓←→ Move | A Jump | B Team Blast | L Switch Leader | R Formation
+- Tags: platforming precision, speed, team play, side-scrolling, boss fights
+
+## Pac-Man World
+- URL: https://www.eggermath.com/games/pac-man-world.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2002
+- Developer: Now Production
+- Series: Pac-Man
+- Rating: 7.6/10 (38 ratings)
+- Official: yes
+- Description: Play Pac-Man World online. Help Pac-Man rescue his friends from the Ghosts. Features platforming, puzzles, and maze sections.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Roll | R Power Pellet
+- Tags: platforming, adventure, collecting, cartoonish, casual play
+
+## Rayman Advance
+- URL: https://www.eggermath.com/games/rayman-advance.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2001
+- Developer: Ubisoft
+- Series: Rayman
+- Rating: 8.2/10 (54 ratings)
+- Official: yes
+- Description: Play Rayman Advance online. The GBA port of the PS1 classic. Guide Rayman through 60 levels collecting Electoons and defeating Mr. Dark.
+- Controls: ↑↓←→ Move | A Jump | B Punch | L Hair Fist | R Hover
+- Tags: platforming precision, side-scrolling, collecting, beautiful, boss fights
+
+## Rayman 3
+- URL: https://www.eggermath.com/games/rayman-3.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2003
+- Developer: Ubisoft
+- Series: Rayman
+- Rating: 7.8/10 (42 ratings)
+- Official: yes
+- Description: Play Rayman 3 online. The GBA version of the PS2 platformer. Features new power-ups, 60 levels, and a humorous storyline.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Power-up | R Lums
+- Tags: platforming, 3D, adventure, humor, collecting
+
+## SpongeBob SquarePants: Battle for Bikini Bottom
+- URL: https://www.eggermath.com/games/spongebob-battle-for-bikini-bottom.html
+- Platform: Game Boy Advance
+- Genre: Platformer
+- Year: 2003
+- Developer: Heavy Iron Studios
+- Series: SpongeBob
+- Rating: 7.8/10 (56 ratings)
+- Official: yes
+- Description: Play SpongeBob Battle for Bikini Bottom online. Defeat Plankton's robot army across Bikini Bottom. Features 3 playable characters and collectibles.
+- Controls: ↑↓←→ Move | A Jump | B Attack | L Special | R Switch Character
+- Tags: platforming, collecting, humor, cartoonish, underwater
+
+### Puzzle Games
+
+## Mario vs. Donkey Kong
+- URL: https://www.eggermath.com/games/mario-vs-donkey-kong.html
+- Platform: Game Boy Advance
+- Genre: Puzzle
+- Year: 2004
+- Developer: Nintendo
+- Series: Mario
+- Rating: 8.1/10 (45 ratings)
+- Official: yes
+- Description: Play Mario vs Donkey Kong online. Guide Mario through puzzle-platform levels to recover stolen Mini-Marios. Features 100+ levels and a level editor.
+- Controls: ↑↓←→ Move | A Jump | B Run | L/R Dash
+- Tags: puzzle, platforming, logic, single player, casual play
+
+## Lemmets
+- URL: https://www.eggermath.com/games/lemmets.html
+- Platform: Game Boy Advance
+- Genre: Puzzle
+- Year: 2006
+- Developer: Ubisoft
+- Series: Lemmets
+- Rating: 7.5/10 (32 ratings)
+- Official: yes
+- Description: Play Lemmets online. Guide cute lemmets through dangerous levels by assigning them jobs. Features physics-based puzzles and multiple tools.
+- Controls: ↑↓←→ Select | A Assign Job | B Cancel | Start Menu
+- Tags: puzzle, strategy, cute, casual play, logic
+
+## Pac-Man Collection
+- URL: https://www.eggermath.com/games/pac-man-collection.html
+- Platform: Game Boy Advance
+- Genre: Puzzle
+- Year: 2001
+- Developer: Namco
+- Series: Pac-Man
+- Rating: 7.8/10 (43 ratings)
+- Official: yes
+- Description: Play Pac-Man Collection online. Includes 4 classic Pac-Man games: Pac-Man, Pac-Mania, Pac-Attack, and Pac-Man Arrangement.
+- Controls: ↑↓←→ Move | A Action | B Cancel | Start Pause
+- Tags: maze, classic, casual play, collecting, retro
+
+### RPG Games
+
+## Pokemon Emerald
+- URL: https://www.eggermath.com/games/pokemon-emerald.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2004
+- Developer: Game Freak
+- Series: Pokemon
+- Rating: 9.2/10 (187 ratings)
+- Official: yes
+- Description: Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities. One of the best GBA RPGs ever made.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: turn-based, exploration, collection, strategy, cartoonish, vibrant colors
+
+## Pokemon FireRed
+- URL: https://www.eggermath.com/games/pokemon-firered.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2004
+- Developer: Game Freak
+- Series: Pokemon
+- Rating: 9.0/10 (152 ratings)
+- Official: yes
+- Description: Play Pokemon FireRed online. An enhanced remake of Pokemon Red for GBA with updated graphics, abilities, and the Sevii Islands post-game. Explore Kanto, collect all 151 original Pokemon, and become Pokemon Champion.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: turn-based, exploration, collection, retro 3D, cartoonish
+
+## Pokemon LeafGreen
+- URL: https://www.eggermath.com/games/pokemon-leafgreen.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2004
+- Developer: Game Freak
+- Series: Pokemon
+- Rating: 8.8/10 (98 ratings)
+- Official: yes
+- Description: Play Pokemon LeafGreen online in your browser. The counterpart to FireRed featuring Pokemon Green exclusives. Explore Kanto with updated graphics, new mechanics like abilities and natures, and the Sevii Islands.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: turn-based, exploration, collection, cartoonish
+
+## Pokemon Ruby
+- URL: https://www.eggermath.com/games/pokemon-ruby.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2002
+- Developer: Game Freak
+- Series: Pokemon
+- Rating: 8.7/10 (121 ratings)
+- Official: yes
+- Description: Play Pokemon Ruby online. Journey through the Hoenn region, catch 135 new Pokemon, and stop Team Magma from expanding the land. Features double battles, Pokemon Contests, and the Battle Tower.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: turn-based, exploration, collection, vibrant colors
+
+## Pokemon Sapphire
+- URL: https://www.eggermath.com/games/pokemon-sapphire.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2002
+- Developer: Game Freak
+- Series: Pokemon
+- Rating: 8.7/10 (87 ratings)
+- Official: yes
+- Description: Play Pokemon Sapphire online in your browser. The counterpart to Ruby featuring Team Aqua and exclusive Pokemon. Explore Hoenn, master double battles, and challenge the Battle Tower.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: turn-based, exploration, collection, vibrant colors
+
+## Pokemon Ultra Violet
+- URL: https://www.eggermath.com/games/pokemon-ultra-violet.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2023
+- Developer: LSA
+- Series: Pokemon
+- Rating: 8.5/10 (64 ratings)
+- Official: no
+- Description: Play Pokemon Ultra Violet online. A FireRed ROM hack featuring all Pokemon from Gen 1-3 in one game. Catch every Pokemon without trading, explore expanded Sevii Islands, and enjoy quality-of-life improvements.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: rom hack, turn-based, exploration, collection, all pokemon
+
+## Pokemon Jupiter
+- URL: https://www.eggermath.com/games/pokemon-jupiter.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2023
+- Developer: ROM Hack
+- Series: Pokemon
+- Rating: 8.3/10 (41 ratings)
+- Official: no
+- Description: Play Pokemon Jupiter online. A Ruby ROM hack set in the Oxalis region with 200+ new fakemon, custom story, and updated mechanics. Features a darker narrative and challenging gym battles.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | Select Pokédex
+- Tags: rom hack, fakemon, turn-based, exploration, dark story
+
+## Mario & Luigi: Superstar Saga
+- URL: https://www.eggermath.com/games/mario-luigi-superstar-saga.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2003
+- Developer: AlphaDream
+- Series: Mario
+- Rating: 8.9/10 (78 ratings)
+- Official: yes
+- Description: Play Mario & Luigi Superstar Saga online. An action RPG where Mario and Luigi travel to the Beanbean Kingdom. Features timing-based combat, Bros. Attacks, and humorous dialogue.
+- Controls: ↑↓←→ Move | A Action | B Jump | Start Menu | Select Bros. Move
+- Tags: turn-based, action RPG, humor, combo attacks, cartoonish
+
+## Golden Sun
+- URL: https://www.eggermath.com/games/golden-sun.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2001
+- Developer: Camelot
+- Series: Golden Sun
+- Rating: 8.9/10 (134 ratings)
+- Official: yes
+- Description: Play Golden Sun online. Journey as Isaac to prevent the destruction of Weyard. Features the Djinn summon system, elemental puzzles, and detailed GBA graphics.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | R Djinn
+- Tags: turn-based, exploration, puzzle-solving, djinn system, epic story
+
+## Golden Sun: The Lost Age
+- URL: https://www.eggermath.com/games/golden-sun-the-lost-age.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2002
+- Developer: Camelot
+- Series: Golden Sun
+- Rating: 9.0/10 (112 ratings)
+- Official: yes
+- Description: Play Golden Sun The Lost Age online. Continue the saga as Felix. Features larger world, more Djinn, and password system linking to the first game.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu | R Djinn
+- Tags: turn-based, exploration, puzzle-solving, djinn system, epic story
+
+## Final Fantasy I & II: Dawn of Souls
+- URL: https://www.eggermath.com/games/final-fantasy-1-2-dawn-of-souls.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2004
+- Developer: Square Enix
+- Series: Final Fantasy
+- Rating: 7.8/10 (89 ratings)
+- Official: yes
+- Description: Play Final Fantasy I & II Dawn of Souls online. Enhanced GBA ports of the first two Final Fantasy games with new content, improved graphics, and save-anywhere feature.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, dungeon crawling, classic, retro
+
+## Final Fantasy IV Advance
+- URL: https://www.eggermath.com/games/final-fantasy-iv-advance.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2005
+- Developer: Square Enix
+- Series: Final Fantasy
+- Rating: 8.5/10 (98 ratings)
+- Official: yes
+- Description: Play Final Fantasy IV Advance online. The enhanced GBA port of the SNES classic. Features Cecil, Kain, and Rosa in a story of crystals, betrayal, and redemption.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, story-driven, classic, retro
+
+## Final Fantasy V Advance
+- URL: https://www.eggermath.com/games/final-fantasy-v-advance.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2006
+- Developer: Square Enix
+- Series: Final Fantasy
+- Rating: 8.6/10 (87 ratings)
+- Official: yes
+- Description: Play Final Fantasy V Advance online. The GBA port featuring the iconic Job System with 22 jobs. Features bonus content and improved translation.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, job system, classic, retro
+
+## Final Fantasy VI Advance
+- URL: https://www.eggermath.com/games/final-fantasy-vi-advance.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2007
+- Developer: Square Enix
+- Series: Final Fantasy
+- Rating: 9.0/10 (156 ratings)
+- Official: yes
+- Description: Play Final Fantasy VI Advance online. The GBA port of the beloved SNES classic. Features Terra, Celes, and the ensemble cast fighting Kefka.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, story-driven, classic, retro
+
+## Sword of Mana
+- URL: https://www.eggermath.com/games/sword-of-mana.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2003
+- Developer: Square Enix
+- Series: Mana
+- Rating: 7.8/10 (56 ratings)
+- Official: yes
+- Description: Play Sword of Mana online. A remake of Final Fantasy Adventure. Features real-time combat, two playable characters, and co-op mode.
+- Controls: ↑↓←→ Move | A Attack | B Jump | L Menu | R Magic
+- Tags: action RPG, exploration, co-op, fantasy, retro
+
+## Shining Soul II
+- URL: https://www.eggermath.com/games/shining-soul-ii.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2003
+- Developer: Next Entertainment
+- Series: Shining
+- Rating: 7.9/10 (43 ratings)
+- Official: yes
+- Description: Play Shining Soul II online. A hack-and-slash action RPG with 8 character classes and online multiplayer support. Features random dungeons and loot.
+- Controls: ↑↓←→ Move | A Attack | B Skill | L Menu | R Map
+- Tags: action RPG, dungeon crawling, multiplayer, fantasy, loot
+
+## Tales of Phantasia
+- URL: https://www.eggermath.com/games/tales-of-phantasia.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2003
+- Developer: Namco
+- Series: Tales
+- Rating: 8.6/10 (78 ratings)
+- Official: yes
+- Description: Play Tales of Phantasia online. The GBA port of the SNES RPG classic. Features real-time combat system, 4 characters, and a story spanning 4 time periods.
+- Controls: ↑↓←→ Move | A Attack | B Artes | L Menu | R Guard
+- Tags: action RPG, real-time combat, anime, story-driven, time travel
+
+## Breath of Fire
+- URL: https://www.eggermath.com/games/breath-of-fire.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2001
+- Developer: Capcom
+- Series: Breath of Fire
+- Rating: 8.2/10 (54 ratings)
+- Official: yes
+- Description: Play Breath of Fire online. The GBA port of the SNES RPG. Play as Ryu, a boy who can transform into a dragon. Features fishing minigame and party system.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, dragon transformation, fantasy, retro
+
+## Breath of Fire II
+- URL: https://www.eggermath.com/games/breath-of-fire-ii.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2001
+- Developer: Capcom
+- Series: Breath of Fire
+- Rating: 8.3/10 (48 ratings)
+- Official: yes
+- Description: Play Breath of Fire II online. Features Ryu searching for his lost sister, a town-building system, and the dragon transformation mechanic.
+- Controls: ↑↓←→ Move | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, exploration, dragon transformation, fantasy, base building
+
+## Mega Man Battle Network 3
+- URL: https://www.eggermath.com/games/mega-man-battle-network-3.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2003
+- Developer: Capcom
+- Series: Mega Man Battle Network
+- Rating: 8.8/10 (92 ratings)
+- Official: yes
+- Description: Play Mega Man Battle Network 3 online. Features real-time combat with chip system, 300+ battle chips, and both versions with exclusive content.
+- Controls: ↑↓←→ Move | A Shoot | B Chip | L Panel Shift | R Lock On
+- Tags: action RPG, real-time combat, card system, cyberpunk, net battling
+
+## Mega Man Battle Network 6
+- URL: https://www.eggermath.com/games/mega-man-battle-network-6.html
+- Platform: Game Boy Advance
+- Genre: RPG
+- Year: 2006
+- Developer: Capcom
+- Series: Mega Man Battle Network
+- Rating: 8.7/10 (78 ratings)
+- Official: yes
+- Description: Play Mega Man Battle Network 6 online. The final chapter featuring Cross System and Beast Out transformations. Two versions with exclusive NetNavis.
+- Controls: ↑↓←→ Move | A Shoot | B Chip | L Beast Out | R Cross
+- Tags: action RPG, real-time combat, beast out, cyberpunk, net battling
+
+### Racing Games
+
+## Mario Kart Super Circuit
+- URL: https://www.eggermath.com/games/mario-kart-super-circuit.html
+- Platform: Game Boy Advance
+- Genre: Racing
+- Year: 2001
+- Developer: Nintendo
+- Series: Mario
+- Rating: 8.6/10 (95 ratings)
+- Official: yes
+- Description: Play Mario Kart Super Circuit online in your browser. The first portable Mario Kart featuring 20 tracks from Super Mario Kart (SNES) plus 20 new courses. Drift, use items, and race.
+- Controls: ↑↓←→ Steer | A Accelerate | B Item | L Drift | R Item Use
+- Tags: racing, multiplayer, vehicles, casual play, vibrant colors
+
+## Need for Speed: Underground
+- URL: https://www.eggermath.com/games/need-for-speed-underground.html
+- Platform: Game Boy Advance
+- Genre: Racing
+- Year: 2003
+- Developer: Pocketeers
+- Series: Need for Speed
+- Rating: 8.0/10 (54 ratings)
+- Official: yes
+- Description: Play Need for Speed Underground online. Street race through Olympic City with 20+ customizable cars. Features drag, circuit, and sprint races.
+- Controls: ↑↓←→ Steer | A Accelerate | B Brake | L Nitrous | R Camera
+- Tags: racing, customization, street racing, vehicles, nightlife
+
+## The Simpsons: Road Rage
+- URL: https://www.eggermath.com/games/simpsons-road-rage.html
+- Platform: Game Boy Advance
+- Genre: Racing
+- Year: 2002
+- Developer: Radical Entertainment
+- Series: Simpsons
+- Rating: 7.2/10 (34 ratings)
+- Official: yes
+- Description: Play Simpsons Road Rage online. Drive through Springfield as Homer, Bart, Marge, or Lisa. Features open world exploration and races.
+- Controls: ↑↓←→ Steer | A Accelerate | B Brake | L Nitrous | R Camera
+- Tags: racing, open world, humor, movie tie-in, vehicles
+
+### Simulation Games
+
+## Harvest Moon
+- URL: https://www.eggermath.com/games/harvest-moon-friends-of-mineral-town.html
+- Platform: Game Boy Advance
+- Genre: Simulation
+- Year: 2003
+- Developer: Marvelous
+- Series: Harvest Moon
+- Rating: 8.6/10 (73 ratings)
+- Official: yes
+- Description: Play Harvest Moon Friends of Mineral Town online. Build a farm, grow crops, raise animals, and find a partner.
+- Controls: ↑↓←→ Move | A Action | B Cancel | Start Menu | Select Tool
+- Tags: farming, life sim, casual play, romance, relaxing
+
+## Pilotwings Resort
+- URL: https://www.eggermath.com/games/pilotwings-resort.html
+- Platform: Game Boy Advance
+- Genre: Simulation
+- Year: 2011
+- Developer: Monster Games
+- Series: Pilotwings
+- Rating: 7.5/10 (32 ratings)
+- Official: yes
+- Description: Play Pilotwings Resort online. Fly, dive, and glide through Wuhu Island in this relaxing flight simulator. Features 3 flight vehicle types.
+- Controls: ↑↓←→ Steer | A Throttle | B Brake | L/R Altitude
+- Tags: flight, simulation, relaxing, open world, casual play
+
+## Harvest Moon: A Wonderful Life
+- URL: https://www.eggermath.com/games/harvest-moon-a-wonderful-life.html
+- Platform: Game Boy Advance
+- Genre: Simulation
+- Year: 2005
+- Developer: Marvelous
+- Series: Harvest Moon
+- Rating: 7.9/10 (38 ratings)
+- Official: yes
+- Description: Play Harvest Moon A Wonderful Life online. Build a farm, raise animals, get married, and raise a child in this beloved life sim.
+- Controls: ↑↓←→ Move | A Action | B Cancel | Start Menu | Select Tool
+- Tags: farming, life sim, casual play, romance, relaxing
+
+### Sports Games
+
+## Tony Hawk's Pro Skater 2
+- URL: https://www.eggermath.com/games/tony-hawks-pro-skater-2.html
+- Platform: Game Boy Advance
+- Genre: Sports
+- Year: 2001
+- Developer: Vicarious Visions
+- Series: Tony Hawk
+- Rating: 8.5/10 (76 ratings)
+- Official: yes
+- Description: Play Tony Hawk's Pro Skater 2 online. The GBA port of the PS1 classic. Features 12 skaters, huge levels, and the addictive combo system.
+- Controls: ↑↓←→ Move | A Ollie | B Kickflip | L Grind | R Grab
+- Tags: skating, tricks, combo system, sports, extreme sports
+
+## Tony Hawk's Pro Skater 3
+- URL: https://www.eggermath.com/games/tony-hawks-pro-skater-3.html
+- Platform: Game Boy Advance
+- Genre: Sports
+- Year: 2002
+- Developer: Vicarious Visions
+- Series: Tony Hawk
+- Rating: 8.3/10 (62 ratings)
+- Official: yes
+- Description: Play Tony Hawk's Pro Skater 3 online. Features new trick system, levels inspired by PS1 version, and online multiplayer support.
+- Controls: ↑↓←→ Move | A Ollie | B Kickflip | L Grind | R Grab
+- Tags: skating, tricks, combo system, sports, extreme sports
+
+## Mario Tennis: Power Tour
+- URL: https://www.eggermath.com/games/mario-tennis-power-tour.html
+- Platform: Game Boy Advance
+- Genre: Sports
+- Year: 2005
+- Developer: Camelot
+- Series: Mario
+- Rating: 8.3/10 (48 ratings)
+- Official: yes
+- Description: Play Mario Tennis Power Tour online. Features story mode with 6 playable characters, power shots, and tournament play.
+- Controls: ↑↓←→ Move | A Hit | B Lob | L Topspin | R Slice
+- Tags: tennis, sports, story mode, power shots, multiplayer
+
+### Strategy Games
+
+## Fire Emblem: Sacred Stones
+- URL: https://www.eggermath.com/games/fire-emblem-sacred-stones.html
+- Platform: Game Boy Advance
+- Genre: Strategy
+- Year: 2004
+- Developer: Intelligent Systems
+- Series: Fire Emblem
+- Rating: 8.7/10 (76 ratings)
+- Official: yes
+- Description: Play Fire Emblem Sacred Stones online. Lead Eirika or Ephraim through Magvel. Recruit 24 characters and navigate branching story paths.
+- Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu
+- Tags: tactical RPG, turn-based, permadeath, strategy, medieval
+
+## Advance Wars
+- URL: https://www.eggermath.com/games/advance-wars.html
+- Platform: Game Boy Advance
+- Genre: Strategy
+- Year: 2001
+- Developer: Intelligent Systems
+- Series: Advance Wars
+- Rating: 9.0/10 (112 ratings)
+- Official: yes
+- Description: Play Advance Wars online in your browser. Command troops across turn-based tactical battles in this beloved GBA launch title. Features 4 campaigns, online multiplayer, and a map editor.
+- Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, strategy, tactical RPG, military, single player
+
+## Advance Wars 2: Black Hole Rising
+- URL: https://www.eggermath.com/games/advance-wars-2-black-hole-rising.html
+- Platform: Game Boy Advance
+- Genre: Strategy
+- Year: 2003
+- Developer: Intelligent Systems
+- Series: Advance Wars
+- Rating: 9.1/10 (98 ratings)
+- Official: yes
+- Description: Play Advance Wars 2 online. Lead Allied Nations against Black Hole in this sequel featuring 28 campaign missions, 6 COs, and a harder difficulty curve.
+- Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu
+- Tags: turn-based, strategy, tactical RPG, military, single player
+
+## Final Fantasy Tactics Advance
+- URL: https://www.eggermath.com/games/final-fantasy-tactics-advance.html
+- Platform: Game Boy Advance
+- Genre: Strategy
+- Year: 2003
+- Developer: Square Enix
+- Series: Final Fantasy
+- Rating: 8.8/10 (145 ratings)
+- Official: yes
+- Description: Play Final Fantasy Tactics Advance online. Lead March and his friends through tactical battles in Ivalice. Features 6 races, 30+ classes, and clan battles.
+- Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu | R Map
+- Tags: tactical RPG, turn-based, strategy, class system, multiplayer
+
+## Fire Emblem
+- URL: https://www.eggermath.com/games/fire-emblem.html
+- Platform: Game Boy Advance
+- Genre: Strategy
+- Year: 2003
+- Developer: Intelligent Systems
+- Series: Fire Emblem
+- Rating: 8.8/10 (98 ratings)
+- Official: yes
+- Description: Play Fire Emblem online. The GBA debut featuring Eliwood, Hector, and Lyn. Recruit 20+ characters and navigate three interweaving stories.
+- Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu
+- Tags: tactical RPG, turn-based, permadeath, strategy, medieval
