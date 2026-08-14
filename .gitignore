@@ -61,3 +61,4 @@ chatbot.html
 replyagent.html
 data/
 *.png
+!images/eggermath-logo.png

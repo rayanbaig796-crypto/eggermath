@@ -97,6 +97,7 @@
       <a href="/series/">Series</a>
       <a href="/tags/">Tags</a>
       <a href="/blog/">Blog</a>
+      <span id="eggm-auth-bar" class="nav-auth" style="display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;margin:0 8px;"></span>
       <div class="search-container">
         <button class="search-toggle" onclick="toggleSearch()" aria-label="Search">&#128269;</button>
         <input type="text" class="search-input" id="site-search" placeholder="Search games..." oninput="handleSearch(this.value)" onkeydown="if(event.key==='Escape'){closeSearch();}" autocomplete="off">
@@ -120,6 +121,8 @@
       <a href="/genre/fighting/">Fighting (4)</a>
       <a href="/genre/strategy/">Strategy (5)</a>
       <a href="/genre/simulation/">Simulation (3)</a>
+      <a href="/genre/puzzle/">Puzzle (3)</a>
+      <a href="/genre/sports/">Sports (3)</a>
     </div>
     <div class="sidebar-section">
       <h3>&#x1F3AF; Game Series</h3>
@@ -292,5 +295,6 @@
     if (sc && !sc.contains(e.target)) { closeSearch(); }
   });
   </script>
+  <script src="/app.js"></script>
 </body>
 </html>

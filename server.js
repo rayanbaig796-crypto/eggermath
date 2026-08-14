@@ -6,6 +6,8 @@ const url = require('url');
 const crypto = require('crypto');
 const zlib = require('zlib');
 
+const { handleApi } = require('./api');
+
 const PORT = process.env.PORT || 8080;
 const ROOT = __dirname;
 
@@ -671,6 +673,11 @@ const server = http.createServer(async (req, res) => {
       res.writeHead(502, { 'Content-Type': 'text/plain' });
       res.end('Proxy error: ' + err.message);
     }
+    return;
+  }
+
+  // ── /api/* — backend (accounts, favorites, reviews, reports) ──
+  if (handleApi(req, res)) {
     return;
   }
 

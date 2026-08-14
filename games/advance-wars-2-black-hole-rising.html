@@ -120,7 +120,7 @@
     }
     </style>
 </head>
-<body>
+<body data-game-slug="advance-wars-2-black-hole-rising">
   <nav class="nav">
     <div style="display:flex;align-items:center;">
       <a href="/" class="brand">EggerMath</a>
@@ -134,6 +134,7 @@
       <a href="/series/">Series</a>
       <a href="/tags/">Tags</a>
       <a href="/blog/">Blog</a>
+      <span id="eggm-auth-bar" class="nav-auth" style="display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;margin:0 8px;"></span>
       <div class="search-container">
         <button class="search-toggle" onclick="toggleSearch()" aria-label="Search">&#128269;</button>
         <input type="text" class="search-input" id="site-search" placeholder="Search games..." oninput="handleSearch(this.value)" onkeydown="if(event.key==='Escape'){closeSearch();}" autocomplete="off">
@@ -157,6 +158,8 @@
       <a href="/genre/fighting/">Fighting (4)</a>
       <a href="/genre/strategy/">Strategy (5)</a>
       <a href="/genre/simulation/">Simulation (3)</a>
+      <a href="/genre/puzzle/">Puzzle (3)</a>
+      <a href="/genre/sports/">Sports (3)</a>
     </div>
     <div class="sidebar-section">
       <h3>&#x1F3AF; Game Series</h3>
@@ -241,8 +244,9 @@
       <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;margin-left:4px;">· 98 ratings</span>
     </div>
     <div style="margin-bottom:12px;">
-      <button onclick="alert('Login to favorite this game')" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-right:8px;">♥ Add to Favorites</button>
-      <button onclick="alert('Login to report an issue')" style="background:transparent;color:rgba(240,235,224,0.5);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">⚑ Report Issue</button>
+      <div id="eggm-auth-bar" style="margin-bottom:12px;font-size:0.9rem;"></div>
+      <button data-fav-btn data-slug="advance-wars-2-black-hole-rising" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-right:8px;">♥ Add to Favorites</button>
+      <button data-report-btn style="background:transparent;color:rgba(240,235,224,0.5);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">⚑ Report Issue</button>
     </div>
     <div class="meta">
       <span>2003</span> · <span>Strategy</span> · <a href="/series/advance-wars/" style="color:#c4a35a;">Advance Wars Series</a> · <a href="/developers/intelligent-systems/" style="color:#c4a35a;">Intelligent Systems</a>
@@ -271,7 +275,12 @@
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Reviews &amp; Ratings</h2>
       <div style="margin-bottom:12px;"><span style="font-size:2rem;font-weight:700;color:#f0ebe0;">9.1</span><span style="color:rgba(240,235,224,0.4);">/10</span> <span class="stars">★★★★☆</span> <span style="color:rgba(240,235,224,0.4);">· 98 ratings</span></div>
       <p style="color:rgba(240,235,224,0.5);font-size:0.85rem;margin-bottom:10px;">Players rate Advance Wars 2: Black Hole Rising 9.1/10 for its turn-based and strategy gameplay and lasting replay value.</p>
-      <button onclick="alert('Login to rate this game')" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">★ Rate This Game</button>
+      <div style="margin-bottom:14px;padding:12px;background:rgba(196,163,90,0.06);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
+        <strong style="color:#c4a35a;font-size:1.4rem;" id="eggm-reviews-rating">Loading…</strong>
+        <span style="color:rgba(240,235,224,0.4);font-size:0.9rem;" id="eggm-reviews-count"></span>
+      </div>
+      <button id="eggm-review-btn" data-slug="advance-wars-2-black-hole-rising" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-bottom:14px;">★ Write a Review</button>
+      <div id="eggm-reviews-list"></div>
     </div>
 
     <div style="margin:30px 0;"><h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Related Games</h2><div class="grid"><div class="card"><a href="/games/advance-wars.html"><img src="/games/covers/advance-wars.svg" alt="Advance Wars" loading="lazy" style="width:100%;border-radius:8px;margin-bottom:8px;"></a><h3><a href="/games/advance-wars.html">Advance Wars</a></h3><div class="sub">2001 · Strategy</div><div class="sub"><a href="/games/advance-wars.html" style="color:#c4a35a;">View Game →</a></div></div>
@@ -372,5 +381,6 @@
     if (sc && !sc.contains(e.target)) { closeSearch(); }
   });
   </script>
+  <script src="/app.js"></script>
 </body>
 </html>

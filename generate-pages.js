@@ -97,6 +97,8 @@ const GENRES = [
   { name: 'Fighting', slug: 'fighting', desc: 'Play GBA fighting games online free. Dragon Ball Advanced Adventure and more classic fighting games.' },
   { name: 'Strategy', slug: 'strategy', desc: 'Play GBA strategy games online free. Fire Emblem: Sacred Stones and more classic strategy games.' },
   { name: 'Simulation', slug: 'simulation', desc: 'Play GBA simulation games online free. Harvest Moon Friends of Mineral Town and more classic sim games.' },
+  { name: 'Puzzle', slug: 'puzzle', desc: 'Play GBA puzzle games online free. Mario vs. Donkey Kong, Lemmets, and more brain-teasing classics in your browser.' },
+  { name: 'Sports', slug: 'sports', desc: "Play GBA sports games online free. Tony Hawk's Pro Skater, Mario Tennis, and more classic sports games in your browser." },
 ];
 
 const SERIES = [
@@ -269,6 +271,7 @@ function navHTML(active) {
       <a href="/series/"${active === 'series' ? ' class="active"' : ''}>Series</a>
       <a href="/tags/"${active === 'tags' ? ' class="active"' : ''}>Tags</a>
       <a href="/blog/"${active === 'blog' ? ' class="active"' : ''}>Blog</a>
+      <span id="eggm-auth-bar" class="nav-auth" style="display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;margin:0 8px;"></span>
       <div class="search-container">
         <button class="search-toggle" onclick="toggleSearch()" aria-label="Search">&#128269;</button>
         <input type="text" class="search-input" id="site-search" placeholder="Search games..." oninput="handleSearch(this.value)" onkeydown="if(event.key==='Escape'){closeSearch();}" autocomplete="off">
@@ -499,6 +502,7 @@ function footerHTML() {
     if (sc && !sc.contains(e.target)) { closeSearch(); }
   });
   </script>
+  <script src="/app.js"></script>
 </body>
 </html>`;
 }
@@ -567,7 +571,7 @@ function gamePageHTML(game) {
   </script>
   ${baseStyle()}
 </head>
-<body>
+<body data-game-slug="${game.slug}">
   ${navHTML('gba')}
   ${pageLayout('gba', [{name: 'Home', url: '/'}, {name: 'Games', url: '/gameboy-advance/'}, {name: 'Game Boy Advance', url: '/gameboy-advance/'}, {name: game.title, url: ''}], `
     <span style="display:inline-block;background:rgba(196,163,90,0.15);color:#c4a35a;padding:4px 12px;border-radius:20px;font-size:0.75rem;border:1px solid rgba(196,163,90,0.3);margin-bottom:12px;">GBA · Game Boy Advance</span>
@@ -579,8 +583,9 @@ function gamePageHTML(game) {
       <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;margin-left:4px;">· ${game.ratingCount} ratings</span>
     </div>
     <div style="margin-bottom:12px;">
-      <button onclick="alert('Login to favorite this game')" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-right:8px;">♥ Add to Favorites</button>
-      <button onclick="alert('Login to report an issue')" style="background:transparent;color:rgba(240,235,224,0.5);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">⚑ Report Issue</button>
+      <div id="eggm-auth-bar" style="margin-bottom:12px;font-size:0.9rem;"></div>
+      <button data-fav-btn data-slug="${game.slug}" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-right:8px;">♥ Add to Favorites</button>
+      <button data-report-btn style="background:transparent;color:rgba(240,235,224,0.5);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">⚑ Report Issue</button>
     </div>
     <div class="meta">
       <span>${game.year}</span> · <span>${game.genre}</span> · <a href="/series/${game.series.toLowerCase().replace(/\s+/g, '-')}/" style="color:#c4a35a;">${game.series} Series</a> · <a href="/developers/${game.developer.toLowerCase().replace(/\s+/g, '-')}/" style="color:#c4a35a;">${game.developer}</a>
@@ -609,7 +614,12 @@ function gamePageHTML(game) {
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Reviews &amp; Ratings</h2>
       <div style="margin-bottom:12px;"><span style="font-size:2rem;font-weight:700;color:#f0ebe0;">${game.rating}</span><span style="color:rgba(240,235,224,0.4);">/10</span> <span class="stars">${starsHTML(game.rating)}</span> <span style="color:rgba(240,235,224,0.4);">· ${game.ratingCount} ratings</span></div>
       <p style="color:rgba(240,235,224,0.5);font-size:0.85rem;margin-bottom:10px;">Players rate ${game.title} ${game.rating}/10 for its ${game.tags.slice(0,2).join(' and ')} gameplay and lasting replay value.</p>
-      <button onclick="alert('Login to rate this game')" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">★ Rate This Game</button>
+      <div style="margin-bottom:14px;padding:12px;background:rgba(196,163,90,0.06);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
+        <strong style="color:#c4a35a;font-size:1.4rem;" id="eggm-reviews-rating">Loading…</strong>
+        <span style="color:rgba(240,235,224,0.4);font-size:0.9rem;" id="eggm-reviews-count"></span>
+      </div>
+      <button id="eggm-review-btn" data-slug="${game.slug}" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-bottom:14px;">★ Write a Review</button>
+      <div id="eggm-reviews-list"></div>
     </div>
 
     ${related.length ? `<div style="margin:30px 0;"><h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Related Games</h2><div class="grid">${relatedHTML}</div></div>` : ''}

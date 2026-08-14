@@ -1,0 +1,194 @@
+:root {
+  --bg: #161a13;
+  --surface: #1e2319;
+  --gold: #c4a35a;
+  --text: #f0ebe0;
+  --muted: rgba(240, 235, 224, 0.65);
+  --green: #c4a35a;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  border-bottom: 1px solid rgba(196, 163, 90, 0.15);
+  background: var(--surface);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(196, 163, 90, 0.25);
+  transition: all 0.2s;
+}
+
+.back-btn svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.back-btn:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  background: rgba(196, 163, 90, 0.08);
+}
+
+.header-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.header-logo img {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.page-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.page-header img {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.page-body {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.page-body h2 {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 28px 0 12px;
+}
+
+.page-body p {
+  margin-bottom: 14px;
+}
+
+.page-body a {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.page-body a:hover {
+  color: var(--text);
+}
+
+.page-body ul {
+  margin: 0 0 14px 20px;
+}
+
+.page-body li {
+  margin-bottom: 8px;
+}
+
+.updated {
+  color: rgba(240, 235, 224, 0.45);
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.contact-card .icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.contact-card .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card .label {
+  font-size: 11px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.contact-card .value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-card .value a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-card .value a:hover {
+  text-decoration: underline;
+}
