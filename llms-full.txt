@@ -1285,3 +1285,13 @@ Play 80+ classic Game Boy Advance and Game Boy Color games online in your browse
 - Description: Play Fire Emblem online. The GBA debut featuring Eliwood, Hector, and Lyn. Recruit 20+ characters and navigate three interweaving stories.
 - Controls: ↑↓←→ Cursor | A Confirm | B Cancel | Start Menu
 - Tags: tactical RPG, turn-based, permadeath, strategy, medieval
+
+## Unblocked Games
+- Hub: https://www.eggermath.com/unblocked/
+- Play GBA games unblocked in your browser. No school filters, no restrictions, no download.
+- 20 games available: Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire; Zelda: Minish Cap; Mario Kart Super Circuit; Super Mario World; Metroid Fusion; Kirby Nightmare in Dream Land; Castlevania: Aria of Sorrow; Donkey Kong Country; Fire Emblem: Sacred Stones; Sonic Advance 3; Advance Wars; Golden Sun; Final Fantasy VI Advance; Mega Man Zero; Super Smash Bros; Mario & Luigi: Superstar Saga
+
+## Play Online
+- Hub: https://www.eggermath.com/play/
+- Play GBA games online free in your browser. No download, no install.
+- 10 games available: Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire; Zelda: Minish Cap; Super Mario World; Metroid Fusion; Castlevania: Aria of Sorrow; Advance Wars

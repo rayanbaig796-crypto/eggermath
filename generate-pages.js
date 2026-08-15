@@ -86,6 +86,137 @@ const GAMES = [
   { title: 'Doom', slug: 'doom', genre: 'Action', series: 'Doom', year: '2001', developer: 'id Software', rating: 7.8, ratingCount: 78, tags: ['first-person shooter', 'horror', 'demons', 'retro', 'hard difficulty'], desc: 'Play Doom online. The GBA port of the classic FPS. Features 22 levels, multiple weapons, and endless demon-slaying action.', controls: '↑↓←→ Move | A Shoot | B Strafe | L Alt Fire | R Map', mega: 'Doom (USA).zip', official: true }
 ];
 
+const RICH_CONTENT = {
+  'pokemon-emerald': {
+    overview: 'Pokemon Emerald is the definitive Hoenn experience, combining the best elements of Ruby and Sapphire into one complete package. Set in the tropical Hoenn region, you play as a young trainer on a journey to collect all eight Gym Badges, challenge the Elite Four, and become the Pokemon Champion. What sets Emerald apart is its expanded post-game content, including the Battle Frontier with seven unique challenge facilities that add dozens of hours of gameplay beyond the main story. The game features animated Pokemon sprites, the Primal Reunion storyline with Groudon, Kyogre, and Rayquaza, and deep gameplay systems that make it one of the best RPGs ever made for any platform.',
+    tips: ['Choose Mudkip as your starter for the best early-game Water/Ground coverage against the first few Gyms', 'Catch Rayquaza at Sky Pillar after defeating all 8 Gym Leaders — it is essential for the Elite Four', 'Use the Exp. Share item to level up underused team members without tedious grinding', 'Save before entering the Battle Frontier — the challenges are difficult and you will want to retry'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '25-35 hours',
+    bestFor: 'RPG fans who want the most complete Hoenn experience',
+    whyGreat: 'Widely considered the best Pokemon game on GBA, Emerald combines the best of Ruby and Sapphire with the Battle Frontier adding dozens of hours of post-game content.'
+  },
+  'pokemon-firered': {
+    overview: 'Pokemon FireRed is an enhanced remake of the original Pokemon Red for the Game Boy Advance, bringing the classic Kanto adventure to a new generation with updated graphics and modern gameplay mechanics. Journey across Kanto to collect all 151 original Pokemon, challenge eight Gym Leaders, and defeat the Elite Four to become Pokemon Champion. FireRed adds the Sevii Islands post-game content, featuring seven new areas with unique Pokemon, puzzles, and storylines. The game also introduces the ability system, natures, and updated movesets that add strategic depth to battles.',
+    tips: ['Pick Charmander for the best early-game advantage — Fire types dominate the first few Gyms', 'Catch Eevee in Celadon City and evolve it into Vaporeon, Jolteon, or Flareon depending on your team', 'Visit the Sevii Islands after beating the Elite Four for bonus content and rare Pokemon', 'Use the VS Seeker to rematch trainers for easy experience and money farming'],
+    difficulty: 'Easy-Medium',
+    estimatedPlayTime: '20-25 hours',
+    bestFor: 'Retro RPG fans who want the classic Kanto experience',
+    whyGreat: 'FireRed faithfully recreates the original Pokemon Red with modern improvements, making it the definitive way to experience the first generation.'
+  },
+  'pokemon-leafgreen': {
+    overview: 'Pokemon LeafGreen is the counterpart to FireRed, featuring the same enhanced Kanto adventure with version-exclusive Pokemon and subtle differences. Like FireRed, it brings the classic first-generation experience to the Game Boy Advance with updated graphics, the ability system, and the expanded Sevii Islands post-game. LeafGreen includes Pokemon that were exclusive to the original Green version, making it essential for collectors who want to complete their Pokedex. The game maintains the beloved original storyline while adding modern quality-of-life improvements.',
+    tips: ['Pick Bulbasaur for an easy first two Gym battles — Grass types have type advantage early', 'Trade with FireRed to get version-exclusive Pokemon like Growlithe and Arcanine', 'The Sevii Islands have rare Pokemon not found in the main Kanto region', 'Use the VS Seeker to farm money and experience from previously defeated trainers'],
+    difficulty: 'Easy-Medium',
+    estimatedPlayTime: '20-25 hours',
+    bestFor: 'Pokemon collectors who want version-exclusive Pokemon',
+    whyGreat: 'LeafGreen completes the Kanto remake duo with exclusive Pokemon and the same excellent gameplay improvements as FireRed.'
+  },
+  'pokemon-ruby': {
+    overview: 'Pokemon Ruby was one of the first Pokemon games for the Game Boy Advance, introducing the Hoenn region and 135 new Pokemon to the series. Journey through the land of Hoenn to collect eight Gym Badges while stopping Team Magma from expanding the land by awakening the legendary Groudon. The game features double battles, Pokemon Contests, and the Battle Tower post-game. Ruby vibrant graphics and new gameplay mechanics made it a landmark release that defined the GBA era of Pokemon.',
+    tips: ['Choose Treecko for the best late-game performance — Sceptile is powerful against the Elite Four', 'Catch Deoxys at Meteor Island after obtaining the National Dex for a rare legendary', 'Pokemon Contests are a fun way to use Pokemon outside of battle and earn ribbons', 'Save before the Battle Tower — it gets progressively harder with each streak win'],
+    difficulty: 'Easy-Medium',
+    estimatedPlayTime: '20-25 hours',
+    bestFor: 'Pokemon newcomers who want to start with the Hoenn region',
+    whyGreat: 'Ruby pioneered many features that became series staples, including double battles and Pokemon Contests.'
+  },
+  'pokemon-sapphire': {
+    overview: 'Pokemon Sapphire is the counterpart to Ruby, featuring Team Aqua instead of Team Magma and version-exclusive Pokemon that encourage trading between versions. Set in the same Hoenn region, Sapphire tells the story of Team Aqua attempt to expand the oceans by awakening the legendary Kyogre. The game shares Ruby innovative features including double battles, Pokemon Contests, and the Battle Tower post-game. Sapphire water-themed storyline and exclusive Pokemon make it a distinct experience from its counterpart.',
+    tips: ['Choose Mudkip for the best starter — Water/Ground typing gives excellent type coverage', 'Version-exclusive Pokemon encourage trading with Ruby players to complete your Pokedex', 'The Safari Zone has rare Pokemon not found anywhere else in Hoenn', 'Complete the Pokedex by trading between Ruby and Sapphire for version exclusives'],
+    difficulty: 'Easy-Medium',
+    estimatedPlayTime: '20-25 hours',
+    bestFor: 'Pokemon fans who prefer water-themed stories and exclusive Pokemon',
+    whyGreat: 'Sapphire water-themed storyline and exclusive Pokemon make it a distinct and memorable experience from Ruby.'
+  },
+  'zelda-minish-cap': {
+    overview: 'The Legend of Zelda: The Minish Cap is a top-down action-adventure game that tells the origins of the evil Vaati from Four Swords. Players take on the role of Link as he shrinks to Minish size and explores Hyrule from a new perspective, making familiar territory new and different. Puddles become huge rivers, baby chicks become huge monsters, and regular enemies become deadly bosses at Minish size. Features the Gust Jar, Mole Mitts, and the Kinstone fusion system that unlocks hidden areas and rewards throughout the world.',
+    tips: ['Talk to every NPC to find Kinstone fusion partners — they unlock hidden areas and treasures', 'The Gust Jar is essential for solving many puzzles early on — use it to grab distant objects', 'Explore every corner at Minish size — secret areas hide rare items and upgrades', 'Fuse Kinstones with NPCs to unlock warp points, treasure chests, and side quests'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '15-20 hours',
+    bestFor: 'Action-adventure fans who love Zelda dungeon puzzles and creative mechanics',
+    whyGreat: 'The Minish Cap shrinking mechanic and beautiful art style make it one of the most creative Zelda games ever made.'
+  },
+  'super-mario-world': {
+    overview: 'Super Mario World is the Game Boy Advance port of the SNES classic, featuring Yoshi, secret exits, and 96 levels across Dinosaur Land. Rescue Princess Peach from Bowser and his seven children in this beloved platformer. The GBA port adds save functionality and the ability to play as Luigi in the updated Super Mario Advance 2 version. With tight platforming, hidden secrets, and colorful world design, Super Mario World remains one of the greatest platformers ever made.',
+    tips: ['Yoshi can eat almost any enemy — use him as a living shield to protect yourself', 'Look for hidden exits in levels to unlock new paths and secret worlds', 'Star coins are hidden throughout levels — explore every nook and cranny', 'The cape power-up makes many levels much easier — find the cape feather in early worlds'],
+    difficulty: 'Easy-Medium',
+    estimatedPlayTime: '10-15 hours',
+    bestFor: 'Platformer fans who want the definitive 2D Mario experience',
+    whyGreat: 'Super Mario World is widely considered the greatest 2D platformer ever made, with perfect controls and level design.'
+  },
+  'metroid-fusion': {
+    overview: 'Metroid Fusion follows Samus Aran as she investigates a mysterious outbreak on the SR388 space station. Fight the X Parasites and confront the terrifying SA-X in this atmospheric Metroidvania. Features tight controls, satisfying power-up progression, and a darker, more story-driven experience than previous Metroid titles. The game linear structure guides players through the station while still rewarding exploration with hidden items and upgrades.',
+    tips: ['Explore thoroughly — power-ups are often hidden in unexpected walls and ceilings', 'The SA-X encounters are scripted events — do not try to fight it early in the game', 'Save often at save stations — the game can be challenging and boss fights require practice', 'Use the Map Room to find unexplored areas and track your completion percentage'],
+    difficulty: 'Hard',
+    estimatedPlayTime: '10-12 hours',
+    bestFor: 'Metroidvania fans who love atmospheric exploration and challenging gameplay',
+    whyGreat: 'Metroid Fusion tight controls, atmospheric level design, and compelling story make it one of the best Metroidvania games ever made.'
+  },
+  'castlevania-aria-of-sorrow': {
+    overview: 'Castlevania: Aria of Sorrow is a side-scrolling action-adventure game set in Dracula castle. Play as Soma Cruz, a young man with the ability to absorb monster souls, which grant new abilities and attacks. Features the Tactical Soul system, allowing players to collect and combine souls for different effects. With its deep gameplay systems, multiple endings, and atmospheric soundtrack, Aria of Sorrow is considered one of the best Castlevania games ever made and a high point of the Metroidvania genre.',
+    tips: ['Experiment with different soul combinations — some create powerful fusion effects', 'The Tactical Soul system rewards experimentation — try every soul you collect', 'Save before boss fights — some require specific soul setups and strategies', 'Explore thoroughly to find rare souls from powerful enemies in hidden areas'],
+    difficulty: 'Medium-Hard',
+    estimatedPlayTime: '12-15 hours',
+    bestFor: 'Metroidvania fans who love deep gameplay systems and multiple endings',
+    whyGreat: 'Aria of Sorrow Tactical Soul system and multiple endings make it one of the deepest and most replayable Castlevania games.'
+  },
+  'advance-wars': {
+    overview: 'Advance Wars is a turn-based tactical strategy game that puts you in command of troops across various battlefields. Features a deep but accessible combat system where different unit types including infantry, tanks, artillery, and air units each have strengths and weaknesses. With its engaging campaign mode, map editor, and multiplayer support, Advance Wars is considered one of the best strategy games on the Game Boy Advance and a landmark title for the genre.',
+    tips: ['Use terrain to your advantage — forests and mountains give defense bonuses to units', 'Always keep your CO power meter charged for critical moments in tough battles', 'Infantry are cheap but essential for capturing properties and earning income', 'Air units are powerful but vulnerable to anti-air — protect them with ground cover'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '20-30 hours',
+    bestFor: 'Strategy fans who love turn-based tactical combat',
+    whyGreat: 'Advance Wars accessible yet deep gameplay system made it the definitive handheld strategy game.'
+  },
+  'golden-sun': {
+    overview: 'Golden Sun is a turn-based RPG that follows Isaac and his friends on a journey to prevent the destruction of Weyard. Features the unique Djinn summon system, where collecting elemental Djinn unlocks powerful summons and magic abilities. The game is known for its detailed GBA graphics, puzzle-filled dungeons, and an engaging story that spans two games with a password system linking them.',
+    tips: ['Collect every Djinn you find — they are essential for powerful summons and stat boosts', 'Use Psynergy puzzles to solve dungeon obstacles — experiment with different elements', 'Talk to every NPC for hints about hidden Djinn and treasures', 'Transfer your data to The Lost Age using passwords for a complete experience'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '25-30 hours',
+    bestFor: 'RPG fans who love elemental magic systems and puzzle-filled dungeons',
+    whyGreat: 'Golden Sun pushed the GBA hardware to its limits with stunning visuals and a deep Djinn system.'
+  },
+  'mario-kart-super-circuit': {
+    overview: 'Mario Kart Super Circuit is the first portable Mario Kart game, featuring 20 tracks from Super Mario Kart on SNES plus 20 new courses. Drift around corners, use items to hinder opponents, and race through colorful tracks in this beloved racer. The GBA entry introduced the shortcut system and remains one of the most addictive portable racing games ever made.',
+    tips: ['Drift around corners to build up mini-turbos for speed boosts', 'Use shells strategically — save defensive items for when you are in first place', 'Learn the shortcuts on each track — many courses have hidden paths', 'Play through Grand Prix mode on all engine classes to unlock everything'],
+    difficulty: 'Easy',
+    estimatedPlayTime: '15-20 hours',
+    bestFor: 'Racing fans who want quick, fun multiplayer sessions',
+    whyGreat: 'Mario Kart Super Circuit brought the full Mario Kart experience to handheld for the first time.'
+  },
+  'kirby-nightmare-in-dream-land': {
+    overview: 'Kirby: Nightmare in Dream Land is a side-scrolling platformer where Kirby must reclaim the Dream Rod from King Dedede. Copy enemy abilities by inhaling them, float through colorful levels, and fight challenging bosses. The game features multiple game modes including Extra Game with harder difficulty and the cooperative Kirby Bowl mode.',
+    tips: ['Inhale enemies to copy their abilities — experiment to find the best powers for each level', 'Float over difficult sections — Kirby ability makes many platforming challenges easier', 'Explore every room for hidden health and collectibles', 'Play Extra Game after beating the main story for a much harder challenge'],
+    difficulty: 'Easy',
+    estimatedPlayTime: '5-8 hours',
+    bestFor: 'Platformer fans who want a charming, accessible adventure',
+    whyGreat: 'Kirby: Nightmare in Dream Land is the definitive Kirby experience on GBA with copy abilities and colorful worlds.'
+  },
+  'fire-emblem-sacred-stones': {
+    overview: 'Fire Emblem: The Sacred Stones is a tactical RPG that follows the twin siblings Eirika and Ephraim as they fight to liberate their homeland from the Grado Empire. Features 24 recruitable characters, branching class promotions, and a world map with optional grinding battles. The game offers two distinct story paths depending on which sibling you follow.',
+    tips: ['Recruit every character you can — permadeath means you need depth in your roster', 'Use the world map to grind levels on harder chapters if you are underleveled', 'Promote units at Level 10 or higher for the best stat gains', 'Keep your healers safe — they are essential for long chapters'],
+    difficulty: 'Medium-Hard',
+    estimatedPlayTime: '30-40 hours',
+    bestFor: 'Strategy RPG fans who love character-driven stories and tactical combat',
+    whyGreat: 'The Sacred Stones offers the most accessible Fire Emblem experience with grinding and two story paths.'
+  },
+  'sonic-advance-3': {
+    overview: 'Sonic Advance 3 is a fast-paced platformer featuring Sonic, Tails, Knuckles, and Amy across 7 zones. Switch between character pairs on the fly to access different abilities and reach hidden areas. Features the signature Sonic speed, trick actions, and Chaos Emerald hunting for the true ending.',
+    tips: ['Switch characters frequently to use their unique abilities for exploration', 'Sonic is fastest for speed sections, while Knuckles can climb and glide to secrets', 'Look for hidden Chaos Emeralds in each zone — you need all 7 for the true ending', 'Use boost pads and ramps to maintain maximum speed through levels'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '8-12 hours',
+    bestFor: 'Platformer fans who love fast-paced speed and character switching',
+    whyGreat: 'Sonic Advance 3 unique partner system adds replayability to the classic Sonic formula.'
+  },
+  'final-fantasy-vi-advance': {
+    overview: 'Final Fantasy VI Advance is the GBA port of the beloved SNES classic, featuring Terra, Celes, and the ensemble cast fighting the nihilistic villain Kefka. Features the Esper system for magic, 14 playable characters with unique abilities, and one of the most celebrated stories in RPG history. The GBA version adds bonus content including the Dragon\'s Den dungeon and new espers.',
+    tips: ['Experiment with different Esper assignments to optimize character growth', 'Save often — some boss fights are much harder than they appear', 'Explore every town for hidden items and side quests', 'The Dragon\'s Den bonus dungeon has the strongest equipment in the game'],
+    difficulty: 'Medium',
+    estimatedPlayTime: '30-40 hours',
+    bestFor: 'RPG fans who want the definitive Final Fantasy VI experience',
+    whyGreat: 'Final Fantasy VI Advance is the best version of one of the greatest RPGs ever made.'
+  }
+};
+
 const GAMES_WITH_CONSOLE = GAMES.map(g => ({ ...g, console: 'GBA' }));
 
 const GENRES = [
@@ -266,10 +397,8 @@ function navHTML(active) {
     <div class="nav-links">
       <a href="/"${active === 'home' ? ' class="active"' : ''}>Home</a>
       <a href="/gameboy-advance/"${active === 'gba' ? ' class="active"' : ''}>Game Boy Advance</a>
-      <a href="/gameboy-color/"${active === 'gbc' ? ' class="active"' : ''}>Game Boy Color</a>
-      <a href="/genre/"${active === 'genres' ? ' class="active"' : ''}>Genres</a>
-      <a href="/series/"${active === 'series' ? ' class="active"' : ''}>Series</a>
-      <a href="/tags/"${active === 'tags' ? ' class="active"' : ''}>Tags</a>
+      <a href="/unblocked/"${active === 'unblocked' ? ' class="active"' : ''}>Unblocked</a>
+      <a href="/play/"${active === 'play' ? ' class="active"' : ''}>Play Online</a>
       <a href="/blog/"${active === 'blog' ? ' class="active"' : ''}>Blog</a>
       <span id="eggm-auth-bar" class="nav-auth" style="display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;margin:0 8px;"></span>
       <div class="search-container">
@@ -508,6 +637,13 @@ function footerHTML() {
 }
 
 function gamePageHTML(game) {
+  const rich = RICH_CONTENT[game.slug] || {};
+  const overview = rich.overview || game.desc;
+  const tips = rich.tips || [];
+  const whyGreat = rich.whyGreat || '';
+  const difficulty = rich.difficulty || '';
+  const playTime = rich.estimatedPlayTime || '';
+  const bestFor = rich.bestFor || '';
   const seriesGames = GAMES.filter(g => g.series === game.series && g.slug !== game.slug).slice(0, 6);
   const remaining = 6 - seriesGames.length;
   const genreGames = remaining > 0 ? GAMES.filter(g => g.genre === game.genre && g.slug !== game.slug && !seriesGames.some(s => s.slug === g.slug)).slice(0, remaining) : [];
@@ -561,9 +697,11 @@ function gamePageHTML(game) {
       {
         "@type": "FAQPage",
         "mainEntity": [
-          {"@type": "Question", "name": "How do I play ${game.title} online?", "acceptedAnswer": {"@type": "Answer", "text": "Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly."}},
+          {"@type": "Question", "name": "How do I play ${game.title} online?", "acceptedAnswer": {"@type": "Answer", "text": "Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly, the most accurate Game Boy Advance emulator available."}},
           {"@type": "Question", "name": "Can I save my progress in ${game.title}?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds."}},
-          {"@type": "Question", "name": "Is ${game.title} free to play?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs."}}
+          {"@type": "Question", "name": "Is ${game.title} free to play?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs."}},
+          {"@type": "Question", "name": "Does ${game.title} work on mobile phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EggerMath works on any device with a modern web browser. Mobile devices get on-screen touch controls automatically."}},
+          {"@type": "Question", "name": "What controls does ${game.title} use?", "acceptedAnswer": {"@type": "Answer", "text": "${game.title} uses these controls: ${game.controls}. On mobile, use the on-screen touch controls."}}
         ]
       }
     ]
@@ -600,15 +738,45 @@ function gamePageHTML(game) {
     </details>
 
     <div style="margin:30px 0;">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">About This Retro Game</h2>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">Play ${game.title} online in your browser using the Game Boy Advance emulator.</p>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;margin-top:8px;">This retro classic from ${game.year} brings the ${game.genre} experience to modern browsers.</p>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;margin-top:8px;">No downloads needed - just click Play and start gaming!</p>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;margin-top:8px;">${game.title} was developed by ${game.developer} and published for the Game Boy Advance in ${game.year}. As a ${game.genre} title in the ${game.series} series, it features ${game.tags.slice(0,3).join(', ')} gameplay. ${game.desc.split('.')[1] || ''}</p>
-      <div style="margin-top:12px;padding:12px;background:rgba(196,163,90,0.08);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
-        <p style="color:rgba(240,235,224,0.5);font-size:0.85rem;"><strong style="color:#c4a35a;">Controls:</strong> ${game.controls}</p>
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">About ${game.title}</h2>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">${overview}</p>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;margin-top:12px;">
+        ${game.title} was developed by ${game.developer} and released for the Game Boy Advance in ${game.year}. 
+        As a ${game.genre} title in the ${game.series} series, it features ${game.tags.join(', ')} gameplay. 
+        This retro classic brings the full ${game.genre.toLowerCase()} experience to modern browsers — no downloads, no installation required.
+      </p>
+    </div>
+
+    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Game Facts</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Platform</span><br><span style="color:#f0ebe0;font-size:0.95rem;">Game Boy Advance</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Genre</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.genre}</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Release Year</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.year}</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Developer</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.developer}</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Rating</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.rating}/10 (${game.ratingCount} reviews)</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Series</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.series}</span></div>
+        ${difficulty ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Difficulty</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${difficulty}</span></div>` : ''}
+        ${playTime ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Play Time</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${playTime}</span></div>` : ''}
+        ${bestFor ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Best For</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${bestFor}</span></div>` : ''}
       </div>
     </div>
+
+    ${tips.length ? `
+    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Tips &amp; Strategy</h2>
+      <ul style="padding-left:20px;">
+        ${tips.map(tip => `<li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">${tip}</li>`).join('')}
+      </ul>
+    </div>
+    ` : ''}
+
+    ${whyGreat ? `
+    <div style="margin:30px 0;padding:16px;background:rgba(196,163,90,0.08);border-radius:12px;border:1px solid rgba(196,163,90,0.15);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Why ${game.title} Is One of the Best GBA Games</h2>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">${whyGreat}</p>
+    </div>
+    ` : ''}
 
     <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Reviews &amp; Ratings</h2>
@@ -641,9 +809,11 @@ function gamePageHTML(game) {
 
     <div style="margin:30px 0;">
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Frequently Asked Questions</h2>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">How do I play ${game.title} online?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Can I save my progress in ${game.title}?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} free to play?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">How do I play ${game.title} online?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly, the most accurate Game Boy Advance emulator available.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Can I save my progress in ${game.title}?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds to your browser local storage.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} free to play?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs. Play unlimited games with full features.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Does ${game.title} work on mobile phones?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. EggerMath works on any device with a modern web browser — phones, tablets, laptops, and desktops. Mobile devices get on-screen touch controls automatically.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">What controls does ${game.title} use?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">${game.title} uses these controls: ${game.controls}. On mobile, use the on-screen touch controls. You can also customize controls in the emulator settings.</p></details>
     </div>
   `)}
   ${footerHTML()}`;
@@ -1195,6 +1365,367 @@ function platformListPageHTML(console, allGames, pageNum, filterGenre, filterYea
   ${footerHTML()}`;
 }
 
+// ============ UNBLOCKED PAGES ============
+const UNBLOCKED_GAMES = [
+  'pokemon-emerald', 'pokemon-firered', 'pokemon-leafgreen', 'pokemon-ruby', 'pokemon-sapphire',
+  'zelda-minish-cap', 'mario-kart-super-circuit', 'super-mario-world', 'metroid-fusion',
+  'kirby-nightmare-in-dream-land', 'castlevania-aria-of-sorrow', 'donkey-kong-country',
+  'fire-emblem-sacred-stones', 'sonic-advance-3', 'advance-wars', 'golden-sun',
+  'final-fantasy-vi-advance', 'mega-man-zero', 'super-smash-bros', 'mario-luigi-superstar-saga'
+];
+
+function unblockedPageHTML(game) {
+  const rich = RICH_CONTENT[game.slug] || {};
+  const overview = rich.overview || game.desc;
+  const tips = rich.tips || [];
+  const seriesGames = GAMES.filter(g => g.series === game.series && g.slug !== game.slug).slice(0, 4);
+
+  return `${header()}
+  <title>${game.title} Unblocked Online Free — No Download | EggerMath</title>
+  <meta name="description" content="Play ${game.title} unblocked online free in your browser. No school filters, no restrictions. No download, no install needed. Works on any device.">
+  <link rel="canonical" href="${SITE}/unblocked/${game.slug}/">
+  <meta property="og:title" content="Play ${game.title} Unblocked Online Free">
+  <meta property="og:description" content="Play ${game.title} unblocked in your browser. No download needed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${SITE}/unblocked/${game.slug}/">
+  <meta property="og:site_name" content="EggerMath">
+  <meta property="og:image" content="${SITE}/images/eggermath-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "${game.title}",
+        "description": "Play ${game.title} unblocked online free in your browser. No school filters, no restrictions.",
+        "gameEmulator": "Game Boy Advance",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "datePublished": "${game.year}",
+        "genre": ["${game.genre}"],
+        "gamePlatform": "Game Boy Advance",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": "${game.title} unblocked, play ${game.title} unblocked, ${game.title} online free, ${game.title} no download",
+        "author": {"@type": "Organization", "name": "EggerMath"},
+        "url": "${SITE}/unblocked/${game.slug}/",
+        "publisher": {"@type": "Organization", "name": "${game.developer}"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "${SITE}/"},
+          {"@type": "ListItem", "position": 2, "name": "Unblocked Games", "item": "${SITE}/unblocked/"},
+          {"@type": "ListItem", "position": 3, "name": "${game.title} Unblocked", "item": "${SITE}/unblocked/${game.slug}/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "Is ${game.title} unblocked safe to play at school?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. ${game.title} runs entirely in your browser — no downloads, no installation, no accounts. It is a browser-based emulator that is safe and secure."}},
+          {"@type": "Question", "name": "Does ${game.title} unblocked work on Chromebook?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EggerMath works on any device with a modern web browser including Chromebooks, laptops, tablets, and phones."}},
+          {"@type": "Question", "name": "Do I need to download anything to play ${game.title} unblocked?", "acceptedAnswer": {"@type": "Answer", "text": "No. ${game.title} runs directly in your browser. No downloads, no plugins, no extensions required."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  ${baseStyle()}
+</head>
+<body>
+  ${navHTML('unblocked')}
+  ${pageLayout('unblocked', [{name: 'Home', url: '/'}, {name: 'Unblocked Games', url: '/unblocked/'}, {name: game.title + ' Unblocked', url: ''}], `
+    <span style="display:inline-block;background:rgba(196,163,90,0.15);color:#c4a35a;padding:4px 12px;border-radius:20px;font-size:0.75rem;border:1px solid rgba(196,163,90,0.3);margin-bottom:12px;">Unblocked · GBA</span>
+    <h1>${game.title} Unblocked</h1>
+    <p class="meta">Play ${game.title} unblocked online free. No school filters, no restrictions.</p>
+    <div style="margin-bottom:8px;">
+      <span class="stars" style="font-size:1.3rem;">${starsHTML(game.rating)}</span>
+      <span style="color:#f0ebe0;font-weight:700;font-size:1.1rem;margin-left:6px;">${game.rating}</span>
+      <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">/10</span>
+    </div>
+    <div class="meta">
+      <span>${game.year}</span> · <span>${game.genre}</span> · <span>${game.series}</span>
+    </div>
+    <p style="font-size:1rem;line-height:1.7;color:rgba(240,235,224,0.7);margin-bottom:20px;">${overview}</p>
+
+    <a href="/gba-emulator-web/" class="play-btn" style="display:inline-block;background:#c4a35a;color:#161a13;padding:14px 32px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;margin:20px 0;">Play ${game.title} Unblocked Now</a>
+
+    <div style="margin:30px 0;padding:16px;background:rgba(46,204,113,0.08);border-radius:12px;border:1px solid rgba(46,204,113,0.2);">
+      <h2 style="font-size:1.2rem;color:#2ecc71;margin-bottom:10px;">Why ${game.title} Is Unblocked Here</h2>
+      <ul style="padding-left:20px;">
+        <li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">Runs entirely in your browser — no downloads or installations</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">No account or login required — just click and play</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">Works on school Chromebooks, work computers, and any device</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">Save your progress with built-in save states</li>
+      </ul>
+    </div>
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Game Controls</h2>
+      <div style="padding:12px;background:rgba(196,163,90,0.08);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
+        <p style="color:rgba(240,235,224,0.7);font-size:0.9rem;font-family:monospace;">${game.controls}</p>
+      </div>
+    </div>
+
+    ${tips.length ? `
+    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Tips for ${game.title}</h2>
+      <ul style="padding-left:20px;">
+        ${tips.map(tip => `<li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">${tip}</li>`).join('')}
+      </ul>
+    </div>
+    ` : ''}
+
+    ${seriesGames.length ? `
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">More ${game.series} Unblocked Games</h2>
+      <div class="grid">
+        ${seriesGames.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('')}
+      </div>
+    </div>
+    ` : ''}
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">How to Play ${game.title} Unblocked</h2>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly. Use keyboard controls (${game.controls}) or touch controls on mobile. Save states, fast forward, and fullscreen are built in.</p>
+    </div>
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Frequently Asked Questions</h2>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} unblocked safe to play at school?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. ${game.title} runs entirely in your browser — no downloads, no installation, no accounts. It is a browser-based emulator that is safe and secure.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Does ${game.title} unblocked work on Chromebook?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. EggerMath works on any device with a modern web browser including Chromebooks, laptops, tablets, and phones.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Do I need to download anything to play ${game.title} unblocked?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">No. ${game.title} runs directly in your browser. No downloads, no plugins, no extensions required.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Can I save my progress in ${game.title}?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} really free?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs.</p></details>
+    </div>
+  `)}
+  ${footerHTML()}`;
+}
+
+// ============ PLAY ONLINE PAGES ============
+const PLAY_GAMES = [
+  'pokemon-emerald', 'pokemon-firered', 'pokemon-leafgreen', 'pokemon-ruby', 'pokemon-sapphire',
+  'zelda-minish-cap', 'super-mario-world', 'metroid-fusion', 'castlevania-aria-of-sorrow', 'advance-wars'
+];
+
+function playPageHTML(game) {
+  const rich = RICH_CONTENT[game.slug] || {};
+  const overview = rich.overview || game.desc;
+  const tips = rich.tips || [];
+  const difficulty = rich.difficulty || '';
+  const playTime = rich.estimatedPlayTime || '';
+  const whyGreat = rich.whyGreat || '';
+  const seriesGames = GAMES.filter(g => g.series === game.series && g.slug !== game.slug).slice(0, 4);
+
+  return `${header()}
+  <title>Play ${game.title} Online Free — Browser GBA Emulator | EggerMath</title>
+  <meta name="description" content="Play ${game.title} online free in your browser. No download needed. mGBA WebAssembly emulator with save states, fast forward, and mobile controls.">
+  <link rel="canonical" href="${SITE}/play/${game.slug}/">
+  <meta property="og:title" content="Play ${game.title} Online Free — GBA Emulator">
+  <meta property="og:description" content="Play ${game.title} online free in your browser. No download needed.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="${SITE}/play/${game.slug}/">
+  <meta property="og:site_name" content="EggerMath">
+  <meta property="og:image" content="${SITE}/images/eggermath-logo.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoGame",
+        "name": "${game.title}",
+        "description": "Play ${game.title} online free in your browser. No download needed.",
+        "gameEmulator": "Game Boy Advance",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "datePublished": "${game.year}",
+        "genre": ["${game.genre}"],
+        "gamePlatform": "Game Boy Advance",
+        "isAccessibleForFree": true,
+        "inLanguage": "en",
+        "keywords": "play ${game.title} online, ${game.title} online free, ${game.title} browser, ${game.title} no download",
+        "author": {"@type": "Organization", "name": "EggerMath"},
+        "url": "${SITE}/play/${game.slug}/",
+        "publisher": {"@type": "Organization", "name": "${game.developer}"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "${SITE}/"},
+          {"@type": "ListItem", "position": 2, "name": "Play Online", "item": "${SITE}/play/"},
+          {"@type": "ListItem", "position": 3, "name": "Play ${game.title}", "item": "${SITE}/play/${game.slug}/"}
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type": "Question", "name": "How do I play ${game.title} online for free?", "acceptedAnswer": {"@type": "Answer", "text": "Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required."}},
+          {"@type": "Question", "name": "Can I save my progress in ${game.title}?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots."}},
+          {"@type": "Question", "name": "Does ${game.title} work on mobile?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EggerMath works on any device with a modern web browser. Mobile devices get touch controls."}}
+        ]
+      }
+    ]
+  }
+  </script>
+  ${baseStyle()}
+</head>
+<body>
+  ${navHTML('play')}
+  ${pageLayout('play', [{name: 'Home', url: '/'}, {name: 'Play Online', url: '/play/'}, {name: 'Play ' + game.title, url: ''}], `
+    <span style="display:inline-block;background:rgba(196,163,90,0.15);color:#c4a35a;padding:4px 12px;border-radius:20px;font-size:0.75rem;border:1px solid rgba(196,163,90,0.3);margin-bottom:12px;">Play Online · GBA</span>
+    <h1>Play ${game.title} Online Free</h1>
+    <p class="meta">${game.year} · ${game.genre} · ${game.series} · No download required</p>
+    <div style="margin-bottom:8px;">
+      <span class="stars" style="font-size:1.3rem;">${starsHTML(game.rating)}</span>
+      <span style="color:#f0ebe0;font-weight:700;font-size:1.1rem;margin-left:6px;">${game.rating}</span>
+      <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">/10</span>
+      <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;margin-left:4px;">· ${game.ratingCount} ratings</span>
+    </div>
+    <p style="font-size:1rem;line-height:1.7;color:rgba(240,235,224,0.7);margin-bottom:20px;">${overview}</p>
+
+    <a href="/gba-emulator-web/" class="play-btn" style="display:inline-block;background:#c4a35a;color:#161a13;padding:14px 32px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;margin:20px 0;">Play ${game.title} Online Free</a>
+
+    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Game Facts</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Platform</span><br><span style="color:#f0ebe0;font-size:0.95rem;">Game Boy Advance</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Genre</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.genre}</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Release Year</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.year}</span></div>
+        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Developer</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.developer}</span></div>
+        ${difficulty ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Difficulty</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${difficulty}</span></div>` : ''}
+        ${playTime ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Play Time</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${playTime}</span></div>` : ''}
+      </div>
+    </div>
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">How to Play ${game.title} Online</h2>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly, the most accurate Game Boy Advance emulator available. Use keyboard controls (${game.controls}) or touch controls on mobile. Save states, fast forward, and fullscreen are built in.</p>
+    </div>
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Controls</h2>
+      <div style="padding:12px;background:rgba(196,163,90,0.08);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
+        <p style="color:rgba(240,235,224,0.7);font-size:0.9rem;font-family:monospace;">${game.controls}</p>
+      </div>
+      <p style="color:rgba(240,235,224,0.5);font-size:0.85rem;margin-top:8px;">On mobile, use the on-screen touch controls. You can customize controls in the emulator settings.</p>
+    </div>
+
+    ${tips.length ? `
+    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Tips &amp; Strategy</h2>
+      <ul style="padding-left:20px;">
+        ${tips.map(tip => `<li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">${tip}</li>`).join('')}
+      </ul>
+    </div>
+    ` : ''}
+
+    ${whyGreat ? `
+    <div style="margin:30px 0;padding:16px;background:rgba(196,163,90,0.08);border-radius:12px;border:1px solid rgba(196,163,90,0.15);">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Why ${game.title} Is One of the Best GBA Games</h2>
+      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">${whyGreat}</p>
+    </div>
+    ` : ''}
+
+    ${seriesGames.length ? `
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">More ${game.series} Games Online</h2>
+      <div class="grid">
+        ${seriesGames.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('')}
+      </div>
+    </div>
+    ` : ''}
+
+    <div style="margin:30px 0;">
+      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Frequently Asked Questions</h2>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">How do I play ${game.title} online for free?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Can I save my progress in ${game.title}?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} free to play?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Does ${game.title} work on mobile?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. EggerMath works on any device with a modern web browser. Mobile devices get on-screen touch controls automatically.</p></details>
+      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">What controls does ${game.title} use?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">${game.title} uses: ${game.controls}. On mobile, use the on-screen touch controls.</p></details>
+    </div>
+  `)}
+  ${footerHTML()}`;
+}
+
+// ============ UNBLOCKED HUB ============
+function unblockedHubHTML() {
+  const games = UNBLOCKED_GAMES.map(slug => GAMES.find(g => g.slug === slug)).filter(Boolean);
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('\n');
+  return `${header()}
+  <title>GBA Unblocked Games — Play GBA Games Unblocked Online Free</title>
+  <meta name="description" content="Play GBA games unblocked online free in your browser. No school filters, no restrictions. Pokemon, Zelda, Mario, Metroid and more — no download, no install.">
+  <link rel="canonical" href="${SITE}/unblocked/">
+  <meta property="og:title" content="GBA Unblocked Games — Play Online Free">
+  <meta property="og:description" content="Play GBA games unblocked online free. No school filters, no restrictions.">
+  <meta property="og:url" content="${SITE}/unblocked/">
+  <meta property="og:site_name" content="EggerMath">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "GBA Unblocked Games",
+    "description": "Play GBA games unblocked online free in your browser. No school filters, no restrictions.",
+    "url": "${SITE}/unblocked/",
+    "isPartOf": {"@type": "WebSite", "name": "EggerMath", "url": "${SITE}"}
+  }
+  </script>
+  ${baseStyle()}
+</head>
+<body>
+  ${navHTML('unblocked')}
+  ${pageLayout('unblocked', [{name: 'Home', url: '/'}, {name: 'Unblocked Games', url: ''}], `
+    <h1>GBA Unblocked Games</h1>
+    <p class="meta">${games.length} games · No school filters · No restrictions · No download</p>
+    <div style="margin:20px 0;padding:16px;background:rgba(46,204,113,0.08);border-radius:12px;border:1px solid rgba(46,204,113,0.2);">
+      <h2 style="font-size:1.1rem;color:#2ecc71;margin-bottom:8px;">Why Play Unblocked Games Here?</h2>
+      <ul style="padding-left:20px;">
+        <li style="color:rgba(240,235,224,0.7);font-size:0.9rem;line-height:1.7;">All games run in your browser — no downloads or installations</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.9rem;line-height:1.7;">Works on school Chromebooks, work computers, and any device</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.9rem;line-height:1.7;">No account or login required — just click and play</li>
+        <li style="color:rgba(240,235,224,0.7);font-size:0.9rem;line-height:1.7;">Save states let you pick up where you left off</li>
+      </ul>
+    </div>
+    <div class="grid">${gamesHTML}</div>
+  `)}
+  ${footerHTML()}`;
+}
+
+// ============ PLAY ONLINE HUB ============
+function playHubHTML() {
+  const games = PLAY_GAMES.map(slug => GAMES.find(g => g.slug === slug)).filter(Boolean);
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">Play ${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('\n');
+  return `${header()}
+  <title>Play GBA Games Online Free — Browser GBA Emulator</title>
+  <meta name="description" content="Play GBA games online free in your browser. Pokemon, Zelda, Mario, Metroid and more — no download, no install. mGBA WebAssembly emulator with save states.">
+  <link rel="canonical" href="${SITE}/play/">
+  <meta property="og:title" content="Play GBA Games Online Free">
+  <meta property="og:description" content="Play GBA games online free. No download needed.">
+  <meta property="og:url" content="${SITE}/play/">
+  <meta property="og:site_name" content="EggerMath">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Play GBA Games Online Free",
+    "description": "Play GBA games online free in your browser. No download needed.",
+    "url": "${SITE}/play/",
+    "isPartOf": {"@type": "WebSite", "name": "EggerMath", "url": "${SITE}"}
+  }
+  </script>
+  ${baseStyle()}
+</head>
+<body>
+  ${navHTML('play')}
+  ${pageLayout('play', [{name: 'Home', url: '/'}, {name: 'Play Online', url: ''}], `
+    <h1>Play GBA Games Online Free</h1>
+    <p class="meta">${games.length} games · No download · No install · Play in browser</p>
+    <div class="grid">${gamesHTML}</div>
+  `)}
+  ${footerHTML()}`;
+}
+
 // ============ GENERATE ============
 const gamesDir = path.join(__dirname, 'games');
 if (!fs.existsSync(gamesDir)) fs.mkdirSync(gamesDir, { recursive: true });
@@ -1278,6 +1809,30 @@ console.log('Years: ' + years.length);
 fs.writeFileSync(path.join(__dirname, 'search-index.json'), searchIndexJSON());
 console.log('Search index generated');
 
+// ============ UNBLOCKED PAGES ============
+mkdir(path.join(__dirname, 'unblocked'));
+fs.writeFileSync(path.join(__dirname, 'unblocked', 'index.html'), unblockedHubHTML());
+UNBLOCKED_GAMES.forEach(slug => {
+  const game = GAMES.find(g => g.slug === slug);
+  if (game) {
+    mkdir(path.join(__dirname, 'unblocked', slug));
+    fs.writeFileSync(path.join(__dirname, 'unblocked', slug, 'index.html'), unblockedPageHTML(game));
+  }
+});
+console.log('Unblocked pages: ' + UNBLOCKED_GAMES.length);
+
+// ============ PLAY ONLINE PAGES ============
+mkdir(path.join(__dirname, 'play'));
+fs.writeFileSync(path.join(__dirname, 'play', 'index.html'), playHubHTML());
+PLAY_GAMES.forEach(slug => {
+  const game = GAMES.find(g => g.slug === slug);
+  if (game) {
+    mkdir(path.join(__dirname, 'play', slug));
+    fs.writeFileSync(path.join(__dirname, 'play', slug, 'index.html'), playPageHTML(game));
+  }
+});
+console.log('Play online pages: ' + PLAY_GAMES.length);
+
 // ============ SITEMAP ============
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -1318,6 +1873,16 @@ years.forEach(y => {
 });
 ['about', 'contact', 'privacy', 'terms', 'takedown'].forEach(p => {
   sitemap += `  <url><loc>${SITE}/${p}.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>\n`;
+});
+sitemap += `  <url><loc>${SITE}/unblocked/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>\n`;
+UNBLOCKED_GAMES.forEach(slug => {
+  const game = GAMES.find(g => g.slug === slug);
+  if (game) sitemap += `  <url><loc>${SITE}/unblocked/${slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n`;
+});
+sitemap += `  <url><loc>${SITE}/play/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>\n`;
+PLAY_GAMES.forEach(slug => {
+  const game = GAMES.find(g => g.slug === slug);
+  if (game) sitemap += `  <url><loc>${SITE}/play/${slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n`;
 });
 sitemap += `  <url><loc>${SITE}/blog/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
 
