@@ -822,7 +822,7 @@ function gamePageHTML(game) {
 function consolePageHTML(console) {
   const games = GAMES_WITH_CONSOLE.filter(g => g.console === console.short);
   const gamesHTML = games.length
-    ? games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n')
+    ? games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n')
     : `<div class="card" style="grid-column:1/-1;"><h3>${console.name} games coming soon</h3><p>We are adding ${console.name} games to EggerMath. Bookmark this page and check back.</p></div>`;
   const activeKey = console.slug;
   return `${header()}
@@ -921,7 +921,7 @@ function genreHubHTML() {
 
 function genrePageHTML(genre) {
   const games = GAMES.filter(g => g.genre === genre.name);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.series} · ${g.year}</div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.series} · ${g.year}</div></div>`).join('\n');
   return `${header()}
   <title>Play ${genre.name} GBA Games Online Free — No Download, No Install</title>
   <meta name="description" content="${padMeta(genre.desc + ' No download required. Play instantly in your browser.')}">
@@ -976,7 +976,7 @@ function seriesHubHTML() {
 
 function seriesPageHTML(series) {
   const games = GAMES.filter(g => g.series === series.name);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
   return `${header()}
   <title>Play ${series.name} GBA Games Online Free — No Download, No Install</title>
   <meta name="description" content="${padMeta(series.desc + ' No download required. Play instantly in your browser.')}">
@@ -1032,7 +1032,7 @@ function tagsHubHTML() {
 function tagPageHTML(tag) {
   const slug = tag.replace(/\s+/g, '-');
   const games = GAMES.filter(g => g.tags.includes(tag));
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
   const displayName = tag.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   return `${header()}
   <title>Play ${displayName} GBA Games Online Free</title>
@@ -1085,7 +1085,7 @@ function developersHubHTML() {
 
 function developerPageHTML(dev) {
   const games = GAMES.filter(g => g.developer === dev.name);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div></div>`).join('\n');
 
   const genreCounts = {};
   games.forEach(g => { genreCounts[g.genre] = (genreCounts[g.genre] || 0) + 1; });
@@ -1170,7 +1170,7 @@ function yearlyHubHTML() {
 
 function yearlyPageHTML(year) {
   const games = GAMES.filter(g => g.year === year);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.series}</div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.series}</div></div>`).join('\n');
   return `${header()}
   <title>GBA Games from ${year} — Play Retro Games from ${year} Online Free</title>
   <meta name="description" content="${padMeta('Play GBA games from ' + year + ' online free. ' + games.slice(0, 3).map(g => g.title).join(', ') + (games.length > 3 ? ' and more' : '') + '. No download, no install, play in your browser.')}">
@@ -1481,7 +1481,7 @@ function unblockedPageHTML(game) {
     <div style="margin:30px 0;">
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">More ${game.series} Unblocked Games</h2>
       <div class="grid">
-        ${seriesGames.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('')}
+        ${seriesGames.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('')}
       </div>
     </div>
     ` : ''}
@@ -1632,7 +1632,7 @@ function playPageHTML(game) {
     <div style="margin:30px 0;">
       <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">More ${game.series} Games Online</h2>
       <div class="grid">
-        ${seriesGames.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('')}
+        ${seriesGames.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('')}
       </div>
     </div>
     ` : ''}
@@ -1652,7 +1652,7 @@ function playPageHTML(game) {
 // ============ UNBLOCKED HUB ============
 function unblockedHubHTML() {
   const games = UNBLOCKED_GAMES.map(slug => GAMES.find(g => g.slug === slug)).filter(Boolean);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/unblocked/${g.slug}/">${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/unblocked/${g.slug}/" style="color:#c4a35a;">Play Unblocked →</a></div></div>`).join('\n');
   return `${header()}
   <title>GBA Unblocked Games — Play GBA Games Unblocked Online Free</title>
   <meta name="description" content="Play GBA games unblocked online free in your browser. No school filters, no restrictions. Pokemon, Zelda, Mario, Metroid and more — no download, no install.">
@@ -1695,7 +1695,7 @@ function unblockedHubHTML() {
 // ============ PLAY ONLINE HUB ============
 function playHubHTML() {
   const games = PLAY_GAMES.map(slug => GAMES.find(g => g.slug === slug)).filter(Boolean);
-  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">Play ${g.title}</a></h3><p>${g.desc.split('.')[0]}.</p><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('\n');
+  const gamesHTML = games.map(g => `<div class="card"><h3><a href="/play/${g.slug}/">Play ${g.title}</a></h3><div class="sub"><span class="stars">${starsHTML(g.rating)}</span> ${g.rating.toFixed(1)} · ${g.genre} · ${g.year}</div><div class="sub"><a href="/play/${g.slug}/" style="color:#c4a35a;">Play Online →</a></div></div>`).join('\n');
   return `${header()}
   <title>Play GBA Games Online Free — Browser GBA Emulator</title>
   <meta name="description" content="Play GBA games online free in your browser. Pokemon, Zelda, Mario, Metroid and more — no download, no install. mGBA WebAssembly emulator with save states.">
