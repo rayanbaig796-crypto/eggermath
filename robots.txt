@@ -2,44 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /*.json$
-Disallow: /games/roms/
-Disallow: /games/bios/
-
-User-Agent: GPTBot
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: anthropic-ai
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: Amazonbot
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: Bytespider
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: CCBot
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: ChatGPT-User
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: OAI-SearchBot
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: Applebot
-Allow: /llms.txt
-Disallow: /
-
-User-Agent: PerplexityBot
-Allow: /llms.txt
-Disallow: /
-
-LLM-Content: https://www.eggermath.com/llms.txt
-LLM-Full-Content: https://www.eggermath.com/llms-full.txt
+Disallow: /gba-emulator-web/roms/
+Disallow: /gba-emulator-web/bios/

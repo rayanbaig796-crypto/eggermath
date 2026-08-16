@@ -862,27 +862,36 @@
  .cgc-title { font-size: 12px; max-width: 110px; }
  .cgc-play { padding: 4px 8px; font-size: 10px; }
  }
- @media (max-width: 380px) {
- .games-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
- }
- </style>
+@media (max-width: 380px) {
+.games-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
+}
+body.embed-mode .site-nav,
+body.embed-mode .breadcrumbs,
+body.embed-mode .main,
+body.embed-mode .games-list-section,
+body.embed-mode .footer-section { display: none !important; }
+body.embed-mode .main { max-width: 100%; padding: 0; margin: 0; }
+body.embed-mode .emulator-container { margin-top: 0; width: 100%; max-width: 100%; border-radius: 0; }
+body.embed-mode canvas { border-radius: 0 !important; width: 100% !important; height: auto !important; }
+body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .status-text { display: none !important; }
+</style>
 </head>
 <body>
+<script>
+(function() {
+  var params = new URLSearchParams(window.location.search);
+  if (params.get('game') || (window.self !== window.top)) {
+    document.body.classList.add('embed-mode');
+  }
+})();
+</script>
  <nav class="site-nav" style="background:#0d0d1a;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
  <a href="/" style="color:#c4a35a;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;text-decoration:none;">EggerMath</a>
  <div style="display:flex;gap:20px;align-items:center;">
  <a href="/" style="color:rgba(240,235,224,0.6);text-decoration:none;font-size:0.85rem;">Home</a>
- <a href="/gba-emulator-web/" style="color:#c4a35a;text-decoration:none;font-size:0.85rem;">GBA Emulator</a>
- <a href="/gameboy-advance/" style="color:rgba(240,235,224,0.6);text-decoration:none;font-size:0.85rem;">GBA Games</a>
- <a href="/blog/" style="color:rgba(240,235,224,0.6);text-decoration:none;font-size:0.85rem;">Blog</a>
+ <a href="/gba-emulator-web/" style="color:#c4a35a;text-decoration:none;font-size:0.85rem;">Emulator</a>
  </div>
  </nav>
- <nav class="breadcrumbs" aria-label="Breadcrumb" style="padding:10px 24px;font-size:0.8rem;color:rgba(240,235,224,0.4);">
- <a href="/" style="color:rgba(240,235,224,0.5);text-decoration:none;">Home</a>
- <span style="margin:0 6px;">›</span>
- <span style="color:#c4a35a;">GBA Emulator</span>
- </nav>
- <h1 style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">Play GBA Games Online Free — EggerMath Browser GBA Emulator</h1>
  <div class="main">
  <div id="upload-area">
  <div class="icon"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></div>
@@ -945,38 +954,6 @@
  <div class="guide-note">
  <strong>Tip:</strong> You can also drag & drop your own .gba, .zip, .gb, or .gbc files into the upload area. Your saves are stored locally in your browser — no account needed. Works best on Chrome and Edge.
  </div>
- </div>
- </div>
-
- <div class="games-list-section">
- <h2>GBA Games You Can Play Online</h2>
- <p>All games below run directly in your browser — no download, no install. Click any title to play instantly.</p>
- <div class="games-list">
- <div class="games-list-item"><h3><a href="/games/pokemon-emerald.html">Pokemon Emerald</a></h3><p>Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-firered.html">Pokemon FireRed</a></h3><p>Play Pokemon FireRed online. An enhanced remake of Pokemon Red for GBA with updated graphics, abilities, and the Sevii Islands post-game. Explore Kanto, collect all 151 original Pokemon, and become Pokemon Champion.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-leafgreen.html">Pokemon LeafGreen</a></h3><p>Play Pokemon LeafGreen online in your browser. The counterpart to FireRed featuring Pokemon Green exclusives. Explore Kanto with updated graphics, new mechanics like abilities and natures, and the Sevii Islands.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-ruby.html">Pokemon Ruby</a></h3><p>Play Pokemon Ruby online. Journey through the Hoenn region, catch 135 new Pokemon, and stop Team Magma from expanding the land. Features double battles, Pokemon Contests, and the Battle Tower.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-sapphire.html">Pokemon Sapphire</a></h3><p>Play Pokemon Sapphire online in your browser. The counterpart to Ruby featuring Team Aqua and exclusive Pokemon. Explore Hoenn, master double battles, and challenge the Battle Tower.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-ultra-violet.html">Pokemon Ultra Violet</a></h3><p>Play Pokemon Ultra Violet online. A FireRed ROM hack featuring all Pokemon from Gen 1-3 in one game. Catch every Pokemon without trading, explore expanded Sevii Islands, and enjoy quality-of-life improvements.</p></div>
- <div class="games-list-item"><h3><a href="/games/pokemon-jupiter.html">Pokemon Jupiter</a></h3><p>Play Pokemon Jupiter online. A Ruby ROM hack set in the Oxalis region with 200+ new fakemon, custom story, and updated mechanics. Features a darker narrative and challenging gym battles.</p></div>
- <div class="games-list-item"><h3><a href="/games/zelda-minish-cap.html">Zelda: Minish Cap</a></h3><p>Play Zelda Minish Cap online in your browser. Help Link shrink to Minish size and explore Hyrule from a new perspective. Features the Gust Jar, Mole Mitts, and the ability to fuse Kinstones with NPCs.</p></div>
- <div class="games-list-item"><h3><a href="/games/zelda-link-to-the-past.html">Zelda: A Link to the Past</a></h3><p>Play Zelda A Link to the Past online. The GBA port of the SNES classic featuring both the original Light/Dark World adventure and the new Four Swords multiplayer mode. Explore dungeons, collect artifacts, and defeat Ganon.</p></div>
- <div class="games-list-item"><h3><a href="/games/mario-kart-super-circuit.html">Mario Kart Super Circuit</a></h3><p>Play Mario Kart Super Circuit online in your browser. The first portable Mario Kart featuring 20 tracks from Super Mario Kart (SNES) plus 20 new courses. Drift, use items, and race against friends.</p></div>
- <div class="games-list-item"><h3><a href="/games/super-mario-world.html">Super Mario World</a></h3><p>Play Super Mario World online. The GBA port of the SNES classic featuring Yoshi, secret exits, and 96 levels. Explore Dinosaur Land, ride Yoshi through colorful worlds, and rescue Princess Peach from Bowser.</p></div>
- <div class="games-list-item"><h3><a href="/games/mario-luigi-superstar-saga.html">Mario & Luigi: Superstar Saga</a></h3><p>Play Mario & Luigi Superstar Saga online. An action RPG where Mario and Luigi travel to the Beanbean Kingdom to recover Princess Peach stolen voice. Features timing-based combat, Bros. Attacks, and humorous dialogue.</p></div>
- <div class="games-list-item"><h3><a href="/games/classic-nes-super-mario-bros.html">Classic NES: Super Mario Bros</a></h3><p>Play Classic NES Super Mario Bros online. The original 1985 platformer ported to GBA. Run, jump, and stomp through 32 levels across 8 worlds to rescue Princess Toadstool from Bowser.</p></div>
- <div class="games-list-item"><h3><a href="/games/metroid-fusion.html">Metroid Fusion</a></h3><p>Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites, recover your ship parts, and confront the SA-X in this atmospheric action-adventure.</p></div>
- <div class="games-list-item"><h3><a href="/games/metroid-zero-mission.html">Metroid: Zero Mission</a></h3><p>Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes, collect power-ups, and defeat Mother Brain in this fast-paced action game.</p></div>
- <div class="games-list-item"><h3><a href="/games/kirby-nightmare-in-dream-land.html">Kirby: Nightmare in Dream Land</a></h3><p>Play Kirby Nightmare in Dream Land online. Help Kirby reclaim the Dream Rod from King Dedede. Copy enemy abilities, float through colorful levels, and enjoy this GBA remake of the NES classic.</p></div>
- <div class="games-list-item"><h3><a href="/games/kirby-amazing-mirror.html">Kirby & the Amazing Mirror</a></h3><p>Play Kirby and the Amazing Mirror online. Explore the mirror world with 4 Kirbys, copy 12 abilities, and collect 900 stars. Features a Metroidvania-style map with interconnected areas.</p></div>
- <div class="games-list-item"><h3><a href="/games/castlevania-aria-of-sorrow.html">Castlevania: Aria of Sorrow</a></h3><p>Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities. Features 100+ collectible souls, multiple weapons, and multiple endings.</p></div>
- <div class="games-list-item"><h3><a href="/games/donkey-kong-country.html">Donkey Kong Country</a></h3><p>Play Donkey Kong Country online. The GBA port of the SNES classic. Swing on vines, ride mine carts, and defeat King K. Rool with Diddy Kong. Features 40 levels across 7 worlds.</p></div>
- <div class="games-list-item"><h3><a href="/games/fire-emblem-sacred-stones.html">Fire Emblem: Sacred Stones</a></h3><p>Play Fire Emblem Sacred Stones online. Lead Eirika or Ephraim through the war-torn continents of Magvel. Recruit 24 characters, promote classes, and navigate branching story paths in this tactical RPG.</p></div>
- <div class="games-list-item"><h3><a href="/games/sonic-advance-3.html">Sonic Advance 3</a></h3><p>Play Sonic Advance 3 online in your browser. Race through 7 zones as Sonic, Tails, Knuckles, or Amy. Use the Tag feature to switch characters mid-level and find hidden Chao.</p></div>
- <div class="games-list-item"><h3><a href="/games/dragon-ball-advanced-adventure.html">Dragon Ball: Advanced Adventure</a></h3><p>Play Dragon Ball Advanced Adventure online. Relive the original Dragon Ball saga as young Goku. Fight through 100+ missions, collect 20+ characters, and master martial arts combos in this action-fighting game.</p></div>
- <div class="games-list-item"><h3><a href="/games/harvest-moon-friends-of-mineral-town.html">Harvest Moon</a></h3><p>Play Harvest Moon Friends of Mineral Town online. Build a farm, grow crops, raise animals, and find a partner in this charming life simulation. Features 4 seasons, mining, fishing, and 30+ bachelorettes.</p></div>
- <div class="games-list-item"><h3><a href="/games/crash-bandicoot-huge-adventure.html">Crash Bandicoot</a></h3><p>Play Crash Bandicoot online. Help Crash shrink down to micro-size and battle the mutant insects of Cortex. Features 5 worlds, 30+ levels, and classic Crash platforming action.</p></div>
- <div class="games-list-item"><h3><a href="/games/gta-advance.html">GTA Advance</a></h3><p>Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob. Features an open world, driveable vehicles, and the classic GTA crime gameplay on GBA.</p></div>
  </div>
  </div>
 
@@ -1571,9 +1548,12 @@
  e.stopPropagation(); clearContinue();
  });
 
- loadContinueBar();
+  loadContinueBar();
 
- /* ── Popular Games Grid + MEGA Integration ── */
+  /* ── URL ?game= auto-load ── */
+  var autoGame = new URLSearchParams(window.location.search).get('game');
+
+  /* ── Popular Games Grid + MEGA Integration ── */
  (function initGamesGrid() {
  var grid = document.getElementById('games-grid');
  if (!grid) return;
@@ -1611,10 +1591,40 @@
 
  window.mega.File.fromURL(MEGA_FOLDER).loadAttributes(function(err, folder) {
  if (err) { console.warn('MEGA folder load failed:', err); return; }
- megaFiles = {};
- folder.children.forEach(function(f) { megaFiles[f.name] = f; });
- console.log('MEGA folder loaded:', Object.keys(megaFiles).length, 'files');
- });
+  megaFiles = {};
+  folder.children.forEach(function(f) { megaFiles[f.name] = f; });
+  console.log('MEGA folder loaded:', Object.keys(megaFiles).length, 'files');
+  if (autoGame && megaFiles[autoGame]) {
+    var ag = games.find(function(g) { return g.mega === autoGame; });
+    if (ag) {
+      setStatus('Loading ' + ag.title + '...');
+      setProgress(0);
+      progressBar.classList.add('visible');
+      uploadArea.style.display = 'none';
+      var preGame2 = document.getElementById('pre-game-content');
+      if (preGame2) preGame2.classList.add('hidden');
+      fileInfo.classList.add('visible');
+      fileName.textContent = ag.title;
+      downloadOrCache(ag.mega, ag.title).then(function(data) {
+        setProgress(90);
+        setStatus('Starting game...');
+        saveLastPlayed(ag.title, ag.mega);
+        var blob = new Blob([data], { type: 'application/zip' });
+        var file = new File([blob], ag.mega, { type: 'application/zip' });
+        loadFile(file);
+      }).catch(function(err) {
+        console.error('Auto-load error:', err);
+        setStatus('Download failed. Try again.');
+        progressBar.classList.remove('visible');
+        uploadArea.style.display = '';
+        if (preGame2) preGame2.classList.remove('hidden');
+        fileInfo.classList.remove('visible');
+      });
+    }
+  } else if (autoGame) {
+    setStatus('Game not found in library');
+  }
+  });
 
  var svgPlay = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
 

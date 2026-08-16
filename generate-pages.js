@@ -637,23 +637,10 @@ function footerHTML() {
 }
 
 function gamePageHTML(game) {
-  const rich = RICH_CONTENT[game.slug] || {};
-  const overview = rich.overview || game.desc;
-  const tips = rich.tips || [];
-  const whyGreat = rich.whyGreat || '';
-  const difficulty = rich.difficulty || '';
-  const playTime = rich.estimatedPlayTime || '';
-  const bestFor = rich.bestFor || '';
-  const seriesGames = GAMES.filter(g => g.series === game.series && g.slug !== game.slug).slice(0, 6);
-  const remaining = 6 - seriesGames.length;
-  const genreGames = remaining > 0 ? GAMES.filter(g => g.genre === game.genre && g.slug !== game.slug && !seriesGames.some(s => s.slug === g.slug)).slice(0, remaining) : [];
-  const related = [...seriesGames, ...genreGames];
-  const relatedHTML = related.map(g => `<div class="card"><a href="/games/${g.slug}.html"><img src="/games/covers/${g.slug}.svg" alt="${g.title}" loading="lazy" style="width:100%;border-radius:8px;margin-bottom:8px;"></a><h3><a href="/games/${g.slug}.html">${g.title}</a></h3><div class="sub">${g.year} · ${g.genre}</div>${g.series !== game.series ? `<div class="sub">${g.series} Series</div>` : ''}<div class="sub"><a href="/games/${g.slug}.html" style="color:#c4a35a;">View Game →</a></div></div>`).join('\n');
-  const tagsHTML = game.tags.map(t => `<a class="chip" href="/tags/${t.replace(/\s+/g, '-')}/">${t}</a>`).join('');
-
+  const megaKey = game.mega;
   return `${header()}
-  <title>${game.title} | Game Boy Advance ${game.year} | Play Retro Games Online Free</title>
-  <meta name="description" content="${metaDesc(game)}">
+  <title>Play ${game.title} Online Free — GBA Emulator | EggerMath</title>
+  <meta name="description" content="Play ${game.title} online free in your browser. No download, no install. ${game.desc.split('.')[0]}.">
   <link rel="canonical" href="${SITE}/games/${game.slug}.html">
   <meta property="og:title" content="Play ${game.title} Online Free — GBA Emulator">
   <meta property="og:description" content="${game.desc.split('.')[0]}.">
@@ -665,158 +652,87 @@ function gamePageHTML(game) {
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "VideoGame",
-        "name": "${game.title}",
-        "description": "${game.desc}",
-        "gameEmulator": "Game Boy Advance",
-        "applicationCategory": "Game",
-        "operatingSystem": "Web Browser",
-        "datePublished": "${game.year}",
-        "genre": ["${game.genre}"],
-        "gamePlatform": "Game Boy Advance",
-        "isAccessibleForFree": true,
-        "inLanguage": "en",
-        "keywords": "${game.title}, GBA, Game Boy Advance, play ${game.title} online, ${game.title} emulator",
-        "author": {"@type": "Organization", "name": "EggerMath"},
-        "gameSeries": "${game.series}",
-        "gameLocation": "${SITE}/games/${game.slug}.html",
-        "publisher": {"@type": "Organization", "name": "${game.developer}"},
-        "url": "${SITE}/games/${game.slug}.html",
-        "aggregateRating": {"@type": "AggregateRating", "ratingValue": ${game.rating}, "bestRating": 10, "ratingCount": ${game.ratingCount}}
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Home", "item": "${SITE}/"},
-          {"@type": "ListItem", "position": 2, "name": "Game Boy Advance", "item": "${SITE}/gameboy-advance/"},
-          {"@type": "ListItem", "position": 3, "name": "${game.title}", "item": "${SITE}/games/${game.slug}.html"}
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {"@type": "Question", "name": "How do I play ${game.title} online?", "acceptedAnswer": {"@type": "Answer", "text": "Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly, the most accurate Game Boy Advance emulator available."}},
-          {"@type": "Question", "name": "Can I save my progress in ${game.title}?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds."}},
-          {"@type": "Question", "name": "Is ${game.title} free to play?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs."}},
-          {"@type": "Question", "name": "Does ${game.title} work on mobile phones?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. EggerMath works on any device with a modern web browser. Mobile devices get on-screen touch controls automatically."}},
-          {"@type": "Question", "name": "What controls does ${game.title} use?", "acceptedAnswer": {"@type": "Answer", "text": "${game.title} uses these controls: ${game.controls}. On mobile, use the on-screen touch controls."}}
-        ]
-      }
-    ]
+    "@type": "VideoGame",
+    "name": "${game.title}",
+    "description": "${game.desc}",
+    "gameEmulator": "Game Boy Advance",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "datePublished": "${game.year}",
+    "genre": ["${game.genre}"],
+    "gamePlatform": "Game Boy Advance",
+    "isAccessibleForFree": true,
+    "inLanguage": "en",
+    "keywords": "${game.title}, GBA, Game Boy Advance, play ${game.title} online, ${game.title} emulator",
+    "author": {"@type": "Organization", "name": "EggerMath"},
+    "gameSeries": "${game.series}",
+    "gameLocation": "${SITE}/games/${game.slug}.html",
+    "publisher": {"@type": "Organization", "name": "${game.developer}"},
+    "url": "${SITE}/games/${game.slug}.html",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": ${game.rating}, "bestRating": 10, "ratingCount": ${game.ratingCount}}
   }
   </script>
-  ${baseStyle()}
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'DM Sans', 'Inter', sans-serif; background: #161a13; color: #f0ebe0; min-height: 100vh; display: flex; flex-direction: column; }
+    .nav { background: #0d0d1a; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.06); position: sticky; top: 0; z-index: 200; }
+    .nav a { color: rgba(240,235,224,0.6); text-decoration: none; font-size: 0.85rem; margin-left: 18px; }
+    .nav a.brand { color: #c4a35a; font-weight: 700; font-size: 1.1rem; margin-left: 0; }
+    .emulator-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; }
+    .emulator-frame { width: 100%; max-width: 800px; aspect-ratio: 3/2; border: none; border-radius: 12px; margin-top: 16px; background: #000; }
+    .back-bar { padding: 16px 24px; text-align: center; }
+    .back-btn { display: inline-flex; align-items: center; gap: 8px; background: rgba(196,163,90,0.12); color: #c4a35a; border: 1px solid rgba(196,163,90,0.3); padding: 10px 24px; border-radius: 8px; text-decoration: none; font-size: 0.9rem; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+    .back-btn:hover { background: rgba(196,163,90,0.25); }
+    .back-btn svg { width: 16px; height: 16px; }
+    .controls-box { max-width: 800px; width: 100%; margin: 0 auto 20px; padding: 16px 24px; background: rgba(18,18,31,0.8); border-radius: 12px; border: 1px solid rgba(255,255,255,0.04); }
+    .controls-box h3 { color: #c4a35a; font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
+    .controls-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    .controls-row:last-child { border-bottom: none; }
+    .controls-row span:first-child { color: rgba(240,235,224,0.5); font-size: 0.9rem; }
+    .controls-row span:last-child { color: #f0ebe0; font-size: 0.9rem; font-family: monospace; }
+    .footer { background: #0d0d1a; padding: 16px 24px; text-align: center; color: rgba(240,235,224,0.4); font-size: 0.8rem; border-top: 1px solid rgba(255,255,255,0.06); }
+    @media (max-width: 600px) { .emulator-frame { margin-top: 8px; border-radius: 0; } }
+  </style>
 </head>
-<body data-game-slug="${game.slug}">
-  ${navHTML('gba')}
-  ${pageLayout('gba', [{name: 'Home', url: '/'}, {name: 'Games', url: '/gameboy-advance/'}, {name: 'Game Boy Advance', url: '/gameboy-advance/'}, {name: game.title, url: ''}], `
-    <span style="display:inline-block;background:rgba(196,163,90,0.15);color:#c4a35a;padding:4px 12px;border-radius:20px;font-size:0.75rem;border:1px solid rgba(196,163,90,0.3);margin-bottom:12px;">GBA · Game Boy Advance</span>
-    <h1>${game.title}</h1>
-    <div style="margin-bottom:8px;">
-      <span class="stars" style="font-size:1.3rem;">${starsHTML(game.rating)}</span>
-      <span style="color:#f0ebe0;font-weight:700;font-size:1.1rem;margin-left:6px;">${game.rating}</span>
-      <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">/10</span>
-      <span style="color:rgba(240,235,224,0.4);font-size:0.85rem;margin-left:4px;">· ${game.ratingCount} ratings</span>
+<body>
+  <nav class="nav">
+    <a href="/" class="brand">EggerMath</a>
+    <div>
+      <a href="/">Home</a>
+      <a href="/gameboy-advance/">Games</a>
+      <a href="/gba-emulator-web/">Emulator</a>
     </div>
-    <div style="margin-bottom:12px;">
-      <div id="eggm-auth-bar" style="margin-bottom:12px;font-size:0.9rem;"></div>
-      <button data-fav-btn data-slug="${game.slug}" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-right:8px;">♥ Add to Favorites</button>
-      <button data-report-btn style="background:transparent;color:rgba(240,235,224,0.5);border:1px solid rgba(255,255,255,0.15);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;">⚑ Report Issue</button>
+  </nav>
+  <div class="emulator-wrap">
+    <div class="back-bar">
+      <a href="/gameboy-advance/" class="back-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        Back to Games
+      </a>
     </div>
-    <div class="meta">
-      <span>${game.year}</span> · <span>${game.genre}</span> · <a href="/series/${game.series.toLowerCase().replace(/\s+/g, '-')}/" style="color:#c4a35a;">${game.series} Series</a> · <a href="/developers/${game.developer.toLowerCase().replace(/\s+/g, '-')}/" style="color:#c4a35a;">${game.developer}</a>
+    <iframe class="emulator-frame" src="/gba-emulator-web/?game=${encodeURIComponent(megaKey)}" allowfullscreen></iframe>
+    <div class="controls-box">
+      <h3>Keyboard Controls</h3>
+      <div class="controls-row"><span>D-Pad</span><span>WASD / Arrow Keys</span></div>
+      <div class="controls-row"><span>A Button</span><span>K</span></div>
+      <div class="controls-row"><span>B Button</span><span>J</span></div>
+      <div class="controls-row"><span>L</span><span>Q</span></div>
+      <div class="controls-row"><span>R</span><span>E</span></div>
+      <div class="controls-row"><span>Start</span><span>Enter</span></div>
+      <div class="controls-row"><span>Select</span><span>Right Shift</span></div>
+      <div class="controls-row"><span>Save State</span><span>F5</span></div>
+      <div class="controls-row"><span>Load State</span><span>F9</span></div>
+      <div class="controls-row"><span>Switch Slot</span><span>F7</span></div>
+      <div class="controls-row"><span>Fullscreen</span><span>Double-click canvas</span></div>
     </div>
-    <p style="font-size:1rem;line-height:1.7;color:rgba(240,235,224,0.7);margin-bottom:20px;">${game.desc}</p>
-    <div class="chip-row">${tagsHTML}</div>
-    <a href="/gba-emulator-web/" class="play-btn" style="display:inline-block;background:#c4a35a;color:#161a13;padding:14px 32px;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;margin:20px 0;">Play ${game.title} Online Free</a>
-
-    <details style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);" open>
-      <summary style="cursor:pointer;font-weight:600;font-size:1.2rem;color:#c4a35a;list-style:none;">Game Controls</summary>
-      <p style="color:rgba(240,235,224,0.7);font-size:0.9rem;font-family:monospace;margin-top:10px;">${game.controls}</p>
-    </details>
-
-    <div style="margin:30px 0;">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">About ${game.title}</h2>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">${overview}</p>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;margin-top:12px;">
-        ${game.title} was developed by ${game.developer} and released for the Game Boy Advance in ${game.year}. 
-        As a ${game.genre} title in the ${game.series} series, it features ${game.tags.join(', ')} gameplay. 
-        This retro classic brings the full ${game.genre.toLowerCase()} experience to modern browsers — no downloads, no installation required.
-      </p>
-    </div>
-
-    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Game Facts</h2>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;">
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Platform</span><br><span style="color:#f0ebe0;font-size:0.95rem;">Game Boy Advance</span></div>
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Genre</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.genre}</span></div>
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Release Year</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.year}</span></div>
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Developer</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.developer}</span></div>
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Rating</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.rating}/10 (${game.ratingCount} reviews)</span></div>
-        <div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Series</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${game.series}</span></div>
-        ${difficulty ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Difficulty</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${difficulty}</span></div>` : ''}
-        ${playTime ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Play Time</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${playTime}</span></div>` : ''}
-        ${bestFor ? `<div><span style="color:rgba(240,235,224,0.4);font-size:0.85rem;">Best For</span><br><span style="color:#f0ebe0;font-size:0.95rem;">${bestFor}</span></div>` : ''}
-      </div>
-    </div>
-
-    ${tips.length ? `
-    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Tips &amp; Strategy</h2>
-      <ul style="padding-left:20px;">
-        ${tips.map(tip => `<li style="color:rgba(240,235,224,0.7);font-size:0.95rem;line-height:1.7;margin-bottom:8px;">${tip}</li>`).join('')}
-      </ul>
-    </div>
-    ` : ''}
-
-    ${whyGreat ? `
-    <div style="margin:30px 0;padding:16px;background:rgba(196,163,90,0.08);border-radius:12px;border:1px solid rgba(196,163,90,0.15);">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Why ${game.title} Is One of the Best GBA Games</h2>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">${whyGreat}</p>
-    </div>
-    ` : ''}
-
-    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Reviews &amp; Ratings</h2>
-      <div style="margin-bottom:12px;"><span style="font-size:2rem;font-weight:700;color:#f0ebe0;">${game.rating}</span><span style="color:rgba(240,235,224,0.4);">/10</span> <span class="stars">${starsHTML(game.rating)}</span> <span style="color:rgba(240,235,224,0.4);">· ${game.ratingCount} ratings</span></div>
-      <p style="color:rgba(240,235,224,0.5);font-size:0.85rem;margin-bottom:10px;">Players rate ${game.title} ${game.rating}/10 for its ${game.tags.slice(0,2).join(' and ')} gameplay and lasting replay value.</p>
-      <div style="margin-bottom:14px;padding:12px;background:rgba(196,163,90,0.06);border-radius:8px;border:1px solid rgba(196,163,90,0.15);">
-        <strong style="color:#c4a35a;font-size:1.4rem;" id="eggm-reviews-rating">Loading…</strong>
-        <span style="color:rgba(240,235,224,0.4);font-size:0.9rem;" id="eggm-reviews-count"></span>
-      </div>
-      <button id="eggm-review-btn" data-slug="${game.slug}" style="background:rgba(196,163,90,0.12);color:#c4a35a;border:1px solid rgba(196,163,90,0.3);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;margin-bottom:14px;">★ Write a Review</button>
-      <div id="eggm-reviews-list"></div>
-    </div>
-
-    ${related.length ? `<div style="margin:30px 0;"><h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Related Games</h2><div class="grid">${relatedHTML}</div></div>` : ''}
-
-    <div style="margin:30px 0;padding:16px;background:rgba(18,18,31,0.8);border-radius:12px;border:1px solid rgba(255,255,255,0.04);">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:10px;">Share This Game</h2>
-      <div style="display:flex;flex-wrap:wrap;gap:8px;">
-        <a href="https://twitter.com/intent/tweet?text=Play+${encodeURIComponent(game.title)}+online+free&url=${encodeURIComponent(SITE + '/games/' + game.slug + '.html')}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:rgba(29,161,242,0.15);color:#1da1f2;padding:8px 16px;border-radius:8px;text-decoration:none;font-size:0.85rem;border:1px solid rgba(29,161,242,0.3);">Twitter / X</a>
-        <a href="https://reddit.com/submit?url=${encodeURIComponent(SITE + '/games/' + game.slug + '.html')}&title=Play+${encodeURIComponent(game.title)}+online+free" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:rgba(255,69,0,0.15);color:#ff4500;padding:8px 16px;border-radius:8px;text-decoration:none;font-size:0.85rem;border:1px solid rgba(255,69,0,0.3);">Reddit</a>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(SITE + '/games/' + game.slug + '.html')}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:rgba(24,119,242,0.15);color:#1877f2;padding:8px 16px;border-radius:8px;text-decoration:none;font-size:0.85rem;border:1px solid rgba(24,119,242,0.3);">Facebook</a>
-        <button onclick="navigator.clipboard.writeText('${SITE}/games/${game.slug}.html').then(()=>this.textContent='Copied!').catch(()=>alert('Copy failed'))" style="background:rgba(255,255,255,0.08);color:rgba(240,235,224,0.7);padding:8px 16px;border-radius:8px;cursor:pointer;font-size:0.85rem;border:1px solid rgba(255,255,255,0.15);">Copy Link</button>
-      </div>
-    </div>
-
-    <div style="margin:30px 0;">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">How to Play ${game.title}</h2>
-      <p style="color:rgba(240,235,224,0.7);line-height:1.7;font-size:0.95rem;">Click the "Play" button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly. Use keyboard controls (${game.controls}) or touch controls on mobile. Save states, fast forward, and fullscreen are built in.</p>
-    </div>
-
-    <div style="margin:30px 0;">
-      <h2 style="font-size:1.2rem;color:#c4a35a;margin-bottom:12px;">Frequently Asked Questions</h2>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">How do I play ${game.title} online?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Click the Play button above to start ${game.title} instantly in your browser. No download, no installation required. The game runs on mGBA WebAssembly, the most accurate Game Boy Advance emulator available.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Can I save my progress in ${game.title}?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. Press F5 to save, F9 to load, and F7 to switch between 10 save slots. Progress also auto-saves every 30 seconds to your browser local storage.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Is ${game.title} free to play?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes, ${game.title} is completely free to play on EggerMath. No account, no fees, no hidden costs. Play unlimited games with full features.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">Does ${game.title} work on mobile phones?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">Yes. EggerMath works on any device with a modern web browser — phones, tablets, laptops, and desktops. Mobile devices get on-screen touch controls automatically.</p></details>
-      <details style="border-bottom:1px solid rgba(255,255,255,0.04);padding:12px 0;"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0;list-style:none;">What controls does ${game.title} use?</summary><p style="padding-top:8px;color:rgba(240,235,224,0.6);font-size:0.9rem;">${game.title} uses these controls: ${game.controls}. On mobile, use the on-screen touch controls. You can also customize controls in the emulator settings.</p></details>
-    </div>
-  `)}
-  ${footerHTML()}`;
+  </div>
+  <footer class="footer">
+    <p>&copy; 2026 EggerMath — Free GBA & Gameboy Emulator</p>
+    <p><a href="/">Home</a> · <a href="/gameboy-advance/">Game Boy Advance</a> · <a href="/gameboy-color/">Game Boy Color</a> · <a href="/blog/">Blog</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></p>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>`;
 }
 
 function consolePageHTML(console) {
@@ -1727,175 +1643,17 @@ function playHubHTML() {
 }
 
 // ============ GENERATE ============
-const gamesDir = path.join(__dirname, 'games');
-if (!fs.existsSync(gamesDir)) fs.mkdirSync(gamesDir, { recursive: true });
-GAMES.forEach(g => {
-  fs.writeFileSync(path.join(gamesDir, g.slug + '.html'), gamePageHTML(g));
-});
-console.log('Games: ' + GAMES.length);
-
-function mkdir(p) { if (!fs.existsSync(p)) fs.mkdirSync(p, { recursive: true }); }
-
-CONSOLES.forEach(c => {
-  mkdir(path.join(__dirname, c.slug));
-  fs.writeFileSync(path.join(__dirname, c.slug, 'index.html'), consolePageHTML(c));
-});
-console.log('Consoles: ' + CONSOLES.length);
-
-CONSOLES.forEach(c => {
-  const consoleGames = GAMES_WITH_CONSOLE.filter(g => g.console === c.short);
-  const GAMES_PER_PAGE = 18;
-  const totalPages = Math.ceil(consoleGames.length / GAMES_PER_PAGE);
-  const dirName = c.short.toLowerCase() + '-games';
-
-  mkdir(path.join(__dirname, dirName));
-  fs.writeFileSync(
-    path.join(__dirname, dirName, 'index.html'),
-    platformListPageHTML(c, consoleGames, 1, '', '', '', 'original')
-  );
-
-  for (let p = 2; p <= totalPages; p++) {
-    fs.writeFileSync(
-      path.join(__dirname, dirName, 'page-' + p + '.html'),
-      platformListPageHTML(c, consoleGames, p, '', '', '', 'original')
-    );
-  }
-});
-console.log('Platform list pages generated');
-
-mkdir(path.join(__dirname, 'genre'));
-fs.writeFileSync(path.join(__dirname, 'genre', 'index.html'), genreHubHTML());
-GENRES.forEach(g => {
-  mkdir(path.join(__dirname, 'genre', g.slug));
-  fs.writeFileSync(path.join(__dirname, 'genre', g.slug, 'index.html'), genrePageHTML(g));
-});
-console.log('Genres: ' + GENRES.length);
-
-mkdir(path.join(__dirname, 'series'));
-fs.writeFileSync(path.join(__dirname, 'series', 'index.html'), seriesHubHTML());
-SERIES.forEach(s => {
-  mkdir(path.join(__dirname, 'series', s.slug));
-  fs.writeFileSync(path.join(__dirname, 'series', s.slug, 'index.html'), seriesPageHTML(s));
-});
-console.log('Series: ' + SERIES.length);
-
-mkdir(path.join(__dirname, 'tags'));
-fs.writeFileSync(path.join(__dirname, 'tags', 'index.html'), tagsHubHTML());
-const allTags = [...new Set(GAMES.flatMap(g => g.tags))];
-allTags.forEach(t => {
-  mkdir(path.join(__dirname, 'tags', t.replace(/\s+/g, '-')));
-  fs.writeFileSync(path.join(__dirname, 'tags', t.replace(/\s+/g, '-'), 'index.html'), tagPageHTML(t));
-});
-console.log('Tags: ' + allTags.length);
-
-mkdir(path.join(__dirname, 'developers'));
-fs.writeFileSync(path.join(__dirname, 'developers', 'index.html'), developersHubHTML());
-DEVELOPERS.forEach(d => {
-  mkdir(path.join(__dirname, 'developers', d.slug));
-  fs.writeFileSync(path.join(__dirname, 'developers', d.slug, 'index.html'), developerPageHTML(d));
-});
-console.log('Developers: ' + DEVELOPERS.length);
-
-mkdir(path.join(__dirname, 'yearly-games'));
-fs.writeFileSync(path.join(__dirname, 'yearly-games', 'index.html'), yearlyHubHTML());
-const years = [...new Set(GAMES.map(g => g.year))];
-years.forEach(y => {
-  mkdir(path.join(__dirname, 'yearly-games', y));
-  fs.writeFileSync(path.join(__dirname, 'yearly-games', y, 'index.html'), yearlyPageHTML(y));
-});
-console.log('Years: ' + years.length);
-
-// ============ SEARCH INDEX ============
 fs.writeFileSync(path.join(__dirname, 'search-index.json'), searchIndexJSON());
 console.log('Search index generated');
-
-// ============ UNBLOCKED PAGES ============
-mkdir(path.join(__dirname, 'unblocked'));
-fs.writeFileSync(path.join(__dirname, 'unblocked', 'index.html'), unblockedHubHTML());
-UNBLOCKED_GAMES.forEach(slug => {
-  const game = GAMES.find(g => g.slug === slug);
-  if (game) {
-    mkdir(path.join(__dirname, 'unblocked', slug));
-    fs.writeFileSync(path.join(__dirname, 'unblocked', slug, 'index.html'), unblockedPageHTML(game));
-  }
-});
-console.log('Unblocked pages: ' + UNBLOCKED_GAMES.length);
-
-// ============ PLAY ONLINE PAGES ============
-mkdir(path.join(__dirname, 'play'));
-fs.writeFileSync(path.join(__dirname, 'play', 'index.html'), playHubHTML());
-PLAY_GAMES.forEach(slug => {
-  const game = GAMES.find(g => g.slug === slug);
-  if (game) {
-    mkdir(path.join(__dirname, 'play', slug));
-    fs.writeFileSync(path.join(__dirname, 'play', slug, 'index.html'), playPageHTML(game));
-  }
-});
-console.log('Play online pages: ' + PLAY_GAMES.length);
 
 // ============ SITEMAP ============
 let sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>${SITE}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>${SITE}/gba-emulator-web/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>\n`;
-
-CONSOLES.forEach(c => {
-  sitemap += `  <url><loc>${SITE}/${c.slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>\n`;
-  const consoleGames = GAMES_WITH_CONSOLE.filter(g => g.console === c.short);
-  const totalPages = Math.ceil(consoleGames.length / 18);
-  sitemap += `  <url><loc>${SITE}/${c.short.toLowerCase()}-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-  for (let p = 2; p <= totalPages; p++) {
-    sitemap += `  <url><loc>${SITE}/${c.short.toLowerCase()}-games/page-${p}.html</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n`;
-  }
-});
-GAMES.forEach(g => {
-  sitemap += `  <url><loc>${SITE}/games/${g.slug}.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/genre/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-GENRES.forEach(g => {
-  sitemap += `  <url><loc>${SITE}/genre/${g.slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/series/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-SERIES.forEach(s => {
-  sitemap += `  <url><loc>${SITE}/series/${s.slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/tags/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-allTags.forEach(t => {
-  sitemap += `  <url><loc>${SITE}/tags/${t.replace(/\s+/g, '-')}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/developers/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-DEVELOPERS.forEach(d => {
-  sitemap += `  <url><loc>${SITE}/developers/${d.slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/yearly-games/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-years.forEach(y => {
-  sitemap += `  <url><loc>${SITE}/yearly-games/${y}/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>\n`;
-});
-['about', 'contact', 'privacy', 'terms', 'takedown'].forEach(p => {
-  sitemap += `  <url><loc>${SITE}/${p}.html</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/unblocked/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>\n`;
-UNBLOCKED_GAMES.forEach(slug => {
-  const game = GAMES.find(g => g.slug === slug);
-  if (game) sitemap += `  <url><loc>${SITE}/unblocked/${slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/play/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>\n`;
-PLAY_GAMES.forEach(slug => {
-  const game = GAMES.find(g => g.slug === slug);
-  if (game) sitemap += `  <url><loc>${SITE}/play/${slug}/</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>\n`;
-});
-sitemap += `  <url><loc>${SITE}/blog/</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>\n`;
-
-const blogDir = path.join(__dirname, 'blog');
-if (fs.existsSync(blogDir)) {
-  fs.readdirSync(blogDir).filter(f => f.endsWith('.html') && f !== 'index.html').forEach(f => {
-    sitemap += `  <url><loc>${SITE}/blog/${f}</loc><lastmod>2026-08-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>\n`;
-  });
-}
-sitemap += `  <url><loc>${SITE}/llms.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>\n`;
-sitemap += `  <url><loc>${SITE}/llms-full.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.3</priority></url>\n`;
-sitemap += `  <url><loc>${SITE}/robots.txt</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>\n`;
-sitemap += `  <url><loc>${SITE}/search-index.json</loc><lastmod>2026-08-13</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>\n`;
-sitemap += `</urlset>`;
+  <url><loc>${SITE}/</loc><lastmod>2026-08-16</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>${SITE}/gba-emulator-web/</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>${SITE}/privacy.html</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>${SITE}/terms.html</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>${SITE}/takedown.html</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+</urlset>`;
 fs.writeFileSync(path.join(__dirname, 'sitemap.xml'), sitemap);
-console.log('Sitemap updated with all pages');
+console.log('Sitemap updated');
