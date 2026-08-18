@@ -388,7 +388,7 @@
   display: none;
   position: relative;
   width: 100%;
-  height: 220px;
+  height: 240px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -404,12 +404,12 @@
   padding: 0 10px;
   }
   .touch-controls .tc-shoulder-btn {
-  width: 60px;
-  height: 30px;
+  width: 65px;
+  height: 32px;
   border-radius: 10px;
   background: rgba(255,255,255,0.15);
   color: rgba(255,255,255,0.6);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.05em;
   border: 1px solid rgba(255,255,255,0.2);
@@ -421,40 +421,28 @@
   .touch-controls .tc-shoulder-btn:active, .touch-controls .tc-shoulder-btn.pressed {
   background: rgba(255,255,255,0.35);
   }
-  .touch-controls .tc-dpad-zone {
-  position: absolute;
-  bottom: 25px;
-  left: 10px;
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.1);
-  touch-action: none;
-  }
   .touch-controls .tc-dpad {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 110px;
-  height: 110px;
-  transform: translate(-50%, -50%);
+  bottom: 40px;
+  left: 15px;
+  width: 135px;
+  height: 135px;
   touch-action: none;
   }
   .touch-controls .tc-dpad-bar {
   position: absolute;
   background: rgba(255,255,255,0.25);
-  border-radius: 4px;
+  border-radius: 5px;
   }
   .touch-controls .tc-dpad-h {
   width: 100%;
-  height: 34px;
+  height: 38px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   }
   .touch-controls .tc-dpad-v {
-  width: 34px;
+  width: 38px;
   height: 100%;
   left: 50%;
   top: 0;
@@ -464,28 +452,28 @@
   position: absolute;
   width: 0;
   height: 0;
-  border: 8px solid;
+  border: 9px solid;
   z-index: 1;
   }
   .touch-controls .tc-dpad-h .tc-dpad-arrow-l {
   left: 0; top: 50%;
   transform: translateY(-50%);
-  border-color: transparent rgba(255,255,255,0.4) transparent transparent;
+  border-color: transparent rgba(255,255,255,0.45) transparent transparent;
   }
   .touch-controls .tc-dpad-h .tc-dpad-arrow-r {
   right: 0; top: 50%;
   transform: translateY(-50%);
-  border-color: transparent transparent transparent rgba(255,255,255,0.4);
+  border-color: transparent transparent transparent rgba(255,255,255,0.45);
   }
   .touch-controls .tc-dpad-v .tc-dpad-arrow-u {
   left: 50%; top: 0;
   transform: translateX(-50%);
-  border-color: transparent transparent rgba(255,255,255,0.4) transparent;
+  border-color: transparent transparent rgba(255,255,255,0.45) transparent;
   }
   .touch-controls .tc-dpad-v .tc-dpad-arrow-d {
   left: 50%; bottom: 0;
   transform: translateX(-50%);
-  border-color: rgba(255,255,255,0.4) transparent transparent transparent;
+  border-color: rgba(255,255,255,0.45) transparent transparent transparent;
   }
   .touch-controls .tc-dpad.pressed-left .tc-dpad-h .tc-dpad-arrow-l { border-right-color: #fff; }
   .touch-controls .tc-dpad.pressed-right .tc-dpad-h .tc-dpad-arrow-r { border-left-color: #fff; }
@@ -495,23 +483,23 @@
   position: absolute;
   bottom: 25px;
   right: 10px;
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   background: rgba(255,255,255,0.08);
   border: 1px solid rgba(255,255,255,0.1);
   }
   .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 52px;
-  height: 52px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   background: rgba(255,255,255,0.2);
   color: rgba(255,255,255,0.8);
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   border: 2px solid rgba(255,255,255,0.3);
-  line-height: 48px;
+  line-height: 52px;
   text-align: center;
   cursor: pointer;
   user-select: none;
@@ -523,12 +511,12 @@
   border-color: rgba(255,255,255,0.6);
   }
   .touch-controls .tc-a-btn {
-  top: 10px;
-  right: 10px;
+  top: 8px;
+  right: 8px;
   }
   .touch-controls .tc-b-btn {
-  bottom: 10px;
-  left: 10px;
+  bottom: 8px;
+  left: 8px;
   }
   .touch-controls .tc-center-zone {
   position: absolute;
@@ -539,12 +527,12 @@
   gap: 10px;
   }
   .touch-controls .tc-center-btn {
-  min-width: 58px;
-  height: 26px;
+  min-width: 62px;
+  height: 28px;
   border-radius: 999px;
   background: rgba(255,255,255,0.1);
   color: rgba(255,255,255,0.5);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
   border: 1px solid rgba(255,255,255,0.15);
@@ -560,7 +548,7 @@
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 999;
-  height: 220px;
+  height: 240px;
   }
   @media (pointer: coarse) {
   .touch-controls.active { display: block; }
@@ -569,13 +557,12 @@
   .game-back-bar { display: none !important; }
   }
   @media (pointer: coarse) and (max-width: 480px) {
-  .touch-controls { height: 200px; }
-  .touch-controls .tc-dpad-zone { width: 115px; height: 115px; bottom: 25px; left: 5px; }
-  .touch-controls .tc-dpad { width: 95px; height: 95px; }
-  .touch-controls .tc-ab-zone { width: 115px; height: 115px; bottom: 25px; right: 5px; }
-  .touch-controls .tc-ab-btn { width: 46px; height: 46px; font-size: 16px; line-height: 42px; }
-  .touch-controls .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
-  .touch-controls .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
+  .touch-controls { height: 220px; }
+  .touch-controls .tc-dpad { width: 120px; height: 120px; bottom: 35px; left: 10px; }
+  .touch-controls .tc-ab-zone { width: 125px; height: 125px; bottom: 25px; right: 8px; }
+  .touch-controls .tc-ab-btn { width: 50px; height: 50px; font-size: 18px; line-height: 46px; }
+  .touch-controls .tc-shoulder-btn { width: 55px; height: 28px; font-size: 12px; }
+  .touch-controls .tc-center-btn { min-width: 55px; height: 26px; font-size: 9px; }
   }
  @media (max-width: 600px) {
  .main { padding: 0; max-width: 100%; }
@@ -1048,7 +1035,6 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  <button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
  <button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
  </div>
- <div class="tc-dpad-zone" id="tc-dpad-zone">
  <div class="tc-dpad" id="tc-dpad">
  <div class="tc-dpad-bar tc-dpad-h">
  <div class="tc-dpad-arrow tc-dpad-arrow-l"></div>
@@ -1057,7 +1043,6 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  <div class="tc-dpad-bar tc-dpad-v">
  <div class="tc-dpad-arrow tc-dpad-arrow-u"></div>
  <div class="tc-dpad-arrow tc-dpad-arrow-d"></div>
- </div>
  </div>
  </div>
  <div class="tc-center-zone">
@@ -1443,14 +1428,12 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  });
 
   var dpad = document.getElementById('tc-dpad');
-  var dpadZone = document.getElementById('tc-dpad-zone');
-  var dpadTarget = dpadZone || dpad;
-  if (dpadTarget) {
+  if (dpad) {
   var dpadDirs = { u: 'Up', d: 'Down', l: 'Left', r: 'Right' };
   var dpadClassMap = { u: 'pressed-up', d: 'pressed-down', l: 'pressed-left', r: 'pressed-right' };
 
   function getDpadDir(touch) {
-  var rect = dpadTarget.getBoundingClientRect();
+  var rect = dpad.getBoundingClientRect();
   var cx = rect.left + rect.width / 2;
   var cy = rect.top + rect.height / 2;
   var dx = touch.clientX - cx;
@@ -1465,7 +1448,7 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
 
   var activeDpadDirs = new Set();
 
-  dpadTarget.addEventListener('touchstart', function(e) {
+  dpad.addEventListener('touchstart', function(e) {
   e.preventDefault();
   e.stopPropagation();
   Array.from(e.changedTouches).forEach(function(touch) {
@@ -1473,12 +1456,12 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
   if (dir) {
   pressBtn(dpadDirs[dir]);
   activeDpadDirs.add(dir);
-  if (dpad) dpad.classList.add(dpadClassMap[dir]);
+  dpad.classList.add(dpadClassMap[dir]);
   }
   });
   }, { passive: false });
 
-  dpadTarget.addEventListener('touchmove', function(e) {
+  dpad.addEventListener('touchmove', function(e) {
   e.preventDefault();
   e.stopPropagation();
   var newDirs = new Set();
@@ -1488,14 +1471,14 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
   newDirs.add(dir);
   if (!activeDpadDirs.has(dir)) {
   pressBtn(dpadDirs[dir]);
-  if (dpad) dpad.classList.add(dpadClassMap[dir]);
+  dpad.classList.add(dpadClassMap[dir]);
  }
  }
  });
   activeDpadDirs.forEach(function(dir) {
   if (!newDirs.has(dir)) {
   unpressBtn(dpadDirs[dir]);
-  if (dpad) dpad.classList.remove(dpadClassMap[dir]);
+  dpad.classList.remove(dpadClassMap[dir]);
   }
   });
   activeDpadDirs = newDirs;
@@ -1508,14 +1491,14 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
   var dir = getDpadDir(touch);
   if (dir && activeDpadDirs.has(dir)) {
   unpressBtn(dpadDirs[dir]);
-  if (dpad) dpad.classList.remove(dpadClassMap[dir]);
+  dpad.classList.remove(dpadClassMap[dir]);
   activeDpadDirs.delete(dir);
   }
   });
   }
 
-  dpadTarget.addEventListener('touchend', endDpad, { passive: false });
-  dpadTarget.addEventListener('touchcancel', endDpad, { passive: false });
+  dpad.addEventListener('touchend', endDpad, { passive: false });
+  dpad.addEventListener('touchcancel', endDpad, { passive: false });
   }
 
  document.addEventListener('visibilitychange', () => {
