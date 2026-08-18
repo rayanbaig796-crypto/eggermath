@@ -312,7 +312,7 @@
   aspect-ratio: auto;
   object-fit: contain;
   }
-   canvas {
+   .emulator-container > canvas {
    display: block;
    width: 100%;
    margin: 0 auto;
@@ -393,25 +393,41 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   }
+  .touch-controls canvas {
+  background: transparent !important;
+  touch-action: none;
+  }
   .touch-controls .gpz-dpad {
   position: absolute;
   bottom: 40px;
   left: 10px;
-  width: 130px;
-  height: 130px;
   }
   .touch-controls .gpz-btn {
   position: absolute;
-  width: 55px;
-  height: 55px;
   }
   .touch-controls .tc-gpz-a {
-  bottom: 75px;
+  bottom: 55px;
   right: 15px;
   }
   .touch-controls .tc-gpz-b {
-  bottom: 30px;
+  bottom: 15px;
   right: 80px;
+  }
+  .touch-controls .tc-ab-label {
+  position: absolute;
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  font-weight: bold;
+  pointer-events: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  }
+  .touch-controls .tc-ab-label-a {
+  bottom: 72px;
+  right: 30px;
+  }
+  .touch-controls .tc-ab-label-b {
+  bottom: 32px;
+  right: 95px;
   }
   .touch-controls .tc-shoulder-zone {
   position: absolute;
@@ -474,18 +490,16 @@
   }
   @media (pointer: coarse) {
   .touch-controls.active { display: block; }
-  .mobile-note { display: block; }
+  .mobile-note { display: none; }
  .controls-help { display: none; }
- .game-back-bar { margin-top: 8px; }
- .game-back-bar.visible { display: flex; }
- .game-back-btn { padding: 8px 18px; font-size: 13px; }
+ .game-back-bar { display: none !important; }
  }
    @media (pointer: coarse) and (max-width: 480px) {
    .touch-controls { height: 200px; }
-   .touch-controls .gpz-dpad { width: 110px; height: 110px; bottom: 35px; left: 5px; }
-   .touch-controls .gpz-btn { width: 48px; height: 48px; }
-   .touch-controls .tc-gpz-a { bottom: 65px; right: 10px; }
-   .touch-controls .tc-gpz-b { bottom: 25px; right: 68px; }
+   .touch-controls .tc-gpz-a { bottom: 50px; right: 10px; }
+   .touch-controls .tc-gpz-b { bottom: 10px; right: 70px; }
+   .touch-controls .tc-ab-label-a { bottom: 65px; right: 22px; }
+   .touch-controls .tc-ab-label-b { bottom: 25px; right: 85px; }
    .touch-controls .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
    .touch-controls .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
    }
@@ -493,7 +507,7 @@
  .main { padding: 0; max-width: 100%; }
  #upload-area { border-radius: 0; margin: 0; border-left: none; border-right: none; }
   .emulator-container { border-radius: 0; border: none; max-width: 100%; }
-  canvas { width: 100%; max-width: none; }
+   .emulator-container canvas { width: 100%; max-width: none; }
   .emulator-container:fullscreen canvas { width: 100vw; height: 100dvh; max-width: none; aspect-ratio: auto; }
  .emulator-container { aspect-ratio: auto; }
  #file-info { border-radius: 0; margin: 0; padding: 10px; }
@@ -960,9 +974,11 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  <button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
  <button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
  </div>
- <canvas class="gpz-dpad" data-gpz-bind="ArrowUp ArrowLeft ArrowDown ArrowRight" width="130" height="130"></canvas>
- <canvas class="gpz-btn tc-gpz-a" data-gpz-bind="KeyK" data-gpz-color="#88888880" data-gpz-color-action="red" width="55" height="55"></canvas>
- <canvas class="gpz-btn tc-gpz-b" data-gpz-bind="KeyJ" data-gpz-color="#88888880" data-gpz-color-action="blue" width="55" height="55"></canvas>
+ <canvas class="gpz-dpad" data-gpz-bind="ArrowUp ArrowLeft ArrowDown ArrowRight" width="125" height="125"></canvas>
+ <canvas class="gpz-btn tc-gpz-a" data-gpz-bind="KeyK" data-gpz-color="rgba(255,255,255,0.2)" data-gpz-color-action="#e53935" width="55" height="55"></canvas>
+ <canvas class="gpz-btn tc-gpz-b" data-gpz-bind="KeyJ" data-gpz-color="rgba(255,255,255,0.2)" data-gpz-color-action="#1e88e5" width="55" height="55"></canvas>
+ <span class="tc-ab-label tc-ab-label-a">A</span>
+ <span class="tc-ab-label tc-ab-label-b">B</span>
  <div class="tc-center-zone">
  <button class="tc-btn tc-center-btn" data-btn="Select">SELECT</button>
  <button class="tc-btn tc-center-btn" data-btn="Start">START</button>
