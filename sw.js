@@ -24,9 +24,7 @@ self.addEventListener('fetch', event => {
   const { request } = event;
   const url = new URL(request.url);
 
-  if (url.pathname.startsWith('/api/') ||
-      url.pathname === '/proxy' ||
-      url.pathname === '/clear-cache') {
+  if (url.pathname.startsWith('/api/')) {
     return;
   }
 
