@@ -393,42 +393,7 @@
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   }
-  .touch-controls canvas {
-  background: transparent !important;
-  touch-action: none;
-  }
-  .touch-controls .gpz-dpad {
-  position: absolute;
-  bottom: 40px;
-  left: 10px;
-  }
-  .touch-controls .gpz-btn {
-  position: absolute;
-  }
-  .touch-controls .tc-gpz-a {
-  bottom: 55px;
-  right: 15px;
-  }
-  .touch-controls .tc-gpz-b {
-  bottom: 15px;
-  right: 80px;
-  }
-  .touch-controls .tc-ab-label {
-  position: absolute;
-  color: rgba(255,255,255,0.8);
-  font-size: 16px;
-  font-weight: bold;
-  pointer-events: none;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  }
-  .touch-controls .tc-ab-label-a {
-  bottom: 72px;
-  right: 30px;
-  }
-  .touch-controls .tc-ab-label-b {
-  bottom: 32px;
-  right: 95px;
-  }
+  .touch-controls * { box-sizing: border-box; }
   .touch-controls .tc-shoulder-zone {
   position: absolute;
   top: 0;
@@ -456,6 +421,65 @@
   .touch-controls .tc-shoulder-btn:active, .touch-controls .tc-shoulder-btn.pressed {
   background: rgba(255,255,255,0.35);
   }
+  .touch-controls .tc-dpad {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+  width: 125px;
+  height: 125px;
+  touch-action: none;
+  }
+  .touch-controls .tc-dpad-bar {
+  position: absolute;
+  background: #787878;
+  border-radius: 5px;
+  overflow: hidden;
+  }
+  .touch-controls .tc-dpad-h {
+  width: 100%;
+  height: 36px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  }
+  .touch-controls .tc-dpad-v {
+  width: 36px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  }
+  .touch-controls .tc-dpad-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  z-index: 1;
+  }
+  .touch-controls .tc-dpad-h .tc-dpad-arrow-l {
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  border-color: transparent #333 transparent transparent;
+  }
+  .touch-controls .tc-dpad-h .tc-dpad-arrow-r {
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent #333;
+  }
+  .touch-controls .tc-dpad-v .tc-dpad-arrow-u {
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  border-color: transparent transparent #333 transparent;
+  }
+  .touch-controls .tc-dpad-v .tc-dpad-arrow-d {
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  border-color: #333 transparent transparent transparent;
+  }
+  .touch-controls .tc-dpad.pressed-left .tc-dpad-h .tc-dpad-arrow-l { border-right-color: #fff; }
+  .touch-controls .tc-dpad.pressed-right .tc-dpad-h .tc-dpad-arrow-r { border-left-color: #fff; }
+  .touch-controls .tc-dpad.pressed-up .tc-dpad-v .tc-dpad-arrow-u { border-bottom-color: #fff; }
+  .touch-controls .tc-dpad.pressed-down .tc-dpad-v .tc-dpad-arrow-d { border-top-color: #fff; }
   .touch-controls .tc-center-zone {
   position: absolute;
   bottom: 10px;
@@ -482,6 +506,34 @@
   .touch-controls .tc-center-btn:active, .touch-controls .tc-center-btn.pressed {
   background: rgba(255,255,255,0.3);
   }
+  .touch-controls .tc-ab-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid rgba(204,204,204,0.3);
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  }
+  .touch-controls .tc-ab-btn:active, .touch-controls .tc-ab-btn.pressed {
+  background: rgba(0,0,0,0.45);
+  }
+  .touch-controls .tc-a-btn {
+  bottom: 65px;
+  right: 15px;
+  }
+  .touch-controls .tc-b-btn {
+  bottom: 15px;
+  right: 80px;
+  }
   .emulator-container:fullscreen ~ .touch-controls {
   position: fixed;
   bottom: 0; left: 0; right: 0;
@@ -491,18 +543,18 @@
   @media (pointer: coarse) {
   .touch-controls.active { display: block; }
   .mobile-note { display: none; }
- .controls-help { display: none; }
- .game-back-bar { display: none !important; }
- }
-   @media (pointer: coarse) and (max-width: 480px) {
-   .touch-controls { height: 200px; }
-   .touch-controls .tc-gpz-a { bottom: 50px; right: 10px; }
-   .touch-controls .tc-gpz-b { bottom: 10px; right: 70px; }
-   .touch-controls .tc-ab-label-a { bottom: 65px; right: 22px; }
-   .touch-controls .tc-ab-label-b { bottom: 25px; right: 85px; }
-   .touch-controls .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
-   .touch-controls .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
-   }
+  .controls-help { display: none; }
+  .game-back-bar { display: none !important; }
+  }
+  @media (pointer: coarse) and (max-width: 480px) {
+  .touch-controls { height: 200px; }
+  .touch-controls .tc-dpad { width: 110px; height: 110px; bottom: 40px; left: 5px; }
+  .touch-controls .tc-ab-btn { width: 44px; height: 44px; font-size: 18px; line-height: 44px; }
+  .touch-controls .tc-a-btn { bottom: 55px; right: 10px; }
+  .touch-controls .tc-b-btn { bottom: 10px; right: 65px; }
+  .touch-controls .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
+  .touch-controls .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
+  }
  @media (max-width: 600px) {
  .main { padding: 0; max-width: 100%; }
  #upload-area { border-radius: 0; margin: 0; border-left: none; border-right: none; }
@@ -974,15 +1026,22 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  <button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
  <button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
  </div>
- <canvas class="gpz-dpad" data-gpz-bind="ArrowUp ArrowLeft ArrowDown ArrowRight" width="125" height="125"></canvas>
- <canvas class="gpz-btn tc-gpz-a" data-gpz-bind="KeyK" data-gpz-color="rgba(255,255,255,0.2)" data-gpz-color-action="#e53935" width="55" height="55"></canvas>
- <canvas class="gpz-btn tc-gpz-b" data-gpz-bind="KeyJ" data-gpz-color="rgba(255,255,255,0.2)" data-gpz-color-action="#1e88e5" width="55" height="55"></canvas>
- <span class="tc-ab-label tc-ab-label-a">A</span>
- <span class="tc-ab-label tc-ab-label-b">B</span>
+ <div class="tc-dpad" id="tc-dpad">
+ <div class="tc-dpad-bar tc-dpad-h">
+ <div class="tc-dpad-arrow tc-dpad-arrow-l"></div>
+ <div class="tc-dpad-arrow tc-dpad-arrow-r"></div>
+ </div>
+ <div class="tc-dpad-bar tc-dpad-v">
+ <div class="tc-dpad-arrow tc-dpad-arrow-u"></div>
+ <div class="tc-dpad-arrow tc-dpad-arrow-d"></div>
+ </div>
+ </div>
  <div class="tc-center-zone">
  <button class="tc-btn tc-center-btn" data-btn="Select">SELECT</button>
  <button class="tc-btn tc-center-btn" data-btn="Start">START</button>
  </div>
+ <button class="tc-btn tc-ab-btn tc-a-btn" data-btn="A">A</button>
+ <button class="tc-btn tc-ab-btn tc-b-btn" data-btn="B">B</button>
  </div>
  <div class="controls-help" id="controls-help">
  <h3>Keyboard Controls</h3>
@@ -1002,7 +1061,6 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  </div>
 
  <script src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/gamepadzilla@1/dist/gamepadzilla.js"></script>
  <script type="module">
  import mGBA from './gba-emulator-web/mgba.js';
 
@@ -1328,23 +1386,10 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  if (emulator) emulator.buttonUnpress(btn);
  });
  heldButtons.clear();
+ tc.querySelectorAll('.tc-btn.pressed').forEach(el => el.classList.remove('pressed'));
+ var dpad = document.getElementById('tc-dpad');
+ if (dpad) dpad.className = 'tc-dpad';
  }
-
- const KEY_MAP = {
- ArrowUp: 'Up', ArrowDown: 'Down', ArrowLeft: 'Left', ArrowRight: 'Right',
- KeyK: 'A', KeyJ: 'B', KeyQ: 'L', KeyE: 'R',
- Enter: 'Start', ShiftRight: 'Select'
- };
-
- window.addEventListener('keydown', function(e) {
- var btn = KEY_MAP[e.code];
- if (btn) { pressBtn(btn); }
- });
-
- window.addEventListener('keyup', function(e) {
- var btn = KEY_MAP[e.code];
- if (btn) { unpressBtn(btn); }
- });
 
  tc.querySelectorAll('.tc-btn[data-btn]').forEach(el => {
  const btn = el.dataset.btn;
@@ -1370,6 +1415,80 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  el.classList.remove('pressed');
  }, { passive: false });
  });
+
+ var dpad = document.getElementById('tc-dpad');
+ if (dpad) {
+ var dpadDirs = { u: 'Up', d: 'Down', l: 'Left', r: 'Right' };
+ var dpadClassMap = { u: 'pressed-up', d: 'pressed-down', l: 'pressed-left', r: 'pressed-right' };
+
+ function getDpadDir(touch) {
+ var rect = dpad.getBoundingClientRect();
+ var cx = rect.left + rect.width / 2;
+ var cy = rect.top + rect.height / 2;
+ var dx = touch.clientX - cx;
+ var dy = touch.clientY - cy;
+ var absDx = Math.abs(dx);
+ var absDy = Math.abs(dy);
+ var deadzone = 8;
+ if (absDx < deadzone && absDy < deadzone) return null;
+ if (absDx > absDy) return dx > 0 ? 'r' : 'l';
+ return dy > 0 ? 'd' : 'u';
+ }
+
+ var activeDpadDirs = new Set();
+
+ dpad.addEventListener('touchstart', function(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir) {
+ pressBtn(dpadDirs[dir]);
+ activeDpadDirs.add(dir);
+ dpad.classList.add(dpadClassMap[dir]);
+ }
+ });
+ }, { passive: false });
+
+ dpad.addEventListener('touchmove', function(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ var newDirs = new Set();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir) {
+ newDirs.add(dir);
+ if (!activeDpadDirs.has(dir)) {
+ pressBtn(dpadDirs[dir]);
+ dpad.classList.add(dpadClassMap[dir]);
+ }
+ }
+ });
+ activeDpadDirs.forEach(function(dir) {
+ if (!newDirs.has(dir)) {
+ unpressBtn(dpadDirs[dir]);
+ dpad.classList.remove(dpadClassMap[dir]);
+ }
+ });
+ activeDpadDirs = newDirs;
+ }, { passive: false });
+
+ function endDpad(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir && activeDpadDirs.has(dir)) {
+ unpressBtn(dpadDirs[dir]);
+ dpad.classList.remove(dpadClassMap[dir]);
+ activeDpadDirs.delete(dir);
+ }
+ });
+ }
+
+ dpad.addEventListener('touchend', endDpad, { passive: false });
+ dpad.addEventListener('touchcancel', endDpad, { passive: false });
+ }
 
  document.addEventListener('visibilitychange', () => {
  if (document.visibilityState === 'hidden') unpressAll();
