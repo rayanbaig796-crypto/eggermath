@@ -386,185 +386,192 @@
  }
   .touch-controls {
   display: none;
-  margin-top: 10px;
-  padding: 16px 12px;
-  border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.08);
-  background: linear-gradient(180deg, rgba(20,20,30,0.95), rgba(12,12,18,0.98));
-  align-items: center;
-  justify-items: center;
-  gap: 8px;
+  position: relative;
+  width: 100%;
+  height: 200px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.06), 0 4px 20px rgba(0,0,0,0.4);
   }
-  .touch-controls .tc-btn {
-  border-radius: 50%;
-  background: linear-gradient(145deg, rgba(50,50,60,0.9), rgba(30,30,40,0.95));
-  border: 2px solid rgba(255,255,255,0.12);
+  .tc-left-zone {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 130px;
+  height: 160px;
+  }
+  .tc-right-zone {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 130px;
+  height: 160px;
+  }
+  .tc-shoulder-zone {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  color: rgba(255,255,255,0.7);
+  justify-content: space-between;
+  padding: 0 10px;
+  }
+  .tc-btn {
   font-family: 'Inter', Arial, sans-serif;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   cursor: pointer;
-  transition: background 0.06s, transform 0.06s, box-shadow 0.06s;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+  border: 0;
+  outline: none;
   }
-  .touch-controls .tc-btn:active,
-  .touch-controls .tc-btn.pressed {
-  background: linear-gradient(145deg, rgba(132,209,196,0.35), rgba(100,180,170,0.4));
-  border-color: rgba(132,209,196,0.6);
-  transform: scale(0.92);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 16px rgba(132,209,196,0.3), inset 0 1px 0 rgba(255,255,255,0.15);
-  }
- .tc-top-row {
- display: flex;
- justify-content: space-between;
- width: 100%;
- margin-bottom: 8px;
- }
- .tc-main-row {
- display: flex;
- justify-content: space-between;
- align-items: center;
- width: 100%;
- }
-  .tc-dpad-group {
-  display: grid;
-  grid-template-columns: repeat(3, 50px);
-  grid-template-rows: repeat(3, 50px);
-  gap: 3px;
-  }
-  .tc-dpad-up { grid-column: 2; grid-row: 1; border-radius: 14px 14px 8px 8px; }
-  .tc-dpad-left { grid-column: 1; grid-row: 2; border-radius: 14px 8px 8px 14px; }
-  .tc-dpad-center {
-  grid-column: 2; grid-row: 2;
-  background: rgba(255,255,255,0.03);
-  border-radius: 4px;
-  pointer-events: none;
-  }
-  .tc-dpad-right { grid-column: 3; grid-row: 2; border-radius: 8px 14px 14px 8px; }
-  .tc-dpad-down { grid-column: 2; grid-row: 3; border-radius: 8px 8px 14px 14px; }
- .tc-center-group {
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 8px;
- }
-  .tc-l, .tc-r {
-  width: 64px;
-  height: 34px;
-  border-radius: 10px;
+  .tc-shoulder-btn {
+  width: 60px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.6);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.05em;
-  background: linear-gradient(145deg, rgba(50,50,60,0.9), rgba(30,30,40,0.95));
-  border: 2px solid rgba(255,255,255,0.12);
-  box-shadow: 0 3px 8px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.1s;
   }
-  .tc-l:active, .tc-l.pressed, .tc-r:active, .tc-r.pressed {
-  background: linear-gradient(145deg, rgba(132,209,196,0.35), rgba(100,180,170,0.4));
-  transform: scale(0.93);
+  .tc-shoulder-btn:active, .tc-shoulder-btn.pressed {
+  background: rgba(255,255,255,0.35);
   }
- .tc-start-select {
- display: flex;
- gap: 8px;
- }
-  .tc-select, .tc-start {
-  min-width: 72px;
-  height: 32px;
-  border-radius: 999px;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  font-weight: 800;
-  background: linear-gradient(145deg, rgba(50,50,60,0.8), rgba(30,30,40,0.85));
-  border: 2px solid rgba(255,255,255,0.1);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08);
-  }
-  .tc-select:active, .tc-select.pressed, .tc-start:active, .tc-start.pressed {
-  background: linear-gradient(145deg, rgba(132,209,196,0.3), rgba(100,180,170,0.35));
-  transform: scale(0.94);
-  }
-  .tc-action-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
+  .tc-dpad {
   position: relative;
-  width: 130px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
+  opacity: 0.7;
+  touch-action: none;
   }
-  .tc-a {
-  width: 56px;
-  height: 56px;
-  font-size: 16px;
-  font-weight: 800;
+  .tc-dpad-bar {
   position: absolute;
+  background: #787878;
+  border-radius: 4px;
+  }
+  .tc-dpad-h {
+  width: 100%;
+  height: 36px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  overflow: hidden;
+  }
+  .tc-dpad-v {
+  width: 36px;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  overflow: hidden;
+  }
+  .tc-dpad-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8px solid;
+  z-index: 1;
+  }
+  .tc-dpad-h .tc-dpad-arrow-l {
+  left: 0; top: 50%;
+  transform: translateY(-50%);
+  border-color: transparent #333 transparent transparent;
+  }
+  .tc-dpad-h .tc-dpad-arrow-r {
+  right: 0; top: 50%;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent #333;
+  }
+  .tc-dpad-v .tc-dpad-arrow-u {
+  left: 50%; top: 0;
+  transform: translateX(-50%);
+  border-color: transparent transparent #333 transparent;
+  }
+  .tc-dpad-v .tc-dpad-arrow-d {
+  left: 50%; bottom: 0;
+  transform: translateX(-50%);
+  border-color: #333 transparent transparent transparent;
+  }
+  .tc-dpad.pressed-left .tc-dpad-arrow-l { border-right-color: #fff; }
+  .tc-dpad.pressed-right .tc-dpad-arrow-r { border-left-color: #fff; }
+  .tc-dpad.pressed-up .tc-dpad-arrow-u { border-bottom-color: #fff; }
+  .tc-dpad.pressed-down .tc-dpad-arrow-d { border-top-color: #fff; }
+  .tc-center-zone {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  }
+  .tc-center-btn {
+  min-width: 58px;
+  height: 26px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.5);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: background 0.1s;
+  }
+  .tc-center-btn:active, .tc-center-btn.pressed {
+  background: rgba(255,255,255,0.3);
+  }
+  .tc-ab-btn {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
+  font-size: 22px;
+  font-weight: bold;
+  border: 1px solid rgba(204,204,204,0.3);
+  transition: background 0.1s;
+  line-height: 50px;
+  text-align: center;
+  }
+  .tc-ab-btn:active, .tc-ab-btn.pressed {
+  background: rgba(0,0,0,0.45);
+  }
+  .tc-a-btn {
   top: 0;
   right: 0;
-  background: linear-gradient(145deg, rgba(200,80,80,0.25), rgba(160,60,60,0.3));
-  border: 2px solid rgba(229,115,115,0.35);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
   }
-  .tc-a:active, .tc-a.pressed {
-  background: linear-gradient(145deg, rgba(229,115,115,0.5), rgba(200,80,80,0.6));
-  border-color: rgba(229,115,115,0.8);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 16px rgba(229,115,115,0.4);
-  }
-  .tc-b {
-  width: 56px;
-  height: 56px;
-  font-size: 16px;
-  font-weight: 800;
-  position: absolute;
-  bottom: 0;
+  .tc-b-btn {
+  bottom: 20px;
   left: 0;
-  background: linear-gradient(145deg, rgba(80,130,200,0.25), rgba(60,100,170,0.3));
-  border: 2px solid rgba(100,149,237,0.35);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
-  }
-  .tc-b:active, .tc-b.pressed {
-  background: linear-gradient(145deg, rgba(100,149,237,0.5), rgba(80,130,200,0.6));
-  border-color: rgba(100,149,237,0.8);
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3), 0 0 16px rgba(100,149,237,0.4);
   }
   .emulator-container:fullscreen ~ .touch-controls {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   z-index: 999;
-  border-radius: 16px 16px 0 0;
-  max-width: 100%;
-  margin: 0;
+  height: 220px;
   }
   @media (pointer: coarse) {
- .touch-controls.active { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; }
- .mobile-note { display: block; }
+  .touch-controls.active { display: block; }
+  .mobile-note { display: block; }
  .controls-help { display: none; }
  .game-back-bar { margin-top: 8px; }
  .game-back-bar.visible { display: flex; }
  .game-back-btn { padding: 8px 18px; font-size: 13px; }
  }
-  @media (pointer: coarse) and (max-width: 480px) {
-  .touch-controls { padding: 12px 10px; gap: 8px; }
-  .tc-dpad-group {
-  grid-template-columns: repeat(3, 46px);
-  grid-template-rows: repeat(3, 46px);
-  gap: 3px;
-  }
-  .tc-center-group { gap: 6px; }
-  .tc-a, .tc-b { width: 52px; height: 52px; font-size: 15px; }
-  .tc-action-group { width: 120px; height: 110px; }
-  .tc-l, .tc-r { width: 58px; height: 30px; font-size: 12px; }
-  .tc-select, .tc-start { min-width: 64px; height: 28px; font-size: 9px; }
-  }
+   @media (pointer: coarse) and (max-width: 480px) {
+   .touch-controls { height: 180px; }
+   .tc-left-zone { width: 115px; height: 140px; left: 5px; }
+   .tc-right-zone { width: 115px; height: 140px; right: 5px; }
+   .tc-dpad { width: 110px; height: 110px; }
+   .tc-ab-btn { width: 44px; height: 44px; font-size: 18px; line-height: 44px; }
+   .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
+   .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
+   }
  @media (max-width: 600px) {
  .main { padding: 0; max-width: 100%; }
  #upload-area { border-radius: 0; margin: 0; border-left: none; border-right: none; }
@@ -1032,28 +1039,29 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  </button>
  </div>
  <div class="touch-controls" id="touch-controls">
- <div class="tc-top-row">
- <button class="tc-btn tc-l" data-btn="L">L</button>
- <button class="tc-btn tc-r" data-btn="R">R</button>
+ <div class="tc-shoulder-zone">
+ <button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
+ <button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
  </div>
- <div class="tc-main-row">
- <div class="tc-dpad-group">
- <button class="tc-btn tc-dpad-up" data-btn="Up">&#9650;</button>
- <button class="tc-btn tc-dpad-left" data-btn="Left">&#9664;</button>
- <div class="tc-dpad-center"></div>
- <button class="tc-btn tc-dpad-right" data-btn="Right">&#9654;</button>
- <button class="tc-btn tc-dpad-down" data-btn="Down">&#9660;</button>
+ <div class="tc-left-zone">
+ <div class="tc-dpad" id="tc-dpad">
+ <div class="tc-dpad-bar tc-dpad-h">
+ <div class="tc-dpad-arrow tc-dpad-arrow-l"></div>
+ <div class="tc-dpad-arrow tc-dpad-arrow-r"></div>
  </div>
- <div class="tc-center-group">
- <div class="tc-start-select">
- <button class="tc-btn tc-select" data-btn="Select">SELECT</button>
- <button class="tc-btn tc-start" data-btn="Start">START</button>
+ <div class="tc-dpad-bar tc-dpad-v">
+ <div class="tc-dpad-arrow tc-dpad-arrow-u"></div>
+ <div class="tc-dpad-arrow tc-dpad-arrow-d"></div>
  </div>
  </div>
- <div class="tc-action-group">
- <button class="tc-btn tc-a" data-btn="A">A</button>
- <button class="tc-btn tc-b" data-btn="B">B</button>
  </div>
+ <div class="tc-center-zone">
+ <button class="tc-btn tc-center-btn" data-btn="Select">SELECT</button>
+ <button class="tc-btn tc-center-btn" data-btn="Start">START</button>
+ </div>
+ <div class="tc-right-zone">
+ <button class="tc-btn tc-ab-btn tc-a-btn" data-btn="A">A</button>
+ <button class="tc-btn tc-ab-btn tc-b-btn" data-btn="B">B</button>
  </div>
  </div>
  <div class="controls-help" id="controls-help">
@@ -1400,6 +1408,8 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  });
  heldButtons.clear();
  tc.querySelectorAll('.tc-btn.pressed').forEach(el => el.classList.remove('pressed'));
+ var dpad = document.getElementById('tc-dpad');
+ if (dpad) dpad.className = 'tc-dpad';
  }
 
  tc.querySelectorAll('.tc-btn[data-btn]').forEach(el => {
@@ -1426,6 +1436,80 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  el.classList.remove('pressed');
  }, { passive: false });
  });
+
+ var dpad = document.getElementById('tc-dpad');
+ if (dpad) {
+ var dpadDirs = { u: 'Up', d: 'Down', l: 'Left', r: 'Right' };
+ var dpadClassMap = { u: 'pressed-up', d: 'pressed-down', l: 'pressed-left', r: 'pressed-right' };
+
+ function getDpadDir(touch) {
+ var rect = dpad.getBoundingClientRect();
+ var cx = rect.left + rect.width / 2;
+ var cy = rect.top + rect.height / 2;
+ var dx = touch.clientX - cx;
+ var dy = touch.clientY - cy;
+ var absDx = Math.abs(dx);
+ var absDy = Math.abs(dy);
+ var deadzone = 8;
+ if (absDx < deadzone && absDy < deadzone) return null;
+ if (absDx > absDy) return dx > 0 ? 'r' : 'l';
+ return dy > 0 ? 'd' : 'u';
+ }
+
+ var activeDpadDirs = new Set();
+
+ dpad.addEventListener('touchstart', function(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir) {
+ pressBtn(dpadDirs[dir]);
+ activeDpadDirs.add(dir);
+ dpad.classList.add(dpadClassMap[dir]);
+ }
+ });
+ }, { passive: false });
+
+ dpad.addEventListener('touchmove', function(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ var newDirs = new Set();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir) {
+ newDirs.add(dir);
+ if (!activeDpadDirs.has(dir)) {
+ pressBtn(dpadDirs[dir]);
+ dpad.classList.add(dpadClassMap[dir]);
+ }
+ }
+ });
+ activeDpadDirs.forEach(function(dir) {
+ if (!newDirs.has(dir)) {
+ unpressBtn(dpadDirs[dir]);
+ dpad.classList.remove(dpadClassMap[dir]);
+ }
+ });
+ activeDpadDirs = newDirs;
+ }, { passive: false });
+
+ function endDpad(e) {
+ e.preventDefault();
+ e.stopPropagation();
+ Array.from(e.changedTouches).forEach(function(touch) {
+ var dir = getDpadDir(touch);
+ if (dir && activeDpadDirs.has(dir)) {
+ unpressBtn(dpadDirs[dir]);
+ dpad.classList.remove(dpadClassMap[dir]);
+ activeDpadDirs.delete(dir);
+ }
+ });
+ }
+
+ dpad.addEventListener('touchend', endDpad, { passive: false });
+ dpad.addEventListener('touchcancel', endDpad, { passive: false });
+ }
 
  document.addEventListener('visibilitychange', () => {
  if (document.visibilityState === 'hidden') unpressAll();
