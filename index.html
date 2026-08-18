@@ -508,15 +508,15 @@
   }
   .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: rgba(255,255,255,0.15);
   color: rgba(255,255,255,0.7);
   font-size: 20px;
   font-weight: bold;
   border: 1px solid rgba(204,204,204,0.3);
-  line-height: 50px;
+  line-height: 52px;
   text-align: center;
   cursor: pointer;
   user-select: none;
@@ -528,11 +528,11 @@
   }
   .touch-controls .tc-a-btn {
   bottom: 65px;
-  right: 15px;
+  right: 10px;
   }
   .touch-controls .tc-b-btn {
-  bottom: 15px;
-  right: 80px;
+  bottom: 20px;
+  right: 70px;
   }
   .emulator-container:fullscreen ~ .touch-controls {
   position: fixed;
@@ -543,15 +543,15 @@
   @media (pointer: coarse) {
   .touch-controls.active { display: block; }
   .mobile-note { display: none; }
-  .controls-help { display: none; }
+  .controls-help { display: none !important; }
   .game-back-bar { display: none !important; }
   }
   @media (pointer: coarse) and (max-width: 480px) {
   .touch-controls { height: 200px; }
   .touch-controls .tc-dpad { width: 110px; height: 110px; bottom: 40px; left: 5px; }
-  .touch-controls .tc-ab-btn { width: 44px; height: 44px; font-size: 18px; line-height: 44px; }
-  .touch-controls .tc-a-btn { bottom: 55px; right: 10px; }
-  .touch-controls .tc-b-btn { bottom: 10px; right: 65px; }
+  .touch-controls .tc-ab-btn { width: 46px; height: 46px; font-size: 18px; line-height: 46px; }
+  .touch-controls .tc-a-btn { bottom: 55px; right: 8px; }
+  .touch-controls .tc-b-btn { bottom: 15px; right: 60px; }
   .touch-controls .tc-shoulder-btn { width: 50px; height: 26px; font-size: 11px; }
   .touch-controls .tc-center-btn { min-width: 50px; height: 24px; font-size: 8px; }
   }
