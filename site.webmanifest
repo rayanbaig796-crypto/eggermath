@@ -1,0 +1,13 @@
+{
+  "name": "EggerMath — Play GBA Games Online Free",
+  "short_name": "EggerMath",
+  "description": "Play classic Game Boy Advance games for free in your browser. No download needed.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#161a13",
+  "theme_color": "#161a13",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" }
+  ]
+}

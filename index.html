@@ -11,31 +11,28 @@
  gtag('js', new Date());
  gtag('config', 'G-44ZYW1XML3');
  </script>
- <title>EggerMath — Play GBA & Gameboy Games Online Free</title>
- <meta name="description" content="Play GBA and Gameboy games online free. No download, no install. 25+ titles, save states, fast forward, mobile touch controls.">
- <meta name="robots" content="index, follow">
- <link rel="canonical" href="https://www.eggermath.com/">
- <link rel="alternate" hreflang="en" href="https://www.eggermath.com/">
- <link rel="alternate" hreflang="es" href="https://www.eggermath.com/es/">
- <link rel="alternate" hreflang="pt" href="https://www.eggermath.com/pt/">
- <link rel="alternate" hreflang="fr" href="https://www.eggermath.com/fr/">
- <link rel="alternate" hreflang="de" href="https://www.eggermath.com/de/">
- <link rel="alternate" hreflang="ja" href="https://www.eggermath.com/ja/">
- <link rel="alternate" hreflang="ko" href="https://www.eggermath.com/ko/">
- <link rel="alternate" hreflang="hi" href="https://www.eggermath.com/hi/">
- <link rel="alternate" hreflang="ar" href="https://www.eggermath.com/ar/">
- <link rel="alternate" hreflang="ru" href="https://www.eggermath.com/ru/">
- <link rel="alternate" hreflang="x-default" href="https://www.eggermath.com/">
- <meta property="og:title" content="Play GBA Games Online Free — No Download">
- <meta property="og:description" content="Play GBA games online free in your browser. No download, no install. Save states, fast forward, mobile controls.">
- <meta property="og:type" content="website">
- <meta property="og:url" content="https://www.eggermath.com/">
- <meta property="og:site_name" content="EggerMath">
- <meta property="og:image" content="https://www.eggermath.com/images/eggermath-logo.png">
- <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:title" content="Play GBA Games Online Free — No Download">
- <meta name="twitter:description" content="Play GBA games online free in your browser. No download, no install.">
- <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png">
+  <title>Play GBA Games Online Free — Game Boy Advance Emulator | EggerMath</title>
+  <meta name="description" content="Play classic Game Boy Advance games for free in your browser. No download needed. Pokemon, Zelda, Mario, Metroid & 25+ GBA titles. Instant play, save states, fast forward.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <link rel="canonical" href="https://www.eggermath.com/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#161a13">
+  <meta property="og:title" content="Play GBA Games Online Free — Game Boy Advance Emulator">
+  <meta property="og:description" content="Play classic Game Boy Advance games for free in your browser. Pokemon, Zelda, Mario, Metroid & 25+ titles. No download, save states, mobile controls.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.eggermath.com/">
+  <meta property="og:site_name" content="EggerMath">
+  <meta property="og:image" content="https://www.eggermath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Play GBA Games Online Free — EggerMath">
+  <meta name="twitter:description" content="Play classic Game Boy Advance games free in your browser. No download. Pokemon, Zelda, Mario & more.">
+  <meta name="twitter:image" content="https://www.eggermath.com/og-image.png">
  <script type="application/ld+json">
  {
  "@context": "https://schema.org",
@@ -98,7 +95,7 @@
  "description": "Step-by-step guide to playing GBA games in your browser",
  "totalTime": "PT1M",
  "step": [
- { "@type": "HowToStep", "name": "Open the Emulator", "text": "Go to eggermath.com/gba-emulator-web/ in your browser.", "url": "https://www.eggermath.com/gba-emulator-web/" },
+  { "@type": "HowToStep", "name": "Open the Emulator", "text": "Go to eggermath.com in your browser.", "url": "https://www.eggermath.com/" },
  { "@type": "HowToStep", "name": "Choose a Game", "text": "Click any game from the built-in library, or drag-and-drop your own .gba, .zip, .gb, or .gbc ROM file." },
  { "@type": "HowToStep", "name": "Play", "text": "Use keyboard controls (Arrow keys = D-Pad, K = A, J = B, Enter = Start) or touch controls on mobile." },
  { "@type": "HowToStep", "name": "Save Progress", "text": "Press F5 to save, F9 to load, F7 to switch between 10 save slots." }
@@ -111,7 +108,7 @@
  * { margin: 0; padding: 0; box-sizing: border-box; }
  html, body {
  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
- background: #111111;
+  background: #0d0d0d;
  color: #e0e0e0;
  min-height: 100vh;
  height: 100%;
@@ -122,7 +119,7 @@
 
  /* ── Upload Area ── */
  #upload-area {
- border: 2px dashed rgba(229,115,115,0.25);
+ border: 2px dashed rgba(196,163,90,0.3);
  border-radius: 20px;
  padding: 50px 20px;
  text-align: center;
@@ -135,33 +132,19 @@
  position: relative;
  overflow: hidden;
  }
- #upload-area::before {
- content: '';
- position: absolute; inset: -2px;
- border-radius: 22px;
- background: conic-gradient(from 0deg, transparent, rgba(229,115,115,0.3), transparent, rgba(16,185,129,0.3), transparent);
- opacity: 0;
- transition: opacity 0.4s;
- z-index: -1;
- }
- #upload-area:hover::before { opacity: 1; }
  #upload-area:hover {
  border-color: transparent;
- background: rgba(229,115,115,0.05);
- box-shadow: 0 8px 40px rgba(229,115,115,0.12);
+ background: rgba(196,163,90,0.05);
+ box-shadow: 0 8px 40px rgba(196,163,90,0.1);
  transform: translateY(-2px);
  }
  #upload-area.dragover { border-color: #e57373; background: rgba(229,115,115,0.08); }
  #upload-area .icon {
  margin-bottom: 12px;
  color: #c4a35a;
- filter: drop-shadow(0 0 20px rgba(196,163,90,0.3));
- animation: iconBounce 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 20px rgba(196,163,90,0.3));
  }
- @keyframes iconBounce {
- 0%,100% { transform: translateY(0); }
- 50% { transform: translateY(-6px); }
- }
+
  #upload-area p { color: #aaa; font-size: 15px; font-weight: 500; }
  #upload-area .formats { font-size: 12px; color: #555; margin-top: 8px; }
 
@@ -598,12 +581,12 @@
  .games-grid {
  display: grid;
  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
- gap: 12px;
+ gap: 16px;
  }
  .games-list-section {
  margin-top: 40px;
  padding: 30px;
- background: rgba(18,18,31,0.6);
+  background: rgba(255,255,255,0.03);
  border-radius: 16px;
  border: 1px solid rgba(255,255,255,0.05);
  }
@@ -655,19 +638,11 @@
  display: block;
  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
  aspect-ratio: 3/4;
- background: #12121f;
- transform-style: preserve-3d;
- perspective: 800px;
- border: 1px solid rgba(255,255,255,0.06);
+  background: #1a1a1a;
+  border: 1px solid rgba(255,255,255,0.06);
  }
  .game-pill:hover {
- transform: translateY(-8px) scale(1.04) rotateX(3deg) rotateY(-2deg);
- box-shadow:
- 0 20px 50px rgba(0,0,0,0.5),
- 0 0 30px rgba(229,115,115,0.15),
- 0 0 60px rgba(229,115,115,0.05);
- z-index: 5;
- border-color: rgba(229,115,115,0.2);
+ transform: translateY(-4px);
  }
  .game-pill-img {
  width: 100%; height: 100%;
@@ -914,7 +889,14 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
   }
 })();
 </script>
- <nav class="site-nav" style="background:#0d0d1a;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
+<noscript>
+<div style="max-width:600px;margin:40px auto;text-align:center;padding:20px;">
+<h1 style="color:#c4a35a;font-size:1.5rem;margin-bottom:12px;">Play GBA Games Online Free</h1>
+<p style="color:#999;font-size:14px;line-height:1.6;">EggerMath requires JavaScript to run the GBA emulator. Please enable JavaScript in your browser settings to play games.</p>
+<p style="color:#666;font-size:12px;margin-top:16px;">Supported browsers: Chrome, Firefox, Edge, Safari 11+</p>
+</div>
+</noscript>
+ <nav class="site-nav" style="background:#0d0d0d;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
  <a href="/" style="color:#c4a35a;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;text-decoration:none;">EggerMath</a>
  <div style="display:flex;gap:20px;align-items:center;">
  <a href="/" style="color:#c4a35a;text-decoration:none;font-size:0.85rem;">Emulator</a>
@@ -947,7 +929,61 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  <span class="badge">Click to Play</span>
  </div>
  <p class="browse-sub">Click any game to play instantly — supports GBA and GBC ROMs</p>
- <div class="games-grid" id="games-grid"></div>
+ <div class="games-grid" id="games-grid">
+<noscript>
+<style>.game-pill-static{display:block!important}</style>
+</noscript>
+<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+<a href="/?game=Pokemon+-+Emerald+Version+(USA,+Europe).zip" itemprop="url">
+<img class="game-pill-img" src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Play Pokemon Emerald Online Free" loading="lazy" itemprop="image">
+<div class="game-pill-overlay">
+<div class="game-pill-title" itemprop="name">Pokemon Emerald</div>
+<div class="game-pill-genre">RPG</div>
+<div class="game-pill-play">▶ Play Now</div>
+</div>
+</a>
+</div>
+<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+<a href="/?game=Pokemon_+FireRed+Version.zip" itemprop="url">
+<img class="game-pill-img" src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Play Pokemon FireRed Online Free" loading="lazy" itemprop="image">
+<div class="game-pill-overlay">
+<div class="game-pill-title" itemprop="name">Pokemon FireRed</div>
+<div class="game-pill-genre">RPG</div>
+<div class="game-pill-play">▶ Play Now</div>
+</div>
+</a>
+</div>
+<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+<a href="/?game=Legend+of+Zelda,+The_+The+Minish+Cap.zip" itemprop="url">
+<img class="game-pill-img" src="https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg" alt="Play Zelda Minish Cap Online Free" loading="lazy" itemprop="image">
+<div class="game-pill-overlay">
+<div class="game-pill-title" itemprop="name">Zelda: Minish Cap</div>
+<div class="game-pill-genre">Adventure</div>
+<div class="game-pill-play">▶ Play Now</div>
+</div>
+</a>
+</div>
+<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+<a href="/?game=Metroid+Fusion.zip" itemprop="url">
+<img class="game-pill-img" src="https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg" alt="Play Metroid Fusion Online Free" loading="lazy" itemprop="image">
+<div class="game-pill-overlay">
+<div class="game-pill-title" itemprop="name">Metroid Fusion</div>
+<div class="game-pill-genre">Action</div>
+<div class="game-pill-play">▶ Play Now</div>
+</div>
+</a>
+</div>
+<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+<a href="/?game=Mario+Kart_+Super+Circuit.zip" itemprop="url">
+<img class="game-pill-img" src="https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg" alt="Play Mario Kart Super Circuit Online Free" loading="lazy" itemprop="image">
+<div class="game-pill-overlay">
+<div class="game-pill-title" itemprop="name">Mario Kart Super Circuit</div>
+<div class="game-pill-genre">Racing</div>
+<div class="game-pill-play">▶ Play Now</div>
+</div>
+</a>
+</div>
+</div>
  </div>
 
  <div class="guide-section">
@@ -1752,6 +1788,8 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
  var svgPlay = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
 
  games.forEach(function(g) {
+ // Remove static cards once JS takes over
+ document.querySelectorAll('.game-pill-static').forEach(function(el) { el.remove(); });
  var card = document.createElement('div');
  card.className = 'game-pill' + (g.gbc ? ' gbc' : '');
  card.dataset.mega = g.mega;
@@ -1808,7 +1846,7 @@ body.embed-mode #file-info, body.embed-mode .progress-bar, body.embed-mode .stat
   })();
   </script>
  <footer class="footer-section" style="text-align:center;padding:32px 20px;color:rgba(240,235,224,0.3);font-size:12px;border-top:1px solid rgba(255,255,255,0.06);margin-top:40px;">
- &copy; 2025 EggerMath. All rights reserved. &nbsp;|&nbsp; <a href="/privacy.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Privacy</a> &nbsp;|&nbsp; <a href="/terms.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Terms</a> &nbsp;|&nbsp; <a href="/takedown.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">DMCA</a>
+ &copy; 2026 EggerMath. All rights reserved. &nbsp;|&nbsp; <a href="/privacy.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Privacy</a> &nbsp;|&nbsp; <a href="/terms.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Terms</a> &nbsp;|&nbsp; <a href="/takedown.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">DMCA</a>
  </footer>
 </body>
 </html>
