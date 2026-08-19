@@ -1,0 +1,26 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  ogImage?: string;
+  canonical?: string;
+  jsonLd?: object;
+}
+
+const { title, description, ogImage, canonical, jsonLd } = Astro.props;
+---
+<BaseLayout title={title} description={description} ogImage={ogImage} canonical={canonical} jsonLd={jsonLd}>
+  <slot />
+</BaseLayout>
+
+<script>
+  // Detect embed mode
+  (function() {
+    var params = new URLSearchParams(window.location.search);
+    if (params.get('game') || (window.self !== window.top)) {
+      document.body.classList.add('embed-mode');
+    }
+  })();
+</script>

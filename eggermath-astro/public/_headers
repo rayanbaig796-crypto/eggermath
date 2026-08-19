@@ -1,0 +1,39 @@
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  Cross-Origin-Resource-Policy: cross-origin
+  X-Frame-Options: SAMEORIGIN
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Content-Type-Options: nosniff
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Referrer-Policy: strict-origin-when-cross-origin
+
+/gba-emulator-web/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: credentialless
+  Cross-Origin-Resource-Policy: cross-origin
+
+/gba-emulator-web/*.wasm
+  Content-Type: application/wasm
+  Cache-Control: public, max-age=604800, immutable
+
+/*.js
+  Cache-Control: public, max-age=86400, immutable
+
+/*.css
+  Cache-Control: public, max-age=86400, immutable
+
+/*.{png,jpg,jpeg,gif,webp,avif,svg,ico}
+  Cache-Control: public, max-age=604800, immutable
+
+/index.html
+  Cache-Control: no-store, must-revalidate
+
+/privacy.html
+  Cache-Control: no-store, must-revalidate
+
+/terms.html
+  Cache-Control: no-store, must-revalidate
+
+/takedown.html
+  Cache-Control: no-store, must-revalidate

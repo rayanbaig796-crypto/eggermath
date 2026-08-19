@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*.json$
+Disallow: /gba-emulator-web/roms/
+Disallow: /gba-emulator-web/bios/

@@ -1,0 +1,116 @@
+---
+import EmulatorLayout from '../layouts/EmulatorLayout.astro';
+import NoscriptFallback from '../components/NoscriptFallback.astro';
+import UploadArea from '../components/UploadArea.astro';
+import ContinueBar from '../components/ContinueBar.astro';
+import EmulatorContainer from '../components/EmulatorContainer.astro';
+import TouchControls from '../components/TouchControls.astro';
+import ControlsHelp from '../components/ControlsHelp.astro';
+import GuideSteps from '../components/GuideSteps.astro';
+import GameCard from '../components/GameCard.astro';
+import { games, SITE } from '../data/games.js';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Play GBA Games Online Free — No Download GBA Emulator",
+      "description": SITE.description,
+      "url": SITE.url,
+      "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
+      "mainEntity": {
+        "@type": "VideoGameEmulator",
+        "name": "EggerMath GBA Emulator",
+        "applicationCategory": "GameEmulator",
+        "operatingSystem": "Any (Web Browser)",
+        "numberOfGames": 25,
+        "gamePlatform": "Game Boy Advance",
+        "description": "Free browser-based GBA emulator powered by mGBA WebAssembly"
+      },
+      "hasPart": {
+        "@type": "ItemList",
+        "itemListElement": games.slice(0, 15).map((g, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "item": {
+            "@type": "VideoGame",
+            "name": g.title,
+            "description": g.desc,
+            "gamePlatform": "Game Boy Advance",
+            "genre": g.genre,
+            "datePublished": String(g.year),
+            "isAccessibleForFree": true
+          }
+        }))
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How do I play GBA games here?", "acceptedAnswer": { "@type": "Answer", "text": "Click any game in the library to play instantly, or drag-and-drop your own .gba, .zip, .gb, or .gbc ROM file into the upload area." } },
+        { "@type": "Question", "name": "What keyboard controls do I use?", "acceptedAnswer": { "@type": "Answer", "text": "D-Pad: WASD or Arrow Keys. A: K. B: J. L: Q. R: E. Start: Enter. Select: Right Shift. Save: F5. Load: F9. Slot: F7." } },
+        { "@type": "Question", "name": "Does it work on mobile?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Touch controls appear automatically on phones and tablets. Works in Chrome, Safari, and Firefox on iOS and Android." } },
+        { "@type": "Question", "name": "Can I save my progress?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Use F5 to save and F9 to load. You have 10 save slots (F7 to switch). Progress is stored in your browser." } },
+        { "@type": "Question", "name": "What ROM formats are supported?", "acceptedAnswer": { "@type": "Answer", "text": "Supports .gba, .zip, .gb, and .gbc files. You can drag and drop ROMs or use the file picker." } }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Play GBA Games Online",
+      "description": "Step-by-step guide to playing GBA games in your browser",
+      "totalTime": "PT1M",
+      "step": [
+        { "@type": "HowToStep", "name": "Open the Emulator", "text": "Go to eggermath.com in your browser.", "url": SITE.url },
+        { "@type": "HowToStep", "name": "Choose a Game", "text": "Click any game from the built-in library, or drag-and-drop your own .gba, .zip, .gb, or .gbc ROM file." },
+        { "@type": "HowToStep", "name": "Play", "text": "Use keyboard controls (Arrow keys = D-Pad, K = A, J = B, Enter = Start) or touch controls on mobile." },
+        { "@type": "HowToStep", "name": "Save Progress", "text": "Press F5 to save, F9 to load, F7 to switch between 10 save slots." }
+      ]
+    }
+  ]
+};
+---
+
+<EmulatorLayout jsonLd={jsonLd}>
+  <NoscriptFallback />
+  <main class="main">
+    <UploadArea />
+    <ContinueBar />
+    <div class="pre-game-content" id="pre-game-content">
+      <section class="browse-section">
+        <div class="browse-header">
+          <h1>Play GBA Games Online Free — Popular Titles</h1>
+          <span class="badge">Click to Play</span>
+        </div>
+        <p class="browse-sub">Click any game to play instantly — supports GBA and GBC ROMs</p>
+        <div class="games-grid" id="games-grid">
+          {games.map(game => (
+            <GameCard
+              title={game.title}
+              genre={game.genre}
+              slug={game.slug}
+              img={game.img}
+              mega={game.mega}
+            />
+          ))}
+        </div>
+      </section>
+      <GuideSteps />
+    </div>
+    <EmulatorContainer />
+    <TouchControls />
+    <ControlsHelp />
+  </main>
+</EmulatorLayout>
+
+<script is:inline src="/gba-emulator-web/mgba.js"></script>
+<script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
+<script>
+import '../scripts/emulator.js';
+</script>

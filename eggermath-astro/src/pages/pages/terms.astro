@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Terms of Service — EggerMath",
+  "url": `${SITE.url}/pages/terms`,
+  "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+};
+---
+
+<BaseLayout
+  title="Terms of Service — EggerMath"
+  description="EggerMath terms of use. Rules and guidelines for using our free GBA emulator online."
+  canonical={`${SITE.url}/pages/terms`}
+  jsonLd={jsonLd}
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <img src="/images/eggermath-logo.png" alt="EggerMath">
+      <h1>Terms of Service</h1>
+    </div>
+    <div class="page-body">
+      <p class="updated">Last updated: August 18, 2026</p>
+      <p>Welcome to EggerMath. These Terms of Service ("Terms") govern your access to and use of the EggerMath website at eggermath.com and all associated services, features, and content (collectively, the "Service"). By accessing or using the Service, you agree to be bound by these Terms.</p>
+      <h2>1. Description of Service</h2>
+      <p>EggerMath provides a free, browser-based Game Boy Advance emulator built on the open-source mGBA engine compiled to WebAssembly. The Service allows users to play Game Boy Advance (GBA), Game Boy (GB), and Game Boy Color (GBC) games directly in their web browser.</p>
+      <h2>2. Eligibility</h2>
+      <p>You must be at least 13 years of age (or 16 years of age in the European Economic Area) to use the Service.</p>
+      <h2>3. ROM Files and User Content</h2>
+      <p>EggerMath does not provide, host, distribute, sell, or facilitate the acquisition of ROM files or any copyrighted game content. All ROM files are uploaded by you from your own local device. You are solely responsible for ensuring that any ROM files you use are lawfully obtained.</p>
+      <h2>4. Prohibited Conduct</h2>
+      <ul>
+        <li>Use the Service for any unlawful purpose</li>
+        <li>Upload malicious software or harmful code</li>
+        <li>Attempt to reverse engineer the emulator or Service</li>
+        <li>Use automated tools to interact with the Service</li>
+        <li>Interfere with or disrupt the Service</li>
+      </ul>
+      <h2>5. Intellectual Property</h2>
+      <p>The mGBA emulator engine is open-source software licensed under the Mozilla Public License 2.0 (MPL 2.0). The EggerMath website design, code, branding, logos, and all original content are owned by EggerMath.</p>
+      <h2>6. DMCA and Copyright Complaints</h2>
+      <p>EggerMath respects intellectual property rights. If you believe content accessible through the Service infringes your copyright, please submit a DMCA takedown request via <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+      <h2>7. Disclaimers</h2>
+      <p>THE SERVICE IS PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND. YOUR USE OF THE SERVICE IS AT YOUR SOLE RISK.</p>
+      <h2>8. Limitation of Liability</h2>
+      <p>IN NO EVENT SHALL EGGERMATH BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING OUT OF YOUR USE OF THE SERVICE.</p>
+      <h2>9. Contact</h2>
+      <p>If you have any questions about these Terms, contact us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    </div>
+  </div>
+</BaseLayout>

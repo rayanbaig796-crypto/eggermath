@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "DMCA Takedown Policy — EggerMath",
+  "url": `${SITE.url}/pages/takedown`,
+  "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+};
+---
+
+<BaseLayout
+  title="DMCA Takedown Policy — EggerMath"
+  description="EggerMath DMCA takedown policy. How to report copyright infringement on our free GBA emulator website."
+  canonical={`${SITE.url}/pages/takedown`}
+  jsonLd={jsonLd}
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <img src="/images/eggermath-logo.png" alt="EggerMath">
+      <h1>DMCA Takedown Policy</h1>
+    </div>
+    <div class="page-body">
+      <p class="updated">Last updated: August 18, 2026</p>
+      <p>EggerMath respects the intellectual property rights of others and expects its users to do the same. In accordance with the Digital Millennium Copyright Act of 1998 ("DMCA"), we will respond expeditiously to claims of copyright infringement that are reported to our designated copyright agent.</p>
+
+      <h2>1. Designated Copyright Agent</h2>
+      <p>To file a DMCA takedown request, please send a written notification to:</p>
+      <p><strong>EggerMath DMCA Agent</strong><br>
+      Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a><br>
+      Subject Line: DMCA Takedown Request</p>
+
+      <h2>2. Filing a DMCA Takedown Request</h2>
+      <p>Your notification must include:</p>
+      <ul>
+        <li><strong>Identification of the copyrighted work</strong> — A clear description of the copyrighted work you claim has been infringed</li>
+        <li><strong>Identification of the infringing material</strong> — The specific URL(s) on EggerMath where the allegedly infringing material is located</li>
+        <li><strong>Your contact information</strong> — Your full legal name, mailing address, telephone number, and email address</li>
+        <li><strong>Good faith statement</strong> — A statement that you have a good faith belief that the use of the copyrighted material is not authorized</li>
+        <li><strong>Accuracy statement</strong> — A statement, made under penalty of perjury, that the information in your notification is accurate</li>
+        <li><strong>Signature</strong> — Your physical or electronic signature</li>
+      </ul>
+
+      <h2>3. Response Timeline</h2>
+      <ul>
+        <li><strong>Acknowledge receipt</strong> — Within 1 business day</li>
+        <li><strong>Review and assess</strong> — Within 3-5 business days</li>
+        <li><strong>Take action</strong> — Disable access or suspend offending user</li>
+      </ul>
+
+      <h2>4. Counter-Notification</h2>
+      <p>If your content was removed by mistake, send a counter-notification to <a href={`mailto:${SITE.email}`}>{SITE.email}</a> with subject line "DMCA Counter-Notification."</p>
+
+      <h2>5. Contact</h2>
+      <p>For all DMCA inquiries: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+    </div>
+  </div>
+</BaseLayout>

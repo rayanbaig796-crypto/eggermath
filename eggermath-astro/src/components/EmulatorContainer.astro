@@ -1,0 +1,49 @@
+---
+---
+<div id="file-info">
+  <div class="name" id="file-name"></div>
+</div>
+<div class="progress-bar" id="progress-bar">
+  <div class="progress-fill" id="progress-fill"></div>
+</div>
+<div class="status-text" id="status-text"></div>
+
+<div class="emulator-container" id="emulator-container">
+  <div class="emu-toolbar-hint" id="toolbar-hint">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
+  </div>
+  <div class="emu-toolbar" id="emu-toolbar">
+    <button class="emu-tb-btn" id="btn-fullscreen" title="Fullscreen">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+      <span>Fullscreen</span>
+    </button>
+    <button class="emu-tb-btn" id="btn-reset" title="Reset">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+      <span>Reset</span>
+    </button>
+    <button class="emu-tb-btn" id="btn-mute" title="Mute">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      <span>Mute</span>
+    </button>
+    <button class="emu-tb-btn" id="btn-save-state" title="Save State (F5)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+      <span>Save</span>
+    </button>
+    <button class="emu-tb-btn" id="btn-load-state" title="Load State (F9)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+      <span>Load</span>
+    </button>
+    <button class="emu-tb-btn" id="btn-fast-forward" title="Fast Forward (FF)">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+      <span>FF</span>
+    </button>
+  </div>
+  <canvas id="emulator-canvas"></canvas>
+</div>
+
+<div class="game-back-bar" id="game-back-bar">
+  <button class="game-back-btn" id="game-back-btn">
+    <svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+    Back to Games
+  </button>
+</div>

@@ -1,0 +1,156 @@
+---
+import EmulatorLayout from '../layouts/EmulatorLayout.astro';
+import NoscriptFallback from '../components/NoscriptFallback.astro';
+import UploadArea from '../components/UploadArea.astro';
+import EmulatorContainer from '../components/EmulatorContainer.astro';
+import TouchControls from '../components/TouchControls.astro';
+import ControlsHelp from '../components/ControlsHelp.astro';
+import { games, SITE, getGameBySlug } from '../data/games.js';
+
+export function getStaticPaths() {
+  return games.map(game => ({
+    params: { slug: game.slug },
+    props: { game },
+  }));
+}
+
+const { game } = Astro.props;
+const otherGames = games.filter(g => g.slug !== game.slug).slice(0, 6);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoGame",
+      "name": `Play ${game.title} Online Free`,
+      "description": game.desc,
+      "url": `${SITE.url}/${game.slug}/`,
+      "image": game.img,
+      "gamePlatform": "Game Boy Advance",
+      "genre": game.genre,
+      "datePublished": String(game.year),
+      "applicationCategory": "GameEmulator",
+      "isAccessibleForFree": true,
+      "author": { "@type": "Organization", "name": SITE.name },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": game.title, "item": `${SITE.url}/${game.slug}/` }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": `How to play ${game.title} online?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `Click the play button above to load ${game.title} directly in your browser. No download needed. The game loads from our secure library in 5-15 seconds.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `Can I save my ${game.title} progress?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Press F5 to save your progress and F9 to load. You have 10 save slots (press F7 to switch between them). Your saves are stored locally in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": `Does ${game.title} work on mobile?`,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! Touch controls appear automatically on phones and tablets. Works in Chrome, Safari, and Firefox on iOS and Android."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<EmulatorLayout
+  title={`Play ${game.title} Online Free — ${game.genre} GBA Game | EggerMath`}
+  description={game.desc}
+  canonical={`${SITE.url}/${game.slug}/`}
+  jsonLd={jsonLd}
+>
+  <NoscriptFallback />
+  <main class="main">
+    <div class="game-page-header">
+      <a href="/" class="back-link">
+        <svg viewBox="0 0 24 24" width="16" height="16"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        All Games
+      </a>
+      <h1>Play {game.title} Online Free</h1>
+      <p class="game-meta">{game.genre} &middot; {game.year} &middot; {game.developer}</p>
+    </div>
+
+    <div class="game-page-layout">
+      <div class="game-page-main">
+        <UploadArea />
+        <EmulatorContainer />
+        <TouchControls />
+        <ControlsHelp />
+      </div>
+
+      <aside class="game-page-sidebar">
+        <div class="game-cover-card">
+          <img src={game.img} alt={game.title} loading="lazy" />
+        </div>
+
+        <div class="game-info-card">
+          <h2>About {game.title}</h2>
+          <p>{game.desc}</p>
+          <dl class="game-details">
+            <dt>Platform</dt><dd>Game Boy Advance</dd>
+            <dt>Genre</dt><dd>{game.genre}</dd>
+            <dt>Year</dt><dd>{game.year}</dd>
+            <dt>Developer</dt><dd>{game.developer}</dd>
+            <dt>Series</dt><dd>{game.series}</dd>
+          </dl>
+        </div>
+
+        <div class="game-info-card">
+          <h2>Controls</h2>
+          <dl class="game-details">
+            <dt>D-Pad</dt><dd>WASD / Arrow Keys</dd>
+            <dt>A Button</dt><dd>K</dd>
+            <dt>B Button</dt><dd>J</dd>
+            <dt>L / R</dt><dd>Q / E</dd>
+            <dt>Start</dt><dd>Enter</dd>
+            <dt>Select</dt><dd>Right Shift</dd>
+            <dt>Save</dt><dd>F5</dd>
+            <dt>Load</dt><dd>F9</dd>
+          </dl>
+        </div>
+
+        <div class="game-info-card">
+          <h2>More Games</h2>
+          <div class="related-games">
+            {otherGames.map(g => (
+              <a href={`/${g.slug}/`} class="related-game-link">
+                <img src={g.img} alt={g.title} loading="lazy" />
+                <span>{g.title}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+</EmulatorLayout>
+
+<script is:inline src="/gba-emulator-web/mgba.js"></script>
+<script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
+<script define:vars={{ megaFilename: game.mega, gameTitle: game.title }}>
+  window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle };
+</script>
+<script>
+import '../scripts/emulator.js';
+</script>
