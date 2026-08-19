@@ -306,7 +306,7 @@ export const SITE = {
   url: 'https://www.eggermath.com',
   title: 'Play GBA Games Online Free — Game Boy Advance Emulator',
   description: 'Play classic Game Boy Advance games for free in your browser. No download needed. Pokemon, Zelda, Mario, Metroid & 25+ GBA titles. Instant play, save states, fast forward.',
-  ogImage: 'https://www.eggermath.com/og-image.png',
+  ogImage: 'https://www.eggermath.com/og-image.svg',
   megaFolder: 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA',
   gaId: 'G-44ZYW1XML3',
   email: 'htcprom@gmail.com',

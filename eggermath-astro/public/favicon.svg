@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#161a13"/>
-  <text x="16" y="22" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="18" fill="#c4a35a">E</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <rect width="200" height="200" rx="32" fill="#1a1a1a"/>
+  <ellipse cx="100" cy="82" rx="52" ry="62" fill="#f5f0e0"/>
+  <circle cx="80" cy="72" r="6" fill="#1a1a1a"/>
+  <circle cx="120" cy="72" r="6" fill="#1a1a1a"/>
+  <path d="M78 98 Q100 118 122 98" stroke="#c4a35a" stroke-width="4" fill="none" stroke-linecap="round"/>
 </svg>
