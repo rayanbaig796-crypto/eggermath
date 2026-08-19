@@ -15,12 +15,15 @@
   <meta name="description" content="Play classic Game Boy Advance games for free in your browser. No download needed. Pokemon, Zelda, Mario, Metroid & 25+ GBA titles. Instant play, save states, fast forward.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
   <link rel="canonical" href="https://www.eggermath.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#161a13">
+  <meta name="theme-color" content="#090a0f">
   <meta property="og:title" content="Play GBA Games Online Free — Game Boy Advance Emulator">
   <meta property="og:description" content="Play classic Game Boy Advance games for free in your browser. Pokemon, Zelda, Mario, Metroid & 25+ titles. No download, save states, mobile controls.">
   <meta property="og:type" content="website">
@@ -104,7 +107,7 @@
   ]
   }
   </script>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css?v=2.0">
 </head>
 <body>
 <script>
@@ -122,221 +125,276 @@
 <p style="color:#666;font-size:12px;margin-top:16px;">Supported browsers: Chrome, Firefox, Edge, Safari 11+</p>
 </div>
 </noscript>
-<nav class="site-nav" style="background:#0d0d0d;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,0.06);">
-<a href="/" style="color:#c4a35a;font-family:'DM Sans',sans-serif;font-weight:700;font-size:1.1rem;text-decoration:none;">EggerMath</a>
-<div style="display:flex;gap:20px;align-items:center;">
-<a href="/" style="color:#c4a35a;text-decoration:none;font-size:0.85rem;">Emulator</a>
-</div>
+<nav class="site-nav">
+  <a href="/" class="site-brand">
+    <div class="brand-icon-wrap">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="6" width="20" height="12" rx="3"/>
+        <line x1="6" y1="12" x2="8" y2="12"/><line x1="7" y1="11" x2="7" y2="13"/>
+        <circle cx="16" cy="11" r="1" fill="currentColor"/><circle cx="18" cy="13" r="1" fill="currentColor"/>
+      </svg>
+    </div>
+    <span class="brand-name">EggerMath</span>
+  </a>
+  <div class="nav-links">
+    <span class="nav-badge"><span class="nav-badge-dot"></span> WebAssembly mGBA</span>
+    <a href="/" class="nav-link active">Emulator</a>
+  </div>
 </nav>
+
 <div class="main">
-<div id="upload-area">
-<div class="icon"><svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></div>
-<p>Drop a GBA ROM here or click to browse</p>
-<div class="formats">Supports .gba, .zip, .gb, .gbc files</div>
-</div>
-<input type="file" id="file-input" accept=".gba,.zip,.gb,.gbc" style="display:none">
+  <!-- Upload Hero Zone -->
+  <div id="upload-area">
+    <div class="upload-content">
+      <div class="icon">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="17 8 12 3 7 8"/>
+          <line x1="12" y1="3" x2="12" y2="15"/>
+        </svg>
+      </div>
+      <div class="upload-title">Drop your GBA ROM here or browse</div>
+      <div class="upload-hint">Drag any game file to run locally inside your browser with zero install</div>
+      <div class="upload-tags">
+        <span class="upload-tag">.gba</span>
+        <span class="upload-tag">.gbc</span>
+        <span class="upload-tag">.gb</span>
+        <span class="upload-tag">.zip</span>
+      </div>
+    </div>
+  </div>
+  <input type="file" id="file-input" accept=".gba,.zip,.gb,.gbc" style="display:none">
 
-<div class="continue-bar" id="continue-bar">
-<div class="cbar-header">
-<div class="cbar-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></div>
-<div class="cbar-info">
-<div class="cbar-label">Continue Playing</div>
-<div class="cbar-sub">Pick up where you left off</div>
-</div>
-<button class="cbar-clear" id="continue-clear" title="Clear all">✕</button>
-</div>
-<div class="continue-games-list" id="continue-games-list"></div>
-</div>
+  <!-- Resume Session Widget -->
+  <div class="continue-bar" id="continue-bar">
+    <div class="cbar-header">
+      <div class="cbar-left">
+        <div class="cbar-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </div>
+        <div>
+          <div class="cbar-label">Continue Playing</div>
+          <div class="cbar-sub">Pick up your saved game state</div>
+        </div>
+      </div>
+      <button class="cbar-clear" id="continue-clear" title="Clear continue history">Clear</button>
+    </div>
+    <div class="continue-games-list" id="continue-games-list"></div>
+  </div>
 
-<div class="pre-game-content" id="pre-game-content">
-<div class="browse-section">
-<div class="browse-header">
-<h2>Play GBA Games Online Free — Popular Titles</h2>
-<span class="badge">Click to Play</span>
-</div>
-<p class="browse-sub">Click any game to play instantly — supports GBA and GBC ROMs</p>
-<div class="games-grid" id="games-grid">
-<noscript>
-<style>.game-pill-static{display:block!important}</style>
-</noscript>
-<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
-<a href="/?game=Pokemon+-+Emerald+Version+(USA,+Europe).zip" itemprop="url">
-<img class="game-pill-img" src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Play Pokemon Emerald Online Free" loading="lazy" itemprop="image">
-<div class="game-pill-overlay">
-<div class="game-pill-title" itemprop="name">Pokemon Emerald</div>
-<div class="game-pill-genre">RPG</div>
-<div class="game-pill-play">▶ Play Now</div>
-</div>
-</a>
-</div>
-<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
-<a href="/?game=Pokemon_+FireRed+Version.zip" itemprop="url">
-<img class="game-pill-img" src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Play Pokemon FireRed Online Free" loading="lazy" itemprop="image">
-<div class="game-pill-overlay">
-<div class="game-pill-title" itemprop="name">Pokemon FireRed</div>
-<div class="game-pill-genre">RPG</div>
-<div class="game-pill-play">▶ Play Now</div>
-</div>
-</a>
-</div>
-<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
-<a href="/?game=Legend+of+Zelda,+The_+The+Minish+Cap.zip" itemprop="url">
-<img class="game-pill-img" src="https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg" alt="Play Zelda Minish Cap Online Free" loading="lazy" itemprop="image">
-<div class="game-pill-overlay">
-<div class="game-pill-title" itemprop="name">Zelda: Minish Cap</div>
-<div class="game-pill-genre">Adventure</div>
-<div class="game-pill-play">▶ Play Now</div>
-</div>
-</a>
-</div>
-<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
-<a href="/?game=Metroid+Fusion.zip" itemprop="url">
-<img class="game-pill-img" src="https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg" alt="Play Metroid Fusion Online Free" loading="lazy" itemprop="image">
-<div class="game-pill-overlay">
-<div class="game-pill-title" itemprop="name">Metroid Fusion</div>
-<div class="game-pill-genre">Action</div>
-<div class="game-pill-play">▶ Play Now</div>
-</div>
-</a>
-</div>
-<div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
-<a href="/?game=Mario+Kart_+Super+Circuit.zip" itemprop="url">
-<img class="game-pill-img" src="https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg" alt="Play Mario Kart Super Circuit Online Free" loading="lazy" itemprop="image">
-<div class="game-pill-overlay">
-<div class="game-pill-title" itemprop="name">Mario Kart Super Circuit</div>
-<div class="game-pill-genre">Racing</div>
-<div class="game-pill-play">▶ Play Now</div>
-</div>
-</a>
-</div>
-</div>
-</div>
+  <!-- Library Catalog and Guides -->
+  <div class="pre-game-content" id="pre-game-content">
+    <section class="browse-section">
+      <div class="browse-header-wrap">
+        <div class="browse-title-row">
+          <div>
+            <h2>Featured GBA Classics</h2>
+            <p class="browse-sub">Instant-play curated library running via WebAssembly</p>
+          </div>
+        </div>
+        <div class="catalog-toolbar">
+          <div class="catalog-search-wrap">
+            <svg class="catalog-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="catalog-search" class="catalog-search-input" placeholder="Search Pokemon, Zelda, Mario...">
+          </div>
+          <div class="catalog-filters" id="catalog-filters">
+            <button class="filter-btn active" data-genre="all">All Games</button>
+            <button class="filter-btn" data-genre="RPG">RPG</button>
+            <button class="filter-btn" data-genre="Adventure">Adventure</button>
+            <button class="filter-btn" data-genre="Platformer">Platformer</button>
+            <button class="filter-btn" data-genre="Action">Action</button>
+            <button class="filter-btn" data-genre="Racing">Racing</button>
+          </div>
+        </div>
+      </div>
 
-<div class="guide-section">
-<h2>How to Play</h2>
-<p class="guide-sub">Get your favorite GBA games running in 3 easy steps</p>
-<div class="guide-steps">
-<div class="guide-step">
-<div class="step-num">1</div>
-<div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></div>
-<div class="step-title">Pick a Game</div>
-<div class="step-desc">
-Browse our library of 25+ popular GBA and GBC games above. Click on any game to start playing instantly.
-</div>
-</div>
-<div class="guide-step">
-<div class="step-num">2</div>
-<div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-<div class="step-title">Wait for Loading</div>
-<div class="step-desc">
-The game loads directly in your browser from our secure library. Usually takes 5-15 seconds depending on your connection.
-</div>
-</div>
-<div class="guide-step">
-<div class="step-num">3</div>
-<div class="step-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="11" x2="10" y2="11"/><line x1="8" y1="9" x2="8" y2="13"/><line x1="15" y1="12" x2="15.01" y2="12"/><line x1="18" y1="10" x2="18.01" y2="10"/><path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z"/></svg></div>
-<div class="step-title">Start Playing</div>
-<div class="step-desc">
-Use your keyboard or touch controls to play. Save states, fast forward, and fullscreen are built in. Your progress is saved automatically.
-</div>
-</div>
-</div>
-<div class="guide-note">
-<strong>Tip:</strong> You can also drag & drop your own .gba, .zip, .gb, or .gbc files into the upload area. Your saves are stored locally in your browser — no account needed. Works best on Chrome and Edge.
-</div>
-</div>
-</div>
+      <div class="games-grid" id="games-grid">
+        <!-- Static Fallback Items for Search Engines & Non-JS -->
+        <noscript>
+          <style>.game-pill-static{display:block!important}</style>
+        </noscript>
+        <div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+          <a href="/?game=Pokemon+-+Emerald+Version+(USA,+Europe).zip" itemprop="url">
+            <div class="game-pill-media">
+              <img class="game-pill-img" src="https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg" alt="Play Pokemon Emerald Online Free" loading="lazy" itemprop="image">
+            </div>
+            <div class="game-pill-overlay">
+              <div class="game-pill-meta"><span class="game-pill-genre">RPG</span></div>
+              <div class="game-pill-title" itemprop="name">Pokemon Emerald</div>
+              <div class="game-pill-play-btn">▶ Play Now</div>
+            </div>
+          </a>
+        </div>
+        <div class="game-pill game-pill-static" style="display:none" itemscope itemtype="https://schema.org/VideoGame">
+          <a href="/?game=Pokemon_+FireRed+Version.zip" itemprop="url">
+            <div class="game-pill-media">
+              <img class="game-pill-img" src="https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg" alt="Play Pokemon FireRed Online Free" loading="lazy" itemprop="image">
+            </div>
+            <div class="game-pill-overlay">
+              <div class="game-pill-meta"><span class="game-pill-genre">RPG</span></div>
+              <div class="game-pill-title" itemprop="name">Pokemon FireRed</div>
+              <div class="game-pill-play-btn">▶ Play Now</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<div id="file-info">
-<div class="name" id="file-name"></div>
-</div>
-<div class="progress-bar" id="progress-bar">
-<div class="progress-fill" id="progress-fill"></div>
-</div>
-<div class="status-text" id="status-text"></div>
-<div class="emulator-container" id="emulator-container">
-<div class="emu-toolbar-hint" id="toolbar-hint">
-<svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>
-</div>
-<div class="emu-toolbar" id="emu-toolbar">
-<button class="emu-tb-btn" id="btn-fullscreen" title="Fullscreen">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
-<span>Fullscreen</span>
-</button>
-<button class="emu-tb-btn" id="btn-reset" title="Reset">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
-<span>Reset</span>
-</button>
-<button class="emu-tb-btn" id="btn-mute" title="Mute">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
-<span>Mute</span>
-</button>
-<button class="emu-tb-btn" id="btn-save-state" title="Save State (F5)">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-<span>Save</span>
-</button>
-<button class="emu-tb-btn" id="btn-load-state" title="Load State (F9)">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
-<span>Load</span>
-</button>
-<button class="emu-tb-btn" id="btn-fast-forward" title="Fast Forward (FF)">
-<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
-<span>FF</span>
-</button>
-</div>
-<canvas id="emulator-canvas"></canvas>
-</div>
-<div class="game-back-bar" id="game-back-bar">
-<button class="game-back-btn" id="game-back-btn">
-<svg viewBox="0 0 24 24"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
-Back to Games
-</button>
-</div>
-<div class="touch-controls" id="touch-controls">
-<div class="tc-shoulder-zone">
-<button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
-<button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
-</div>
-<div class="tc-dpad" id="tc-dpad">
-<div class="tc-dpad-bar tc-dpad-h">
-<div class="tc-dpad-arrow tc-dpad-arrow-l"></div>
-<div class="tc-dpad-arrow tc-dpad-arrow-r"></div>
-</div>
-<div class="tc-dpad-bar tc-dpad-v">
-<div class="tc-dpad-arrow tc-dpad-arrow-u"></div>
-<div class="tc-dpad-arrow tc-dpad-arrow-d"></div>
-</div>
-</div>
-<div class="tc-center-zone">
-<button class="tc-btn tc-center-btn" data-btn="Select">SELECT</button>
-<button class="tc-btn tc-center-btn" data-btn="Start">START</button>
-</div>
-<div class="tc-ab-zone">
-<button class="tc-btn tc-ab-btn tc-a-btn" data-btn="A">A</button>
-<button class="tc-btn tc-ab-btn tc-b-btn" data-btn="B">B</button>
-</div>
-</div>
-<div class="controls-help" id="controls-help">
-<h3>Keyboard Controls</h3>
-<div class="row"><span>D-Pad</span><span>WASD / Arrow Keys</span></div>
-<div class="row"><span>A Button</span><span>K</span></div>
-<div class="row"><span>B Button</span><span>J</span></div>
-<div class="row"><span>L</span><span>Q</span></div>
-<div class="row"><span>R</span><span>E</span></div>
-<div class="row"><span>Start</span><span>Enter</span></div>
-<div class="row"><span>Select</span><span>Right Shift</span></div>
-<div class="row"><span>Save State</span><span>F5</span></div>
-<div class="row"><span>Load State</span><span>F9</span></div>
-<div class="row"><span>Switch Slot</span><span>F7</span></div>
-<div class="row"><span>Fullscreen</span><span>Double-click canvas</span></div>
-</div>
-<div class="mobile-note">Touch controls active. Connect a keyboard or controller for better experience.</div>
+    <!-- How-To Guide Section -->
+    <section class="guide-section">
+      <div class="guide-header-wrap">
+        <h2>Quick Start Guide</h2>
+        <p class="guide-sub">How browser-based GBA emulation works in 3 simple steps</p>
+      </div>
+      <div class="guide-steps">
+        <div class="guide-step">
+          <div class="step-header-row">
+            <span class="step-num-pill">01</span>
+            <div class="step-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+          </div>
+          <div class="step-title">Choose or Drop a Game</div>
+          <div class="step-desc">Pick from our built-in library of classics or drag and drop your own ROM file directly into the player.</div>
+        </div>
+        <div class="guide-step">
+          <div class="step-header-row">
+            <span class="step-num-pill">02</span>
+            <div class="step-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+          </div>
+          <div class="step-title">Instant WebAssembly Load</div>
+          <div class="step-desc">The mGBA core compiles and runs directly on your local CPU with 60 FPS audio/video synchronization.</div>
+        </div>
+        <div class="guide-step">
+          <div class="step-header-row">
+            <span class="step-num-pill">03</span>
+            <div class="step-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            </div>
+          </div>
+          <div class="step-title">Save States & Controls</div>
+          <div class="step-desc">Save anywhere using F5/F9 save slots. Touch controls activate automatically on mobile devices.</div>
+        </div>
+      </div>
+      <div class="guide-note">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+        <div><strong>Local Privacy:</strong> Saves and ROMs are stored entirely inside your browser's IndexedDB and localStorage. No game data is sent to our servers.</div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Loading State & Emulator Stage -->
+  <div id="file-info">
+    <div class="name" id="file-name"></div>
+  </div>
+  <div class="progress-bar" id="progress-bar">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+  <div class="status-text" id="status-text"></div>
+
+  <div class="emulator-container" id="emulator-container">
+    <div class="emu-toolbar-hint" id="toolbar-hint" title="Show controls toolbar">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+    </div>
+    <div class="emu-toolbar" id="emu-toolbar">
+      <button class="emu-tb-btn" id="btn-fullscreen" title="Fullscreen">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>
+        <span>Fullscreen</span>
+      </button>
+      <button class="emu-tb-btn" id="btn-reset" title="Reset">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+        <span>Reset</span>
+      </button>
+      <button class="emu-tb-btn" id="btn-mute" title="Mute/Unmute">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+        <span>Audio</span>
+      </button>
+      <button class="emu-tb-btn" id="btn-save-state" title="Save State (F5)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/></svg>
+        <span>Save (F5)</span>
+      </button>
+      <button class="emu-tb-btn" id="btn-load-state" title="Load State (F9)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+        <span>Load (F9)</span>
+      </button>
+      <button class="emu-tb-btn" id="btn-fast-forward" title="Fast Forward (FF)">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+        <span>Speed</span>
+      </button>
+    </div>
+    <canvas id="emulator-canvas"></canvas>
+  </div>
+
+  <div class="game-back-bar" id="game-back-bar">
+    <button class="game-back-btn" id="game-back-btn">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Back to Game Library
+    </button>
+  </div>
+
+  <!-- Mobile Touch Controls -->
+  <div class="touch-controls" id="touch-controls">
+    <div class="tc-shoulder-zone">
+      <button class="tc-btn tc-shoulder-btn" data-btn="L">L</button>
+      <button class="tc-btn tc-shoulder-btn" data-btn="R">R</button>
+    </div>
+    <div class="tc-dpad" id="tc-dpad">
+      <div class="tc-dpad-bar tc-dpad-h">
+        <div class="tc-dpad-arrow tc-dpad-arrow-l"></div>
+        <div class="tc-dpad-arrow tc-dpad-arrow-r"></div>
+      </div>
+      <div class="tc-dpad-bar tc-dpad-v">
+        <div class="tc-dpad-arrow tc-dpad-arrow-u"></div>
+        <div class="tc-dpad-arrow tc-dpad-arrow-d"></div>
+      </div>
+    </div>
+    <div class="tc-center-zone">
+      <button class="tc-btn tc-center-btn" data-btn="Select">SELECT</button>
+      <button class="tc-btn tc-center-btn" data-btn="Start">START</button>
+    </div>
+    <div class="tc-ab-zone">
+      <button class="tc-btn tc-ab-btn tc-a-btn" data-btn="A">A</button>
+      <button class="tc-btn tc-ab-btn tc-b-btn" data-btn="B">B</button>
+    </div>
+  </div>
+
+  <!-- Keyboard Controls Helper -->
+  <div class="controls-help" id="controls-help">
+    <h3>Keyboard Controls</h3>
+    <div class="controls-help-grid">
+      <div class="row"><span>D-Pad</span><span>WASD / Arrows</span></div>
+      <div class="row"><span>A Button</span><span>K</span></div>
+      <div class="row"><span>B Button</span><span>J</span></div>
+      <div class="row"><span>L Shoulder</span><span>Q</span></div>
+      <div class="row"><span>R Shoulder</span><span>E</span></div>
+      <div class="row"><span>Start</span><span>Enter</span></div>
+      <div class="row"><span>Select</span><span>R-Shift</span></div>
+      <div class="row"><span>Save State</span><span>F5</span></div>
+      <div class="row"><span>Load State</span><span>F9</span></div>
+      <div class="row"><span>Save Slot</span><span>F7</span></div>
+      <div class="row"><span>Fullscreen</span><span>Double Click</span></div>
+    </div>
+  </div>
 </div>
 
 <script src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
 <script type="module" src="/js/emulator.js"></script>
-<footer class="footer-section" style="text-align:center;padding:32px 20px;color:rgba(240,235,224,0.3);font-size:12px;border-top:1px solid rgba(255,255,255,0.06);margin-top:40px;">
-&copy; 2026 EggerMath. All rights reserved. &nbsp;|&nbsp; <a href="/pages/privacy.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Privacy</a> &nbsp;|&nbsp; <a href="/pages/terms.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">Terms</a> &nbsp;|&nbsp; <a href="/pages/takedown.html" style="color:rgba(240,235,224,0.4);text-decoration:none;">DMCA</a>
+
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">EggerMath Arcade</div>
+    <p class="footer-desc">A privacy-focused Game Boy Advance and Retro emulator running via mGBA WebAssembly directly inside modern web browsers.</p>
+    <div class="footer-links">
+      <a href="/pages/privacy.html" class="footer-link">Privacy Policy</a>
+      <a href="/pages/terms.html" class="footer-link">Terms of Service</a>
+      <a href="/pages/takedown.html" class="footer-link">DMCA Takedown</a>
+    </div>
+    <div class="footer-copy">&copy; 2026 EggerMath. All rights reserved.</div>
+  </div>
 </footer>
 </body>
 </html>

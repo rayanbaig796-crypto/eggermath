@@ -702,19 +702,32 @@ const server = http.createServer(async (req, res) => {
     }
   }
   if (!fs.existsSync(filePath)) {
-    res.writeHead(404);
-    res.end('Not found');
-    return;
+    // Check if adding .html or looking in eggermath-astro/dist matches
+    if (fs.existsSync(filePath + '.html')) {
+      filePath = filePath + '.html';
+    } else {
+      const relPath = decodeURIComponent(req.url.split('?')[0]).replace(/^\//, '');
+      const distPath = path.join(ROOT, 'eggermath-astro', 'dist', relPath);
+      const distHtml = path.join(ROOT, 'eggermath-astro', 'dist', relPath + '.html');
+      if (fs.existsSync(distPath) && !fs.statSync(distPath).isDirectory()) {
+        filePath = distPath;
+      } else if (fs.existsSync(distHtml)) {
+        filePath = distHtml;
+      } else {
+        res.writeHead(404);
+        res.end('Not found');
+        return;
+      }
+    }
   }
   const ext = path.extname(filePath).toLowerCase();
   let mime = MIME[ext] || 'application/octet-stream';
   if (!ext && filePath.endsWith('config')) mime = 'application/javascript';
 
-  let cacheControl = 'public, max-age=300';
-  if (ext === '.html' || ext === '.htm') cacheControl = 'no-store, must-revalidate';
-  else if (ext === '.wasm' || ext === '.data') cacheControl = 'public, max-age=604800, immutable';
-  else if (ext === '.js' || ext === '.css') cacheControl = 'public, max-age=86400, immutable';
-  else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=604800, immutable';
+  let cacheControl = 'no-cache';
+  if (ext === '.html' || ext === '.htm' || ext === '.js' || ext === '.css') cacheControl = 'no-store, must-revalidate';
+  else if (ext === '.wasm' || ext === '.data') cacheControl = 'public, max-age=604800';
+  else if (ext === '.png' || ext === '.jpg' || ext === '.svg' || ext === '.gif' || ext === '.webp') cacheControl = 'public, max-age=86400';
 
   const isHtml = ext === '.html' || ext === '.htm';
   const isEmulator = filePath.includes('gba-emulator-web');

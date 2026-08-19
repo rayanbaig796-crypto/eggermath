@@ -6,56 +6,70 @@
  <title>DMCA Takedown Policy — EggerMath</title>
  <meta name="description" content="EggerMath DMCA takedown policy. How to report copyright infringement on our free GBA and Gameboy emulator website.">
  <meta name="author" content="EggerMath">
- <link rel="canonical" href="https://www.eggermath.com/takedown.html">
+ <link rel="canonical" href="https://www.eggermath.com/pages/takedown.html">
 
  <meta property="og:type" content="website">
  <meta property="og:site_name" content="EggerMath">
  <meta property="og:title" content="DMCA Takedown Policy — EggerMath">
  <meta property="og:description" content="Submit a DMCA takedown request or report copyright infringement on EggerMath.">
- <meta property="og:url" content="https://www.eggermath.com/takedown.html">
- <meta property="og:image" content="https://www.eggermath.com/images/eggermath-logo.png">
+ <meta property="og:url" content="https://www.eggermath.com/pages/takedown.html">
+ <meta property="og:image" content="https://www.eggermath.com/og-image.png">
 
  <meta name="twitter:card" content="summary_large_image">
  <meta name="twitter:title" content="DMCA Takedown Policy — EggerMath">
  <meta name="twitter:description" content="Report copyright infringement on EggerMath.">
- <meta name="twitter:image" content="https://www.eggermath.com/images/eggermath-logo.png">
+ <meta name="twitter:image" content="https://www.eggermath.com/og-image.png">
 
- <link rel="icon" type="image/x-icon" href="/images/eggermath-logo.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+ <link rel="stylesheet" href="/css/style.css">
 
  <style>
- .legal-page { max-width: 740px; margin: 0 auto; padding: 40px 20px; }
- .legal-hero { text-align: center; padding: 50px 20px; background: linear-gradient(135deg, var(--green-dark), var(--green-deeper)); border-radius: 16px; margin-bottom: 36px; }
- .legal-hero h1 { font-size: 32px; color: #fff; margin-bottom: 10px; }
- .legal-hero p { color: rgba(255,255,255,0.7); font-size: 15px; }
- .legal-section { background: rgba(0,0,0,0.3); border-radius: 12px; padding: 28px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.08); }
- .legal-section h2 { color: #fff; font-size: 18px; margin-bottom: 12px; }
- .legal-section p, .legal-section li { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.7; }
+ .legal-page { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+ .legal-hero { text-align: center; padding: 48px 24px; background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(245,158,11,0.1)); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); margin-bottom: 36px; }
+ .legal-hero h1 { font-family: var(--font-display); font-size: 2.2rem; color: var(--text-primary); margin-bottom: 8px; font-weight: 800; letter-spacing: -0.02em; }
+ .legal-hero p { color: var(--text-secondary); font-size: 0.95rem; }
+ .legal-section { background: var(--bg-surface); border-radius: var(--radius-lg); padding: 28px; margin-bottom: 20px; border: 1px solid var(--border-subtle); }
+ .legal-section h2 { font-family: var(--font-display); color: var(--text-primary); font-size: 1.25rem; font-weight: 700; margin-bottom: 12px; }
+ .legal-section p, .legal-section li { color: var(--text-secondary); font-size: 0.92rem; line-height: 1.7; }
  .legal-section ul { padding-left: 20px; margin-top: 8px; }
  .legal-section li { margin-bottom: 6px; }
- .legal-section a { color: var(--green); text-decoration: underline; }
+ .legal-section a { color: var(--accent-amber); text-decoration: underline; text-underline-offset: 3px; }
  .legal-section a:hover { color: #fff; }
  .takedown-form { margin-top: 20px; }
- .takedown-form label { display: block; color: rgba(255,255,255,0.7); font-size: 13px; font-weight: 600; margin-bottom: 6px; }
- .takedown-form input, .takedown-form textarea { width: 100%; padding: 10px 14px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; color: #fff; font-size: 14px; font-family: inherit; margin-bottom: 14px; }
- .takedown-form input::placeholder, .takedown-form textarea::placeholder { color: rgba(255,255,255,0.3); }
+ .takedown-form label { display: block; color: var(--text-primary); font-size: 0.85rem; font-weight: 600; margin-bottom: 6px; }
+ .takedown-form input, .takedown-form textarea { width: 100%; padding: 12px 14px; background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); color: var(--text-primary); font-size: 0.9rem; font-family: inherit; margin-bottom: 16px; outline: none; transition: border-color 0.2s; }
+ .takedown-form input:focus, .takedown-form textarea:focus { border-color: var(--border-focus); }
+ .takedown-form input::placeholder, .takedown-form textarea::placeholder { color: var(--text-tertiary); }
  .takedown-form textarea { min-height: 120px; resize: vertical; }
- .takedown-form button { padding: 12px 28px; background: var(--green-dark); color: #fff; border: none; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; transition: background 0.2s; }
- .takedown-form button:hover { background: var(--green-deeper); }
- .back-link { display: inline-flex; align-items: center; gap: 6px; color: rgba(255,255,255,0.6); font-size: 13px; margin-bottom: 24px; text-decoration: none; }
- .back-link:hover { color: #fff; }
+ .takedown-form button { padding: 12px 28px; background: var(--accent-amber); color: var(--text-inverse); border: none; border-radius: var(--radius-full); font-weight: 800; font-size: 0.88rem; cursor: pointer; transition: all 0.2s; box-shadow: 0 4px 12px var(--accent-amber-glow); }
+ .takedown-form button:hover { opacity: 0.9; transform: translateY(-1px); }
  </style>
 </head>
 <body>
- <div class="legal-page">
- <a href="/" class="back-link">
- <svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;"><polyline points="15 18 9 12 15 6"/></svg>
- Back to Emulator
- </a>
+ <nav class="site-nav">
+   <a href="/" class="site-brand">
+     <div class="brand-icon-wrap">
+       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+         <rect x="2" y="6" width="20" height="12" rx="3"/>
+         <line x1="6" y1="12" x2="8" y2="12"/><line x1="7" y1="11" x2="7" y2="13"/>
+         <circle cx="16" cy="11" r="1" fill="currentColor"/><circle cx="18" cy="13" r="1" fill="currentColor"/>
+       </svg>
+     </div>
+     <span class="brand-name">EggerMath</span>
+   </a>
+   <div class="nav-links">
+     <a href="/" class="nav-link">← Back to Emulator</a>
+   </div>
+ </nav>
 
- <div class="legal-hero">
- <h1>DMCA Takedown Policy</h1>
- <p>Report copyright infringement and request content removal</p>
- </div>
+ <div class="legal-page">
+   <div class="legal-hero">
+     <h1>DMCA Takedown Policy</h1>
+     <p>Report copyright infringement and request content removal</p>
+   </div>
 
  <div class="legal-section">
  <h2>1. Overview</h2>

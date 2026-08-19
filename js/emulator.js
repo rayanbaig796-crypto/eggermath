@@ -607,31 +607,31 @@ var grid = document.getElementById('games-grid');
 if (!grid) return;
 
 var games = [
-{ title: 'Pokemon Emerald', genre: 'RPG', desc: 'Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities.', mega: 'Pokemon - Emerald Version (USA, Europe).zip', img: 'https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg', slug: '/gameboy-advance-rom-pokemon-emerald-version/' },
-{ title: 'Pokemon FireRed', genre: 'RPG', desc: 'Play Pokemon FireRed online. An enhanced remake of Pokemon Red for GBA with updated graphics, abilities, and the Sevii Islands post-game. Explore Kanto, collect all 151 original Pokemon, and become Pokemon Champion.', mega: 'Pokemon_ FireRed Version.zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: '/gameboy-advance-rom-pokemon-firered-version/' },
-{ title: 'Pokemon LeafGreen', genre: 'RPG', desc: 'Play Pokemon LeafGreen online in your browser. The counterpart to FireRed featuring Pokemon Green exclusives. Explore Kanto with updated graphics, new mechanics like abilities and natures, and the Sevii Islands.', mega: 'Pokemon - Leaf Green Version (U) (V1.1).zip', img: 'https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg', slug: '/gameboy-advance-rom-pokemon---leaf-green-version-v11/' },
-{ title: 'Pokemon Ruby', genre: 'RPG', desc: 'Play Pokemon Ruby online. Journey through the Hoenn region, catch 135 new Pokemon, and stop Team Magma from expanding the land. Features double battles, Pokemon Contests, and the Battle Tower.', mega: 'Pokemon_ Ruby Version.zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: '/gameboy-advance-rom-pokemon-ruby-version/' },
-{ title: 'Pokemon Sapphire', genre: 'RPG', desc: 'Play Pokemon Sapphire online in your browser. The counterpart to Ruby featuring Team Aqua and exclusive Pokemon. Explore Hoenn, master double battles, and challenge the Battle Tower.', mega: 'Pokemon_ Sapphire Version.zip', img: 'https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg', slug: '/gameboy-advance-rom-pokemon-sapphire-version/' },
-{ title: 'Pokemon Ultra Violet', genre: 'RPG', desc: 'Play Pokemon Ultra Violet online. A FireRed ROM hack featuring all Pokemon from Gen 1-3 in one game. Catch every Pokemon without trading, explore expanded Sevii Islands, and enjoy quality-of-life improvements.', mega: 'Pokemon Ultra Violet (1.22) LSA (Fire Red Hack).zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: '/gameboy-advance-rom-pokemon-ultra-violet-122-lsa-fire-red-hack/' },
-{ title: 'Pokemon Jupiter', genre: 'RPG', desc: 'Play Pokemon Jupiter online. A Ruby ROM hack set in the Oxalis region with 200+ new fakemon, custom story, and updated mechanics. Features a darker narrative and challenging gym battles.', mega: 'Pokemon Jupiter - 6.04 (Ruby Hack).zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: '/gameboy-advance-rom-pokemon-jupiter---604-ruby-hack/' },
-{ title: 'Zelda: Minish Cap', genre: 'Adventure', desc: 'Play Zelda Minish Cap online in your browser. Help Link shrink to Minish size and explore Hyrule from a new perspective. Features the Gust Jar, Mole Mitts, and the ability to fuse Kinstones with NPCs.', mega: 'Legend of Zelda, The_ The Minish Cap.zip', img: 'https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg', slug: '/gameboy-advance-rom-legend-of-zelda-the-the-minish-cap/' },
-{ title: 'Zelda: A Link to the Past', genre: 'Adventure', desc: 'Play Zelda A Link to the Past online. The GBA port of the SNES classic featuring both the original Light/Dark World adventure and the new Four Swords multiplayer mode. Explore dungeons, collect artifacts, and defeat Ganon.', mega: 'Legend of Zelda, The - A Link to the Past & Four Swords (USA).zip', img: 'https://cache.downloadroms.io/static/5e103c326eaeeec1bf39d72f0842cd32a1f69e00/image.jpeg', slug: '/gameboy-advance-rom-legend-of-zelda-the-a-link-to-the-past-four-swords/' },
-{ title: 'Mario Kart Super Circuit', genre: 'Racing', desc: 'Play Mario Kart Super Circuit online in your browser. The first portable Mario Kart featuring 20 tracks from Super Mario Kart (SNES) plus 20 new courses. Drift, use items, and race against friends.', mega: 'Mario Kart_ Super Circuit.zip', img: 'https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg', slug: '/gameboy-advance-rom-mario-kart-super-circuit/' },
-{ title: 'Super Mario World', genre: 'Platformer', desc: 'Play Super Mario World online. The GBA port of the SNES classic featuring Yoshi, secret exits, and 96 levels. Explore Dinosaur Land, ride Yoshi through colorful worlds, and rescue Princess Peach from Bowser.', mega: 'Super Mario Advance 2_ Super Mario World.zip', img: 'https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg', slug: '/gameboy-advance-rom-super-mario-advance-2-super-mario-world/' },
-{ title: 'Mario & Luigi: Superstar Saga', genre: 'RPG', desc: 'Play Mario & Luigi Superstar Saga online. An action RPG where Mario and Luigi travel to the Beanbean Kingdom to recover Princess Peach stolen voice. Features timing-based combat, Bros. Attacks, and humorous dialogue.', mega: 'Mario & Luigi_ Superstar Saga.zip', img: 'https://cache.downloadroms.io/static/e2ba65e8c9fc44f24e306f20a6bbdc650a6f28e6/image.jpeg', slug: '/gameboy-advance-rom-mario-luigi-superstar-saga/' },
-{ title: 'Classic NES: Super Mario Bros', genre: 'Platformer', desc: 'Play Classic NES Super Mario Bros online. The original 1985 platformer ported to GBA. Run, jump, and stomp through 32 levels across 8 worlds to rescue Princess Toadstool from Bowser.', mega: 'Classic NES Series_ Super Mario Bros..zip', img: 'https://cache.downloadroms.io/static/4892e138d49d06903582ca7a63ff5ec61316aa01/image.jpeg', slug: '/gameboy-advance-rom-classic-nes-series-super-mario-bros/' },
-{ title: 'Metroid Fusion', genre: 'Action', desc: 'Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites, recover your ship parts, and confront the SA-X in this atmospheric action-adventure.', mega: 'Metroid Fusion.zip', img: 'https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg', slug: '/gameboy-advance-rom-metroid-fusion-1/' },
-{ title: 'Metroid: Zero Mission', genre: 'Action', desc: 'Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes, collect power-ups, and defeat Mother Brain in this fast-paced action game.', mega: 'Metroid_ Zero Mission.zip', img: 'https://cache.downloadroms.io/static/6e17ed38093925abed2b35680a2213463dc51246/image.jpeg', slug: '/gameboy-advance-rom-metroid-zero-mission/' },
-{ title: 'Kirby: Nightmare in Dream Land', genre: 'Platformer', desc: 'Play Kirby Nightmare in Dream Land online. Help Kirby reclaim the Dream Rod from King Dedede. Copy enemy abilities, float through colorful levels, and enjoy this GBA remake of the NES classic.', mega: 'Kirby_ Nightmare in Dream Land.zip', img: 'https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg', slug: '/gameboy-advance-rom-kirby-nightmare-in-dream-land/' },
-{ title: 'Kirby & the Amazing Mirror', genre: 'Platformer', desc: 'Play Kirby and the Amazing Mirror online. Explore the mirror world with 4 Kirbys, copy 12 abilities, and collect 900 stars. Features a Metroidvania-style map with interconnected areas.', mega: 'Kirby & the Amazing Mirror.zip', img: 'https://cache.downloadroms.io/static/f59132ffa23f14bcd4d5e9694cf57afb8a8dd02d/image.jpeg', slug: '/gameboy-advance-rom-kirby-the-amazing-mirror/' },
-{ title: 'Castlevania: Aria of Sorrow', genre: 'Action', desc: 'Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities. Features 100+ collectible souls, multiple weapons, and multiple endings.', mega: 'Castlevania_ Aria of Sorrow.zip', img: 'https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg', slug: '/gameboy-advance-rom-castlevania-aria-of-sorrow/' },
-{ title: 'Donkey Kong Country', genre: 'Platformer', desc: 'Play Donkey Kong Country online. The GBA port of the SNES classic. Swing on vines, ride mine carts, and defeat King K. Rool with Diddy Kong. Features 40 levels across 7 worlds.', mega: 'Donkey Kong Country.zip', img: 'https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg', slug: '/gameboy-advance-rom-donkey-kong-country/' },
-{ title: 'Fire Emblem: Sacred Stones', genre: 'Strategy', desc: 'Play Fire Emblem Sacred Stones online. Lead Eirika or Ephraim through the war-torn continents of Magvel. Recruit 24 characters, promote classes, and navigate branching story paths in this tactical RPG.', mega: 'Fire Emblem_ The Sacred Stones.zip', img: 'https://cache.downloadroms.io/static/526f9e2e1b09b6c40bf9a4c276ee232666f34442/image.jpeg', slug: '/gameboy-advance-rom-fire-emblem-the-sacred-stones/' },
-{ title: 'Sonic Advance 3', genre: 'Platformer', desc: 'Play Sonic Advance 3 online in your browser. Race through 7 zones as Sonic, Tails, Knuckles, or Amy. Use the Tag feature to switch characters mid-level and find hidden Chao.', mega: 'Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip', img: 'https://cache.downloadroms.io/static/3113ce42ab3471f38d8de19649e3eca6edd997ad/image.jpeg', slug: '/gameboy-advance-rom-sonic-advance-3/' },
-{ title: 'Dragon Ball: Advanced Adventure', genre: 'Fighting', desc: 'Play Dragon Ball Advanced Adventure online. Relive the original Dragon Ball saga as young Goku. Fight through 100+ missions, collect 20+ characters, and master martial arts combos in this action-fighting game.', mega: 'Dragon Ball - Advanced Adventure (USA).zip', img: 'https://cache.downloadroms.io/static/3d31e5d0d96ce4e60bb45987b42f2c9750ec5197/image.jpeg', slug: '/gameboy-advance-rom-dragon-ball-advanced-adventure/' },
-{ title: 'Harvest Moon', genre: 'Simulation', desc: 'Play Harvest Moon Friends of Mineral Town online. Build a farm, grow crops, raise animals, and find a partner in this charming life simulation. Features 4 seasons, mining, fishing, and 30+ bachelorettes.', mega: 'Harvest Moon - Friends of Mineral Town (U) [!].zip', img: 'https://cache.downloadroms.io/static/3da1858039ac4d6e9b64d4f6be716b300d58a109/image.jpg', slug: '/gameboy-advance-rom-harvest-moon---friends-of-mineral-town/' },
-{ title: 'Crash Bandicoot', genre: 'Platformer', desc: 'Play Crash Bandicoot online. Help Crash shrink down to micro-size and battle the mutant insects of Cortex. Features 5 worlds, 30+ levels, and classic Crash platforming action.', mega: 'Crash Bandicoot_ The Huge Adventure.zip', img: 'https://cache.downloadroms.io/static/dccc383ed757660b06f608b1040bb2c8f364ff73/image.jpeg', slug: '/gameboy-advance-rom-crash-bandicoot-the-huge-adventure/' },
-{ title: 'GTA Advance', genre: 'Action', desc: 'Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob. Features an open world, driveable vehicles, and the classic GTA crime gameplay on GBA.', mega: 'Grand Theft Auto Advance.zip', img: 'https://cache.downloadroms.io/static/bb1b6675a61175d35c748ac283089af2c0241d6b/image.jpeg', slug: '/gameboy-advance-rom-grand-theft-auto-advance/' },
+{ title: 'Pokemon Emerald', genre: 'RPG', desc: 'Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities.', mega: 'Pokemon - Emerald Version (USA, Europe).zip', img: 'https://cache.downloadroms.io/static/1211cfa3fd892bcfc38f890ff5f4a7c25f4a1533/image.jpeg', slug: 'pokemon-emerald' },
+{ title: 'Pokemon FireRed', genre: 'RPG', desc: 'Play Pokemon FireRed online. An enhanced remake of Pokemon Red for GBA with updated graphics, abilities, and the Sevii Islands post-game. Explore Kanto, collect all 151 original Pokemon, and become Pokemon Champion.', mega: 'Pokemon_ FireRed Version.zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: 'pokemon-firered' },
+{ title: 'Pokemon LeafGreen', genre: 'RPG', desc: 'Play Pokemon LeafGreen online in your browser. The counterpart to FireRed featuring Pokemon Green exclusives. Explore Kanto with updated graphics, new mechanics like abilities and natures, and the Sevii Islands.', mega: 'Pokemon - Leaf Green Version (U) (V1.1).zip', img: 'https://cache.downloadroms.io/static/15c4020193a0639699374676644b60a243588a39/image.jpg', slug: 'pokemon-leafgreen' },
+{ title: 'Pokemon Ruby', genre: 'RPG', desc: 'Play Pokemon Ruby online. Journey through the Hoenn region, catch 135 new Pokemon, and stop Team Magma from expanding the land. Features double battles, Pokemon Contests, and the Battle Tower.', mega: 'Pokemon_ Ruby Version.zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: 'pokemon-ruby' },
+{ title: 'Pokemon Sapphire', genre: 'RPG', desc: 'Play Pokemon Sapphire online in your browser. The counterpart to Ruby featuring Team Aqua and exclusive Pokemon. Explore Hoenn, master double battles, and challenge the Battle Tower.', mega: 'Pokemon_ Sapphire Version.zip', img: 'https://cache.downloadroms.io/static/be0dffdade13546184dd5abddb94d07bff953970/image.jpeg', slug: 'pokemon-sapphire' },
+{ title: 'Pokemon Ultra Violet', genre: 'RPG', desc: 'Play Pokemon Ultra Violet online. A FireRed ROM hack featuring all Pokemon from Gen 1-3 in one game. Catch every Pokemon without trading, explore expanded Sevii Islands, and enjoy quality-of-life improvements.', mega: 'Pokemon Ultra Violet (1.22) LSA (Fire Red Hack).zip', img: 'https://cache.downloadroms.io/static/465a276ce69d99c8a0993c72972149086d369d28/image.jpeg', slug: 'pokemon-ultra-violet' },
+{ title: 'Pokemon Jupiter', genre: 'RPG', desc: 'Play Pokemon Jupiter online. A Ruby ROM hack set in the Oxalis region with 200+ new fakemon, custom story, and updated mechanics. Features a darker narrative and challenging gym battles.', mega: 'Pokemon Jupiter - 6.04 (Ruby Hack).zip', img: 'https://cache.downloadroms.io/static/5639a44279ef95f3a62707b463dbccbfa96179c6/image.jpeg', slug: 'pokemon-jupiter' },
+{ title: 'Zelda: Minish Cap', genre: 'Adventure', desc: 'Play Zelda Minish Cap online in your browser. Help Link shrink to Minish size and explore Hyrule from a new perspective. Features the Gust Jar, Mole Mitts, and the ability to fuse Kinstones with NPCs.', mega: 'Legend of Zelda, The_ The Minish Cap.zip', img: 'https://cache.downloadroms.io/static/c5349b077fe3d330c816a7c8f094df8c7ff799ea/image.jpeg', slug: 'zelda-minish-cap' },
+{ title: 'Zelda: A Link to the Past', genre: 'Adventure', desc: 'Play Zelda A Link to the Past online. The GBA port of the SNES classic featuring both the original Light/Dark World adventure and the new Four Swords multiplayer mode. Explore dungeons, collect artifacts, and defeat Ganon.', mega: 'Legend of Zelda, The - A Link to the Past & Four Swords (USA).zip', img: 'https://cache.downloadroms.io/static/5e103c326eaeeec1bf39d72f0842cd32a1f69e00/image.jpeg', slug: 'zelda-a-link-to-the-past' },
+{ title: 'Mario Kart Super Circuit', genre: 'Racing', desc: 'Play Mario Kart Super Circuit online in your browser. The first portable Mario Kart featuring 20 tracks from Super Mario Kart (SNES) plus 20 new courses. Drift, use items, and race against friends.', mega: 'Mario Kart_ Super Circuit.zip', img: 'https://cache.downloadroms.io/static/687a99e94fff34d7a3d6fcf1c164a6af97d1ced4/image.jpeg', slug: 'mario-kart-super-circuit' },
+{ title: 'Super Mario World', genre: 'Platformer', desc: 'Play Super Mario World online. The GBA port of the SNES classic featuring Yoshi, secret exits, and 96 levels. Explore Dinosaur Land, ride Yoshi through colorful worlds, and rescue Princess Peach from Bowser.', mega: 'Super Mario Advance 2_ Super Mario World.zip', img: 'https://cache.downloadroms.io/static/97d992d1314c66211224c5af8adac66ed344364e/image.jpeg', slug: 'super-mario-world' },
+{ title: 'Mario & Luigi: Superstar Saga', genre: 'RPG', desc: 'Play Mario & Luigi Superstar Saga online. An action RPG where Mario and Luigi travel to the Beanbean Kingdom to recover Princess Peach stolen voice. Features timing-based combat, Bros. Attacks, and humorous dialogue.', mega: 'Mario & Luigi_ Superstar Saga.zip', img: 'https://cache.downloadroms.io/static/e2ba65e8c9fc44f24e306f20a6bbdc650a6f28e6/image.jpeg', slug: 'mario-luigi-superstar-saga' },
+{ title: 'Classic NES: Super Mario Bros', genre: 'Platformer', desc: 'Play Classic NES Super Mario Bros online. The original 1985 platformer ported to GBA. Run, jump, and stomp through 32 levels across 8 worlds to rescue Princess Toadstool from Bowser.', mega: 'Classic NES Series_ Super Mario Bros..zip', img: 'https://cache.downloadroms.io/static/4892e138d49d06903582ca7a63ff5ec61316aa01/image.jpeg', slug: 'classic-nes-super-mario-bros' },
+{ title: 'Metroid Fusion', genre: 'Action', desc: 'Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites, recover your ship parts, and confront the SA-X in this atmospheric action-adventure.', mega: 'Metroid Fusion.zip', img: 'https://cache.downloadroms.io/static/8691fc127944a0b73e7bd34734385e68ce889b50/image.jpeg', slug: 'metroid-fusion' },
+{ title: 'Metroid: Zero Mission', genre: 'Action', desc: 'Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes, collect power-ups, and defeat Mother Brain in this fast-paced action game.', mega: 'Metroid_ Zero Mission.zip', img: 'https://cache.downloadroms.io/static/6e17ed38093925abed2b35680a2213463dc51246/image.jpeg', slug: 'metroid-zero-mission' },
+{ title: 'Kirby: Nightmare in Dream Land', genre: 'Platformer', desc: 'Play Kirby Nightmare in Dream Land online. Help Kirby reclaim the Dream Rod from King Dedede. Copy enemy abilities, float through colorful levels, and enjoy this GBA remake of the NES classic.', mega: 'Kirby_ Nightmare in Dream Land.zip', img: 'https://cache.downloadroms.io/static/9562f6332bbfe23ea855242e958a08c6cc3fbc5e/image.jpeg', slug: 'kirby-nightmare-in-dream-land' },
+{ title: 'Kirby & the Amazing Mirror', genre: 'Platformer', desc: 'Play Kirby and the Amazing Mirror online. Explore the mirror world with 4 Kirbys, copy 12 abilities, and collect 900 stars. Features a Metroidvania-style map with interconnected areas.', mega: 'Kirby & the Amazing Mirror.zip', img: 'https://cache.downloadroms.io/static/f59132ffa23f14bcd4d5e9694cf57afb8a8dd02d/image.jpeg', slug: 'kirby-amazing-mirror' },
+{ title: 'Castlevania: Aria of Sorrow', genre: 'Action', desc: 'Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities. Features 100+ collectible souls, multiple weapons, and multiple endings.', mega: 'Castlevania_ Aria of Sorrow.zip', img: 'https://cache.downloadroms.io/static/4b7793d18f32f1ae48c630213b909b089dc3d191/image.jpeg', slug: 'castlevania-aria-of-sorrow' },
+{ title: 'Donkey Kong Country', genre: 'Platformer', desc: 'Play Donkey Kong Country online. The GBA port of the SNES classic. Swing on vines, ride mine carts, and defeat King K. Rool with Diddy Kong. Features 40 levels across 7 worlds.', mega: 'Donkey Kong Country.zip', img: 'https://cache.downloadroms.io/static/ca0f70fea0a44c63d443ca96b203accfa34bcf12/image.jpeg', slug: 'donkey-kong-country' },
+{ title: 'Fire Emblem: Sacred Stones', genre: 'Strategy', desc: 'Play Fire Emblem Sacred Stones online. Lead Eirika or Ephraim through the war-torn continents of Magvel. Recruit 24 characters, promote classes, and navigate branching story paths in this tactical RPG.', mega: 'Fire Emblem_ The Sacred Stones.zip', img: 'https://cache.downloadroms.io/static/526f9e2e1b09b6c40bf9a4c276ee232666f34442/image.jpeg', slug: 'fire-emblem-sacred-stones' },
+{ title: 'Sonic Advance 3', genre: 'Platformer', desc: 'Play Sonic Advance 3 online in your browser. Race through 7 zones as Sonic, Tails, Knuckles, or Amy. Use the Tag feature to switch characters mid-level and find hidden Chao.', mega: 'Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip', img: 'https://cache.downloadroms.io/static/3113ce42ab3471f38d8de19649e3eca6edd997ad/image.jpeg', slug: 'sonic-advance-3' },
+{ title: 'Dragon Ball: Advanced Adventure', genre: 'Fighting', desc: 'Play Dragon Ball Advanced Adventure online. Relive the original Dragon Ball saga as young Goku. Fight through 100+ missions, collect 20+ characters, and master martial arts combos in this action-fighting game.', mega: 'Dragon Ball - Advanced Adventure (USA).zip', img: 'https://cache.downloadroms.io/static/3d31e5d0d96ce4e60bb45987b42f2c9750ec5197/image.jpeg', slug: 'dragon-ball-advanced-adventure' },
+{ title: 'Harvest Moon', genre: 'Simulation', desc: 'Play Harvest Moon Friends of Mineral Town online. Build a farm, grow crops, raise animals, and find a partner in this charming life simulation. Features 4 seasons, mining, fishing, and 30+ bachelorettes.', mega: 'Harvest Moon - Friends of Mineral Town (U) [!].zip', img: 'https://cache.downloadroms.io/static/3da1858039ac4d6e9b64d4f6be716b300d58a109/image.jpg', slug: 'harvest-moon-friends-of-mineral-town' },
+{ title: 'Crash Bandicoot', genre: 'Platformer', desc: 'Play Crash Bandicoot online. Help Crash shrink down to micro-size and battle the mutant insects of Cortex. Features 5 worlds, 30+ levels, and classic Crash platforming action.', mega: 'Crash Bandicoot_ The Huge Adventure.zip', img: 'https://cache.downloadroms.io/static/dccc383ed757660b06f608b1040bb2c8f364ff73/image.jpeg', slug: 'crash-bandicoot-huge-adventure' },
+{ title: 'GTA Advance', genre: 'Action', desc: 'Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob. Features an open world, driveable vehicles, and the classic GTA crime gameplay on GBA.', mega: 'Grand Theft Auto Advance.zip', img: 'https://cache.downloadroms.io/static/bb1b6675a61175d35c748ac283089af2c0241d6b/image.jpeg', slug: 'gta-advance' },
 ];
 
 var MEGA_FOLDER = 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA';
@@ -673,62 +673,88 @@ if (err) { console.warn('MEGA folder load failed:', err); return; }
   }
   });
 
-var svgPlay = '<svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+  var svgPlay = '<svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+  var activeFilter = 'all';
+  var searchQuery = '';
 
-games.forEach(function(g) {
-// Remove static cards once JS takes over
-document.querySelectorAll('.game-pill-static').forEach(function(el) { el.remove(); });
-var card = document.createElement('div');
-card.className = 'game-pill' + (g.gbc ? ' gbc' : '');
-card.dataset.mega = g.mega;
-var badge = g.gbc ? '<span class="game-pill-badge">GBC</span>' : '';
-card.innerHTML =
-'<img class="game-pill-img" src="' + g.img + '" alt="' + g.title + '" loading="lazy" onerror="this.style.display=\'none\'">' +
-'<div class="game-pill-overlay">' +
-badge +
-'<div class="game-pill-title">' + g.title + '</div>' +
-'<div class="game-pill-genre">' + g.genre + '</div>' +
-'<div class="game-pill-play">' + svgPlay + ' Play Now</div>' +
-'</div>';
-card.addEventListener('mouseenter', function() { prefetchRom(g.mega); });
-card.addEventListener('click', function(e) {
-e.preventDefault();
-if (!megaFiles) {
-setStatus('Connecting to game library...');
-setTimeout(function() { card.click(); }, 2000);
-return;
-}
-var megaFile = megaFiles[g.mega];
-if (!megaFile) {
-setStatus('Game not found in library: ' + g.mega);
-setTimeout(function() { setStatus(''); }, 3000);
-return;
-}
-setStatus('Loading ' + g.title + '...');
-setProgress(0);
-progressBar.classList.add('visible');
-uploadArea.style.display = 'none';
-var preGame = document.getElementById('pre-game-content');
-if (preGame) preGame.classList.add('hidden');
-fileInfo.classList.add('visible');
-fileName.textContent = g.title;
+  function getGenreIcon(genre) {
+    if (genre === 'RPG') return '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>';
+    if (genre === 'Racing') return '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>';
+    return '<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="3"/><line x1="6" y1="12" x2="8" y2="12"/><line x1="7" y1="11" x2="7" y2="13"/><circle cx="16" cy="11" r="1" fill="currentColor"/><circle cx="18" cy="13" r="1" fill="currentColor"/></svg>';
+  }
 
-downloadOrCache(g.mega, g.title).then(function(data) {
-setProgress(90);
-setStatus('Starting game...');
-saveLastPlayed(g.title, g.mega);
-var blob = new Blob([data], { type: 'application/zip' });
-var file = new File([blob], g.mega, { type: 'application/zip' });
-loadFile(file);
-}).catch(function(err) {
-console.error('Download error:', err);
-setStatus('Download failed. Try again.');
-progressBar.classList.remove('visible');
-uploadArea.style.display = '';
-if (preGame) preGame.classList.remove('hidden');
-fileInfo.classList.remove('visible');
-});
-});
-grid.appendChild(card);
-});
+  function renderGrid() {
+    // Remove static cards once JS takes over
+    document.querySelectorAll('.game-pill-static').forEach(function(el) { el.remove(); });
+    grid.innerHTML = '';
+
+    var filtered = games.filter(function(g) {
+      var matchesGenre = (activeFilter === 'all') || (g.genre.toLowerCase() === activeFilter.toLowerCase());
+      var matchesSearch = !searchQuery || g.title.toLowerCase().includes(searchQuery.toLowerCase()) || g.genre.toLowerCase().includes(searchQuery.toLowerCase());
+      return matchesGenre && matchesSearch;
+    });
+
+    if (!filtered.length) {
+      grid.innerHTML = '<div style="grid-column: 1 / -1; text-align: center; padding: 48px 20px; color: var(--text-tertiary); font-size: 0.95rem;">No games found matching your search. Try another filter or search term.</div>';
+      return;
+    }
+
+    filtered.forEach(function(g) {
+      var card = document.createElement('a');
+      card.className = 'game-pill' + (g.gbc ? ' gbc' : '');
+      card.href = '/' + g.slug + '/';
+      card.dataset.mega = g.mega;
+      card.dataset.slug = g.slug;
+
+      var badge = g.gbc ? '<span class="game-pill-badge">GBC</span>' : '';
+      var proxiedImg = '/proxy?url=' + encodeURIComponent(g.img);
+
+      card.innerHTML =
+        '<div class="game-pill-media">' +
+          '<div class="game-pill-fallback">' +
+            '<div class="game-pill-fallback-icon">' + getGenreIcon(g.genre) + '</div>' +
+            '<div style="font-size:0.75rem;font-weight:700;font-family:var(--font-display);">' + g.title + '</div>' +
+          '</div>' +
+          '<img class="game-pill-img" src="' + proxiedImg + '" alt="' + g.title + '" loading="lazy" onerror="this.style.opacity=\'0\'">' +
+        '</div>' +
+        '<div class="game-pill-overlay">' +
+          '<div class="game-pill-meta">' +
+            badge +
+            '<span class="game-pill-genre">' + g.genre + '</span>' +
+          '</div>' +
+          '<div class="game-pill-title">' + g.title + '</div>' +
+          '<div class="game-pill-play-btn">' + svgPlay + ' Play Game</div>' +
+        '</div>';
+
+      card.addEventListener('mouseenter', function() { prefetchRom(g.mega); });
+
+      grid.appendChild(card);
+    });
+  }
+
+  // Setup search input listener
+  var searchInput = document.getElementById('catalog-search');
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      searchQuery = e.target.value.trim();
+      renderGrid();
+    });
+  }
+
+  // Setup genre filter button listeners
+  var filterContainer = document.getElementById('catalog-filters');
+  if (filterContainer) {
+    filterContainer.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        filterContainer.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        activeFilter = btn.dataset.genre || 'all';
+        renderGrid();
+      });
+    });
+  }
+
+  // Initial render
+  renderGrid();
 })();
+
