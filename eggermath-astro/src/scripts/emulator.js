@@ -553,6 +553,9 @@ function loadContinueBar() {
     var container = document.getElementById('continue-games-list');
     if (!container) return;
     container.innerHTML = '';
+    list = list.filter(function(g) { return g && g.title && g.mega; });
+    if (!list.length) { continueBar.classList.remove('visible'); return; }
+    localStorage.setItem(CONTINUE_KEY, JSON.stringify(list));
     list.forEach(function(g) {
       var card = document.createElement('div');
       card.className = 'continue-game-card';
