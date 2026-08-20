@@ -321,6 +321,17 @@ function setupTouchControls() {
 
   tc.classList.add('active');
 
+  var isLandscape = window.matchMedia('(orientation: landscape)');
+  function updateLandscape() {
+    if (isLandscape.matches) {
+      document.body.classList.add('game-landscape');
+    } else {
+      document.body.classList.remove('game-landscape');
+    }
+  }
+  updateLandscape();
+  isLandscape.addEventListener('change', updateLandscape);
+
   const heldButtons = new Set();
 
   function pressBtn(btn) {

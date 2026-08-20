@@ -1370,3 +1370,171 @@ body.embed-mode .emulator-container {
   border-radius: 0;
   border: none;
 }
+
+/* ── Landscape Mode (Touch Devices) ── */
+@media (orientation: landscape) and (pointer: coarse) {
+  .game-topbar { display: none !important; }
+  .game-controls-bar { display: none !important; }
+  .keyboard-hints { display: none !important; }
+
+  .game-embed {
+    position: fixed !important;
+    inset: 0;
+    z-index: 200;
+    background: #000;
+    padding: 0 !important;
+    gap: 0 !important;
+    min-height: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch;
+  }
+
+  .emulator-container {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    max-width: none !important;
+    width: auto !important;
+    background: #000;
+    overflow: hidden;
+  }
+
+  .emulator-container > canvas,
+  #emulator-canvas {
+    max-height: 100vh !important;
+    max-width: none !important;
+    width: auto !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .touch-controls {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: none !important;
+    height: auto !important;
+    pointer-events: none;
+    z-index: 210;
+    margin: 0 !important;
+  }
+
+  .touch-controls .tc-shoulder-zone {
+    position: fixed;
+    top: 8px;
+    left: 80px;
+    right: 80px;
+    padding: 0;
+    pointer-events: auto;
+  }
+
+  .touch-controls .tc-shoulder-btn {
+    width: 64px;
+    height: 32px;
+    font-size: 0.85rem;
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .touch-controls .tc-shoulder-btn:active,
+  .touch-controls .tc-shoulder-btn.pressed {
+    background: rgba(196,163,90,0.6);
+    border-color: var(--accent-amber);
+  }
+
+  .touch-controls .tc-dpad {
+    position: fixed;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 130px;
+    pointer-events: auto;
+    opacity: 0.6;
+  }
+
+  .touch-controls .tc-dpad:active {
+    opacity: 0.9;
+  }
+
+  .touch-controls .tc-dpad-bar {
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.2);
+  }
+
+  .touch-controls .tc-dpad-h .tc-dpad-arrow-l { border-right-color: rgba(255,255,255,0.6); }
+  .touch-controls .tc-dpad-h .tc-dpad-arrow-r { border-left-color: rgba(255,255,255,0.6); }
+  .touch-controls .tc-dpad-v .tc-dpad-arrow-u { border-bottom-color: rgba(255,255,255,0.6); }
+  .touch-controls .tc-dpad-v .tc-dpad-arrow-d { border-top-color: rgba(255,255,255,0.6); }
+
+  .touch-controls .tc-dpad.pressed-left .tc-dpad-h .tc-dpad-arrow-l { border-right-color: var(--accent-amber); }
+  .touch-controls .tc-dpad.pressed-right .tc-dpad-h .tc-dpad-arrow-r { border-left-color: var(--accent-amber); }
+  .touch-controls .tc-dpad.pressed-up .tc-dpad-v .tc-dpad-arrow-u { border-bottom-color: var(--accent-amber); }
+  .touch-controls .tc-dpad.pressed-down .tc-dpad-v .tc-dpad-arrow-d { border-top-color: var(--accent-amber); }
+
+  .touch-controls .tc-ab-zone {
+    position: fixed;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 130px;
+    height: 130px;
+    background: rgba(255,255,255,0.06);
+    border-color: rgba(255,255,255,0.12);
+    pointer-events: auto;
+    opacity: 0.6;
+  }
+
+  .touch-controls .tc-ab-zone:active {
+    opacity: 0.9;
+  }
+
+  .touch-controls .tc-ab-btn {
+    width: 52px;
+    height: 52px;
+    background: rgba(255,255,255,0.15);
+    border-color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.7);
+  }
+
+  .touch-controls .tc-ab-btn:active,
+  .touch-controls .tc-ab-btn.pressed {
+    background: rgba(196,163,90,0.6);
+    border-color: var(--accent-amber);
+    color: #fff;
+  }
+
+  .touch-controls .tc-center-zone {
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+    gap: 16px;
+  }
+
+  .touch-controls .tc-center-btn {
+    min-width: 60px;
+    height: 26px;
+    background: rgba(255,255,255,0.12);
+    border-color: rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.65rem;
+    opacity: 0.6;
+  }
+
+  .touch-controls .tc-center-btn:active,
+  .touch-controls .tc-center-btn.pressed {
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+    opacity: 0.9;
+  }
+}
