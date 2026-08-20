@@ -8,17 +8,13 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Referrer-Policy: strict-origin-when-cross-origin
 
-/gba-emulator-web/*
-  Cross-Origin-Opener-Policy: same-origin
-  Cross-Origin-Embedder-Policy: credentialless
-  Cross-Origin-Resource-Policy: cross-origin
+/*.js
+  Cross-Origin-Embedder-Policy: unsafe-none
+  Cache-Control: public, max-age=86400, immutable
 
 /gba-emulator-web/*.wasm
   Content-Type: application/wasm
   Cache-Control: public, max-age=604800, immutable
-
-/*.js
-  Cache-Control: public, max-age=86400, immutable
 
 /*.css
   Cache-Control: public, max-age=86400, immutable
