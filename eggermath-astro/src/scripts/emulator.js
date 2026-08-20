@@ -126,6 +126,7 @@ async function loadFile(file) {
       setProgress(100);
       setStatus('');
       progressBar.classList.remove('visible');
+      fileInfo.classList.remove('visible');
       emulatorContainer.classList.add('visible');
       var gameBackBar = document.getElementById('game-back-bar');
       if (gameBackBar) gameBackBar.classList.add('visible');
