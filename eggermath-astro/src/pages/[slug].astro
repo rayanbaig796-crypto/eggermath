@@ -59,9 +59,20 @@ const jsonLd = {
     <span class="game-topbar-meta">{game.genre} &middot; {game.year}</span>
   </nav>
 
+  <div id="file-info">
+    <div class="name" id="file-name"></div>
+  </div>
+  <div class="progress-bar" id="progress-bar">
+    <div class="progress-fill" id="progress-fill"></div>
+  </div>
+  <div class="status-text" id="status-text"></div>
+
   <main class="game-embed">
-    <div class="game-canvas-wrap">
-      <canvas id="gba-canvas"></canvas>
+    <div class="emulator-container" id="emulator-container">
+      <canvas id="emulator-canvas"></canvas>
+    </div>
+
+    <div class="game-canvas-wrap" id="game-canvas-wrap">
       <div id="game-loading">
         <div class="loading-spinner"></div>
         <p>Loading {game.title}...</p>
@@ -70,11 +81,11 @@ const jsonLd = {
 
     <div class="game-controls-bar">
       <div class="controls-left">
-        <button id="btn-save" class="ctrl-btn" title="Save State (F5)">
+        <button id="btn-save-state" class="ctrl-btn" title="Save State (F5)">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
           <span>Save</span>
         </button>
-        <button id="btn-load" class="ctrl-btn" title="Load State (F9)">
+        <button id="btn-load-state" class="ctrl-btn" title="Load State (F9)">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
           <span>Load</span>
         </button>
@@ -84,7 +95,7 @@ const jsonLd = {
         </button>
       </div>
       <div class="controls-center">
-        <button id="btn-ff" class="ctrl-btn" title="Fast Forward">
+        <button id="btn-fast-forward" class="ctrl-btn" title="Fast Forward">
           <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
           <span>FF</span>
         </button>
@@ -147,6 +158,10 @@ const jsonLd = {
     white-space: nowrap;
   }
 
+  #file-info, .progress-bar, .status-text { display: none; }
+  #file-info.visible { display: block; }
+  .progress-bar.visible { display: block; }
+
   .game-embed {
     display: flex;
     flex-direction: column;
@@ -166,12 +181,6 @@ const jsonLd = {
     border: 2px solid rgba(255,255,255,0.08);
     box-shadow: 0 8px 32px rgba(0,0,0,0.5);
   }
-  #gba-canvas {
-    width: 100%;
-    height: 100%;
-    display: block;
-    image-rendering: pixelated;
-  }
   #game-loading {
     position: absolute;
     inset: 0;
@@ -184,6 +193,33 @@ const jsonLd = {
     font-size: 14px;
   }
   #game-loading.hidden { display: none; }
+
+  .emulator-container {
+    display: none;
+    width: 100%;
+    max-width: 800px;
+  }
+  .emulator-container.visible {
+    display: block;
+  }
+  .emulator-container.visible ~ .game-controls-bar {
+    display: flex;
+  }
+  .emulator-container:not(.visible) ~ .game-controls-bar {
+    display: none;
+  }
+  .emulator-container.visible ~ .game-canvas-wrap {
+    display: none;
+  }
+  #emulator-canvas {
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: block;
+    image-rendering: pixelated;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  }
   .loading-spinner {
     width: 32px;
     height: 32px;

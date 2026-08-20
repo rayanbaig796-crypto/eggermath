@@ -146,6 +146,7 @@ async function loadFile(file) {
 }
 
 function setupToolbar() {
+  if (!emuToolbar || !toolbarHint) return;
   let hideTimer;
   function showToolbar() {
     emuToolbar.classList.add('visible');
@@ -682,44 +683,11 @@ function initGamesGrid() {
     var megaKey = card.dataset.mega;
     var title = card.dataset.title;
 
-    card.addEventListener('mouseenter', function() { prefetchRom(megaKey); });
     card.addEventListener('click', function(e) {
-      e.preventDefault();
-      if (!megaFiles) {
-        setStatus('Connecting to game library...');
-        setTimeout(function() { card.click(); }, 2000);
-        return;
+      var link = card.querySelector('a');
+      if (link && link.href) {
+        window.location.href = link.href;
       }
-      var megaFile = megaFiles[megaKey];
-      if (!megaFile) {
-        setStatus('Game not found in library');
-        setTimeout(function() { setStatus(''); }, 3000);
-        return;
-      }
-      setStatus('Loading ' + title + '...');
-      setProgress(0);
-      progressBar.classList.add('visible');
-      if (uploadArea) uploadArea.style.display = 'none';
-      var preGame = document.getElementById('pre-game-content');
-      if (preGame) preGame.classList.add('hidden');
-      fileInfo.classList.add('visible');
-      fileName.textContent = title;
-
-      downloadOrCache(megaKey, title).then(function(data) {
-        setProgress(90);
-        setStatus('Starting game...');
-        saveLastPlayed(title, megaKey);
-        var blob = new Blob([data], { type: 'application/zip' });
-        var file = new File([blob], megaKey, { type: 'application/zip' });
-        loadFile(file);
-      }).catch(function(err) {
-        console.error('Download error:', err);
-        setStatus('Download failed. Try again.');
-        progressBar.classList.remove('visible');
-        if (uploadArea) uploadArea.style.display = '';
-        if (preGame) preGame.classList.remove('hidden');
-        fileInfo.classList.remove('visible');
-      });
     });
   });
 }
