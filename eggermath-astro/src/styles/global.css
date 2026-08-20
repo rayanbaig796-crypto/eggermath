@@ -1358,6 +1358,14 @@ body.embed-mode #upload-area {
   display: none !important;
 }
 
+.pre-game-content.hidden {
+  display: none !important;
+}
+
+.continue-bar.hidden {
+  display: none !important;
+}
+
 body.embed-mode .main {
   max-width: 100%;
   padding: 0;
@@ -1372,7 +1380,10 @@ body.embed-mode .emulator-container {
 }
 
 /* ── Landscape Mode (JS-toggled via .game-landscape class) ── */
+body.game-landscape .site-nav { display: none !important; }
 body.game-landscape .game-topbar { display: none !important; }
+body.game-landscape .site-footer,
+body.game-landscape .footer-section { display: none !important; }
 body.game-landscape .game-controls-bar { display: none !important; }
 body.game-landscape .keyboard-hints { display: none !important; }
 
