@@ -109,7 +109,10 @@ const jsonLd = {
   </main>
 </EmulatorLayout>
 
-<script is:inline src="/gba-emulator-web/mgba.js"></script>
+<script is:inline type="module">
+  import init from '/gba-emulator-web/mgba.js';
+  window.mGBA = init;
+</script>
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
 <script>
 import '../scripts/emulator.js';
