@@ -1237,6 +1237,20 @@ body {
   display: none !important;
 }
 
+/* Fullscreen body class (portrait fullscreen button) */
+body.game-fullscreen .site-nav,
+body.game-fullscreen .game-topbar,
+body.game-fullscreen .game-controls-bar,
+body.game-fullscreen .keyboard-hints,
+body.game-fullscreen .site-footer,
+body.game-fullscreen .footer-section {
+  display: none !important;
+}
+body.game-fullscreen #emulator-canvas {
+  border-radius: 0;
+  border: none;
+}
+
 /* ── Footer ── */
 .site-footer, .footer-section {
   margin-top: 64px;
@@ -1372,9 +1386,13 @@ body.embed-mode .emulator-container {
 }
 
 /* ── Landscape Mode (JS-toggled via .game-landscape class) ── */
+body.game-landscape .site-nav { display: none !important; }
 body.game-landscape .game-topbar { display: none !important; }
 body.game-landscape .game-controls-bar { display: none !important; }
 body.game-landscape .keyboard-hints { display: none !important; }
+body.game-landscape .continue-bar { display: none !important; }
+body.game-landscape .pre-game-content { display: none !important; }
+body.game-landscape #upload-area { display: none !important; }
 
 body.game-landscape .game-embed {
   position: fixed !important;
@@ -1398,7 +1416,7 @@ body.game-landscape .emulator-container {
   width: auto !important;
   background: #000;
   overflow: hidden;
-  padding: 0 140px;
+  padding: 0;
 }
 
 body.game-landscape .emulator-container > canvas,
