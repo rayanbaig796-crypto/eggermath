@@ -1027,7 +1027,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 200px;
+  height: 180px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1399,13 +1399,15 @@ body.embed-mode .emulator-container {
     width: auto !important;
     background: #000;
     overflow: hidden;
+    padding: 0 140px;
   }
 
   .emulator-container > canvas,
   #emulator-canvas {
+    height: 100vh !important;
     max-height: 100vh !important;
-    max-width: none !important;
     width: auto !important;
+    max-width: none !important;
     border-radius: 0 !important;
     border: none !important;
     box-shadow: none !important;
@@ -1426,9 +1428,9 @@ body.embed-mode .emulator-container {
 
   .touch-controls .tc-shoulder-zone {
     position: fixed;
-    top: 8px;
-    left: 80px;
-    right: 80px;
+    top: 4px;
+    left: 8px;
+    right: 8px;
     padding: 0;
     pointer-events: auto;
   }
@@ -1452,13 +1454,14 @@ body.embed-mode .emulator-container {
 
   .touch-controls .tc-dpad {
     position: fixed;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 130px;
-    height: 130px;
+    left: 8px;
+    bottom: 30px;
+    top: auto;
+    transform: none;
+    width: 140px;
+    height: 140px;
     pointer-events: auto;
-    opacity: 0.6;
+    opacity: 0.55;
   }
 
   .touch-controls .tc-dpad:active {
@@ -1482,15 +1485,16 @@ body.embed-mode .emulator-container {
 
   .touch-controls .tc-ab-zone {
     position: fixed;
-    right: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 130px;
-    height: 130px;
+    right: 8px;
+    bottom: 30px;
+    top: auto;
+    transform: none;
+    width: 140px;
+    height: 140px;
     background: rgba(255,255,255,0.06);
     border-color: rgba(255,255,255,0.12);
     pointer-events: auto;
-    opacity: 0.6;
+    opacity: 0.55;
   }
 
   .touch-controls .tc-ab-zone:active {
@@ -1514,7 +1518,7 @@ body.embed-mode .emulator-container {
 
   .touch-controls .tc-center-zone {
     position: fixed;
-    bottom: 12px;
+    bottom: 4px;
     left: 50%;
     transform: translateX(-50%);
     pointer-events: auto;
