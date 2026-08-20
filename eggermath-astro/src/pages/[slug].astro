@@ -115,10 +115,18 @@ const jsonLd = {
         </button>
       </div>
     </div>
+
+    <div class="keyboard-hints desktop-only">
+      <div class="kbd-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or <kbd>&uarr;</kbd><kbd>&larr;</kbd><kbd>&darr;</kbd><kbd>&rarr;</kbd> D-Pad</div>
+      <div class="kbd-hint"><kbd>K</kbd> A &nbsp; <kbd>J</kbd> B &nbsp; <kbd>Q</kbd> L &nbsp; <kbd>E</kbd> R</div>
+      <div class="kbd-hint"><kbd>Enter</kbd> Start &nbsp; <kbd>RShift</kbd> Select</div>
+      <div class="kbd-hint"><kbd>F5</kbd> Save &nbsp; <kbd>F7</kbd> Slot &nbsp; <kbd>F9</kbd> Load &nbsp; Double-click canvas for fullscreen</div>
+    </div>
+
+    <TouchControls />
   </main>
 
-  <TouchControls />
-</EmulatorLayout>
+  </EmulatorLayout>
 
 <style>
   .game-topbar {
@@ -265,6 +273,52 @@ const jsonLd = {
   }
   .ctrl-btn svg { flex-shrink: 0; }
 
+  .keyboard-hints {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+  }
+  .kbd-hint {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.6;
+  }
+  kbd {
+    display: inline-block;
+    padding: 1px 6px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 11px;
+    color: var(--accent);
+    line-height: 1.4;
+  }
+
+  .desktop-only { display: block; }
+
+  .emulator-container:fullscreen {
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .emulator-container:fullscreen #emulator-canvas {
+    width: auto;
+    height: 100vh;
+    max-width: 100vw;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    object-fit: contain;
+  }
+
   @media (max-width: 600px) {
     .game-topbar { padding: 10px 12px; gap: 10px; }
     .game-topbar-meta { display: none; }
@@ -273,6 +327,12 @@ const jsonLd = {
     .game-controls-bar { padding: 6px 8px; gap: 2px; }
     .ctrl-btn { padding: 5px 7px; font-size: 11px; }
     .ctrl-btn span { display: none; }
+  }
+  @media (pointer: coarse) {
+    .desktop-only { display: none !important; }
+  }
+  @media (hover: none) and (pointer: coarse) {
+    .desktop-only { display: none !important; }
   }
 </style>
 
