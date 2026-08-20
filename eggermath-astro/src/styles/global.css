@@ -1027,7 +1027,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 180px;
+  height: 220px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1049,13 +1049,13 @@ body {
 }
 
 .touch-controls .tc-shoulder-btn {
-  width: 72px;
-  height: 36px;
+  width: 60px;
+  height: 32px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface-elevated);
   color: var(--text-secondary);
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   cursor: pointer;
@@ -1069,10 +1069,10 @@ body {
 
 .touch-controls .tc-dpad {
   position: absolute;
-  bottom: 35px;
-  left: 15px;
-  width: 140px;
-  height: 140px;
+  bottom: 30px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
   touch-action: none;
 }
 
@@ -1142,10 +1142,10 @@ body {
 
 .touch-controls .tc-ab-zone {
   position: absolute;
-  bottom: 25px;
-  right: 15px;
-  width: 140px;
-  height: 140px;
+  bottom: 20px;
+  right: 10px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1153,13 +1153,13 @@ body {
 
 .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--bg-surface-elevated);
   color: var(--text-primary);
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   display: flex;
@@ -1180,7 +1180,7 @@ body {
 
 .touch-controls .tc-center-zone {
   position: absolute;
-  bottom: 12px;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
