@@ -8,11 +8,17 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Referrer-Policy: strict-origin-when-cross-origin
 
-/gba-emulator-web/mgba.js
+/gba-emulator-web/mgba-v2.js
   Cross-Origin-Embedder-Policy:
   Cross-Origin-Opener-Policy:
   Cross-Origin-Resource-Policy:
   Cache-Control: public, max-age=86400, immutable
+
+/gba-emulator-web/mgba-v2.js.map
+  Cross-Origin-Embedder-Policy:
+  Cross-Origin-Opener-Policy:
+  Cross-Origin-Resource-Policy:
+  Cache-Control: public, max-age=604800, immutable
 
 /gba-emulator-web/mgba.wasm
   Cross-Origin-Embedder-Policy:
