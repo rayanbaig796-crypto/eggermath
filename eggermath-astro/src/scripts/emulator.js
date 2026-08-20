@@ -349,10 +349,18 @@ function setupTouchControls() {
       if (emulator) emulator.buttonUnpress(btn);
     });
     heldButtons.clear();
+    dpadTouchIds.clear();
+    btnTouchIds.clear();
     tc.querySelectorAll('.tc-btn.pressed').forEach(el => el.classList.remove('pressed'));
     var dpad = document.getElementById('tc-dpad');
-    if (dpad) dpad.className = 'tc-dpad';
+    if (dpad) {
+      dpad.className = 'tc-dpad';
+      activeDpadDirs.clear();
+    }
   }
+
+  var dpadTouchIds = new Set();
+  var btnTouchIds = new Set();
 
   tc.querySelectorAll('.tc-btn[data-btn]').forEach(el => {
     const btn = el.dataset.btn;
@@ -361,21 +369,30 @@ function setupTouchControls() {
     el.addEventListener('touchstart', e => {
       e.preventDefault();
       e.stopPropagation();
-      pressBtn(btn);
-      el.classList.add('pressed');
+      Array.from(e.changedTouches).forEach(function(touch) {
+        btnTouchIds.add(touch.identifier);
+        pressBtn(btn);
+        el.classList.add('pressed');
+      });
     }, { passive: false });
 
     el.addEventListener('touchend', e => {
       e.preventDefault();
       e.stopPropagation();
-      unpressBtn(btn);
-      el.classList.remove('pressed');
+      Array.from(e.changedTouches).forEach(function(touch) {
+        btnTouchIds.delete(touch.identifier);
+        unpressBtn(btn);
+        el.classList.remove('pressed');
+      });
     }, { passive: false });
 
     el.addEventListener('touchcancel', e => {
       e.preventDefault();
-      unpressBtn(btn);
-      el.classList.remove('pressed');
+      Array.from(e.changedTouches).forEach(function(touch) {
+        btnTouchIds.delete(touch.identifier);
+        unpressBtn(btn);
+        el.classList.remove('pressed');
+      });
     }, { passive: false });
   });
 
@@ -386,13 +403,15 @@ function setupTouchControls() {
 
     function getDpadDir(touch) {
       var rect = dpad.getBoundingClientRect();
+      if (touch.clientX < rect.left || touch.clientX > rect.right ||
+          touch.clientY < rect.top || touch.clientY > rect.bottom) return null;
       var cx = rect.left + rect.width / 2;
       var cy = rect.top + rect.height / 2;
       var dx = touch.clientX - cx;
       var dy = touch.clientY - cy;
       var absDx = Math.abs(dx);
       var absDy = Math.abs(dy);
-      var deadzone = 8;
+      var deadzone = 12;
       if (absDx < deadzone && absDy < deadzone) return null;
       if (absDx > absDy) return dx > 0 ? 'r' : 'l';
       return dy > 0 ? 'd' : 'u';
@@ -404,6 +423,8 @@ function setupTouchControls() {
       e.preventDefault();
       e.stopPropagation();
       Array.from(e.changedTouches).forEach(function(touch) {
+        if (btnTouchIds.has(touch.identifier)) return;
+        dpadTouchIds.add(touch.identifier);
         var dir = getDpadDir(touch);
         if (dir) {
           pressBtn(dpadDirs[dir]);
@@ -418,6 +439,7 @@ function setupTouchControls() {
       e.stopPropagation();
       var newDirs = new Set();
       Array.from(e.changedTouches).forEach(function(touch) {
+        if (!dpadTouchIds.has(touch.identifier)) return;
         var dir = getDpadDir(touch);
         if (dir) {
           newDirs.add(dir);
@@ -440,6 +462,8 @@ function setupTouchControls() {
       e.preventDefault();
       e.stopPropagation();
       Array.from(e.changedTouches).forEach(function(touch) {
+        if (!dpadTouchIds.has(touch.identifier)) return;
+        dpadTouchIds.delete(touch.identifier);
         var dir = getDpadDir(touch);
         if (dir && activeDpadDirs.has(dir)) {
           unpressBtn(dpadDirs[dir]);

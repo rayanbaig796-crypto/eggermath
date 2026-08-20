@@ -1414,13 +1414,13 @@ body.embed-mode .emulator-container {
   }
 
   .touch-controls {
+    display: block !important;
     position: fixed !important;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
     max-width: none !important;
-    height: auto !important;
     pointer-events: none;
     z-index: 210;
     margin: 0 !important;
