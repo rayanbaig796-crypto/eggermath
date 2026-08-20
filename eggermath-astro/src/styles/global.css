@@ -1492,6 +1492,10 @@ body.embed-mode #upload-area {
   display: none !important;
 }
 
+.pre-game-content.hidden {
+  display: none !important;
+}
+
 body.embed-mode .main {
   max-width: 100%;
   padding: 0;
