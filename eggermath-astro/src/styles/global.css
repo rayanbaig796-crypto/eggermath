@@ -1040,6 +1040,7 @@ body {
   -webkit-tap-highlight-color: transparent;
   margin: 0 auto;
   overflow: hidden;
+  perspective: 900px;
 }
 
 .touch-controls * {
@@ -1060,19 +1061,30 @@ body {
   width: 70px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: var(--bg-surface-elevated);
+  background: linear-gradient(180deg, #3a3d45 0%, #252830 100%);
   color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 0.9rem;
   font-weight: 700;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 2px solid rgba(0,0,0,0.4);
   cursor: pointer;
+  transform: translateZ(8px) rotateX(-2deg);
+  box-shadow:
+    0 4px 8px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.08) inset,
+    0 -1px 0 rgba(0,0,0,0.3) inset;
+  transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .touch-controls .tc-shoulder-btn:active, .touch-controls .tc-shoulder-btn.pressed {
-  background: var(--accent-amber);
+  background: linear-gradient(180deg, #c4a35a 0%, #a07830 100%);
   color: var(--text-inverse);
   border-color: var(--accent-amber);
+  transform: translateZ(2px) rotateX(0deg);
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.15) inset;
 }
 
 .touch-controls .tc-dpad {
@@ -1086,9 +1098,13 @@ body {
 
 .touch-controls .tc-dpad-bar {
   position: absolute;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
+  background: linear-gradient(180deg, #3a3d45 0%, #252830 100%);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 2px solid rgba(0,0,0,0.4);
   border-radius: 6px;
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.6),
+    0 1px 0 rgba(255,255,255,0.06) inset;
 }
 
 .touch-controls .tc-dpad-h {
@@ -1155,8 +1171,11 @@ body {
   width: 144px;
   height: 144px;
   border-radius: 50%;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
+  background: radial-gradient(circle at 40% 35%, #2a2d35 0%, #1a1d25 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow:
+    0 6px 16px rgba(0,0,0,0.7),
+    0 2px 0 rgba(255,255,255,0.05) inset;
 }
 
 .touch-controls .tc-ab-btn {
@@ -1164,23 +1183,33 @@ body {
   width: 58px;
   height: 58px;
   border-radius: 50%;
-  background: var(--bg-surface-elevated);
+  background: linear-gradient(180deg, #484c55 0%, #2a2d35 100%);
   color: var(--text-primary);
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-bottom: 3px solid rgba(0,0,0,0.5);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transform: translateZ(10px);
+  box-shadow:
+    0 5px 12px rgba(0,0,0,0.6),
+    0 1px 0 rgba(255,255,255,0.1) inset;
+  transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .touch-controls .tc-ab-btn:active, .touch-controls .tc-ab-btn.pressed {
-  background: var(--accent-amber);
+  background: linear-gradient(180deg, #c4a35a 0%, #a07830 100%);
   color: var(--text-inverse);
   border-color: var(--accent-amber);
-  box-shadow: 0 0 16px var(--accent-amber-glow);
+  border-bottom-color: #8a6520;
+  transform: translateZ(3px) scale(0.95);
+  box-shadow:
+    0 2px 6px rgba(0,0,0,0.6),
+    0 1px 0 rgba(255,255,255,0.15) inset;
 }
 
 .touch-controls .tc-a-btn { top: 8px; right: 8px; }
@@ -1199,19 +1228,29 @@ body {
   min-width: 60px;
   height: 28px;
   border-radius: var(--radius-full);
-  background: var(--bg-surface-elevated);
+  background: linear-gradient(180deg, #3a3d45 0%, #252830 100%);
   color: var(--text-secondary);
   font-family: var(--font-mono);
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 2px solid rgba(0,0,0,0.4);
   cursor: pointer;
+  transform: translateZ(6px);
+  box-shadow:
+    0 3px 8px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.06) inset;
+  transition: transform 0.1s, box-shadow 0.1s;
 }
 
 .touch-controls .tc-center-btn:active, .touch-controls .tc-center-btn.pressed {
-  background: var(--text-primary);
-  color: var(--text-inverse);
+  background: linear-gradient(180deg, #555 0%, #333 100%);
+  color: var(--text-primary);
+  transform: translateZ(1px);
+  box-shadow:
+    0 1px 3px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.1) inset;
 }
 
 @media (pointer: coarse) {
