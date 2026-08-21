@@ -1183,8 +1183,8 @@ body {
   box-shadow: 0 0 16px var(--accent-amber-glow);
 }
 
-.touch-controls .tc-a-btn { top: 6px; right: 6px; }
-.touch-controls .tc-b-btn { bottom: 6px; left: 6px; }
+.touch-controls .tc-a-btn { top: 8px; right: 8px; }
+.touch-controls .tc-b-btn { bottom: 8px; left: 8px; }
 
 .touch-controls .tc-center-zone {
   position: absolute;
@@ -1345,6 +1345,13 @@ body.game-fullscreen .touch-controls .tc-shoulder-zone {
   right: 8px;
   padding: 0;
   pointer-events: auto;
+}
+@media (orientation: portrait) {
+  body.game-fullscreen .touch-controls .tc-shoulder-zone,
+  .game-embed:fullscreen .touch-controls .tc-shoulder-zone {
+    top: auto !important;
+    bottom: 195px !important;
+  }
 }
 body.game-fullscreen .touch-controls .tc-shoulder-btn {
   width: 64px;

@@ -307,15 +307,21 @@ function setupFullscreen() {
   });
 
   var btnFF = document.getElementById('btn-fast-forward');
-  if (btnFF) btnFF.addEventListener('click', () => {
-    if (!emulator) return;
-    const cur = emulator.getFastForwardMultiplier();
-    const next = cur > 1 ? 1 : 4;
-    emulator.setFastForwardMultiplier(next);
-    btnFF.classList.toggle('active', next > 1);
-    setStatus(next > 1 ? 'Fast Forward: x' + next : 'Normal speed');
-    setTimeout(() => setStatus(''), 1500);
-  });
+  if (btnFF) {
+    let ffOn = false;
+    btnFF.addEventListener('click', () => {
+      if (!emulator) return;
+      try {
+        const cur = emulator.getFastForwardMultiplier ? emulator.getFastForwardMultiplier() : (ffOn ? 4 : 1);
+        const next = cur > 1 ? 1 : 4;
+        emulator.setFastForwardMultiplier(next);
+        ffOn = next > 1;
+      } catch(e) { ffOn = !ffOn; }
+      btnFF.classList.toggle('active', ffOn);
+      setStatus(ffOn ? 'Fast Forward: x4' : 'Normal speed');
+      setTimeout(() => setStatus(''), 1500);
+    });
+  }
 }
 
 function goBack() {
