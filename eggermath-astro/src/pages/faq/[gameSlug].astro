@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { games, SITE } from '../../data/games.js';
+export function getStaticPaths() {
+  return games.map(g => ({ params: { gameSlug: g.slug }, props: { game: g } }));
+}
+const { game } = Astro.props;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": `How to play ${game.title} online free?`, "acceptedAnswer": { "@type": "Answer", "text": `Open ${SITE.url}/${game.slug}/, wait for loading, tap to play. No download, touch controls, save via Save button.` }},
+    { "@type": "Question", "name": `Is ${game.title} available for ${game.genre} fans?`, "acceptedAnswer": { "@type": "Answer", "text": `${game.desc} Play on EggerMath via mGBA WASM, saves stored locally.` }},
+    { "@type": "Question", "name": `Can I play ${game.title} on iPhone/Android?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes, open ${SITE.url}/${game.slug}/ on Safari/Chrome, touch controls auto-appear, fullscreen on tap.` }},
+    { "@type": "Question", "name": `How to save ${game.title} progress?`, "acceptedAnswer": { "@type": "Answer", "text": `Click Save (F5), Slot (F7) to switch 10 slots, Load (F9). Syncs to browser storage.` }}
+  ]
+};
+---
+<BaseLayout title={`${game.title} FAQ - How to Play Online Free | EggerMath`} description={`FAQ for ${game.title} GBA: how to play online, iPhone/Android, save progress, controls. ${game.desc.slice(0,100)}`} jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>{game.title} — FAQ</h1>
+<p>{game.desc} <a href={`/${game.slug}/`}>Play {game.title} now</a>.</p>
+<h2>FAQ</h2>
+<details><summary>How to play {game.title} online free?</summary><p>Open <a href={`/${game.slug}/`}>eggermath.com/{game.slug}/</a>, wait for loading, tap to enter fullscreen.</p></details>
+<details><summary>Can I play on iPhone/Android?</summary><p>Yes — Safari/Chrome, touch controls, no app.</p></details>
+<details><summary>How to save progress?</summary><p>Save (F5) / Slot (F7) / Load (F9). 10 slots.</p></details>
+<details><summary>What genre is {game.title}?</summary><p>{game.genre}, {game.year} by {game.developer}.</p></details>
+</main>
+</BaseLayout>
