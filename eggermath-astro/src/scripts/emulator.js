@@ -18,6 +18,14 @@ let isMuted = false;
 let syncInterval = null;
 let activeSlot = 0;
 
+function getFsElement() { return document.querySelector('.game-embed') || document.documentElement; }
+function requestFs() {
+  var el = getFsElement();
+  if (el.requestFullscreen) return el.requestFullscreen();
+  if (el.webkitRequestFullscreen) return el.webkitRequestFullscreen();
+  return Promise.reject();
+}
+
 function setStatus(msg) { if (statusText) statusText.textContent = msg; }
 function setProgress(pct) { if (progressFill) progressFill.style.width = pct + '%'; }
 
@@ -137,15 +145,17 @@ async function loadFile(file) {
       setupTouchControls();
 
       if (window.__GAME_PAGE__ && !document.fullscreenElement) {
-        function autoFullscreenOnce() {
-          document.removeEventListener('pointerdown', autoFullscreenOnce);
-          document.removeEventListener('keydown', autoFullscreenOnce);
-          if (!document.fullscreenElement) {
-            emulatorContainer.requestFullscreen().catch(function() {});
-          }
+        function tryFs() { if (!document.fullscreenElement) requestFs().catch(function(){}); }
+        tryFs();
+        function autoFsOnce() {
+          document.removeEventListener('pointerdown', autoFsOnce);
+          document.removeEventListener('touchend', autoFsOnce);
+          document.removeEventListener('keydown', autoFsOnce);
+          tryFs();
         }
-        document.addEventListener('pointerdown', autoFullscreenOnce, { once: true });
-        document.addEventListener('keydown', autoFullscreenOnce, { once: true });
+        document.addEventListener('pointerdown', autoFsOnce, { once: true });
+        document.addEventListener('touchend', autoFsOnce, { once: true });
+        document.addEventListener('keydown', autoFsOnce, { once: true });
       }
     } else {
       setStatus('Failed to load ROM. The file may be corrupted.');
@@ -236,12 +246,13 @@ function setupFullscreen() {
     }
   }
   document.addEventListener('fullscreenchange', toggleFullscreenClass);
+  document.addEventListener('webkitfullscreenchange', toggleFullscreenClass);
 
   canvas.addEventListener('dblclick', () => {
     if (document.fullscreenElement) {
       document.exitFullscreen();
     } else {
-      emulatorContainer.requestFullscreen();
+      requestFs().catch(function(){});
     }
   });
 
@@ -250,7 +261,7 @@ function setupFullscreen() {
     if (document.fullscreenElement) {
       document.exitFullscreen();
     } else {
-      emulatorContainer.requestFullscreen();
+      requestFs().catch(function(){});
     }
   });
 
@@ -346,6 +357,9 @@ function setupTouchControls() {
   function updateLandscape() {
     if (isLandscape.matches) {
       document.body.classList.add('game-landscape');
+      if (emulatorContainer && emulatorContainer.classList.contains('visible') && !document.fullscreenElement) {
+        requestFs().catch(function(){});
+      }
     } else {
       document.body.classList.remove('game-landscape');
     }
