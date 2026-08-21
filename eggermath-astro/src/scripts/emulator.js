@@ -216,6 +216,15 @@ function setupKeyboard() {
 }
 
 function setupFullscreen() {
+  function toggleFullscreenClass() {
+    if (document.fullscreenElement) {
+      document.body.classList.add('game-fullscreen');
+    } else {
+      document.body.classList.remove('game-fullscreen');
+    }
+  }
+  document.addEventListener('fullscreenchange', toggleFullscreenClass);
+
   canvas.addEventListener('dblclick', () => {
     if (document.fullscreenElement) {
       document.exitFullscreen();
