@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to use GBA emulator on iOS?","acceptedAnswer":{"@type":"Answer","text":"Open eggermath.com on iPhone Safari, tap any game, use touch controls. No app needed. Save via Save button."}},{"@type":"Question","name":"Does GBA emulator work on iPhone without jailbreak?","acceptedAnswer":{"@type":"Answer","text":"Yes, EggerMath runs mGBA WASM in browser, no jailbreak, no download."}},{"@type":"Question","name":"Best GBA emulator for iOS 2026?","acceptedAnswer":{"@type":"Answer","text":"EggerMath is top browser-based GBA emulator for iOS with touch controls, saves, fullscreen."}}]};
+---
+<BaseLayout title="GBA Emulator iOS - Play GBA on iPhone No App | EggerMath" description="Best GBA emulator for iOS - play on iPhone Safari no download. Pokemon, Zelda, Mario with touch controls." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>GBA Emulator iOS</h1>
+<p>Play GBA on iPhone via <a href="/">EggerMath</a> — no app, no jailbreak. See <a href="/how-to-play-gba-on-ios">iOS guide</a>.</p>
+<h2>FAQ</h2>
+<details><summary>How to use GBA emulator on iOS?</summary><p>Open eggermath.com on Safari, tap game, touch controls appear.</p></details>
+<details><summary>Does it work without jailbreak?</summary><p>Yes, purely browser-based mGBA WASM.</p></details>
+<details><summary>Best GBA emulator for iOS 2026?</summary><p>EggerMath — free, saves, landscape fullscreen.</p></details>
+</main>
+</BaseLayout>

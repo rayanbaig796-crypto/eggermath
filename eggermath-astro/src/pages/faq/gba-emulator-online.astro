@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to play GBA emulator online free?","acceptedAnswer":{"@type":"Answer","text":"Go to eggermath.com, click game, play instantly. No signup."}},{"@type":"Question","name":"Best GBA emulator online?","acceptedAnswer":{"@type":"Answer","text":"EggerMath mGBA WASM — 25+ games, saves, fullscreen."}}]};
+---
+<BaseLayout title="GBA Emulator Online - Play Free No Download | EggerMath" description="GBA emulator online free - play Pokemon, Zelda, Mario in browser. No download, instant play." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>GBA Emulator Online</h1>
+<p>Play <a href="/">GBA online</a> free — 25 games. <a href="/best-gba-games">See best games</a>.</p>
+<h2>FAQ</h2>
+<details><summary>How to play online free?</summary><p>Open eggermath.com, click game.</p></details>
+<details><summary>Best online?</summary><p>EggerMath mGBA.</p></details>
+</main>
+</BaseLayout>

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Best GBA emulator for Android?","acceptedAnswer":{"@type":"Answer","text":"EggerMath on Android Chrome — no APK, touch controls, saves, landscape fullscreen."}},{"@type":"Question","name":"How to use GBA emulator on Android?","acceptedAnswer":{"@type":"Answer","text":"Open eggermath.com on Chrome, tap game, play. See guide: /how-to-play-gba-on-android"}}]};
+---
+<BaseLayout title="GBA Emulator Android - Best No APK | EggerMath" description="Best GBA emulator for Android - no APK, browser-based. Play on Chrome with touch controls." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>GBA Emulator Android</h1>
+<p>Best for Android: <a href="/">EggerMath</a> on Chrome — <a href="/how-to-play-gba-on-android">Android guide</a>.</p>
+<h2>FAQ</h2>
+<details><summary>Best for Android?</summary><p>EggerMath, no APK.</p></details>
+<details><summary>How to use?</summary><p>Chrome → eggermath.com → tap game.</p></details>
+</main>
+</BaseLayout>
