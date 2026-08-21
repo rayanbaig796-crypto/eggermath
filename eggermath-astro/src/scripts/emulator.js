@@ -135,6 +135,18 @@ async function loadFile(file) {
       setupFullscreen();
       setupSavePersistence();
       setupTouchControls();
+
+      if (window.__GAME_PAGE__ && !document.fullscreenElement) {
+        function autoFullscreenOnce() {
+          document.removeEventListener('pointerdown', autoFullscreenOnce);
+          document.removeEventListener('keydown', autoFullscreenOnce);
+          if (!document.fullscreenElement) {
+            emulatorContainer.requestFullscreen().catch(function() {});
+          }
+        }
+        document.addEventListener('pointerdown', autoFullscreenOnce, { once: true });
+        document.addEventListener('keydown', autoFullscreenOnce, { once: true });
+      }
     } else {
       setStatus('Failed to load ROM. The file may be corrupted.');
       progressBar.classList.remove('visible');
