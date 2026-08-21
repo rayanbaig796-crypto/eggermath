@@ -1034,7 +1034,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 200px;
+  height: 240px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1057,13 +1057,13 @@ body {
 }
 
 .touch-controls .tc-shoulder-btn {
-  width: 60px;
-  height: 30px;
+  width: 64px;
+  height: 34px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface-elevated);
   color: var(--text-secondary);
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   cursor: pointer;
@@ -1077,10 +1077,10 @@ body {
 
 .touch-controls .tc-dpad {
   position: absolute;
-  bottom: 35px;
-  left: 15px;
-  width: 115px;
-  height: 115px;
+  bottom: 50px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
   touch-action: none;
 }
 
@@ -1093,14 +1093,14 @@ body {
 
 .touch-controls .tc-dpad-h {
   width: 100%;
-  height: 40px;
+  height: 44px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .touch-controls .tc-dpad-v {
-  width: 40px;
+  width: 44px;
   height: 100%;
   left: 50%;
   top: 0;
@@ -1150,10 +1150,10 @@ body {
 
 .touch-controls .tc-ab-zone {
   position: absolute;
-  bottom: 35px;
-  right: 15px;
-  width: 115px;
-  height: 115px;
+  bottom: 50px;
+  right: 10px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1161,13 +1161,13 @@ body {
 
 .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   background: var(--bg-surface-elevated);
   color: var(--text-primary);
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   display: flex;
@@ -1188,21 +1188,21 @@ body {
 
 .touch-controls .tc-center-zone {
   position: absolute;
-  bottom: 6px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 14px;
 }
 
 .touch-controls .tc-center-btn {
-  min-width: 56px;
-  height: 26px;
+  min-width: 60px;
+  height: 28px;
   border-radius: var(--radius-full);
   background: var(--bg-surface-elevated);
   color: var(--text-secondary);
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   border: 1px solid var(--border-subtle);
@@ -1250,7 +1250,9 @@ body.game-page .site-nav { display: none !important; }
 body.game-fullscreen .site-nav,
 body.game-fullscreen .game-topbar,
 body.game-fullscreen .game-controls-bar,
-body.game-fullscreen .keyboard-hints,
+body.game-fullscreen .keyboard-hints {
+  display: none !important;
+}
 body.game-fullscreen .site-footer,
 body.game-fullscreen .footer-section {
   display: none !important;
@@ -1519,7 +1521,9 @@ body.embed-mode .emulator-container {
 }
 
 /* ── Landscape Mode (JS-toggled via .game-landscape class) ── */
-body.game-landscape .site-nav { display: none !important; }
+body.game-landscape .site-nav,
+body.game-landscape .site-footer,
+body.game-landscape .footer-section { display: none !important; }
 
 body.game-landscape .game-embed {
   position: fixed !important;
@@ -1533,6 +1537,11 @@ body.game-landscape .game-embed {
   flex-direction: row !important;
   align-items: stretch;
 }
+
+body.game-landscape .game-topbar { display: none !important; }
+body.game-landscape .game-controls-bar { display: none !important; }
+body.game-landscape .keyboard-hints { display: none !important; }
+body.game-landscape .game-canvas-wrap { display: none !important; }
 
 body.game-landscape .emulator-container {
   display: flex !important;
