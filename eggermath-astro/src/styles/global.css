@@ -1034,7 +1034,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 240px;
+  height: 270px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1057,8 +1057,8 @@ body {
 }
 
 .touch-controls .tc-shoulder-btn {
-  width: 64px;
-  height: 34px;
+  width: 70px;
+  height: 36px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface-elevated);
   color: var(--text-secondary);
@@ -1077,10 +1077,10 @@ body {
 
 .touch-controls .tc-dpad {
   position: absolute;
-  bottom: 50px;
+  bottom: 55px;
   left: 10px;
-  width: 130px;
-  height: 130px;
+  width: 144px;
+  height: 144px;
   touch-action: none;
 }
 
@@ -1093,14 +1093,14 @@ body {
 
 .touch-controls .tc-dpad-h {
   width: 100%;
-  height: 44px;
+  height: 48px;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
 .touch-controls .tc-dpad-v {
-  width: 44px;
+  width: 48px;
   height: 100%;
   left: 50%;
   top: 0;
@@ -1150,10 +1150,10 @@ body {
 
 .touch-controls .tc-ab-zone {
   position: absolute;
-  bottom: 50px;
+  bottom: 55px;
   right: 10px;
-  width: 130px;
-  height: 130px;
+  width: 144px;
+  height: 144px;
   border-radius: 50%;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1161,8 +1161,8 @@ body {
 
 .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
   background: var(--bg-surface-elevated);
   color: var(--text-primary);
@@ -1354,8 +1354,8 @@ body.game-fullscreen .touch-controls .tc-shoulder-zone {
   }
 }
 body.game-fullscreen .touch-controls .tc-shoulder-btn {
-  width: 64px;
-  height: 32px;
+  width: 70px;
+  height: 36px;
   font-size: 0.85rem;
   background: rgba(255,255,255,0.15);
   border-color: rgba(255,255,255,0.2);
@@ -1374,8 +1374,8 @@ body.game-fullscreen .touch-controls .tc-dpad {
   bottom: 30px;
   top: auto;
   transform: none;
-  width: 130px;
-  height: 130px;
+  width: 144px;
+  height: 144px;
   pointer-events: auto;
   opacity: 0.55;
 }
@@ -1398,8 +1398,8 @@ body.game-fullscreen .touch-controls .tc-ab-zone {
   bottom: 30px;
   top: auto;
   transform: none;
-  width: 130px;
-  height: 130px;
+  width: 144px;
+  height: 144px;
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.12);
   pointer-events: auto;
@@ -1407,8 +1407,8 @@ body.game-fullscreen .touch-controls .tc-ab-zone {
 }
 body.game-fullscreen .touch-controls .tc-ab-zone:active { opacity: 0.9; }
 body.game-fullscreen .touch-controls .tc-ab-btn {
-  width: 50px;
-  height: 50px;
+  width: 58px;
+  height: 58px;
   background: rgba(255,255,255,0.15);
   border-color: rgba(255,255,255,0.2);
   color: rgba(255,255,255,0.7);
@@ -1650,8 +1650,8 @@ body.game-landscape .touch-controls .tc-shoulder-zone {
 }
 
 body.game-landscape .touch-controls .tc-shoulder-btn {
-  width: 64px;
-  height: 32px;
+  width: 70px;
+  height: 36px;
   font-size: 0.85rem;
   background: rgba(255,255,255,0.15);
   border-color: rgba(255,255,255,0.2);
@@ -1672,8 +1672,8 @@ body.game-landscape .touch-controls .tc-dpad {
   bottom: 30px;
   top: auto;
   transform: none;
-  width: 140px;
-  height: 140px;
+  width: 144px;
+  height: 144px;
   pointer-events: auto;
   opacity: 0.55;
 }
@@ -1703,8 +1703,8 @@ body.game-landscape .touch-controls .tc-ab-zone {
   bottom: 30px;
   top: auto;
   transform: none;
-  width: 140px;
-  height: 140px;
+  width: 144px;
+  height: 144px;
   background: rgba(255,255,255,0.06);
   border-color: rgba(255,255,255,0.12);
   pointer-events: auto;
@@ -1716,8 +1716,8 @@ body.game-landscape .touch-controls .tc-ab-zone:active {
 }
 
 body.game-landscape .touch-controls .tc-ab-btn {
-  width: 52px;
-  height: 52px;
+  width: 58px;
+  height: 58px;
   background: rgba(255,255,255,0.15);
   border-color: rgba(255,255,255,0.2);
   color: rgba(255,255,255,0.7);
