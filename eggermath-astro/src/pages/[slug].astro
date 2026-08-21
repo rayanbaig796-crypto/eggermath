@@ -138,7 +138,7 @@ const jsonLd = {
     border-bottom: 1px solid rgba(255,255,255,0.06);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 90;
   }
   .back-link {
     display: flex;
@@ -323,13 +323,13 @@ const jsonLd = {
   }
 
   @media (max-width: 600px) {
-    .game-topbar { padding: 10px 12px; gap: 10px; }
+    .game-topbar { padding: 8px 12px; gap: 8px; }
     .game-topbar-meta { display: none; }
     .game-embed { padding: 4px; gap: 6px; min-height: auto; }
     .game-canvas-wrap { border-radius: 8px; border-width: 1px; }
-    .game-controls-bar { padding: 4px 6px; gap: 2px; flex-wrap: wrap; justify-content: center; }
-    .ctrl-btn { padding: 4px 6px; font-size: 10px; }
-    .ctrl-btn svg { width: 16px; height: 16px; }
+    .game-controls-bar { padding: 4px 6px; gap: 2px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .ctrl-btn { padding: 4px 6px; font-size: 10px; white-space: nowrap; flex-shrink: 0; }
+    .ctrl-btn svg { width: 14px; height: 14px; }
     .emulator-container { max-width: 100%; border-radius: 8px; border-width: 1px; }
     #emulator-canvas { border-radius: 8px; border-width: 1px; }
     .keyboard-hints { display: none !important; }
@@ -349,6 +349,9 @@ const jsonLd = {
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
 <script define:vars={{ megaFilename: game.mega, gameTitle: game.title }}>
   window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle };
+</script>
+<script is:inline>
+  document.body.classList.add('game-page');
 </script>
 <script>
 import '../scripts/emulator.js';
