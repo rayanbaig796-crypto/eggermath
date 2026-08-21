@@ -1027,7 +1027,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
-  height: 180px;
+  height: 220px;
   user-select: none;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
@@ -1049,13 +1049,13 @@ body {
 }
 
 .touch-controls .tc-shoulder-btn {
-  width: 72px;
-  height: 36px;
+  width: 60px;
+  height: 32px;
   border-radius: var(--radius-sm);
   background: var(--bg-surface-elevated);
   color: var(--text-secondary);
   font-family: var(--font-mono);
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   cursor: pointer;
@@ -1069,10 +1069,10 @@ body {
 
 .touch-controls .tc-dpad {
   position: absolute;
-  bottom: 35px;
-  left: 15px;
-  width: 140px;
-  height: 140px;
+  bottom: 30px;
+  left: 10px;
+  width: 130px;
+  height: 130px;
   touch-action: none;
 }
 
@@ -1142,10 +1142,10 @@ body {
 
 .touch-controls .tc-ab-zone {
   position: absolute;
-  bottom: 25px;
-  right: 15px;
-  width: 140px;
-  height: 140px;
+  bottom: 20px;
+  right: 10px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
@@ -1153,13 +1153,13 @@ body {
 
 .touch-controls .tc-ab-btn {
   position: absolute;
-  width: 56px;
-  height: 56px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background: var(--bg-surface-elevated);
   color: var(--text-primary);
   font-family: var(--font-display);
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
   border: 1px solid var(--border-subtle);
   display: flex;
@@ -1180,7 +1180,7 @@ body {
 
 .touch-controls .tc-center-zone {
   position: absolute;
-  bottom: 12px;
+  bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -1235,6 +1235,140 @@ body {
 #emulator-container:fullscreen ~ .game-controls-bar,
 #emulator-container:fullscreen ~ .keyboard-hints {
   display: none !important;
+}
+
+/* Fullscreen body class (portrait fullscreen button) */
+body.game-fullscreen .site-nav,
+body.game-fullscreen .game-topbar,
+body.game-fullscreen .game-controls-bar,
+body.game-fullscreen .keyboard-hints,
+body.game-fullscreen .site-footer,
+body.game-fullscreen .footer-section {
+  display: none !important;
+}
+body.game-fullscreen #emulator-canvas {
+  border-radius: 0;
+  border: none;
+  width: 100vw;
+  height: 100vh;
+}
+body.game-fullscreen .game-embed {
+  position: fixed !important;
+  inset: 0;
+  z-index: 200;
+  background: #000;
+  padding: 0 !important;
+  gap: 0 !important;
+  overflow: hidden;
+}
+body.game-fullscreen .touch-controls {
+  display: block !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none !important;
+  pointer-events: none;
+  z-index: 210;
+  margin: 0 !important;
+}
+body.game-fullscreen .touch-controls .tc-shoulder-zone {
+  position: fixed;
+  top: 4px;
+  left: 8px;
+  right: 8px;
+  padding: 0;
+  pointer-events: auto;
+}
+body.game-fullscreen .touch-controls .tc-shoulder-btn {
+  width: 64px;
+  height: 32px;
+  font-size: 0.85rem;
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+body.game-fullscreen .touch-controls .tc-shoulder-btn:active,
+body.game-fullscreen .touch-controls .tc-shoulder-btn.pressed {
+  background: rgba(196,163,90,0.6);
+  border-color: var(--accent-amber);
+}
+body.game-fullscreen .touch-controls .tc-dpad {
+  position: fixed;
+  left: 8px;
+  bottom: 30px;
+  top: auto;
+  transform: none;
+  width: 130px;
+  height: 130px;
+  pointer-events: auto;
+  opacity: 0.55;
+}
+body.game-fullscreen .touch-controls .tc-dpad:active { opacity: 0.9; }
+body.game-fullscreen .touch-controls .tc-dpad-bar {
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
+}
+body.game-fullscreen .touch-controls .tc-dpad-h .tc-dpad-arrow-l { border-right-color: rgba(255,255,255,0.6); }
+body.game-fullscreen .touch-controls .tc-dpad-h .tc-dpad-arrow-r { border-left-color: rgba(255,255,255,0.6); }
+body.game-fullscreen .touch-controls .tc-dpad-v .tc-dpad-arrow-u { border-bottom-color: rgba(255,255,255,0.6); }
+body.game-fullscreen .touch-controls .tc-dpad-v .tc-dpad-arrow-d { border-top-color: rgba(255,255,255,0.6); }
+body.game-fullscreen .touch-controls .tc-dpad.pressed-left .tc-dpad-h .tc-dpad-arrow-l { border-right-color: var(--accent-amber); }
+body.game-fullscreen .touch-controls .tc-dpad.pressed-right .tc-dpad-h .tc-dpad-arrow-r { border-left-color: var(--accent-amber); }
+body.game-fullscreen .touch-controls .tc-dpad.pressed-up .tc-dpad-v .tc-dpad-arrow-u { border-bottom-color: var(--accent-amber); }
+body.game-fullscreen .touch-controls .tc-dpad.pressed-down .tc-dpad-v .tc-dpad-arrow-d { border-top-color: var(--accent-amber); }
+body.game-fullscreen .touch-controls .tc-ab-zone {
+  position: fixed;
+  right: 8px;
+  bottom: 30px;
+  top: auto;
+  transform: none;
+  width: 130px;
+  height: 130px;
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.12);
+  pointer-events: auto;
+  opacity: 0.55;
+}
+body.game-fullscreen .touch-controls .tc-ab-zone:active { opacity: 0.9; }
+body.game-fullscreen .touch-controls .tc-ab-btn {
+  width: 50px;
+  height: 50px;
+  background: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.7);
+}
+body.game-fullscreen .touch-controls .tc-ab-btn:active,
+body.game-fullscreen .touch-controls .tc-ab-btn.pressed {
+  background: rgba(196,163,90,0.6);
+  border-color: var(--accent-amber);
+  color: #fff;
+}
+body.game-fullscreen .touch-controls .tc-center-zone {
+  position: fixed;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: auto;
+  gap: 16px;
+}
+body.game-fullscreen .touch-controls .tc-center-btn {
+  min-width: 60px;
+  height: 26px;
+  background: rgba(255,255,255,0.12);
+  border-color: rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.6);
+  font-size: 0.65rem;
+  opacity: 0.6;
+}
+body.game-fullscreen .touch-controls .tc-center-btn:active,
+body.game-fullscreen .touch-controls .tc-center-btn.pressed {
+  background: rgba(255,255,255,0.3);
+  color: #fff;
+  opacity: 0.9;
 }
 
 /* ── Footer ── */
@@ -1358,6 +1492,10 @@ body.embed-mode #upload-area {
   display: none !important;
 }
 
+.pre-game-content.hidden {
+  display: none !important;
+}
+
 body.embed-mode .main {
   max-width: 100%;
   padding: 0;
@@ -1372,9 +1510,7 @@ body.embed-mode .emulator-container {
 }
 
 /* ── Landscape Mode (JS-toggled via .game-landscape class) ── */
-body.game-landscape .game-topbar { display: none !important; }
-body.game-landscape .game-controls-bar { display: none !important; }
-body.game-landscape .keyboard-hints { display: none !important; }
+body.game-landscape .site-nav { display: none !important; }
 
 body.game-landscape .game-embed {
   position: fixed !important;
@@ -1398,7 +1534,7 @@ body.game-landscape .emulator-container {
   width: auto !important;
   background: #000;
   overflow: hidden;
-  padding: 0 140px;
+  padding: 0;
 }
 
 body.game-landscape .emulator-container > canvas,
