@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../data/games.js';
+const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is GBA emulator legal?","acceptedAnswer":{"@type":"Answer","text":"Emulators are legal. ROMs are legal only if you own the game."}},{"@type":"Question","name":"Is EggerMath safe?","acceptedAnswer":{"@type":"Answer","text":"Yes, runs mGBA WASM locally in browser, no download."}}]};
+---
+<BaseLayout title="Is GBA Emulator Legal? Is EggerMath Safe? | EggerMath" description="GBA emulators are legal. ROMs are legal if you own the game. EggerMath runs mGBA WASM locally, no download, privacy-focused." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>Is GBA Emulator Legal? Is EggerMath Safe?</h1>
+<h2>Emulator = Legal, ROM = Own Your Game</h2><p>Emulators like mGBA are legal (like a media player). Downloading ROMs you don't own may violate copyright. Use your own dumps or public domain ROMs.</p>
+<h2>Is EggerMath Safe?</h2><p>Yes — runs entirely in your browser via WebAssembly, no executable download. Saves stay in your browser storage. See <a href="/pages/privacy">Privacy</a> and <a href="/pages/takedown">DMCA</a>.</p>
+</main>
+</BaseLayout>

@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, games } from '../data/games.js';
+const jsonLd = {"@context":"https://schema.org","@type":"ItemList","name":"Best GBA Games to Play Online","itemListElement": games.slice(0,10).map((g,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"VideoGame","name":g.title,"url":`${SITE.url}/${g.slug}/`}}))};
+---
+<BaseLayout title="Best GBA Games to Play Online (Top 25) | EggerMath" description="Best GBA games online: Pokemon Emerald, Zelda Minish Cap, Mario Kart, Metroid Fusion, Castlevania. Play free in browser." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>Best GBA Games to Play Online</h1>
+<p>All playable free on <a href="/">EggerMath</a> — click to play instantly.</p>
+<ol>{games.map(g=> <li><a href={`/${g.slug}/`}>{g.title}</a> — {g.genre} ({g.year}): {g.desc.slice(0,80)}...</li>)}</ol>
+</main>
+</BaseLayout>

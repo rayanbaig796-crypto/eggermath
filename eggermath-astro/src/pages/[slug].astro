@@ -13,7 +13,7 @@ export function getStaticPaths() {
 }
 
 const { game } = Astro.props;
-
+const relatedGames = games.filter(g => g.genre === game.genre && g.slug !== game.slug).slice(0, 4);
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -36,6 +36,26 @@ const jsonLd = {
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
         { "@type": "ListItem", "position": 2, "name": game.title, "item": `${SITE.url}/${game.slug}/` }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": `How to play ${game.title} on iPhone?`, "acceptedAnswer": { "@type": "Answer", "text": `Open ${SITE.url}/${game.slug}/ on Safari, tap to start. Use touch controls (D-pad, A/B, L/R). Save with Save button — works offline after first load.` } },
+        { "@type": "Question", "name": `Is ${game.title} free to play?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes, ${game.title} is free on EggerMath via browser mGBA emulator. No download, no signup.` } },
+        { "@type": "Question", "name": `Can I save ${game.title} progress?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — click Save (F5) and Load (F9). 10 slots (Slot button / F7). Saved in browser storage.` } },
+        { "@type": "Question", "name": `What are ${game.title} controls?`, "acceptedAnswer": { "@type": "Answer", "text": `D-Pad: WASD/Arrows, A: K, B: J, L: Q, R: E, Start: Enter, Select: Right Shift. On mobile use touch controls.` } }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": `How to Play ${game.title} Online`,
+      "totalTime": "PT1M",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Game", "text": `Go to ${SITE.url}/${game.slug}/`, "url": `${SITE.url}/${game.slug}/` },
+        { "@type": "HowToStep", "name": "Start", "text": "Wait for loading, tap screen to enter fullscreen if prompted." },
+        { "@type": "HowToStep", "name": "Play", "text": "Use keyboard or touch controls to play." },
+        { "@type": "HowToStep", "name": "Save", "text": "Press Save (F5) to save, Load (F9) to continue later." }
       ]
     }
   ]
@@ -125,6 +145,36 @@ const jsonLd = {
 
     <TouchControls />
   </main>
+
+  <section class="game-info">
+    <h2>About {game.title}</h2>
+    <p>{game.desc}</p>
+    <div class="game-meta">
+      <span>Genre: {game.genre}</span> · <span>{game.year}</span> · <span>{game.developer}</span>
+    </div>
+  </section>
+
+  {relatedGames.length > 0 && (
+    <section class="related-games">
+      <h3>Similar {game.genre} Games</h3>
+      <div class="related-grid">
+        {relatedGames.map(g => (
+          <a href={`/${g.slug}/`} class="related-card">
+            <img src={g.img} alt={`Play ${g.title} online`} loading="lazy" width="120" height="80" />
+            <span>{g.title}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="game-faq">
+    <h3>FAQ — {game.title}</h3>
+    <details><summary>How to play {game.title} on iPhone?</summary><p>Open this page on Safari, tap to start. Touch controls appear automatically. Save via Save button — works offline after first load.</p></details>
+    <details><summary>Is {game.title} free?</summary><p>Yes, free on EggerMath via browser mGBA emulator. No download, no signup.</p></details>
+    <details><summary>Can I save progress?</summary><p>Click Save (F5) and Load (F9). 10 slots via Slot button / F7. Stored in browser.</p></details>
+    <details><summary>What are the controls?</summary><p>D-Pad: WASD/Arrows, A: K, B: J, L: Q, R: E, Start: Enter, Select: Right Shift. Mobile: touch controls.</p></details>
+  </section>
 
   </EmulatorLayout>
 
@@ -339,6 +389,24 @@ const jsonLd = {
     #emulator-canvas { border-radius: 8px; border-width: 1px; }
     .keyboard-hints { display: none !important; }
   }
+  .game-info, .related-games, .game-faq {
+    max-width: 800px;
+    margin: 24px auto 0;
+    padding: 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+  }
+  .game-info h2, .related-games h3, .game-faq h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--text); }
+  .game-info p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.6; }
+  .game-meta { font-size: 0.8rem; color: var(--text-muted); margin-top: 8px; }
+  .related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .related-card { display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--text); font-size: 0.85rem; }
+  .related-card img { width: 100%; border-radius: 8px; aspect-ratio: 3/2; object-fit: cover; }
+  .game-faq details { padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .game-faq summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; color: var(--text); }
+  .game-faq p { font-size: 0.85rem; color: var(--text-muted); margin-top: 6px; }
+  @media (max-width: 600px) { .related-grid { grid-template-columns: repeat(2, 1fr); } }
   @media (pointer: coarse) {
     .desktop-only { display: none !important; }
   }

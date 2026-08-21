@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../data/games.js';
+const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is GBA ROM format?","acceptedAnswer":{"@type":"Answer","text":".gba is Game Boy Advance ROM, .gbc/.gb are Game Boy Color/Game Boy, .zip is compressed ROM. EggerMath supports all."}}]};
+---
+<BaseLayout title="GBA ROM Formats Explained (.gba, .gbc, .gb, .zip) | EggerMath" description=".gba, .gbc, .gb, .zip explained. EggerMath supports all GBA/GB/GBC ROMs via mGBA WASM. Drag and drop to play." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>GBA ROM Formats Explained</h1>
+<ul><li><b>.gba</b> — Game Boy Advance (32-bit, 240x160)</li><li><b>.gbc</b> — Game Boy Color (160x144, color)</li><li><b>.gb</b> — Original Game Boy (160x144, mono)</li><li><b>.zip</b> — Compressed ROM (EggerMath auto-extracts)</li></ul>
+<p>Just drag any file to <a href="/">EggerMath</a> — we handle all formats via mGBA. Max 25MB per file (Cloudflare limit).</p>
+</main>
+</BaseLayout>

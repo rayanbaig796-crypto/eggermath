@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, games } from '../data/games.js';
+const rpg = games.filter(g=>g.genre==='RPG').slice(0,6);
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Play GBA Games on iPhone (No App Needed)",
+  "description": "Play GBA games on iPhone via browser emulator. Works on Safari, no download.",
+  "totalTime": "PT1M",
+  "step": [
+    {"@type":"HowToStep","name":"Open EggerMath","text":"Go to eggermath.com on Safari","url":SITE.url},
+    {"@type":"HowToStep","name":"Pick a Game","text":"Tap any game like Pokemon Emerald or upload your ROM"},
+    {"@type":"HowToStep","name":"Play & Save","text":"Use touch controls, tap Save to keep progress"}
+  ]
+};
+---
+<BaseLayout title="How to Play GBA Games on iPhone (Safari, No Download) | EggerMath" description="Play GBA games on iPhone via Safari browser emulator. No app, no jailbreak. Pokemon, Zelda, Mario. Touch controls + save states." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>How to Play GBA Games on iPhone (2026)</h1>
+<p>Open <a href="/">EggerMath.com</a> on Safari — no app needed. All games run via mGBA WebAssembly in your browser.</p>
+<h2>Steps</h2>
+<ol><li>Open eggermath.com on iPhone Safari</li><li>Tap a game (e.g. Pokemon Emerald) or "Upload ROM"</li><li>Wait for loading — tap screen to enter fullscreen</li><li>Use D-pad (left), A/B (right), L/R (shoulders), Start/Select (center)</li><li>Tap Save (F5) to save. Data stays in browser.</li></ol>
+<h2>Tips for iOS</h2><ul><li>Add to Home Screen for app-like experience (Share → Add to Home Screen)</li><li>If game fails, try Chrome on iOS or update iOS. Some older iOS blocks SharedArrayBuffer — we auto-fallback to single-thread.</li><li>Works offline after first load.</li></ul>
+<h2>Try These</h2><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">{rpg.map(g=> <a href={`/${g.slug}/`}>{g.title}</a>)}</div>
+</main>
+</BaseLayout>

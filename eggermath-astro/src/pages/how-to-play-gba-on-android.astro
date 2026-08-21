@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, games } from '../data/games.js';
+const list = games.slice(0,6);
+const jsonLd = {"@context":"https://schema.org","@type":"HowTo","name":"How to Play GBA Games on Android","description":"Play GBA on Android browser, no download","totalTime":"PT1M","step":[{"@type":"HowToStep","name":"Open","text":"Go to eggermath.com"},{"@type":"HowToStep","name":"Pick Game","text":"Tap game or upload ROM"},{"@type":"HowToStep","name":"Play","text":"Touch controls, save anytime"}]};
+---
+<BaseLayout title="How to Play GBA Games on Android (No Download) | EggerMath" description="Play GBA games on Android via Chrome. No APK. Pokemon, Mario, Zelda with touch controls and saves." jsonLd={jsonLd}>
+<main class="main" style="max-width:800px;margin:0 auto;padding:24px">
+<h1>How to Play GBA Games on Android</h1>
+<p>Open <a href="/">EggerMath</a> on Chrome — instant play, no APK.</p>
+<ol><li>Go to eggermath.com</li><li>Tap game or upload .gba/.zip</li><li>Use touch controls; fullscreen on first tap; rotate for landscape full-screen</li><li>Save/Load via buttons (10 slots)</li></ol>
+<h2>Best Android Games</h2><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">{list.map(g=> <a href={`/${g.slug}/`}>{g.title}</a>)}</div>
+</main>
+</BaseLayout>

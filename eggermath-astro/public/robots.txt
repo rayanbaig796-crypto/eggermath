@@ -4,3 +4,20 @@ Disallow: /api/
 Disallow: /*.json$
 Disallow: /gba-emulator-web/roms/
 Disallow: /gba-emulator-web/bios/
+
+# Sitemaps
+Sitemap: https://www.eggermath.com/sitemap-index.xml
+Sitemap: https://www.eggermath.com/sitemap.xml
+
+# AI Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
