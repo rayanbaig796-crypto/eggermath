@@ -9,11 +9,44 @@
         <circle cx="16" cy="11" r="1" fill="currentColor"/><circle cx="18" cy="13" r="1" fill="currentColor"/>
       </svg>
     </div>
-    <span class="brand-name">EggerMath</span>
+    <span class="brand-name" data-i18n="brand">EggerMath</span>
   </a>
   <div class="nav-links">
-    <span class="nav-badge"><span class="nav-badge-dot"></span> WebAssembly mGBA</span>
-    <a href="/" class="nav-link active">Emulator</a>
+    <span class="nav-badge"><span class="nav-badge-dot"></span> <span data-i18n="badge">WebAssembly mGBA</span></span>
+    <a href="/" class="nav-link active" data-i18n="emulator">Emulator</a>
   </div>
 </nav>
+<script is:inline>
+(function(){
+  var dict={
+    en:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator"},
+    es:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador"},
+    hi:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"एम्युलेटर"},
+    pt:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador"},
+    fr:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Émulateur"},
+    de:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator"},
+    ja:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"エミュレータ"},
+    zh:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"模拟器"},
+    ru:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Эмулятор"},
+    ar:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"المحاكي"}
+  };
+  function apply(){
+    var lang=(navigator.language||"en").split("-")[0].toLowerCase();
+    var t=dict[lang]||dict.en;
+    document.querySelectorAll("[data-i18n]").forEach(function(el){
+      var key=el.getAttribute("data-i18n");
+      if(t[key]) el.textContent=t[key];
+    });
+    if(lang==="ar"){
+      document.documentElement.dir="rtl";
+      document.documentElement.lang="ar";
+    } else {
+      document.documentElement.dir="ltr";
+      document.documentElement.lang=dict[lang]?lang:"en";
+    }
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",apply);
+  else apply();
+})();
+</script>
 

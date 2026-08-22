@@ -146,6 +146,9 @@ const jsonLd = {
     <TouchControls />
   </main>
 
+  <section class="embed-widget"><h3>Embed this game</h3><p>Copy code to embed on your site (backlink to eggermath.com):</p><pre>{`<iframe src="https://www.eggermath.com/${game.slug}/" width="480" height="320"></iframe>`}</pre><button onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button></section>
+  <section class="share-widget"><a href={`https://twitter.com/intent/tweet?text=Play ${game.title} online&url=${SITE.url}/${game.slug}/`} target="_blank">Share on X</a> <a href={`https://www.reddit.com/submit?url=${SITE.url}/${game.slug}/&title=Play ${game.title}`} target="_blank">Share on Reddit</a></section>
+
   <section class="game-info">
     <h2>About {game.title}</h2>
     <p>{game.desc}</p>
@@ -413,6 +416,50 @@ const jsonLd = {
   @media (hover: none) and (pointer: coarse) {
     .desktop-only { display: none !important; }
   }
+  .embed-widget, .share-widget {
+    max-width: 800px;
+    margin: 24px auto 0;
+    padding: 16px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+  }
+  .embed-widget h3 { font-size: 1.1rem; margin-bottom: 8px; color: var(--text); }
+  .embed-widget p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 8px; }
+  .embed-widget pre {
+    padding: 12px;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    font-family: monospace;
+    font-size: 12px;
+    color: var(--text);
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .embed-widget button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  .embed-widget button:hover { opacity: 0.9; }
+  .share-widget { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+  .share-widget a {
+    padding: 8px 14px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .share-widget a:hover { background: rgba(255,255,255,0.12); color: var(--accent); }
 </style>
 
 <script is:inline src="/ios-compat.js"></script>
