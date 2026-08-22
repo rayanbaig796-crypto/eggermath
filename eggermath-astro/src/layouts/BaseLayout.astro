@@ -11,6 +11,7 @@ interface Props {
   canonical?: string;
   jsonLd?: object;
   noIndex?: boolean;
+  hreflangHtml?: string;
 }
 
 const {
@@ -20,6 +21,7 @@ const {
   canonical = SITE.url,
   jsonLd,
   noIndex = false,
+  hreflangHtml,
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -47,18 +49,24 @@ const {
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#1a1a1a">
   <meta name="keywords" content="gba emulator, play gba online, gba games, gameboy advance emulator, pokemon gba, free gba emulator" />
-  <link rel="alternate" hreflang="en" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="pt-BR" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="es" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="ja" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="de" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="fr" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="ru" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="ko" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="it" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="id" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="ar" href={`https://www.eggermath.com${Astro.url.pathname}`} />
-  <link rel="alternate" hreflang="x-default" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+  {hreflangHtml ? (
+    <Fragment set:html={hreflangHtml} />
+  ) : (
+    <>
+      <link rel="alternate" hreflang="en" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="pt-BR" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="es" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ja" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="de" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="fr" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ru" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ko" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="it" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="id" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ar" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="x-default" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+    </>
+  )}
   <meta property="og:title" content={title}>
   <meta property="og:description" content={description}>
   <meta property="og:type" content="website">

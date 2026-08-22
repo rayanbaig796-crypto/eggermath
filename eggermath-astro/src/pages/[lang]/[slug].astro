@@ -1,22 +1,26 @@
 ---
-import EmulatorLayout from '../layouts/EmulatorLayout.astro';
-import NoscriptFallback from '../components/NoscriptFallback.astro';
-import EmulatorContainer from '../components/EmulatorContainer.astro';
-import TouchControls from '../components/TouchControls.astro';
-import { games, SITE } from '../data/games.js';
-import { gameTranslations, supportedLangs, langNames } from '../data/translations.js';
+import EmulatorLayout from '../../layouts/EmulatorLayout.astro';
+import NoscriptFallback from '../../components/NoscriptFallback.astro';
+import EmulatorContainer from '../../components/EmulatorContainer.astro';
+import TouchControls from '../../components/TouchControls.astro';
+import { games, SITE } from '../../data/games.js';
+import { gameTranslations, supportedLangs, langNames } from '../../data/translations.js';
 
 export function getStaticPaths() {
-  return games.map(game => ({
-    params: { slug: game.slug },
-    props: { game },
-  }));
+  const paths = [];
+  for (const lang of ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar"]) {
+    for (const game of games) {
+      paths.push({ params: { lang, slug: game.slug }, props: { game, lang } });
+    }
+  }
+  return paths;
 }
 
-const { game } = Astro.props;
-const tr = gameTranslations[game.slug]?.['en'] || {};
+const { game, lang } = Astro.props;
+const tr = gameTranslations[game.slug]?.[lang] || gameTranslations[game.slug]?.['en'] || {};
 const pageTitle = tr.title || `Play ${game.title} Online Free`;
 const pageDesc = tr.desc || game.desc;
+const langName = langNames[lang] || lang;
 const relatedGames = games.filter(g => g.genre === game.genre && g.slug !== game.slug).slice(0, 4);
 
 const alternateLinks = supportedLangs.map(l => {
@@ -74,7 +78,7 @@ const jsonLd = {
 <EmulatorLayout
   title={`${pageTitle} | EggerMath`}
   description={pageDesc}
-  canonical={`${SITE.url}/${game.slug}/`}
+  canonical={`${SITE.url}/${lang}/${game.slug}/`}
   jsonLd={jsonLd}
   hreflangHtml={alternateLinks}
 >
@@ -486,5 +490,5 @@ const jsonLd = {
   document.body.dataset.system = '{game.system || "GBA"}';
 </script>
 <script>
-import '../scripts/emulator.js';
+import '../../scripts/emulator.js';
 </script>

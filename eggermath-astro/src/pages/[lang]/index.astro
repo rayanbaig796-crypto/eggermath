@@ -1,0 +1,106 @@
+---
+import EmulatorLayout from '../../layouts/EmulatorLayout.astro';
+import NoscriptFallback from '../../components/NoscriptFallback.astro';
+import UploadArea from '../../components/UploadArea.astro';
+import ContinueBar from '../../components/ContinueBar.astro';
+import GameCard from '../../components/GameCard.astro';
+import { games, SITE } from '../../data/games.js';
+import { langNames } from '../../data/translations.js';
+
+export function getStaticPaths() {
+  const langs = ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar"];
+  return langs.map(lang => ({ params: { lang }, props: { lang } }));
+}
+
+const { lang } = Astro.props;
+const langName = langNames[lang] || lang;
+const baseUrl = SITE.url;
+
+const titleMap = {
+  'pt-BR': 'Jogue GBA, GBC e GB Online Gratis',
+  'es': 'Jugar GBA, GBC y GB Online Gratis',
+  'ja': 'GBA/GBC/GBをオンラインで無料プレイ',
+  'de': 'GBA, GBC & GB Online Kostenlos Spielen',
+  'fr': 'Jouez aux GBA, GBC & GB En Ligne Gratuitement',
+  'ru': 'GBA, GBC и GB Онлайн Бесплатно',
+  'ko': 'GBA, GBC 및 GB 온라인 무료 플레이',
+  'it': 'Gioca a GBA, GBC e GB Online Gratis',
+  'id': 'Main GBA, GBC & GB Online Gratis',
+  'ar': 'العب GBA, GBC و GB اونلاين مجانا',
+};
+
+const descMap = {
+  'pt-BR': 'Jogue classicos jogos de Game Boy Advance, Game Boy Color e Game Boy gratis no navegador.',
+  'es': 'Juega juegos clasicos de Game Boy Advance, Game Boy Color y Game Boy gratis en el navegador.',
+  'ja': 'Game Boy Advance、Game Boy Color、Game Boyのクラシックゲームをブラウザで無料プレイ。',
+  'de': 'Spiele klassische Game Boy Advance, Game Boy Color und Game Boy Spiele kostenlos im Browser.',
+  'fr': 'Jouez aux jeux classiques Game Boy Advance, Game Boy Color et Game Boy gratuitement.',
+  'ru': 'Играйте в классические игры GBA, GBC и GB бесплатно в браузере.',
+  'ko': 'Game Boy Advance, Game Boy Color, Game Boy 결제 게임을 브라우저에서 무료로 플레이하세요.',
+  'it': 'Gioca ai classici giochi Game Boy Advance, Game Boy Color e Game Boy gratis nel browser.',
+  'id': 'Main game klasik Game Boy Advance, Game Boy Color, dan Game Boy gratis di browser.',
+  'ar': 'العب ألعاب Game Boy Advance الكلاسيكية مجانا في المتصفح.',
+};
+
+const pageTitle = titleMap[lang] || 'Play GBA, GBC & GB Games Online Free';
+const pageDesc = descMap[lang] || SITE.description;
+
+const supportedLangsList = ["en","pt-BR","es","ja","de","fr","ru","ko","it","id","ar"];
+const alternateLinks = supportedLangsList.map(l => {
+  const href = l === 'en' ? `${baseUrl}/` : `${baseUrl}/${l}/`;
+  return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
+}).join('\n  ');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": SITE.name,
+  "url": `${baseUrl}/${lang}/`,
+  "description": pageDesc,
+  "inLanguage": lang,
+};
+---
+
+<EmulatorLayout
+  title={pageTitle}
+  description={pageDesc}
+  canonical={`${baseUrl}/${lang}/`}
+  jsonLd={jsonLd}
+  hreflangHtml={alternateLinks}
+>
+  <NoscriptFallback />
+  <main class="main">
+    <UploadArea />
+    <ContinueBar />
+    <div class="pre-game-content" id="pre-game-content">
+      <section class="browse-section">
+        <div class="browse-header">
+          <h1>{pageTitle}</h1>
+          <span class="badge">{langName}</span>
+        </div>
+        <p class="browse-sub">{pageDesc}</p>
+        <div class="games-grid" id="games-grid">
+          {games.map(game => (
+            <GameCard
+              title={game.title}
+              genre={game.genre}
+              slug={`${lang}/${game.slug}`}
+              img={game.img}
+              mega={game.mega}
+            />
+          ))}
+        </div>
+      </section>
+    </div>
+  </main>
+</EmulatorLayout>
+
+<script is:inline src="/ios-compat.js"></script>
+<script is:inline type="module">
+  import init from '/gba-emulator-web/mgba-v2.js';
+  window.mGBA = init;
+</script>
+<script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
+<script>
+import '../../scripts/emulator.js';
+</script>
