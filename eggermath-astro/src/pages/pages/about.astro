@@ -1,0 +1,56 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "About Us — EggerMath",
+  "url": `${SITE.url}/pages/about`,
+  "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+};
+---
+
+<BaseLayout
+  title="About Us — EggerMath"
+  description="Learn about EggerMath, a free browser-based GBA, GBC, and GB emulator. Play classic Game Boy games instantly online with no downloads required."
+  canonical={`${SITE.url}/pages/about`}
+  jsonLd={jsonLd}
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <img src="/images/eggermath-logo.png" alt="EggerMath">
+      <h1>About Us</h1>
+    </div>
+    <div class="page-body">
+      <h2>What is EggerMath?</h2>
+      <p>EggerMath is a free, browser-based emulator that lets you play classic Game Boy Advance, Game Boy Color, and Game Boy games instantly online. No downloads, no installs, no sign-ups — just pick a game and start playing.</p>
+
+      <h2>Why We Built This</h2>
+      <p>We grew up playing these games. Pokemon, Zelda, Mario, Kirby — these titles shaped an entire generation. But over time, the hardware got harder to find, cartridges stopped working, and the games people loved became inaccessible.</p>
+      <p>We wanted to change that. EggerMath brings these classic games back to life using modern web technology. The entire emulator runs in your browser using WebAssembly, meaning nothing is streamed from a server — the game runs locally on your device for the best possible performance.</p>
+
+      <h2>How It Works</h2>
+      <p>Our emulator is powered by <strong>mGBA</strong>, one of the most accurate Game Boy Advance emulators ever created. We compile it to WebAssembly (WASM) so it runs natively in your browser at near-native speed.</p>
+      <p>Game files are loaded directly from MEGA cloud storage. When you click "Play", the ROM is fetched by your browser and loaded into the emulator — we never store or serve game files on our servers.</p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Instant Play</strong> — No downloads or installations needed</li>
+        <li><strong>Save States</strong> — Save and load your progress at any point</li>
+        <li><strong>Fast Forward</strong> — Speed through grinding and cutscenes</li>
+        <li><strong>Fullscreen Mode</strong> — Immersive gameplay on any screen</li>
+        <li><strong>Mobile Friendly</strong> — Play on phones, tablets, and desktops</li>
+        <li><strong>Multi-System</strong> — GBA, Game Boy Color, and original Game Boy games</li>
+        <li><strong>52+ Games</strong> — A curated library of the best titles across three systems</li>
+        <li><strong>Multilingual</strong> — Available in 11 languages</li>
+      </ul>
+
+      <h2>Our Mission</h2>
+      <p>Preserve gaming history and make it accessible to everyone, everywhere, for free. No paywalls, no ads plastered everywhere, no data harvesting. Just games.</p>
+
+      <h2>Contact</h2>
+      <p>Got questions, suggestions, or want to report an issue? Reach out to us at <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.</p>
+    </div>
+  </div>
+</BaseLayout>

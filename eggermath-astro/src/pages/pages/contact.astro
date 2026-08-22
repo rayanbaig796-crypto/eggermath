@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Us — EggerMath",
+  "url": `${SITE.url}/pages/contact`,
+  "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+};
+---
+
+<BaseLayout
+  title="Contact Us — EggerMath"
+  description="Get in touch with the EggerMath team. Report bugs, request games, or ask questions about our free online GBA emulator."
+  canonical={`${SITE.url}/pages/contact`}
+  jsonLd={jsonLd}
+>
+  <div class="page-wrap">
+    <div class="page-header">
+      <img src="/images/eggermath-logo.png" alt="EggerMath">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="page-body">
+      <p>Have a question, suggestion, or issue? We'd love to hear from you.</p>
+
+      <h2>Email</h2>
+      <p>The best way to reach us is by email:</p>
+      <p><a href={`mailto:${SITE.email}`} style="font-size:1.2rem;color:var(--gold);">{SITE.email}</a></p>
+
+      <h2>What to Contact Us About</h2>
+      <ul>
+        <li><strong>Bug Reports</strong> — Game not loading? Emulator crashing? Let us know which game and browser you're using.</li>
+        <li><strong>Game Requests</strong> — Want a game added to our library? Tell us which title you'd like to see.</li>
+        <li><strong>DMCA / Takedown</strong> — For copyright concerns, visit our <a href="/pages/takedown">Takedown Policy</a> page.</li>
+        <li><strong>Partnerships</strong> — Interested in working together? Send us an email.</li>
+        <li><strong>General Feedback</strong> — Tell us what you think about EggerMath.</li>
+      </ul>
+
+      <h2>Response Time</h2>
+      <p>We aim to respond within 48 hours. For urgent DMCA takedown requests, please include "URGENT" in your subject line.</p>
+    </div>
+  </div>
+</BaseLayout>

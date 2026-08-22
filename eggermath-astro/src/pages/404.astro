@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../data/games.js';
+---
+
+<BaseLayout
+  title="Page Not Found — EggerMath"
+  description="The page you're looking for doesn't exist. Browse our free GBA emulator and play classic Game Boy games online."
+  canonical={`${SITE.url}/404`}
+  noIndex={true}
+>
+  <div class="page-wrap" style="text-align:center;padding:6rem 1rem;">
+    <h1 style="font-size:4rem;color:var(--gold);margin-bottom:0.5rem;">404</h1>
+    <h2 style="font-size:1.5rem;margin-bottom:1.5rem;">Page Not Found</h2>
+    <p style="color:var(--text);margin-bottom:2rem;">The page you're looking for doesn't exist or has been moved.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="/" style="background:var(--gold);color:#000;padding:0.75rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;">Go Home</a>
+      <a href="/best-gba-games" style="background:rgba(255,255,255,0.08);color:var(--text);padding:0.75rem 1.5rem;border-radius:8px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,0.15);">Browse Games</a>
+    </div>
+  </div>
+</BaseLayout>
