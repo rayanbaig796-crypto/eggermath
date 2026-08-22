@@ -21,12 +21,12 @@ const jsonLd = {
       "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
       "mainEntity": {
         "@type": "VideoGameEmulator",
-        "name": "EggerMath GBA Emulator",
+        "name": "EggerMath GBA/GBC/GB Emulator",
         "applicationCategory": "GameEmulator",
         "operatingSystem": "Any (Web Browser)",
-        "numberOfGames": 25,
-        "gamePlatform": "Game Boy Advance",
-        "description": "Free browser-based GBA emulator powered by mGBA WebAssembly"
+        "numberOfGames": 52,
+        "gamePlatform": "Game Boy Advance, Game Boy Color, Game Boy",
+        "description": "Free browser-based GBA/GBC/GB emulator powered by mGBA WebAssembly"
       },
       "hasPart": {
         "@type": "ItemList",
@@ -37,7 +37,7 @@ const jsonLd = {
             "@type": "VideoGame",
             "name": g.title,
             "description": g.desc,
-            "gamePlatform": "Game Boy Advance",
+            "gamePlatform": g.system || "Game Boy Advance",
             "genre": g.genre,
             "datePublished": String(g.year),
             "isAccessibleForFree": true
@@ -85,10 +85,10 @@ const jsonLd = {
     <div class="pre-game-content" id="pre-game-content">
       <section class="browse-section">
         <div class="browse-header">
-          <h1>Play GBA Games Online Free — Popular Titles</h1>
+          <h1>Play GBA, GBC & GB Games Online Free</h1>
           <span class="badge">Click to Play</span>
         </div>
-        <p class="browse-sub">Click any game to play instantly — supports GBA and GBC ROMs</p>
+        <p class="browse-sub">Click any game to play instantly — supports GBA, GBC, and GB ROMs</p>
         <div class="games-grid" id="games-grid">
           {games.map(game => (
             <GameCard

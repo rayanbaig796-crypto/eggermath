@@ -79,6 +79,13 @@ async function loadFile(file) {
   progressBar.classList.add('visible');
   setStatus('Initializing emulator...');
 
+  // Detect ROM type from filename for control adaptation
+  var fnLower = file.name.toLowerCase();
+  var romSystem = 'GBA';
+  if (fnLower.endsWith('.gb')) romSystem = 'GB';
+  else if (fnLower.endsWith('.gbc')) romSystem = 'GBC';
+  document.body.dataset.system = romSystem;
+
   try {
     if (!emulator) {
       setProgress(10);
@@ -223,6 +230,8 @@ function setupKeyboard() {
     }
     const btn = keyMap[e.code];
     if (btn && emulator) {
+      var sys = document.body.dataset.system;
+      if ((btn === 'L' || btn === 'R') && (sys === 'GB' || sys === 'GBC')) return;
       e.preventDefault();
       emulator.buttonPress(btn);
     }
@@ -231,6 +240,8 @@ function setupKeyboard() {
   document.addEventListener('keyup', e => {
     const btn = keyMap[e.code];
     if (btn && emulator) {
+      var sys2 = document.body.dataset.system;
+      if ((btn === 'L' || btn === 'R') && (sys2 === 'GB' || sys2 === 'GBC')) return;
       e.preventDefault();
       emulator.buttonUnpress(btn);
     }
@@ -650,6 +661,11 @@ function loadContinueBar() {
 
 function resumeGame(data) {
   if (!data || !data.mega) return;
+  // Detect ROM system from filename
+  var fnLower = data.mega.toLowerCase();
+  if (fnLower.endsWith('.gb')) document.body.dataset.system = 'GB';
+  else if (fnLower.endsWith('.gbc')) document.body.dataset.system = 'GBC';
+  else document.body.dataset.system = 'GBA';
   if (!megaFiles) {
     setStatus('Connecting to game library...');
     setTimeout(function() { resumeGame(data); }, 2000);
@@ -715,6 +731,7 @@ function initMegaIntegration() {
 
     // Handle game page auto-load
     if (gamePageData && gamePageData.mega && megaFiles[gamePageData.mega]) {
+      if (gamePageData.system) document.body.dataset.system = gamePageData.system;
       setStatus('Loading ' + gamePageData.title + '...');
       setProgress(0);
       progressBar.classList.add('visible');

@@ -23,7 +23,7 @@ const jsonLd = {
       "description": game.desc,
       "url": `${SITE.url}/${game.slug}/`,
       "image": game.img,
-      "gamePlatform": "Game Boy Advance",
+      "gamePlatform": game.system || "Game Boy Advance",
       "genre": game.genre,
       "datePublished": String(game.year),
       "applicationCategory": "GameEmulator",
@@ -44,7 +44,7 @@ const jsonLd = {
         { "@type": "Question", "name": `How to play ${game.title} on iPhone?`, "acceptedAnswer": { "@type": "Answer", "text": `Open ${SITE.url}/${game.slug}/ on Safari, tap to start. Use touch controls (D-pad, A/B, L/R). Save with Save button — works offline after first load.` } },
         { "@type": "Question", "name": `Is ${game.title} free to play?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes, ${game.title} is free on EggerMath via browser mGBA emulator. No download, no signup.` } },
         { "@type": "Question", "name": `Can I save ${game.title} progress?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — click Save (F5) and Load (F9). 10 slots (Slot button / F7). Saved in browser storage.` } },
-        { "@type": "Question", "name": `What are ${game.title} controls?`, "acceptedAnswer": { "@type": "Answer", "text": `D-Pad: WASD/Arrows, A: K, B: J, L: Q, R: E, Start: Enter, Select: Right Shift. On mobile use touch controls.` } }
+        { "@type": "Question", "name": `What are ${game.title} controls?`, "acceptedAnswer": { "@type": "Answer", "text": `D-Pad: WASD/Arrows, A: K, B: J, L: Q (GBA only), R: E (GBA only), Start: Enter, Select: Right Shift. On mobile use touch controls.` } }
       ]
     },
     {
@@ -63,7 +63,7 @@ const jsonLd = {
 ---
 
 <EmulatorLayout
-  title={`Play ${game.title} Online Free — ${game.genre} GBA Game | EggerMath`}
+  title={`Play ${game.title} Online Free — ${game.genre} ${game.system || 'GBA'} Game | EggerMath`}
   description={game.desc}
   canonical={`${SITE.url}/${game.slug}/`}
   jsonLd={jsonLd}
@@ -468,11 +468,12 @@ const jsonLd = {
   window.mGBA = init;
 </script>
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
-<script define:vars={{ megaFilename: game.mega, gameTitle: game.title }}>
-  window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle };
+<script define:vars={{ megaFilename: game.mega, gameTitle: game.title, gameSystem: game.system || 'GBA' }}>
+  window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle, system: gameSystem };
 </script>
 <script is:inline>
   document.body.classList.add('game-page');
+  document.body.dataset.system = '{game.system || "GBA"}';
 </script>
 <script>
 import '../scripts/emulator.js';
