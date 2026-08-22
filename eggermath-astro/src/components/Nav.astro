@@ -14,21 +14,25 @@
   <div class="nav-links">
     <span class="nav-badge"><span class="nav-badge-dot"></span> <span data-i18n="badge">WebAssembly mGBA</span></span>
     <a href="/" class="nav-link active" data-i18n="emulator">Emulator</a>
+    <a href="/" class="nav-link" data-i18n="allGames">All Games</a>
   </div>
 </nav>
 <script is:inline>
 (function(){
   var dict={
-    en:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator"},
-    es:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador"},
-    hi:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"एम्युलेटर"},
-    pt:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador"},
-    fr:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Émulateur"},
-    de:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator"},
-    ja:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"エミュレータ"},
-    zh:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"模拟器"},
-    ru:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Эмулятор"},
-    ar:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"المحاكي"}
+    en:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator",allGames:"All Games"},
+    es:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador",allGames:"Todos los Juegos"},
+    hi:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"एम्युलेटर",allGames:"सभी गेम्स"},
+    pt:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulador",allGames:"Todos os Jogos"},
+    fr:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Émulateur",allGames:"Tous les Jeux"},
+    de:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator",allGames:"Alle Spiele"},
+    ja:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"エミュレータ",allGames:"すべてのゲーム"},
+    zh:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"模拟器",allGames:"所有游戏"},
+    ru:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Эмулятор",allGames:"Все игры"},
+    ar:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"المحاكي",allGames:"كل الألعاب"},
+    it:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulatore",allGames:"Tutti i Giochi"},
+    id:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"Emulator",allGames:"Semua Game"},
+    ko:{brand:"EggerMath",badge:"WebAssembly mGBA",emulator:"에뮬레이터",allGames:"모든 게임"}
   };
   function apply(){
     var lang=(navigator.language||"en").split("-")[0].toLowerCase();
