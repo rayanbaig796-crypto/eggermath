@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && node generate-sitemap.mjs",
+    "build": "astro build && node generate-sitemap.mjs && node scripts/submit-indexnow.mjs",
     "preview": "astro preview"
   },
   "dependencies": {

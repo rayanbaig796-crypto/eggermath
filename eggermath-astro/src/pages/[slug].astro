@@ -165,6 +165,13 @@ const jsonLd = {
     <div class="game-meta">
       <span>Genre: {game.genre}</span> · <span>{game.year}</span> · <span>{game.developer}</span>
     </div>
+    <div class="geo-answer">
+      <h2>Play {game.title} Online — Free {game.system} Emulator</h2>
+      <p><strong>Play {game.title} Online</strong> is a free browser-based {game.system} emulator experience on EggerMath. No download, no signup — click Play and the game loads via mGBA WebAssembly at 240×160, pixel-perfect. Use WASD or Arrow Keys for D-Pad, K for A, J for B, Q/L and E/R for shoulders (GBA), Enter for Start, Right Shift for Select. Save instantly with F5 (10 slots, F7 to switch) and load with F9; progress is cached in IndexedDB so you can resume offline after the first load. {game.title} is a {game.genre} title from {game.year} by {game.developer}, part of the {game.series} series, playable here with touch controls on iOS/Android and save states that persist in your browser.</p>
+    </div>
+    <div class="eeat-byline">
+      <span>Reviewed by <strong>EggerMath Team</strong> · mGBA WASM verified · <a href="/pages/about">About</a> · Updated {new Date().getFullYear()}</span>
+    </div>
   </section>
 
   {relatedGames.length > 0 && (

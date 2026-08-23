@@ -1,0 +1,101 @@
+# EggerMath - Free GBA/GBC/GB Emulator
+> Play classic Game Boy Advance, Game Boy Color, and Game Boy games for free in your browser. No download needed. Powered by mGBA WebAssembly. Pokemon, Zelda, Mario, Metroid & 50+ titles. Instant play, save states, fast forward.
+
+## How to Play
+- Go to https://www.eggermath.com
+- Click any game or drag-and-drop your own .gba/.zip/.gb/.gbc ROM
+- Controls: WASD/Arrows = D-Pad, K = A, J = B, Q = L, E = R, Enter = Start, Right Shift = Select, F5 = Save, F9 = Load
+- L/R shoulder buttons hidden for GB/GBC games (not needed)
+
+## GBA Games
+- [Pokemon Emerald](https://www.eggermath.com/pokemon-emerald/): Explore Hoenn, catch 200+ Pokemon, Battle Frontier. RPG 2004.
+- [Pokemon FireRed](https://www.eggermath.com/pokemon-firered/): Enhanced remake of Pokemon Red with Sevii Islands. RPG 2004.
+- [Pokemon LeafGreen](https://www.eggermath.com/pokemon-leafgreen/): Counterpart to FireRed with Green exclusives. RPG 2004.
+- [Pokemon Ruby](https://www.eggermath.com/pokemon-ruby/): Journey through Hoenn, stop Team Magma. RPG 2002.
+- [Pokemon Sapphire](https://www.eggermath.com/pokemon-sapphire/): Counterpart to Ruby, Team Aqua. RPG 2002.
+- [Pokemon Ultra Violet](https://www.eggermath.com/pokemon-ultra-violet/): FireRed hack with all Gen 1-3 Pokemon. RPG 2023.
+- [Pokemon Jupiter](https://www.eggermath.com/pokemon-jupiter/): Ruby hack, Oxalis region, 200+ fakemon. RPG 2013.
+- [Zelda: Minish Cap](https://www.eggermath.com/zelda-minish-cap/): Shrink to Minish size, fuse Kinstones. Adventure 2004.
+- [Zelda: A Link to the Past](https://www.eggermath.com/zelda-a-link-to-the-past/): SNES classic + Four Swords. Adventure 2002.
+- [Mario Kart Super Circuit](https://www.eggermath.com/mario-kart-super-circuit/): 20 SNES + 20 new tracks. Racing 2001.
+- [Super Mario World](https://www.eggermath.com/super-mario-world/): 96 levels, Yoshi, secret exits. Platformer 2002.
+- [Mario & Luigi: Superstar Saga](https://www.eggermath.com/mario-luigi-superstar-saga/): Beanbean Kingdom RPG. RPG 2003.
+- [Classic NES: Super Mario Bros](https://www.eggermath.com/classic-nes-super-mario-bros/): Original 1985 platformer. Platformer 2002.
+- [Metroid Fusion](https://www.eggermath.com/metroid-fusion/): Fight X Parasites, confront SA-X. Action 2002.
+- [Metroid: Zero Mission](https://www.eggermath.com/metroid-zero-mission/): Remake of NES Metroid. Action 2004.
+- [Kirby: Nightmare in Dream Land](https://www.eggermath.com/kirby-nightmare-in-dream-land/): Copy abilities, NES remake. Platformer 2002.
+- [Kirby & the Amazing Mirror](https://www.eggermath.com/kirby-amazing-mirror/): 4 Kirbys, Metroidvania map. Platformer 2004.
+- [Castlevania: Aria of Sorrow](https://www.eggermath.com/castlevania-aria-of-sorrow/): Absorb souls as Soma Cruz. Action 2003.
+- [Donkey Kong Country](https://www.eggermath.com/donkey-kong-country/): 40 levels, Diddy Kong. Platformer 2003.
+- [Fire Emblem: Sacred Stones](https://www.eggermath.com/fire-emblem-sacred-stones/): Magvel war, 24 characters. Strategy 2004.
+- [Sonic Advance 3](https://www.eggermath.com/sonic-advance-3/): Tag feature, 7 zones. Platformer 2004.
+- [Dragon Ball: Advanced Adventure](https://www.eggermath.com/dragon-ball-advanced-adventure/): 100+ missions as Goku. Fighting 2004.
+- [Harvest Moon: Friends of Mineral Town](https://www.eggermath.com/harvest-moon-friends-of-mineral-town/): Farm, 4 seasons. Simulation 2003.
+- [Crash Bandicoot: Huge Adventure](https://www.eggermath.com/crash-bandicoot-huge-adventure/): 5 worlds, 30+ levels. Platformer 2002.
+- [GTA Advance](https://www.eggermath.com/gta-advance/): Liberty City as Vinnie. Action 2004.
+- [Golden Sun](https://www.eggermath.com/golden-sun/): Epic RPG with Psynergy and Djinn. RPG 2001.
+- [Super Mario Advance](https://www.eggermath.com/super-mario-advance/): GBA remake of Super Mario Bros. 2. Platformer 2001.
+- [Super Mario Bros. 3](https://www.eggermath.com/super-mario-bros-3/): NES classic on GBA. Platformer 2003.
+
+## GBC Games
+- [Pokemon Crystal](https://www.eggermath.com/pokemon-crystal/): Enhanced Gold/Silver with Suicune. RPG 2001.
+- [Pokemon Gold](https://www.eggermath.com/pokemon-gold/): Johto region, 100 new Pokemon. RPG 1999.
+- [Pokemon Silver](https://www.eggermath.com/pokemon-silver/): Lugia featured, Johto region. RPG 1999.
+- [DBZ: Legendary Super Warriors](https://www.eggermath.com/dbz-legendary-super-warriors/): Card-based DBZ combat. Fighting 2002.
+- [Shantae](https://www.eggermath.com/shantae/): Half-genie hero platformer. Platformer 2002.
+- [Super Mario Bros. Deluxe](https://www.eggermath.com/super-mario-bros-deluxe/): NES classic on GBC. Platformer 1999.
+- [Tetris DX](https://www.eggermath.com/tetris-dx/): Definitive GBC Tetris. Puzzle 1998.
+- [Wario Land 3](https://www.eggermath.com/wario-land-3/): Treasure collecting adventure. Platformer 2000.
+
+## GB Games
+- [Pokemon Yellow](https://www.eggermath.com/pokemon-yellow/): Pikachu follows you, catch 151. RPG 1998.
+- [Castlevania Legends](https://www.eggermath.com/castlevania-legends/): Young Simon Belmont. Action 1997.
+- [Contra: The Alien Wars](https://www.eggermath.com/contra-alien-wars/): Run-and-gun action. Action 1994.
+- [Donkey Kong](https://www.eggermath.com/donkey-kong-gb/): 100 levels of puzzle-platforming. Platformer 1994.
+- [Dr. Mario](https://www.eggermath.com/dr-mario/): Capsule virus elimination puzzle. Puzzle 1990.
+- [DuckTales](https://www.eggermath.com/ducktales/): Scrooge McDuck treasure hunt. Platformer 1989.
+- [Final Fantasy Adventure](https://www.eggermath.com/final-fantasy-adventure/): First Mana action RPG. RPG 1991.
+- [Kirby's Dream Land 2](https://www.eggermath.com/kirbys-dream-land-2/): Animal friends help Kirby. Platformer 1995.
+- [Kirby's Pinball Land](https://www.eggermath.com/kirbys-pinball-land/): Kirby pinball adventure. Puzzle 1993.
+- [Kirby's Dream Land](https://www.eggermath.com/kirbys-dream-land/): Inhale enemies and float. Platformer 1992.
+- [Mega Man: Dr. Wily's Revenge](https://www.eggermath.com/mega-man-dr-wilys-revenge/): Battle robots across 6 stages. Action 1991.
+- [Street Fighter II](https://www.eggermath.com/street-fighter-ii-gb/): 8 world warriors on GB. Fighting 1995.
+- [Super Mario Land](https://www.eggermath.com/super-mario-land/): Original Game Boy Mario. Platformer 1989.
+- [Super Mario Land 2](https://www.eggermath.com/super-mario-land-2/): 6 Golden Coins, defeat Wario. Platformer 1992.
+- [Tetris](https://www.eggermath.com/tetris-gb/): The Game Boy classic. Puzzle 1989.
+- [Wario Land: Super Mario Land 3](https://www.eggermath.com/wario-land/): Wario debut adventure. Platformer 1994.
+
+## Português (Brasil)
+Keywords: emulador gba, emulador gba pc, emulador gba android, emulador gba online, download emulador gba, jogos gba, rom gba, gameboy advance, pokemon gba, emulador gameboy, jogos retro, my boy gba emulator
+
+## Español
+Keywords: emulador gba, emulador gba pc, emulador gba android, descargar emulador gba, juegos emulador gba, emulador gba online, mejor emulador gba, juegos retro, pokemon gba, emulador gba iphone, emulador gba ios, emulador gba psp
+
+## 日本語
+Keywords: gbaエミュレータ, gba エミュレータ, gbaエミュレータ android, gbaエミュレータ pc, gba エミュレータ android 無料, gba エミュレータ ポケモン, gbaエミュレータ ダウンロード, gba エミュレータ iphone
+
+## Deutsch
+Keywords: gba emulator, gba emulator pc, gba emulator android, best gba emulator, gba emulator download, gba emulator apk, pokemon gba emulator, my boy gba emulator, gba emulator games, gba emulator windows
+
+## Français
+Keywords: emulateur gba, emulateur gba android, emulateur gba ios, emulateur gba pc, émulateur gba, meilleur emulateur gba, emulateur gba pokemon, emulateur gba iphone, jeux emulateur gba, emulateur gba mac
+
+## Русский
+Keywords: gba эмулятор, gba эмулятор на андроид, gba эмулятор андроид, скачать gba эмулятор на пк, скачать gba эмулятор, gba эмулятор на пк
+
+## 한국어
+Keywords: gba 에뮬레이터, gba 에뮬레이터apps, gba 에뮬레이터 pc, psp gba 에뮬레이터, gba에뮬레이터, gba 에뮬레이터 추천, gba 에뮬레이터 apk, gba 에뮬레이터 다운
+
+## Italiano
+Keywords: emulatore gba, emulatore gba ios, emulatore gba android, emulatore gba download, download emulatore gba, emulatore gba iphone, emulatore gba online, emulatore gba mac, emulatore gba pc, miglior emulatore gba android
+
+## Bahasa Indonesia
+Keywords: emulator gba, emulator gba pc, emulator gba android, download emulator gba, emulator gba android terbaik, download emulator gba pc, emulator gba for android, emulator gba windows, emulator gba terbaik, web emulator gba
+
+## العربية
+Keywords: محاكي gba, تحميل محاكي gba للاندرويد
+
+## Legal
+- Privacy: https://www.eggermath.com/pages/privacy
+- Terms: https://www.eggermath.com/pages/terms
+- DMCA: https://www.eggermath.com/pages/takedown
