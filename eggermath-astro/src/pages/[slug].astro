@@ -478,8 +478,8 @@ const jsonLd = {
   window.mGBA = init;
 </script>
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
-<script define:vars={{ megaFilename: game.mega, gameTitle: game.title, gameSystem: game.system || 'GBA' }}>
-  window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle, system: gameSystem };
+<script define:vars={{ megaFilename: game.mega, gameTitle: game.title, gameSlug: game.slug, gameImg: game.img, gameGenre: game.genre, gameSystem: game.system || 'GBA' }}>
+  window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle, slug: gameSlug, img: gameImg, genre: gameGenre, system: gameSystem };
 </script>
 <script is:inline>
   document.body.classList.add('game-page');

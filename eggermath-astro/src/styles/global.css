@@ -450,6 +450,32 @@ body {
   transform: translateY(-2px);
 }
 
+.cgc-thumb {
+  width: 56px;
+  height: 42px;
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: var(--bg-surface-elevated);
+  border: 1px solid var(--border-subtle);
+}
+
+.cgc-thumb--placeholder {
+  width: 56px;
+  height: 42px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(245, 158, 11, 0.1));
+  border: 1px solid var(--border-subtle);
+}
+
+.cgc-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
 .cgc-title {
   font-size: 0.85rem;
   font-weight: 600;
@@ -458,6 +484,16 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  line-height: 1.2;
+}
+
+.cgc-genre {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent-amber);
 }
 
 .cgc-play {
@@ -470,10 +506,16 @@ body {
   font-weight: 700;
   cursor: pointer;
   transition: opacity 0.2s ease;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .cgc-play:hover {
   opacity: 0.9;
+}
+
+a.continue-game-card:hover .cgc-title {
+  color: var(--accent-amber);
 }
 
 /* ── Games Catalog Section ── */

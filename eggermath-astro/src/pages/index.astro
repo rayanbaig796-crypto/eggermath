@@ -115,6 +115,9 @@ const jsonLd = {
   window.mGBA = init;
 </script>
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
+<script define:vars={{ gamesData: games }}>
+  window.__GAMES_DATA__ = gamesData;
+</script>
 <script>
 import '../scripts/emulator.js';
 </script>

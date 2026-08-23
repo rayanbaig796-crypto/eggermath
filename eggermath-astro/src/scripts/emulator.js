@@ -621,16 +621,39 @@ function downloadOrCache(megaKey, title) {
   });
 }
 
-function saveLastPlayed(title, megaKey) {
+function saveLastPlayed(title, megaKey, slug, img, genre) {
   try {
+    // Resolve missing slug/img/genre from global games data (homepage)
+    if (!slug && window.__GAMES_DATA__) {
+      var found = window.__GAMES_DATA__.find(function(g) { return g.mega === megaKey; });
+      if (found) { slug = found.slug; img = found.img; genre = found.genre; }
+    }
+    // Fallback: try to resolve from DOM (game cards on homepage)
+    if (!slug) {
+      var card = document.querySelector('.game-pill[data-mega="' + (CSS.escape ? CSS.escape(megaKey) : megaKey) + '"]');
+      if (card) { slug = card.dataset.slug || slug; }
+    }
     var list = JSON.parse(localStorage.getItem(CONTINUE_KEY)) || [];
     list = list.filter(function(g) { return g.mega !== megaKey; });
-    list.unshift({ title: title, mega: megaKey, ts: Date.now() });
+    var entry = { title: title, mega: megaKey, ts: Date.now() };
+    if (slug) entry.slug = slug;
+    if (img) entry.img = img;
+    if (genre) entry.genre = genre;
+    list.unshift(entry);
     if (list.length > MAX_CONTINUE) list = list.slice(0, MAX_CONTINUE);
     localStorage.setItem(CONTINUE_KEY, JSON.stringify(list));
   } catch(e) {}
 }
 
+function getContinueLang() {
+  var seg = (location.pathname.split('/')[1] || '').trim();
+  var langs = ['pt-BR','es','ja','de','fr','ru','ko','it','id','ar'];
+  return langs.indexOf(seg) !== -1 ? seg : 'en';
+}
+function buildGameHref(slug) {
+  var lang = getContinueLang();
+  return lang === 'en' ? '/' + slug + '/' : '/' + lang + '/' + slug + '/';
+}
 function loadContinueBar() {
   try {
     var list = JSON.parse(localStorage.getItem(CONTINUE_KEY));
@@ -642,17 +665,55 @@ function loadContinueBar() {
     var container = document.getElementById('continue-games-list');
     if (!container) return;
     container.innerHTML = '';
+    // Filter valid entries and migrate old ones without slug
     list = list.filter(function(g) { return g && g.title && g.mega; });
+    // Migrate: resolve missing slug/img/genre from global data or DOM
+    var migrated = false;
+    list.forEach(function(g) {
+      if (!g.slug && window.__GAMES_DATA__) {
+        var found = window.__GAMES_DATA__.find(function(x) { return x.mega === g.mega; });
+        if (found) { g.slug = found.slug; g.img = found.img; g.genre = found.genre; migrated = true; }
+      }
+      if (!g.slug) {
+        var c = document.querySelector('.game-pill[data-mega="' + (CSS.escape ? CSS.escape(g.mega) : g.mega) + '"]');
+        if (c && c.dataset.slug) { g.slug = c.dataset.slug; migrated = true; }
+      }
+    });
+    if (migrated) localStorage.setItem(CONTINUE_KEY, JSON.stringify(list));
+    // Remove entries that still have no slug (cannot navigate to dedicated page)
+    var navigable = list.filter(function(g) { return g.slug; });
+    if (!navigable.length) {
+      // Fallback: keep old entries but they will use inline play
+      navigable = list;
+    } else {
+      list = navigable;
+    }
     if (!list.length) { continueBar.classList.remove('visible'); return; }
     localStorage.setItem(CONTINUE_KEY, JSON.stringify(list));
     list.forEach(function(g) {
-      var card = document.createElement('div');
+      var card = document.createElement('a');
       card.className = 'continue-game-card';
-      card.innerHTML = '<div class="cgc-title">' + g.title + '</div><button class="cgc-play">Play</button>';
-      card.querySelector('.cgc-play').addEventListener('click', function(e) {
-        e.stopPropagation();
-        resumeGame(g);
-      });
+      if (g.slug) card.href = buildGameHref(g.slug);
+      else card.href = 'javascript:void(0)';
+      card.style.textDecoration = 'none';
+      // Build card with image like game page related-card style
+      var thumb = '';
+      if (g.img) {
+        thumb = '<img class="cgc-thumb" src="' + g.img.replace(/"/g, '&quot;') + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">';
+      } else {
+        thumb = '<div class="cgc-thumb cgc-thumb--placeholder"></div>';
+      }
+      var genreHtml = g.genre ? '<div class="cgc-genre">' + g.genre + '</div>' : '';
+      card.innerHTML = thumb + '<div class="cgc-info"><div class="cgc-title">' + g.title + '</div>' + genreHtml + '</div><span class="cgc-play">Play &rsaquo;</span>';
+      if (!g.slug) {
+        // No slug: inline play fallback for legacy data without matching game
+        card.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          resumeGame(g);
+        });
+      }
+      // If slug exists, native <a> navigation handles it — no JS needed
       container.appendChild(card);
     });
     continueBar.classList.add('visible');
@@ -661,7 +722,19 @@ function loadContinueBar() {
 
 function resumeGame(data) {
   if (!data || !data.mega) return;
-  // Detect ROM system from filename
+  // If we have a slug, navigate to dedicated game page (same as clicking a game card)
+  if (data.slug) {
+    window.location.href = buildGameHref(data.slug);
+    return;
+  }
+  // Try to resolve slug from global data before falling back to inline
+  if (window.__GAMES_DATA__) {
+    var found = window.__GAMES_DATA__.find(function(x) { return x.mega === data.mega; });
+    if (found && found.slug) { window.location.href = buildGameHref(found.slug); return; }
+  }
+  var domCard = document.querySelector('.game-pill[data-mega="' + (CSS.escape ? CSS.escape(data.mega) : data.mega) + '"]');
+  if (domCard && domCard.dataset.slug) { window.location.href = buildGameHref(domCard.dataset.slug); return; }
+  // Fallback: inline load for uploaded ROMs or unknown mega files
   var fnLower = data.mega.toLowerCase();
   if (fnLower.endsWith('.gb')) document.body.dataset.system = 'GB';
   else if (fnLower.endsWith('.gbc')) document.body.dataset.system = 'GBC';
@@ -743,7 +816,7 @@ function initMegaIntegration() {
       downloadOrCache(gamePageData.mega, gamePageData.title).then(function(data) {
         setProgress(90);
         setStatus('Starting game...');
-        saveLastPlayed(gamePageData.title, gamePageData.mega);
+        saveLastPlayed(gamePageData.title, gamePageData.mega, gamePageData.slug, gamePageData.img, gamePageData.genre);
         var blob = new Blob([data], { type: 'application/zip' });
         var file = new File([blob], gamePageData.mega, { type: 'application/zip' });
         loadFile(file);
