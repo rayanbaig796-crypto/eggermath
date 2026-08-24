@@ -5,6 +5,7 @@ import EmulatorContainer from '../components/EmulatorContainer.astro';
 import TouchControls from '../components/TouchControls.astro';
 import { games, SITE } from '../data/games.js';
 import { gameTranslations, supportedLangs, langNames } from '../data/translations.js';
+import { regionalKeywords } from '../data/keywords.js';
 
 export function getStaticPaths() {
   return games.map(game => ({
@@ -19,6 +20,49 @@ const pageTitle = tr.title || `Play ${game.title} Online Free`;
 const pageDesc = tr.desc || game.desc;
 const relatedGames = games.filter(g => g.genre === game.genre && g.slug !== game.slug).slice(0, 4);
 
+// Pick 3 most relevant EN keywords for this game (no stuffing)
+function pickKeywordsEn(game) {
+  const pool = regionalKeywords['en'] || [];
+  if (!pool.length) return (game.keywords || '').split(',').map(s=>s.trim()).slice(0,3);
+  const series = (game.series || '').toLowerCase();
+  const system = (game.system || 'gba').toLowerCase();
+  const firstWord = game.title.split(/[\s:]+/)[0].toLowerCase();
+  const scored = pool.map(kw => {
+    const k = kw.toLowerCase();
+    let s = 0;
+    if (series && k.includes(series)) s += 10;
+    if (firstWord.length > 2 && k.includes(firstWord)) s += 8;
+    if (k.includes(system)) s += 6;
+    if (k.includes('emulator')) s += 4;
+    const wc = k.split(' ').length;
+    if (wc <= 2) s += 5;
+    else if (wc <= 3) s += 3;
+    if (wc >= 5) s -= 3;
+    if (k.includes('my boy') || k.includes('download') || k.includes('bitboy')) s -= 4;
+    const variants = ['fire red','firered','leaf green','leafgreen','ruby','sapphire','emerald','crystal','gold','silver','yellow'];
+    const titleLow = game.title.toLowerCase();
+    for (const v of variants) { if (k.includes(v) && !titleLow.includes(v)) s -= 12; }
+    return { kw, s };
+  });
+  scored.sort((a,b) => b.s - a.s);
+  const seen = new Set();
+  const out = [];
+  for (const {kw} of scored) {
+    const low = kw.toLowerCase();
+    if (!seen.has(low)) { seen.add(low); out.push(kw); }
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+const topKeywordsEn = pickKeywordsEn(game);
+let enhancedDescEn = pageDesc;
+if (topKeywordsEn.length >= 1) {
+  const suffix2 = ` — ${topKeywordsEn[0]}, ${topKeywordsEn[1] || ''}`.replace(/, $/, '');
+  const suffix1 = ` — ${topKeywordsEn[0]}`;
+  if (topKeywordsEn.length >= 2 && (enhancedDescEn + suffix2).length <= 155) enhancedDescEn = enhancedDescEn + suffix2;
+  else if ((enhancedDescEn + suffix1).length <= 155) enhancedDescEn = enhancedDescEn + suffix1;
+}
+
 const alternateLinks = supportedLangs.map(l => {
   const href = l === 'en' ? `${SITE.url}/${game.slug}/` : `${SITE.url}/${l}/${game.slug}/`;
   return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
@@ -28,15 +72,17 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "VideoGame",
-      "name": `Play ${game.title} Online Free`,
-      "description": game.desc,
+      "name": pageTitle,
+      "description": enhancedDescEn,
       "url": `${SITE.url}/${game.slug}/`,
       "image": game.img,
       "gamePlatform": game.system || "Game Boy Advance",
       "genre": game.genre,
+      "keywords": topKeywordsEn.join(', '),
       "datePublished": String(game.year),
       "applicationCategory": "GameEmulator",
       "isAccessibleForFree": true,
+      "inLanguage": "en",
       "author": { "@type": "Organization", "name": SITE.name },
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
     },
@@ -73,7 +119,7 @@ const jsonLd = {
 
 <EmulatorLayout
   title={`${pageTitle} | EggerMath`}
-  description={pageDesc}
+  description={enhancedDescEn}
   canonical={`${SITE.url}/${game.slug}/`}
   jsonLd={jsonLd}
   hreflangHtml={alternateLinks}

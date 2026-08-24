@@ -5,6 +5,7 @@ import EmulatorContainer from '../../components/EmulatorContainer.astro';
 import TouchControls from '../../components/TouchControls.astro';
 import { games, SITE } from '../../data/games.js';
 import { gameTranslations, supportedLangs, langNames } from '../../data/translations.js';
+import { regionalKeywords } from '../../data/keywords.js';
 
 export function getStaticPaths() {
   const paths = [];
@@ -23,6 +24,56 @@ const pageDesc = tr.desc || game.desc;
 const langName = langNames[lang] || lang;
 const relatedGames = games.filter(g => g.genre === game.genre && g.slug !== game.slug).slice(0, 4);
 
+// Pick 3 most relevant regional keywords for this game+lang (no stuffing: used in desc + schema only)
+function pickKeywords(game, lang) {
+  const pool = regionalKeywords[lang] || regionalKeywords['en'] || [];
+  if (!pool.length) return [];
+  const series = (game.series || '').toLowerCase();
+  const system = (game.system || 'gba').toLowerCase();
+  const firstWord = game.title.split(/[\s:]+/)[0].toLowerCase();
+  const scored = pool.map(kw => {
+    const k = kw.toLowerCase();
+    let s = 0;
+    if (series && k.includes(series)) s += 10;
+    if (firstWord.length > 2 && k.includes(firstWord)) s += 8;
+    if (k.includes(system)) s += 6;
+    if (k.includes('emulador') || k.includes('emulator') || k.includes('emulateur') || k.includes('emulatore') || k.includes('エミュ') || k.includes('에뮬') || k.includes('эмулятор')) s += 4;
+    // Prefer short generic keywords over long specific ones (avoid cross-game contamination)
+    const wc = k.split(' ').length;
+    if (wc <= 2) s += 5;
+    else if (wc <= 3) s += 3;
+    if (wc >= 5) s -= 3;
+    // Penalize off-topic modifiers
+    if (k.includes('cheats') || k.includes('cheat') || k.includes('trucchi') || k.includes('code triche')) s -= 8;
+    if (k.includes('hack rom') || k.includes('my boy') || k.includes('download')) s -= 4;
+    // Penalize if keyword contains another game variant not matching current title (e.g. fire red for emerald)
+    const variants = ['fire red','firered','leaf green','leafgreen','ruby','sapphire','emerald','crystal','gold','silver','yellow','minish','super mario world','mario kart','metroid','castlevania','zelda'];
+    const titleLow = game.title.toLowerCase();
+    for (const v of variants) {
+      if (k.includes(v) && !titleLow.includes(v)) s -= 12;
+    }
+    return { kw, s };
+  });
+  scored.sort((a,b) => b.s - a.s);
+  const seen = new Set();
+  const out = [];
+  for (const {kw} of scored) {
+    const low = kw.toLowerCase();
+    if (!seen.has(low)) { seen.add(low); out.push(kw); }
+    if (out.length >= 3) break;
+  }
+  return out;
+}
+const topKeywords = pickKeywords(game, lang);
+// Enhanced description: keep translated desc but expand to ~140-155 chars with 1-2 keywords naturally (Bing flagged short descs)
+let enhancedDesc = pageDesc;
+if (topKeywords.length >= 1) {
+  const suffix2 = ` — ${topKeywords[0]}, ${topKeywords[1] || ''}`.replace(/, $/, '');
+  const suffix1 = ` — ${topKeywords[0]}`;
+  if (topKeywords.length >= 2 && (enhancedDesc + suffix2).length <= 155) enhancedDesc = enhancedDesc + suffix2;
+  else if ((enhancedDesc + suffix1).length <= 155) enhancedDesc = enhancedDesc + suffix1;
+}
+
 const alternateLinks = supportedLangs.map(l => {
   const href = l === 'en' ? `${SITE.url}/${game.slug}/` : `${SITE.url}/${l}/${game.slug}/`;
   return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
@@ -32,15 +83,17 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "VideoGame",
-      "name": `Play ${game.title} Online Free`,
-      "description": game.desc,
-      "url": `${SITE.url}/${game.slug}/`,
+      "name": pageTitle,
+      "description": enhancedDesc,
+      "url": `${SITE.url}/${lang}/${game.slug}/`,
       "image": game.img,
       "gamePlatform": game.system || "Game Boy Advance",
       "genre": game.genre,
+      "keywords": topKeywords.join(', '),
       "datePublished": String(game.year),
       "applicationCategory": "GameEmulator",
       "isAccessibleForFree": true,
+      "inLanguage": lang,
       "author": { "@type": "Organization", "name": SITE.name },
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
     },
@@ -77,7 +130,7 @@ const jsonLd = {
 
 <EmulatorLayout
   title={`${pageTitle} | EggerMath`}
-  description={pageDesc}
+  description={enhancedDesc}
   canonical={`${SITE.url}/${lang}/${game.slug}/`}
   jsonLd={jsonLd}
   hreflangHtml={alternateLinks}
