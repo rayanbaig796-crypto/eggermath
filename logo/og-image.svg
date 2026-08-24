@@ -1,9 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <rect width="1200" height="630" fill="#161a13"/>
-  <rect x="40" y="40" width="1120" height="550" rx="20" fill="#1a1f16" stroke="#c4a35a" stroke-width="2"/>
-  <text x="600" y="200" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="72" fill="#c4a35a">EggerMath</text>
-  <text x="600" y="280" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" fill="#f0ebe0">Play GBA Games Online Free</text>
-  <text x="600" y="340" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#a09880">Pokemon • Zelda • Mario • Metroid • 25+ Titles</text>
-  <text x="600" y="420" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#888">No Download • Save States • Mobile Controls • Free</text>
-  <rect x="350" y="470" width="500" height="4" rx="2" fill="#c4a35a" opacity="0.3"/>
+  <rect width="1200" height="630" fill="#0d0d0d"/>
+  <g transform="translate(400,115)">
+    <rect width="400" height="400" rx="80" fill="#cc0000"/>
+    <circle cx="200" cy="200" r="150" fill="#e8c8a0"/>
+    <circle cx="140" cy="170" r="22" fill="#1a1a1a"/>
+    <circle cx="260" cy="170" r="22" fill="#1a1a1a"/>
+    <ellipse cx="200" cy="250" rx="36" ry="18" fill="#1a1a1a"/>
+  </g>
 </svg>
