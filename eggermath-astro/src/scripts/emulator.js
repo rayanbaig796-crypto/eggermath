@@ -213,17 +213,27 @@ function setupKeyboard() {
   document.addEventListener('keydown', e => {
     if (e.key === 'F5') {
       e.preventDefault();
-      if (emulator) { emulator.saveState(activeSlot); syncSaves(); setStatus('State saved'); setTimeout(() => setStatus(''), 1500); }
+      if (emulator) {
+        try { emulator.saveState(activeSlot); syncSaves(); setStatus('State saved (slot ' + activeSlot + ')'); }
+        catch (err) { console.error('Save error:', err); setStatus('Save failed'); }
+        setTimeout(() => setStatus(''), 1500);
+      }
       return;
     }
     if (e.key === 'F9') {
       e.preventDefault();
-      if (emulator) { emulator.loadState(activeSlot); setStatus('State loaded'); setTimeout(() => setStatus(''), 1500); }
+      if (emulator) {
+        try { emulator.loadState(activeSlot); setStatus('State loaded (slot ' + activeSlot + ')'); }
+        catch (err) { console.error('Load error:', err); setStatus('Load failed — no save in slot ' + activeSlot); }
+        setTimeout(() => setStatus(''), 1500);
+      }
       return;
     }
     if (e.key === 'F7') {
       e.preventDefault();
       activeSlot = (activeSlot + 1) % 10;
+      var slotNum = document.getElementById('slot-num');
+      if (slotNum) slotNum.textContent = activeSlot;
       setStatus('Save slot: ' + activeSlot);
       setTimeout(() => setStatus(''), 1500);
       return;
@@ -303,18 +313,37 @@ function setupFullscreen() {
   var btnSaveState = document.getElementById('btn-save-state');
   if (btnSaveState) btnSaveState.addEventListener('click', () => {
     if (!emulator) return;
-    const ok = emulator.saveState(activeSlot);
-    setStatus(ok ? 'State saved (slot ' + activeSlot + ')' : 'Save failed');
-    syncSaves();
+    try {
+      emulator.saveState(activeSlot);
+      syncSaves();
+      setStatus('State saved (slot ' + activeSlot + ')');
+    } catch (e) {
+      console.error('Save state error:', e);
+      setStatus('Save failed: ' + e.message);
+    }
     setTimeout(() => setStatus(''), 2000);
   });
 
   var btnLoadState = document.getElementById('btn-load-state');
   if (btnLoadState) btnLoadState.addEventListener('click', () => {
     if (!emulator) return;
-    const ok = emulator.loadState(activeSlot);
-    setStatus(ok ? 'State loaded (slot ' + activeSlot + ')' : 'Load failed — no save in slot ' + activeSlot);
+    try {
+      emulator.loadState(activeSlot);
+      setStatus('State loaded (slot ' + activeSlot + ')');
+    } catch (e) {
+      console.error('Load state error:', e);
+      setStatus('Load failed — no save in slot ' + activeSlot);
+    }
     setTimeout(() => setStatus(''), 2000);
+  });
+
+  var btnSlot = document.getElementById('btn-slot');
+  if (btnSlot) btnSlot.addEventListener('click', () => {
+    activeSlot = (activeSlot + 1) % 10;
+    var slotNum = document.getElementById('slot-num');
+    if (slotNum) slotNum.textContent = activeSlot;
+    setStatus('Save slot: ' + activeSlot);
+    setTimeout(() => setStatus(''), 1500);
   });
 
   var btnFF = document.getElementById('btn-fast-forward');
