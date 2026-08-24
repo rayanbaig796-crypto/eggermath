@@ -1,0 +1,16 @@
+name: Auto Campaign
+on:
+  schedule:
+    - cron: '0 9 * * *' # daily 09:00 UTC
+  workflow_dispatch: {}
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/auto-campaign.mjs
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
