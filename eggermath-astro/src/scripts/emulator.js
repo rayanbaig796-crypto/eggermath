@@ -213,34 +213,17 @@ function setupKeyboard() {
   document.addEventListener('keydown', e => {
     if (e.key === 'F5') {
       e.preventDefault();
-      if (emulator) {
-        try {
-          emulator.saveState(activeSlot); syncSaves();
-          var th=captureThumb(); if(th) try{ localStorage.setItem('slot_thumb_'+getSlotSlug()+'_'+activeSlot, th); }catch(e){}
-          try{ localStorage.setItem('slot_time_'+getSlotSlug()+'_'+activeSlot, String(Date.now())); }catch(e){}
-          setStatus('State saved (slot ' + activeSlot + ')'); var tr=document.getElementById('slot-tray'); if(tr && !tr.classList.contains('hidden')) try{ renderSlotTray(); }catch(e){}
-        } catch (err) { console.error('Save error:', err); setStatus('Save failed'); }
-        setTimeout(() => setStatus(''), 1500);
-      }
+      if (emulator) openSlotPicker('save');
       return;
     }
     if (e.key === 'F9') {
       e.preventDefault();
-      if (emulator) {
-        try { emulator.loadState(activeSlot); setStatus('State loaded (slot ' + activeSlot + ')'); }
-        catch (err) { console.error('Load error:', err); setStatus('Load failed — no save in slot ' + activeSlot); }
-        setTimeout(() => setStatus(''), 1500);
-      }
+      if (emulator) openSlotPicker('load');
       return;
     }
     if (e.key === 'F7') {
       e.preventDefault();
-      activeSlot = (activeSlot + 1) % 10;
-      var slotNum = document.getElementById('slot-num');
-      if (slotNum) slotNum.textContent = activeSlot;
-      var tr=document.getElementById('slot-tray'); if(tr && !tr.classList.contains('hidden')) try{ renderSlotTray(); }catch(e){}
-      setStatus('Save slot: ' + activeSlot);
-      setTimeout(() => setStatus(''), 1500);
+      openSlotPicker(slotPickerMode || 'save');
       return;
     }
     const btn = keyMap[e.code];
@@ -534,85 +517,150 @@ function setupTouchControls() {
   });
   window.addEventListener('blur', unpressAll);
 }
-function getSlotSlug(){ return (window.__GAME_PAGE__ && window.__GAME_PAGE__.slug) || (window.__GAMES_DATA__ && window.__GAMES_DATA__[0] && window.__GAMES_DATA__[0].slug) || 'global'; }
-function getSlotThumb(slot){ try{ return localStorage.getItem('slot_thumb_'+getSlotSlug()+'_'+slot); }catch(e){ return null; } }
-function getSlotTime(slot){ try{ return localStorage.getItem('slot_time_'+getSlotSlug()+'_'+slot); }catch(e){ return null; } }
-function captureThumb(){
-  try{ if(canvas && canvas.width>0) return canvas.toDataURL('image/png'); }catch(e){}
-  return null;
+/* ── Slot Picker (PPSSPP-style) ── */
+function getSlotMetaKey() {
+  var slug = (window.__GAME_PAGE__ && window.__GAME_PAGE__.slug) || 'unknown';
+  return 'gba_slot_meta_' + slug;
 }
-function renderSlotTray(){
-  var grid=document.getElementById('slot-grid');
-  var tray=document.getElementById('slot-tray');
-  if(!grid||!tray) return;
-  grid.innerHTML='';
-  for(var i=0;i<10;i++){
-    var card=document.createElement('div');
-    card.className='slot-card'+(i===activeSlot?' active':'');
-    var thumb=getSlotThumb(i);
-    var time=getSlotTime(i);
-    var thumbHtml=thumb?'<img class="slot-thumb" src="'+thumb+'"/>':'<div class="slot-thumb empty">Empty</div>';
-    var timeHtml=time?new Date(parseInt(time)).toLocaleString():'—';
-    card.innerHTML=thumbHtml+'<div class="slot-label">Slot '+i+'</div><div class="slot-time">'+timeHtml+'</div><div class="slot-actions"><button class="slot-btn save" data-save="'+i+'">Save</button><button class="slot-btn" data-load="'+i+'">Load</button></div>';
-    (function(slot){
-      card.querySelector('[data-save="'+slot+'"]').addEventListener('click',function(e){
-        e.stopPropagation();
-        if(!emulator){ setStatus('Load a game first'); setTimeout(()=>setStatus(''),1500); return; }
-        try{
-          activeSlot=slot;
-          var sn=document.getElementById('slot-num'); if(sn) sn.textContent=activeSlot;
-          emulator.saveState(activeSlot); syncSaves();
-          var th=captureThumb(); if(th) try{ localStorage.setItem('slot_thumb_'+getSlotSlug()+'_'+activeSlot, th); }catch(e){}
-          try{ localStorage.setItem('slot_time_'+getSlotSlug()+'_'+activeSlot, String(Date.now())); }catch(e){}
-          setStatus('Saved to slot '+activeSlot);
-          renderSlotTray();
-        }catch(err){ console.error(err); setStatus('Save failed'); }
-        setTimeout(()=>setStatus(''),1500);
-      });
-      card.querySelector('[data-load="'+slot+'"]').addEventListener('click',function(e){
-        e.stopPropagation();
-        if(!emulator){ setStatus('Load a game first'); setTimeout(()=>setStatus(''),1500); return; }
-        try{
-          activeSlot=slot;
-          var sn2=document.getElementById('slot-num'); if(sn2) sn2.textContent=activeSlot;
-          emulator.loadState(activeSlot); setStatus('Loaded slot '+activeSlot);
-          renderSlotTray();
-        }catch(err){ console.error(err); setStatus('No save in slot '+activeSlot); }
-        setTimeout(()=>setStatus(''),1500);
-      });
-      card.addEventListener('click',function(){ activeSlot=slot; var sn3=document.getElementById('slot-num'); if(sn3) sn3.textContent=activeSlot; renderSlotTray(); setStatus('Selected slot '+activeSlot); setTimeout(()=>setStatus(''),1000); });
-    })(i);
-    grid.appendChild(card);
+function getSlotMeta() {
+  try { return JSON.parse(localStorage.getItem(getSlotMetaKey()) || '{}'); } catch(e) { return {}; }
+}
+function setSlotMeta(meta) {
+  try { localStorage.setItem(getSlotMetaKey(), JSON.stringify(meta)); } catch(e) {}
+}
+function saveSlotTimestamp(slot) {
+  var meta = getSlotMeta();
+  meta[slot] = new Date().toISOString();
+  setSlotMeta(meta);
+}
+function clearSlotTimestamp(slot) {
+  var meta = getSlotMeta();
+  delete meta[slot];
+  setSlotMeta(meta);
+}
+function formatSlotTime(iso) {
+  if (!iso) return 'Empty';
+  var d = new Date(iso);
+  var now = new Date();
+  var diff = now - d;
+  if (diff < 60000) return 'Just now';
+  if (diff < 3600000) return Math.floor(diff/60000) + 'm ago';
+  if (diff < 86400000) return Math.floor(diff/3600000) + 'h ago';
+  return d.toLocaleDateString('en-US', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' });
+}
+
+function createSlotPicker() {
+  if (document.getElementById('slot-picker-overlay')) return;
+  var overlay = document.createElement('div');
+  overlay.id = 'slot-picker-overlay';
+  overlay.innerHTML = '<div id="slot-picker-modal">'
+    + '<div class="sp-header"><span id="sp-title">Save States</span><button id="sp-close" class="sp-close-btn">&times;</button></div>'
+    + '<div id="sp-slots" class="sp-slots"></div>'
+    + '<div class="sp-footer"><span class="sp-hint">Click a slot to save or load</span></div>'
+    + '</div>';
+  document.body.appendChild(overlay);
+
+  overlay.addEventListener('click', function(e) {
+    if (e.target === overlay) closeSlotPicker();
+  });
+  document.getElementById('sp-close').addEventListener('click', closeSlotPicker);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && document.getElementById('slot-picker-overlay')) closeSlotPicker();
+  });
+}
+
+var slotPickerMode = 'save';
+
+function openSlotPicker(mode) {
+  slotPickerMode = mode;
+  createSlotPicker();
+  var overlay = document.getElementById('slot-picker-overlay');
+  var title = document.getElementById('sp-title');
+  var slotsEl = document.getElementById('sp-slots');
+  title.textContent = mode === 'save' ? 'Save State' : 'Load State';
+  title.style.color = mode === 'save' ? '#c4a35a' : '#6db3f2';
+
+  var meta = getSlotMeta();
+  var html = '';
+  for (var i = 0; i < 10; i++) {
+    var ts = meta[i] || null;
+    var timeStr = formatSlotTime(ts);
+    var isEmpty = !ts;
+    var currentClass = i === activeSlot ? ' sp-current' : '';
+    var emptyClass = isEmpty ? ' sp-empty' : '';
+    html += '<div class="sp-slot' + currentClass + emptyClass + '" data-slot="' + i + '">'
+      + '<div class="sp-slot-num">Slot ' + i + '</div>'
+      + '<div class="sp-slot-time">' + timeStr + '</div>'
+      + (mode === 'load' && isEmpty ? '<div class="sp-slot-action sp-no-save">No Save</div>' : '<div class="sp-slot-action">' + (mode === 'save' ? 'Save' : 'Load') + '</div>')
+      + '</div>';
+  }
+  slotsEl.innerHTML = html;
+
+  slotsEl.querySelectorAll('.sp-slot').forEach(function(el) {
+    el.addEventListener('click', function() {
+      var slot = parseInt(el.dataset.slot);
+      if (mode === 'save') {
+        if (!emulator) { setStatus('Load a game first'); closeSlotPicker(); setTimeout(function(){ setStatus(''); }, 1500); return; }
+        try {
+          emulator.saveState(slot);
+          syncSaves();
+          saveSlotTimestamp(slot);
+          activeSlot = slot;
+          updateSlotDisplay();
+          setStatus('Saved to slot ' + slot);
+        } catch(e) { console.error('Save error:', e); setStatus('Save failed: ' + e.message); }
+      } else {
+        if (!emulator) { setStatus('Load a game first'); closeSlotPicker(); setTimeout(function(){ setStatus(''); }, 1500); return; }
+        if (!meta[slot]) { setStatus('No save in slot ' + slot); closeSlotPicker(); setTimeout(function(){ setStatus(''); }, 1500); return; }
+        try {
+          emulator.loadState(slot);
+          activeSlot = slot;
+          updateSlotDisplay();
+          setStatus('Loaded from slot ' + slot);
+        } catch(e) { console.error('Load error:', e); setStatus('Load failed: ' + e.message); }
+      }
+      closeSlotPicker();
+      setTimeout(function(){ setStatus(''); }, 2000);
+    });
+  });
+
+  overlay.classList.add('sp-visible');
+}
+
+function closeSlotPicker() {
+  var overlay = document.getElementById('slot-picker-overlay');
+  if (overlay) overlay.classList.remove('sp-visible');
+}
+
+function updateSlotDisplay() {
+  var slotNum = document.getElementById('slot-num');
+  if (slotNum) slotNum.textContent = activeSlot;
+  var btnSlot = document.getElementById('btn-slot');
+  if (btnSlot) {
+    var meta = getSlotMeta();
+    btnSlot.classList.toggle('sp-has-save', !!meta[activeSlot]);
   }
 }
+
 function initGameButtons() {
   var btnSaveState = document.getElementById('btn-save-state');
-  if (btnSaveState) btnSaveState.addEventListener('click', () => {
-    if (!emulator) { setStatus('Load a game first'); setTimeout(() => setStatus(''), 1500); return; }
-    try {
-      emulator.saveState(activeSlot); syncSaves();
-      var th=captureThumb(); if(th) try{ localStorage.setItem('slot_thumb_'+getSlotSlug()+'_'+activeSlot, th); }catch(e){}
-      try{ localStorage.setItem('slot_time_'+getSlotSlug()+'_'+activeSlot, String(Date.now())); }catch(e){}
-      setStatus('State saved (slot ' + activeSlot + ')'); renderSlotTray();
-    } catch (e) { console.error('Save state error:', e); setStatus('Save failed: ' + e.message); }
-    setTimeout(() => setStatus(''), 2000);
+  if (btnSaveState) btnSaveState.addEventListener('click', function() {
+    if (!emulator) { setStatus('Load a game first'); setTimeout(function(){ setStatus(''); }, 1500); return; }
+    openSlotPicker('save');
   });
+
   var btnLoadState = document.getElementById('btn-load-state');
-  if (btnLoadState) btnLoadState.addEventListener('click', () => {
-    if (!emulator) { setStatus('Load a game first'); setTimeout(() => setStatus(''), 1500); return; }
-    try { emulator.loadState(activeSlot); setStatus('State loaded (slot ' + activeSlot + ')'); }
-    catch (e) { console.error('Load state error:', e); setStatus('Load failed — no save in slot ' + activeSlot); }
-    setTimeout(() => setStatus(''), 2000);
+  if (btnLoadState) btnLoadState.addEventListener('click', function() {
+    if (!emulator) { setStatus('Load a game first'); setTimeout(function(){ setStatus(''); }, 1500); return; }
+    openSlotPicker('load');
   });
+
   var btnSlot = document.getElementById('btn-slot');
-  var tray=document.getElementById('slot-tray');
-  var closeBtn=document.getElementById('slot-tray-close');
-  if (btnSlot) btnSlot.addEventListener('click', () => {
-    if(!tray) { activeSlot=(activeSlot+1)%10; var sn=document.getElementById('slot-num'); if(sn) sn.textContent=activeSlot; setStatus('Save slot: '+activeSlot); setTimeout(()=>setStatus(''),1500); return; }
-    tray.classList.toggle('hidden');
-    if(!tray.classList.contains('hidden')) renderSlotTray();
+  if (btnSlot) btnSlot.addEventListener('click', function() {
+    openSlotPicker(slotPickerMode || 'save');
   });
-  if(closeBtn && tray) closeBtn.addEventListener('click', ()=> tray.classList.add('hidden'));
+
+  updateSlotDisplay();
 }
 initGameButtons();
 
