@@ -203,11 +203,20 @@ const jsonLd = {
       </div>
     </div>
 
+    <div id="slot-tray" class="slot-tray hidden">
+      <div class="slot-tray-header">
+        <span>Save Slots — PPSSPP Style</span>
+        <button id="slot-tray-close" class="slot-close">&times;</button>
+      </div>
+      <div class="slot-grid" id="slot-grid"></div>
+      <div class="slot-tray-hint">Tap Save to store, Load to restore. 10 slots per game.</div>
+    </div>
+
     <div class="keyboard-hints desktop-only">
       <div class="kbd-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or <kbd>&uarr;</kbd><kbd>&larr;</kbd><kbd>&darr;</kbd><kbd>&rarr;</kbd> D-Pad</div>
       <div class="kbd-hint"><kbd>K</kbd> A &nbsp; <kbd>J</kbd> B &nbsp; <kbd>Q</kbd> L &nbsp; <kbd>E</kbd> R</div>
       <div class="kbd-hint"><kbd>Enter</kbd> Start &nbsp; <kbd>RShift</kbd> Select</div>
-      <div class="kbd-hint"><kbd>F5</kbd> Save &nbsp; <kbd>F7</kbd> Slot &nbsp; <kbd>F9</kbd> Load &nbsp; Double-click canvas for fullscreen</div>
+      <div class="kbd-hint"><kbd>F5</kbd> Save &nbsp; <kbd>F7</kbd> Slot &nbsp; <kbd>F9</kbd> Load &nbsp; Click Slot for PPSSPP slots</div>
     </div>
 
     <TouchControls />
@@ -534,6 +543,22 @@ const jsonLd = {
     font-size: 13px;
   }
   .share-widget a:hover { background: rgba(255,255,255,0.12); color: var(--accent); }
+  .slot-tray { max-width:800px; margin:16px auto 0; background:rgba(20,20,20,0.98); border:1px solid rgba(255,255,255,0.1); border-radius:12px; padding:16px; }
+  .slot-tray.hidden { display:none; }
+  .slot-tray-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; font-weight:700; color:var(--text); }
+  .slot-close { background:none; border:none; color:var(--text-muted); font-size:22px; cursor:pointer; }
+  .slot-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
+  @media(max-width:600px){ .slot-grid{ grid-template-columns:repeat(2,1fr);} }
+  .slot-card { background:rgba(255,255,255,0.04); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:8px; text-align:center; }
+  .slot-card.active { border-color:var(--accent); box-shadow:0 0 0 1px var(--accent); }
+  .slot-thumb { width:100%; aspect-ratio:3/2; background:#000; border-radius:6px; object-fit:cover; display:block; }
+  .slot-thumb.empty { display:flex; align-items:center; justify-content:center; color:var(--text-muted); font-size:11px; height:80px; }
+  .slot-label { font-size:12px; color:var(--text-muted); margin:6px 0 4px; }
+  .slot-time { font-size:10px; color:var(--accent); margin-bottom:6px; min-height:12px; }
+  .slot-actions { display:flex; gap:6px; justify-content:center; }
+  .slot-btn { padding:4px 8px; font-size:11px; border-radius:6px; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.06); color:var(--text); cursor:pointer; }
+  .slot-btn.save { background:var(--accent); color:#000; border-color:var(--accent); }
+  .slot-tray-hint { text-align:center; font-size:11px; color:var(--text-muted); margin-top:10px; }
 </style>
 
 <script is:inline src="/ios-compat.js"></script>
