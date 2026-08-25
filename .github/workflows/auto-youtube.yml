@@ -1,0 +1,36 @@
+name: Auto YouTube Shorts
+on:
+  schedule:
+    - cron: '0 16 * * *'  # 4 PM UTC
+  workflow_dispatch:
+    inputs:
+      game:
+        description: 'Game slug (e.g. pokemon-emerald)'
+        required: true
+
+jobs:
+  youtube-short:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install ffmpeg
+        run: sudo apt-get install -y ffmpeg
+
+      - name: Generate Short
+        run: node scripts/generate-yt-short.mjs
+        env:
+          GAME_SLUG: ${{ github.event.inputs.game || '' }}
+
+      - name: Upload to YouTube (needs OAuth)
+        if: env.YT_CLIENT_ID != ''
+        run: node scripts/upload-yt.mjs
+        env:
+          YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+          YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+          YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}

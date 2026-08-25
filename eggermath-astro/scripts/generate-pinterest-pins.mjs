@@ -1,0 +1,105 @@
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'fs';
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const GAMES_PATH = join(__dirname, '..', 'src', 'data', 'games.js');
+const OUT_DIR = join(__dirname, '..', 'public', 'pins');
+
+const games = [];
+const content = readFileSync(GAMES_PATH, 'utf-8');
+for (const block of content.split(/\},\s*\{/)) {
+  const s = block.match(/slug:\s*['"]([^'"]+)['"]/);
+  const t = block.match(/title:\s*['"]([^'"]+)['"]/);
+  const g = block.match(/genre:\s*['"]([^'"]+)['"]/);
+  const y = block.match(/year:\s*['"]?(\d{4})['"]?/);
+  if (s && t) {
+    games.push({
+      slug: s[1],
+      title: t[1],
+      genre: g ? g[1] : 'GBA',
+      year: y ? y[1] : '',
+      img: '',
+    });
+  }
+}
+
+if (!existsSync(OUT_DIR)) mkdirSync(OUT_DIR, { recursive: true });
+
+function generatePinSVG(game) {
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1500" viewBox="0 0 1000 1500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d0d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1500" fill="url(#bg)"/>
+  
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="1000" height="6" fill="#c4a35a"/>
+  
+  <!-- Game cover image area -->
+  <rect x="50" y="80" width="900" height="500" rx="16" fill="#111" stroke="#c4a35a" stroke-width="2"/>
+  
+  <!-- Controller icon -->
+  <g transform="translate(420, 240)" fill="#c4a35a" opacity="0.3">
+    <rect x="0" y="20" width="160" height="80" rx="20"/>
+    <circle cx="30" cy="60" r="12" fill="none" stroke="#c4a35a" stroke-width="3"/>
+    <circle cx="130" cy="60" r="8" fill="#c4a35a"/>
+    <circle cx="115" cy="48" r="8" fill="#c4a35a"/>
+    <circle cx="145" cy="48" r="8" fill="#c4a35a"/>
+    <circle cx="130" cy="72" r="8" fill="#c4a35a"/>
+  </g>
+  
+  <!-- Play button overlay -->
+  <g transform="translate(450, 260)">
+    <circle cx="50" cy="50" r="50" fill="#c4a35a" opacity="0.9"/>
+    <polygon points="40,30 40,70 70,50" fill="#0d0d0d"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="500" y="660" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="#f0ebe0">${game.title}</text>
+  
+  <!-- Genre + Year -->
+  <text x="500" y="720" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#c4a35a">${game.genre}${game.year ? ' · ' + game.year : ''}</text>
+  
+  <!-- Divider -->
+  <rect x="400" y="750" width="200" height="2" fill="#c4a35a" opacity="0.5"/>
+  
+  <!-- Features list -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#aaa">
+    <text x="500" y="810" text-anchor="middle">🎮 Play in Browser</text>
+    <text x="500" y="860" text-anchor="middle">💾 Save States (10 Slots)</text>
+    <text x="500" y="910" text-anchor="middle">📱 Mobile + Desktop</text>
+    <text x="500" y="960" text-anchor="middle">⚡ No Download Required</text>
+  </g>
+  
+  <!-- CTA Button -->
+  <rect x="250" y="1020" width="500" height="70" rx="35" fill="#c4a35a"/>
+  <text x="500" y="1065" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="30" font-weight="700" fill="#0d0d0d">Play Now Free →</text>
+  
+  <!-- URL -->
+  <text x="500" y="1150" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#666">eggermath.com/${game.slug}</text>
+  
+  <!-- Bottom accent -->
+  <rect x="0" y="1494" width="1000" height="6" fill="#c4a35a"/>
+  
+  <!-- Brand -->
+  <text x="500" y="1460" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#444">EggerMath Arcade</text>
+</svg>`;
+}
+
+console.log(`Generating ${games.length} Pinterest pin images...`);
+
+for (const game of games) {
+  const svg = generatePinSVG(game);
+  const filename = `pin-${game.slug}.svg`;
+  writeFileSync(join(OUT_DIR, filename), svg);
+  console.log(`  ✓ ${filename}`);
+}
+
+console.log(`\nDone! ${games.length} pin images saved to ${OUT_DIR}`);
+console.log('\nTo convert to PNG (for Pinterest upload), run:');
+console.log('  npx svg2png-cli public/pins/*.svg --output public/pins/');
+console.log('\nOr upload SVGs directly to Pinterest via the browser.');

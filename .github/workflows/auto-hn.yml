@@ -1,0 +1,19 @@
+name: Auto Post to Hacker News
+on:
+  schedule:
+    - cron: '0 13 * * *'  # 1 PM UTC = 6:30 PM IST
+  workflow_dispatch:
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Submit to HN
+        run: node scripts/auto-hn.mjs
+        env:
+          HN_USERNAME: ${{ secrets.HN_USERNAME }}
+          HN_PASSWORD: ${{ secrets.HN_PASSWORD }}
