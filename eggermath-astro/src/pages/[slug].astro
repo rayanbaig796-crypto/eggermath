@@ -595,6 +595,77 @@ const jsonLd = {
   .sp-hint { font-size: 11px; color: rgba(255,255,255,0.3); }
 </style>
 
+<style is:global>
+  #slot-picker-overlay {
+    display: none !important;
+    position: fixed !important;
+    inset: 0 !important;
+    z-index: 9999 !important;
+    background: rgba(0,0,0,0.7) !important;
+    backdrop-filter: blur(4px) !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #slot-picker-overlay.sp-visible { display: flex !important; }
+  #slot-picker-modal {
+    background: #1a1a2e !important;
+    border: 1px solid rgba(196,163,90,0.3) !important;
+    border-radius: 14px !important;
+    width: 380px !important;
+    max-width: 92vw !important;
+    max-height: 80vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.6) !important;
+    overflow: hidden !important;
+  }
+  #slot-picker-modal .sp-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 14px 18px !important;
+    border-bottom: 1px solid rgba(255,255,255,0.08) !important;
+  }
+  #sp-title { font-size: 16px !important; font-weight: 700 !important; }
+  #slot-picker-modal .sp-close-btn {
+    background: none !important; border: none !important; color: #aaa !important; font-size: 22px !important;
+    cursor: pointer !important; padding: 0 4px !important; line-height: 1 !important;
+  }
+  #slot-picker-modal .sp-close-btn:hover { color: #fff !important; }
+  #slot-picker-modal .sp-slots { flex: 1 !important; overflow-y: auto !important; padding: 6px 10px !important; }
+  #slot-picker-modal .sp-slot {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 10px 14px !important;
+    border-radius: 10px !important;
+    cursor: pointer !important;
+    transition: background 0.12s !important;
+    border: 1px solid transparent !important;
+  }
+  #slot-picker-modal .sp-slot:hover { background: rgba(255,255,255,0.08) !important; border-color: rgba(255,255,255,0.1) !important; }
+  #slot-picker-modal .sp-slot.sp-current { border-color: #c4a35a !important; background: rgba(196,163,90,0.1) !important; }
+  #slot-picker-modal .sp-slot.sp-empty .sp-slot-time { color: rgba(255,255,255,0.25) !important; font-style: italic !important; }
+  #slot-picker-modal .sp-slot-num {
+    font-size: 14px !important; font-weight: 700 !important; color: #f0ebe0 !important;
+    min-width: 52px !important;
+  }
+  #slot-picker-modal .sp-slot-time {
+    flex: 1 !important; font-size: 12px !important; color: #aaa !important;
+  }
+  #slot-picker-modal .sp-slot-action {
+    font-size: 11px !important; font-weight: 600 !important; text-transform: uppercase !important;
+    color: #c4a35a !important; letter-spacing: 0.5px !important;
+  }
+  #slot-picker-modal .sp-slot-action.sp-no-save { color: rgba(255,255,255,0.2) !important; }
+  #slot-picker-modal .sp-footer {
+    padding: 10px 18px !important;
+    border-top: 1px solid rgba(255,255,255,0.06) !important;
+    text-align: center !important;
+  }
+  #slot-picker-modal .sp-hint { font-size: 11px !important; color: rgba(255,255,255,0.3) !important; }
+</style>
+
 <script is:inline src="/ios-compat.js"></script>
 <script is:inline type="module">
   import init from '/gba-emulator-web/mgba-v2.js';
