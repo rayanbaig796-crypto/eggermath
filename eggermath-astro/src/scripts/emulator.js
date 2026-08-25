@@ -310,41 +310,7 @@ function setupFullscreen() {
     }
   });
 
-  var btnSaveState = document.getElementById('btn-save-state');
-  if (btnSaveState) btnSaveState.addEventListener('click', () => {
-    if (!emulator) return;
-    try {
-      emulator.saveState(activeSlot);
-      syncSaves();
-      setStatus('State saved (slot ' + activeSlot + ')');
-    } catch (e) {
-      console.error('Save state error:', e);
-      setStatus('Save failed: ' + e.message);
-    }
-    setTimeout(() => setStatus(''), 2000);
-  });
-
-  var btnLoadState = document.getElementById('btn-load-state');
-  if (btnLoadState) btnLoadState.addEventListener('click', () => {
-    if (!emulator) return;
-    try {
-      emulator.loadState(activeSlot);
-      setStatus('State loaded (slot ' + activeSlot + ')');
-    } catch (e) {
-      console.error('Load state error:', e);
-      setStatus('Load failed — no save in slot ' + activeSlot);
-    }
-    setTimeout(() => setStatus(''), 2000);
-  });
-
-  var btnSlot = document.getElementById('btn-slot');
-  if (btnSlot) btnSlot.addEventListener('click', () => {
-    activeSlot = (activeSlot + 1) % 10;
-    var slotNum = document.getElementById('slot-num');
-    if (slotNum) slotNum.textContent = activeSlot;
-    setStatus('Save slot: ' + activeSlot);
-    setTimeout(() => setStatus(''), 1500);
-  });
+  // save/load/slot moved to global init — see initGameButtons() below
 
   var btnFF = document.getElementById('btn-fast-forward');
   if (btnFF) {
@@ -563,6 +529,31 @@ function setupTouchControls() {
   });
   window.addEventListener('blur', unpressAll);
 }
+function initGameButtons() {
+  var btnSaveState = document.getElementById('btn-save-state');
+  if (btnSaveState) btnSaveState.addEventListener('click', () => {
+    if (!emulator) { setStatus('Load a game first'); setTimeout(() => setStatus(''), 1500); return; }
+    try { emulator.saveState(activeSlot); syncSaves(); setStatus('State saved (slot ' + activeSlot + ')'); }
+    catch (e) { console.error('Save state error:', e); setStatus('Save failed: ' + e.message); }
+    setTimeout(() => setStatus(''), 2000);
+  });
+  var btnLoadState = document.getElementById('btn-load-state');
+  if (btnLoadState) btnLoadState.addEventListener('click', () => {
+    if (!emulator) { setStatus('Load a game first'); setTimeout(() => setStatus(''), 1500); return; }
+    try { emulator.loadState(activeSlot); setStatus('State loaded (slot ' + activeSlot + ')'); }
+    catch (e) { console.error('Load state error:', e); setStatus('Load failed — no save in slot ' + activeSlot); }
+    setTimeout(() => setStatus(''), 2000);
+  });
+  var btnSlot = document.getElementById('btn-slot');
+  if (btnSlot) btnSlot.addEventListener('click', () => {
+    activeSlot = (activeSlot + 1) % 10;
+    var slotNum = document.getElementById('slot-num');
+    if (slotNum) slotNum.textContent = activeSlot;
+    setStatus('Save slot: ' + activeSlot);
+    setTimeout(() => setStatus(''), 1500);
+  });
+}
+initGameButtons();
 
 /* ── Continue Playing ── */
 var CONTINUE_KEY = 'gba_continue_games';
