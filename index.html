@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EggerMath Automation Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <span class="logo-icon">⚡</span>
+        <h1>EggerMath <span class="gold">Automation</span></h1>
+      </div>
+      <div class="header-right">
+        <span class="last-updated" id="lastUpdated">Loading...</span>
+        <button class="refresh-btn" id="refreshBtn" title="Refresh">↻</button>
+      </div>
+    </header>
+
+    <div class="status-bar" id="statusBar">
+      <div class="status-dot green"></div>
+      <span>All systems operational</span>
+    </div>
+
+    <div class="grid">
+      <!-- Site Status -->
+      <div class="card" data-card="site">
+        <div class="card-header">
+          <div class="card-icon">🌐</div>
+          <div>
+            <h2>eggermath.com</h2>
+            <span class="card-sub">Live Site</span>
+          </div>
+          <span class="badge badge-green" id="siteStatus">Checking...</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Response</span>
+            <span class="stat-value" id="siteResponse">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">SSL</span>
+            <span class="stat-value" id="siteSSL">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Uptime</span>
+            <span class="stat-value" id="siteUptime">—</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://www.eggermath.com" target="_blank">Visit Site ↗</a>
+        </div>
+      </div>
+
+      <!-- Dev.to Auto-Campaign -->
+      <div class="card" data-card="devto">
+        <div class="card-header">
+          <div class="card-icon">📝</div>
+          <div>
+            <h2>Dev.to Campaign</h2>
+            <span class="card-sub">Daily articles · 9 AM UTC</span>
+          </div>
+          <span class="badge" id="devtoStatus">—</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Last Run</span>
+            <span class="stat-value" id="devtoLast">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Next Run</span>
+            <span class="stat-value" id="devtoNext">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Total Posts</span>
+            <span class="stat-value" id="devtoTotal">—</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://dev.to/eggermath" target="_blank">View Dev.to Profile ↗</a>
+        </div>
+      </div>
+
+      <!-- HN Auto-Post -->
+      <div class="card" data-card="hn">
+        <div class="card-header">
+          <div class="card-icon">🔶</div>
+          <div>
+            <h2>Hacker News</h2>
+            <span class="card-sub">Daily posts · 1 PM UTC</span>
+          </div>
+          <span class="badge" id="hnStatus">—</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Last Run</span>
+            <span class="stat-value" id="hnLast">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Next Run</span>
+            <span class="stat-value" id="hnNext">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Strategy</span>
+            <span class="stat-value">Show HN format</span>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="https://news.ycombinator.com" target="_blank">Visit HN ↗</a>
+        </div>
+      </div>
+
+      <!-- IndexNow -->
+      <div class="card" data-card="indexnow">
+        <div class="card-header">
+          <div class="card-icon">🔍</div>
+          <div>
+            <h2>IndexNow</h2>
+            <span class="card-sub">Search engine ping</span>
+          </div>
+          <span class="badge" id="indexnowStatus">—</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Last Ping</span>
+            <span class="stat-value" id="indexnowLast">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">URLs Submitted</span>
+            <span class="stat-value" id="indexnowUrls">—</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pinterest -->
+      <div class="card" data-card="pinterest">
+        <div class="card-header">
+          <div class="card-icon">📌</div>
+          <div>
+            <h2>Pinterest Pins</h2>
+            <span class="card-sub">52 pin images ready</span>
+          </div>
+          <span class="badge badge-blue" id="pinterestStatus">Ready</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Pins Generated</span>
+            <span class="stat-value" id="pinterestCount">52</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Action Required</span>
+            <span class="stat-value gold-text">Manual Upload</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- YouTube -->
+      <div class="card" data-card="youtube">
+        <div class="card-header">
+          <div class="card-icon">🎬</div>
+          <div>
+            <h2>YouTube Shorts</h2>
+            <span class="card-sub">Needs gameplay clips</span>
+          </div>
+          <span class="badge badge-yellow" id="youtubeStatus">Waiting</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Clips Needed</span>
+            <span class="stat-value">Upload to yt-clips/</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Status</span>
+            <span class="stat-value">Waiting for footage</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quora -->
+      <div class="card" data-card="quora">
+        <div class="card-header">
+          <div class="card-icon">❓</div>
+          <div>
+            <h2>Quora Answers</h2>
+            <span class="card-sub">Manual posting</span>
+          </div>
+          <span class="badge badge-purple" id="quoraStatus">Templates Ready</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">Strategy</span>
+            <span class="stat-value">1-2 answers/day</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">Templates</span>
+            <span class="stat-value">3 templates ready</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Game Library -->
+      <div class="card" data-card="games">
+        <div class="card-header">
+          <div class="card-icon">🎮</div>
+          <div>
+            <h2>Game Library</h2>
+            <span class="card-sub">Content pages</span>
+          </div>
+          <span class="badge badge-green" id="gamesStatus">52 games</span>
+        </div>
+        <div class="card-body">
+          <div class="stat-row">
+            <span class="stat-label">GBA Games</span>
+            <span class="stat-value" id="gbaCount">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">GBC Games</span>
+            <span class="stat-value" id="gbcCount">—</span>
+          </div>
+          <div class="stat-row">
+            <span class="stat-label">GB Games</span>
+            <span class="stat-value" id="gbCount">—</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recent Runs Log -->
+    <div class="log-section">
+      <h2>Recent Automation Runs</h2>
+      <div class="log-table-wrap">
+        <table class="log-table" id="runsLog">
+          <thead>
+            <tr>
+              <th>Workflow</th>
+              <th>Status</th>
+              <th>Started</th>
+              <th>Duration</th>
+              <th>Game Featured</th>
+            </tr>
+          </thead>
+          <tbody id="runsBody">
+            <tr><td colspan="5" class="loading-row">Loading runs...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <p>EggerMath Automation Dashboard · Data from GitHub Actions API</p>
+      <p class="gold">Built for eggermath.com</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
