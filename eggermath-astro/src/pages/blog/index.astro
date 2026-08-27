@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const posts = [
+  { slug: 'best-gba-games-2026', title: 'Best GBA Games to Play Online in 2026', desc: 'Top 10 GBA games you can play free in your browser — Pokemon, Zelda, Mario, and more.', date: '2026-08-26', category: 'Lists' },
+  { slug: 'how-to-save-gba-progress', title: 'How to Save Your GBA Game Progress in Browser', desc: 'Step-by-step guide to using save states in browser-based GBA emulators. Never lose progress again.', date: '2026-08-25', category: 'Guides' },
+  { slug: 'gba-vs-gbc-which-is-better', title: 'GBA vs GBC: Which Console Has Better Games?', desc: 'Comparing Game Boy Advance and Game Boy Color libraries. Which retro console wins?', date: '2026-08-24', category: 'Comparison' },
+  { slug: 'why-browser-emulation-is-the-future', title: 'Why Browser Emulation Is the Future of Retro Gaming', desc: 'No downloads, no setup — just click and play. Why WebAssembly emulators are changing everything.', date: '2026-08-23', category: 'Opinion' },
+  { slug: 'pokemon-emerald-nuzlocke-guide', title: 'Pokemon Emerald Nuzlocke Challenge: Complete Guide', desc: 'Rules, tips, and strategies for the ultimate Pokemon Emerald Nuzlocke run.', date: '2026-08-22', category: 'Guides' },
+];
+
+const jsonLd = {"@context":"https://schema.org","@type":"Blog","name":"EggerMath Blog","url":`${SITE.url}/blog/`,"description":"Guides, lists, and news about retro gaming and browser-based emulation."};
+---
+<BaseLayout title="Blog | EggerMath - Retro Gaming Guides & Lists" description="Guides, lists, and news about retro gaming, GBA emulation, and browser-based gaming." jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <h1 style="font-size:2rem;margin-bottom:8px">Blog</h1>
+  <p style="color:#888;margin-bottom:32px">Guides, lists, and news about retro gaming and browser emulation.</p>
+
+  {posts.map(post => (
+    <article style="margin-bottom:24px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+      <span style="color:#c4a35a;font-size:12px;text-transform:uppercase">{post.category}</span>
+      <time style="color:#555;font-size:12px;margin-left:8px">{post.date}</time>
+      <h2 style="margin:8px 0;font-size:1.2rem"><a href={`/blog/${post.slug}/`} style="color:#f0ebe0;text-decoration:none">{post.title}</a></h2>
+      <p style="color:#aaa;font-size:14px">{post.desc}</p>
+      <a href={`/blog/${post.slug}/`} style="color:#c4a35a;font-size:13px;text-decoration:none">Read more →</a>
+    </article>
+  ))}
+</main>
+</BaseLayout>

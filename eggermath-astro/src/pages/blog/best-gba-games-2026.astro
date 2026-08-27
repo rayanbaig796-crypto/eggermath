@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'Best GBA Games to Play Online in 2026',
+  desc: 'Top 10 GBA games you can play free in your browser — Pokemon, Zelda, Mario, and more.',
+  date: '2026-08-26',
+  category: 'Lists',
+};
+
+const games = [
+  { name: 'Pokemon Emerald', slug: 'pokemon-emerald', reason: 'The definitive Pokemon experience on GBA. 200+ Pokemon, Battle Frontier, and the Hoenn region.' },
+  { name: 'Zelda: Minish Cap', slug: 'zelda-minish-cap', reason: 'Beautiful pixel art, clever dungeon design, and the ability to shrink to mouse-size.' },
+  { name: 'Mario Kart: Super Circuit', slug: 'mario-kart-super-circuit', reason: 'Fast-paced racing with classic Mario characters. Still the best portable Mario Kart.' },
+  { name: 'Metroid Fusion', slug: 'metroid-fusion', reason: 'Tense atmosphere, tight controls, and one of the best stories in the Metroid series.' },
+  { name: 'Castlevania: Aria of Sorrow', slug: 'castlevania-aria-of-sorrow', reason: 'Soul collection system makes every playthrough unique. Peak Metroidvania.' },
+  { name: 'Fire Emblem: Sacred Stones', slug: 'fire-emblem-sacred-stones', reason: 'Deep strategy RPG with two campaigns and tons of replay value.' },
+  { name: 'Golden Sun', slug: 'golden-sun', reason: 'Epic RPG with djinn system, puzzle-filled dungeons, and stunning visuals for GBA.' },
+  { name: 'Super Mario Advance', slug: 'super-mario-advance', reason: 'Super Mario Bros. 2 remade with GBA graphics and sound.' },
+  { name: 'Kirby: Amazing Mirror', slug: 'kirby-amazing-mirror', reason: 'Non-linear Kirby with copy abilities and multiplayer fun.' },
+  { name: 'Pokemon FireRed', slug: 'pokemon-firered', reason: 'The best way to experience Generation 1. Updated graphics and Sevii Islands.' },
+];
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.date,"datePublished":"2026-08-26","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:24px">The Game Boy Advance has one of the best game libraries ever. Here are the top 10 GBA games you can play free in your browser on <a href="/" style="color:#c4a35a">EggerMath</a>:</p>
+
+  <ol style="padding-left:20px">
+    {games.map(g => (
+      <li style="margin-bottom:16px">
+        <a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none;font-weight:700">{g.name}</a>
+        <p style="color:#aaa;margin:4px 0 0;font-size:14px">{g.reason}</p>
+      </li>
+    ))}
+  </ol>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play These Games Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">All games are free to play in your browser. No download, no signup — just click and play.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/how-to-save-gba-progress/" style="color:#c4a35a;text-decoration:none">How to Save Your GBA Game Progress in Browser</a></li>
+      <li><a href="/blog/gba-vs-gbc-which-is-better/" style="color:#c4a35a;text-decoration:none">GBA vs GBC: Which Console Has Better Games?</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

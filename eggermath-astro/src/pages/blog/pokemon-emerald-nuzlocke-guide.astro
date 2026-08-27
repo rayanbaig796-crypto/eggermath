@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = { title: 'Pokemon Emerald Nuzlocke Challenge: Complete Guide', desc: 'Rules, tips, and strategies for the ultimate Pokemon Emerald Nuzlocke run.', date: '2026-08-22', category: 'Guides' };
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-22","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">The Nuzlocke challenge turns Pokemon from a casual adventure into a heart-pounding survival experience. Here's everything you need to know to complete a Pokemon Emerald Nuzlocke.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Core Rules</h2>
+  <ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">First Encounter Only:</strong> You can only catch the first Pokemon you encounter in each area. If you fail to catch it, you get nothing.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Perma-Death:</strong> If a Pokemon faints, it's considered dead. You must release it or box it permanently.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Nickname Everything:</strong> All Pokemon must be nicknamed. This builds emotional attachment (and makes their death hurt more).</li>
+  </ol>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Popular Optional Rules</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Set Mode:</strong> You must use the same switching rules as the AI (set, not shift)</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No Items in Battle:</strong> Cannot use healing items during trainer battles</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Level Cap:</strong> Pokemon cannot exceed the next gym leader's highest Pokemon level</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Dupes Clause:</strong> If you already have a Pokemon of that species, you can skip the encounter</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Tips for Success</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Grind levels before gym battles — being underleveled is the #1 killer</li>
+    <li style="margin-bottom:8px">Always have a backup plan. If your main Pokemon faints, who takes its place?</li>
+    <li style="margin-bottom:8px">Type matchups matter more than ever. Know your weaknesses</li>
+    <li style="margin-bottom:8px">Use the dupes clause to build a diverse team</li>
+    <li style="margin-bottom:8px">Save your Rare Candies for the endgame</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why Nuzlocke Is Better in Browser</h2>
+  <p style="color:#ccc;margin-bottom:16px">Playing a Nuzlocke on <a href="/pokemon-emerald/" style="color:#c4a35a">EggerMath's browser emulator</a> has advantages:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Save states:</strong> Save before risky encounters (if you allow it)</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Fast forward:</strong> Grind levels faster</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No battery issues:</strong> Original GBA cartridges lose saves when the battery dies</li>
+  </ul>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Start Your Nuzlocke Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">Pokemon Emerald is available free in your browser. Ready to risk it all?</p>
+    <a href="/pokemon-emerald/" style="color:#c4a35a;text-decoration:none;font-weight:700">Play Pokemon Emerald →</a>
+  </div>
+</main>
+</BaseLayout>

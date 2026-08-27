@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = { title: 'GBA vs GBC: Which Console Has Better Games?', desc: 'Comparing Game Boy Advance and Game Boy Color libraries. Which retro console wins?', date: '2026-08-24', category: 'Comparison' };
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-24","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">The Game Boy Advance and Game Boy Color are two of Nintendo's most beloved handhelds. Both have incredible game libraries. But which one is better? Let's break it down.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Graphics</h2>
+  <p style="color:#ccc;margin-bottom:16px">The GBA wins here easily. It's essentially a portable SNES, with 32-bit graphics, mode 7 effects, and smooth animations. The GBC improved on the original Game Boy with color, but the sprites are still 8-bit.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Sound</h2>
+  <p style="color:#ccc;margin-bottom:16px">GBA has significantly better sound. Stereo output, CD-quality music in some games, and the ability to produce complex sound effects. GBC had improved sound over the original, but it's still chiptune.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Game Library</h2>
+  <p style="color:#ccc;margin-bottom:12px"><strong style="color:#c4a35a">GBA highlights:</strong> Pokemon Emerald/FireRed/LeafGreen, Zelda: Minish Cap, Metroid Fusion, Mario Kart, Castlevania: Aria of Sorrow</p>
+  <p style="color:#ccc;margin-bottom:16px"><strong style="color:#c4a35a">GBC highlights:</strong> Pokemon Gold/Silver/Crystal, Zelda: Link's Awakening DX, Super Mario Bros. Deluxe, Wario Land 3, Tetris DX</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Backwards Compatibility</h2>
+  <p style="color:#ccc;margin-bottom:16px">The GBA plays all GBC games, which is a huge advantage. You get two consoles in one. The GBC also plays original Game Boy games.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">The Verdict</h2>
+  <p style="color:#ccc;margin-bottom:16px">The GBA wins on technical merit — better graphics, sound, and a larger library. But the GBC has nostalgia and some of the best Pokemon games ever made. The good news? You can play both on <a href="/" style="color:#c4a35a">EggerMath</a>.</p>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play Both Libraries</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">We have games from both GBA and GBC. Try them and decide for yourself.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+</main>
+</BaseLayout>

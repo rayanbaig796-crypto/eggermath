@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'How to Save Your GBA Game Progress in Browser',
+  desc: 'Step-by-step guide to using save states in browser-based GBA emulators. Never lose progress again.',
+  date: '2026-08-25',
+  category: 'Guides',
+};
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-25","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">One of the best features of browser-based GBA emulators is <strong>save states</strong>. Unlike the original hardware where you needed a battery-backed cartridge, browser emulators let you save your exact position at any moment.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">What Are Save States?</h2>
+  <p style="color:#ccc;margin-bottom:16px">A save state is a snapshot of the emulator's exact memory state. It saves everything — your position, health, inventory, and even the frame of animation. This is different from in-game saves, which only work at save points.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">How to Save on EggerMath</h2>
+  <ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Start playing any game on <a href="/" style="color:#c4a35a">EggerMath</a></li>
+    <li style="margin-bottom:8px">Click the <strong>Save</strong> button in the toolbar (or press <strong>F5</strong>)</li>
+    <li style="margin-bottom:8px">Choose a slot (1-10) — slots with timestamps already have saves</li>
+    <li style="margin-bottom:8px">Click <strong>Save</strong> on the slot you want to use</li>
+    <li style="margin-bottom:8px">Your progress is saved to your browser's local storage</li>
+  </ol>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">How to Load a Save</h2>
+  <ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Click the <strong>Load</strong> button (or press <strong>F7</strong>)</li>
+    <li style="margin-bottom:8px">Select the slot with your save</li>
+    <li style="margin-bottom:8px">Click <strong>Load</strong> — you'll be back exactly where you left off</li>
+  </ol>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">10 Save Slots</h2>
+  <p style="color:#ccc;margin-bottom:16px">EggerMath gives you 10 save slots per game, just like PPSSPP. This means you can:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Keep multiple playthroughs</li>
+    <li style="margin-bottom:8px">Save before boss fights</li>
+    <li style="margin-bottom:8px">Try different choices without losing progress</li>
+    <li style="margin-bottom:8px">Share saves with friends</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Keyboard Shortcuts</h2>
+  <div style="background:#111;border:1px solid #1e1e22;border-radius:8px;padding:16px;margin-bottom:24px">
+    <p style="color:#ccc;font-family:monospace;margin-bottom:4px"><strong style="color:#c4a35a">F5</strong> — Open Save Menu</p>
+    <p style="color:#ccc;font-family:monospace;margin-bottom:4px"><strong style="color:#c4a35a">F7</strong> — Open Load Menu</p>
+    <p style="color:#ccc;font-family:monospace;margin-bottom:4px"><strong style="color:#c4a35a">F9</strong> — Quick Save to Slot 1</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Tips</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Saves are stored in your browser — clearing cookies will delete them</li>
+    <li style="margin-bottom:8px">Use different slots for different situations (exploring, boss fights, etc.)</li>
+    <li style="margin-bottom:8px">Save states work even if the game doesn't have in-game saves</li>
+    <li style="margin-bottom:8px">You can have saves for multiple games at the same time</li>
+  </ul>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Try It Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">Pick a game and try the save state feature yourself.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/best-gba-games-2026/" style="color:#c4a35a;text-decoration:none">Best GBA Games to Play Online in 2026</a></li>
+      <li><a href="/blog/why-browser-emulation-is-the-future/" style="color:#c4a35a;text-decoration:none">Why Browser Emulation Is the Future of Retro Gaming</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>
