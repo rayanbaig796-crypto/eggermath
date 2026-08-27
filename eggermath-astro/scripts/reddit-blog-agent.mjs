@@ -40,7 +40,7 @@ function regenerateSitemap() {
 
 function gitCommit(slug, title) {
   try {
-    execSync('git add src/pages/blog/ sitemaps/', { cwd: PROJECT_ROOT, stdio: 'pipe' });
+    execSync('git add src/pages/blog/', { cwd: PROJECT_ROOT, stdio: 'pipe' });
     execSync(`git commit -m "Blog: ${title.slice(0, 50)}"`, { cwd: PROJECT_ROOT, stdio: 'pipe' });
     execSync('git push origin main', { cwd: PROJECT_ROOT, stdio: 'pipe' });
     console.log('  Git committed and pushed');
