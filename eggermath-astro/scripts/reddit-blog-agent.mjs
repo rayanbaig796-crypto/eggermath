@@ -54,7 +54,12 @@ function regenerateSitemap() {
 
 function gitCommit(slug, title) {
   try {
-    execSync('git add src/pages/blog/', { cwd: PROJECT_ROOT, stdio: 'pipe' });
+    execSync('git add src/pages/blog/ reddit-blog-log.json reddit-blog-state.json', { cwd: PROJECT_ROOT, stdio: 'pipe' });
+    const diff = execSync('git diff --cached --stat', { cwd: PROJECT_ROOT, encoding: 'utf-8' });
+    if (!diff.trim()) {
+      console.log('  No changes to commit');
+      return;
+    }
     execSync(`git commit -m "Blog: ${title.slice(0, 50)}"`, { cwd: PROJECT_ROOT, stdio: 'pipe' });
     execSync('git push origin main', { cwd: PROJECT_ROOT, stdio: 'pipe' });
     console.log('  Git committed and pushed');
@@ -84,7 +89,9 @@ async function run() {
   console.log(`  Generated: "${blogData.title}"`);
 
   console.log('\n[3/5] Saving .astro file...');
-  const slug = blogData.slug || slugify(blogData.title);
+  let slug = blogData.slug || slugify(blogData.title);
+  const dateSuffix = new Date().toISOString().split('T')[0];
+  slug = `${slug}-${dateSuffix}`;
   const astroContent = createAstroFile(blogData, post);
   const filePath = path.join(BLOG_DIR, `${slug}.astro`);
   fs.writeFileSync(filePath, astroContent);
