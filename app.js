@@ -58,6 +58,17 @@ async function checkRedditAgent() {
       document.getElementById('redditNext').textContent = next <= Date.now() ? 'Overdue' : next.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
     }
     document.getElementById('redditPosts').textContent = usedCount;
+
+    // Fetch logs
+    try {
+      const logRes = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-log.json');
+      if (logRes.ok) {
+        const logs = await logRes.json();
+        const recent = logs.slice(0, 5);
+        const logHtml = recent.map(l => `<div style="padding:8px;border-bottom:1px solid #1e1e22;font-size:13px"><span style="color:${l.success ? '#22c55e' : '#ef4444'}">${l.success ? '✓' : '✗'}</span> ${l.title || 'Failed'} <span style="color:#666">${timeAgo(new Date(l.time))}</span></div>`).join('');
+        document.getElementById('redditLog').innerHTML = logHtml || '<div style="padding:8px;color:#666">No runs yet</div>';
+      }
+    } catch {}
   } catch {
     document.getElementById('redditStatus').textContent = 'Offline';
     document.getElementById('redditStatus').className = 'badge badge-red';
