@@ -11,6 +11,20 @@ const BLOG_DIR = path.join(PROJECT_ROOT, 'src', 'pages', 'blog');
 const SITEMAP_SCRIPT = path.join(PROJECT_ROOT, 'generate-sitemap.mjs');
 const INDEXNOW_KEY = 'a7f3c9e2b1d04a6f8e2c5d9b0a3f6c1e8';
 const SITE_URL = 'https://www.eggermath.com';
+const LOG_FILE = path.join(PROJECT_ROOT, 'reddit-blog-log.json');
+
+function logRun(slug, title, success) {
+  const logs = fs.existsSync(LOG_FILE) ? JSON.parse(fs.readFileSync(LOG_FILE, 'utf-8')) : [];
+  logs.unshift({
+    time: new Date().toISOString(),
+    slug,
+    title,
+    success,
+    url: success ? `${SITE_URL}/blog/${slug}/` : null,
+  });
+  if (logs.length > 100) logs.length = 100;
+  fs.writeFileSync(LOG_FILE, JSON.stringify(logs, null, 2));
+}
 
 async function pingIndexNow(slug) {
   try {
@@ -87,9 +101,11 @@ async function run() {
 
   console.log('\n=== Done! ===');
   console.log(`Blog post: ${SITE_URL}/blog/${slug}/`);
+  logRun(slug, blogData.title, true);
 }
 
 run().catch(e => {
   console.error('Agent failed:', e);
+  logRun(null, e.message, false);
   process.exit(1);
 });
