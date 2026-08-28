@@ -52,11 +52,12 @@ async function checkRedditAgent() {
     // Fetch logs to count actual blog posts
     let postCount = 0;
     try {
-      const logRes = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-log.json');
+      const logRes = await fetch('https://api.github.com/repos/rayanbaig796-crypto/eggermath/contents/eggermath-astro/reddit-blog-log.json');
       if (logRes.ok) {
-        const logs = await logRes.json();
-        postCount = logs.filter(l => l.success).length;
-        const recent = logs.slice(0, 5);
+        const logData = await logRes.json();
+        const content = JSON.parse(atob(logData.content));
+        postCount = content.filter(l => l.success).length;
+        const recent = content.slice(0, 5);
         const logHtml = recent.map(l => `<div style="padding:8px;border-bottom:1px solid #1e1e22;font-size:13px"><span style="color:${l.success ? '#22c55e' : '#ef4444'}">${l.success ? '✓' : '✗'}</span> ${l.title || 'Failed'} <span style="color:#666">${timeAgo(new Date(l.time))}</span></div>`).join('');
         document.getElementById('redditLog').innerHTML = logHtml || '<div style="padding:8px;color:#666">No runs yet</div>';
       }
