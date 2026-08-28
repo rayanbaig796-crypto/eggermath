@@ -37,6 +37,33 @@ async function fetchJSON(url) {
   } catch { return null; }
 }
 
+async function checkRedditAgent() {
+  try {
+    const res = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-state.json');
+    if (!res.ok) {
+      document.getElementById('redditStatus').textContent = 'Offline';
+      document.getElementById('redditStatus').className = 'badge badge-red';
+      return;
+    }
+    const state = await res.json();
+    const lastRun = state.lastRun ? new Date(state.lastRun) : null;
+    const usedCount = state.usedPostIds ? state.usedPostIds.length : 0;
+
+    document.getElementById('redditStatus').textContent = lastRun ? 'Active' : 'Not Run';
+    document.getElementById('redditStatus').className = 'badge badge-green';
+
+    if (lastRun) {
+      document.getElementById('redditLast').textContent = timeAgo(lastRun);
+      const next = new Date(lastRun.getTime() + 3600000);
+      document.getElementById('redditNext').textContent = next <= Date.now() ? 'Overdue' : next.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+    }
+    document.getElementById('redditPosts').textContent = usedCount;
+  } catch {
+    document.getElementById('redditStatus').textContent = 'Offline';
+    document.getElementById('redditStatus').className = 'badge badge-red';
+  }
+}
+
 async function checkSiteStatus() {
   try {
     const start = Date.now();
@@ -55,6 +82,24 @@ async function checkSiteStatus() {
 
 async function loadWorkflowRuns() {
   const allRuns = [];
+
+  // Add Reddit blog agent run if available
+  try {
+    const redditRes = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-state.json');
+    if (redditRes.ok) {
+      const redditState = await redditRes.json();
+      if (redditState.lastRun) {
+        allRuns.push({
+          workflow: 'Reddit Blog Agent',
+          status: 'success',
+          started: new Date(redditState.lastRun),
+          duration: null,
+          game: null,
+          url: 'https://www.eggermath.com/blog/',
+        });
+      }
+    }
+  } catch {}
 
   for (const wf of WORKFLOWS) {
     const data = await fetchJSON(`${API_BASE}/actions/workflows/${wf.id}/runs?per_page=10`);
@@ -140,7 +185,7 @@ async function refresh() {
   btn.style.transform = 'rotate(360deg)';
   btn.style.transition = 'transform 0.5s';
 
-  await Promise.all([checkSiteStatus(), loadWorkflowRuns()]);
+  await Promise.all([checkSiteStatus(), loadWorkflowRuns(), checkRedditAgent()]);
   setLastUpdated();
 
   setTimeout(() => { btn.style.transform = ''; }, 500);
