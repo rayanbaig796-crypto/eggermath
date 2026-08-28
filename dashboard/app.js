@@ -39,13 +39,14 @@ async function fetchJSON(url) {
 
 async function checkRedditAgent() {
   try {
-    const res = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-state.json');
+    const res = await fetch('https://api.github.com/repos/rayanbaig796-crypto/eggermath/contents/eggermath-astro/reddit-blog-state.json');
     if (!res.ok) {
       document.getElementById('redditStatus').textContent = 'Offline';
       document.getElementById('redditStatus').className = 'badge badge-red';
       return;
     }
-    const state = await res.json();
+    const data = await res.json();
+    const state = JSON.parse(atob(data.content));
     const lastRun = state.lastRun ? new Date(state.lastRun) : null;
     const usedCount = state.usedPostIds ? state.usedPostIds.length : 0;
 
@@ -99,9 +100,10 @@ async function loadWorkflowRuns() {
 
   // Add Reddit blog agent run if available
   try {
-    const redditRes = await fetch('https://raw.githubusercontent.com/rayanbaig796-crypto/eggermath/main/eggermath-astro/reddit-blog-state.json');
+    const redditRes = await fetch('https://api.github.com/repos/rayanbaig796-crypto/eggermath/contents/eggermath-astro/reddit-blog-state.json');
     if (redditRes.ok) {
-      const redditState = await redditRes.json();
+      const redditData = await redditRes.json();
+      const redditState = JSON.parse(atob(redditData.content));
       if (redditState.lastRun) {
         allRuns.push({
           workflow: 'Reddit Blog Agent',
