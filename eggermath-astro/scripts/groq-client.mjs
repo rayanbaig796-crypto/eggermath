@@ -29,24 +29,44 @@ function getNextKey() {
   return key;
 }
 
-export async function groqChat(messages, options = {}) {
+async function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+export async function groqChat(messages, options = {}, retries = 3) {
   const { model = 'openai/gpt-oss-120b', temperature = 0.7, max_tokens = 2000 } = options;
-  const apiKey = getNextKey();
 
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({ model, messages, temperature, max_tokens }),
-  });
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const apiKey = getNextKey();
+    try {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({ model, messages, temperature, max_tokens }),
+      });
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`Groq API error ${res.status}: ${err}`);
+      if (!res.ok) {
+        const err = await res.text();
+        if (attempt < retries) {
+          console.log(`  Groq API error ${res.status}, retrying in ${attempt * 2}s...`);
+          await sleep(attempt * 2000);
+          continue;
+        }
+        throw new Error(`Groq API error ${res.status}: ${err}`);
+      }
+
+      const data = await res.json();
+      return data.choices[0].message.content;
+    } catch (e) {
+      if (attempt < retries && (e.code === 'ENOTFOUND' || e.cause?.code === 'ENOTFOUND')) {
+        console.log(`  Network error, retrying in ${attempt * 2}s...`);
+        await sleep(attempt * 2000);
+        continue;
+      }
+      throw e;
+    }
   }
-
-  const data = await res.json();
-  return data.choices[0].message.content;
 }
