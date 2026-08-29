@@ -3,7 +3,7 @@ name: Reddit Blog Agent
 on:
   schedule:
     - cron: '0,30 * * * *'
-  workflow_dispatch:
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -16,7 +16,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: Install dependencies
         run: cd eggermath-astro && npm install
