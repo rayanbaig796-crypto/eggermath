@@ -41,6 +41,13 @@ async function pingIndexNow(slug) {
   } catch (e) {
     console.error('  IndexNow ping failed:', e.message);
   }
+
+  try {
+    await fetch(`https://www.google.com/ping?sitemap=${SITE_URL}/sitemap.xml`);
+    console.log('  Google sitemap pinged');
+  } catch (e) {
+    console.error('  Google ping failed:', e.message);
+  }
 }
 
 function regenerateSitemap() {
