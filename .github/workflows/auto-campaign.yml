@@ -1,7 +1,7 @@
 name: Auto Campaign
 on:
   schedule:
-    - cron: '0 9 * * *' # daily 09:00 UTC
+    - cron: '0 9 * * *'
   workflow_dispatch: {}
 jobs:
   post:
