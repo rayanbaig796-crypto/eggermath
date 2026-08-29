@@ -64,21 +64,6 @@ function regenerateSitemap() {
   }
 }
 
-function gitCommit(slug, title) {
-  try {
-    execSync('git add src/pages/blog/ reddit-blog-log.json reddit-blog-state.json', { cwd: PROJECT_ROOT, stdio: 'pipe' });
-    const diff = execSync('git diff --cached --stat', { cwd: PROJECT_ROOT, encoding: 'utf-8' });
-    if (!diff.trim()) {
-      console.log('  No changes to commit');
-      return;
-    }
-    execSync(`git commit -m "Blog: ${title.slice(0, 50)}"`, { cwd: PROJECT_ROOT, stdio: 'pipe' });
-    console.log('  Git committed');
-  } catch (e) {
-    console.error('  Git commit failed:', e.message);
-  }
-}
-
 async function run() {
   console.log('=== Reddit Blog Agent ===');
   console.log(`Time: ${new Date().toISOString()}`);
@@ -113,9 +98,6 @@ async function run() {
 
   console.log('\n[5/5] IndexNow ping...');
   await pingIndexNow(slug);
-
-  console.log('\n[6/6] Git commit and push...');
-  gitCommit(slug, blogData.title);
 
   console.log('\n=== Done! ===');
   console.log(`Blog post: ${SITE_URL}/blog/${slug}/`);
