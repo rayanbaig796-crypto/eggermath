@@ -2,7 +2,7 @@ name: Reddit Blog Agent
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0,30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -30,6 +30,7 @@ jobs:
         run: |
           git config user.name "Reddit Blog Bot"
           git config user.email "bot@eggermath.com"
+          git pull origin main --rebase
           git add eggermath-astro/src/pages/blog/ eggermath-astro/reddit-blog-log.json eggermath-astro/reddit-blog-state.json
           git diff --cached --quiet || git commit -m "Blog: Auto-generated post $(date -u +%Y-%m-%dT%H:%M)"
           git push

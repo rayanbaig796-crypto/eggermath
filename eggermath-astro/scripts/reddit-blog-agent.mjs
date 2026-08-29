@@ -73,10 +73,9 @@ function gitCommit(slug, title) {
       return;
     }
     execSync(`git commit -m "Blog: ${title.slice(0, 50)}"`, { cwd: PROJECT_ROOT, stdio: 'pipe' });
-    execSync('git push origin main', { cwd: PROJECT_ROOT, stdio: 'pipe' });
-    console.log('  Git committed and pushed');
+    console.log('  Git committed');
   } catch (e) {
-    console.error('  Git push failed:', e.message);
+    console.error('  Git commit failed:', e.message);
   }
 }
 
