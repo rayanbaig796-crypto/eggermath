@@ -1,0 +1,29 @@
+name: Reddit Blog Agent
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:
+
+jobs:
+  generate-blog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Reddit Blog Agent
+        run: node eggermath-astro/scripts/reddit-blog-agent.mjs
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      - name: Commit changes
+        run: |
+          git config user.name "Reddit Blog Bot"
+          git config user.email "bot@eggermath.com"
+          git add eggermath-astro/src/pages/blog/ eggermath-astro/reddit-blog-log.json eggermath-astro/reddit-blog-state.json
+          git diff --cached --quiet || git commit -m "Blog: Auto-generated post $(date -u +%Y-%m-%dT%H:%M)"
+          git push
