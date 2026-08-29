@@ -44,6 +44,11 @@ async function pingIndexNow(slug) {
 }
 
 function regenerateSitemap() {
+  const distPath = path.join(PROJECT_ROOT, 'dist');
+  if (!fs.existsSync(distPath)) {
+    console.log('  Sitemap skipped (dist/ not found)');
+    return;
+  }
   try {
     execSync(`node "${SITEMAP_SCRIPT}"`, { cwd: PROJECT_ROOT, stdio: 'pipe' });
     console.log('  Sitemap regenerated');
