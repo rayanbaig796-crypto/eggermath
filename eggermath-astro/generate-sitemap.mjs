@@ -215,6 +215,35 @@ allSitemaps.push({ loc: `${SITE}/sitemap-content.xml`, lastmod: TODAY });
 totalUrls += contentUrls.length;
 
 // ============================================================
+// 5b. BLOG POSTS — auto-generated + manual
+// ============================================================
+import { readdirSync, readFileSync as readFile } from 'fs';
+const blogDir = join(process.cwd(), 'src', 'pages', 'blog');
+const blogUrls = [];
+try {
+  const blogFiles = readdirSync(blogDir).filter(f => f.endsWith('.astro') && f !== 'index.astro');
+  for (const file of blogFiles) {
+    const slug = file.replace('.astro', '');
+    const filePath = join(blogDir, file);
+    const content = readFile(filePath, 'utf-8');
+    const dateMatch = content.match(/datePublished['":\s]+['"]?(\d{4}-\d{2}-\d{2})/);
+    const pubDate = dateMatch ? dateMatch[1] : TODAY;
+    blogUrls.push(
+      urlEntry(`${SITE}/blog/${slug}/`, {
+        priority: '0.7',
+        changefreq: 'monthly',
+        images: [OG_IMAGE],
+      })
+    );
+  }
+} catch {}
+if (blogUrls.length > 0) {
+  writeFileSync(join(DIST, 'sitemap-blog.xml'), sitemapXml(blogUrls));
+  allSitemaps.push({ loc: `${SITE}/sitemap-blog.xml`, lastmod: TODAY });
+  totalUrls += blogUrls.length;
+}
+
+// ============================================================
 // 6. SITEMAP INDEX
 // ============================================================
 writeFileSync(join(DIST, 'sitemap.xml'), sitemapIndex(allSitemaps));
