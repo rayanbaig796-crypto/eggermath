@@ -37,6 +37,7 @@
     'Asia/Jakarta': 'id', 'Asia/Makassar': 'id', 'Asia/Jayapura': 'id',
     'Asia/Bangkok': 'th', 'Asia/Ho_Chi_Minh': 'vn', 'Asia/Phnom_Penh': 'kh',
     'Asia/Kuala_Lumpur': 'my', 'Asia/Singapore': 'sg',
+    'Asia/Singapore': 'sg',
     'Asia/Manila': 'ph',
     'Asia/Tashkent': 'uz',
     // Oceania
@@ -65,7 +66,7 @@
   };
 
   // Valid country codes
-  var VALID_COUNTRIES = ['us','uk','in','br','jp','de','fr','es','id','ru','au','ng'];
+  var VALID_COUNTRIES = ['us','uk','in','br','jp','de','fr','es','id','ru','au','ng','sg'];
 
   function detectCountry() {
     // 1. Check localStorage (user explicitly chose)
@@ -178,7 +179,7 @@
       'us': 'United States', 'uk': 'United Kingdom', 'in': 'India',
       'br': 'Brazil', 'jp': 'Japan', 'de': 'Germany',
       'fr': 'France', 'es': 'Spain', 'id': 'Indonesia',
-      'ru': 'Russia', 'au': 'Australia', 'ng': 'Nigeria'
+      'ru': 'Russia', 'au': 'Australia', 'ng': 'Nigeria', 'sg': 'Singapore'
     };
     return names[code] || code;
   }

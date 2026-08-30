@@ -181,6 +181,21 @@ export const countries = {
     popularGames: ["pokemon-emerald", "pokemon-firered", "zelda-minish-cap", "mario-kart-super-circuit", "metroid-fusion"],
     schemaArea: "NG",
     hreflang: "en-ng"
+  },
+  "sg": {
+    code: "sg",
+    name: "Singapore",
+    lang: "en",
+    locale: "en_SG",
+    currency: "SGD",
+    flag: "🇸🇬",
+    title: "Play GBA Games Online Free — No Download GBA Emulator",
+    description: "Play classic Game Boy Advance games in your browser. Pokemon, Zelda, Mario and more. Free, no download required.",
+    keywords: "gba emulator, play gba online, gba games free, gameboy advance emulator, pokemon gba, free gba emulator online, gba emulator no download, gba emulator singapore",
+    ogImage: "https://www.eggermath.com/og-image.svg",
+    popularGames: ["pokemon-emerald", "pokemon-firered", "zelda-minish-cap", "mario-kart-super-circuit", "metroid-fusion"],
+    schemaArea: "SG",
+    hreflang: "en-sg"
   }
 };
 

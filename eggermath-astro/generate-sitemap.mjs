@@ -11,7 +11,8 @@ const COUNTRIES = [
   { code: 'us', lang: 'en' }, { code: 'uk', lang: 'en' }, { code: 'in', lang: 'en' },
   { code: 'br', lang: 'pt-BR' }, { code: 'jp', lang: 'ja' }, { code: 'de', lang: 'de' },
   { code: 'fr', lang: 'fr' }, { code: 'es', lang: 'es' }, { code: 'id', lang: 'id' },
-  { code: 'ru', lang: 'ru' }, { code: 'au', lang: 'en' }, { code: 'ng', lang: 'en' }
+  { code: 'ru', lang: 'ru' }, { code: 'au', lang: 'en' }, { code: 'ng', lang: 'en' },
+  { code: 'sg', lang: 'en' }
 ];
 
 function readGames() {
@@ -41,6 +42,7 @@ function buildHreflangs(slug) {
   langs.push(['en-in', `${SITE}/${slug}`]);
   langs.push(['en-au', `${SITE}/${slug}`]);
   langs.push(['en-ng', `${SITE}/${slug}`]);
+  langs.push(['en-sg', `${SITE}/sg/${slug}`]);
   langs.push(['pt-br', `${SITE}/br/${slug}`]);
   langs.push(['ja-jp', `${SITE}/jp/${slug}`]);
   langs.push(['de-de', `${SITE}/de/${slug}`]);
@@ -63,6 +65,7 @@ function buildHomeHreflangs() {
   langs.push(['en-in', `${SITE}/in`]);
   langs.push(['en-au', `${SITE}/au`]);
   langs.push(['en-ng', `${SITE}/ng`]);
+  langs.push(['en-sg', `${SITE}/sg`]);
   langs.push(['pt-br', `${SITE}/br`]);
   langs.push(['ja-jp', `${SITE}/jp`]);
   langs.push(['de-de', `${SITE}/de`]);
