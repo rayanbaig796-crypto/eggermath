@@ -5,7 +5,7 @@ import { SITE } from '../../data/games.js';
 const post = { title: 'Why Browser Emulation Is the Future of Retro Gaming', desc: 'No downloads, no setup — just click and play. Why WebAssembly emulators are changing everything.', date: '2026-08-23', category: 'Opinion' };
 const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-23","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
 ---
-<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} jsonLd={jsonLd}>
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/why-browser-emulation-is-the-future/`} jsonLd={jsonLd}>
 <main style="max-width:800px;margin:0 auto;padding:24px">
   <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
   <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>

@@ -5,10 +5,7 @@ Disallow: /*.json$
 Disallow: /gba-emulator-web/roms/
 Disallow: /gba-emulator-web/bios/
 
-# Sitemaps
-Sitemap: https://www.eggermath.com/sitemap.xml
-
-# AI Crawlers
+# AI Crawlers — all allowed for generative search visibility
 User-agent: GPTBot
 Allow: /
 
@@ -20,3 +17,15 @@ Allow: /
 
 User-agent: ClaudeBot
 Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.eggermath.com/sitemap.xml

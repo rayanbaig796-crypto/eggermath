@@ -14,6 +14,17 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "Organization",
+      "name": "EggerMath",
+      "url": SITE.url,
+      "logo": `${SITE.url}/favicon.svg`,
+      "description": "Free browser-based GBA, GBC, and GB emulator. Play classic Game Boy games instantly online.",
+      "sameAs": [
+        "https://twitter.com/eggermath",
+        "https://www.reddit.com/user/eggermath"
+      ]
+    },
+    {
       "@type": "CollectionPage",
       "name": "Play GBA Games Online Free — No Download GBA Emulator",
       "description": SITE.description,

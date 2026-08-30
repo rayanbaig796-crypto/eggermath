@@ -99,13 +99,16 @@ export function createAstroFile(blogData, post) {
     `<li><a href="/${g.slug}/" style="color:#c4a35a;text-decoration:none">${g.text}</a></li>`
   ).join('\n      ');
 
-  return `---
+  const slug = slugify(blogData.title);
+  const canonical = \`https://www.eggermath.com/blog/\${slug}/\`;
+
+  return \`---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE } from '../../data/games.js';
 
-const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":"${blogData.title.replace(/"/g, '\\"')}","description":"${blogData.description.replace(/"/g, '\\"')}","datePublished":"${date}","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":"https://www.eggermath.com"},"image":"${imageUrl}"};
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":"\${blogData.title.replace(/"/g, '\\\\"')}","description":"\${blogData.description.replace(/"/g, '\\\\"')}","datePublished":"\${date}","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":"https://www.eggermath.com"},"image":"\${imageUrl}"};
 ---
-<BaseLayout title="${blogData.title} | EggerMath Blog" description="${blogData.description}" jsonLd={jsonLd}>
+<BaseLayout title="\${blogData.title} | EggerMath Blog" description="\${blogData.description}" canonical={\`\${SITE.url}/blog/\${slug}/\`} jsonLd={jsonLd}>
 <main style="max-width:800px;margin:0 auto;padding:24px">
   <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
   <span style="color:#555;font-size:12px;margin-left:12px">${date}</span>

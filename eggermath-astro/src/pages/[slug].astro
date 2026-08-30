@@ -56,11 +56,16 @@ function pickKeywordsEn(game) {
 }
 const topKeywordsEn = pickKeywordsEn(game);
 let enhancedDescEn = pageDesc;
+// Only append a single natural-sounding keyword if there's room and it adds value
 if (topKeywordsEn.length >= 1) {
-  const suffix2 = ` — ${topKeywordsEn[0]}, ${topKeywordsEn[1] || ''}`.replace(/, $/, '');
-  const suffix1 = ` — ${topKeywordsEn[0]}`;
-  if (topKeywordsEn.length >= 2 && (enhancedDescEn + suffix2).length <= 155) enhancedDescEn = enhancedDescEn + suffix2;
-  else if ((enhancedDescEn + suffix1).length <= 155) enhancedDescEn = enhancedDescEn + suffix1;
+  const kw = topKeywordsEn[0];
+  // Skip if keyword is already in the description
+  if (!enhancedDescEn.toLowerCase().includes(kw.toLowerCase())) {
+    const suffix = ` Play ${game.title} now on EggerMath — free, no download needed.`;
+    if (suffix.length + enhancedDescEn.length <= 155) {
+      enhancedDescEn = enhancedDescEn + suffix;
+    }
+  }
 }
 
 const alternateLinks = supportedLangs.map(l => {

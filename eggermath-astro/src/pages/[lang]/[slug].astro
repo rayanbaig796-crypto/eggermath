@@ -68,10 +68,13 @@ const topKeywords = pickKeywords(game, lang);
 // Enhanced description: keep translated desc but expand to ~140-155 chars with 1-2 keywords naturally (Bing flagged short descs)
 let enhancedDesc = pageDesc;
 if (topKeywords.length >= 1) {
-  const suffix2 = ` — ${topKeywords[0]}, ${topKeywords[1] || ''}`.replace(/, $/, '');
-  const suffix1 = ` — ${topKeywords[0]}`;
-  if (topKeywords.length >= 2 && (enhancedDesc + suffix2).length <= 155) enhancedDesc = enhancedDesc + suffix2;
-  else if ((enhancedDesc + suffix1).length <= 155) enhancedDesc = enhancedDesc + suffix1;
+  const kw = topKeywords[0];
+  if (!enhancedDesc.toLowerCase().includes(kw.toLowerCase())) {
+    const suffix = ` Play ${game.title} now on EggerMath — free, no download needed.`;
+    if (suffix.length + enhancedDesc.length <= 155) {
+      enhancedDesc = enhancedDesc + suffix;
+    }
+  }
 }
 
 const alternateLinks = supportedLangs.map(l => {
