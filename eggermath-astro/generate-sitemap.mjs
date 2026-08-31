@@ -7,13 +7,6 @@ const DIST = join(process.cwd(), 'dist');
 const OG_IMAGE = `${SITE}/og-image.svg`;
 
 const LANGS = ['pt-BR', 'es', 'ja', 'de', 'fr', 'ru', 'ko', 'it', 'id', 'ar'];
-const COUNTRIES = [
-  { code: 'us', lang: 'en' }, { code: 'uk', lang: 'en' }, { code: 'in', lang: 'en' },
-  { code: 'br', lang: 'pt-BR' }, { code: 'jp', lang: 'ja' }, { code: 'de', lang: 'de' },
-  { code: 'fr', lang: 'fr' }, { code: 'es', lang: 'es' }, { code: 'id', lang: 'id' },
-  { code: 'ru', lang: 'ru' }, { code: 'au', lang: 'en' }, { code: 'ng', lang: 'en' },
-  { code: 'sg', lang: 'en' }
-];
 
 function readGames() {
   const raw = readFileSync(join(process.cwd(), 'src', 'data', 'games.js'), 'utf8');
@@ -35,21 +28,7 @@ function buildHreflangs(slug) {
   for (const l of LANGS) {
     langs.push([l, `${SITE}/${l}/${slug}`]);
   }
-  // Country-specific hreflangs
   langs.push(['x-default', `${SITE}/${slug}`]);
-  langs.push(['en-us', `${SITE}/${slug}`]);
-  langs.push(['en-gb', `${SITE}/${slug}`]);
-  langs.push(['en-in', `${SITE}/${slug}`]);
-  langs.push(['en-au', `${SITE}/${slug}`]);
-  langs.push(['en-ng', `${SITE}/${slug}`]);
-  langs.push(['en-sg', `${SITE}/sg/${slug}`]);
-  langs.push(['pt-br', `${SITE}/br/${slug}`]);
-  langs.push(['ja-jp', `${SITE}/jp/${slug}`]);
-  langs.push(['de-de', `${SITE}/de/${slug}`]);
-  langs.push(['fr-fr', `${SITE}/fr/${slug}`]);
-  langs.push(['es-es', `${SITE}/es/${slug}`]);
-  langs.push(['id-id', `${SITE}/id/${slug}`]);
-  langs.push(['ru-ru', `${SITE}/ru/${slug}`]);
   return langs;
 }
 
@@ -58,21 +37,7 @@ function buildHomeHreflangs() {
   for (const l of LANGS) {
     langs.push([l, `${SITE}/${l}`]);
   }
-  // Country-specific hreflangs
   langs.push(['x-default', SITE]);
-  langs.push(['en-us', `${SITE}/us`]);
-  langs.push(['en-gb', `${SITE}/uk`]);
-  langs.push(['en-in', `${SITE}/in`]);
-  langs.push(['en-au', `${SITE}/au`]);
-  langs.push(['en-ng', `${SITE}/ng`]);
-  langs.push(['en-sg', `${SITE}/sg`]);
-  langs.push(['pt-br', `${SITE}/br`]);
-  langs.push(['ja-jp', `${SITE}/jp`]);
-  langs.push(['de-de', `${SITE}/de`]);
-  langs.push(['fr-fr', `${SITE}/fr`]);
-  langs.push(['es-es', `${SITE}/es`]);
-  langs.push(['id-id', `${SITE}/id`]);
-  langs.push(['ru-ru', `${SITE}/ru`]);
   return langs;
 }
 
@@ -145,24 +110,6 @@ for (const lang of LANGS) {
 writeFileSync(join(DIST, 'sitemap-home.xml'), sitemapXml(homeUrls));
 allSitemaps.push({ loc: `${SITE}/sitemap-home.xml`, lastmod: TODAY });
 totalUrls += homeUrls.length;
-
-// ============================================================
-// 1b. COUNTRY LANDING PAGES
-// ============================================================
-const countryUrls = COUNTRIES.map(c => {
-  return urlEntry(`${SITE}/${c.code}`, {
-    priority: '0.9',
-    changefreq: 'weekly',
-    images: [OG_IMAGE],
-    hreflangs: [
-      ['x-default', SITE],
-      [c.lang, `${SITE}/${c.code}`]
-    ],
-  });
-});
-writeFileSync(join(DIST, 'sitemap-countries.xml'), sitemapXml(countryUrls));
-allSitemaps.push({ loc: `${SITE}/sitemap-countries.xml`, lastmod: TODAY });
-totalUrls += countryUrls.length;
 
 // ============================================================
 // 2. ENGLISH GAME PAGES — images + full hreflangs + x-default

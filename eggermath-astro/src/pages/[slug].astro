@@ -72,24 +72,6 @@ const alternateLinks = supportedLangs.map(l => {
   const href = l === 'en' ? `${SITE.url}/${game.slug}/` : `${SITE.url}/${l}/${game.slug}/`;
   return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
 }).join('\n  ');
-// Country-specific hreflangs
-const countryHreflangs = [
-  '<link rel="alternate" hreflang="x-default" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-us" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-gb" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-in" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-au" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-ng" href="' + SITE.url + '/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="en-sg" href="' + SITE.url + '/sg/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="pt-br" href="' + SITE.url + '/br/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="ja-jp" href="' + SITE.url + '/jp/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="de-de" href="' + SITE.url + '/de/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="fr-fr" href="' + SITE.url + '/fr/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="es-es" href="' + SITE.url + '/es/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="id-id" href="' + SITE.url + '/id/' + game.slug + '/" />',
-  '<link rel="alternate" hreflang="ru-ru" href="' + SITE.url + '/ru/' + game.slug + '/" />'
-].join('\n  ');
-const allHreflang = alternateLinks + '\n  ' + countryHreflangs;
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -106,28 +88,8 @@ const jsonLd = {
       "applicationCategory": "GameEmulator",
       "isAccessibleForFree": true,
       "inLanguage": "en",
-      "availableLanguage": ["en", "es", "fr", "de", "pt-BR", "ja", "ko", "ru", "it", "id", "ar"],
       "author": { "@type": "Organization", "name": SITE.name },
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "contentLocation": {
-        "@type": "ItemList",
-        "name": "Available in 12 countries",
-        "itemListElement": [
-          { "@type": "Country", "name": "United States", "identifier": "US" },
-          { "@type": "Country", "name": "United Kingdom", "identifier": "GB" },
-          { "@type": "Country", "name": "India", "identifier": "IN" },
-          { "@type": "Country", "name": "Brazil", "identifier": "BR" },
-          { "@type": "Country", "name": "Japan", "identifier": "JP" },
-          { "@type": "Country", "name": "Germany", "identifier": "DE" },
-          { "@type": "Country", "name": "France", "identifier": "FR" },
-          { "@type": "Country", "name": "Spain", "identifier": "ES" },
-          { "@type": "Country", "name": "Indonesia", "identifier": "ID" },
-          { "@type": "Country", "name": "Russia", "identifier": "RU" },
-          { "@type": "Country", "name": "Australia", "identifier": "AU" },
-          { "@type": "Country", "name": "Nigeria", "identifier": "NG" },
-          { "@type": "Country", "name": "Singapore", "identifier": "SG" }
-        ]
-      }
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
     },
     {
       "@type": "BreadcrumbList",
@@ -165,7 +127,7 @@ const jsonLd = {
   description={enhancedDescEn}
   canonical={`${SITE.url}/${game.slug}/`}
   jsonLd={jsonLd}
-  hreflangHtml={allHreflang}
+  hreflangHtml={alternateLinks}
 >
   <NoscriptFallback />
 

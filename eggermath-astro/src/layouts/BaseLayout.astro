@@ -1,6 +1,5 @@
 ---
 import { SITE } from '../data/games.js';
-import { countries } from '../data/countries.js';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
@@ -13,8 +12,6 @@ interface Props {
   jsonLd?: object;
   noIndex?: boolean;
   hreflangHtml?: string;
-  ogLocale?: string;
-  ogAlternateLocales?: string;
 }
 
 const {
@@ -25,27 +22,10 @@ const {
   jsonLd,
   noIndex = false,
   hreflangHtml,
-  ogLocale = 'en_US',
-  ogAlternateLocales = '',
 } = Astro.props;
-
-// Detect current country from URL
-const pathParts = Astro.url.pathname.split('/').filter(Boolean);
-const currentCountryCode = (pathParts.length > 0 && countries[pathParts[0]]) ? pathParts[0] : null;
-
-// Build country hreflang links
-const countryHreflangLinks = Object.entries(countries).map(([code, c]) => {
-  return `<link rel="alternate" hreflang="${c.hreflang}" href="${SITE.url}/${code}/" />`;
-}).join('\n    ');
-
-// Build alternate OG locales from countries
-const altLocales = ogAlternateLocales || Object.values(countries)
-  .filter(c => c.locale !== ogLocale)
-  .map(c => `<meta property="og:locale:alternate" content="${c.locale}" />`)
-  .join('\n    ');
 ---
 <!DOCTYPE html>
-<html lang={currentCountryCode ? countries[currentCountryCode]?.lang || 'en' : 'en'} dir={(currentCountryCode && countries[currentCountryCode]?.lang === 'ar') ? 'rtl' : 'ltr'}>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -69,13 +49,22 @@ const altLocales = ogAlternateLocales || Object.values(countries)
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#1a1a1a">
   <meta name="keywords" content="gba emulator, play gba online, gba games, gameboy advance emulator, pokemon gba, free gba emulator" />
-  <script defer src="/geo-detect.js"></script>
   {hreflangHtml ? (
     <Fragment set:html={hreflangHtml} />
   ) : (
     <>
-      <link rel="alternate" hreflang="x-default" href={`${SITE.url}${Astro.url.pathname}`} />
-      {countryHreflangLinks && <Fragment set:html={countryHreflangLinks} />}
+      <link rel="alternate" hreflang="en" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="pt-BR" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="es" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ja" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="de" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="fr" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ru" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ko" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="it" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="id" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="ar" href={`https://www.eggermath.com${Astro.url.pathname}`} />
+      <link rel="alternate" hreflang="x-default" href={`https://www.eggermath.com${Astro.url.pathname}`} />
     </>
   )}
   <meta property="og:title" content={title}>
@@ -86,8 +75,17 @@ const altLocales = ogAlternateLocales || Object.values(countries)
   <meta property="og:image" content={ogImage}>
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:locale" content={ogLocale} />
-  {altLocales && <Fragment set:html={altLocales} />}
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="pt_BR" />
+  <meta property="og:locale:alternate" content="es_ES" />
+  <meta property="og:locale:alternate" content="ja_JP" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:locale:alternate" content="fr_FR" />
+  <meta property="og:locale:alternate" content="ru_RU" />
+  <meta property="og:locale:alternate" content="ko_KR" />
+  <meta property="og:locale:alternate" content="it_IT" />
+  <meta property="og:locale:alternate" content="id_ID" />
+  <meta property="og:locale:alternate" content="ar_SA" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
