@@ -26,8 +26,8 @@ const jsonLd = {
     },
     {
       "@type": "CollectionPage",
-      "name": "Play GBA Games Online Free — No Download GBA Emulator",
-      "description": SITE.description,
+      "name": "GBA Emulator Online — Play 52 Games Free",
+      "description": "Play 52 classic GBA, GBC, and GB games free in your browser. No download needed. Pokemon, Zelda, Mario & more.",
       "url": SITE.url,
       "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
       "mainEntity": {
@@ -96,10 +96,10 @@ const jsonLd = {
     <div class="pre-game-content" id="pre-game-content">
       <section class="browse-section">
         <div class="browse-header">
-          <h1>Play GBA, GBC & GB Games Online Free</h1>
+          <h1>GBA Emulator Online — Play 52 Games Free</h1>
           <span class="badge">Click to Play</span>
         </div>
-        <p class="browse-sub">Click any game to play instantly — supports GBA, GBC, and GB ROMs</p>
+        <p class="browse-sub">Play Pokemon, Zelda, Mario, Metroid and 48 more classic GBA games free in your browser. No download needed.</p>
         <div class="games-grid" id="games-grid">
           {games.map(game => (
             <GameCard
@@ -113,6 +113,47 @@ const jsonLd = {
         </div>
       </section>
       <GuideSteps />
+
+      <section class="content-section" style="max-width:900px;margin:48px auto;padding:0 24px;">
+        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">What is a GBA Emulator?</h2>
+        <p style="color:#aaa;line-height:1.8;margin-bottom:24px;">A GBA emulator lets you play Game Boy Advance games directly in your web browser without downloading any software. Our emulator uses mGBA WebAssembly, the same engine used by professional emulation projects. It supports GBA, GBC, and GB games with save states, fast forward, and keyboard/touch controls.</p>
+
+        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">How to Play GBA Games Online</h2>
+        <ol style="color:#aaa;line-height:1.8;margin-bottom:24px;padding-left:20px;">
+          <li style="margin-bottom:8px;">Click any game from the library above, or drag-and-drop your own .gba ROM file</li>
+          <li style="margin-bottom:8px;">The game loads instantly in your browser — no installation required</li>
+          <li style="margin-bottom:8px;">Use keyboard controls: Arrow keys = D-Pad, K = A button, J = B button, Enter = Start</li>
+          <li style="margin-bottom:8px;">Save your progress anytime with F5, load with F9, switch slots with F7</li>
+        </ol>
+
+        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">Why EggerMath?</h2>
+        <ul style="color:#aaa;line-height:1.8;margin-bottom:24px;padding-left:20px;">
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">52 built-in games</strong> — Pokemon, Zelda, Mario, Metroid, and more</li>
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">No download required</strong> — play directly in your browser</li>
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Save states</strong> — save and load your progress anytime</li>
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Fast forward</strong> — speed up boring parts</li>
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Mobile support</strong> — touch controls on phones and tablets</li>
+          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Works everywhere</strong> — Chrome, Safari, Firefox, Edge</li>
+        </ul>
+
+        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">Frequently Asked Questions</h2>
+        <div style="margin-bottom:16px;">
+          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Is it legal to play GBA games online?</h3>
+          <p style="color:#aaa;line-height:1.6;">Playing your own legally obtained ROM files is legal in most countries. EggerMath provides the emulator software only — you supply the ROM files.</p>
+        </div>
+        <div style="margin-bottom:16px;">
+          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Does it work on iPhone?</h3>
+          <p style="color:#aaa;line-height:1.6;">Yes. Our emulator works on iOS Safari with touch controls. No App Store download needed.</p>
+        </div>
+        <div style="margin-bottom:16px;">
+          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Can I play Pokemon GBA games?</h3>
+          <p style="color:#aaa;line-height:1.6;">Yes. We have Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, and more built-in. Just click to play.</p>
+        </div>
+        <div style="margin-bottom:16px;">
+          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">How do I save my game?</h3>
+          <p style="color:#aaa;line-height:1.6;">Press F5 to save, F9 to load. You have 10 save slots — press F7 to switch between them. Your saves are stored in your browser.</p>
+        </div>
+      </section>
     </div>
     <EmulatorContainer />
     <TouchControls />
