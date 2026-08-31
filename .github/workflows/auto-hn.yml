@@ -1,7 +1,9 @@
-name: Auto Post to Hacker News
+name: Auto Post to Hacker News (DISABLED - recovery mode)
+# DISABLED: Too much activity causing Google to flag site. Enable after 5 days of stability.
+# on:
+#   schedule:
+#     - cron: '0 13 * * *'
 on:
-  schedule:
-    - cron: '0 13 * * *'  # 1 PM UTC = 6:30 PM IST
   workflow_dispatch:
 
 jobs:

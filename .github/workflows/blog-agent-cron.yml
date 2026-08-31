@@ -1,7 +1,9 @@
-name: Blog Agent Cron
+name: Blog Agent Cron (DISABLED - recovery mode)
+# DISABLED: Auto-generated posts caused traffic drop. Enable after 5 days of stability.
+# on:
+#   schedule:
+#     - cron: '0,30 3-17 * * *'
 on:
-  schedule:
-    - cron: '0,30 3-17 * * *'
   workflow_dispatch: {}
 permissions:
   contents: write

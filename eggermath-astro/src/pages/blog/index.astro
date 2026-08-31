@@ -1,46 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { SITE } from '../../data/games.js';
-import fs from 'fs';
-import path from 'path';
 
-const manualPosts = [
+const allPosts = [
   { slug: 'best-gba-games-2026', title: 'Best GBA Games to Play Online in 2026', desc: 'Top 10 GBA games you can play free in your browser — Pokemon, Zelda, Mario, and more.', date: '2026-08-26', category: 'Lists' },
   { slug: 'how-to-save-gba-progress', title: 'How to Save Your GBA Game Progress in Browser', desc: 'Step-by-step guide to using save states in browser-based GBA emulators. Never lose progress again.', date: '2026-08-25', category: 'Guides' },
   { slug: 'gba-vs-gbc-which-is-better', title: 'GBA vs GBC: Which Console Has Better Games?', desc: 'Comparing Game Boy Advance and Game Boy Color libraries. Which retro console wins?', date: '2026-08-24', category: 'Comparison' },
   { slug: 'why-browser-emulation-is-the-future', title: 'Why Browser Emulation Is the Future of Retro Gaming', desc: 'No downloads, no setup — just click and play. Why WebAssembly emulators are changing everything.', date: '2026-08-23', category: 'Opinion' },
   { slug: 'pokemon-emerald-nuzlocke-guide', title: 'Pokemon Emerald Nuzlocke Challenge: Complete Guide', desc: 'Rules, tips, and strategies for the ultimate Pokemon Emerald Nuzlocke run.', date: '2026-08-22', category: 'Guides' },
-];
-
-const autoPosts = [];
-const blogDir = path.join(process.cwd(), 'src', 'pages', 'blog');
-const logFile = path.join(process.cwd(), 'reddit-blog-log.json');
-
-if (fs.existsSync(logFile)) {
-  const logs = JSON.parse(fs.readFileSync(logFile, 'utf-8'));
-  for (const log of logs) {
-    if (log.success && log.slug) {
-      const filePath = path.join(blogDir, `${log.slug}.astro`);
-      if (fs.existsSync(filePath)) {
-        const content = fs.readFileSync(filePath, 'utf-8');
-        const titleMatch = content.match(/title:\s*"([^"]+)"/);
-        const descMatch = content.match(/description:\s*"([^"]+)"/);
-        const dateMatch = content.match(/datePublished:\s*"([^"]+)"/);
-        const catMatch = content.match(/text-transform:uppercase">([^<]+)</);
-        
-        autoPosts.push({
-          slug: log.slug,
-          title: titleMatch ? titleMatch[1] : log.title,
-          desc: descMatch ? descMatch[1] : 'AI-generated blog post from Reddit discussion.',
-          date: dateMatch ? dateMatch[1] : log.time.split('T')[0],
-          category: catMatch ? catMatch[1] : 'Lists',
-        });
-      }
-    }
-  }
-}
-
-const allPosts = [...autoPosts, ...manualPosts].sort((a, b) => b.date.localeCompare(a.date));
+].sort((a, b) => b.date.localeCompare(a.date));
 
 const jsonLd = {"@context":"https://schema.org","@type":"Blog","name":"EggerMath Blog","url":`${SITE.url}/blog/`,"description":"Guides, lists, and news about retro gaming and browser-based emulation."};
 ---

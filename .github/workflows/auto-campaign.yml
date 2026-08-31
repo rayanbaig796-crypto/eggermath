@@ -1,7 +1,9 @@
-name: Auto Campaign
+name: Auto Campaign (DISABLED - recovery mode)
+# DISABLED: Too much activity causing Google to flag site. Enable after 5 days of stability.
+# on:
+#   schedule:
+#     - cron: '0 9 * * *'
 on:
-  schedule:
-    - cron: '0 9 * * *'
   workflow_dispatch: {}
 jobs:
   post:
