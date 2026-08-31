@@ -9,7 +9,7 @@ import { regionalKeywords } from '../../data/keywords.js';
 
 export function getStaticPaths() {
   const paths = [];
-  for (const lang of ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar"]) {
+  for (const lang of ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar","zh-CN","zh-TW","hi","th","vi","tr","pl","nl"]) {
     for (const game of games) {
       paths.push({ params: { lang, slug: game.slug }, props: { game, lang } });
     }

@@ -6,7 +6,7 @@ const TODAY = new Date().toISOString().split('T')[0];
 const DIST = join(process.cwd(), 'dist');
 const OG_IMAGE = `${SITE}/og-image.svg`;
 
-const LANGS = ['pt-BR', 'es', 'ja', 'de', 'fr', 'ru', 'ko', 'it', 'id', 'ar'];
+const LANGS = ['pt-BR', 'es', 'ja', 'de', 'fr', 'ru', 'ko', 'it', 'id', 'ar', 'zh-CN', 'zh-TW', 'hi', 'th', 'vi', 'tr', 'pl', 'nl'];
 
 function readGames() {
   const raw = readFileSync(join(process.cwd(), 'src', 'data', 'games.js'), 'utf8');

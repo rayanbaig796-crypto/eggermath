@@ -349,7 +349,111 @@ export const regionalKeywords = {
   ],
   "ar": [
     "محاكي gba",
-    "تحميل محاكي gba للاندرويد"
+    "تحميل محاكي gba للاندرويد",
+    "محاكي gba اونلاين",
+    "تحميل محاكي gba",
+    "محاكي gba للكمبيوتر",
+    "محاكي gba للموبايل",
+    "لعب gba اونلاين",
+    "محاكي gameboy advance",
+    "تحميل محاكي gameboy advance",
+    "محاكي gba مجانا"
+  ],
+  "zh-CN": [
+    "gba模拟器",
+    "gba模拟器在线",
+    "gba模拟器安卓",
+    "gba模拟器下载",
+    "gba模拟器电脑版",
+    "在线玩gba游戏",
+    "gba游戏模拟器",
+    "gba模拟器中文版",
+    "gba模拟器免费",
+    "口袋妖怪gba模拟器"
+  ],
+  "zh-TW": [
+    "gba模擬器",
+    "gba模擬器線上",
+    "gba模擬器安卓",
+    "gba模擬器下載",
+    "gba模擬器電腦版",
+    "線上玩gba遊戲",
+    "gba遊戲模擬器",
+    "gba模擬器中文版",
+    "gba模擬器免費",
+    "口袋妖怪gba模擬器"
+  ],
+  "hi": [
+    "gba एमुलेटर",
+    "gba एमुलेटर ऑनलाइन",
+    "gba एमुलेटर एंड्रॉयड",
+    "gba एमुलेटर डाउनलोड",
+    "gba एमुलेटर पीसी",
+    "ऑनलाइन gba गेम खेलें",
+    "gba गेम एमुलेटर",
+    "gba एमुलेटर मुफ्त",
+    "gba एमुलेटर फोन",
+    "gba एमुलेटर हिंदी"
+  ],
+  "th": [
+    "จำลอง gba",
+    "จำลอง gba ออนไลน์",
+    "จำลอง gba android",
+    "โหลดจำลอง gba",
+    "จำลอง gba pc",
+    "เล่น gba ออนไลน์",
+    "เกมจำลอง gba",
+    "จำลอง gba ฟรี",
+    "จำลอง gba มือถือ",
+    "จำลอง gameboy advance"
+  ],
+  "vi": [
+    "trình giả lập gba",
+    "trình giả lập gba trực tuyến",
+    "trình giả lập gba android",
+    "tải trình giả lập gba",
+    "trình giả lập gba pc",
+    "chơi gba trực tuyến",
+    "giả lập gba",
+    "trình giả lập gba miễn phí",
+    "trình giả lập gba điện thoại",
+    "trình giả lập gameboy advance"
+  ],
+  "tr": [
+    "gba emülatör",
+    "gba emülatör çevrimiçi",
+    "gba emülatör android",
+    "gba emülatör indir",
+    "gba emülatör pc",
+    "çevrimiçi gba oyna",
+    "gba oyun emülatörü",
+    "gba emülatör ücretsiz",
+    "gba emülatör telefon",
+    "gba emülatör türkçe"
+  ],
+  "pl": [
+    "emulator gba",
+    "emulator gba online",
+    "emulator gba android",
+    "pobierz emulator gba",
+    "emulator gba pc",
+    "graj w gba online",
+    "emulator gba gry",
+    "emulator gba za darmo",
+    "emulator gba telefon",
+    "emulator gba polski"
+  ],
+  "nl": [
+    "gba emulator",
+    "gba emulator online",
+    "gba emulator android",
+    "gba emulator downloaden",
+    "gba emulator pc",
+    "speel gba online",
+    "gba emulator spelletjes",
+    "gba emulator gratis",
+    "gba emulator telefoon",
+    "gba emulator nederlands"
   ]
 };
 

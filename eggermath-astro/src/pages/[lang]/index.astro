@@ -8,7 +8,7 @@ import { games, SITE } from '../../data/games.js';
 import { langNames } from '../../data/translations.js';
 
 export function getStaticPaths() {
-  const langs = ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar"];
+  const langs = ["pt-BR","es","ja","de","fr","ru","ko","it","id","ar","zh-CN","zh-TW","hi","th","vi","tr","pl","nl"];
   return langs.map(lang => ({ params: { lang }, props: { lang } }));
 }
 
@@ -17,35 +17,51 @@ const langName = langNames[lang] || lang;
 const baseUrl = SITE.url;
 
 const titleMap = {
-  'pt-BR': 'Jogue GBA, GBC e GB Online Gratis',
-  'es': 'Jugar GBA, GBC y GB Online Gratis',
-  'ja': 'GBA/GBC/GBをオンラインで無料プレイ',
-  'de': 'GBA, GBC & GB Online Kostenlos Spielen',
-  'fr': 'Jouez aux GBA, GBC & GB En Ligne Gratuitement',
-  'ru': 'GBA, GBC и GB Онлайн Бесплатно',
-  'ko': 'GBA, GBC 및 GB 온라인 무료 플레이',
-  'it': 'Gioca a GBA, GBC e GB Online Gratis',
-  'id': 'Main GBA, GBC & GB Online Gratis',
-  'ar': 'العب GBA, GBC و GB اونلاين مجانا',
+  'pt-BR': 'Emulador GBA Online — Jogue 52 Jogos Gratis',
+  'es': 'Emulador GBA Online — Juega 52 Juegos Gratis',
+  'ja': 'GBAエミュレータオンライン — 52ゲーム無料',
+  'de': 'GBA Emulator Online — 52 Spiele Kostenlos',
+  'fr': 'Émulateur GBA En Ligne — 52 Jeux Gratuits',
+  'ru': 'GBA Эмулятор Онлайн — 52 Игры Бесплатно',
+  'ko': 'GBA 에뮬레이터 온라인 — 52게임 무료',
+  'it': 'Emulatore GBA Online — 52 Giochi Gratis',
+  'id': 'Emulator GBA Online — 52 Game Gratis',
+  'ar': 'محاكي GBA اونلاين — 52 لعبة مجانا',
+  'zh-CN': 'GBA模拟器在线 — 52款游戏免费',
+  'zh-TW': 'GBA模擬器線上 — 52款遊戲免費',
+  'hi': 'GBA एमुलेटर ऑनलाइन — 52 गेम मुफ्त',
+  'th': 'จำลอง GBA ออนไลน์ — 52 เกมฟรี',
+  'vi': 'Trình giả lập GBA Trực tuyến — 52 Game Miễn Phí',
+  'tr': 'GBA Emülatör Çevrimiçi — 52 Oyun Ücretsiz',
+  'pl': 'Emulator GBA Online — 52 Gry za Darmo',
+  'nl': 'GBA Emulator Online — 52 Spelletjes Gratis',
 };
 
 const descMap = {
-  'pt-BR': 'Jogue classicos jogos de Game Boy Advance, Game Boy Color e Game Boy gratis no navegador.',
-  'es': 'Juega juegos clasicos de Game Boy Advance, Game Boy Color y Game Boy gratis en el navegador.',
-  'ja': 'Game Boy Advance、Game Boy Color、Game Boyのクラシックゲームをブラウザで無料プレイ。',
-  'de': 'Spiele klassische Game Boy Advance, Game Boy Color und Game Boy Spiele kostenlos im Browser.',
-  'fr': 'Jouez aux jeux classiques Game Boy Advance, Game Boy Color et Game Boy gratuitement.',
-  'ru': 'Играйте в классические игры GBA, GBC и GB бесплатно в браузере.',
-  'ko': 'Game Boy Advance, Game Boy Color, Game Boy 결제 게임을 브라우저에서 무료로 플레이하세요.',
-  'it': 'Gioca ai classici giochi Game Boy Advance, Game Boy Color e Game Boy gratis nel browser.',
-  'id': 'Main game klasik Game Boy Advance, Game Boy Color, dan Game Boy gratis di browser.',
-  'ar': 'العب ألعاب Game Boy Advance الكلاسيكية مجانا في المتصفح.',
+  'pt-BR': 'Jogue 52 jogos classicos de GBA, GBC e GB gratis no navegador. Pokemon, Zelda, Mario e mais.',
+  'es': 'Juega 52 juegos classicos de GBA, GBC y GB gratis en el navegador. Pokemon, Zelda, Mario y mas.',
+  'ja': 'GBA、GBC、GBのクラシックゲーム52本をブラウザで無料プレイ。ポケモン、ゼルダ、マリオなど。',
+  'de': 'Spiele 52 klassische GBA, GBC und GB Spiele kostenlos im Browser. Pokemon, Zelda, Mario und mehr.',
+  'fr': 'Jouez a 52 jeux classiques GBA, GBC et GB gratuitement. Pokemon, Zelda, Mario et plus.',
+  'ru': 'Играйте в 52 классические игры GBA, GBC и GB бесплатно в браузере. Pokemon, Zelda, Mario и другие.',
+  'ko': 'GBA, GBC, GB 클래식 게임 52개를 브라우저에서 무료로 플레이하세요. 포켓몬, 젤다, 마리오 등.',
+  'it': 'Gioca ai 52 classici giochi GBA, GBC e GB gratis nel browser. Pokemon, Zelda, Mario e altro.',
+  'id': 'Mainkan 52 game klasik GBA, GBC, dan GB gratis di browser. Pokemon, Zelda, Mario dan lainnya.',
+  'ar': 'العب 52 لعبة كلاسيكية من GBA و GBC و GB مجانا في المتصفح. Pokemon, Zelda, Mario والمزيد.',
+  'zh-CN': '在浏览器中免费玩52款经典GBA、GBC、GB游戏。口袋妖怪、塞尔达、马里奥等。',
+  'zh-TW': '在瀏覽器中免費遊玩52款經典GBA、GBC、GB遊戲。口袋妖怪、薩爾達、瑪利歐等。',
+  'hi': 'ब्राउज़र में 52 क्लासिक GBA, GBC, GB गेम मुफ्त खेलें। पोकेमोन, ज़ेल्डा, मारियो और बहुत कुछ।',
+  'th': 'เล่นเกมคลาสสิก GBA, GBC, GB 52 เกมฟรีในเบราว์เซอร์ โปเกมอน, เซลด้า, มาริโอ้ และอื่นๆ',
+  'vi': 'Chơi 52 game kinh điển GBA, GBC, GB miễn phí trên trình duyệt. Pokemon, Zelda, Mario và nhiều hơn nữa.',
+  'tr': 'Tarayicinizda 52 klasik GBA, GBC, GB oyununu ucretsiz oynayin. Pokemon, Zelda, Mario ve daha fazlasi.',
+  'pl': 'Graj w 52 klasyczne gry GBA, GBC i GB za darmo w przegladarce. Pokemon, Zelda, Mario i wiecej.',
+  'nl': 'Speel 52 klassieke GBA, GBC en GB spelletjes gratis in je browser. Pokemon, Zelda, Mario en meer.',
 };
 
 const pageTitle = titleMap[lang] || 'Play GBA, GBC & GB Games Online Free';
 const pageDesc = descMap[lang] || SITE.description;
 
-const supportedLangsList = ["en","pt-BR","es","ja","de","fr","ru","ko","it","id","ar"];
+const supportedLangsList = ["en","pt-BR","es","ja","de","fr","ru","ko","it","id","ar","zh-CN","zh-TW","hi","th","vi","tr","pl","nl"];
 const alternateLinks = supportedLangsList.map(l => {
   const href = l === 'en' ? `${baseUrl}/` : `${baseUrl}/${l}/`;
   return `<link rel="alternate" hreflang="${l}" href="${href}" />`;
