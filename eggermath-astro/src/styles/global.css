@@ -1524,6 +1524,71 @@ body.game-fullscreen .touch-controls .tc-center-btn.pressed {
   opacity: 0.9;
 }
 
+/* ── Content Section ── */
+.content-section {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.content-section h2 {
+  color: var(--accent-amber);
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  margin-top: 32px;
+}
+
+.content-section h2:first-child {
+  margin-top: 0;
+}
+
+.content-section p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.content-section ol,
+.content-section ul {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+.content-section li {
+  margin-bottom: 8px;
+}
+
+.content-section strong {
+  color: var(--text-primary);
+}
+
+.content-section .faq-item {
+  margin-bottom: 24px;
+}
+
+.content-section .faq-item h3 {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.content-section .faq-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    padding: 0 16px;
+  }
+  
+  .content-section h2 {
+    font-size: 1.3rem;
+  }
+}
+
 /* ── Footer ── */
 .site-footer, .footer-section {
   margin-top: 64px;
@@ -1571,6 +1636,25 @@ body.game-fullscreen .touch-controls .tc-center-btn.pressed {
 }
 
 .footer-link:hover, .footer-section a:hover {
+  color: var(--accent-amber);
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.social-link {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-link:hover {
   color: var(--accent-amber);
 }
 

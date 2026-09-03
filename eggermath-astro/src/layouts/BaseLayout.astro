@@ -36,6 +36,19 @@ const {
     gtag('js', new Date());
     gtag('config', 'G-44ZYW1XML3');
   </script>
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
   <title>{title}</title>
   <meta name="description" content={description}>
   <meta name="robots" content={noIndex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1'}>
@@ -48,7 +61,7 @@ const {
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#1a1a1a">
-  <meta name="keywords" content="gba emulator, play gba online, gba games, gameboy advance emulator, pokemon gba, free gba emulator" />
+  <meta name="keywords" content="gba emulator, play gba online, gba games, gameboy advance emulator, pokemon gba, free gba emulator, browser emulator, retro gaming" />
   {hreflangHtml ? (
     <Fragment set:html={hreflangHtml} />
   ) : (
@@ -90,6 +103,8 @@ const {
   <meta name="twitter:title" content={title}>
   <meta name="twitter:description" content={description}>
   <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:site" content="@eggermath">
+  <meta name="twitter:creator" content="@eggermath">
   {jsonLd && (
     <script type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
   )}

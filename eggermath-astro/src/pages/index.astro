@@ -22,11 +22,27 @@ const jsonLd = {
       "sameAs": [
         "https://twitter.com/eggermath",
         "https://www.reddit.com/user/eggermath"
-      ]
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": SITE.email,
+        "contactType": "customer service"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "name": SITE.name,
+      "url": SITE.url,
+      "description": "Free browser-based GBA, GBC, and GB emulator. Play classic Game Boy games instantly online.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${SITE.url}/?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "CollectionPage",
-      "name": "GBA Emulator Online — Play 52 Games Free",
+      "name": "GBA Emulator Online - Play 52 Classic Games Free in Browser",
       "description": "Play 52 classic GBA, GBC, and GB games free in your browser. No download needed. Pokemon, Zelda, Mario & more.",
       "url": SITE.url,
       "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
@@ -114,44 +130,57 @@ const jsonLd = {
       </section>
       <GuideSteps />
 
-      <section class="content-section" style="max-width:900px;margin:48px auto;padding:0 24px;">
-        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">What is a GBA Emulator?</h2>
-        <p style="color:#aaa;line-height:1.8;margin-bottom:24px;">A GBA emulator lets you play Game Boy Advance games directly in your web browser without downloading any software. Our emulator uses mGBA WebAssembly, the same engine used by professional emulation projects. It supports GBA, GBC, and GB games with save states, fast forward, and keyboard/touch controls.</p>
+      <section class="content-section">
+        <h2>What is a GBA Emulator?</h2>
+        <p>A GBA emulator lets you play Game Boy Advance games directly in your web browser without downloading any software. Our emulator uses mGBA WebAssembly, the same engine used by professional emulation projects. It supports GBA, GBC, and GB games with save states, fast forward, and keyboard/touch controls. You can play Pokemon, Zelda, Mario, Metroid, and 48 more classic titles instantly.</p>
 
-        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">How to Play GBA Games Online</h2>
-        <ol style="color:#aaa;line-height:1.8;margin-bottom:24px;padding-left:20px;">
-          <li style="margin-bottom:8px;">Click any game from the library above, or drag-and-drop your own .gba ROM file</li>
-          <li style="margin-bottom:8px;">The game loads instantly in your browser — no installation required</li>
-          <li style="margin-bottom:8px;">Use keyboard controls: Arrow keys = D-Pad, K = A button, J = B button, Enter = Start</li>
-          <li style="margin-bottom:8px;">Save your progress anytime with F5, load with F9, switch slots with F7</li>
+        <h2>How to Play GBA Games Online</h2>
+        <ol>
+          <li>Click any game from the library above, or drag-and-drop your own .gba ROM file</li>
+          <li>The game loads instantly in your browser — no installation required</li>
+          <li>Use keyboard controls: Arrow keys = D-Pad, K = A button, J = B button, Enter = Start</li>
+          <li>Save your progress anytime with F5, load with F9, switch slots with F7</li>
         </ol>
 
-        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">Why EggerMath?</h2>
-        <ul style="color:#aaa;line-height:1.8;margin-bottom:24px;padding-left:20px;">
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">52 built-in games</strong> — Pokemon, Zelda, Mario, Metroid, and more</li>
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">No download required</strong> — play directly in your browser</li>
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Save states</strong> — save and load your progress anytime</li>
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Fast forward</strong> — speed up boring parts</li>
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Mobile support</strong> — touch controls on phones and tablets</li>
-          <li style="margin-bottom:8px;"><strong style="color:#f0ebe0;">Works everywhere</strong> — Chrome, Safari, Firefox, Edge</li>
+        <h2>Why EggerMath?</h2>
+        <ul>
+          <li><strong>52 built-in games</strong> — Pokemon, Zelda, Mario, Metroid, and more</li>
+          <li><strong>No download required</strong> — play directly in your browser</li>
+          <li><strong>Save states</strong> — save and load your progress anytime</li>
+          <li><strong>Fast forward</strong> — speed up boring parts</li>
+          <li><strong>Mobile support</strong> — touch controls on phones and tablets</li>
+          <li><strong>Works everywhere</strong> — Chrome, Safari, Firefox, Edge</li>
         </ul>
 
-        <h2 style="color:#c4a35a;font-size:1.5rem;margin-bottom:16px;">Frequently Asked Questions</h2>
-        <div style="margin-bottom:16px;">
-          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Is it legal to play GBA games online?</h3>
-          <p style="color:#aaa;line-height:1.6;">Playing your own legally obtained ROM files is legal in most countries. EggerMath provides the emulator software only — you supply the ROM files.</p>
+        <h2>Supported Games</h2>
+        <p>We support over 52 classic GBA, GBC, and GB games including Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, The Legend of Zelda: A Link to the Past, Super Mario Advance, Metroid Fusion, and many more. All games run directly in your browser with no downloads required.</p>
+
+        <h2>Keyboard Controls</h2>
+        <p>Use your keyboard to play: Arrow keys for D-Pad movement, K for A button, J for B button, Q for L button, E for R button, Enter for Start, Right Shift for Select. Save state with F5, load state with F9, and switch between 10 save slots with F7.</p>
+
+        <h2>Mobile Gaming</h2>
+        <p>Play GBA games on your phone or tablet with touch controls. The emulator automatically detects mobile devices and shows on-screen controls. Works on iOS Safari, Chrome for Android, and Firefox mobile.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>Is it legal to play GBA games online?</h3>
+          <p>Playing your own legally obtained ROM files is legal in most countries. EggerMath provides the emulator software only — you supply the ROM files.</p>
         </div>
-        <div style="margin-bottom:16px;">
-          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Does it work on iPhone?</h3>
-          <p style="color:#aaa;line-height:1.6;">Yes. Our emulator works on iOS Safari with touch controls. No App Store download needed.</p>
+        <div class="faq-item">
+          <h3>Does it work on iPhone?</h3>
+          <p>Yes. Our emulator works on iOS Safari with touch controls. No App Store download needed.</p>
         </div>
-        <div style="margin-bottom:16px;">
-          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">Can I play Pokemon GBA games?</h3>
-          <p style="color:#aaa;line-height:1.6;">Yes. We have Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, and more built-in. Just click to play.</p>
+        <div class="faq-item">
+          <h3>Can I play Pokemon GBA games?</h3>
+          <p>Yes. We have Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, and more built-in. Just click to play.</p>
         </div>
-        <div style="margin-bottom:16px;">
-          <h3 style="color:#f0ebe0;font-size:1.1rem;margin-bottom:8px;">How do I save my game?</h3>
-          <p style="color:#aaa;line-height:1.6;">Press F5 to save, F9 to load. You have 10 save slots — press F7 to switch between them. Your saves are stored in your browser.</p>
+        <div class="faq-item">
+          <h3>How do I save my game?</h3>
+          <p>Press F5 to save, F9 to load. You have 10 save slots — press F7 to switch between them. Your saves are stored in your browser.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What ROM formats are supported?</h3>
+          <p>We support .gba, .zip, .gb, and .gbc files. You can drag and drop ROMs or use the file picker.</p>
         </div>
       </section>
     </div>
