@@ -655,8 +655,8 @@ export const games = [  {
 export const SITE = {
   name: 'EggerMath',
   url: 'https://www.eggermath.com',
-  title: 'GBA Emulator Online — Play 52 Games Free',
-  description: 'Play 52 classic GBA, GBC, and GB games free in your browser. No download needed. Pokemon, Zelda, Mario & more. Save states, fast forward.',
+  title: 'GBA Emulator Online — Play 52 Classic GBA, GBC & GB Games Free in Browser',
+  description: 'Play 52 classic GBA, GBC, and GB games free in your browser. No download needed. Pokemon, Zelda, Mario, Metroid & more. Save states, fast forward.',
   ogImage: 'https://www.eggermath.com/og-image.svg',
   megaFolder: 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA',
   gaId: 'G-44ZYW1XML3',

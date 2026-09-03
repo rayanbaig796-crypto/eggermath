@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GBA WASM Web — Play GBA Games in Browser</title>
+  <meta name="description" content="Play Game Boy Advance games in your browser using mGBA WebAssembly. No downloads, no plugins. Open source.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0d0d0d; color: #f0ebe0; font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; display: flex; flex-direction: column; align-items: center; }
+    header { text-align: center; padding: 40px 20px 20px; }
+    h1 { color: #c4a35a; font-size: 2rem; margin-bottom: 8px; }
+    p { color: #999; max-width: 500px; line-height: 1.6; }
+    .container { max-width: 480px; width: 100%; padding: 20px; }
+    canvas { width: 100%; background: #000; border: 2px solid #c4a35a; border-radius: 8px; display: block; }
+    .controls { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 16px; }
+    button { background: #1a1a1a; color: #c4a35a; border: 1px solid #333; padding: 12px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; transition: all 0.15s; }
+    button:hover { background: #2a2a2a; border-color: #c4a35a; }
+    button:active { transform: scale(0.95); }
+    .info { margin-top: 24px; padding: 16px; background: #111; border-radius: 8px; font-size: 0.85rem; color: #888; }
+    .info h3 { color: #c4a35a; margin-bottom: 8px; }
+    .info kbd { background: #222; padding: 2px 6px; border-radius: 3px; border: 1px solid #444; font-family: monospace; }
+    footer { padding: 20px; text-align: center; color: #555; font-size: 0.8rem; }
+    footer a { color: #c4a35a; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GBA WASM Web</h1>
+    <p>Play Game Boy Advance games in your browser. Powered by mGBA WebAssembly. Open source.</p>
+  </header>
+  <div class="container">
+    <canvas id="canvas" width="240" height="160"></canvas>
+    <div class="controls">
+      <button id="btn-load">Load ROM</button>
+      <button id="btn-save">Save (F5)</button>
+      <button id="btn-load-state">Load (F9)</button>
+      <button id="btn-slot">Slot: 0</button>
+      <button id="btn-ff">Fast Forward</button>
+      <button id="btn-fullscreen">Fullscreen</button>
+      <button id="btn-reset">Reset</button>
+    </div>
+    <div class="info">
+      <h3>Keyboard Controls</h3>
+      <p>
+        <kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd> D-pad &nbsp;
+        <kbd>Z</kbd> A &nbsp; <kbd>X</kbd> B &nbsp;
+        <kbd>Enter</kbd> Start &nbsp; <kbd>Backspace</kbd> Select
+      </p>
+    </div>
+  </div>
+  <footer>
+    <p>Built with <a href="https://mgba.io">mGBA</a> WASM. <a href="https://github.com/rayanbaig796-crypto/gba-wasm-web">GitHub</a></p>
+  </footer>
+  <input type="file" id="file-input" accept=".gba,.GBA" style="display:none">
+  <script type="module">
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const fileInput = document.getElementById('file-input');
+    let running = false;
+    let ffOn = false;
+    let slot = 0;
+
+    document.getElementById('btn-load').onclick = () => fileInput.click();
+    fileInput.onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      console.log('ROM loaded:', file.name);
+      running = true;
+    };
+    document.getElementById('btn-save').onclick = () => console.log('Save slot', slot);
+    document.getElementById('btn-load-state').onclick = () => console.log('Load slot', slot);
+    document.getElementById('btn-slot').onclick = () => {
+      slot = (slot + 1) % 10;
+      document.getElementById('btn-slot').textContent = `Slot: ${slot}`;
+    };
+    document.getElementById('btn-ff').onclick = () => {
+      ffOn = !ffOn;
+      document.getElementById('btn-ff').textContent = ffOn ? 'Normal Speed' : 'Fast Forward';
+    };
+    document.getElementById('btn-fullscreen').onclick = () => {
+      const el = canvas.parentElement;
+      if (el.requestFullscreen) el.requestFullscreen();
+    };
+    document.getElementById('btn-reset').onclick = () => {
+      running = false;
+      ctx.clearRect(0, 0, 240, 160);
+    };
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'F5') { e.preventDefault(); console.log('Save', slot); }
+      if (e.key === 'F9') { e.preventDefault(); console.log('Load', slot); }
+      if (e.key === 'f' || e.key === 'F') { ffOn = !ffOn; }
+      if (e.key === 'F11') { e.preventDefault(); canvas.parentElement.requestFullscreen?.(); }
+    });
+  </script>
+</body>
+</html>

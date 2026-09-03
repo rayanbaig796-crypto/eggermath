@@ -1,0 +1,22 @@
+[
+  "Pokemon_ Crystal Version.zip",
+  "Pokemon_ FireRed Version.zip",
+  "Pokemon_ Gold Version.zip",
+  "Pokemon_ Ruby Version.zip",
+  "Pokemon_ Sapphire Version.zip",
+  "Pokemon_ Silver Version.zip",
+  "Pokemon_ Yellow Version - Special Pikachu Edition.zip",
+  "Shantae.zip",
+  "Sonic Advance 3 (USA) (En,Ja,Fr,De,Es,It).zip",
+  "Street Fighter II.zip",
+  "Super Mario Advance 2_ Super Mario World.zip",
+  "Super Mario Advance 4_ Super Mario Bros. 3.zip",
+  "Super Mario Advance.zip",
+  "Super Mario Bros. Deluxe.zip",
+  "Super Mario Land (World) (Rev 1).zip",
+  "Super Mario Land 2 - 6 Golden Coins (USA, Europe) (Rev 2).zip",
+  "Tetris (JUE) (V1.1) [!].zip",
+  "Tetris DX.zip",
+  "Wario Land 3.zip",
+  "Wario Land_ Super Mario Land 3.zip"
+]

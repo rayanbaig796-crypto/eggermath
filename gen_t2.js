@@ -1,0 +1,30 @@
+const fs = require('fs');
+const filePath = 'C:\\Users\\rayan\\OneDrive\\Pictures\\Downloads\\PRACTIC\\eggermath-astro\\src\\data\\translations.js';
+const gSrc = fs.readFileSync('C:\\Users\\rayan\\OneDrive\\Pictures\\Downloads\\PRACTIC\\eggermath-astro\\src\\data\\games.js', 'utf8');
+const slugs = [...gSrc.matchAll(/slug: '([^']+)'/g)].map(m => m[1]);
+const titles = [...gSrc.matchAll(/title: '([^']+)'/g)].map(m => m[1]);
+const sys = [...gSrc.matchAll(/system: '([^']+)'/g)].map(m => m[1]);
+
+let o = 'export const gameTranslations = {\n';
+slugs.forEach((s, i) => {
+  const t = titles[i];
+  const sy = sys[i] || 'GBA';
+  o += "  '" + s + "': {\n";
+  o += "    'en': { title: 'Play " + t + " Online Free', desc: 'Play " + t + " online. Free " + sy + " emulator.' },\n";
+  o += "    'pt-BR': { title: 'Jogue " + t + " Online Gratis', desc: 'Jogue " + t + " online. Emulador " + sy + " gratuito.' },\n";
+  o += "    'es': { title: 'Jugar " + t + " Online Gratis', desc: 'Juega " + t + " online. Emulador " + sy + " gratuito.' },\n";
+  o += "    'ja': { title: '" + t + "\u3092\u30AA\u30F3\u30E9\u30A4\u30F3\u3067\u7121\u6599\u30D7\u30EC\u30A4', desc: '" + t + "\u3092\u30D6\u30E9\u30A6\u30B6\u3067\u30D7\u30EC\u30A4\u3057\u307E\u3059\u3002\u7121\u6599\u306E" + sy + "\u30A8\u30DF\u30E5\u30EC\u30FC\u30BF\u30FC\u3002' },\n";
+  o += "    'de': { title: '" + t + " Online Kostenlos Spielen', desc: 'Spiele " + t + " online. Kostenloser " + sy + "-Emulator.' },\n";
+  o += "    'fr': { title: 'Jouez \u00E0 " + t + " En Ligne Gratuitement', desc: 'Jouez \u00E0 " + t + " en ligne. Emulateur " + sy + " gratuit.' },\n";
+  o += "    'ru': { title: '" + t + " \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E \u041E\u043D\u043B\u0430\u0439\u043D', desc: '\u0418\u0433\u0440\u0430\u0439\u0442\u0435 " + t + " \u043E\u043D\u043B\u0430\u0439\u043D. \u0411\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u044B\u0439 " + sy + " \u044D\u043C\u0443\u043B\u044F\u0442\u043E\u0440.' },\n";
+  o += "    'ko': { title: '" + t + " \uC624\uB2C8\uC5B8 \uBB34\uB8CC \uD50C\uB808\uC774', desc: '" + t + "\uB97C \uC624\uB2C8\uC5B8\uC73C\uB85C \uD50C\uB808\uC774\uD558\uC138\uC694. \uBB34\uB8CC " + sy + " \uC5D0\uBBA8\uB808\uC774\uD130.' },\n";
+  o += "    'it': { title: 'Gioca a " + t + " Online Gratis', desc: 'Gioca a " + t + " online. Emulatore " + sy + " gratuito.' },\n";
+  o += "    'id': { title: 'Main " + t + " Online Gratis', desc: 'Main " + t + " online. Emulator " + sy + " gratis.' },\n";
+  o += "    'ar': { title: '\u0627\u0644\u0639\u0628 " + t + " \u0627\u0648\u0646\u0644\u0627\u064A\u0646 \u0645\u062C\u0627\u0646\u0627', desc: '\u0627\u0644\u0639\u0628 " + t + " \u0627\u0648\u0646\u0644\u0627\u064A\u0646. \u0645\u062D\u0627\u0643\u064A " + sy + " \u0645\u062C\u0627\u0646\u064A.' },\n";
+  o += "  },\n";
+});
+o += "};\n";
+o += 'export const supportedLangs = ["en","pt-BR","es","ja","de","fr","ru","ko","it","id","ar"];\n';
+o += 'export const langNames = {"en":"English","pt-BR":"Portugues","es":"Espanol","ja":"Japanese","de":"Deutsch","fr":"Francais","ru":"Russian","ko":"Korean","it":"Italiano","id":"Indonesian","ar":"Arabic"};\n';
+fs.writeFileSync(filePath, o, 'utf8');
+console.log('Generated translations for', slugs.length, 'games');

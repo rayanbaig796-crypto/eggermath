@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LocalAI — Private WebGPU Chatbot that runs 100% locally in your browser. No data leaves your device.">
+  <meta name="color-scheme" content="light dark">
+  <title>LocalAI — Private WebGPU Chatbot</title>
+
+  <!-- Fonts: Inter via Google Fonts with system fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+            mono: ['JetBrains Mono', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Local stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- highlight.js theme for code blocks -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css">
+
+  <!-- ESM importmap for WebLLM -->
+  <script type="importmap">
+  {
+    "imports": {
+      "@mlc-ai/web-llm": "https://esm.run/@mlc-ai/web-llm@0.2.79"
+    }
+  }
+  </script>
+
+  <!-- Markdown rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Code syntax highlighting -->
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+</head>
+<body class="min-h-screen bg-[#f8fafc] text-slate-900 font-sans antialiased flex flex-col overflow-hidden">
+  <!-- Skip link -->
+  <a href="#chat-container" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:bg-slate-900 focus:text-white focus:rounded-lg">Skip to chat</a>
+
+  <!-- ================= Loading / Progress Overlay ================= -->
+  <div id="loading-overlay" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white/95 backdrop-blur-sm px-6 text-center" role="status" aria-live="polite" aria-busy="true">
+    <div class="w-full max-w-md">
+      <!-- Spinner -->
+      <div class="mx-auto mb-6 h-12 w-12 animate-spin rounded-full border-4 border-slate-200 border-t-indigo-600" aria-hidden="true"></div>
+
+      <h2 id="loading-text" class="text-xl font-semibold tracking-tight text-slate-900">Initializing WebLLM</h2>
+      <p id="loading-detail" class="mt-2 text-sm text-slate-500">Checking WebGPU support…</p>
+
+      <!-- Progress bar -->
+      <div class="mt-6">
+        <div class="h-2 w-full overflow-hidden rounded-full bg-slate-200" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-labelledby="progress-text">
+          <div id="progress-fill" class="h-full w-0 rounded-full bg-indigo-600 transition-all duration-300 ease-out" style="width:0%"></div>
+        </div>
+        <p id="progress-text" class="mt-2 text-sm font-medium tabular-nums text-slate-600">0%</p>
+      </div>
+
+      <p class="mt-6 text-xs leading-relaxed text-slate-400">
+        First load downloads the model (~400 MB) and caches it in IndexedDB — next visits are instant.
+        <br>Keep this tab open while downloading.
+      </p>
+    </div>
+  </div>
+
+  <!-- ================= App Shell ================= -->
+  <div class="flex flex-1 min-h-0 overflow-hidden">
+    <!-- Sidebar backdrop (mobile) -->
+    <div id="sidebar-backdrop" class="fixed inset-0 z-30 hidden bg-slate-900/40 backdrop-blur-sm lg:hidden" aria-hidden="true"></div>
+
+    <!-- Sidebar -->
+    <aside id="sidebar" class="fixed inset-y-0 left-0 z-40 flex w-[280px] shrink-0 -translate-x-full flex-col border-r border-slate-200 bg-white transition-transform duration-200 ease-out lg:static lg:translate-x-0" aria-label="Settings sidebar">
+      <!-- Sidebar header: logo / title -->
+      <div class="flex items-center gap-3 border-b border-slate-100 px-5 py-5">
+        <div class="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-600 text-white shadow-sm" aria-hidden="true">
+          <!-- Spark / chat icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M12 3l1.9 4.1L18 9l-4.1 1.9L12 15l-1.9-4.1L6 9l4.1-1.9L12 3z"/><path d="M19 13l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/><path d="M5 13l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"/></svg>
+        </div>
+        <div class="min-w-0">
+          <p class="text-[15px] font-semibold leading-none tracking-tight text-slate-900">LocalAI</p>
+          <p class="mt-1 text-xs text-slate-500">Private WebGPU Chat</p>
+        </div>
+        <button id="sidebar-close" type="button" class="ml-auto inline-flex h-8 w-8 items-center justify-center rounded-lg text-slate-400 hover:bg-slate-100 hover:text-slate-700 lg:hidden" aria-label="Close sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+        </button>
+      </div>
+
+      <!-- Scrollable sidebar body -->
+      <div class="flex-1 overflow-y-auto px-5 py-5 space-y-6">
+        <!-- Model info -->
+        <section aria-labelledby="model-info-heading">
+          <h2 id="model-info-heading" class="text-xs font-semibold uppercase tracking-wider text-slate-500">Model</h2>
+          <div class="mt-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3">
+            <p class="text-sm font-medium text-slate-900">Qwen2.5-0.5B</p>
+            <p class="mt-1 text-xs leading-relaxed text-slate-500">Instruct model · ~400 MB · runs fully in-browser via WebGPU.</p>
+            <p class="mt-2 flex items-center gap-2 text-xs">
+              <span id="webgpu-status-dot" class="inline-block h-2 w-2 rounded-full bg-amber-400" aria-hidden="true"></span>
+              <span id="webgpu-status" class="font-medium text-slate-600">Checking WebGPU…</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- Settings -->
+        <section aria-labelledby="settings-heading" class="space-y-5">
+          <h2 id="settings-heading" class="text-xs font-semibold uppercase tracking-wider text-slate-500">Settings</h2>
+
+          <!-- Temperature -->
+          <div>
+            <label for="temperature" class="flex items-center justify-between text-sm font-medium text-slate-700">
+              <span>Temperature</span>
+              <span id="temperature-value" class="rounded bg-slate-100 px-2 py-0.5 text-xs font-mono tabular-nums text-slate-700">0.7</span>
+            </label>
+            <input id="temperature" name="temperature" type="range" min="0" max="1" step="0.1" value="0.7"
+              class="mt-2 w-full accent-indigo-600">
+            <p class="mt-1 text-xs text-slate-400">Lower = focused, higher = creative.</p>
+          </div>
+
+          <!-- Max tokens -->
+          <div>
+            <label for="max-tokens" class="block text-sm font-medium text-slate-700">Max tokens</label>
+            <select id="max-tokens" name="maxTokens"
+              class="mt-2 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-900 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20">
+              <option value="128">128</option>
+              <option value="256">256</option>
+              <option value="512" selected>512</option>
+              <option value="1024">1024</option>
+            </select>
+          </div>
+
+          <!-- System prompt -->
+          <div>
+            <label for="system-prompt" class="block text-sm font-medium text-slate-700">System prompt</label>
+            <textarea id="system-prompt" name="systemPrompt" rows="4"
+              placeholder="You are a helpful assistant that runs locally…"
+              class="mt-2 w-full resize-y rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm leading-relaxed text-slate-900 placeholder:text-slate-400 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20">You are a helpful, concise assistant that runs entirely in the user's browser.</textarea>
+            <p class="mt-1 text-xs text-slate-400">Steers model behavior for the whole conversation.</p>
+          </div>
+        </section>
+
+        <!-- Clear chat -->
+        <button id="clear-chat" type="button"
+          class="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+          Clear Chat
+        </button>
+      </div>
+
+      <!-- Sidebar footer: privacy -->
+      <div class="border-t border-slate-100 px-5 py-4">
+        <p class="flex items-start gap-2 text-xs leading-relaxed text-slate-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="mt-0.5 h-4 w-4 shrink-0 text-emerald-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M10 1a1 1 0 011 1v1.323a4 4 0 013.89 3.017 1 1 0 01-.78 1.15 3 3 0 00-2.11 2.865V11a1 1 0 01-1 1H9a1 1 0 01-1-1V9.355A3 3 0 005.89 6.49a1 1 0 01-.78-1.15A4 4 0 019 3.323V2a1 1 0 011-1zm-4 8V9a1 1 0 011-1h6a1 1 0 011 1v.355a5 5 0 01-3.5 4.77V15a1 1 0 01-1 1h-0a1 1 0 01-1-1v-.725A5 5 0 016 9z" clip-rule="evenodd"/><path d="M10 18a1 1 0 01-1-1v-1h2v1a1 1 0 01-1 1z"/></svg>
+          <span><strong class="font-semibold text-slate-700">Private by design.</strong> Inference runs 100% locally via WebGPU — no prompts or outputs leave your device.</span>
+        </p>
+      </div>
+    </aside>
+
+    <!-- Main chat area -->
+    <main class="flex min-w-0 flex-1 flex-col bg-[#f8fafc]">
+      <!-- Top bar -->
+      <header class="flex h-[56px] shrink-0 items-center gap-3 border-b border-slate-200 bg-white px-4 sm:px-6">
+        <button id="menu-toggle" type="button"
+          class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 shadow-sm hover:bg-slate-50 lg:hidden"
+          aria-label="Open settings" aria-expanded="false" aria-controls="sidebar">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+
+        <div class="min-w-0">
+          <h1 class="flex items-center gap-2 text-sm font-semibold text-slate-900">
+            Qwen2.5-0.5B
+            <span id="status-dot" class="inline-block h-2.5 w-2.5 rounded-full bg-amber-400 ring-2 ring-amber-100" aria-hidden="true"></span>
+            <span id="status-label" class="text-xs font-medium text-slate-500">Loading…</span>
+          </h1>
+          <p class="hidden text-xs text-slate-400 sm:block">Serverless · WebLLM · WebGPU</p>
+        </div>
+
+        <div class="ml-auto flex items-center gap-2">
+          <span class="hidden items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-xs font-medium text-slate-600 sm:inline-flex">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            Local only
+          </span>
+        </div>
+      </header>
+
+      <!-- WebGPU warning banner (hidden by default) -->
+      <div id="webgpu-warning" class="hidden border-b border-amber-200 bg-amber-50 px-4 py-3 sm:px-6" role="alert">
+        <div class="flex gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-amber-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+          <div class="min-w-0">
+            <p class="text-sm font-semibold text-amber-900">WebGPU is not available in this browser</p>
+            <p class="mt-1 text-sm leading-relaxed text-amber-800">
+              This chatbot requires WebGPU. Use <strong>Chrome</strong> or <strong>Edge 113+</strong> on desktop, and enable
+              <code class="rounded bg-amber-100 px-1 py-0.5 font-mono text-xs">chrome://flags/#enable-unsafe-webgpu</code>
+              if prompted. Firefox and Safari do not yet support WebGPU broadly.
+            </p>
+          </div>
+          <button id="webgpu-warning-dismiss" type="button" class="ml-auto shrink-0 text-amber-700 hover:text-amber-900" aria-label="Dismiss warning">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Chat scroll container -->
+      <div id="chat-scroll" class="flex-1 overflow-y-auto">
+        <div id="chat-container" class="mx-auto flex w-full max-w-3xl flex-col gap-4 px-4 py-6 sm:px-6 sm:py-8" aria-live="polite" aria-relevant="additions">
+          <!-- Starter empty state -->
+          <div id="empty-state" class="flex flex-col items-center justify-center px-4 py-12 text-center sm:py-16">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-lg shadow-indigo-500/20" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+            </div>
+            <h2 class="mt-5 text-xl font-semibold tracking-tight text-slate-900">Start a conversation</h2>
+            <p class="mt-2 max-w-md text-sm leading-relaxed text-slate-500">Ask anything — the model runs entirely in your browser. Try one of these to begin:</p>
+
+            <div class="mt-6 flex flex-wrap justify-center gap-2.5" role="list" aria-label="Example prompts">
+              <button type="button" class="example-chip rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1" data-prompt="Explain quantum computing simply">
+                Explain quantum computing simply
+              </button>
+              <button type="button" class="example-chip rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1" data-prompt="Write a python function to sort a list of dictionaries by a key">
+                Write a python function to sort…
+              </button>
+              <button type="button" class="example-chip rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 hover:border-slate-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1" data-prompt="Tell me a joke">
+                Tell me a joke
+              </button>
+            </div>
+          </div>
+
+          <!-- Messages are appended here by app.js -->
+        </div>
+      </div>
+
+      <!-- Composer -->
+      <div class="shrink-0 border-t border-slate-200 bg-white px-4 py-4 sm:px-6">
+        <div class="mx-auto max-w-3xl">
+          <form id="chat-form" class="flex items-end gap-3" aria-label="Chat composer">
+            <label for="user-input" class="sr-only">Message</label>
+            <div class="relative flex-1">
+              <textarea id="user-input" name="message" rows="1" placeholder="Ask anything…"
+                aria-label="Type your message"
+                class="max-h-36 min-h-[48px] w-full resize-none rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 pr-12 text-sm leading-relaxed text-slate-900 placeholder:text-slate-400 shadow-sm focus:border-indigo-500 focus:bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500/20"></textarea>
+              <span class="pointer-events-none absolute bottom-3 right-3 hidden text-xs text-slate-400 sm:inline" aria-hidden="true">↵ send · ⇧↵ newline</span>
+            </div>
+
+            <button id="send-btn" type="submit"
+              class="inline-flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+              aria-label="Send message">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
+            </button>
+
+            <button id="stop-btn" type="button"
+              class="hidden inline-flex h-[48px] items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white px-5 text-sm font-medium text-slate-700 shadow-sm hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-1"
+              aria-label="Stop generation">
+              <span class="h-2 w-2 rounded-full bg-red-500" aria-hidden="true"></span>
+              Stop
+            </button>
+          </form>
+
+          <p class="mt-2.5 text-center text-xs text-slate-400">
+            Runs 100% locally via WebGPU – no data leaves your device.
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
