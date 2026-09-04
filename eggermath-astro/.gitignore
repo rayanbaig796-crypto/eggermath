@@ -2,3 +2,5 @@ dist/
 .astro/
 node_modules/
 config.json
+arena-design/
+clone-and-redesign-website.zip
