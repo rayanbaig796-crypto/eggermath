@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Tektur", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Share Tech Mono", ui-monospace, monospace;
+
+  --color-den: #17141f;
+  --color-den-2: #221c2e;
+  --color-den-3: #2c243b;
+  --color-shell: #3f3a8c;
+  --color-shell-2: #5a54b5;
+  --color-mist: #c9c4f0;
+  --color-led: #f5b942;
+  --color-magenta: #d84a7a;
+  --color-cream: #f3e6c8;
+  --color-lcd: #8fd4c4;
+  --color-ink: #1a1523;
+  --color-mute: #9a90b0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--color-den);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: var(--color-led);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-led);
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .scanlines {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      rgb(0 0 0 / 0.18) 0px,
+      rgb(0 0 0 / 0.18) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  .lcd-glow {
+    box-shadow:
+      inset 0 0 40px rgb(143 212 196 / 0.18),
+      0 0 40px rgb(143 212 196 / 0.12);
+  }
+
+  .grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+}
+
+@keyframes led-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px #f5b942);
+  }
+  50% {
+    opacity: 0.45;
+    filter: drop-shadow(0 0 1px #f5b942);
+  }
+}
+
+@keyframes screen-on {
+  0% {
+    filter: brightness(0);
+    transform: scaleY(0.02);
+  }
+  40% {
+    filter: brightness(2);
+    transform: scaleY(0.02);
+  }
+  55% {
+    transform: scaleY(1);
+    filter: brightness(1.4);
+  }
+  100% {
+    filter: brightness(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes cart-seat {
+  0% {
+    transform: translateY(-18px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes floaty {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
