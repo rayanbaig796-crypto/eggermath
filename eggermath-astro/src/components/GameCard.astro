@@ -5,16 +5,20 @@ interface Props {
   slug: string;
   img: string;
   mega: string;
+  system?: string;
 }
 
-const { title, genre, slug, img, mega } = Astro.props;
+const { title, genre, slug, img, mega, system = 'GBA' } = Astro.props;
 ---
-<div class="game-pill" data-mega={mega} data-slug={slug}>
+<div class="game-pill" data-mega={mega} data-slug={slug} data-genre={genre} data-system={system} style="animation: cartSeat 0.5s ease both;">
   <a href={`/${slug}`} class="game-pill-link">
     <img class="game-pill-img" src={img} alt={`Play ${title} Online Free`} loading="lazy" onerror="this.style.display='none'">
     <div class="game-pill-overlay">
+      <div class="game-pill-meta">
+        <span class="game-pill-genre">{genre}</span>
+        <span class="game-pill-badge">{system}</span>
+      </div>
       <div class="game-pill-title">{title}</div>
-      <div class="game-pill-genre">{genre}</div>
       <div class="game-pill-play">
         <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
         Play Now

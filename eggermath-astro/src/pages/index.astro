@@ -112,10 +112,57 @@ const jsonLd = {
     <div class="pre-game-content" id="pre-game-content">
       <section class="browse-section">
         <div class="browse-header">
-          <h1>GBA Emulator Online — Play 52 Games Free</h1>
-          <span class="badge">Click to Play</span>
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            52 carts seated · no install
+          </div>
+          <div class="browse-header-top">
+            <div>
+              <h1>GBA emulator<br><span style="color: var(--text-secondary);">online — play 52 games free.</span></h1>
+              <p class="browse-sub">Play Pokemon, Zelda, Mario, Metroid and 48 more classic GBA games free in your browser. No download needed. Hover a cart — the handheld lights it up.</p>
+            </div>
+            <div class="catalog-search-wrap">
+              <svg class="catalog-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+              </svg>
+              <input type="text" class="catalog-search-input" id="game-search" placeholder="Find a title..." autocomplete="off">
+            </div>
+          </div>
+          <div class="catalog-toolbar">
+            <div class="catalog-filters" id="genre-filters">
+              <button class="filter-chip active" data-genre="All">All</button>
+              <button class="filter-chip" data-genre="RPG">RPG</button>
+              <button class="filter-chip" data-genre="Adventure">Adventure</button>
+              <button class="filter-chip" data-genre="Platformer">Platformer</button>
+              <button class="filter-chip" data-genre="Action">Action</button>
+              <button class="filter-chip" data-genre="Puzzle">Puzzle</button>
+              <button class="filter-chip" data-genre="Racing">Racing</button>
+              <button class="filter-chip" data-genre="Fighting">Fighting</button>
+              <button class="filter-chip" data-genre="Strategy">Strategy</button>
+              <button class="filter-chip" data-genre="Simulation">Simulation</button>
+            </div>
+            <div class="catalog-filters" id="system-filters">
+              <button class="filter-chip shell active" data-system="All">All systems</button>
+              <button class="filter-chip shell" data-system="GBA">GBA</button>
+              <button class="filter-chip shell" data-system="GBC">GBC</button>
+              <button class="filter-chip shell" data-system="GB">GB</button>
+            </div>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <div class="hero-stat-num">52</div>
+              <div class="hero-stat-label">built-in games</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">0</div>
+              <div class="hero-stat-label">downloads</div>
+            </div>
+            <div>
+              <div class="hero-stat-num">10</div>
+              <div class="hero-stat-label">save slots</div>
+            </div>
+          </div>
         </div>
-        <p class="browse-sub">Play Pokemon, Zelda, Mario, Metroid and 48 more classic GBA games free in your browser. No download needed.</p>
         <div class="games-grid" id="games-grid">
           {games.map(game => (
             <GameCard
@@ -124,6 +171,7 @@ const jsonLd = {
               slug={game.slug}
               img={game.img}
               mega={game.mega}
+              system={game.system}
             />
           ))}
         </div>
@@ -132,55 +180,110 @@ const jsonLd = {
 
       <section class="content-section">
         <h2>What is a GBA Emulator?</h2>
-        <p>A GBA emulator lets you play Game Boy Advance games directly in your web browser without downloading any software. Our emulator uses mGBA WebAssembly, the same engine used by professional emulation projects. It supports GBA, GBC, and GB games with save states, fast forward, and keyboard/touch controls. You can play Pokemon, Zelda, Mario, Metroid, and 48 more classic titles instantly.</p>
-
-        <h2>How to Play GBA Games Online</h2>
+        <p>A GBA emulator lets you play Game Boy Advance games directly in your web browser without downloading any software. Our emulator uses mGBA WebAssembly, the same engine used by professional emulation projects. It supports GBA, GBC, and GB games with save states, fast forward, and keyboard/touch controls.</p>
         <ol>
-          <li>Click any game from the library above, or drag-and-drop your own .gba ROM file</li>
+          <li>Click any game from the library, or drag-and-drop your own .gba ROM file</li>
           <li>The game loads instantly in your browser — no installation required</li>
           <li>Use keyboard controls: Arrow keys = D-Pad, K = A button, J = B button, Enter = Start</li>
           <li>Save your progress anytime with F5, load with F9, switch slots with F7</li>
         </ol>
 
-        <h2>Why EggerMath?</h2>
-        <ul>
-          <li><strong>52 built-in games</strong> — Pokemon, Zelda, Mario, Metroid, and more</li>
-          <li><strong>No download required</strong> — play directly in your browser</li>
-          <li><strong>Save states</strong> — save and load your progress anytime</li>
-          <li><strong>Fast forward</strong> — speed up boring parts</li>
-          <li><strong>Mobile support</strong> — touch controls on phones and tablets</li>
-          <li><strong>Works everywhere</strong> — Chrome, Safari, Firefox, Edge</li>
-        </ul>
-
-        <h2>Supported Games</h2>
-        <p>We support over 52 classic GBA, GBC, and GB games including Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, The Legend of Zelda: A Link to the Past, Super Mario Advance, Metroid Fusion, and many more. All games run directly in your browser with no downloads required.</p>
-
-        <h2>Keyboard Controls</h2>
-        <p>Use your keyboard to play: Arrow keys for D-Pad movement, K for A button, J for B button, Q for L button, E for R button, Enter for Start, Right Shift for Select. Save state with F5, load state with F9, and switch between 10 save slots with F7.</p>
-
-        <h2>Mobile Gaming</h2>
-        <p>Play GBA games on your phone or tablet with touch controls. The emulator automatically detects mobile devices and shows on-screen controls. Works on iOS Safari, Chrome for Android, and Firefox mobile.</p>
-
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-item">
-          <h3>Is it legal to play GBA games online?</h3>
-          <p>Playing your own legally obtained ROM files is legal in most countries. EggerMath provides the emulator software only — you supply the ROM files.</p>
+        <div class="features-grid">
+          <div class="feature-card">
+            <h3>52 built-in games</h3>
+            <p>Pokemon, Zelda, Mario, Metroid, and a full gray-brick shelf besides.</p>
+          </div>
+          <div class="feature-card">
+            <h3>No download required</h3>
+            <p>Play directly in Chrome, Safari, Firefox, or Edge.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Save states</h3>
+            <p>Ten slots. F5 saves, F9 loads, F7 cycles the active slot.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Fast forward</h3>
+            <p>Hold the speed toggle when the grass is just grass.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Mobile support</h3>
+            <p>Touch controls modeled on the original pad, shoulders, and face buttons.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Works everywhere</h3>
+            <p>Progress lives in this browser. No account, no cloud.</p>
+          </div>
         </div>
-        <div class="faq-item">
-          <h3>Does it work on iPhone?</h3>
-          <p>Yes. Our emulator works on iOS Safari with touch controls. No App Store download needed.</p>
+
+        <div class="controls-visual" style="margin-top: 40px;">
+          <div class="controls-visual-header">
+            <div>
+              <p class="controls-visual-sub">Mapped like the plastic</p>
+              <h2>Controls</h2>
+            </div>
+          </div>
+          <div class="controls-key-grid">
+            <div class="controls-key-row"><span>D-Pad</span><kbd>Arrow keys</kbd></div>
+            <div class="controls-key-row"><span>A button</span><kbd>K</kbd></div>
+            <div class="controls-key-row"><span>B button</span><kbd>J</kbd></div>
+            <div class="controls-key-row"><span>Start</span><kbd>Enter</kbd></div>
+            <div class="controls-key-row"><span>Select</span><kbd>Shift</kbd></div>
+            <div class="controls-key-row"><span>L / R</span><kbd>Q / E</kbd></div>
+            <div class="controls-key-row"><span>Save state</span><kbd>F5</kbd></div>
+            <div class="controls-key-row"><span>Load state</span><kbd>F9</kbd></div>
+            <div class="controls-key-row"><span>Next slot</span><kbd>F7</kbd></div>
+            <div class="controls-key-row"><span>Fast forward</span><kbd>Space</kbd></div>
+          </div>
+          <p style="margin-top: 16px; font-size: 0.88rem; color: var(--text-secondary);">Touch controls activate on phones and tablets. Connect a keyboard or controller for the better commute.</p>
         </div>
-        <div class="faq-item">
-          <h3>Can I play Pokemon GBA games?</h3>
-          <p>Yes. We have Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, and more built-in. Just click to play.</p>
-        </div>
-        <div class="faq-item">
-          <h3>How do I save my game?</h3>
-          <p>Press F5 to save, F9 to load. You have 10 save slots — press F7 to switch between them. Your saves are stored in your browser.</p>
-        </div>
-        <div class="faq-item">
-          <h3>What ROM formats are supported?</h3>
-          <p>We support .gba, .zip, .gb, and .gbc files. You can drag and drop ROMs or use the file picker.</p>
+
+        <h2 style="margin-top: 48px;">Frequently Asked</h2>
+        <div class="faq-accordion" id="faq-accordion">
+          <div class="faq-accordion-item open">
+            <button class="faq-accordion-btn" aria-expanded="true">
+              <span>Is it legal to play GBA games online?</span>
+              <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-accordion-content">
+              <p>Playing your own legally obtained ROM files is legal in most countries. EggerMath provides the emulator software only — you supply the ROM files.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-btn" aria-expanded="false">
+              <span>Does it work on iPhone?</span>
+              <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-accordion-content">
+              <p>Yes. The handheld works on iOS Safari with touch controls. No App Store download needed.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-btn" aria-expanded="false">
+              <span>Can I play Pokemon GBA games?</span>
+              <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-accordion-content">
+              <p>Yes. Pokemon Emerald, FireRed, LeafGreen, Ruby, Sapphire, and more sit in the binder. Click to play.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-btn" aria-expanded="false">
+              <span>How do I save my game?</span>
+              <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-accordion-content">
+              <p>Press F5 to save, F9 to load. You have 10 save slots — press F7 to switch between them. Saves are stored in your browser.</p>
+            </div>
+          </div>
+          <div class="faq-accordion-item">
+            <button class="faq-accordion-btn" aria-expanded="false">
+              <span>What ROM formats are supported?</span>
+              <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-accordion-content">
+              <p>We support .gba, .zip, .gb, and .gbc files. You can drag and drop ROMs or use the file picker.</p>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -201,4 +304,95 @@ const jsonLd = {
 </script>
 <script>
 import '../scripts/emulator.js';
+</script>
+
+<script is:inline>
+// Game filters, search, and FAQ accordion
+(function() {
+  // Game filtering
+  const searchInput = document.getElementById('game-search');
+  const genreFilters = document.getElementById('genre-filters');
+  const systemFilters = document.getElementById('system-filters');
+  const gamesGrid = document.getElementById('games-grid');
+  
+  if (searchInput && genreFilters && systemFilters && gamesGrid) {
+    let currentGenre = 'All';
+    let currentSystem = 'All';
+    let searchQuery = '';
+    
+    function filterGames() {
+      const cards = gamesGrid.querySelectorAll('.game-pill');
+      let visibleCount = 0;
+      
+      cards.forEach(card => {
+        const genre = card.dataset.genre || '';
+        const system = card.dataset.system || '';
+        const title = card.querySelector('.game-pill-title')?.textContent || '';
+        
+        const matchGenre = currentGenre === 'All' || genre === currentGenre;
+        const matchSystem = currentSystem === 'All' || system === currentSystem;
+        const matchSearch = !searchQuery || title.toLowerCase().includes(searchQuery);
+        
+        if (matchGenre && matchSystem && matchSearch) {
+          card.style.display = '';
+          visibleCount++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+    
+    // Genre filter clicks
+    genreFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-chip');
+      if (!btn) return;
+      
+      genreFilters.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentGenre = btn.dataset.genre;
+      filterGames();
+    });
+    
+    // System filter clicks
+    systemFilters.addEventListener('click', (e) => {
+      const btn = e.target.closest('.filter-chip');
+      if (!btn) return;
+      
+      systemFilters.querySelectorAll('.filter-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentSystem = btn.dataset.system;
+      filterGames();
+    });
+    
+    // Search input
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.toLowerCase().trim();
+      filterGames();
+    });
+  }
+  
+  // FAQ accordion
+  const faqAccordion = document.getElementById('faq-accordion');
+  if (faqAccordion) {
+    faqAccordion.addEventListener('click', (e) => {
+      const btn = e.target.closest('.faq-accordion-btn');
+      if (!btn) return;
+      
+      const item = btn.closest('.faq-accordion-item');
+      const isOpen = item.classList.contains('open');
+      
+      // Close all items
+      faqAccordion.querySelectorAll('.faq-accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-accordion-btn').setAttribute('aria-expanded', 'false');
+      });
+      
+      // Toggle current item
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  }
+})();
 </script>
