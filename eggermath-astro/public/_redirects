@@ -45,5 +45,8 @@
 # Redirect old /developers/ path
 /developers/* / 301
 
+# Redirect guessed game URLs (no plain /tetris, /pokemon etc. exist)
+/tetris /tetris-gb 301
+
 # Redirect old search index
 /search-index.json / 301
