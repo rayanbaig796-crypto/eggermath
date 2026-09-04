@@ -24,9 +24,9 @@ const games = [
 
 const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.date,"datePublished":"2026-08-26","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
 ---
-<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/best-gba-games-2026/`} jsonLd={jsonLd}>
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/best-gba-games-2026`} jsonLd={jsonLd}>
 <main style="max-width:800px;margin:0 auto;padding:24px">
-  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
   <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
 
   <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
@@ -52,8 +52,8 @@ const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline"
   <div style="margin-top:32px">
     <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
     <ul style="padding-left:20px">
-      <li><a href="/blog/how-to-save-gba-progress/" style="color:#c4a35a;text-decoration:none">How to Save Your GBA Game Progress in Browser</a></li>
-      <li><a href="/blog/gba-vs-gbc-which-is-better/" style="color:#c4a35a;text-decoration:none">GBA vs GBC: Which Console Has Better Games?</a></li>
+      <li><a href="/blog/how-to-save-gba-progress" style="color:#c4a35a;text-decoration:none">How to Save Your GBA Game Progress in Browser</a></li>
+      <li><a href="/blog/gba-vs-gbc-which-is-better" style="color:#c4a35a;text-decoration:none">GBA vs GBC: Which Console Has Better Games?</a></li>
     </ul>
   </div>
 </main>

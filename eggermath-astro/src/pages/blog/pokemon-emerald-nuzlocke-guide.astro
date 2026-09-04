@@ -5,9 +5,9 @@ import { SITE } from '../../data/games.js';
 const post = { title: 'Pokemon Emerald Nuzlocke Challenge: Complete Guide', desc: 'Rules, tips, and strategies for the ultimate Pokemon Emerald Nuzlocke run.', date: '2026-08-22', category: 'Guides' };
 const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-22","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
 ---
-<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/pokemon-emerald-nuzlocke-guide/`} jsonLd={jsonLd}>
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/pokemon-emerald-nuzlocke-guide`} jsonLd={jsonLd}>
 <main style="max-width:800px;margin:0 auto;padding:24px">
-  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
   <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
   <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
   <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
@@ -39,7 +39,7 @@ const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline"
   </ul>
 
   <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why Nuzlocke Is Better in Browser</h2>
-  <p style="color:#ccc;margin-bottom:16px">Playing a Nuzlocke on <a href="/pokemon-emerald/" style="color:#c4a35a">EggerMath's browser emulator</a> has advantages:</p>
+  <p style="color:#ccc;margin-bottom:16px">Playing a Nuzlocke on <a href="/pokemon-emerald" style="color:#c4a35a">EggerMath's browser emulator</a> has advantages:</p>
   <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
     <li style="margin-bottom:8px"><strong style="color:#c4a35a">Save states:</strong> Save before risky encounters (if you allow it)</li>
     <li style="margin-bottom:8px"><strong style="color:#c4a35a">Fast forward:</strong> Grind levels faster</li>
@@ -49,7 +49,7 @@ const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline"
   <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
     <h2 style="font-size:1.1rem;margin-bottom:8px">Start Your Nuzlocke Now</h2>
     <p style="color:#aaa;font-size:14px;margin-bottom:12px">Pokemon Emerald is available free in your browser. Ready to risk it all?</p>
-    <a href="/pokemon-emerald/" style="color:#c4a35a;text-decoration:none;font-weight:700">Play Pokemon Emerald →</a>
+    <a href="/pokemon-emerald" style="color:#c4a35a;text-decoration:none;font-weight:700">Play Pokemon Emerald →</a>
   </div>
 </main>
 </BaseLayout>

@@ -5,9 +5,9 @@ import { SITE } from '../../data/games.js';
 const post = { title: 'GBA vs GBC: Which Console Has Better Games?', desc: 'Comparing Game Boy Advance and Game Boy Color libraries. Which retro console wins?', date: '2026-08-24', category: 'Comparison' };
 const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":"2026-08-24","author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
 ---
-<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/gba-vs-gbc-which-is-better/`} jsonLd={jsonLd}>
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/gba-vs-gbc-which-is-better`} jsonLd={jsonLd}>
 <main style="max-width:800px;margin:0 auto;padding:24px">
-  <a href="/blog/" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
   <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
   <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
   <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>

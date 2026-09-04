@@ -229,7 +229,7 @@ try {
     const dateMatch = content.match(/datePublished['":\s]+['"]?(\d{4}-\d{2}-\d{2})/);
     const pubDate = dateMatch ? dateMatch[1] : TODAY;
     blogUrls.push(
-      urlEntry(`${SITE}/blog/${slug}/`, {
+      urlEntry(`${SITE}/blog/${slug}`, {
         priority: '0.7',
         changefreq: 'monthly',
         images: [OG_IMAGE],

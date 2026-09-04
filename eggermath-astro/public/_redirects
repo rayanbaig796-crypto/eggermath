@@ -1,0 +1,36 @@
+# Redirect old/sitemap references
+/sitemap-index.xml /sitemap.xml 301
+/sitemap-0.xml /sitemap.xml 301
+
+# Redirect old auto-generated blog posts that were deleted
+/blog/gba-games-online-free-play-in-browser /blog 301
+/blog/best-gba-rom-hacks-to-play-right-now /blog 301
+/blog/pokemon-fan-games-you-can-play-in-browser /blog 301
+/blog/how-to-speed-up-gba-games-in-emulator /blog 301
+/blog/top-10-gba-rpgs-of-all-time /blog 301
+/blog/gba-emulator-settings-for-best-performance /blog 301
+/blog/how-to-use-gba-save-states /blog 301
+/blog/best-gba-action-games-ranked /blog 301
+/blog/playing-pokemon-emerald-in-browser /blog 301
+/blog/gba-vs-game-boy-color-differences /blog 301
+/blog/why-emulation-is-important-for-preservation /blog 301
+
+# Redirect old country/region pages that were reverted
+/in/ / 301
+/us/ / 301
+/uk/ / 301
+/ca/ / 301
+/au/ / 301
+/de/ / 301
+/fr/ / 301
+/jp/ / 301
+/br/ / 301
+/in/* / 301
+/us/* / 301
+/uk/* / 301
+/ca/* / 301
+/au/* / 301
+/de/* / 301
+/fr/* / 301
+/jp/* / 301
+/br/* / 301

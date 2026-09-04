@@ -44,12 +44,3 @@
 
 /index.html
   Cache-Control: no-store, must-revalidate
-
-/privacy.html
-  Cache-Control: no-store, must-revalidate
-
-/terms.html
-  Cache-Control: no-store, must-revalidate
-
-/takedown.html
-  Cache-Control: no-store, must-revalidate

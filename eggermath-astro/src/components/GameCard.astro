@@ -10,7 +10,7 @@ interface Props {
 const { title, genre, slug, img, mega } = Astro.props;
 ---
 <div class="game-pill" data-mega={mega} data-slug={slug}>
-  <a href={`/${slug}/`} class="game-pill-link">
+  <a href={`/${slug}`} class="game-pill-link">
     <img class="game-pill-img" src={img} alt={`Play ${title} Online Free`} loading="lazy" onerror="this.style.display='none'">
     <div class="game-pill-overlay">
       <div class="game-pill-title">{title}</div>

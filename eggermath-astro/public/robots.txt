@@ -27,5 +27,17 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
+User-agent: Applebot
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
 # Sitemaps
 Sitemap: https://www.eggermath.com/sitemap.xml

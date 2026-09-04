@@ -125,7 +125,7 @@ const jsonLd = {
 <EmulatorLayout
   title={`${pageTitle} | EggerMath`}
   description={enhancedDescEn}
-  canonical={`${SITE.url}/${game.slug}/`}
+  canonical={`${SITE.url}/${game.slug}`}
   jsonLd={jsonLd}
   hreflangHtml={alternateLinks}
 >
@@ -207,8 +207,8 @@ const jsonLd = {
     <TouchControls />
   </main>
 
-  <section class="embed-widget"><h3>Embed this game</h3><p>Copy code to embed on your site (backlink to eggermath.com):</p><pre>{`<iframe src="https://www.eggermath.com/${game.slug}/" width="480" height="320"></iframe>`}</pre><button onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button></section>
-  <section class="share-widget"><a href={`https://twitter.com/intent/tweet?text=Play ${game.title} online&url=${SITE.url}/${game.slug}/`} target="_blank">Share on X</a> <a href={`https://www.reddit.com/submit?url=${SITE.url}/${game.slug}/&title=Play ${game.title}`} target="_blank">Share on Reddit</a></section>
+  <section class="embed-widget"><h3>Embed this game</h3><p>Copy code to embed on your site (backlink to eggermath.com):</p><pre>{`<iframe src="https://www.eggermath.com/${game.slug}" width="480" height="320"></iframe>`}</pre><button onclick="navigator.clipboard.writeText(this.previousElementSibling.textContent)">Copy</button></section>
+  <section class="share-widget"><a href={`https://twitter.com/intent/tweet?text=Play ${game.title} online&url=${SITE.url}/${game.slug}`} target="_blank">Share on X</a> <a href={`https://www.reddit.com/submit?url=${SITE.url}/${game.slug}&title=Play ${game.title}`} target="_blank">Share on Reddit</a></section>
 
   <section class="game-info">
     <h2>About {game.title}</h2>
@@ -230,7 +230,7 @@ const jsonLd = {
       <h3>Similar {game.genre} Games</h3>
       <div class="related-grid">
         {relatedGames.map(g => (
-          <a href={`/${g.slug}/`} class="related-card">
+          <a href={`/${g.slug}`} class="related-card">
             <img src={g.img} alt={`Play ${g.title} online`} loading="lazy" width="120" height="80" />
             <span>{g.title}</span>
           </a>
