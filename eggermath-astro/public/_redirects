@@ -34,3 +34,16 @@
 /fr/* / 301
 /jp/* / 301
 /br/* / 301
+
+# Redirect old game.html?id= URLs (408 pages returning 404)
+/game.html / 301
+
+# Redirect old /play/ and /unblocked/ URLs (184 pages + 5 redirect errors + 22 crawled-not-indexed)
+/play/* / 301
+/unblocked/* / 301
+
+# Redirect old /developers/ path
+/developers/* / 301
+
+# Redirect old search index
+/search-index.json / 301
