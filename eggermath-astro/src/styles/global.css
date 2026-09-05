@@ -2333,3 +2333,27 @@ body.game-landscape .touch-controls .tc-center-btn.pressed {
   color: #fff;
   opacity: 0.9;
 }
+
+/* Adsterra Social Bar — bottom-right position */
+[class*="social-bar"],
+[id*="social-bar"],
+.adsterra-social,
+div[class*="profitableratecpm"],
+div[id*="profitableratecpm"],
+iframe[src*="profitableratecpm"],
+iframe[src*="highrevenue"] {
+  all: unset !important;
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 2147483647 !important;
+}
+
+/* Also target any floating ad container from Adsterra */
+div[style*="position: fixed"][style*="top"],
+div[style*="position:fixed"][style*="top"] {
+  top: auto !important;
+  bottom: 20px !important;
+}
