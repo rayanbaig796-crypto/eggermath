@@ -1,0 +1,81 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'Best Game Boy Color Games to Play Online in 2026',
+  desc: 'Discover the top Game Boy Color games you can play free in your browser. Pokemon, Zelda, Mario, and more classic GBC titles.',
+  date: '2026-09-04',
+  category: 'Lists',
+};
+
+const games = [
+  { name: 'Pokemon Crystal', slug: 'pokemon-crystal', reason: 'The definitive Gen 2 experience. Animated sprites, Suicune story, and the Battle Tower make this the best Pokemon GBC game.' },
+  { name: 'Pokemon Gold', slug: 'pokemon-gold', reason: 'Introduced 100 new Pokemon and the day/night cycle. A massive leap from Gen 1 that defined a generation.' },
+  { name: 'Pokemon Silver', slug: 'pokemon-silver', reason: 'Features Lugia as the legendary, plus the ability to travel to Kanto after beating the Elite Four. incredible value.' },
+  { name: 'Wario Land 3', slug: 'wario-land-3', reason: '20+ levels of treasure hunting with unique enemy transformations. Wario is invincible — you have to get hit to solve puzzles.' },
+  { name: 'Shantae', slug: 'shantae', reason: 'The half-genie hero with hair-whip attacks and dance transformations. Originally a rarity, now a beloved cult classic.' },
+  { name: 'Super Mario Bros. Deluxe', slug: 'super-mario-bros-deluxe', reason: 'The entire NES classic on your Game Boy Color with extra challenge modes and a world map.' },
+  { name: 'Tetris DX', slug: 'tetris-dx', reason: 'The definitive portable Tetris. Three save slots, multiple modes, and the addictive gameplay that never gets old.' },
+  { name: 'DBZ: Legendary Super Warriors', slug: 'dbz-legendary-super-warriors', reason: 'Card-based combat through every DBZ saga. Surprisingly deep for a Game Boy game.' },
+  { name: 'Donkey Kong Country', slug: 'donkey-kong-country', reason: 'The SNES classic ported to GBC with 40 levels across 7 worlds. Swing on vines and ride mine carts.' },
+  { name: 'Kirby: Nightmare in Dream Land', slug: 'kirby-nightmare-in-dream-land', reason: 'Colorful platforming with copy abilities. Help Kirby reclaim the Dream Rod from King Dedede.' },
+];
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/best-game-boy-color-games`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">The Game Boy Color delivered some of the best handheld games ever made. With its vibrant screen and massive library, the GBC gave us titles that still hold up today. Here are the top 10 Game Boy Color games you can play free in your browser on <a href="/" style="color:#c4a35a">EggerMath</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">1. Pokemon Crystal</h2>
+  <p style="color:#ccc;margin-bottom:16px">Pokemon Crystal is widely considered the best Game Boy Color game ever made. It took everything Pokemon Gold and Silver did and improved it. The animated battle sprites brought your Pokemon to life, and the Suicune storyline added a compelling post-game quest. The Battle Tower gave competitive players a reason to keep playing long after the Elite Four. If you only play one GBC game, make it <a href="/pokemon-crystal" style="color:#c4a35a">Pokemon Crystal</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">2. Pokemon Gold</h2>
+  <p style="color:#ccc;margin-bottom:16px">Pokemon Gold introduced 100 new Pokemon, the Johto region, and the revolutionary day/night cycle. Playing at different times of day actually changed which Pokemon appeared. This was groundbreaking in 1999. The ability to return to Kanto after becoming Champion gave the game incredible depth. Play <a href="/pokemon-gold" style="color:#c4a35a">Pokemon Gold</a> online and experience where it all began.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">3. Pokemon Silver</h2>
+  <p style="color:#ccc;margin-bottom:16px">The counterpart to Gold featuring Lugia instead of Ho-Oh. Pokemon Silver shares the same amazing Johto region but with exclusive Pokemon and a different legendary focus. Many fans prefer Silver for Lugia's iconic design and the emotional weight of the story. <a href="/pokemon-silver" style="color:#c4a35a">Play Pokemon Silver</a> to see why Generation 2 remains a fan favorite.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">4. Wario Land 3</h2>
+  <p style="color:#ccc;margin-bottom:16px">Wario Land 3 is a hidden gem on the Game Boy Color. Unlike traditional platformers, Wario cannot die — instead, getting hit by enemies causes transformations that help you solve puzzles and reach new areas. With 20+ levels full of treasures and secrets, this game rewards exploration like few others. It is one of the most creative platformers on any handheld console.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">5. Shantae</h2>
+  <p style="color:#ccc;margin-bottom:16px">Originally released at the tail end of the GBC lifespan, Shantae was too late to sell well but has since become a beloved cult classic. As a half-genie, you use hair-whip attacks and dance transformations to battle enemies across sequins-themed levels. The game's tight controls and gorgeous pixel art make it stand out. <a href="/shantae" style="color:#c4a35a">Play Shantae</a> online and see why WayForward's franchise endured.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">6. Super Mario Bros. Deluxe</h2>
+  <p style="color:#ccc;margin-bottom:16px">Super Mario Bros. Deluxe packs the entire NES classic onto a tiny GBC cartridge — plus bonus content. You get the original 32 levels, a world map, challenge modes, and a Yoshi egg hunt. It is the definitive way to play Super Mario Bros. on a handheld. The pixel-perfect porting makes every jump feel just like the original.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">7. Tetris DX</h2>
+  <p style="color:#ccc;margin-bottom:16px">Tetris DX took the formula that made Tetris a phenomenon and refined it for the Game Boy Color. Three save slots meant you could finally put a game down and come back later. Multiple game modes, including Marathon, Ultra, and 40 Lines, give you reasons to keep playing. The colorful GBC graphics add charm without distracting from the addictive core gameplay.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">8. DBZ: Legendary Super Warriors</h2>
+  <p style="color:#ccc;margin-bottom:16px">Dragon Ball Z: Legendary Super Warriors is a surprisingly deep card-based fighting game. You progress through every major DBZ saga, from Saiyan to Buu, collecting cards that determine your attacks and transformations. The card mechanics add strategic depth that keeps battles engaging. For DBZ fans, this is the best way to relive the anime on a handheld.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">9. Donkey Kong Country</h2>
+  <p style="color:#ccc;margin-bottom:16px">The SNES classic was faithfully ported to GBC with all 40 levels across 7 worlds. Swing on vines, ride mine carts, and blast through barrel cannons. The pre-rendered 3D graphics translated surprisingly well to the small screen. <a href="/donkey-kong-country" style="color:#c4a35a">Play Donkey Kong Country</a> online and experience one of the best platformers ever made.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">10. Kirby: Nightmare in Dream Land</h2>
+  <p style="color:#ccc;margin-bottom:16px">Kirby Nightmare in Dream Land brings the NES classic to GBC with improved graphics and new modes. Copy enemy abilities, float through colorful levels, and enjoy one of the most accessible platformers ever made. The game is perfect for newcomers to retro gaming while still offering enough challenge for veterans.</p>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play These Games Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">All games are free to play in your browser. No download, no signup — just click and play.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/gba-vs-gbc-which-is-better" style="color:#c4a35a;text-decoration:none">GBA vs GBC: Which Console Has Better Games?</a></li>
+      <li><a href="/blog/retro-gaming-beginners-guide" style="color:#c4a35a;text-decoration:none">Retro Gaming for Beginners: Start Playing Classic Games Today</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

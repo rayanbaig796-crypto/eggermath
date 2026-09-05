@@ -1,0 +1,299 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GameCard from '../components/GameCard.astro';
+import { games, SITE } from '../data/games.js';
+
+const gbGames = games.filter(g => g.system === 'GB');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": "Game Boy Games", "item": `${SITE.url}/game-boy-games` }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "name": "Play Game Boy Games Online Free - GB Emulator Browser | EggerMath",
+      "description": "Play classic Game Boy games online free in your browser. Pokemon Red, Tetris, Mario and more. No download needed. Original Game Boy emulator instantly.",
+      "url": `${SITE.url}/game-boy-games`,
+      "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
+      "mainEntity": {
+        "@type": "VideoGameEmulator",
+        "name": "EggerMath Game Boy Emulator",
+        "applicationCategory": "GameEmulator",
+        "operatingSystem": "Any (Web Browser)",
+        "numberOfGames": gbGames.length,
+        "gamePlatform": "Game Boy",
+        "description": "Free browser-based Game Boy emulator. Play classic GB games instantly online."
+      },
+      "hasPart": {
+        "@type": "ItemList",
+        "itemListElement": gbGames.map((g, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "item": {
+            "@type": "VideoGame",
+            "name": g.title,
+            "description": g.desc,
+            "gamePlatform": "Game Boy",
+            "genre": g.genre,
+            "datePublished": String(g.year),
+            "isAccessibleForFree": true
+          }
+        }))
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I play Game Boy games online for free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. EggerMath lets you play classic Game Boy games directly in your browser for free. No downloads, no sign-ups. Just click a game and start playing."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What Game Boy games are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": `We have ${gbGames.length} Game Boy games including Tetris, Super Mario Land, Pokemon Yellow, Kirby's Dream Land, Wario Land, DuckTales, and more classics from the original Game Boy library.`
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to download anything to play?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Our Game Boy emulator runs entirely in your web browser using WebAssembly technology. No ROM downloads, emulators, or plugins are required."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I play Game Boy games on my phone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Our Game Boy emulator works on mobile devices including iPhone and Android. Touch controls appear automatically on phones and tablets."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I save my Game Boy game progress?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Press F5 to save your progress and F9 to load. You have 10 save slots available — press F7 to switch between them. All saves are stored locally in your browser."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the original Game Boy emulator accurate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We use mGBA WebAssembly, a highly accurate emulator engine. Game Boy games run with authentic sound, timing, and visual fidelity true to the original hardware."
+          }
+        }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Play Game Boy Games Online Free - GB Emulator Browser | EggerMath"
+  description="Play classic Game Boy games online free in your browser. Pokemon Red, Tetris, Mario and more. No download needed. Original Game Boy emulator instantly."
+  canonical="https://www.eggermath.com/game-boy-games"
+  jsonLd={jsonLd}
+  keywords="game boy games, play game boy online, gb emulator, game boy emulator online, free game boy games, retro gaming, classic nintendo"
+>
+  <main class="main">
+    <section class="browse-section">
+      <div class="browse-header">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          {gbGames.length} GB games · no install
+        </div>
+        <div class="browse-header-top">
+          <div>
+            <nav aria-label="Breadcrumb" style="margin-bottom: 12px;">
+              <ol style="list-style: none; display: flex; gap: 8px; padding: 0; margin: 0; font-size: 0.85rem;">
+                <li><a href="/" style="color: var(--text-secondary); text-decoration: none;">Home</a></li>
+                <li style="color: var(--text-secondary);">/</li>
+                <li style="color: var(--text-primary);">Game Boy Games</li>
+              </ol>
+            </nav>
+            <h1>Game Boy Games — Play Free Online</h1>
+            <p class="browse-sub">Play classic Game Boy games free in your browser. The original handheld that started it all — Tetris, Super Mario Land, Pokemon, Kirby and more. No download needed.</p>
+          </div>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">{gbGames.length}</div>
+            <div class="hero-stat-label">GB games</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">0</div>
+            <div class="hero-stat-label">downloads</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">10</div>
+            <div class="hero-stat-label">save slots</div>
+          </div>
+        </div>
+      </div>
+      <div class="games-grid" id="games-grid">
+        {gbGames.map(game => (
+          <GameCard
+            title={game.title}
+            genre={game.genre}
+            slug={game.slug}
+            img={game.img}
+            mega={game.mega}
+            system={game.system}
+          />
+        ))}
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>The Original Game Boy — Play It Free Online</h2>
+      <p>The Nintendo Game Boy changed gaming forever when it launched in 1989. This unassuming gray brick, with its pea-green screen and chunky d-pad, put a full gaming library in your pocket for the first time. Now you can experience those same classic Game Boy games right here in your browser — no cartridge, no batteries, no bother.</p>
+
+      <p>Our Game Boy emulator runs on mGBA WebAssembly, the same engine powering professional emulation projects worldwide. Every game loads instantly with authentic sound, accurate timing, and the satisfying click of those original controls recreated through your keyboard or touch screen. Whether you remember the original dot-matrix glow or you're discovering these games for the first time, the experience is as close to the real hardware as a web browser can get.</p>
+
+      <p>The Game Boy library is packed with all-time classics. Tetris on Game Boy is arguably the most iconic puzzle game ever made — the version that sold over 118 million units worldwide and became a cultural phenomenon. Super Mario Land and Super Mario Land 2: 6 Golden Coins brought Mario's platforming magic to the palm of your hand, with original worlds and mechanics you won't find in any console Mario game. Pokemon Yellow let you journey through Kanto with Pikachu following right behind you, catching all 151 Pokemon in the game that sparked a global franchise.</p>
+
+      <p>Beyond the headliners, the Game Boy catalog is deep. Kirby's Dream Land introduced the pink puffball's floaty, inhale-everything gameplay. Wario Land: Super Mario Land 3 gave us Wario's greedy debut, stuffed with treasure-hunting platforming. Castlevania Legends sent young Simon Belmont through Dracula's castle with whip-cracking action. DuckTales brought Scrooge McDuck's pogo-jump platforming from the NES to the handheld. Dr. Mario kept you up at night tossing capsules to clear viruses. Final Fantasy Adventure kicked off the entire Mana series as an action RPG on the go.</p>
+
+      <p>Playing Game Boy games online here is completely free. There are no downloads, no sign-ups, and no ads interrupting your gameplay. Just pick a game from the grid above and start playing. Save your progress with F5, load with F9, and switch between 10 save slots with F7. On mobile? Touch controls appear automatically so you can play on the bus, in bed, or wherever life takes you.</p>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>{gbGames.length} built-in GB games</h3>
+          <p>Tetris, Pokemon, Mario, Kirby, and more classic Game Boy titles.</p>
+        </div>
+        <div class="feature-card">
+          <h3>No download required</h3>
+          <p>Play directly in Chrome, Safari, Firefox, or Edge on any device.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Save states</h3>
+          <p>Ten slots. F5 saves, F9 loads, F7 cycles the active slot.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Authentic emulation</h3>
+          <p>mGBA WebAssembly engine for accurate sound and timing.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Mobile friendly</h3>
+          <p>Touch controls optimized for phones and tablets.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Instant play</h3>
+          <p>Games load in seconds. No ROMs to find or configure.</p>
+        </div>
+      </div>
+
+      <h2 style="margin-top: 48px;">Game Boy Controls</h2>
+      <div class="controls-visual">
+        <div class="controls-key-grid">
+          <div class="controls-key-row"><span>D-Pad</span><kbd>Arrow keys</kbd></div>
+          <div class="controls-key-row"><span>A button</span><kbd>K</kbd></div>
+          <div class="controls-key-row"><span>B button</span><kbd>J</kbd></div>
+          <div class="controls-key-row"><span>Start</span><kbd>Enter</kbd></div>
+          <div class="controls-key-row"><span>Select</span><kbd>Shift</kbd></div>
+          <div class="controls-key-row"><span>Save state</span><kbd>F5</kbd></div>
+          <div class="controls-key-row"><span>Load state</span><kbd>F9</kbd></div>
+          <div class="controls-key-row"><span>Next slot</span><kbd>F7</kbd></div>
+          <div class="controls-key-row"><span>Fast forward</span><kbd>Space</kbd></div>
+        </div>
+        <p style="margin-top: 16px; font-size: 0.88rem; color: var(--text-secondary);">Touch controls activate on phones and tablets. Connect a keyboard or controller for the best experience.</p>
+      </div>
+
+      <h2 style="margin-top: 48px;">Frequently Asked Questions</h2>
+      <div class="faq-accordion" id="faq-accordion">
+        <div class="faq-accordion-item open">
+          <button class="faq-accordion-btn" aria-expanded="true">
+            <span>Can I play Game Boy games online for free?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes. EggerMath lets you play classic Game Boy games directly in your browser for free. No downloads, no sign-ups. Just click a game and start playing.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>What Game Boy games are available?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>We have {gbGames.length} Game Boy games including Tetris, Super Mario Land, Pokemon Yellow, Kirby's Dream Land, Wario Land, DuckTales, and more classics from the original Game Boy library.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Do I need to download anything to play?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>No. Our Game Boy emulator runs entirely in your web browser using WebAssembly technology. No ROM downloads, emulators, or plugins are required.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Can I play Game Boy games on my phone?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes. Our Game Boy emulator works on mobile devices including iPhone and Android. Touch controls appear automatically on phones and tablets.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>How do I save my Game Boy game progress?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Press F5 to save your progress and F9 to load. You have 10 save slots available — press F7 to switch between them. All saves are stored locally in your browser.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Is the original Game Boy emulator accurate?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes. We use mGBA WebAssembly, a highly accurate emulator engine. Game Boy games run with authentic sound, timing, and visual fidelity true to the original hardware.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script is:inline>
+(function() {
+  const faqAccordion = document.getElementById('faq-accordion');
+  if (faqAccordion) {
+    faqAccordion.addEventListener('click', (e) => {
+      const btn = e.target.closest('.faq-accordion-btn');
+      if (!btn) return;
+      const item = btn.closest('.faq-accordion-item');
+      const isOpen = item.classList.contains('open');
+      faqAccordion.querySelectorAll('.faq-accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-accordion-btn').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  }
+})();
+</script>

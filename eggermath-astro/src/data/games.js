@@ -8,7 +8,7 @@ export const games = [  {
     year: 2004,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Emerald online in your browser. Explore the Hoenn region, catch 200+ Pokemon, challenge gym leaders, and face Team Magma and Team Aqua. Features the Battle Frontier post-game with 7 challenge facilities.',
+    desc: 'Play Pokemon Emerald GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon emerald online, play pokemon emerald, gba emulator pokemon emerald, pokemon emerald free',
   },  {
     system: 'GBA',
@@ -20,7 +20,7 @@ export const games = [  {
     year: 2004,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon FireRed online. An enhanced remake of Pokemon Red for GBA with updated graphics, abilities, and the Sevii Islands post-game. Explore Kanto, collect all 151 original Pokemon, and become Pokemon Champion.',
+    desc: 'Play Pokemon FireRed GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon firered online, play pokemon firered, gba emulator pokemon firered',
   },  {
     system: 'GBA',
@@ -32,7 +32,7 @@ export const games = [  {
     year: 2004,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon LeafGreen online in your browser. The counterpart to FireRed featuring Pokemon Green exclusives. Explore Kanto with updated graphics, new mechanics like abilities and natures, and the Sevii Islands.',
+    desc: 'Play Pokemon LeafGreen GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon leafgreen online, play pokemon leafgreen, gba emulator pokemon leafgreen',
   },  {
     system: 'GBA',
@@ -44,7 +44,7 @@ export const games = [  {
     year: 2002,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Ruby online. Journey through the Hoenn region, catch 135 new Pokemon, and stop Team Magma from expanding the land. Features double battles, Pokemon Contests, and the Battle Tower.',
+    desc: 'Play Pokemon Ruby GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon ruby online, play pokemon ruby, gba emulator pokemon ruby',
   },  {
     system: 'GBA',
@@ -56,7 +56,7 @@ export const games = [  {
     year: 2002,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Sapphire online in your browser. The counterpart to Ruby featuring Team Aqua and exclusive Pokemon. Explore Hoenn, master double battles, and challenge the Battle Tower.',
+    desc: 'Play Pokemon Sapphire GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon sapphire online, play pokemon sapphire, gba emulator pokemon sapphire',
   },  {
     system: 'GBA',
@@ -68,7 +68,7 @@ export const games = [  {
     year: 2023,
     developer: 'LadiesMan217',
     series: 'Pokemon',
-    desc: 'Play Pokemon Ultra Violet online. A FireRed ROM hack featuring all Pokemon from Gen 1-3 in one game. Catch every Pokemon without trading, explore expanded Sevii Islands, and enjoy quality-of-life improvements.',
+    desc: 'Play Pokemon Ultra Violet GBA online free in your browser. No download needed. Classic ROM hack RPG awaits.',
     keywords: 'pokemon ultra violet online, play pokemon ultra violet, pokemon fire red hack',
   },  {
     system: 'GBA',
@@ -80,7 +80,7 @@ export const games = [  {
     year: 2013,
     developer: 'Syleong',
     series: 'Pokemon',
-    desc: 'Play Pokemon Jupiter online. A Ruby ROM hack set in the Oxalis region with 200+ new fakemon, custom story, and updated mechanics. Features a darker narrative and challenging gym battles.',
+    desc: 'Play Pokemon Jupiter GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon jupiter online, play pokemon jupiter, pokemon ruby hack',
   },  {
     system: 'GBA',
@@ -92,7 +92,7 @@ export const games = [  {
     year: 2004,
     developer: 'Capcom',
     series: 'Zelda',
-    desc: 'Play Zelda Minish Cap online in your browser. Help Link shrink to Minish size and explore Hyrule from a new perspective. Features the Gust Jar, Mole Mitts, and the ability to fuse Kinstones with NPCs.',
+    desc: 'Play Zelda Minish Cap GBA free online. No download. Action-adventure classic in your browser.',
     keywords: 'zelda minish cap online, play zelda minish cap, zelda gba emulator',
   },  {
     system: 'GBA',
@@ -104,7 +104,7 @@ export const games = [  {
     year: 2002,
     developer: 'Nintendo',
     series: 'Zelda',
-    desc: 'Play Zelda A Link to the Past online. The GBA port of the SNES classic featuring both the original Light/Dark World adventure and the new Four Swords multiplayer mode.',
+    desc: 'Play Zelda A Link to the Past GBA online free. No download. Action-adventure classic in your browser.',
     keywords: 'zelda link to the past online, play zelda gba, zelda gba emulator',
   },  {
     system: 'GBA',
@@ -116,7 +116,7 @@ export const games = [  {
     year: 2001,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Mario Kart Super Circuit online in your browser. The first portable Mario Kart featuring 20 tracks from Super Mario Kart (SNES) plus 20 new courses. Drift, use items, and race against friends.',
+    desc: 'Play Mario Kart Super Circuit GBA online free in your browser. No download needed. Classic racing action.',
     keywords: 'mario kart super circuit online, play mario kart gba, mario kart gba emulator',
   },  {
     system: 'GBA',
@@ -128,7 +128,7 @@ export const games = [  {
     year: 2002,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario World online. The GBA port of the SNES classic featuring Yoshi, secret exits, and 96 levels. Explore Dinosaur Land, ride Yoshi through colorful worlds, and rescue Princess Peach.',
+    desc: 'Play Super Mario World GBA online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'super mario world online, play super mario world gba, mario gba emulator',
   },  {
     system: 'GBA',
@@ -140,7 +140,7 @@ export const games = [  {
     year: 2003,
     developer: 'AlphaDream',
     series: 'Mario',
-    desc: 'Play Mario & Luigi Superstar Saga online. An action RPG where Mario and Luigi travel to the Beanbean Kingdom to recover Princess Peach stolen voice. Features timing-based combat and Bros. Attacks.',
+    desc: 'Play Mario & Luigi Superstar Saga GBA online free. No download needed. Classic RPG adventure in your browser.',
     keywords: 'mario luigi superstar saga online, play mario luigi gba, mario rpg gba',
   },  {
     system: 'GBA',
@@ -152,7 +152,7 @@ export const games = [  {
     year: 2002,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Classic NES Super Mario Bros online. The original 1985 platformer ported to GBA. Run, jump, and stomp through 32 levels across 8 worlds to rescue Princess Toadstool from Bowser.',
+    desc: 'Play Classic NES Super Mario Bros GBA online free. No download needed. Classic platformer in your browser.',
     keywords: 'classic nes super mario bros online, play super mario bros gba, nes gba emulator',
   },  {
     system: 'GBA',
@@ -164,7 +164,7 @@ export const games = [  {
     year: 2002,
     developer: 'Nintendo',
     series: 'Metroid',
-    desc: 'Play Metroid Fusion online in your browser. Guide Samus Aran through the infected SR388 space station. Fight the X Parasites, recover your ship parts, and confront the SA-X.',
+    desc: 'Play Metroid Fusion GBA online free in your browser. No download needed. Classic action-adventure awaits.',
     keywords: 'metroid fusion online, play metroid fusion gba, metroid gba emulator',
   },  {
     system: 'GBA',
@@ -176,7 +176,7 @@ export const games = [  {
     year: 2004,
     developer: 'Nintendo',
     series: 'Metroid',
-    desc: 'Play Metroid Zero Mission online. A remake of the original NES Metroid with updated graphics and gameplay. Explore Planet Zebes, collect power-ups, and defeat Mother Brain.',
+    desc: 'Play Metroid Zero Mission GBA online free in your browser. No download needed. Classic action-adventure awaits.',
     keywords: 'metroid zero mission online, play metroid zero mission gba, metroid gba emulator',
   },  {
     system: 'GBA',
@@ -188,7 +188,7 @@ export const games = [  {
     year: 2002,
     developer: 'Nintendo',
     series: 'Kirby',
-    desc: 'Play Kirby Nightmare in Dream Land online. Help Kirby reclaim the Dream Rod from King Dedede. Copy enemy abilities, float through colorful levels, and enjoy this GBA remake of the NES classic.',
+    desc: 'Play Kirby Nightmare in Dream Land GBA online free. No download needed. Classic platformer in your browser.',
     keywords: 'kirby nightmare in dream land online, play kirby gba, kirby gba emulator',
   },  {
     system: 'GBA',
@@ -200,7 +200,7 @@ export const games = [  {
     year: 2004,
     developer: 'HAL Laboratory',
     series: 'Kirby',
-    desc: 'Play Kirby and the Amazing Mirror online. Explore the mirror world with 4 Kirbys, copy 12 abilities, and collect 900 stars. Features a Metroidvania-style map with interconnected areas.',
+    desc: 'Play Kirby and the Amazing Mirror GBA online free. No download needed. Classic platformer in your browser.',
     keywords: 'kirby amazing mirror online, play kirby amazing mirror gba, kirby gba emulator',
   },  {
     system: 'GBA',
@@ -212,7 +212,7 @@ export const games = [  {
     year: 2003,
     developer: 'Konami',
     series: 'Castlevania',
-    desc: 'Play Castlevania Aria of Sorrow online. Fight through Dracula castle as Soma Cruz, who can absorb monster souls for new abilities. Features 100+ collectible souls and multiple endings.',
+    desc: 'Play Castlevania Aria of Sorrow GBA online free in your browser. No download needed. Classic action awaits.',
     keywords: 'castlevania aria of sorrow online, play castlevania gba, castlevania gba emulator',
   },  {
     system: 'GBA',
@@ -224,7 +224,7 @@ export const games = [  {
     year: 2003,
     developer: 'Rare',
     series: 'Donkey Kong',
-    desc: 'Play Donkey Kong Country online. The GBA port of the SNES classic. Swing on vines, ride mine carts, and defeat King K. Rool with Diddy Kong. Features 40 levels across 7 worlds.',
+    desc: 'Play Donkey Kong Country GBA online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'donkey kong country online, play donkey kong gba, donkey kong gba emulator',
   },  {
     system: 'GBA',
@@ -236,7 +236,7 @@ export const games = [  {
     year: 2004,
     developer: 'Intelligent Systems',
     series: 'Fire Emblem',
-    desc: 'Play Fire Emblem Sacred Stones online. Lead Eirika or Ephraim through the war-torn continents of Magvel. Recruit 24 characters, promote classes, and navigate branching story paths.',
+    desc: 'Play Fire Emblem Sacred Stones GBA online free in your browser. No download needed. Classic strategy RPG.',
     keywords: 'fire emblem sacred stones online, play fire emblem gba, fire emblem gba emulator',
   },  {
     system: 'GBA',
@@ -248,7 +248,7 @@ export const games = [  {
     year: 2004,
     developer: 'Dimps',
     series: 'Sonic',
-    desc: 'Play Sonic Advance 3 online in your browser. Race through 7 zones as Sonic, Tails, Knuckles, or Amy. Use the Tag feature to switch characters mid-level and find hidden Chao.',
+    desc: 'Play Sonic Advance 3 GBA online free in your browser. No download needed. Classic platformer action.',
     keywords: 'sonic advance 3 online, play sonic advance 3 gba, sonic gba emulator',
   },  {
     system: 'GBA',
@@ -260,7 +260,7 @@ export const games = [  {
     year: 2004,
     developer: 'Dimps',
     series: 'Dragon Ball',
-    desc: 'Play Dragon Ball Advanced Adventure online. Relive the original Dragon Ball saga as young Goku. Fight through 100+ missions, collect 20+ characters, and master martial arts combos.',
+    desc: 'Play Dragon Ball Advanced Adventure GBA online free. No download needed. Classic fighting adventure awaits.',
     keywords: 'dragon ball advanced adventure online, play dragon ball gba, dragon ball gba emulator',
   },  {
     system: 'GBA',
@@ -272,7 +272,7 @@ export const games = [  {
     year: 2003,
     developer: 'Victor Interactive',
     series: 'Harvest Moon',
-    desc: 'Play Harvest Moon Friends of Mineral Town online. Build a farm, grow crops, raise animals, and find a partner in this charming life simulation. Features 4 seasons, mining, and fishing.',
+    desc: 'Play Harvest Moon Friends of Mineral Town GBA online free. No download needed. Classic simulation awaits.',
     keywords: 'harvest moon friends of mineral town online, play harvest moon gba, harvest moon gba emulator',
   },  {
     system: 'GBA',
@@ -284,7 +284,7 @@ export const games = [  {
     year: 2002,
     developer: 'Traveller\'s Tales',
     series: 'Crash Bandicoot',
-    desc: 'Play Crash Bandicoot online. Help Crash shrink down to micro-size and battle the mutant insects of Cortex. Features 5 worlds, 30+ levels, and classic Crash platforming action.',
+    desc: 'Play Crash Bandicoot GBA online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'crash bandicoot online, play crash bandicoot gba, crash bandicoot gba emulator',
   },  {
     system: 'GBA',
@@ -296,7 +296,7 @@ export const games = [  {
     year: 2004,
     developer: 'Digital Eclipse',
     series: 'GTA',
-    desc: 'Play GTA Advance online in your browser. Explore Liberty City as Vinnie, completing missions for the mob. Features an open world, driveable vehicles, and classic GTA gameplay on GBA.',
+    desc: 'Play GTA Advance GBA online free in your browser. No download needed. Classic action-adventure awaits.',
     keywords: 'gta advance online, play gta advance gba, gta gba emulator',
   },
   {
@@ -309,7 +309,7 @@ export const games = [  {
     year: 2001,
     developer: 'Camelot Software Planning',
     series: 'Golden Sun',
-    desc: 'Play Golden Sun online. Epic RPG adventure as Isaac wielding Psynergy with Djinn summoning.',
+    desc: 'Play Golden Sun GBA online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'golden sun online, play golden sun gba',
   },
   {
@@ -322,7 +322,7 @@ export const games = [  {
     year: 2001,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario Advance online. GBA remake of Super Mario Bros. 2 with 4 playable characters.',
+    desc: 'Play Super Mario Advance GBA online free in your browser. No download needed. Classic platformer awaits.',
     keywords: 'super mario advance online, play super mario advance gba',
   },
   {
@@ -335,7 +335,7 @@ export const games = [  {
     year: 2003,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario Bros. 3 online. GBA port of the NES classic with Super Leaf and Tanooki Suit.',
+    desc: 'Play Super Mario Bros. 3 GBA online free in your browser. No download needed. Classic platformer awaits.',
     keywords: 'super mario bros 3 online, play super mario bros 3 gba',
   },
   {
@@ -348,7 +348,7 @@ export const games = [  {
     year: 2001,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Crystal online. Enhanced Gold/Silver with Suicune, animated sprites, Battle Tower.',
+    desc: 'Play Pokemon Crystal GBC online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon crystal online, play pokemon crystal, gameboy color emulator',
   },
   {
@@ -361,7 +361,7 @@ export const games = [  {
     year: 1999,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Gold online. Journey through Johto, 100 new Pokemon, day/night cycle.',
+    desc: 'Play Pokemon Gold GBC online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon gold online, play pokemon gold, gameboy color emulator',
   },
   {
@@ -374,7 +374,7 @@ export const games = [  {
     year: 1999,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Silver online. Lugia featured, Johto region, day/night system.',
+    desc: 'Play Pokemon Silver GBC online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon silver online, play pokemon silver, gameboy color emulator',
   },
   {
@@ -387,7 +387,7 @@ export const games = [  {
     year: 1998,
     developer: 'Game Freak',
     series: 'Pokemon',
-    desc: 'Play Pokemon Yellow online. Pikachu follows you, catch all 151 Pokemon in Kanto.',
+    desc: 'Play Pokemon Yellow GB online free in your browser. No download needed. Classic RPG adventure awaits.',
     keywords: 'pokemon yellow online, play pokemon yellow, gameboy emulator',
   },
   {
@@ -400,7 +400,7 @@ export const games = [  {
     year: 2002,
     developer: 'Banpresto',
     series: 'Dragon Ball',
-    desc: 'Play DBZ Legendary Super Warriors online. Card-based combat through DBZ sagas.',
+    desc: 'Play DBZ Legendary Super Warriors GBC online free. No download needed. Classic fighting adventure.',
     keywords: 'dragon ball z legendary super warriors online, play dbz gbc',
   },
   {
@@ -413,7 +413,7 @@ export const games = [  {
     year: 2002,
     developer: 'WayForward',
     series: 'Shantae',
-    desc: 'Play Shantae online. Half-genie hero with hair-whip attacks and dance transformations.',
+    desc: 'Play Shantae GBC online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'shantae online, play shantae gbc',
   },
   {
@@ -426,7 +426,7 @@ export const games = [  {
     year: 1999,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario Bros. Deluxe online. NES classic on Game Boy Color with extras.',
+    desc: 'Play Super Mario Bros. Deluxe GBC online free in your browser. No download needed. Classic platformer.',
     keywords: 'super mario bros deluxe online, play super mario bros gbc',
   },
   {
@@ -439,7 +439,7 @@ export const games = [  {
     year: 1998,
     developer: 'Nintendo',
     series: 'Tetris',
-    desc: 'Play Tetris DX online. Definitive Game Boy Color Tetris with 3 save slots.',
+    desc: 'Play Tetris DX GBC online free in your browser. No download needed. Classic puzzle game awaits.',
     keywords: 'tetris dx online, play tetris dx gbc',
   },
   {
@@ -452,7 +452,7 @@ export const games = [  {
     year: 2000,
     developer: 'Nintendo',
     series: 'Wario',
-    desc: 'Play Wario Land 3 online. 20+ levels collecting treasures with transformations.',
+    desc: 'Play Wario Land 3 GBC online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'wario land 3 online, play wario land 3 gbc',
   },
   {
@@ -465,7 +465,7 @@ export const games = [  {
     year: 1997,
     developer: 'Konami',
     series: 'Castlevania',
-    desc: 'Play Castlevania Legends online. Young Simon Belmont fights through Dracula castle.',
+    desc: 'Play Castlevania Legends GB online free in your browser. No download needed. Classic action-adventure awaits.',
     keywords: 'castlevania legends online, play castlevania gb',
   },
   {
@@ -478,7 +478,7 @@ export const games = [  {
     year: 1994,
     developer: 'Konami',
     series: 'Contra',
-    desc: 'Play Contra: The Alien Wars online. Intense run-and-gun action with power-ups.',
+    desc: 'Play Contra The Alien Wars GB online free. No download needed. Classic action game in your browser.',
     keywords: 'contra alien wars online, play contra gb',
   },
   {
@@ -491,7 +491,7 @@ export const games = [  {
     year: 1994,
     developer: 'Nintendo',
     series: 'Donkey Kong',
-    desc: 'Play Donkey Kong online. 100 levels of puzzle-platforming as Mario rescues Pauline.',
+    desc: 'Play Donkey Kong GB online free in your browser. No download needed. Classic puzzle-platformer awaits.',
     keywords: 'donkey kong online, play donkey kong gb',
   },
   {
@@ -504,7 +504,7 @@ export const games = [  {
     year: 1990,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Dr. Mario online. Toss capsules to eliminate viruses in Fever and Chill modes.',
+    desc: 'Play Dr. Mario GB online free in your browser. No download needed. Classic puzzle game awaits.',
     keywords: 'dr mario online, play dr mario gb',
   },
   {
@@ -517,7 +517,7 @@ export const games = [  {
     year: 1989,
     developer: 'Capcom',
     series: 'DuckTales',
-    desc: 'Play DuckTales online. Scrooge McDuck explores 5 worlds with pogo-jump mechanics.',
+    desc: 'Play DuckTales GB online free in your browser. No download needed. Classic platformer adventure awaits.',
     keywords: 'ducktales online, play ducktales gb',
   },
   {
@@ -530,7 +530,7 @@ export const games = [  {
     year: 1991,
     developer: 'Square',
     series: 'Final Fantasy',
-    desc: 'Play Final Fantasy Adventure online. Action RPG, the first Mana game.',
+    desc: 'Play Final Fantasy Adventure GB online free in your browser. No download needed. Classic action RPG awaits.',
     keywords: 'final fantasy adventure online, play final fantasy adventure gb',
   },
   {
@@ -543,7 +543,7 @@ export const games = [  {
     year: 1995,
     developer: 'HAL Laboratory',
     series: 'Kirby',
-    desc: 'Play Kirby\'s Dream Land 2 online. Animal friends help Kirby defeat Dedede.',
+    desc: 'Play Kirby\'s Dream Land 2 GB online free. No download needed. Classic platformer in your browser.',
     keywords: 'kirby\'s dream land 2 online, play kirby gb',
   },
   {
@@ -556,7 +556,7 @@ export const games = [  {
     year: 1993,
     developer: 'HAL Laboratory',
     series: 'Kirby',
-    desc: 'Play Kirby\'s Pinball Land online. Pinball with Kirby bouncing through boards.',
+    desc: 'Play Kirby\'s Pinball Land GB online free in your browser. No download needed. Classic puzzle game awaits.',
     keywords: 'kirby\'s pinball land online, play kirby pinball gb',
   },
   {
@@ -569,7 +569,7 @@ export const games = [  {
     year: 1995,
     developer: 'Capcom',
     series: 'Street Fighter',
-    desc: 'Play Street Fighter II online. 8 world warriors with special moves on Game Boy.',
+    desc: 'Play Street Fighter II GB online free in your browser. No download needed. Classic fighting game awaits.',
     keywords: 'street fighter ii online, play street fighter gb',
   },
   {
@@ -582,7 +582,7 @@ export const games = [  {
     year: 1989,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario Land online. Original Game Boy Mario in Sarasaland, 12 worlds.',
+    desc: 'Play Super Mario Land GB online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'super mario land online, play super mario land gb',
   },
   {
@@ -595,7 +595,7 @@ export const games = [  {
     year: 1992,
     developer: 'Nintendo',
     series: 'Mario',
-    desc: 'Play Super Mario Land 2 online. Collect 6 golden coins, defeat Wario.',
+    desc: 'Play Super Mario Land 2 GB online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'super mario land 2 online, play super mario land 2 gb',
   },
   {
@@ -608,7 +608,7 @@ export const games = [  {
     year: 1989,
     developer: 'Nintendo',
     series: 'Tetris',
-    desc: 'Play Tetris online. The Game Boy classic that launched a phenomenon.',
+    desc: 'Play Tetris GB online free in your browser. No download needed. The legendary puzzle classic awaits.',
     keywords: 'tetris online, play tetris gb',
   },
   {
@@ -621,7 +621,7 @@ export const games = [  {
     year: 1994,
     developer: 'Nintendo',
     series: 'Wario',
-    desc: 'Play Wario Land online. Wario debut adventure, steal treasures and conquer stages.',
+    desc: 'Play Wario Land GB online free in your browser. No download needed. Classic platformer adventure awaits.',
     keywords: 'wario land online, play wario land gb',
   },
   {
@@ -634,7 +634,7 @@ export const games = [  {
     year: 1992,
     developer: 'HAL Laboratory',
     series: 'Kirby',
-    desc: 'Play Kirby\'s Dream Land online. Inhale enemies, float, and defeat King Dedede.',
+    desc: 'Play Kirby\'s Dream Land GB online free in your browser. No download needed. Classic platformer adventure.',
     keywords: 'kirby\'s dream land online, play kirby gb',
   },
   {
@@ -647,7 +647,7 @@ export const games = [  {
     year: 1991,
     developer: 'Capcom',
     series: 'Mega Man',
-    desc: 'Play Mega Man Dr. Wily\'s Revenge online. Battle robots across 6 stages as Mega Man.',
+    desc: "Play Mega Man Dr. Wily's Revenge GB online free. No download needed. Classic action game in your browser.",
     keywords: 'mega man dr wily\'s revenge online, play mega man gb',
   },
 ];

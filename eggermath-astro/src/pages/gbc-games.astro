@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GameCard from '../components/GameCard.astro';
+import { games, SITE } from '../data/games.js';
+
+const gbcGames = games.filter(g => g.system === 'GBC');
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "name": "Play Game Boy Color Games Online Free - GBC Emulator Browser | EggerMath",
+      "description": "Play 8 classic Game Boy Color games online free in your browser. Pokemon, Zelda, Mario and more. No download needed. GBC emulator instantly in Chrome.",
+      "url": "https://www.eggermath.com/gbc-games",
+      "isPartOf": { "@type": "WebSite", "name": SITE.name, "url": SITE.url },
+      "mainEntity": {
+        "@type": "VideoGameEmulator",
+        "name": "EggerMath GBC Emulator",
+        "applicationCategory": "GameEmulator",
+        "operatingSystem": "Any (Web Browser)",
+        "numberOfGames": gbcGames.length,
+        "gamePlatform": "Game Boy Color",
+        "description": "Free browser-based GBC emulator. Play Game Boy Color games instantly online."
+      },
+      "hasPart": {
+        "@type": "ItemList",
+        "itemListElement": gbcGames.map((g, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "item": {
+            "@type": "VideoGame",
+            "name": g.title,
+            "description": g.desc,
+            "gamePlatform": "Game Boy Color",
+            "genre": g.genre,
+            "datePublished": String(g.year),
+            "isAccessibleForFree": true
+          }
+        }))
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": "GBC Games", "item": "https://www.eggermath.com/gbc-games" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How do I play Game Boy Color games online?", "acceptedAnswer": { "@type": "Answer", "text": "Click any game from the list below to play instantly in your browser. You can also drag and drop your own .gbc ROM files into the upload area on the main page." } },
+        { "@type": "Question", "name": "What keyboard controls do GBC games use?", "acceptedAnswer": { "@type": "Answer", "text": "D-Pad: WASD or Arrow Keys. A button: K. B button: J. Start: Enter. Select: Right Shift. L: Q. R: E. Save: F5. Load: F9. Slot: F7. Fast forward: Space." } },
+        { "@type": "Question", "name": "Does the GBC emulator work on mobile?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Touch controls appear automatically on phones and tablets. Works in Chrome, Safari, and Firefox on iOS and Android." } },
+        { "@type": "Question", "name": "Can I save my progress in GBC games?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Press F5 to save and F9 to load. You have 10 save slots — press F7 to switch between them. Progress is stored in your browser." } },
+        { "@type": "Question", "name": "What GBC games are available?", "acceptedAnswer": { "@type": "Answer", "text": "We offer 8 Game Boy Color games including Pokemon Crystal, Pokemon Gold, Pokemon Silver, Shantae, Super Mario Bros. Deluxe, Tetris DX, Wario Land 3, and DBZ: Legendary Super Warriors." } },
+        { "@type": "Question", "name": "Is it legal to play GBC ROMs online?", "acceptedAnswer": { "@type": "Answer", "text": "Playing your own legally obtained ROM files is legal in most jurisdictions. EggerMath provides the emulator software only — you supply the ROM files." } }
+      ]
+    }
+  ]
+};
+---
+
+<BaseLayout
+  title="Play Game Boy Color Games Online Free - GBC Emulator Browser | EggerMath"
+  description="Play 8 classic Game Boy Color games online free in your browser. Pokemon, Zelda, Mario and more. No download needed. GBC emulator instantly in Chrome."
+  canonical="https://www.eggermath.com/gbc-games"
+  jsonLd={jsonLd}
+>
+  <main class="main">
+    <section class="browse-section" style="max-width: 1100px; margin: 0 auto; padding: 2rem 1rem;">
+      <div class="browse-header">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          {gbcGames.length} GBC games · no install
+        </div>
+        <h1>Game Boy Color Games — Play Free Online</h1>
+        <p class="browse-sub">Browse our collection of {gbcGames.length} classic Game Boy Color titles. Click any game to play instantly in your browser — no emulator download required.</p>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">{gbcGames.length}</div>
+            <div class="hero-stat-label">GBC games</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">0</div>
+            <div class="hero-stat-label">downloads</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">10</div>
+            <div class="hero-stat-label">save slots</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="games-grid">
+        {gbcGames.map(game => (
+          <GameCard
+            title={game.title}
+            genre={game.genre}
+            slug={game.slug}
+            img={game.img}
+            mega={game.mega}
+            system={game.system}
+          />
+        ))}
+      </div>
+    </section>
+
+    <section class="content-section" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+      <h2>Play Game Boy Color Games Online Free</h2>
+      <p>The Game Boy Color brought full-color gaming to the portable world when Nintendo launched it in 1998. With a 160×144 pixel display capable of rendering up to 56 colors simultaneously, the GBC transformed the handheld library from monochrome shades into vibrant, memorable worlds. Titles like Pokemon Gold and Silver introduced day-and-night cycles that changed gameplay in real time, while Shantae pushed the hardware with gorgeous sprite work that still looks sharp today.</p>
+
+      <p>Playing Game Boy Color games online is the most convenient way to experience this classic library. Our browser-based GBC emulator loads ROMs instantly — no installation, no configuration files, no compatibility headaches. Open the page, pick a game, and you are playing within seconds. The emulator runs natively in Chrome, Firefox, Safari, and Edge on Windows, Mac, Linux, and mobile devices.</p>
+
+      <h3>Why Game Boy Color Games Still Matter</h3>
+      <p>The GBC era produced some of the most polished 8-bit games ever made. Developers had mastered the original Game Boy hardware and now had color to work with, resulting in games that balanced tight gameplay with improved visuals. Pokemon Crystal added animated sprites and the Battle Tower. Tetris DX refined the addictive puzzle formula with multiple modes. Super Mario Bros. Deluxe faithfully recreated the NES classic and added new content. These are not relics — they are some of the best portable games ever designed.</p>
+
+      <h3>How to Play GBC Games in Your Browser</h3>
+      <p>Click any game above to launch it instantly. Use the on-screen touch controls on mobile, or keyboard controls on desktop: Arrow keys or WASD for the D-Pad, K for A, J for B, Enter for Start, and Right Shift for Select. Press Q and E for the L and R shoulder buttons. Save your progress at any point with F5, load with F9, and cycle through 10 save slots with F7. Hold Space for fast forward when you need to breeze through grinding or cutscenes.</p>
+
+      <p>Our emulator also supports drag-and-drop ROM loading. Grab your own legally obtained .gbc files and drop them onto the emulator area — they run immediately without any extra steps. Each game saves progress locally in your browser, so you can close the tab and return later to pick up exactly where you left off.</p>
+
+      <h3>Start Playing Game Boy Color Games Now</h3>
+      <p>With eight titles spanning RPG, platformer, puzzle, fighting, and action genres, there is something for every type of player. Pokemon fans can revisit Johto, platforming enthusiasts can tackle Wario Land 3 and Super Mario Bros. Deluxe, and puzzle lovers can sink hours into Tetris DX. All games run at full speed with accurate emulation — no audio stuttering, no graphical glitches, no compromises.</p>
+    </section>
+
+    <section class="content-section" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-accordion" id="faq-accordion">
+        <div class="faq-accordion-item open">
+          <button class="faq-accordion-btn" aria-expanded="true">
+            <span>How do I play Game Boy Color games online?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Click any game from the list above to play instantly in your browser. You can also drag and drop your own .gbc ROM files into the upload area on the main page.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>What keyboard controls do GBC games use?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>D-Pad: WASD or Arrow Keys. A button: K. B button: J. Start: Enter. Select: Right Shift. L: Q. R: E. Save: F5. Load: F9. Slot: F7. Fast forward: Space.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Does the GBC emulator work on mobile?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes. Touch controls appear automatically on phones and tablets. Works in Chrome, Safari, and Firefox on iOS and Android.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Can I save my progress in GBC games?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Yes. Press F5 to save and F9 to load. You have 10 save slots — press F7 to switch between them. Progress is stored in your browser.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>What GBC games are available?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>We offer {gbcGames.length} Game Boy Color games including {gbcGames.map(g => g.title).join(', ')}. Click any title to start playing instantly.</p>
+          </div>
+        </div>
+        <div class="faq-accordion-item">
+          <button class="faq-accordion-btn" aria-expanded="false">
+            <span>Is it legal to play GBC ROMs online?</span>
+            <svg class="faq-accordion-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-accordion-content">
+            <p>Playing your own legally obtained ROM files is legal in most jurisdictions. EggerMath provides the emulator software only — you supply the ROM files.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
+
+<script is:inline>
+(function() {
+  const faqAccordion = document.getElementById('faq-accordion');
+  if (faqAccordion) {
+    faqAccordion.addEventListener('click', (e) => {
+      const btn = e.target.closest('.faq-accordion-btn');
+      if (!btn) return;
+      const item = btn.closest('.faq-accordion-item');
+      const isOpen = item.classList.contains('open');
+      faqAccordion.querySelectorAll('.faq-accordion-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-accordion-btn').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  }
+})();
+</script>

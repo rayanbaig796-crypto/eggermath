@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'How to Play GBA Games in Your Browser (2026 Guide)',
+  desc: 'Step-by-step guide to playing Game Boy Advance games in your browser. No downloads, no setup — just click and play.',
+  date: '2026-09-03',
+  category: 'Guides',
+};
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/how-to-play-gba-games-browser`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">Playing GBA games used to require downloading emulators, finding ROM files, and configuring settings. In 2026, you can play Game Boy Advance games directly in your web browser with zero setup. This guide walks you through everything you need to know about browser-based GBA gaming.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">What You Need</h2>
+  <p style="color:#ccc;margin-bottom:16px">Before you start, here is what you need to play GBA games in your browser:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">A modern web browser:</strong> Chrome, Firefox, Safari, or Edge all work. Make sure your browser is up to date for the best performance.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">A stable internet connection:</strong> The game files load from the server, so a decent connection ensures smooth gameplay without buffering.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">A keyboard:</strong> The default controls use your keyboard. A physical keyboard gives you the best response time for fast-paced games.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">An optional gamepad:</strong> USB controllers and Bluetooth gamepads work with browser emulators for a more authentic experience.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 1: Choose a Game</h2>
+  <p style="color:#ccc;margin-bottom:16px">Head to <a href="/" style="color:#c4a35a">EggerMath.com</a> and browse the game library. You will find over 50 classic GBA, GBC, and GB games organized by genre, system, and popularity. Click on any game title to open its dedicated page. For example, you can jump straight to <a href="/pokemon-emerald" style="color:#c4a35a">Pokemon Emerald</a> or <a href="/zelda-minish-cap" style="color:#c4a35a">Zelda: Minish Cap</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 2: Load the Game</h2>
+  <p style="color:#ccc;margin-bottom:16px">Once you are on the game page, the emulator loads automatically in your browser. The game file downloads from the server and initializes within seconds. You will see the familiar GBA boot screen followed by the game's title screen. No installation required — the emulator runs entirely in JavaScript inside your browser.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 3: Learn the Controls</h2>
+  <p style="color:#ccc;margin-bottom:16px">The default keyboard controls map to the original GBA buttons:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Arrow Keys:</strong> D-Pad (Up, Down, Left, Right) for movement</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Z:</strong> A Button — the primary action button</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">X:</strong> B Button — the secondary action button</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Enter:</strong> Start Button — opens menus and pauses</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Shift:</strong> Select Button — used for special functions</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Space:</strong> L Button</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">C:</strong> R Button</li>
+  </ul>
+  <p style="color:#ccc;margin-bottom:16px">Most games display the control scheme on screen when you first load them. You can also remap keys in the emulator settings if you prefer a different layout.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 4: Save Your Progress</h2>
+  <p style="color:#ccc;margin-bottom:16px">One of the biggest advantages of browser emulation is the save state feature. Unlike original GBA cartridges that required battery-backed SRAM, browser emulators let you save at any point. Look for the save icon in the emulator toolbar. You can create multiple save states and load them instantly. This is especially useful for difficult games like <a href="/metroid-fusion" style="color:#c4a35a">Metroid Fusion</a> or <a href="/castlevania-aria-of-sorrow" style="color:#c4a35a">Castlevania: Ailia of Sorrow</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 5: Use Fast Forward</h2>
+  <p style="color:#ccc;margin-bottom:16px">Need to grind levels in <a href="/pokemon-ruby" style="color:#c4a35a">Pokemon Ruby</a>? The fast forward feature speeds up gameplay by 2x or more. This cuts down on repetitive sections without skipping any content. You can toggle fast forward on and off at any time using the emulator controls.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Step 6: Connect a Gamepad</h2>
+  <p style="color:#ccc;margin-bottom:16px">For a more authentic experience, connect a USB or Bluetooth gamepad. Modern browsers support the Gamepad API, which lets controllers work automatically. Once connected, the emulator detects your gamepad and maps the buttons accordingly. This is ideal for action games like <a href="/metroid-zero-mission" style="color:#c4a35a">Metroid: Zero Mission</a> where precise input matters.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why Browser GBA Gaming Is Better</h2>
+  <p style="color:#ccc;margin-bottom:16px">Browser-based GBA gaming has several advantages over traditional emulators:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No downloads:</strong> Nothing to install, no files to manage, no security risks from unknown software.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Works everywhere:</strong> Play on any device with a browser — desktop, laptop, tablet, even some phones.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Always updated:</strong> The emulator improvements happen on the server. You always get the latest version without updating anything.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Instant access:</strong> No configuration, no ROM hunting, no BIOS files. Just open the page and play.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Save states:</strong> Save anywhere, anytime. No battery issues, no corruption risks.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Recommended Games for Beginners</h2>
+  <p style="color:#ccc;margin-bottom:16px">If you are new to GBA gaming, these titles are perfect starting points:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><a href="/pokemon-emerald" style="color:#c4a35a">Pokemon Emerald</a> — The best entry point for RPG fans</li>
+    <li style="margin-bottom:8px"><a href="/super-mario-world" style="color:#c4a35a">Super Mario World</a> — Classic platforming that never gets old</li>
+    <li style="margin-bottom:8px"><a href="/zelda-minish-cap" style="color:#c4a35a">Zelda: Minish Cap</a> — Puzzle-filled adventure with charming visuals</li>
+    <li style="margin-bottom:8px"><a href="/kirby-nightmare-in-dream-land" style="color:#c4a35a">Kirby: Nightmare in Dream Land</a> — Easy to pick up, hard to put down</li>
+    <li style="margin-bottom:8px"><a href="/mario-kart-super-circuit" style="color:#c4a35a">Mario Kart: Super Circuit</a> — Fast-paced racing fun</li>
+  </ul>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Start Playing Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">No downloads, no signups — just open your browser and play 50+ classic games for free.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/how-to-save-gba-progress" style="color:#c4a35a;text-decoration:none">How to Save Your GBA Game Progress in Browser</a></li>
+      <li><a href="/blog/why-browser-emulation-is-the-future" style="color:#c4a35a;text-decoration:none">Why Browser Emulation Is the Future of Retro Gaming</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

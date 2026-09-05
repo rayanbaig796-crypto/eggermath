@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'Top 10 GBA RPG Games You Can Play Online Free',
+  desc: 'The best Game Boy Advance RPG games you can play free in your browser. Pokemon, Golden Sun, Fire Emblem, Mario & Luigi, and more.',
+  date: '2026-08-30',
+  category: 'Lists',
+};
+
+const games = [
+  { name: 'Pokemon Emerald', slug: 'pokemon-emerald', reason: 'The definitive Pokemon RPG. 200+ Pokemon, the Battle Frontier, and the complete Hoenn adventure make this the best GBA RPG overall.' },
+  { name: 'Pokemon FireRed', slug: 'pokemon-firered', reason: 'The best way to experience Generation 1. Updated graphics, abilities, and the Sevii Islands add depth to the classic Kanto journey.' },
+  { name: 'Pokemon LeafGreen', slug: 'pokemon-leafgreen', reason: 'Kanto with new mechanics and Green-exclusive Pokemon. The counterpart to FireRed with its own unique charm.' },
+  { name: 'Golden Sun', slug: 'golden-sun', reason: 'Epic RPG with the Psynergy and Djinn systems. Puzzle-filled dungeons, stunning visuals, and one of the best stories on GBA.' },
+  { name: 'Fire Emblem: Sacred Stones', slug: 'fire-emblem-sacred-stones', reason: 'Tactical RPG with two campaigns, 24 recruitable characters, and branching story paths. Deep strategy with emotional storytelling.' },
+  { name: 'Mario & Luigi: Superstar Saga', slug: 'mario-luigi-superstar-saga', reason: 'Action RPG with timing-based combat and hilarious writing. Mario and Luigi travel to the Beanbean Kingdom to rescue Peach.' },
+  { name: 'Pokemon Ruby', slug: 'pokemon-ruby', reason: 'The game that started the Gen 3 revolution. Double battles, Pokemon Contests, and the Battle Tower were all new innovations.' },
+  { name: 'Pokemon Sapphire', slug: 'pokemon-sapphire', reason: 'Team Aqua and exclusive Water-type Pokemon. Same amazing Hoenn region with a different villain and legendary focus.' },
+  { name: 'Pokemon Ultra Violet', slug: 'pokemon-ultra-violet', reason: 'A ROM hack that lets you catch all Gen 1-3 Pokemon in one game. No trading needed. Perfect for completionists.' },
+  { name: 'Pokemon Jupiter', slug: 'pokemon-jupiter', reason: 'A Ruby hack with 200+ new fakemon, a darker story, and the completely original Oxalis region. Ambitious and well-crafted.' },
+];
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/top-10-gba-rpg-games`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">The Game Boy Advance is home to some of the best RPGs ever made. From Pokemon's monster-catching formula to tactical battles and action RPGs, the GBA library has something for every RPG fan. Here are the top 10 GBA RPG games you can play free in your browser on <a href="/" style="color:#c4a35a">EggerMath</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">1. Pokemon Emerald</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-emerald" style="color:#c4a35a">Pokemon Emerald</a> is the ultimate Pokemon RPG. It takes the best elements of Ruby and Sapphire and combines them into one incredible package. With 200+ Pokemon to catch, the Battle Frontier's seven challenge facilities, and the complete Hoenn story with both Team Magma and Team Aqua, Emerald offers dozens of hours of gameplay. The animated sprites and improved sound make it the definitive Generation 3 experience.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">2. Pokemon FireRed</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-firered" style="color:#c4a35a">Pokemon FireRed</a> remakes the original Pokemon Red with beautiful GBA graphics, the modern ability and nature systems, and the Sevii Islands post-game. It is the best way to experience the Kanto region. The quality-of-life improvements like the running shoes and PC storage system make it far more playable than the originals while keeping the nostalgic charm intact.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">3. Pokemon LeafGreen</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-leafgreen" style="color:#c4a35a">Pokemon LeafGreen</a> is the counterpart to FireRed, featuring Pokemon Green-exclusive Pokemon like Bulbasaur and Vileplume. If you want the complete Gen 1 experience, you need both versions. LeafGreen shares all the same improvements as FireRed and offers the same Sevii Islands content with version-exclusive encounters.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">4. Golden Sun</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/golden-sun" style="color:#c4a35a">Golden Sun</a> is one of the most underrated RPGs on GBA. Developed by Camelot Software Planning, it features a unique Psynergy system where you use elemental powers to solve puzzles and fight enemies. The Djinn summoning system adds strategic depth to battles. The pixel art is stunning, the music is memorable, and the story keeps you engaged from start to finish. Golden Sun is a must-play for any RPG fan.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">5. Fire Emblem: Sacred Stones</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/fire-emblem-sacred-stones" style="color:#c4a35a">Fire Emblem: Sacred Stones</a> is a tactical RPG where you lead armies across the war-torn continent of Magvel. Choose between Eirika's or Ephraim's campaign for different perspectives on the story. Recruit 24 unique characters, promote classes, and navigate branching story paths. The permadeath mechanic makes every decision matter. This is the most accessible Fire Emblem game for newcomers to the series.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">6. Mario & Luigi: Superstar Saga</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/mario-luigi-superstar-saga" style="color:#c4a35a">Mario & Luigi: Superstar Saga</a> is an action RPG with a hilarious story and innovative combat. Mario and Luigi travel to the Beanbean Kingdom to recover Princess Peach's stolen voice. The timing-based Bros. Attacks require you to press buttons at the right moment for extra damage. The writing is genuinely funny, the characters are memorable, and the combat system is unlike any other RPG on GBA.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">7. Pokemon Ruby</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-ruby" style="color:#c4a35a">Pokemon Ruby</a> started the Generation 3 revolution. It introduced 135 new Pokemon, double battles, Pokemon Contests, and the Battle Tower. The Hoenn region is one of the most colorful and diverse in the series. Team Magma's plan to expand the land creates an interesting environmental narrative. While Emerald is the definitive version, Ruby remains an excellent standalone RPG.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">8. Pokemon Sapphire</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-sapphire" style="color:#c4a35a">Pokemon Sapphire</a> is the counterpart to Ruby featuring Team Aqua and their plan to expand the ocean. The version-exclusive Pokemon and legendary (Kyogre vs Groudon) give Sapphire its own identity. Many players prefer Sapphire for Team Aqua's more sympathetic motivations and the cooler Water-type exclusive Pokemon.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">9. Pokemon Ultra Violet</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-ultra-violet" style="color:#c4a35a">Pokemon Ultra Violet</a> is a FireRed ROM hack that accomplishes something remarkable: every Pokemon from Generations 1 through 3 is available in one game. No trading, no version exclusives, no second Game Boy required. The expanded Sevii Islands, quality-of-life improvements, and complete National Dex make this the ultimate Pokemon completionist experience. It is perfect for players who always wanted to catch them all but never had the means.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">10. Pokemon Jupiter</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/pokemon-jupiter" style="color:#c4a35a">Pokemon Jupiter</a> is a Ruby hack set in the completely original Oxalis region. With 200+ new Pokemon designs (fakemon), a darker and more mature story, and updated mechanics, Jupiter feels like an entirely new game. The developer Syleong created something special with this hack — a Pokemon game that stands on its own while respecting the formula that makes Pokemon great.</p>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play These RPGs Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">All games are free to play in your browser. No download, no signup — just click and play.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/best-gba-games-2026" style="color:#c4a35a;text-decoration:none">Best GBA Games to Play Online in 2026</a></li>
+      <li><a href="/blog/pokemon-emerald-nuzlocke-guide" style="color:#c4a35a;text-decoration:none">Pokemon Emerald Nuzlocke Challenge: Complete Guide</a></li>
+      <li><a href="/blog/pokemon-games-online" style="color:#c4a35a;text-decoration:none">Play All Pokemon GBA Games Online Free</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>
