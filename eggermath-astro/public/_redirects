@@ -36,7 +36,7 @@
 /br/* / 301
 
 # Redirect old game.html?id= URLs (408 pages returning 404)
-/game.html / 301
+/game.html* / 301
 
 # Redirect old /play/ and /unblocked/ URLs (184 pages + 5 redirect errors + 22 crawled-not-indexed)
 /play/* / 301
@@ -47,6 +47,22 @@
 
 # Redirect guessed game URLs (no plain /tetris, /pokemon etc. exist)
 /tetris /tetris-gb 301
+
+# Redirect old /blog/*.html URLs (22 crawled-not-indexed pages)
+/blog/play-multiplayer-gba-online.html /blog 301
+/blog/gba-emulator-pc.html /blog/how-to-play-gba-games-browser 301
+/blog/play-gba-games-on-pc-free.html /blog/how-to-play-gba-games-browser 301
+/blog/play-metroid-fusion-online.html /blog 301
+/blog/best-gba-emulator-2026.html /blog/best-gba-games-2026 301
+/blog/gba-games-list.html /blog/best-gba-games-online 301
+/blog/play-pokemon-emerald-in-browser.html /blog/pokemon-emerald-nuzlocke-guide 301
+/blog/gba-emulator-chromebook.html /blog/how-to-play-gba-games-browser 301
+
+# Redirect old /games/ HTML pages
+/games/tmnt.html /blog 301
+
+# Redirect old /tags/ pages
+/tags/* /blog 301
 
 # Redirect old search index
 /search-index.json / 301
