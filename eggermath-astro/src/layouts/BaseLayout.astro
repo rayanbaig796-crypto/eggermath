@@ -119,5 +119,39 @@ const {
   <Footer />
   <!-- Adsterra Social Bar -->
   <script src="https://pl31186747.profitableratecpmnetwork.com/bc/eb/e3/bcebe3b9d2b0348dd139537d039d8b18.js"></script>
+  <script is:inline>
+    (function() {
+      function moveAdToBottomRight() {
+        var ad = document.querySelector('[id*="d59910"], [class*="d59910"], div[style*="position"]');
+        if (!ad) {
+          var allDivs = document.querySelectorAll('body > div');
+          for (var i = 0; i < allDivs.length; i++) {
+            var d = allDivs[i];
+            var s = d.getAttribute('style') || '';
+            if (s.indexOf('position') !== -1 && d !== document.body.firstElementChild && d.querySelector('a, img, iframe')) {
+              ad = d;
+              break;
+            }
+          }
+        }
+        if (ad) {
+          ad.style.position = 'fixed';
+          ad.style.bottom = '20px';
+          ad.style.right = '20px';
+          ad.style.top = 'auto';
+          ad.style.left = 'auto';
+          ad.style.zIndex = '2147483647';
+        }
+      }
+      setTimeout(moveAdToBottomRight, 3000);
+      setTimeout(moveAdToBottomRight, 6000);
+      setTimeout(moveAdToBottomRight, 10000);
+      if (typeof MutationObserver !== 'undefined') {
+        var obs = new MutationObserver(function() { moveAdToBottomRight(); });
+        obs.observe(document.body, { childList: true, subtree: true });
+        setTimeout(function() { obs.disconnect(); }, 15000);
+      }
+    })();
+  </script>
 </body>
 </html>
