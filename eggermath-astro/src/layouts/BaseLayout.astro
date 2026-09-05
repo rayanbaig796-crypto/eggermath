@@ -121,36 +121,34 @@ const {
   <script src="https://pl31186747.profitableratecpmnetwork.com/bc/eb/e3/bcebe3b9d2b0348dd139537d039d8b18.js"></script>
   <script is:inline>
     (function() {
-      function moveAdToBottomRight() {
-        var ad = document.querySelector('[id*="d59910"], [class*="d59910"], div[style*="position"]');
-        if (!ad) {
-          var allDivs = document.querySelectorAll('body > div');
-          for (var i = 0; i < allDivs.length; i++) {
-            var d = allDivs[i];
-            var s = d.getAttribute('style') || '';
-            if (s.indexOf('position') !== -1 && d !== document.body.firstElementChild && d.querySelector('a, img, iframe')) {
-              ad = d;
-              break;
+      var style = document.createElement('style');
+      style.textContent = 'body > div[id]:not([id="adsterra-banner"]):not([id="nav-wrap"]) { position:fixed!important; bottom:20px!important; right:20px!important; top:auto!important; left:auto!important; }';
+      document.head.appendChild(style);
+
+      function reposition() {
+        var divs = document.body.children;
+        for (var i = 0; i < divs.length; i++) {
+          var el = divs[i];
+          if (el.tagName === 'DIV' && el.id && el.id !== 'adsterra-banner' && el.id !== 'nav-wrap') {
+            var s = el.getAttribute('style') || '';
+            if (s.indexOf('position') !== -1) {
+              el.style.setProperty('position', 'fixed', 'important');
+              el.style.setProperty('bottom', '20px', 'important');
+              el.style.setProperty('right', '20px', 'important');
+              el.style.setProperty('top', 'auto', 'important');
+              el.style.setProperty('left', 'auto', 'important');
+              el.style.setProperty('z-index', '2147483647', 'important');
             }
           }
         }
-        if (ad) {
-          ad.style.position = 'fixed';
-          ad.style.bottom = '20px';
-          ad.style.right = '20px';
-          ad.style.top = 'auto';
-          ad.style.left = 'auto';
-          ad.style.zIndex = '2147483647';
-        }
       }
-      setTimeout(moveAdToBottomRight, 3000);
-      setTimeout(moveAdToBottomRight, 6000);
-      setTimeout(moveAdToBottomRight, 10000);
-      if (typeof MutationObserver !== 'undefined') {
-        var obs = new MutationObserver(function() { moveAdToBottomRight(); });
-        obs.observe(document.body, { childList: true, subtree: true });
-        setTimeout(function() { obs.disconnect(); }, 15000);
-      }
+
+      var attempts = [2000, 4000, 7000, 10000, 15000, 20000];
+      attempts.forEach(function(ms) { setTimeout(reposition, ms); });
+
+      var obs = new MutationObserver(function() { reposition(); });
+      obs.observe(document.body, { childList: true, subtree: true, attributes: true });
+      setTimeout(function() { obs.disconnect(); }, 25000);
     })();
   </script>
 </body>
