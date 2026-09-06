@@ -12,6 +12,7 @@ interface Props {
   jsonLd?: object;
   noIndex?: boolean;
   hreflangHtml?: string;
+  noAds?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   jsonLd,
   noIndex = false,
   hreflangHtml,
+  noAds = false,
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -111,15 +113,21 @@ const {
 </head>
 <body>
   <Nav />
-  <div id="adsterra-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;">
-    <script is:inline> atOptions = { 'key' : 'bfb74048c1b11dcc3bad492ec9dedcd7', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script>
-    <script is:inline src="https://www.highrevenueformat.com/bfb74048c1b11dcc3bad492ec9dedcd7/invoke.js"></script>
-  </div>
+  {!noAds && (
+    <div id="adsterra-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;">
+      <script is:inline> atOptions = { 'key' : 'bfb74048c1b11dcc3bad492ec9dedcd7', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} }; </script>
+      <script is:inline src="https://www.highrevenueformat.com/bfb74048c1b11dcc3bad492ec9dedcd7/invoke.js"></script>
+    </div>
+  )}
   <slot />
   <Footer />
-  <!-- Adsterra Popunder -->
-  <script is:inline src="https://pl31195343.profitableratecpmnetwork.com/dd/92/d4/dd92d48c307734ce48cd16bdaef2fa02.js"></script>
-  <!-- Adsterra Social Bar -->
-  <script is:inline src="https://pl31186747.profitableratecpmnetwork.com/bc/eb/e3/bcebe3b9d2b0348dd139537d039d8b18.js"></script>
+  {!noAds && (
+    <div style="display:none">
+      <!-- Adsterra Popunder -->
+      <script is:inline src="https://pl31195343.profitableratecpmnetwork.com/dd/92/d4/dd92d48c307734ce48cd16bdaef2fa02.js"></script>
+      <!-- Adsterra Social Bar -->
+      <script is:inline src="https://pl31186747.profitableratecpmnetwork.com/bc/eb/e3/bcebe3b9d2b0348dd139537d039d8b18.js"></script>
+    </div>
+  )}
 </body>
 </html>
