@@ -1,0 +1,78 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'GBA Emulator Unblocked: Play GBA Games at School or Work',
+  desc: 'Play GBA games unblocked at school or work. Our browser-based emulator needs no downloads and works on restricted networks.',
+  date: '2026-09-06',
+  category: 'Guides',
+};
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/gba-emulator-unblocked`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">Most GBA emulators require downloading software, which gets blocked on school and work computers. EggerMath is different — it runs entirely in your browser. No download means nothing to block. Just open the site and play.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why EggerMath Works on Restricted Networks</h2>
+  <p style="color:#ccc;margin-bottom:16px">Traditional emulators like mGBA or VisualBoyAdvance require downloading an .exe or .dmg file. School and work firewalls block these downloads. EggerMath uses WebAssembly to run the emulator directly in your browser — the same technology that powers Google Docs and Netflix.</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No .exe download:</strong> Nothing to download means nothing to block.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No ROM files:</strong> All 52 games are built in. No need to download ROMs separately.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">HTTPS:</strong> The site uses HTTPS, which most networks allow.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No account:</strong> No signup required. Just visit and play.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">How to Play GBA Games Unblocked</h2>
+  <ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Open the site:</strong> Go to <a href="/" style="color:#c4a35a">eggermath.com</a> in your browser.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Pick a game:</strong> Browse the library of 52 GBA, GBC, and GB games. Click any cart to load it.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Play:</strong> The game loads in 5-15 seconds. Use keyboard or touch controls.</li>
+  </ol>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Best GBA Games to Play Unblocked</h2>
+  <p style="color:#ccc;margin-bottom:16px">Here are the most popular games students play during breaks:</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><a href="/pokemon-emerald" style="color:#c4a35a;text-decoration:none"><strong>Pokemon Emerald</strong></a> — The best Pokemon game. 200+ creatures, Battle Frontier, and a complete story.</li>
+    <li style="margin-bottom:8px"><a href="/zelda-minish-cap" style="color:#c4a35a;text-decoration:none"><strong>Zelda: Minish Cap</strong></a> — A perfect portable Zelda with clever puzzles and beautiful pixel art.</li>
+    <li style="margin-bottom:8px"><a href="/mario-kart-super-circuit" style="color:#c4a35a;text-decoration:none"><strong>Mario Kart Super Circuit</strong></a> — Fast racing that you can play in short bursts.</li>
+    <li style="margin-bottom:8px"><a href="/kirby-nightmare-in-dream-land" style="color:#c4a35a;text-decoration:none"><strong>Kirby: Nightmare in Dream Land</strong></a> — Easy to pick up, hard to put down. Great for quick sessions.</li>
+    <li style="margin-bottom:8px"><a href="/castlevania-aria-of-sorrow" style="color:#c4a35a;text-decoration:none"><strong>Castlevania: Aria of Sorrow</strong></a> — Deep action RPG with a soul collection system.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Keyboard Controls</h2>
+  <div style="background:#111;padding:16px;border-radius:8px;margin-bottom:24px;font-family:monospace;color:#ccc">
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">D-Pad:</strong> Arrow Keys</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">A Button:</strong> K</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">B Button:</strong> J</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Start:</strong> Enter</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Select:</strong> Right Shift</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">L / R:</strong> Q / E</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Save State:</strong> F5</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Load State:</strong> F9</p>
+    <p style="margin:0"><strong style="color:#c4a35a">Fast Forward:</strong> Space</p>
+  </div>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play GBA Games Unblocked Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">No download. No signup. Just click and play 52 GBA, GBC, and GB games.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/how-to-play-gba-games-browser" style="color:#c4a35a;text-decoration:none">How to Play GBA Games in Your Browser (2026 Guide)</a></li>
+      <li><a href="/blog/best-gba-games-2026" style="color:#c4a35a;text-decoration:none">Best GBA Games to Play Online in 2026</a></li>
+      <li><a href="/blog/why-browser-emulation-is-the-future" style="color:#c4a35a;text-decoration:none">Why Browser Emulation Is the Future of Retro Gaming</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

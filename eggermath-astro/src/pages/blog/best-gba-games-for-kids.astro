@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'Best GBA Games for Kids: Family-Friendly Picks',
+  desc: 'Discover the best GBA games for kids. Family-friendly Pokemon, Mario, Kirby, and more — all playable free in the browser.',
+  date: '2026-09-06',
+  category: 'Lists',
+};
+
+const kidGames = [
+  { name: 'Pokemon Emerald', slug: 'pokemon-emerald', age: '7+', desc: 'Catch Pokemon, explore Hoenn, and become champion. No violence, pure adventure.' },
+  { name: 'Kirby: Nightmare in Dream Land', slug: 'kirby-nightmare-in-dream-land', age: '5+', desc: 'Colorful platformer with cute characters. Perfect for younger players.' },
+  { name: 'Mario Kart Super Circuit', slug: 'mario-kart-super-circuit', age: '4+', desc: 'Racing fun with Mario characters. Easy to learn, hard to master.' },
+  { name: 'Super Mario World', slug: 'super-mario-world', age: '5+', desc: 'The classic Mario adventure. Run, jump, and save the Princess.' },
+  { name: 'Kirby & the Amazing Mirror', slug: 'kirby-amazing-mirror', age: '5+', desc: 'Non-linear Kirby with copy abilities. Great for exploration.' },
+  { name: 'Super Mario Advance', slug: 'super-mario-advance', age: '5+', desc: 'Super Mario Bros. 2 remade for GBA with better graphics.' },
+  { name: 'Donkey Kong Country', slug: 'donkey-kong-country', age: '6+', desc: 'Platforming adventure with Donkey Kong and Diddy Kong.' },
+  { name: 'Tetris DX', slug: 'tetris-dx', age: '4+', desc: 'The classic puzzle game. Simple, addictive, and educational.' },
+  { name: 'Dr. Mario', slug: 'dr-mario', age: '4+', desc: 'Puzzle game where you match colored capsules. Great for problem-solving.' },
+  { name: 'Super Mario Bros. 3', slug: 'super-mario-bros-3', age: '5+', desc: 'Widely considered the best 2D Mario game ever made.' },
+];
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/best-gba-games-for-kids`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">The Game Boy Advance has one of the best libraries of family-friendly games ever made. No violence, no mature content — just pure, colorful fun. Here are the best GBA games for kids, all playable free in your browser on <a href="/" style="color:#c4a35a">EggerMath</a>.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Top 10 GBA Games for Kids</h2>
+
+  {kidGames.map((g, i) => (
+    <div style="margin-bottom:16px;padding:16px;background:#111;border:1px solid #1e1e22;border-radius:8px">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+        <span style="color:#555;font-size:12px">{g.age}</span>
+        <a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none;font-weight:700;font-size:1.1rem">{g.name}</a>
+      </div>
+      <p style="color:#aaa;margin:0;font-size:14px">{g.desc}</p>
+    </div>
+  ))}
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why GBA Games Are Great for Kids</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No violence:</strong> GBA games are rated E for Everyone. No blood, no mature themes.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Educational value:</strong> Puzzle games like Tetris and Dr. Mario teach problem-solving and pattern recognition.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Colorful graphics:</strong> GBA games have bright, engaging art styles that appeal to kids.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Simple controls:</strong> Most GBA games use just a few buttons. Easy for small hands.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No in-app purchases:</strong> No microtransactions, loot boxes, or pay-to-win mechanics.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">How to Set Up GBA Games for Your Kids</h2>
+  <p style="color:#ccc;margin-bottom:16px">Setting up GBA games on EggerMath takes seconds:</p>
+  <ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px">Open <a href="/" style="color:#c4a35a">eggermath.com</a> in your browser.</li>
+    <li style="margin-bottom:8px">Pick a game from the library (Pokemon, Mario, Kirby, etc.).</li>
+    <li style="margin-bottom:8px">The game loads instantly. No download, no signup.</li>
+    <li style="margin-bottom:8px">Use save states (F5 to save, F9 to load) so your kids never lose progress.</li>
+  </ol>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Recommended Starting Games by Age</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Ages 4-5:</strong> Tetris DX, Dr. Mario, Mario Kart Super Circuit — simple rules, immediate fun.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Ages 6-7:</strong> Kirby: Nightmare in Dream Land, Super Mario World — easy platformers with cute characters.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Ages 8-10:</strong> Pokemon Emerald, Zelda: Minish Cap — deeper games with more reading and strategy.</li>
+  </ul>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play GBA Games with Your Kids</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">All 52 games are free to play in your browser. No download, no signup — just pick a game and start playing together.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/best-gba-games-2026" style="color:#c4a35a;text-decoration:none">Best GBA Games to Play Online in 2026</a></li>
+      <li><a href="/blog/retro-gaming-beginners-guide" style="color:#c4a35a;text-decoration:none">Retro Gaming for Beginners</a></li>
+      <li><a href="/blog/how-to-play-gba-games-browser" style="color:#c4a35a;text-decoration:none">How to Play GBA Games in Your Browser (2026 Guide)</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>
