@@ -110,10 +110,10 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": `How to play ${game.title} on iPhone?`, "acceptedAnswer": { "@type": "Answer", "text": `Open ${SITE.url}/${game.slug}/ on Safari, tap to start. Use touch controls (D-pad, A/B, L/R). Save with Save button — works offline after first load.` } },
+        { "@type": "Question", "name": `How to play ${game.title} on iPhone?`, "acceptedAnswer": { "@type": "Answer", "text": `Open ${SITE.url}/${game.slug}/ on Safari, tap to start. Use touch controls (D-pad, A/B${game.system === 'GBA' ? ', L/R' : ''}). Save with Save button — works offline after first load.` } },
         { "@type": "Question", "name": `Is ${game.title} free to play?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes, ${game.title} is free on EggerMath via browser mGBA emulator. No download, no signup.` } },
         { "@type": "Question", "name": `Can I save ${game.title} progress?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — click Save (F5) and Load (F9). 10 slots (Slot button / F7). Saved in browser storage.` } },
-        { "@type": "Question", "name": `What are ${game.title} controls?`, "acceptedAnswer": { "@type": "Answer", "text": `D-Pad: WASD/Arrows, A: K, B: J, L: Q (GBA only), R: E (GBA only), Start: Enter, Select: Right Shift. On mobile use touch controls.` } }
+        { "@type": "Question", "name": `What are ${game.title} controls?`, "acceptedAnswer": { "@type": "Answer", "text": `D-Pad: WASD/Arrows, A: K, B: J${game.system === 'GBA' ? ', L: Q (GBA only), R: E (GBA only)' : ''}, Start: Enter, Select: Right Shift. On mobile use touch controls.` } }
       ]
     },
     {
@@ -208,7 +208,7 @@ const jsonLd = {
 
     <div class="keyboard-hints desktop-only">
       <div class="kbd-hint"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> or <kbd>&uarr;</kbd><kbd>&larr;</kbd><kbd>&darr;</kbd><kbd>&rarr;</kbd> D-Pad</div>
-      <div class="kbd-hint"><kbd>K</kbd> A &nbsp; <kbd>J</kbd> B &nbsp; <kbd>Q</kbd> L &nbsp; <kbd>E</kbd> R</div>
+      <div class="kbd-hint"><kbd>K</kbd> A &nbsp; <kbd>J</kbd> B{game.system === 'GBA' && <>&nbsp; <kbd>Q</kbd> L &nbsp; <kbd>E</kbd> R</>}</div>
       <div class="kbd-hint"><kbd>Enter</kbd> Start &nbsp; <kbd>RShift</kbd> Select</div>
       <div class="kbd-hint"><kbd>F5</kbd> Save &nbsp; <kbd>F7</kbd> Slot &nbsp; <kbd>F9</kbd> Load &nbsp; Double-click canvas for fullscreen</div>
     </div>
@@ -227,7 +227,7 @@ const jsonLd = {
     </div>
     <div class="geo-answer">
       <h2>Play {game.title} Online — Free {game.system} Emulator</h2>
-      <p><strong>Play {game.title} Online</strong> is a free browser-based {game.system} emulator experience on EggerMath. No download, no signup — click Play and the game loads via mGBA WebAssembly at 240×160, pixel-perfect. Use WASD or Arrow Keys for D-Pad, K for A, J for B, Q/L and E/R for shoulders (GBA), Enter for Start, Right Shift for Select. Save instantly with F5 (10 slots, F7 to switch) and load with F9; progress is cached in IndexedDB so you can resume offline after the first load. {game.title} is a {game.genre} title from {game.year} by {game.developer}, part of the {game.series} series, playable here with touch controls on iOS/Android and save states that persist in your browser.</p>
+      <p><strong>Play {game.title} Online</strong> is a free browser-based {game.system} emulator experience on EggerMath. No download, no signup — click Play and the game loads via mGBA WebAssembly at 240×160, pixel-perfect. Use WASD or Arrow Keys for D-Pad, K for A, J for B{game.system === 'GBA' ? ', Q/L and E/R for shoulders' : ''}, Enter for Start, Right Shift for Select. Save instantly with F5 (10 slots, F7 to switch) and load with F9; progress is cached in IndexedDB so you can resume offline after the first load. {game.title} is a {game.genre} title from {game.year} by {game.developer}, part of the {game.series} series, playable here with touch controls on iOS/Android and save states that persist in your browser.</p>
     </div>
     <div class="eeat-byline">
       <span>Reviewed by <strong>EggerMath Team</strong> · mGBA WASM verified · <a href="/pages/about">About</a> · Updated {new Date().getFullYear()}</span>
@@ -253,7 +253,7 @@ const jsonLd = {
     <details><summary>How to play {game.title} on iPhone?</summary><p>Open this page on Safari, tap to start. Touch controls appear automatically. Save via Save button — works offline after first load.</p></details>
     <details><summary>Is {game.title} free?</summary><p>Yes, free on EggerMath via browser mGBA emulator. No download, no signup.</p></details>
     <details><summary>Can I save progress?</summary><p>Click Save (F5) and Load (F9). 10 slots via Slot button / F7. Stored in browser.</p></details>
-    <details><summary>What are the controls?</summary><p>D-Pad: WASD/Arrows, A: K, B: J, L: Q, R: E, Start: Enter, Select: Right Shift. Mobile: touch controls.</p></details>
+    <details><summary>What are the controls?</summary><p>D-Pad: WASD/Arrows, A: K, B: J{game.system === 'GBA' ? ', L: Q, R: E' : ''}, Start: Enter, Select: Right Shift. Mobile: touch controls.</p></details>
   </section>
 
   </EmulatorLayout>
