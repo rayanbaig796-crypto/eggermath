@@ -8,12 +8,12 @@ interface Props {
   canonical?: string;
   jsonLd?: object;
   hreflangHtml?: string;
-  noAds?: boolean;
+  noRedirectAds?: boolean;
 }
 
-const { title, description, ogImage, canonical, jsonLd, hreflangHtml, noAds = false } = Astro.props;
+const { title, description, ogImage, canonical, jsonLd, hreflangHtml, noRedirectAds = false } = Astro.props;
 ---
-<BaseLayout title={title} description={description} ogImage={ogImage} canonical={canonical} jsonLd={jsonLd} hreflangHtml={hreflangHtml} noAds={noAds}>
+<BaseLayout title={title} description={description} ogImage={ogImage} canonical={canonical} jsonLd={jsonLd} hreflangHtml={hreflangHtml} noRedirectAds={noRedirectAds}>
   <slot />
 </BaseLayout>
 
