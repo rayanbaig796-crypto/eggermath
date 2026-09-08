@@ -4,7 +4,7 @@
   <div style="background:#1a1a2e;border:1px solid rgba(196,163,90,0.3);border-radius:16px;padding:32px;max-width:400px;width:90%;text-align:center;box-shadow:0 16px 48px rgba(0,0,0,0.6);">
     <div style="font-size:48px;margin-bottom:16px;">🎮</div>
     <h2 style="color:#f0ebe0;font-size:1.4rem;margin:0 0 8px;font-family:'DM Sans',sans-serif;">Age Verification</h2>
-    <p style="color:#aaa;font-size:0.9rem;margin:0 0 24px;line-height:1.5;">Some content on this site may not be suitable for all ages. Please confirm your date of birth to continue.</p>
+    <p style="color:#aaa;font-size:0.9rem;margin:0 0 24px;line-height:1.5;">Please confirm your date of birth to personalize your ad experience.</p>
     
     <div style="display:flex;gap:12px;margin-bottom:20px;justify-content:center;">
       <div>
@@ -32,12 +32,11 @@
     </div>
 
     <div id="age-error" style="color:#e74c3c;font-size:0.85rem;margin-bottom:12px;display:none;">Please enter a valid date of birth.</div>
-    <div id="age-under" style="color:#e74c3c;font-size:0.85rem;margin-bottom:12px;display:none;">You must be 18 or older to access this site.</div>
 
     <button id="age-confirm" style="background:#c4a35a;color:#0d0d0d;border:none;padding:12px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;font-family:'DM Sans',sans-serif;transition:opacity 0.2s;">
-      Confirm Age
+      Confirm
     </button>
-    <p style="color:#555;font-size:0.7rem;margin:16px 0 0;">We don't store your date of birth. It's only used to verify your age locally in your browser.</p>
+    <p style="color:#555;font-size:0.7rem;margin:16px 0 0;">We don't store your date of birth. It's only used to personalize your ad experience.</p>
   </div>
 </div>
 
@@ -47,16 +46,18 @@
   var overlay = document.getElementById('age-gate-overlay');
   if (!overlay) return;
 
-  // Already verified
   try {
     var v = localStorage.getItem(KEY);
     if (v === 'adult' || v === 'minor') {
       document.body.dataset.ageGroup = v;
+      if (v === 'adult') {
+        var el = document.getElementById('adsterra-adult');
+        if (el) el.style.display = 'block';
+      }
       return;
     }
   } catch(e) {}
 
-  // Populate day dropdown
   var daySelect = document.getElementById('age-day');
   for (var d = 1; d <= 31; d++) {
     var opt = document.createElement('option');
@@ -65,7 +66,6 @@
     daySelect.appendChild(opt);
   }
 
-  // Populate year dropdown (1920 to current year)
   var yearSelect = document.getElementById('age-year');
   var thisYear = new Date().getFullYear();
   for (var y = thisYear; y >= 1920; y--) {
@@ -75,7 +75,6 @@
     yearSelect.appendChild(opt);
   }
 
-  // Show overlay
   overlay.style.display = 'flex';
 
   document.getElementById('age-confirm').addEventListener('click', function() {
@@ -83,10 +82,8 @@
     var d = document.getElementById('age-day').value;
     var y = document.getElementById('age-year').value;
     var errEl = document.getElementById('age-error');
-    var underEl = document.getElementById('age-under');
 
     errEl.style.display = 'none';
-    underEl.style.display = 'none';
 
     if (!m || !d || !y) {
       errEl.style.display = 'block';
@@ -101,18 +98,17 @@
       age--;
     }
 
-    if (age < 18) {
-      underEl.style.display = 'block';
-      return;
-    }
-
+    var group = age >= 18 ? 'adult' : 'minor';
     try {
-      localStorage.setItem(KEY, 'adult');
+      localStorage.setItem(KEY, group);
     } catch(e) {}
-    document.body.dataset.ageGroup = 'adult';
+    document.body.dataset.ageGroup = group;
     overlay.style.display = 'none';
-    var adultAds = document.getElementById('adsterra-adult');
-    if (adultAds) adultAds.style.display = 'block';
+
+    if (group === 'adult') {
+      var adultAds = document.getElementById('adsterra-adult');
+      if (adultAds) adultAds.style.display = 'block';
+    }
   });
 })();
 </script>
