@@ -1,0 +1,118 @@
+---
+---
+<div id="age-gate-overlay" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.95);backdrop-filter:blur(8px);align-items:center;justify-content:center;">
+  <div style="background:#1a1a2e;border:1px solid rgba(196,163,90,0.3);border-radius:16px;padding:32px;max-width:400px;width:90%;text-align:center;box-shadow:0 16px 48px rgba(0,0,0,0.6);">
+    <div style="font-size:48px;margin-bottom:16px;">🎮</div>
+    <h2 style="color:#f0ebe0;font-size:1.4rem;margin:0 0 8px;font-family:'DM Sans',sans-serif;">Age Verification</h2>
+    <p style="color:#aaa;font-size:0.9rem;margin:0 0 24px;line-height:1.5;">Some content on this site may not be suitable for all ages. Please confirm your date of birth to continue.</p>
+    
+    <div style="display:flex;gap:12px;margin-bottom:20px;justify-content:center;">
+      <div>
+        <label style="display:block;color:#888;font-size:0.75rem;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;">Month</label>
+        <select id="age-month" style="background:#0d0d0d;border:1px solid rgba(255,255,255,0.15);color:#f0ebe0;padding:10px 8px;border-radius:8px;font-size:14px;width:90px;cursor:pointer;">
+          <option value="">MM</option>
+          <option value="01">01</option><option value="02">02</option><option value="03">03</option>
+          <option value="04">04</option><option value="05">05</option><option value="06">06</option>
+          <option value="07">07</option><option value="08">08</option><option value="09">09</option>
+          <option value="10">10</option><option value="11">11</option><option value="12">12</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:block;color:#888;font-size:0.75rem;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;">Day</label>
+        <select id="age-day" style="background:#0d0d0d;border:1px solid rgba(255,255,255,0.15);color:#f0ebe0;padding:10px 8px;border-radius:8px;font-size:14px;width:80px;cursor:pointer;">
+          <option value="">DD</option>
+        </select>
+      </div>
+      <div>
+        <label style="display:block;color:#888;font-size:0.75rem;margin-bottom:4px;text-transform:uppercase;letter-spacing:1px;">Year</label>
+        <select id="age-year" style="background:#0d0d0d;border:1px solid rgba(255,255,255,0.15);color:#f0ebe0;padding:10px 8px;border-radius:8px;font-size:14px;width:100px;cursor:pointer;">
+          <option value="">YYYY</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="age-error" style="color:#e74c3c;font-size:0.85rem;margin-bottom:12px;display:none;">Please enter a valid date of birth.</div>
+    <div id="age-under" style="color:#e74c3c;font-size:0.85rem;margin-bottom:12px;display:none;">You must be 18 or older to access this site.</div>
+
+    <button id="age-confirm" style="background:#c4a35a;color:#0d0d0d;border:none;padding:12px 32px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer;width:100%;font-family:'DM Sans',sans-serif;transition:opacity 0.2s;">
+      Confirm Age
+    </button>
+    <p style="color:#555;font-size:0.7rem;margin:16px 0 0;">We don't store your date of birth. It's only used to verify your age locally in your browser.</p>
+  </div>
+</div>
+
+<script is:inline>
+(function() {
+  var KEY = 'egger_age_v2';
+  var overlay = document.getElementById('age-gate-overlay');
+  if (!overlay) return;
+
+  // Already verified
+  try {
+    var v = localStorage.getItem(KEY);
+    if (v === 'adult' || v === 'minor') {
+      document.body.dataset.ageGroup = v;
+      return;
+    }
+  } catch(e) {}
+
+  // Populate day dropdown
+  var daySelect = document.getElementById('age-day');
+  for (var d = 1; d <= 31; d++) {
+    var opt = document.createElement('option');
+    opt.value = d < 10 ? '0' + d : '' + d;
+    opt.textContent = d < 10 ? '0' + d : '' + d;
+    daySelect.appendChild(opt);
+  }
+
+  // Populate year dropdown (1920 to current year)
+  var yearSelect = document.getElementById('age-year');
+  var thisYear = new Date().getFullYear();
+  for (var y = thisYear; y >= 1920; y--) {
+    var opt = document.createElement('option');
+    opt.value = y;
+    opt.textContent = y;
+    yearSelect.appendChild(opt);
+  }
+
+  // Show overlay
+  overlay.style.display = 'flex';
+
+  document.getElementById('age-confirm').addEventListener('click', function() {
+    var m = document.getElementById('age-month').value;
+    var d = document.getElementById('age-day').value;
+    var y = document.getElementById('age-year').value;
+    var errEl = document.getElementById('age-error');
+    var underEl = document.getElementById('age-under');
+
+    errEl.style.display = 'none';
+    underEl.style.display = 'none';
+
+    if (!m || !d || !y) {
+      errEl.style.display = 'block';
+      return;
+    }
+
+    var birth = new Date(parseInt(y), parseInt(m) - 1, parseInt(d));
+    var today = new Date();
+    var age = today.getFullYear() - birth.getFullYear();
+    var monthDiff = today.getMonth() - birth.getMonth();
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+      age--;
+    }
+
+    if (age < 18) {
+      underEl.style.display = 'block';
+      return;
+    }
+
+    try {
+      localStorage.setItem(KEY, 'adult');
+    } catch(e) {}
+    document.body.dataset.ageGroup = 'adult';
+    overlay.style.display = 'none';
+    var adultAds = document.getElementById('adsterra-adult');
+    if (adultAds) adultAds.style.display = 'block';
+  });
+})();
+</script>

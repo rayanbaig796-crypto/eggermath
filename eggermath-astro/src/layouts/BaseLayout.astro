@@ -2,6 +2,7 @@
 import { SITE } from '../data/games.js';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import AgeGate from '../components/AgeGate.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -120,12 +121,24 @@ const {
   <slot />
   <Footer />
   {!noRedirectAds && (
-    <div style="display:none">
+    <div id="adsterra-adult" style="display:none">
       <!-- Adsterra Popunder -->
       <script is:inline src="https://pl31195343.profitableratecpmnetwork.com/dd/92/d4/dd92d48c307734ce48cd16bdaef2fa02.js"></script>
       <!-- Adsterra Social Bar -->
       <script is:inline src="https://pl31186747.profitableratecpmnetwork.com/bc/eb/e3/bcebe3b9d2b0348dd139537d039d8b18.js"></script>
     </div>
   )}
+  <AgeGate />
+  <script is:inline>
+    (function() {
+      try {
+        var v = localStorage.getItem('egger_age_v2');
+        if (v === 'adult') {
+          var el = document.getElementById('adsterra-adult');
+          if (el) el.style.display = 'block';
+        }
+      } catch(e) {}
+    })();
+  </script>
 </body>
 </html>
