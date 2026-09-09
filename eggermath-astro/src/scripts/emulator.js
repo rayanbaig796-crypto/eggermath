@@ -29,6 +29,84 @@ function requestFs() {
 function setStatus(msg) { if (statusText) statusText.textContent = msg; }
 function setProgress(pct) { if (progressFill) progressFill.style.width = pct + '%'; }
 
+/* ── Boot diagnostics & recovery (iPhone-friendly) ── */
+var isCoarsePointer = (window.matchMedia && window.matchMedia('(pointer: coarse)').matches) || ('ontouchstart' in window);
+var INIT_TIMEOUT_MS = isCoarsePointer ? 60000 : 30000;
+var MEGA_TIMEOUT_MS = isCoarsePointer ? 45000 : 25000;
+var DOWNLOAD_SLOW_MS = 90000;
+var megaFailed = false;
+var retryBtn = null;
+
+function getGameLoading() { return document.getElementById('game-loading'); }
+
+function ensureRetryButton() {
+  if (retryBtn) return retryBtn;
+  if (!statusText || !statusText.parentNode) return null;
+  retryBtn = document.createElement('button');
+  retryBtn.id = 'retry-btn';
+  retryBtn.type = 'button';
+  retryBtn.textContent = 'Retry';
+  retryBtn.style.cssText = 'display:none;margin:12px auto;padding:10px 28px;background:#c4a35a;color:#0d0d0d;border:none;border-radius:8px;font-weight:700;font-size:15px;cursor:pointer;';
+  retryBtn.addEventListener('click', function() { window.location.reload(); });
+  statusText.parentNode.insertBefore(retryBtn, statusText.nextSibling);
+  return retryBtn;
+}
+
+function showFatal(msg) {
+  setStatus(msg);
+  if (statusText) statusText.style.display = 'block';
+  var gl = getGameLoading();
+  if (gl) gl.classList.add('hidden');
+  if (progressBar) progressBar.classList.remove('visible');
+  if (fileInfo) fileInfo.classList.remove('visible');
+  if (uploadArea) uploadArea.style.display = '';
+  var pg = document.getElementById('pre-game-content');
+  if (pg) pg.classList.remove('hidden');
+  var rb = ensureRetryButton();
+  if (rb) rb.style.display = 'block';
+}
+
+function offerRetry(msg) {
+  setStatus(msg);
+  if (statusText) statusText.style.display = 'block';
+  var rb = ensureRetryButton();
+  if (rb) rb.style.display = 'block';
+}
+
+/* ?debug=1 capability overlay: open with ?debug=1 and screenshot it */
+(function bootDiagnostics() {
+  try {
+    if (new URLSearchParams(window.location.search).get('debug') !== '1') return;
+    var rows = [
+      ['SAB', typeof SharedArrayBuffer !== 'undefined' ? 'yes' : 'NO'],
+      ['isolated', window.crossOriginIsolated ? 'yes' : 'no'],
+      ['WASM', typeof WebAssembly !== 'undefined' ? 'yes' : 'NO'],
+      ['mega lib', (window.mega && window.mega.File) ? 'loaded' : 'MISSING'],
+      ['mGBA', typeof window.mGBA !== 'undefined' ? 'loaded' : 'MISSING'],
+      ['coarse pointer', isCoarsePointer ? 'yes' : 'no'],
+      ['ua', navigator.userAgent]
+    ];
+    var box = document.createElement('div');
+    box.id = 'emu-debug';
+    box.style.cssText = 'position:fixed;top:8px;left:8px;right:8px;z-index:99999;background:#000;color:#0f0;font:12px monospace;padding:10px;border:1px solid #0f0;border-radius:8px;white-space:pre-wrap;word-break:break-all;max-height:50vh;overflow:auto;';
+    box.textContent = rows.map(function(r) { return r[0] + ': ' + r[1]; }).join('\n') + '\nIDB: testing...';
+    document.body.appendChild(box);
+    try {
+      var rq = indexedDB.open('__emu_probe', 1);
+      var done = false;
+      var finish = function(s) {
+        if (done) return; done = true;
+        box.textContent = box.textContent.replace('IDB: testing...', 'IDB: ' + s);
+      };
+      rq.onsuccess = function() { finish('ok'); };
+      rq.onerror = function() { finish('BLOCKED'); };
+      setTimeout(function() { finish('TIMEOUT'); }, 5000);
+    } catch (e) {
+      box.textContent = box.textContent.replace('IDB: testing...', 'IDB: threw');
+    }
+  } catch (e) {}
+})();
+
 if (!window.WebAssembly) {
   setStatus('Your browser does not support WebAssembly. Please use Chrome, Firefox, Edge, or Safari 11+.');
   if (uploadArea) uploadArea.style.display = 'none';
@@ -77,7 +155,7 @@ async function loadFile(file) {
   fileInfo.classList.add('visible');
   fileName.textContent = file.name.replace(/\.zip$/i, '').replace(/\.gba$/i, '').replace(/\.gb$/i, '').replace(/\.gbc$/i, '');
   progressBar.classList.add('visible');
-  setStatus('Initializing emulator...');
+  setStatus('Starting emulator engine...');
 
   // Detect ROM type from filename for control adaptation
   var fnLower = file.name.toLowerCase();
@@ -89,20 +167,15 @@ async function loadFile(file) {
   try {
     if (!emulator) {
       setProgress(10);
-      setStatus('Initializing emulator...');
+      setStatus('Starting emulator engine...');
       try {
         emulator = await Promise.race([
           mGBA({ canvas }),
-          new Promise((_, reject) => setTimeout(() => reject(new Error('Emulator initialization timed out. Try Chrome or Edge browser.')), 30000))
+          new Promise((_, reject) => setTimeout(() => reject(new Error('Emulator engine timed out (slow device or connection). Tap Retry to try again.')), INIT_TIMEOUT_MS))
         ]);
       } catch (initErr) {
         console.error('mGBA init failed:', initErr);
-        setStatus('Failed to initialize. Try Chrome or Edge. ' + initErr.message);
-        progressBar.classList.remove('visible');
-        if (uploadArea) uploadArea.style.display = '';
-        var preGame3 = document.getElementById('pre-game-content');
-        if (preGame3) preGame3.classList.remove('hidden');
-        fileInfo.classList.remove('visible');
+        showFatal('Emulator failed to start. ' + (initErr && initErr.message ? initErr.message : ''));
         return;
       }
       setProgress(30);
@@ -122,7 +195,7 @@ async function loadFile(file) {
     }
 
     setProgress(70);
-    setStatus('Loading ROM...');
+    setStatus('Loading ROM into emulator...');
 
     await new Promise((resolve, reject) => {
       emulator.uploadRom(file, (err) => {
@@ -140,6 +213,8 @@ async function loadFile(file) {
     if (success) {
       setProgress(100);
       setStatus('');
+      if (statusText) statusText.style.display = '';
+      if (retryBtn) retryBtn.style.display = 'none';
       progressBar.classList.remove('visible');
       fileInfo.classList.remove('visible');
       emulatorContainer.classList.add('visible');
@@ -724,7 +799,7 @@ function prefetchRom(megaKey) {
 }
 
 function downloadOrCache(megaKey, title) {
-  return getCachedRom(megaKey).then(function(cached) {
+  return getCachedRom(megaKey).catch(function() { return null; }).then(function(cached) {
     if (cached) {
       console.log('ROM cache hit:', title);
       return cached;
@@ -732,6 +807,7 @@ function downloadOrCache(megaKey, title) {
     if (prefetchMap[megaKey] && prefetchMap[megaKey] !== true) {
       return prefetchMap[megaKey];
     }
+    setStatus('Downloading ' + title + '... (slow connections can take a minute)');
     return new Promise(function(resolve, reject) {
       var megaFile = megaFiles[megaKey];
       if (!megaFile) { reject(new Error('Not found')); return; }
@@ -739,8 +815,12 @@ function downloadOrCache(megaKey, title) {
         var current = parseInt(progressFill.style.width) || 0;
         if (current < 85) setProgress(current + 1);
       }, 200);
+      var slowTimer = setTimeout(function() {
+        offerRetry('Still downloading ' + title + ' — slow connection. You can wait, or tap Retry to restart.');
+      }, DOWNLOAD_SLOW_MS);
       megaFile.downloadBuffer(function(err, data) {
         clearInterval(progressInterval);
+        clearTimeout(slowTimer);
         if (err) { reject(err); return; }
         cacheRom(megaKey, data).then(function() {
           resolve(data);
@@ -869,6 +949,7 @@ function resumeGame(data) {
   else if (fnLower.endsWith('.gbc')) document.body.dataset.system = 'GBC';
   else document.body.dataset.system = 'GBA';
   if (!megaFiles) {
+    if (megaFailed) { showFatal('Game library is unreachable. Check your connection and tap Retry.'); return; }
     setStatus('Connecting to game library...');
     setTimeout(function() { resumeGame(data); }, 2000);
     return;
@@ -892,11 +973,7 @@ function resumeGame(data) {
     loadFile(file);
   }).catch(function(err) {
     console.error('Resume download error:', err);
-    setStatus('Download failed. Try again.');
-    progressBar.classList.remove('visible');
-    if (uploadArea) uploadArea.style.display = '';
-    if (preGame) preGame.classList.remove('hidden');
-    fileInfo.classList.remove('visible');
+    showFatal('Download failed. Tap Retry to try again.');
   });
 }
 
@@ -925,8 +1002,28 @@ var MEGA_FOLDER = 'https://mega.nz/folder/eWRFRTTC#hlIqNhqqS8y9OgTrGIWLcA';
 var gamePageData = window.__GAME_PAGE__;
 
 function initMegaIntegration() {
+  if (!window.mega || !window.mega.File || !window.mega.File.fromURL) {
+    megaFailed = true;
+    showFatal('Game library failed to load (a required script was blocked). Turn off VPN/ad-blocker for this site and tap Retry.');
+    return;
+  }
+  setStatus('Contacting game library...');
+  var megaDone = false;
+  var megaTimer = setTimeout(function() {
+    if (megaDone || megaFiles) return;
+    megaFailed = true;
+    showFatal('Contacting the game library timed out. Check your connection and tap Retry.');
+  }, MEGA_TIMEOUT_MS);
   window.mega.File.fromURL(MEGA_FOLDER).loadAttributes(function(err, folder) {
-    if (err) { console.warn('MEGA folder load failed:', err); return; }
+    megaDone = true;
+    clearTimeout(megaTimer);
+    if (megaFailed) return;
+    if (err) {
+      console.warn('MEGA folder load failed:', err);
+      megaFailed = true;
+      showFatal('Could not reach the game library. Check your connection and tap Retry.');
+      return;
+    }
     megaFiles = {};
     folder.children.forEach(function(f) { megaFiles[f.name] = f; });
     console.log('MEGA folder loaded:', Object.keys(megaFiles).length, 'files');
@@ -951,11 +1048,7 @@ function initMegaIntegration() {
         loadFile(file);
       }).catch(function(err) {
         console.error('Auto-load error:', err);
-        setStatus('Download failed. Try again.');
-        progressBar.classList.remove('visible');
-        if (uploadArea) uploadArea.style.display = '';
-        if (preGame2) preGame2.classList.remove('hidden');
-        fileInfo.classList.remove('visible');
+        showFatal('Download failed. Tap Retry to try again.');
       });
       return;
     }
@@ -989,4 +1082,9 @@ function initGamesGrid() {
 }
 
 initGamesGrid();
-initMegaIntegration();
+if (typeof SharedArrayBuffer === 'undefined') {
+  megaFailed = true;
+  showFatal('This browser cannot run the emulator (missing SharedArrayBuffer). Open this page in Safari — not inside another app — with Private Browsing off, then tap Retry.');
+} else {
+  initMegaIntegration();
+}
