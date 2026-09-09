@@ -2084,6 +2084,34 @@ body.game-fullscreen .touch-controls .tc-center-btn.pressed {
   color: var(--text-secondary);
 }
 
+/* ── Side Rail Ads (homepage, desktop only) ── */
+.side-rail {
+  display: none;
+}
+@media (min-width: 1350px) {
+  .side-rail {
+    display: block;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 160px;
+    z-index: 40;
+  }
+  .side-rail-left { left: max(8px, calc((100vw - 1240px) / 2 - 176px)); }
+  .side-rail-right { right: max(8px, calc((100vw - 1240px) / 2 - 176px)); }
+  .side-rail-inner {
+    width: 160px;
+    min-height: 600px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+body.game-fullscreen .side-rail {
+  display: none !important;
+}
+
 /* ── Reduced Motion ── */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
