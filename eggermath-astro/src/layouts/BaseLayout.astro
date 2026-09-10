@@ -124,8 +124,10 @@ const {
       var NATIVE_CONTAINER = 'container-7e33cb22bade6e598d8f356726523edd';
       var SKY_KEY = '3a5a174484bb6e8fd178f3765fd2a88e';
       var SKY_SRC = 'https://www.highrevenueformat.com/3a5a174484bb6e8fd178f3765fd2a88e/invoke.js';
+      /* Both units are certified adult-OFF in Adsterra (locked), so they are
+         minor-safe. Only the visitor's verification state gates loading. */
       window.__loadAds = function(group) {
-        if (group !== 'adult') return;
+        if (group !== 'adult' && group !== 'minor') return;
         if (window.__adsLoaded) return;
         window.__adsLoaded = true;
         var top = document.getElementById('adsterra-native-banner');
