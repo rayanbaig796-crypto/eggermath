@@ -428,6 +428,11 @@ function setupTouchControls() {
 
   tc.classList.add('active');
 
+  /* Haptics: light tap on every new button press (Android only — iOS Safari has no Vibration API) */
+  function buzz(ms) {
+    try { if (navigator.vibrate) navigator.vibrate(ms); } catch (e) {}
+  }
+
   var isLandscape = window.matchMedia('(orientation: landscape)');
   function updateLandscape() {
     if (isLandscape.matches) {
@@ -447,6 +452,7 @@ function setupTouchControls() {
   function pressBtn(btn) {
     if (heldButtons.has(btn)) return;
     heldButtons.add(btn);
+    buzz(12);
     if (emulator) emulator.buttonPress(btn);
   }
   function unpressBtn(btn) {
