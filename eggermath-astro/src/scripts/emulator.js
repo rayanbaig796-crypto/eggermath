@@ -175,7 +175,11 @@ async function loadFile(file) {
         ]);
       } catch (initErr) {
         console.error('mGBA init failed:', initErr);
-        showFatal('Emulator failed to start. ' + (initErr && initErr.message ? initErr.message : ''));
+        if (typeof SharedArrayBuffer === 'undefined') {
+          showFatal('This browser cannot run the emulator (missing SharedArrayBuffer). Open this page in Safari — not inside another app — with Private Browsing off, then tap Retry.');
+        } else {
+          showFatal('Emulator failed to start. ' + (initErr && initErr.message ? initErr.message : ''));
+        }
         return;
       }
       setProgress(30);
@@ -1088,9 +1092,4 @@ function initGamesGrid() {
 }
 
 initGamesGrid();
-if (typeof SharedArrayBuffer === 'undefined') {
-  megaFailed = true;
-  showFatal('This browser cannot run the emulator (missing SharedArrayBuffer). Open this page in Safari — not inside another app — with Private Browsing off, then tap Retry.');
-} else {
-  initMegaIntegration();
-}
+initMegaIntegration();
