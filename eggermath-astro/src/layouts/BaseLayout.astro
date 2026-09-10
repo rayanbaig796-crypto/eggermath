@@ -2,6 +2,7 @@
 import { SITE } from '../data/games.js';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import AgeGate from '../components/AgeGate.astro';
 import '../styles/global.css';
 
 interface Props {
@@ -12,7 +13,6 @@ interface Props {
   jsonLd?: object;
   noIndex?: boolean;
   hreflangHtml?: string;
-  noAds?: boolean;
 }
 
 const {
@@ -23,7 +23,6 @@ const {
   jsonLd,
   noIndex = false,
   hreflangHtml,
-  noAds = false,
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -113,13 +112,56 @@ const {
 </head>
 <body>
   <Nav />
-  {!noAds && (
-    <div id="adsterra-native-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;">
-      <script is:inline async="async" data-cfasync="false" src="https://pl31257570.profitableratecpmnetwork.com/7e33cb22bade6e598d8f356726523edd/invoke.js"></script>
-      <div id="container-7e33cb22bade6e598d8f356726523edd"></div>
-    </div>
-  )}
+  <!-- Ad slot: stays EMPTY until age is verified. Filled by __loadAds() below (adults only). -->
+  <div id="adsterra-native-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;"></div>
   <slot />
   <Footer />
+  <AgeGate />
+  <script is:inline>
+    /* Gated ads: nothing loads until the visitor verifies age. Minors never get ads. */
+    (function() {
+      var NATIVE_SRC = 'https://pl31257570.profitableratecpmnetwork.com/7e33cb22bade6e598d8f356726523edd/invoke.js';
+      var NATIVE_CONTAINER = 'container-7e33cb22bade6e598d8f356726523edd';
+      var SKY_KEY = '3a5a174484bb6e8fd178f3765fd2a88e';
+      var SKY_SRC = 'https://www.highrevenueformat.com/3a5a174484bb6e8fd178f3765fd2a88e/invoke.js';
+      window.__loadAds = function(group) {
+        if (group !== 'adult') return;
+        if (window.__adsLoaded) return;
+        window.__adsLoaded = true;
+        var top = document.getElementById('adsterra-native-banner');
+        if (top && !top.dataset.filled) {
+          top.dataset.filled = '1';
+          var c = document.createElement('div');
+          c.id = NATIVE_CONTAINER;
+          top.appendChild(c);
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = NATIVE_SRC;
+          document.body.appendChild(s);
+        }
+        var rails = document.querySelectorAll('.side-rail-slot');
+        for (var i = 0; i < rails.length; i++) {
+          (function(r) {
+            if (r.dataset.filled) return;
+            r.dataset.filled = '1';
+            var at = document.createElement('script');
+            at.text = "atOptions = { 'key' : '" + SKY_KEY + "', 'format' : 'iframe', 'height' : 600, 'width' : 160, 'params' : {} };";
+            r.appendChild(at);
+            var s2 = document.createElement('script');
+            s2.async = true;
+            s2.src = SKY_SRC;
+            r.appendChild(s2);
+          })(rails[i]);
+        }
+      };
+      try {
+        var v = localStorage.getItem('egger_age_v2');
+        if (v === 'adult' || v === 'minor') {
+          document.body.dataset.ageGroup = v;
+          window.__loadAds(v);
+        }
+      } catch (e) {}
+    })();
+  </script>
 </body>
 </html>
