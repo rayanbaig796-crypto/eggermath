@@ -682,10 +682,6 @@ const jsonLd = {
 </style>
 
 <script is:inline src="/ios-compat.js"></script>
-<script is:inline type="module">
-  import init from '/gba-emulator-web/mgba-v2.js';
-  window.mGBA = init;
-</script>
 <script is:inline src="https://unpkg.com/megajs@1/dist/main.browser-umd.js"></script>
 <script define:vars={{ megaFilename: game.mega, gameTitle: game.title, gameSlug: game.slug, gameImg: game.img, gameGenre: game.genre, gameSystem: game.system || 'GBA' }}>
   window.__GAME_PAGE__ = { mega: megaFilename, title: gameTitle, slug: gameSlug, img: gameImg, genre: gameGenre, system: gameSystem };

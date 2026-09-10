@@ -33,6 +33,10 @@
   Cross-Origin-Resource-Policy:
   Cache-Control: public, max-age=604800, immutable
 
+/gba-emulator-web/v1/mgba.wasm
+  Content-Type: application/wasm
+  Cache-Control: public, max-age=604800, immutable
+
 /*.js
   Cache-Control: public, max-age=86400, immutable
 

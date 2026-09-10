@@ -1,4 +1,45 @@
-const mGBA = window.mGBA;
+/* ── Dual-core loader: single-thread mGBA for Apple mobile, threaded for desktop ──
+   iOS WebKit cannot reliably run the 5-thread 256MB shared-memory build
+   (jetsam/OOM — see bugs.webkit.org 255103), so Apple mobile gets v1.1.1. */
+function isAppleMobile() {
+  try {
+    var ua = navigator.userAgent || '';
+    if (/iPad|iPhone|iPod/.test(ua)) return true;
+    if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true;
+  } catch (e) {}
+  return false;
+}
+var MGBA_CORE_URL = isAppleMobile() ? '/gba-emulator-web/v1/mgba.js' : '/gba-emulator-web/mgba-v2.js';
+var corePromise = null;
+function getMGBACore() {
+  if (!corePromise) {
+    corePromise = import(/* @vite-ignore */ MGBA_CORE_URL).then(function(m) { return m.default || m; });
+  }
+  return corePromise;
+}
+/* Normalize v1/v2 API differences so the rest of the code is core-agnostic */
+function normalizeCore(em) {
+  try {
+    if (em && !em.pauseAudio && em.SDL2 && em.SDL2.audioContext) {
+      em.pauseAudio = function() { try { em.SDL2.audioContext.suspend(); } catch (e) {} };
+    }
+    if (em && !em.resumeAudio && em.SDL2 && em.SDL2.audioContext) {
+      em.resumeAudio = function() { try { em.SDL2.audioContext.resume(); } catch (e) {} };
+    }
+    if (em && !em.pause && em.pauseGame) {
+      em.pause = function() { try { em.pauseGame(); } catch (e) {} };
+    }
+  } catch (e) {}
+  return em;
+}
+function unlockAudioOnce() {
+  try {
+    var ctx = emulator && emulator.SDL2 && emulator.SDL2.audioContext;
+    if (ctx && ctx.state === 'suspended' && ctx.resume) ctx.resume();
+  } catch (e) {}
+  document.removeEventListener('pointerdown', unlockAudioOnce);
+  document.removeEventListener('touchend', unlockAudioOnce);
+}
 
 const uploadArea = document.getElementById('upload-area');
 const fileInput = document.getElementById('file-input');
@@ -82,7 +123,7 @@ function offerRetry(msg) {
       ['isolated', window.crossOriginIsolated ? 'yes' : 'no'],
       ['WASM', typeof WebAssembly !== 'undefined' ? 'yes' : 'NO'],
       ['mega lib', (window.mega && window.mega.File) ? 'loaded' : 'MISSING'],
-      ['mGBA', typeof window.mGBA !== 'undefined' ? 'loaded' : 'MISSING'],
+      ['mGBA core', MGBA_CORE_URL],
       ['coarse pointer', isCoarsePointer ? 'yes' : 'no'],
       ['ua', navigator.userAgent]
     ];
@@ -170,7 +211,7 @@ async function loadFile(file) {
       setStatus('Starting emulator engine...');
       try {
         emulator = await Promise.race([
-          mGBA({ canvas }),
+          getMGBACore().then(function(init) { return init({ canvas }); }).then(function(mod) { return normalizeCore(mod); }),
           new Promise((_, reject) => setTimeout(() => reject(new Error('Emulator engine timed out (slow device or connection). Tap Retry to try again.')), INIT_TIMEOUT_MS))
         ]);
       } catch (initErr) {
@@ -187,11 +228,13 @@ async function loadFile(file) {
       await emulator.FSInit();
       setProgress(60);
 
-      emulator.setCoreSettings({
-        autoSaveStateEnable: true,
-        autoSaveStateTimerIntervalSeconds: 30,
-        restoreAutoSaveStateOnLoad: true,
-      });
+      if (emulator.setCoreSettings) {
+        emulator.setCoreSettings({
+          autoSaveStateEnable: true,
+          autoSaveStateTimerIntervalSeconds: 30,
+          restoreAutoSaveStateOnLoad: true,
+        });
+      }
 
       emulator.addCoreCallbacks({
         saveDataUpdatedCallback: () => syncSaves(),
@@ -229,6 +272,11 @@ async function loadFile(file) {
       setupFullscreen();
       setupSavePersistence();
       setupTouchControls();
+
+      /* iOS starts AudioContext suspended — resume on first user gesture */
+      document.addEventListener('pointerdown', unlockAudioOnce);
+      document.addEventListener('touchend', unlockAudioOnce);
+      unlockAudioOnce();
 
       if (window.__GAME_PAGE__ && !document.fullscreenElement) {
         function tryFs() { if (!document.fullscreenElement) requestFs().catch(function(){}); }
