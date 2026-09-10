@@ -12,6 +12,7 @@ interface Props {
   jsonLd?: object;
   noIndex?: boolean;
   hreflangHtml?: string;
+  noAds?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   jsonLd,
   noIndex = false,
   hreflangHtml,
+  noAds = false,
 } = Astro.props;
 ---
 <!DOCTYPE html>
@@ -111,10 +113,12 @@ const {
 </head>
 <body>
   <Nav />
-  <div id="adsterra-native-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;">
-    <script is:inline async="async" data-cfasync="false" src="https://pl31257570.profitableratecpmnetwork.com/7e33cb22bade6e598d8f356726523edd/invoke.js"></script>
-    <div id="container-7e33cb22bade6e598d8f356726523edd"></div>
-  </div>
+  {!noAds && (
+    <div id="adsterra-native-banner" style="display:flex;justify-content:center;padding:0.5rem 0;background:#0d0d0d;">
+      <script is:inline async="async" data-cfasync="false" src="https://pl31257570.profitableratecpmnetwork.com/7e33cb22bade6e598d8f356726523edd/invoke.js"></script>
+      <div id="container-7e33cb22bade6e598d8f356726523edd"></div>
+    </div>
+  )}
   <slot />
   <Footer />
 </body>
