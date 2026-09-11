@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../data/games.js';
+
+const title = 'GBA Emulator for PC: Windows, Mac & Linux (No Download) | EggerMath';
+const description = 'Best GBA emulator for PC in 2026. Play Pokemon, Zelda, Mario on Windows, Mac & Linux right in Chrome, Edge, Safari or Firefox. No install needed.';
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "GBA Emulator for PC: Windows, Mac and Linux Guide",
+      "description": description,
+      "url": `${SITE.url}/gba-emulator-pc`,
+      "author": { "@type": "Organization", "name": SITE.name },
+      "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the best GBA emulator for PC?", "acceptedAnswer": { "@type": "Answer", "text": "For instant play with zero setup, EggerMath runs mGBA in your browser on Windows, Mac and Linux. For desktop software, mGBA and VisualBoyAdvance-M are the top downloadable picks." } },
+        { "@type": "Question", "name": "Is there a GBA emulator for Mac?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EggerMath works in Safari and Chrome on any Mac with no install. OpenEmu and mGBA are solid downloadable Mac alternatives." } },
+        { "@type": "Question", "name": "Can I play GBA games on Linux?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EggerMath runs in Firefox and Chrome on any Linux distro. mGBA also ships native Linux builds." } },
+        { "@type": "Question", "name": "Do I need to install anything?", "acceptedAnswer": { "@type": "Answer", "text": "No. EggerMath needs no .exe, .dmg or packages — the emulator boots inside your browser tab in seconds." } }
+      ]
+    },
+    {
+      "@type": "HowTo",
+      "name": "How to Play GBA Games on PC",
+      "totalTime": "PT1M",
+      "step": [
+        { "@type": "HowToStep", "name": "Open Browser", "text": "Open Chrome, Edge, Firefox or Safari on Windows, Mac or Linux.", "url": SITE.url },
+        { "@type": "HowToStep", "name": "Pick Game", "text": "Click any of the 52 built-in games.", "url": SITE.url },
+        { "@type": "HowToStep", "name": "Play", "text": "Arrow keys = D-Pad, K = A, J = B, Enter = Start. F5 saves, F9 loads." }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": "GBA Emulator for PC", "item": `${SITE.url}/gba-emulator-pc` }
+      ]
+    }
+  ]
+};
+---
+<BaseLayout title={title} description={description} canonical={`${SITE.url}/gba-emulator-pc`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-size:14px">← All Games</a>
+  <h1 style="font-size:2rem;margin:16px 0 8px">GBA Emulator for PC</h1>
+  <p style="color:#aaa;margin-bottom:24px">Play Game Boy Advance games on <strong style="color:#c4a35a">Windows, Mac and Linux</strong> with zero installation. EggerMath runs the mGBA emulator inside your browser — open a tab, click a game, play in seconds.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">GBA Emulator for Windows (10 &amp; 11)</h2>
+  <p style="color:#ccc;margin-bottom:16px">On Windows, open <a href="/" style="color:#c4a35a">eggermath.com</a> in Chrome or Edge. Keyboard controls are ready instantly: Arrow keys move, K is A, J is B, Enter is Start, F5 saves your game. No .exe to trust, no admin rights needed — perfect for locked-down work or school PCs too. Prefer software? mGBA desktop and VisualBoyAdvance-M are the trusted downloads, but expect 15–30 minutes of setup plus separate ROM hunting.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">GBA Emulator for Mac</h2>
+  <p style="color:#ccc;margin-bottom:16px">Mac gamers get the same instant experience in Safari or Chrome — including Apple Silicon Macs, where some older emulator builds misbehave under Rosetta. Everything runs in the tab, saves live in your browser, and fullscreen is one double-click away. Downloadable alternatives: OpenEmu (beautiful Mac-native frontend) and mGBA (Intel + ARM builds).</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">GBA Emulator for Linux</h2>
+  <p style="color:#ccc;margin-bottom:16px">Firefox or Chrome on Ubuntu, Fedora, Arch — pick your distro, the emulator doesn't care. No PPAs, no AppImages, no dependency hell. mGBA also publishes native Linux builds if you want an offline option.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Browser vs Download: Honest Comparison</h2>
+  <div style="background:#111;padding:16px;border-radius:8px;margin-bottom:24px;color:#ccc">
+    <p style="margin:0 0 8px"><strong style="color:#c4a35a">EggerMath (browser):</strong> 5-second start, 52 games included, saves in browser, works on any OS, nothing to install.</p>
+    <p style="margin:0 0 8px"><strong style="color:#c4a35a">mGBA desktop:</strong> most accurate GBA emulation, link-cable support, needs ROMs + BIOS setup.</p>
+    <p style="margin:0"><strong style="color:#c4a35a">VisualBoyAdvance-M:</strong> classic choice, huge feature set, aging UI, same ROM/BIOS homework.</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Best Games to Start With on PC</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><a href="/pokemon-emerald" style="color:#c4a35a;text-decoration:none"><strong>Pokemon Emerald</strong></a> — the definitive GBA Pokemon adventure.</li>
+    <li style="margin-bottom:8px"><a href="/zelda-minish-cap" style="color:#c4a35a;text-decoration:none"><strong>Zelda: The Minish Cap</strong></a> — perfect with a keyboard.</li>
+    <li style="margin-bottom:8px"><a href="/mario-kart-super-circuit" style="color:#c4a35a;text-decoration:none"><strong>Mario Kart: Super Circuit</strong></a> — keyboard racing at its finest.</li>
+    <li style="margin-bottom:8px"><a href="/metroid-fusion" style="color:#c4a35a;text-decoration:none"><strong>Metroid Fusion</strong></a> — atmospheric action, great on a big screen.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What is the best GBA emulator for PC?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">For instant play: EggerMath in your browser. For software: mGBA or VisualBoyAdvance-M.</p></details>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Does it work on Mac?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Yes — Safari and Chrome on Intel and Apple Silicon, no install.</p></details>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Does it work on Linux?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Yes — Firefox and Chrome on any distro, no packages needed.</p></details>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play on Your PC Right Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">No download. No setup. Just click and play.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All 52 Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Guides</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/gba-bios" style="color:#c4a35a;text-decoration:none">GBA BIOS: Do You Need One?</a></li>
+      <li><a href="/blog/gba-emulator-chromebook" style="color:#c4a35a;text-decoration:none">GBA Emulator on Chromebook</a></li>
+      <li><a href="/faq/best-gba-emulator" style="color:#c4a35a;text-decoration:none">Best GBA Emulator 2026</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

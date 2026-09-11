@@ -1,0 +1,61 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'GBA Emulator for Mac: Play Free on Safari & Chrome (No Install)',
+  desc: 'Best GBA emulator for Mac in 2026. Play Pokemon, Zelda, Mario free in Safari or Chrome — no .dmg, no OpenEmu setup needed.',
+  date: '2026-09-11',
+  category: 'Guides',
+};
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/gba-emulator-mac`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">Looking for a GBA emulator for Mac? You have two paths: install desktop software, or skip all of that and play in your browser. On modern Macs — especially Apple Silicon — the browser option wins on simplicity every time.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Option 1: Play Instantly in Safari or Chrome (Recommended)</h2>
+  <p style="color:#ccc;margin-bottom:16px"><a href="/" style="color:#c4a35a">EggerMath</a> runs mGBA inside your browser tab. Open Safari or Chrome, click any of the 52 games, play in 5 seconds. Works identically on Intel and Apple Silicon Macs — no Rosetta quirks, no Gatekeeper warnings, no .dmg to trust. Saves live in your browser, fullscreen is a double-click away.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Option 2: Downloadable Mac Emulators</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">OpenEmu:</strong> gorgeous Mac-native frontend, library management, controller support. Mac-only, needs ROMs.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">mGBA:</strong> most accurate core, Intel + ARM builds, needs ROMs and setup.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">RetroArch:</strong> every core imaginable, most confusing UI in emulation.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Mac Keyboard Controls</h2>
+  <div style="background:#111;padding:16px;border-radius:8px;margin-bottom:24px;color:#ccc">
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">D-Pad:</strong> Arrow Keys (Mac keyboards feel great for this)</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">A / B:</strong> K / J</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Start:</strong> Enter (Return key)</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Save / Load:</strong> F5 / F9 — note: on MacBooks, hold Fn or remap in System Settings</p>
+    <p style="margin:0"><strong style="color:#c4a35a">Fullscreen:</strong> double-click the game canvas</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">MacBook Tip: Function Keys</h2>
+  <p style="color:#ccc;margin-bottom:16px">MacBooks map F5/F9 to brightness and Mission Control by default. Either hold <strong style="color:#c4a35a">Fn</strong> while pressing, or go to System Settings → Keyboard → "Use F1, F2 as standard function keys". Alternatively use the on-screen Save/Load buttons — no keys needed.</p>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Play on Your Mac Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">No .dmg. No setup. Safari or Chrome, 5 seconds.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/gba-emulator-chromebook" style="color:#c4a35a;text-decoration:none">GBA Emulator for Chromebook</a></li>
+      <li><a href="/blog/gba-emulator-no-download" style="color:#c4a35a;text-decoration:none">GBA Emulator With No Download</a></li>
+      <li><a href="/blog/how-to-play-gba-games-browser" style="color:#c4a35a;text-decoration:none">How to Play GBA Games in Browser</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

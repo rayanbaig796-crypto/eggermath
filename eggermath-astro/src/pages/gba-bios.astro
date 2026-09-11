@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE } from '../data/games.js';
+
+const title = 'GBA BIOS: Do You Need One? (No Download Needed) | EggerMath';
+const description = 'What is a GBA BIOS file and do you need one to play? EggerMath uses a built-in open-source BIOS — play 52 GBA games free with no BIOS download.';
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "GBA BIOS Explained: Do You Need a BIOS File to Play?",
+      "description": description,
+      "url": `${SITE.url}/gba-bios`,
+      "author": { "@type": "Organization", "name": SITE.name },
+      "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is a GBA BIOS file?", "acceptedAnswer": { "@type": "Answer", "text": "The GBA BIOS is the startup firmware inside every real Game Boy Advance. Emulators traditionally need a copy of it (gba_bios.bin) to boot games." } },
+        { "@type": "Question", "name": "Do I need to download a GBA BIOS to play online?", "acceptedAnswer": { "@type": "Answer", "text": "No. EggerMath ships with a built-in open-source BIOS replacement, so all 52 games boot instantly with no BIOS download." } },
+        { "@type": "Question", "name": "Is downloading gba_bios.bin legal?", "acceptedAnswer": { "@type": "Answer", "text": "The official GBA BIOS is Nintendo-copyrighted firmware, so downloading it from the internet is piracy. Using an emulator with a built-in open-source BIOS avoids the issue entirely." } },
+        { "@type": "Question", "name": "Where do I put gba_bios.bin in other emulators?", "acceptedAnswer": { "@type": "Answer", "text": "In mGBA desktop go to Settings > Emulation > BIOS and select the file; in VisualBoyAdvance-M use Options > Emulator > BIOS. Or skip the hassle and play in your browser on EggerMath." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": "GBA BIOS", "item": `${SITE.url}/gba-bios` }
+      ]
+    }
+  ]
+};
+---
+<BaseLayout title={title} description={description} canonical={`${SITE.url}/gba-bios`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-size:14px">← All Games</a>
+  <h1 style="font-size:2rem;margin:16px 0 8px">GBA BIOS: Do You Need One?</h1>
+  <p style="color:#aaa;margin-bottom:24px">Short answer: <strong style="color:#c4a35a">not on EggerMath.</strong> Our emulator ships with a built-in open-source BIOS, so every game boots instantly — no BIOS download, no setup files, no legal gray area.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">What Is a GBA BIOS File?</h2>
+  <p style="color:#ccc;margin-bottom:16px">Every real Game Boy Advance contains startup firmware called the BIOS (<code>gba_bios.bin</code>, 16 KB). It shows the Nintendo logo animation, initializes hardware, and provides math routines games call during play. Desktop emulators like mGBA and VisualBoyAdvance ask you to supply this file because they cannot legally bundle Nintendo's copyrighted firmware.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Is Downloading gba_bios.bin Legal?</h2>
+  <p style="color:#ccc;margin-bottom:16px">No — the official BIOS is copyrighted Nintendo firmware, and downloading it from ROM sites is piracy, exactly like downloading commercial games. The only fully legal way to get one is dumping it from a Game Boy Advance you physically own, which requires extra hardware. This is why most newcomers get stuck before ever playing a game.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">How EggerMath Skips the BIOS Entirely</h2>
+  <p style="color:#ccc;margin-bottom:16px">EggerMath runs mGBA compiled to WebAssembly with its open-source BIOS replacement (HLE — high-level emulation). It reimplements what games need from the BIOS in clean-room code. Compatibility is excellent across the library: Pokemon Emerald, Zelda Minish Cap, Mario, Metroid, Castlevania and all 52 built-in games boot and save with zero BIOS files.</p>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No gba_bios.bin hunt:</strong> nothing to download, rename, or place in folders.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">No settings to configure:</strong> no BIOS path dialogs, ever.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Works everywhere:</strong> PC, Mac, Chromebook, iPhone, Android — same instant boot.</li>
+  </ul>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Using a BIOS in Desktop Emulators (If You Insist)</h2>
+  <p style="color:#ccc;margin-bottom:16px">If you run mGBA on desktop: Settings → Emulation → BIOS file → select your legally dumped <code>gba_bios.bin</code>. In VisualBoyAdvance-M: Options → Emulator → Select BIOS file. Expect 20+ minutes of setup versus 5 seconds in your browser.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What is a GBA BIOS file?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Startup firmware from real GBA hardware that traditional emulators need to boot games.</p></details>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Do I need to download one to play here?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">No. EggerMath's built-in open-source BIOS boots all 52 games instantly.</p></details>
+  <details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Is downloading gba_bios.bin legal?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">No — it's Nintendo-copyrighted firmware. Dumping your own console is the only legal source.</p></details>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Skip the BIOS Hunt — Play Now</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">52 games, zero setup files, boots in seconds.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Guides</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/gba-rom-formats-explained" style="color:#c4a35a;text-decoration:none">GBA ROM Formats Explained (.gba, .gbc, .gb, .zip)</a></li>
+      <li><a href="/blog/how-to-play-gba-games-browser" style="color:#c4a35a;text-decoration:none">How to Play GBA Games in Your Browser (2026 Guide)</a></li>
+      <li><a href="/is-emulator-legal" style="color:#c4a35a;text-decoration:none">Is Playing GBA Emulators Legal?</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>

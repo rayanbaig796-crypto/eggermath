@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE } from '../../data/games.js';
+
+const post = {
+  title: 'Play Zelda Online Free: Minish Cap & Link to the Past in Browser',
+  desc: 'Play Zelda online free in your browser. Minish Cap and A Link to the Past with no download — full adventure, save states included.',
+  date: '2026-09-11',
+  category: 'Guides',
+};
+
+const jsonLd = {"@context":"https://schema.org","@type":"BlogPosting","headline":post.title,"description":post.desc,"datePublished":post.date,"author":{"@type":"Organization","name":"EggerMath"},"publisher":{"@type":"Organization","name":"EggerMath","url":SITE.url}};
+---
+<BaseLayout title={`${post.title} | EggerMath Blog`} description={post.desc} canonical={`${SITE.url}/blog/play-zelda-online-free`} jsonLd={jsonLd}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Back to Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <p style="color:#ccc;margin-bottom:16px">Want to play Zelda online free? Two of the best Zelda adventures ever made run perfectly in your browser on EggerMath — no download, no emulator setup, no ROM hunting. Just click and explore Hyrule.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Zelda: The Minish Cap</h2>
+  <p style="color:#ccc;margin-bottom:16px">Capcom's GBA masterpiece shrinks Link down to the size of a bug in a clever twist on the classic formula. Kinstone fusions, the Gust Jar, four dungeons dense with puzzles — it is short enough to finish in a weekend and charming enough to replay yearly. Keyboard controls shine here: arrow keys move, K swings the sword, Q/L and E/R handle the shoulder-button items. <a href="/zelda-minish-cap" style="color:#c4a35a">Play Zelda Minish Cap</a> now.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Zelda: A Link to the Past (GBA Port)</h2>
+  <p style="color:#ccc;margin-bottom:16px">The SNES legend, faithfully ported with the Four Swords bonus content. Light World, Dark World, 11 dungeons — the blueprint every action-adventure still follows. Save states (F5) take the sting out of the tougher bosses like Blind and Turtle Rock. <a href="/zelda-a-link-to-the-past" style="color:#c4a35a">Play A Link to the Past</a> now.</p>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Controls for Zelda Games</h2>
+  <div style="background:#111;padding:16px;border-radius:8px;margin-bottom:24px;color:#ccc">
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">D-Pad:</strong> Arrow Keys / WASD</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Sword (A):</strong> K — tap for slash, hold to charge spin attack</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Item (B):</strong> J</p>
+    <p style="margin:0 0 4px"><strong style="color:#c4a35a">Shoulder items:</strong> Q / E</p>
+    <p style="margin:0"><strong style="color:#c4a35a">Save anytime:</strong> F5 (10 slots), load with F9</p>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Tips for First-Time Players</h2>
+  <ul style="padding-left:20px;color:#ccc;margin-bottom:24px">
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Save before bosses:</strong> F5 at every dungeon entrance. No shame in it.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Talk to everyone:</strong> NPC hints point at secrets you'd otherwise miss.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Bomb every suspicious wall:</strong> cracked textures hide heart pieces and rupees.</li>
+    <li style="margin-bottom:8px"><strong style="color:#c4a35a">Use fast forward:</strong> hold Space to breeze through dialogue on replays.</li>
+  </ul>
+
+  <div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Start Your Zelda Adventure</h2>
+    <p style="color:#aaa;font-size:14px;margin-bottom:12px">Two classics. Zero downloads. Hyrule awaits.</p>
+    <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+  </div>
+
+  <div style="margin-top:32px">
+    <h2 style="font-size:1.1rem;margin-bottom:8px">Related Posts</h2>
+    <ul style="padding-left:20px">
+      <li><a href="/blog/play-pokemon-emerald-online-free" style="color:#c4a35a;text-decoration:none">Play Pokemon Emerald Online Free</a></li>
+      <li><a href="/blog/top-10-gba-rpg-games" style="color:#c4a35a;text-decoration:none">Top 10 GBA RPG Games</a></li>
+      <li><a href="/blog/how-to-save-gba-progress" style="color:#c4a35a;text-decoration:none">How to Save Your GBA Progress</a></li>
+    </ul>
+  </div>
+</main>
+</BaseLayout>
