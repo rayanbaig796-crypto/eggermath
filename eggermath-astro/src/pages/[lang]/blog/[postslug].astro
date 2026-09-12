@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { SITE } from '../../../data/games.js';
+import { blogTranslations, blogLangs, blogLangNames } from '../../../data/blog-translations.js';
+
+export function getStaticPaths() {
+  const paths = [];
+  for (const lang of blogLangs) {
+    for (const slug of Object.keys(blogTranslations)) {
+      if (blogTranslations[slug][lang]) {
+        paths.push({ params: { lang, postslug: slug }, props: { lang, slug } });
+      }
+    }
+  }
+  return paths;
+}
+
+const { lang, slug } = Astro.props;
+const post = blogTranslations[slug][lang];
+
+const canonical = `${SITE.url}/${lang}/blog/${slug}`;
+const alternateLinks = [
+  `<link rel="alternate" hreflang="en" href="${SITE.url}/blog/${slug}" />`,
+  ...blogLangs.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE.url}/${l}/blog/${slug}" />`),
+  `<link rel="alternate" hreflang="x-default" href="${SITE.url}/blog/${slug}" />`,
+].join('\n  ');
+
+const otherLangs = ['en', ...blogLangs].filter(l => l !== lang);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": post.title,
+  "description": post.desc,
+  "datePublished": post.date,
+  "inLanguage": lang,
+  "author": { "@type": "Organization", "name": SITE.name },
+  "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+};
+---
+<BaseLayout title={`${post.title} | EggerMath`} description={post.desc} canonical={canonical} jsonLd={jsonLd} hreflangHtml={alternateLinks}>
+<main style="max-width:800px;margin:0 auto;padding:24px">
+  <a href="/blog" style="color:#c4a35a;text-decoration:none;font-size:14px">← Blog</a>
+  <span style="color:#555;font-size:12px;margin-left:12px">{post.date}</span>
+
+  <h1 style="font-size:2rem;margin:16px 0 8px">{post.title}</h1>
+  <p style="color:#aaa;margin-bottom:24px">{post.desc}</p>
+
+  <Fragment set:html={post.body} />
+
+  <div style="margin-top:32px;padding:12px 16px;background:#111;border:1px solid #1e1e22;border-radius:8px">
+    <span style="color:#888;font-size:13px">Also available in: </span>
+    {otherLangs.map((l, i) => (
+      <span><a href={l === 'en' ? `/blog/${slug}/` : `/${l}/blog/${slug}/`} style="color:#c4a35a;font-size:13px;text-decoration:none">{l === 'en' ? 'English' : blogLangNames[l]}</a>{i < otherLangs.length - 1 ? <span style="color:#555"> · </span> : null}</span>
+    ))}
+  </div>
+</main>
+</BaseLayout>

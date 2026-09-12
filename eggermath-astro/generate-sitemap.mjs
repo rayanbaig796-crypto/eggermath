@@ -248,6 +248,35 @@ if (blogUrls.length > 0) {
 }
 
 // ============================================================
+// 5c. LOCALIZED BLOG POSTS (ES/DE/FR/PT-BR) — with hreflangs
+// ============================================================
+const BLOG_LANGS = ['es', 'de', 'fr', 'pt-BR'];
+const BLOG_LOCALIZED_SLUGS = ['how-to-play-gba-games-browser', 'play-pokemon-emerald-online-free'];
+const blogLocUrls = [];
+for (const lang of BLOG_LANGS) {
+  for (const slug of BLOG_LOCALIZED_SLUGS) {
+    const hreflangs = [
+      ['en', `${SITE}/blog/${slug}`],
+      ...BLOG_LANGS.map(l => [l, `${SITE}/${l}/blog/${slug}`]),
+      ['x-default', `${SITE}/blog/${slug}`],
+    ];
+    blogLocUrls.push(
+      urlEntry(`${SITE}/${lang}/blog/${slug}`, {
+        priority: '0.6',
+        changefreq: 'monthly',
+        images: [OG_IMAGE],
+        hreflangs,
+      })
+    );
+  }
+}
+if (blogLocUrls.length > 0) {
+  writeFileSync(join(DIST, 'sitemap-blog-localized.xml'), sitemapXml(blogLocUrls));
+  allSitemaps.push({ loc: `${SITE}/sitemap-blog-localized.xml`, lastmod: TODAY });
+  totalUrls += blogLocUrls.length;
+}
+
+// ============================================================
 // 6. SITEMAP INDEX
 // ============================================================
 writeFileSync(join(DIST, 'sitemap.xml'), sitemapIndex(allSitemaps));
