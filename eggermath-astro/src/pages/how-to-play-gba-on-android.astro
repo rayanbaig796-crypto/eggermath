@@ -1,14 +1,58 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, games } from '../data/games.js';
-const list = games.slice(0,6);
-const jsonLd = {"@context":"https://schema.org","@type":"HowTo","name":"How to Play GBA Games on Android","description":"Play GBA on Android browser, no download","totalTime":"PT1M","step":[{"@type":"HowToStep","name":"Open","text":"Go to eggermath.com"},{"@type":"HowToStep","name":"Pick Game","text":"Tap game or upload ROM"},{"@type":"HowToStep","name":"Play","text":"Touch controls, save anytime"}]};
+const list = games.slice(0,8);
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "How to Play GBA Games on Android",
+      "description": "Play GBA on Android browser, no download",
+      "totalTime": "PT1M",
+      "step": [
+        {"@type":"HowToStep","name":"Open","text":"Go to eggermath.com in Chrome","url":SITE.url},
+        {"@type":"HowToStep","name":"Pick Game","text":"Tap game or upload your own .gba/.zip ROM"},
+        {"@type":"HowToStep","name":"Play","text":"Touch controls with haptic feedback; save anytime in 10 slots"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do I need to install an APK to play GBA on Android?", "acceptedAnswer": { "@type": "Answer", "text": "No. EggerMath runs in Chrome with zero APKs — no My Boy, no sideloading, no permissions. Just open the site and tap a game." } },
+        { "@type": "Question", "name": "Do touch controls vibrate on Android?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every D-pad, A/B, Start/Select and shoulder press gives a light haptic tap on Android phones." } },
+        { "@type": "Question", "name": "Can I use a Bluetooth controller on Android?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Pair any Bluetooth gamepad (Xbox, PS, 8BitDo) and Chrome passes inputs to the emulator. Touch controls hide automatically while a controller is active." } },
+        { "@type": "Question", "name": "Will GBA games drain my battery?", "acceptedAnswer": { "@type": "Answer", "text": "Barely — GBA emulation uses a fraction of what 3D games need. Expect similar drain to video streaming." } }
+      ]
+    }
+  ]
+};
 ---
-<BaseLayout title="How to Play GBA Games on Android (No Download) | EggerMath" description="Play GBA games on Android via Chrome. No APK. Pokemon, Mario, Zelda with touch controls and saves." jsonLd={jsonLd}>
+<BaseLayout title="How to Play GBA Games on Android (No APK, No Download) | EggerMath" description="Play GBA games on Android via Chrome. No APK, no My Boy install. Pokemon, Mario, Zelda with haptic touch controls and saves." canonical={`${SITE.url}/how-to-play-gba-on-android`} jsonLd={jsonLd}>
 <main class="main" style="max-width:800px;margin:0 auto;padding:24px">
 <h1>How to Play GBA Games on Android</h1>
-<p>Open <a href="/">EggerMath</a> on Chrome — instant play, no APK.</p>
-<ol><li>Go to eggermath.com</li><li>Tap game or upload .gba/.zip</li><li>Use touch controls; fullscreen on first tap; rotate for landscape full-screen</li><li>Save/Load via buttons (10 slots)</li></ol>
-<h2>Best Android Games</h2><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">{list.map(g=> <a href={`/${g.slug}/`}>{g.title}</a>)}</div>
+<p style="color:#aaa;margin-bottom:24px">Open <a href="/" style="color:#c4a35a">EggerMath</a> on Chrome — instant play, no APK, no My Boy, no sideloading.</p>
+<ol style="color:#ccc;margin-bottom:24px;padding-left:20px">
+<li style="margin-bottom:8px">Go to eggermath.com in <strong style="color:#c4a35a">Chrome</strong> (Firefox and Edge work too)</li>
+<li style="margin-bottom:8px">Tap any game — or upload your own .gba/.zip via the file picker</li>
+<li style="margin-bottom:8px">Rotate to <strong style="color:#c4a35a">landscape</strong> for the full-screen layout</li>
+<li style="margin-bottom:8px">Play with haptic touch controls; Save/Load buttons give you 10 slots</li>
+</ol>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Why Browser Beats APKs</h2>
+<ul style="color:#ccc;margin-bottom:24px;padding-left:20px">
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">Zero permissions:</strong> APK emulators want storage access; a web page wants nothing.</li>
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">No updates to manage:</strong> always the latest version, nothing to maintain.</li>
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">Haptics included:</strong> every button press vibrates lightly — most free APKs gate that behind paid tiers.</li>
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">Controllers work:</strong> pair Xbox/PS/8BitDo over Bluetooth; Chrome forwards inputs automatically.</li>
+</ul>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Best Android Games to Start With</h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px">{list.map(g=> <a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none">{g.title}</a>)}</div>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">APK needed?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">No. Chrome only — no installs, no permissions.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Bluetooth controller support?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Yes — Xbox, PS and 8BitDo pads work out of the box.</p></details>
+<div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+  <h2 style="font-size:1.1rem;margin-bottom:8px">Play on Android Now</h2>
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+</div>
 </main>
 </BaseLayout>

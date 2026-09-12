@@ -1,12 +1,75 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE } from '../data/games.js';
-const jsonLd = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is GBA ROM format?","acceptedAnswer":{"@type":"Answer","text":".gba is Game Boy Advance ROM, .gbc/.gb are Game Boy Color/Game Boy, .zip is compressed ROM. EggerMath supports all."}}]};
+
+const title = 'GBA ROM Formats Explained: .gba, .gbc, .gb, .zip, .7z | EggerMath';
+const description = 'What are .gba, .gbc, .gb, .zip ROM files? Sizes, systems, emulators for each format — and how EggerMath plays them all with drag and drop.';
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "GBA ROM Formats Explained",
+      "description": description,
+      "url": `${SITE.url}/gba-rom-formats-explained`,
+      "author": { "@type": "Organization", "name": SITE.name },
+      "publisher": { "@type": "Organization", "name": SITE.name, "url": SITE.url }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is a .gba file?", "acceptedAnswer": { "@type": "Answer", "text": "A .gba file is a Game Boy Advance ROM image — a copy of a GBA cartridge, 4–32MB, running at 240×160 resolution. Open it with mGBA, VisualBoyAdvance, or EggerMath in your browser." } },
+        { "@type": "Question", "name": "What is the difference between .gba, .gbc and .gb?", "acceptedAnswer": { "@type": "Answer", "text": ".gba is 32-bit Game Boy Advance (240×160 color). .gbc is 8-bit Game Boy Color (160×144 color). .gb is original 1989 Game Boy (160×144 monochrome). GBA hardware plays all three; EggerMath emulates all three." } },
+        { "@type": "Question", "name": "Can emulators open .zip ROM files?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — mGBA, VBA-M and EggerMath auto-extract .zip (and .7z in most cases). No need to unzip first." } },
+        { "@type": "Question", "name": "How big are GBA ROM files?", "acceptedAnswer": { "@type": "Answer", "text": "4MB to 32MB uncompressed (most Pokemon/Zelda titles are 16MB). Zipped they shrink 30–60%. EggerMath accepts files up to 25MB." } }
+      ]
+    }
+  ]
+};
 ---
-<BaseLayout title="GBA ROM Formats Explained (.gba, .gbc, .gb, .zip) | EggerMath" description=".gba, .gbc, .gb, .zip explained. EggerMath supports all GBA/GB/GBC ROMs via mGBA WASM. Drag and drop to play." jsonLd={jsonLd}>
+<BaseLayout title={title} description={description} canonical={`${SITE.url}/gba-rom-formats-explained`} jsonLd={jsonLd}>
 <main class="main" style="max-width:800px;margin:0 auto;padding:24px">
 <h1>GBA ROM Formats Explained</h1>
-<ul><li><b>.gba</b> — Game Boy Advance (32-bit, 240x160)</li><li><b>.gbc</b> — Game Boy Color (160x144, color)</li><li><b>.gb</b> — Original Game Boy (160x144, mono)</li><li><b>.zip</b> — Compressed ROM (EggerMath auto-extracts)</li></ul>
-<p>Just drag any file to <a href="/">EggerMath</a> — we handle all formats via mGBA. Max 25MB per file (Cloudflare limit).</p>
+<p style="color:#aaa;margin-bottom:24px">Every file extension in retro gaming, what system it belongs to, how big it is — and how to play each one instantly.</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">.gba — Game Boy Advance</h2>
+<p style="color:#ccc;margin-bottom:16px">The 32-bit generation: 240×160 color screen, 4–32MB per game. Pokemon Emerald, Zelda Minish Cap, Mario Kart Super Circuit — all .gba. Needs a GBA emulator (mGBA recommended). This is the format 90% of players mean when they say "GBA ROM".</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">.gbc — Game Boy Color</h2>
+<p style="color:#ccc;margin-bottom:16px">8-bit, 160×144 color, typically 1–4MB. Pokemon Crystal, Gold, Silver, Zelda Oracle games. The GBC has no L/R shoulder buttons — D-pad, A, B, Start, Select only. EggerMath hides shoulder controls automatically on GBC games.</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">.gb — Original Game Boy (1989)</h2>
+<p style="color:#ccc;margin-bottom:16px">160×144 monochrome (4 shades of green-grey), usually under 1MB. Tetris, Super Mario Land, Pokemon Red/Blue/Yellow. Same 4-button layout as GBC. The smallest, fastest-loading ROMs in existence.</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">.zip / .7z — Compressed ROMs</h2>
+<p style="color:#ccc;margin-bottom:16px">ROMs are almost always shared zipped — a 16MB Pokemon Emerald shrinks to ~6MB. mGBA, VBA-M and EggerMath all auto-extract on load: <strong style="color:#c4a35a">never unzip first</strong>, just drag the .zip in. EggerMath accepts files up to 25MB.</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Quick Reference</h2>
+<div style="background:#111;padding:16px;border-radius:8px;margin-bottom:24px;color:#ccc;font-size:14px">
+  <p style="margin:0 0 4px"><strong style="color:#c4a35a">.gba</strong> → GBA emulator · 240×160 · 4–32MB · has L/R buttons</p>
+  <p style="margin:0 0 4px"><strong style="color:#c4a35a">.gbc</strong> → GBC/GBA emulator · 160×144 color · 1–4MB · no shoulders</p>
+  <p style="margin:0 0 4px"><strong style="color:#c4a35a">.gb</strong> → GB/GBC/GBA emulator · 160×144 mono · under 1MB</p>
+  <p style="margin:0"><strong style="color:#c4a35a">.zip/.7z</strong> → auto-extracted everywhere · 30–60% smaller</p>
+</div>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What opens .gba files?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">mGBA, VisualBoyAdvance-M, Delta (iOS), My Boy (Android) — or EggerMath in your browser with no install.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Can I play .gbc games on a GBA emulator?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Yes — real GBA hardware is backward compatible, and so is EggerMath. Controls adapt automatically.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Do I need to unzip ROMs first?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">No. Drag the .zip straight in — extraction is automatic.</p></details>
+
+<div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+  <h2 style="font-size:1.1rem;margin-bottom:8px">Try Any Format Right Now</h2>
+  <p style="color:#aaa;font-size:14px;margin-bottom:12px">Built-in library plus drag-and-drop for your own files.</p>
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+</div>
+
+<div style="margin-top:32px">
+  <h2 style="font-size:1.1rem;margin-bottom:8px">Related Guides</h2>
+  <ul style="padding-left:20px">
+    <li><a href="/gba-bios" style="color:#c4a35a;text-decoration:none">GBA BIOS: Do You Need One?</a></li>
+    <li><a href="/is-emulator-legal" style="color:#c4a35a;text-decoration:none">Is Playing GBA Emulators Legal?</a></li>
+    <li><a href="/blog/how-to-play-gba-games-browser" style="color:#c4a35a;text-decoration:none">How to Play GBA Games in Browser</a></li>
+  </ul>
+</div>
 </main>
 </BaseLayout>

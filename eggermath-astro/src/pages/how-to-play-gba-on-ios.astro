@@ -2,26 +2,65 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, games } from '../data/games.js';
 const rpg = games.filter(g=>g.genre==='RPG').slice(0,6);
+const action = games.filter(g=>g.genre==='Action').slice(0,4);
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Play GBA Games on iPhone (No App Needed)",
-  "description": "Play GBA games on iPhone via browser emulator. Works on Safari, no download.",
-  "totalTime": "PT1M",
-  "step": [
-    {"@type":"HowToStep","name":"Open EggerMath","text":"Go to eggermath.com on Safari","url":SITE.url},
-    {"@type":"HowToStep","name":"Pick a Game","text":"Tap any game like Pokemon Emerald or upload your ROM"},
-    {"@type":"HowToStep","name":"Play & Save","text":"Use touch controls, tap Save to keep progress"}
+  "@graph": [
+    {
+      "@type": "HowTo",
+      "name": "How to Play GBA Games on iPhone (No App Needed)",
+      "description": "Play GBA games on iPhone via browser emulator. Works on Safari, no download.",
+      "totalTime": "PT1M",
+      "step": [
+        {"@type":"HowToStep","name":"Open EggerMath","text":"Go to eggermath.com on Safari","url":SITE.url},
+        {"@type":"HowToStep","name":"Pick a Game","text":"Tap any game like Pokemon Emerald or upload your ROM"},
+        {"@type":"HowToStep","name":"Play & Save","text":"Use touch controls, tap Save to keep progress"}
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Can I play GBA games on iPhone without jailbreak?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. EggerMath runs mGBA in Safari with no jailbreak, no AltStore, no sideloading. Just open the site and tap a game." } },
+        { "@type": "Question", "name": "Why won't GBA games load on my iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Three usual causes: an old iOS version (update to iOS 15.2+), opening the link inside another app like Instagram (use real Safari), or Private Browsing. EggerMath auto-falls back to single-thread mode on iPhones." } },
+        { "@type": "Question", "name": "Do GBA games work on iPhone with touch controls?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — D-pad, A/B, Start/Select and shoulder buttons appear automatically, with haptic-style visual feedback on Android and full multi-touch on iPhone." } },
+        { "@type": "Question", "name": "Can I save GBA games on iPhone?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Tap Save anytime (10 slots), progress persists in Safari storage. Add the site to your Home Screen for an app-like experience." } }
+      ]
+    }
   ]
 };
 ---
-<BaseLayout title="How to Play GBA Games on iPhone (Safari, No Download) | EggerMath" description="Play GBA games on iPhone via Safari browser emulator. No app, no jailbreak. Pokemon, Zelda, Mario. Touch controls + save states." jsonLd={jsonLd}>
+<BaseLayout title="How to Play GBA Games on iPhone (Safari, No Download) | EggerMath" description="Play GBA games on iPhone via Safari browser emulator. No app, no jailbreak. Pokemon, Zelda, Mario. Touch controls + save states." canonical={`${SITE.url}/how-to-play-gba-on-ios`} jsonLd={jsonLd}>
 <main class="main" style="max-width:800px;margin:0 auto;padding:24px">
 <h1>How to Play GBA Games on iPhone (2026)</h1>
-<p>Open <a href="/">EggerMath.com</a> on Safari — no app needed. All games run via mGBA WebAssembly in your browser.</p>
-<h2>Steps</h2>
-<ol><li>Open eggermath.com on iPhone Safari</li><li>Tap a game (e.g. Pokemon Emerald) or "Upload ROM"</li><li>Wait for loading — tap screen to enter fullscreen</li><li>Use D-pad (left), A/B (right), L/R (shoulders), Start/Select (center)</li><li>Tap Save (F5) to save. Data stays in browser.</li></ol>
-<h2>Tips for iOS</h2><ul><li>Add to Home Screen for app-like experience (Share → Add to Home Screen)</li><li>If game fails, try Chrome on iOS or update iOS. Some older iOS blocks SharedArrayBuffer — we auto-fallback to single-thread.</li><li>Works offline after first load.</li></ul>
-<h2>Try These</h2><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px">{rpg.map(g=> <a href={`/${g.slug}/`}>{g.title}</a>)}</div>
+<p style="color:#aaa;margin-bottom:24px">Open <a href="/" style="color:#c4a35a">EggerMath.com</a> on Safari — no app, no jailbreak, no AltStore. All games run via mGBA WebAssembly in your browser, with automatic single-thread fallback for iPhones.</p>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Steps</h2>
+<ol style="color:#ccc;margin-bottom:24px;padding-left:20px">
+<li style="margin-bottom:8px">Open eggermath.com in <strong style="color:#c4a35a">Safari</strong> (not inside Instagram/WhatsApp — tap Share → Open in Safari)</li>
+<li style="margin-bottom:8px">Tap a game (e.g. <a href="/pokemon-emerald" style="color:#c4a35a">Pokemon Emerald</a>) or "Upload ROM" for your own files</li>
+<li style="margin-bottom:8px">Wait for loading — first boot downloads the game (later loads are instant from cache)</li>
+<li style="margin-bottom:8px">Use D-pad (left), A/B (right), L/R (shoulders on GBA games), Start/Select (center)</li>
+<li style="margin-bottom:8px">Tap <strong style="color:#c4a35a">Save</strong> anytime — 10 slots, progress stays in Safari</li>
+</ol>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Make It Feel Like an App</h2>
+<ul style="color:#ccc;margin-bottom:24px;padding-left:20px">
+<li style="margin-bottom:8px">Share → <strong style="color:#c4a35a">Add to Home Screen</strong> for a fullscreen icon, no URL bar</li>
+<li style="margin-bottom:8px">Rotate to <strong style="color:#c4a35a">landscape</strong> — the game fills the screen, controls stay reachable</li>
+<li style="margin-bottom:8px">Silent switch ON mutes WebAudio — flip it off if you hear nothing</li>
+</ul>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Troubleshooting</h2>
+<ul style="color:#ccc;margin-bottom:24px;padding-left:20px">
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">Stuck on Loading?</strong> Update iOS to 15.2+, use real Safari, turn off Private Browsing and VPN/ad-blockers for the site, then tap Retry.</li>
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">No sound?</strong> Ringer on, volume up, tap the screen once to unlock audio.</li>
+<li style="margin-bottom:8px"><strong style="color:#c4a35a">Older iPhone (8/X)?</strong> Single-thread mode handles it, but close background tabs to free memory.</li>
+</ul>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Best iPhone Games to Start With</h2>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:24px">{rpg.map(g=> <a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none">{g.title}</a>)}{action.map(g=> <a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none">{g.title}</a>)}</div>
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Jailbreak needed?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">No. Pure Safari, no AltStore, no sideloading.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Why won't games load?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Old iOS, in-app browser, or Private Browsing — fix those three and tap Retry.</p></details>
+<div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+  <h2 style="font-size:1.1rem;margin-bottom:8px">Play on Your iPhone Now</h2>
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse All Games →</a>
+</div>
 </main>
 </BaseLayout>

@@ -1,12 +1,89 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { SITE, games } from '../data/games.js';
-const jsonLd = {"@context":"https://schema.org","@type":"ItemList","name":"Best GBA Games to Play Online","itemListElement": games.slice(0,10).map((g,i)=>({"@type":"ListItem","position":i+1,"item":{"@type":"VideoGame","name":g.title,"url":`${SITE.url}/${g.slug}/`}}))};
+
+const top25 = games.slice(0, 25);
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ItemList",
+      "name": "Best GBA Games to Play Online (Top 25)",
+      "description": "The 25 best Game Boy Advance games you can play free in your browser.",
+      "itemListElement": top25.map((g, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "item": {
+          "@type": "VideoGame",
+          "name": g.title,
+          "url": `${SITE.url}/${g.slug}/`,
+          "genre": g.genre,
+          "gamePlatform": g.system || "Game Boy Advance"
+        }
+      }))
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is the best GBA game of all time?", "acceptedAnswer": { "@type": "Answer", "text": "Pokemon Emerald and Zelda: The Minish Cap top most lists. Emerald for depth and post-game, Minish Cap for charm and dungeon design." } },
+        { "@type": "Question", "name": "Can I play these GBA games free online?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every game on this list runs free in your browser on EggerMath — no download, no signup, with save states." } },
+        { "@type": "Question", "name": "What is the best GBA RPG?", "acceptedAnswer": { "@type": "Answer", "text": "Golden Sun for classic turn-based combat, Pokemon Emerald for monster collecting, Mario & Luigi: Superstar Saga for action-RPG comedy." } },
+        { "@type": "Question", "name": "What is the best GBA platformer?", "acceptedAnswer": { "@type": "Answer", "text": "Super Mario World (Super Mario Advance 2) and Kirby: Nightmare in Dream Land lead a stacked field including Wario Land and Donkey Kong Country." } }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": SITE.url },
+        { "@type": "ListItem", "position": 2, "name": "Best GBA Games", "item": `${SITE.url}/best-gba-games` }
+      ]
+    }
+  ]
+};
+
+const byGenre = {};
+for (const g of games) {
+  if (!byGenre[g.genre]) byGenre[g.genre] = [];
+  byGenre[g.genre].push(g);
+}
 ---
-<BaseLayout title="Best GBA Games to Play Online (Top 25) | EggerMath" description="Best GBA games online: Pokemon Emerald, Zelda Minish Cap, Mario Kart, Metroid Fusion, Castlevania. Play free in browser." jsonLd={jsonLd}>
+<BaseLayout title="Best GBA Games to Play Online (Top 25) | EggerMath" description="Best GBA games online: Pokemon Emerald, Zelda Minish Cap, Mario Kart, Metroid Fusion, Castlevania. Play all 25 free in your browser." canonical={`${SITE.url}/best-gba-games`} jsonLd={jsonLd}>
 <main class="main" style="max-width:800px;margin:0 auto;padding:24px">
-<h1>Best GBA Games to Play Online</h1>
-<p>All playable free on <a href="/">EggerMath</a> — click to play instantly.</p>
-<ol>{games.map(g=> <li><a href={`/${g.slug}/`}>{g.title}</a> — {g.genre} ({g.year}): {g.desc.slice(0,80)}...</li>)}</ol>
+<h1>Best GBA Games to Play Online (Top 25)</h1>
+<p style="color:#aaa;margin-bottom:24px">The definitive ranking of Game Boy Advance classics — every single one playable free in your browser on <a href="/" style="color:#c4a35a">EggerMath</a>. Click any title to play instantly with save states.</p>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">The Top 10</h2>
+<ol style="padding-left:20px;color:#ccc;margin-bottom:24px">
+  {top25.slice(0, 10).map((g, i) => (
+    <li style="margin-bottom:12px"><a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none;font-weight:700">{i + 1}. {g.title}</a> <span style="color:#888;font-size:13px">({g.genre}, {g.year})</span><br /><span style="color:#aaa;font-size:14px">{g.desc}</span></li>
+  ))}
+</ol>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">11–25: More Classics</h2>
+<ol start="11" style="padding-left:20px;color:#ccc;margin-bottom:24px">
+  {top25.slice(10).map((g) => (
+    <li style="margin-bottom:10px"><a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none;font-weight:700">{g.title}</a> <span style="color:#888;font-size:13px">({g.genre}, {g.year})</span><br /><span style="color:#aaa;font-size:14px">{g.desc}</span></li>
+  ))}
+</ol>
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">Browse by Genre</h2>
+{Object.entries(byGenre).map(([genre, list]) => (
+  <div style="margin-bottom:16px">
+    <h3 style="font-size:1.05rem;color:#f0ebe0;margin-bottom:8px">{genre} ({list.length})</h3>
+    <p style="color:#aaa;font-size:14px">{list.map((g, i) => (<span><a href={`/${g.slug}/`} style="color:#c4a35a;text-decoration:none">{g.title}</a>{i < list.length - 1 ? ' · ' : ''}</span>))}</p>
+  </div>
+))}
+
+<h2 style="font-size:1.3rem;margin:24px 0 12px;color:#c4a35a">FAQ</h2>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What is the best GBA game of all time?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Pokemon Emerald and Zelda: The Minish Cap top most lists — Emerald for depth, Minish Cap for charm.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">Can I play these free online?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Yes — every game here runs free in your browser with save states, no download or signup.</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What is the best GBA RPG?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Golden Sun (classic turn-based), Pokemon Emerald (monster collecting), Mario &amp; Luigi: Superstar Saga (action-RPG comedy).</p></details>
+<details style="padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.06)"><summary style="cursor:pointer;font-weight:600;color:#f0ebe0">What is the best GBA platformer?</summary><p style="color:#aaa;font-size:14px;margin-top:6px">Super Mario World and Kirby: Nightmare in Dream Land, with Wario Land and Donkey Kong Country close behind.</p></details>
+
+<div style="margin-top:32px;padding:20px;background:#111;border:1px solid #1e1e22;border-radius:12px">
+  <h2 style="font-size:1.1rem;margin-bottom:8px">Play All 25 Now — Free</h2>
+  <p style="color:#aaa;font-size:14px;margin-bottom:12px">No downloads. No signup. Just click and play.</p>
+  <a href="/" style="color:#c4a35a;text-decoration:none;font-weight:700">Browse the Library →</a>
+</div>
 </main>
 </BaseLayout>
